@@ -1,0 +1,36 @@
+{
+  "id": "columbia-mpa-00",
+  "school": "Columbia University",
+  "program": "Master of Public Administration (MPA)",
+  "source_url": "https://www.sipa.columbia.edu/academics/programs/master-public-administration",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "SIPA’s MPA prepares students to manage and analyze public policy and administration across government, nonprofit, and international organizations."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in economics, statistics, management, and financial analysis",
+        "Policy concentrations and specializations",
+        "Workshop in public affairs (capstone)",
+        "Professional development and internships"
+      ],
+      "text": "The curriculum blends analytical core courses with concentrations and culminates in a team‑based policy workshop."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Two‑year, full‑time program",
+        "Completion of required core and concentration credits",
+        "Capstone workshop and professional milestones"
+      ],
+      "text": "Students complete core and concentration requirements and a capstone workshop project for an external client."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates advance to leadership roles in public service, NGOs, multilaterals, and the private sector."
+    }
+  ]
+}

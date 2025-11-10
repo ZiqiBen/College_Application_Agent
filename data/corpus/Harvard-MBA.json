@@ -1,0 +1,23 @@
+{
+  "id": "harvard-mba-00",
+  "school": "Harvard University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://www.hbs.edu/mba/academic-experience/curriculum",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Harvard Business School’s MBA is a two‑year, full‑time general management program that uses the case method and experiential learning to develop leaders who make a difference in the world."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Required Curriculum (RC) in the first year",
+        "Elective Curriculum (EC) with 100+ courses in the second year",
+        "Field‑based learning opportunities and global experiences",
+        "Cross‑registration options across Harvard"
+      ],
+      "text": "The MBA begins with a structured Required Curriculum and continues with a flexible Elective Curriculum, complemented by field‑based learning and cross‑registration."
+    }
+  ]
+}

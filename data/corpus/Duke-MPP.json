@@ -1,0 +1,36 @@
+{
+  "id": "duke-mpp-00",
+  "school": "Duke University",
+  "program": "Master of Public Policy (MPP) — Sanford School of Public Policy",
+  "source_url": "https://sanford.duke.edu/academics/masters-programs/master-public-policy-mpp/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MPP trains policy professionals to analyze, design, and implement evidence-based solutions to public problems in domestic and global contexts."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in economics, statistics, policy analysis, and ethics",
+        "Policy practicums and consulting projects",
+        "Internship between years one and two",
+        "Specializations across policy fields"
+      ],
+      "text": "Students complete a rigorous core, select policy electives, and gain real-world experience via internships and client-based projects."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Two-year, full-time program",
+        "Completion of core, specialization, and experiential components",
+        "Bachelor’s degree and application materials per Sanford policy"
+      ],
+      "text": "Degree completion requires core and elective credits with practicum/internship; admissions review is holistic."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in government, NGOs, multilaterals, consulting, and private sector policy roles."
+    }
+  ]
+}

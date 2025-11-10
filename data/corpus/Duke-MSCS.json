@@ -1,0 +1,35 @@
+{
+  "id": "duke-mscs-00",
+  "school": "Duke University",
+  "program": "Master of Science in Computer Science (MS)",
+  "source_url": "https://www.cs.duke.edu/graduate/ms",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MS in Computer Science provides advanced training in computing, enabling depth in areas such as algorithms, systems, AI/ML, and data-intensive computing."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate coursework in core and advanced CS topics",
+        "Thesis or project options (as offered)",
+        "Opportunities to take interdisciplinary electives"
+      ],
+      "text": "Students select graduate CS courses with flexibility to concentrate in subfields; some choose thesis or project pathways."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree with strong quantitative preparation",
+        "Completion of required graduate credits per department policy",
+        "Good academic standing"
+      ],
+      "text": "Admissions favor CS or related backgrounds; degree completion requires approved credits and satisfactory performance."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in software engineering, AI/ML, data science, systems engineering, and research roles."
+    }
+  ]
+}

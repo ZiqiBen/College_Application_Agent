@@ -1,0 +1,38 @@
+{
+  "id": "rice-ds-00",
+  "school": "Rice University",
+  "program": "Professional Master’s in Data Science",
+  "source_url": "https://engineering.rice.edu/academics/graduate-programs/graduate-degree-programs",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Rice’s Professional Master’s in Data Science prepares professionals with skills in data analysis, machine learning, and big data systems."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Statistical Inference",
+        "Machine Learning",
+        "Big Data Systems",
+        "Data Visualization",
+        "Capstone project or practicum"
+      ],
+      "text": "Students complete coursework in core data science topics, culminating in a capstone or practicum."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in quantitative field recommended",
+        "Transcripts, resume, statement of purpose",
+        "Three letters of recommendation",
+        "GRE not required"
+      ],
+      "text": "Applicants typically have a quantitative background and must submit transcripts, essays, and recommendations; GRE not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates advance into data science, analytics, and technology roles across industries."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "Vanderbilt-MBA",
+  "school": "Vanderbilt University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://business.vanderbilt.edu/mba/admissions/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Vanderbilt MBA develops principled leaders through a rigorous, customizable two‑year program with experiential learning and a collaborative culture."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "First‑year core in general management",
+        "Second‑year electives and pathways",
+        "Global experiences and leadership labs",
+        "Interdisciplinary study across Vanderbilt"
+      ],
+      "text": "The two‑year program begins with a general management core and expands into personalized electives, labs, and interdisciplinary study."
+    },
+    {
+      "type": "admissions_requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Online application with transcripts, resume, essays",
+        "Letter of recommendation",
+        "GMAT, GRE, or Executive Assessment required (unless waived)",
+        "English proficiency for non‑native speakers"
+      ],
+      "text": "Applicants must demonstrate quantitative and leadership potential with test scores (unless waived), academic transcripts, essays, and recommendations."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates take leadership roles across consulting, technology, healthcare, and finance."
+    }
+  ]
+}

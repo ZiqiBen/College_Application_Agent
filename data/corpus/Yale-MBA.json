@@ -1,0 +1,23 @@
+{
+  "id": "yale-mba-00",
+  "school": "Yale University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://som.yale.edu/programs/mba/curriculum",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Yale SOM’s MBA is a two‑year, full‑time program that develops leaders for business and society through an integrated core curriculum and extensive electives."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Integrated Core Curriculum",
+        "Electives across SOM and Yale University",
+        "Global Studies Requirement (e.g., Global Network Week)",
+        "Leadership development and career treks"
+      ],
+      "text": "Students complete an integrated core followed by electives, with options to take courses across Yale and participate in global study and leadership experiences."
+    }
+  ]
+}

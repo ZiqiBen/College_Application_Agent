@@ -1,0 +1,36 @@
+{
+  "id": "princeton-mpp-00",
+  "school": "Princeton University",
+  "program": "Master in Public Policy (MPP)",
+  "source_url": "https://spia.princeton.edu/graduate-programs/mpp",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The one-year MPP at Princeton SPIA is designed for mid-career professionals to enhance their leadership and analytical skills in international and domestic public policy."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Customized selection of courses across Princeton",
+        "Policy workshops",
+        "Seminars with distinguished practitioners",
+        "Independent research opportunities"
+      ],
+      "text": "The flexible one-year curriculum emphasizes policy workshops and elective coursework tailored to career goals."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Mid-career professionals with 7+ years of policy experience",
+        "One-year, full-time program",
+        "TOEFL/IELTS for international students"
+      ],
+      "text": "Applicants should be established professionals with substantial policy experience."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates return to senior leadership roles in government, international organizations, NGOs, and academia."
+    }
+  ]
+}

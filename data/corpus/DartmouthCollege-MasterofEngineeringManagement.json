@@ -1,0 +1,37 @@
+{
+  "id": "dartmouth-mem-00",
+  "school": "Dartmouth College",
+  "program": "Master of Engineering Management (MEM) – Thayer & Tuck",
+  "source_url": "https://engineering.dartmouth.edu/graduate/mem",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MEM program integrates engineering and business training to prepare leaders who can manage technology-driven organizations."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in management, operations, and technology",
+        "Engineering electives from Thayer",
+        "Business electives from Tuck",
+        "Capstone project"
+      ],
+      "text": "The program combines engineering, management, and business coursework with applied project experience."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in engineering, mathematics, or physical sciences",
+        "GRE optional",
+        "Relevant professional or research experience recommended",
+        "TOEFL/IELTS for international students"
+      ],
+      "text": "Applicants should demonstrate technical undergraduate preparation and interest in technology management."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates assume leadership roles at the intersection of engineering, technology, and business."
+    }
+  ]
+}

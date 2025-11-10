@@ -1,0 +1,3 @@
+University of Michigan — B.S. in Data Science (GPA 3.78)
+Projects: Sentiment classifier (F1=0.86); Churn analysis with SQL+Tableau
+Skills: Python, R, SQL, PyTorch

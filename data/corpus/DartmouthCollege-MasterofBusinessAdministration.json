@@ -1,0 +1,37 @@
+{
+  "id": "dartmouth-mba-00",
+  "school": "Dartmouth College",
+  "program": "Master of Business Administration (MBA) – Tuck School of Business",
+  "source_url": "https://tuck.dartmouth.edu/admissions/applying-to-tuck",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Tuck MBA is designed to develop wise, decisive leaders who better the world of business through teamwork, rigorous analysis, and a global mindset."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "First-year core in strategy, accounting, economics, analytics, and leadership",
+        "Second-year electives across management, finance, marketing, and entrepreneurship",
+        "Global Insight Expeditions",
+        "First-Year Project consulting experience"
+      ],
+      "text": "The two-year curriculum combines a comprehensive management core with experiential projects and global learning opportunities."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "At least 2 years of professional work experience (average ~5 years)",
+        "GMAT/GRE required unless waived",
+        "TOEFL/IELTS for non-native English speakers"
+      ],
+      "text": "Applicants should demonstrate strong professional and academic preparation, with significant work experience."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue leadership roles in consulting, finance, technology, healthcare, and social enterprise."
+    }
+  ]
+}

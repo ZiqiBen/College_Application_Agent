@@ -1,0 +1,5 @@
+Master of Science in Data Science focuses on statistics, machine learning, data management,
+and real-world analytics. The program mission is to train data scientists who can apply rigorous methods,
+communicate insights, and lead ethical data-driven decisions. Core courses include Statistical Inference,
+Machine Learning, Data Management, and Data Visualization. Graduates pursue roles in analytics,
+product data science, and research.

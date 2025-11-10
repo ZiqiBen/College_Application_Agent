@@ -1,0 +1,36 @@
+{
+  "id": "stanford-ee-ms-00",
+  "school": "Stanford University",
+  "program": "Master of Science in Electrical Engineering (MS)",
+  "source_url": "https://ee.stanford.edu/admissions/ms",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Stanford’s EE MS offers advanced preparation in electrical engineering subfields while providing flexibility to tailor a 45‑unit study plan without a thesis requirement."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "45 units total; depth, breadth, and technical requirements",
+        "No thesis requirement",
+        "Typical completion in 1.5–2 years full‑time",
+        "200‑level lecture courses for most EE credits"
+      ],
+      "text": "Students design an approved program of study meeting depth/breadth expectations; most courses are 200‑level EE lecture courses."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in engineering or related field recommended",
+        "Transcripts and application materials per department",
+        "Minimum unit and course distribution per Bulletin"
+      ],
+      "text": "Admission and degree completion follow department and University policies; students must satisfy unit distribution and academic standards."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in hardware, communications, signal processing, computer engineering, and emerging areas such as AI hardware."
+    }
+  ]
+}

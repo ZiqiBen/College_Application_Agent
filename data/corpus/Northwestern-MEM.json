@@ -1,0 +1,35 @@
+{
+  "id": "northwestern-mem-00",
+  "school": "Northwestern University",
+  "program": "Master of Engineering Management (MEM)",
+  "source_url": "https://www.mccormick.northwestern.edu/engineering-management/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MEM program blends engineering depth with business, product, and operations management to prepare technical leaders for industry."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in accounting, finance, marketing, leadership, decision analytics, operations, and product management",
+        "Technical and business electives",
+        "Industry projects and experiential learning"
+      ],
+      "text": "Students complete a management-focused core designed for engineers and customize with technical/business electives and real-world projects."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s in engineering or closely related field",
+        "Completion of approved plan of study per program policy",
+        "Part-time and full-time options"
+      ],
+      "text": "Admissions expect technical preparation; degree plans are customized and may be completed full-time or part-time."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates move into product management, operations, consulting, and engineering leadership roles."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "mit-cse-sm-00",
+  "school": "Massachusetts Institute of Technology (MIT)",
+  "program": "Master of Science in Computational Science and Engineering (CSE SM)",
+  "source_url": "https://cse.mit.edu/programs/sm/overview/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The CSE SM is an interdisciplinary, research‑oriented master’s that trains students in computational methods for the study, design, and operation of complex engineered and natural systems."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Common core in computational methods",
+        "Electives focused on application domains",
+        "Graduate thesis (CSE.THG)",
+        "Graduate writing requirement (GWE policy)"
+      ],
+      "text": "Students complete a core across computational foundations, choose electives aligned to applications, and complete a master’s thesis."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Approximately 108 units including thesis",
+        "Maintain good academic standing (per CCSE policies)",
+        "Graduate Writing Exam; technical writing if required"
+      ],
+      "text": "Degree requirements include approved coursework distribution and a research thesis; students must meet CCSE academic standards."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue computational roles in engineering, applied sciences, and data‑intensive industries."
+    }
+  ]
+}

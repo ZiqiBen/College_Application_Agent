@@ -1,0 +1,38 @@
+{
+  "id": "rice-macc-00",
+  "school": "Rice University",
+  "program": "Master of Accounting (MAcc)",
+  "source_url": "https://business.rice.edu/graduate-programs/master-accounting/program-prerequisites",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Rice’s MAcc develops expertise in accounting, auditing, and taxation, preparing students for CPA licensure and careers in professional services."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Accounting Theory and Standards",
+        "Auditing and Assurance",
+        "Taxation of Business Entities",
+        "Business Law and Ethics",
+        "Data Analytics for Accounting"
+      ],
+      "text": "Students complete advanced courses in accounting, taxation, law, and analytics, with preparation for the CPA exam."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Undergraduate degree",
+        "Prerequisite coursework: BUSI 305, BUSI 405, BUSI 440",
+        "At least 15 hours of business coursework",
+        "Transcripts, resume, essays, recommendation"
+      ],
+      "text": "Applicants must complete required prerequisite accounting and business coursework, and submit standard application materials."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates often join Big Four or top accounting firms, corporate finance, or pursue careers in audit, tax, and advisory."
+    }
+  ]
+}

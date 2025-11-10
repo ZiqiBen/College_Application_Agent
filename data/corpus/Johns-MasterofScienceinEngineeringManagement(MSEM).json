@@ -1,0 +1,25 @@
+{
+  "id": "jhu-msem-00",
+  "school": "Johns Hopkins University Whiting School of Engineering",
+  "program": "Master of Science in Engineering Management (MSEM)",
+  "source_url": "https://engineering.jhu.edu/engineering-management/graduate/masters-program/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MSEM program blends advanced technical coursework with management education to prepare engineers for leadership roles in technology‑driven organizations."
+    },
+    {
+      "type": "curriculum",
+      "text": "The curriculum integrates engineering depth with business courses, including finance, marketing, and project management, plus leadership training and applied projects."
+    },
+    {
+      "type": "requirements",
+      "text": "Applicants must hold a relevant technical background; the program requires completion of approved coursework and practical leadership experiences."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates assume leadership and management roles in engineering, R&D, consulting, and technology enterprises."
+    }
+  ]
+}

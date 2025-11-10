@@ -1,0 +1,35 @@
+{
+  "id": "penn-mse-meam-00",
+  "school": "University of Pennsylvania",
+  "program": "Master of Science in Engineering (MSE) in Mechanical Engineering and Applied Mechanics",
+  "source_url": "https://www.me.upenn.edu/graduate/masters/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Penn Engineering’s MSE in MEAM offers advanced study in mechanics, design, robotics, and manufacturing for careers in industry and research."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate coursework in mechanics, materials, design, and robotics",
+        "Technical electives across engineering and applied science",
+        "Optional thesis or research credits with faculty advisor"
+      ],
+      "text": "Students pursue focused graduate courses with elective flexibility and opportunities for research or a thesis option."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Completion of approved graduate course plan",
+        "Bachelor’s in engineering or closely related field",
+        "GPA and academic standing requirements per Penn Engineering"
+      ],
+      "text": "Admission expects engineering preparation; degree completion follows Penn Engineering’s unit and performance policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates advance to roles in product design, robotics, advanced manufacturing, R&D, and further doctoral study."
+    }
+  ]
+}

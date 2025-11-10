@@ -1,0 +1,36 @@
+{
+  "id": "mit-cee-ms-00",
+  "school": "Massachusetts Institute of Technology (MIT)",
+  "program": "Master of Science in Civil and Environmental Engineering (MS)",
+  "source_url": "https://catalog.mit.edu/schools/engineering/civil-environmental-engineering/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "MIT CEE’s MS is a research‑focused degree preparing graduates for advanced practice and doctoral study in civil and environmental engineering."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "At least 66 units of graduate subjects",
+        "Minimum 34 units from CEE departmental subjects",
+        "Original research thesis",
+        "Advising by CEE faculty"
+      ],
+      "text": "Students complete departmental and elective graduate subjects and perform original research culminating in a thesis."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Two‑year research‑oriented degree",
+        "Thesis with faculty supervision",
+        "Satisfactory academic standing"
+      ],
+      "text": "The degree requires approved coursework and an original thesis meeting departmental standards."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue engineering consulting, infrastructure and environmental practice, and PhD research."
+    }
+  ]
+}

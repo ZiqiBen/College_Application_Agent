@@ -1,0 +1,24 @@
+{
+  "id": "harvard-edm-00",
+  "school": "Harvard University",
+  "program": "Master of Education (Ed.M.) — Residential",
+  "source_url": "https://www.gse.harvard.edu/degrees/masters",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "HGSE’s residential Ed.M. is a one‑year, full‑time, immersive program designed to prepare educators, leaders, and innovators to improve learning and opportunity."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Apply directly to one of five distinct programs",
+        "Education Leadership & Entrepreneurship",
+        "Education Policy & Analysis",
+        "Human Development",
+        "Teaching and Teacher Leadership; Learning Design & Technology"
+      ],
+      "text": "Students pursue one of five program pathways in a one‑year immersive format with rich opportunities for personalization and applied learning."
+    }
+  ]
+}

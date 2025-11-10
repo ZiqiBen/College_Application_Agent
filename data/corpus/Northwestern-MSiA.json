@@ -1,0 +1,36 @@
+{
+  "id": "northwestern-msia-00",
+  "school": "Northwestern University",
+  "program": "Master of Science in Analytics (MSiA)",
+  "source_url": "https://www.mccormick.northwestern.edu/analytics/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Northwestern’s MSiA trains data scientists to build and deploy analytics and machine learning solutions that drive business value."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in machine learning, statistics, data engineering, and optimization",
+        "Industry practicum and summer internship",
+        "Practicum projects with corporate partners",
+        "Electives in deep learning, NLP, time series, and cloud analytics"
+      ],
+      "text": "The program integrates rigorous analytics coursework with hands-on practicums and internships to develop end-to-end data science capability."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full-time program with cohort model",
+        "Completion of required core, practicum, and internship components",
+        "Strong quantitative background expected"
+      ],
+      "text": "Students complete a prescribed sequence including practicum and internship; admissions emphasize quantitative and programming readiness."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates become data scientists, ML engineers, and analytics consultants across technology, finance, retail, and healthcare."
+    }
+  ]
+}

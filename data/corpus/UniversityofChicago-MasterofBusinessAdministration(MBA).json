@@ -1,0 +1,37 @@
+{
+  "id": "uchicago-mba-00",
+  "school": "University of Chicago",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://www.chicagobooth.edu/mba/full-time",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Chicago Booth’s MBA develops analytical, data-driven leaders with the flexibility to design a curriculum tailored to their professional goals."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Analytical core courses",
+        "Over 100 elective courses",
+        "Leadership training",
+        "Global experiences",
+        "Capstone and experiential learning"
+      ],
+      "text": "Students build a foundation in analytics and leadership while choosing from a wide range of electives and experiential programs."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full-time two-year residential program",
+        "Online application with essays, transcripts, and test scores",
+        "Interview by invitation"
+      ],
+      "text": "Applicants complete Chicago Booth’s admissions process including essays, test scores, and interview."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates lead in finance, consulting, entrepreneurship, and technology with a focus on analytical decision-making."
+    }
+  ]
+}

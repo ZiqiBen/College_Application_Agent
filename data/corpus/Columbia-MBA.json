@@ -1,0 +1,36 @@
+{
+  "id": "columbia-mba-00",
+  "school": "Columbia University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://academics.gsb.columbia.edu/mba/academics/curriculum",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Columbia Business School’s MBA is a two‑year, full‑time general management program that develops leaders through an analytical core, extensive electives, and applied learning in New York City."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in leadership, strategy, finance, accounting, and marketing",
+        "300+ electives across CBS and Columbia University",
+        "Master Classes, Immersion Seminars, and experiential projects",
+        "Summer internship between first and second year"
+      ],
+      "text": "Students begin with a required core and then select from hundreds of electives, with abundant experiential options and a summer internship."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full‑time, two‑year program",
+        "Completion of core and elective credits per CBS policy",
+        "Participation in experiential components as offered"
+      ],
+      "text": "Degree completion requires the core plus elective credits and adherence to Columbia Business School academic policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter leadership roles across consulting, finance, technology, and entrepreneurship, leveraging Columbia’s NYC ecosystem and alumni network."
+    }
+  ]
+}

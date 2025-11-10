@@ -1,0 +1,25 @@
+{
+  "id": "jhu-msds-00",
+  "school": "Johns Hopkins University Whiting School of Engineering",
+  "program": "Master of Science in Data Science",
+  "source_url": "https://engineering.jhu.edu/data-science-masters/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MS in Data Science develops expertise in statistical methods, machine learning, and computational tools to address data‑intensive challenges across industries."
+    },
+    {
+      "type": "curriculum",
+      "text": "Students complete core courses in statistics, computer science, and applied data science, with electives enabling specialization in domains such as health care, engineering, and business analytics."
+    },
+    {
+      "type": "requirements",
+      "text": "Applicants should have strong quantitative preparation; the degree requires approved coursework and may include applied projects."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in data science, machine learning engineering, analytics, and research roles."
+    }
+  ]
+}

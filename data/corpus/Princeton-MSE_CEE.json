@@ -1,0 +1,36 @@
+{
+  "id": "princeton-mse-cee-00",
+  "school": "Princeton University",
+  "program": "Master of Science in Engineering (MSE) - Civil and Environmental Engineering",
+  "source_url": "https://cee.princeton.edu/graduate/masters",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MSE in Civil and Environmental Engineering provides advanced technical and research training in environmental science, sustainable infrastructure, and structural engineering."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate coursework in chosen subfield",
+        "Independent research with faculty supervision",
+        "Thesis requirement",
+        "Departmental seminars"
+      ],
+      "text": "Students combine coursework with original research culminating in a thesis under faculty supervision."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Two-year research-oriented program",
+        "Bachelor’s in engineering or related field required",
+        "GRE optional; TOEFL/IELTS for non-native speakers"
+      ],
+      "text": "Admission requires strong academic preparation in engineering or science fields."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles in civil/environmental engineering industries, consulting, and doctoral programs."
+    }
+  ]
+}

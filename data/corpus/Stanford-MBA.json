@@ -1,0 +1,36 @@
+{
+  "id": "stanford-mba-00",
+  "school": "Stanford University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://www.gsb.stanford.edu/programs/mba/academic-experience/curriculum",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Stanford MBA develops principled, insightful leaders through a rigorous, personalized curriculum that blends foundational general management with experiential learning."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "First‑year core in general management",
+        "Second‑year electives and pathways",
+        "Global experiences and leadership labs",
+        "Interdisciplinary options across Stanford"
+      ],
+      "text": "The two‑year program begins with a core curriculum and expands into customized electives, experiential learning, and interdisciplinary study."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full‑time, two‑year residential program",
+        "University and GSB degree requirements per Bulletin",
+        "Selective admissions via GSB application"
+      ],
+      "text": "Applicants complete the GSB process; degree requirements align with Stanford University policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates step into leadership roles across technology, entrepreneurship, finance, and social impact."
+    }
+  ]
+}

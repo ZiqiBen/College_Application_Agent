@@ -1,0 +1,36 @@
+{
+  "id": "columbia-ma-econ-00",
+  "school": "Columbia University",
+  "program": "Master of Arts in Economics (MA)",
+  "source_url": "https://econ.columbia.edu/ma-program/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Columbia’s MA in Economics offers rigorous training in economic theory and quantitative methods for careers in industry, policy, and research or for PhD preparation."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate microeconomics, macroeconomics, and econometrics",
+        "Field electives in areas like finance, trade, and development",
+        "Research seminars and workshop opportunities",
+        "Academic advising through the department"
+      ],
+      "text": "Students complete core graduate economics courses and choose field electives aligned with their professional goals."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Completion of required MA credits per GSAS policy",
+        "Satisfactory progress and GPA standards",
+        "Undergraduate preparation in economics and mathematics recommended"
+      ],
+      "text": "Degree progress follows GSAS regulations, with recommended prior training in mathematics and economics."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in consulting, finance, economic policy, and research roles or continue to doctoral study."
+    }
+  ]
+}

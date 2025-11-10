@@ -1,0 +1,41 @@
+{
+  "id": "brown-mph-00",
+  "school": "Brown University",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://sph.brown.edu/admission-aid/application-requirements",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Brown’s MPH program prepares students to become leaders in improving population health through research, policy, and practice."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in epidemiology and biostatistics",
+        "Environmental health and health policy",
+        "Applied public health practice",
+        "Practicum and thesis/capstone"
+      ],
+      "text": "Students engage in a rigorous curriculum combining quantitative and qualitative public health training, practical experiences, and a culminating capstone."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "At least 2 years professional work experience for online MPH",
+        "Official transcripts",
+        "Three recommendation letters (at least one academic if recent graduate)",
+        "Resume/CV",
+        "Personal statement",
+        "TOEFL or IELTS scores for international applicants",
+        "GRE not required"
+      ],
+      "text": "Applicants must hold a bachelor’s degree, provide academic/professional recommendations, transcripts, and demonstrate readiness for advanced study in public health."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles in government, healthcare, academia, NGOs, and consulting, addressing pressing public health issues globally."
+    }
+  ]
+}

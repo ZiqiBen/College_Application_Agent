@@ -1,0 +1,40 @@
+{
+  "id": "brown-cs-ms-00",
+  "school": "Brown University",
+  "program": "Master of Science in Computer Science (MSCS)",
+  "source_url": "https://cs.brown.edu/degrees/masters/applications/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Brown’s MSCS program develops technical depth and research capacity while encouraging interdisciplinary exploration and innovation in computing."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in algorithms, systems, and theory",
+        "Electives in AI, robotics, data science, and HCI",
+        "Research opportunities and thesis option",
+        "Breadth requirement across CS subfields"
+      ],
+      "text": "The curriculum balances required core areas with flexibility for specialization in advanced CS topics."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree with strong quantitative or CS background",
+        "Competence in programming, algorithms, discrete math, linear algebra, probability",
+        "Transcripts of academic record",
+        "Three letters of recommendation",
+        "Personal statement",
+        "TOEFL/IELTS for non-native English speakers",
+        "GRE optional, not required"
+      ],
+      "text": "Applicants must demonstrate quantitative and computing readiness; strong letters and academic background are essential for admission."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter industry in software engineering, data science, or research, or continue to PhD studies."
+    }
+  ]
+}

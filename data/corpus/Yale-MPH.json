@@ -1,0 +1,23 @@
+{
+  "id": "yale-mph-00",
+  "school": "Yale University",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://ysph.yale.edu/education/mph-degree/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Yale School of Public Health MPH prepares students to improve population health through training in epidemiology, biostatistics, policy, and practice."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Foundational public health coursework",
+        "Departmental concentrations (e.g., Epidemiology of Microbial Diseases; Health Policy)",
+        "Applied practice experience",
+        "Capstone or thesis"
+      ],
+      "text": "The two‑year program combines foundational coursework, a department‑specific concentration, an applied practice experience, and a culminating capstone or thesis."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "yale-llm-00",
+  "school": "Yale University",
+  "program": "Master of Laws (LL.M.)",
+  "source_url": "https://law.yale.edu/studying-law-yale/degree-programs/graduate-programs/llm-program",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Yale Law School’s LL.M. is a one‑year program designed for lawyers interested in advanced legal study and research with individually tailored programs."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "One academic year in residence",
+        "Individually designed course of study",
+        "Substantial research paper"
+      ],
+      "text": "The program requires one year in residence with an individualized curriculum and a major writing project under faculty supervision."
+    }
+  ]
+}

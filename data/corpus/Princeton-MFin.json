@@ -1,0 +1,37 @@
+{
+  "id": "princeton-mfin-00",
+  "school": "Princeton University",
+  "program": "Master in Finance (MFin)",
+  "source_url": "https://bcf.princeton.edu/graduate/mfin/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Bendheim Center for Finance offers the MFin program, providing advanced training in finance, economics, and data science to prepare students for leadership in global financial markets and policy institutions."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Foundations of Asset Pricing",
+        "Corporate Finance and Financial Institutions",
+        "Financial Econometrics",
+        "Electives in machine learning and FinTech",
+        "Capstone research project"
+      ],
+      "text": "The curriculum blends rigorous finance theory, quantitative methods, and electives in modern finance areas such as FinTech and machine learning."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Two-year, full-time program",
+        "Strong quantitative and economics background required",
+        "TOEFL/IELTS for non-native English speakers"
+      ],
+      "text": "Applicants are expected to have strong mathematical and statistical foundations."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in investment banking, asset management, central banks, and quantitative finance."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "jhu-mph-00",
+  "school": "Johns Hopkins University Bloomberg School of Public Health",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://publichealth.jhu.edu/academics/mph",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The rigorous MPH curriculum prepares students to become leading public health professionals capable of addressing global health problems with multidisciplinary, evidence‑based approaches."
+    },
+    {
+      "type": "curriculum",
+      "text": "The flexible program—available online or onsite, full‑ or part‑time—features hundreds of courses from over 1,500 faculty, and culminates in a capstone applying students’ competencies to a real public health problem."
+    },
+    {
+      "type": "requirements",
+      "text": "Students can complete the MPH in 11 months to 4 years, with both full‑ and part‑time options and modalities including online and in‑person study."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates join the largest MPH alumni network globally and assume roles across health care, government, consulting, academia, NGOs, and more."
+    }
+  ]
+}

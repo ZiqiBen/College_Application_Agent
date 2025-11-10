@@ -1,0 +1,30 @@
+{
+  "id": "caltech-ms-ms-00",
+  "school": "California Institute of Technology (Caltech)",
+  "program": "Master of Science in Materials Science (MS)",
+  "source_url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/materials-science-ms/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Caltech’s MS in Materials Science is typically awarded to doctoral students upon request once course requirements are met; admission is generally to the PhD program."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Materials Science core: MS 131, MS 132, MS 133 (27 units)",
+        "Thermodynamics: APh/MS/ME 105 abc (or approved alternatives) (27 units)",
+        "General Electives: 36 units (with specified distribution)",
+        "Up to 9 units of research (MS 200 or equivalent) may substitute for lecture/lab"
+      ],
+      "text": "Study ordinarily requires at least three terms of courses chosen from approved core, thermodynamics, and elective lists; limited research units may count."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "MS is generally conferred upon doctoral students who fulfill requirements; separate MS admission is rare"
+      ],
+      "text": "Per catalog policy, the MS is typically awarded to students in the doctoral program after completing prescribed coursework."
+    }
+  ]
+}

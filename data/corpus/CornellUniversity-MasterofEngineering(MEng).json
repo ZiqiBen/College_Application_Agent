@@ -1,0 +1,37 @@
+{
+  "id": "cornell-meng-00",
+  "school": "Cornell University",
+  "program": "Master of Engineering (MEng)",
+  "source_url": "https://www.engineering.cornell.edu/students/graduate-students/meng-students",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Cornell’s MEng emphasizes professional training in engineering practice with applied coursework and projects."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate engineering subjects",
+        "Professional practice courses",
+        "Capstone project"
+      ],
+      "text": "The one-year program blends technical training with leadership and project experience."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in engineering or related STEM field",
+        "GPA typically above 2.7–3.0",
+        "Statement of purpose",
+        "Two recommendation letters",
+        "TOEFL/IELTS required for international applicants"
+      ],
+      "text": "Applicants should have a strong engineering background and provide transcripts, SOP, and recommendations."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter engineering practice, technology leadership, or consulting."
+    }
+  ]
+}

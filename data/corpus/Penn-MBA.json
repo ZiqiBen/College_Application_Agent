@@ -1,0 +1,36 @@
+{
+  "id": "penn-mba-00",
+  "school": "University of Pennsylvania",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://mba.wharton.upenn.edu/academics/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Wharton’s MBA is a two‑year, full‑time general management program designed to build analytical rigor, leadership, and strategic decision‑making for impact across industries."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Flexible core with analytics, economics, leadership, and management",
+        "Majors and elective pathways across 200+ courses",
+        "Experiential learning (Wharton Investment & Trading Group, Global Modular Courses, etc.)",
+        "Leadership Ventures and learning teams"
+      ],
+      "text": "Students complete a flexible core and choose from extensive electives and majors, with hands‑on experiences through labs, ventures, and global modules."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full‑time, two academic years",
+        "Completion of core and major/elective requirements",
+        "Wharton leadership and communication components"
+      ],
+      "text": "Degree completion requires core, major, and elective credits along with leadership/communication milestones as defined by Wharton."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates lead in consulting, finance, technology, healthcare, and entrepreneurship, supported by Wharton’s global alumni network."
+    }
+  ]
+}

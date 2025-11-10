@@ -1,0 +1,13 @@
+{
+  "name": "Alice Zhang",
+  "email": "alice@example.com",
+  "major": "Data Science",
+  "gpa": 3.78,
+  "courses": ["Machine Learning", "Algorithms", "Statistics"],
+  "skills": ["Python", "R", "SQL", "PyTorch"],
+  "experiences": [
+    {"title": "RA in NLP Lab", "org": "UMich", "impact": "Built sentiment classifier (F1=0.86)", "skills": ["Python","PyTorch","NLP"]},
+    {"title": "Data Analyst Intern", "org": "Acme", "impact": "Reduced churn by 7% via cohort analysis", "skills": ["SQL","Tableau"]}
+  ],
+  "goals": "Apply ML to real-world problems in analytics and product data science."
+}

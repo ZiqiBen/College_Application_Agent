@@ -1,0 +1,36 @@
+{
+  "id": "uchicago-mpp-00",
+  "school": "University of Chicago",
+  "program": "Master of Public Policy (MPP)",
+  "source_url": "https://harris.uchicago.edu/academics/programs-degrees/master-public-policy-mpp",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MPP program at Harris School of Public Policy trains leaders in evidence-based policy analysis and decision-making."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in economics, statistics, and decision-making",
+        "Electives across policy domains",
+        "Experiential practicums",
+        "Leadership and communication training"
+      ],
+      "text": "Students complete rigorous core courses and electives, with practical policy labs and leadership development."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full-time program",
+        "Application with transcripts and materials",
+        "Quantitative preparation required"
+      ],
+      "text": "Applicants must demonstrate quantitative readiness; admission requires a completed application and review."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in government, NGOs, and international organizations as policy analysts and leaders."
+    }
+  ]
+}

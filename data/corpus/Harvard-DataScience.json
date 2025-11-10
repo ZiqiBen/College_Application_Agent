@@ -1,0 +1,23 @@
+{
+  "id": "harvard-datasci-sm-00",
+  "school": "Harvard University",
+  "program": "Master of Science in Data Science (SM)",
+  "source_url": "https://seas.harvard.edu/masters-data-science",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Harvard SEAS’s Data Science SM trains students to analyze, model, and visualize data at scale through rigorous coursework in computing and statistics."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "12 courses total; minimum 3 semesters on campus",
+        "Core/statistics selections (e.g., STAT 111/139/149/211/244 per degree requirements)",
+        "Computing courses such as AC 215, AM 215, or CS 2050 (per program list)",
+        "Option to extend for a fourth semester or a master’s thesis project"
+      ],
+      "text": "Students complete 12 courses over at least three semesters, selecting from approved statistics and computing courses, with an option to extend or undertake thesis research."
+    }
+  ]
+}

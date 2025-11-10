@@ -1,0 +1,37 @@
+{
+  "id": "mit-mfin-00",
+  "school": "Massachusetts Institute of Technology (MIT)",
+  "program": "Master of Finance (MFin)",
+  "source_url": "https://mitsloan.mit.edu/mfin/explore-program/mfin-curriculum",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "MIT Sloan’s STEM‑designated MFin provides a deep foundation in modern finance, data analytics, and financial engineering to prepare students for global finance careers."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "15.415 Foundations of Modern Finance",
+        "15.454 Financial Mathematics or 15.455 Advanced Financial Mathematics",
+        "Financial Accounting",
+        "Data, Models, and Decisions",
+        "Electives in Asset Management, FinTech, and Risk"
+      ],
+      "text": "The curriculum blends core finance theory with quantitative methods and advanced electives, allowing customization across asset management, quantitative finance, and corporate finance."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "STEM‑designated degree",
+        "Programming Literacy Test in Python",
+        "Quantitative and analytical background expected"
+      ],
+      "text": "Applicants should bring strong quantitative preparation; students must pass a Python programming literacy requirement."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter roles in investment management, quantitative research, trading, corporate finance, and risk analytics."
+    }
+  ]
+}

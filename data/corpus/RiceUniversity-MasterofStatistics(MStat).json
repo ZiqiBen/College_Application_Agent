@@ -1,0 +1,38 @@
+{
+  "id": "rice-mstat-00",
+  "school": "Rice University",
+  "program": "Master of Statistics (MStat)",
+  "source_url": "https://statistics.rice.edu/academics/graduate",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Rice’s MStat provides rigorous training in statistical methods and data analysis for careers in academia, industry, and government."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Statistical Inference",
+        "Linear Models",
+        "Probability",
+        "Computational Statistics",
+        "Applied Statistics Electives"
+      ],
+      "text": "The program emphasizes theoretical and applied statistics with electives aligned to research interests."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Transcripts, resume, statement of purpose",
+        "Three letters of recommendation",
+        "GRE not required; TOEFL/IELTS for international students"
+      ],
+      "text": "Applicants must show strong quantitative preparation and submit standard application materials; GRE not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles as statisticians, data analysts, and researchers in government, academia, and private sector."
+    }
+  ]
+}

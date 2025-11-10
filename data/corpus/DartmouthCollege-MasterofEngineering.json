@@ -1,0 +1,35 @@
+{
+  "id": "dartmouth-meng-00",
+  "school": "Dartmouth College",
+  "program": "Master of Engineering (MEng) – Thayer School of Engineering",
+  "source_url": "https://engineering.dartmouth.edu/graduate/meng",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MEng provides advanced professional training in engineering with a focus on coursework rather than research."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate-level engineering courses",
+        "Electives tailored to professional interests",
+        "Capstone project encouraged but not required"
+      ],
+      "text": "The MEng emphasizes coursework and practical application over research."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in engineering or closely related STEM field",
+        "GRE optional",
+        "TOEFL/IELTS for non-native English speakers"
+      ],
+      "text": "Applicants must hold an undergraduate degree in engineering or related sciences and demonstrate quantitative preparation."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter advanced technical roles in engineering firms, product design, and applied technology."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "dartmouth-mph-00",
+  "school": "Dartmouth College",
+  "program": "Master of Public Health (MPH) – Geisel School of Medicine",
+  "source_url": "https://tdi.dartmouth.edu/education/masters-programs/mph",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Dartmouth MPH trains professionals to lead improvements in population health through rigorous study of policy, epidemiology, and healthcare delivery."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in biostatistics, epidemiology, health policy, and leadership",
+        "Applied practice experience",
+        "Capstone project in healthcare delivery science"
+      ],
+      "text": "The program emphasizes applied population health and leadership training through core coursework and capstone research."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree required",
+        "Background in health, policy, or quantitative fields recommended",
+        "TOEFL/IELTS for international applicants"
+      ],
+      "text": "Applicants must hold a bachelor’s degree and show evidence of academic or professional preparation in health-related or analytical areas."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates assume positions in public health practice, research, policy, and healthcare leadership."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cornell-milr-00",
+  "school": "Cornell University",
+  "program": "Master of Industrial and Labor Relations (MILR)",
+  "source_url": "https://www.ilr.cornell.edu/academics/graduate-degree-programs/milr-program",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MILR develops expertise in human resources, labor relations, and organizational leadership."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in HR, labor law, and economics",
+        "Electives in chosen concentration",
+        "Capstone project"
+      ],
+      "text": "Students gain broad ILR foundations and focus in HR or labor relations."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Transcripts",
+        "Statement of purpose",
+        "Letters of recommendation",
+        "TOEFL/IELTS for non-native speakers"
+      ],
+      "text": "Applicants must have an undergraduate degree and submit SOP, recommendations, and English proficiency."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in HR leadership, labor relations, consulting, and organizational development."
+    }
+  ]
+}

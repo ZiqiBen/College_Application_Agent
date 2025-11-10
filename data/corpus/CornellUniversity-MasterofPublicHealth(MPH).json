@@ -1,0 +1,39 @@
+{
+  "id": "cornell-mph-00",
+  "school": "Cornell University",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://publichealth.cornell.edu/academics/master-of-public-health-program/admissions/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Cornell’s MPH prepares graduates to address complex public health challenges through interdisciplinary training."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in epidemiology, biostatistics, and policy",
+        "Electives tailored to concentration",
+        "Applied practice experience",
+        "Integrative learning project"
+      ],
+      "text": "The program combines public health core with applied projects and concentration electives."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Official transcripts",
+        "Resume and personal statement",
+        "Three letters of reference",
+        "GRE not required",
+        "TOEFL/IELTS for international students"
+      ],
+      "text": "Applicants provide transcripts, statement, resume, and recommendations; GRE not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue public health practice, policy, and further doctoral training."
+    }
+  ]
+}

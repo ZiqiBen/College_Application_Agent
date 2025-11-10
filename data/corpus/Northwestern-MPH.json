@@ -1,0 +1,35 @@
+{
+  "id": "northwestern-mph-00",
+  "school": "Northwestern University",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://www.feinberg.northwestern.edu/sites/mph/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Northwestern’s MPH prepares public health professionals to advance population health through interdisciplinary training in epidemiology, biostatistics, policy, and community health."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in epidemiology, biostatistics, environmental health, and policy",
+        "Specializations and electives",
+        "Applied practice experience and culminating project"
+      ],
+      "text": "The program combines foundational public health coursework with specializations and applied experiences culminating in a capstone."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Completion of required credits and practice components",
+        "Bachelor’s degree; quantitative preparation recommended",
+        "Options for part-time study"
+      ],
+      "text": "Students meet credit and experiential requirements aligned with program policies; flexible scheduling options may be available."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in public health agencies, healthcare systems, NGOs, research institutions, and policy organizations."
+    }
+  ]
+}

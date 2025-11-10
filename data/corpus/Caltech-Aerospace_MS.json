@@ -1,0 +1,21 @@
+{
+  "id": "caltech-ae-ms-00",
+  "school": "California Institute of Technology (Caltech)",
+  "program": "Master of Science in Aeronautics or Space Engineering (MS)",
+  "source_url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/aerospace-ae/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Caltech’s aerospace graduate programs provide intense education in the foundations of aeronautical and space sciences with emphasis on analytical, computational, and experimental methods."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "MS degree available in Aeronautics or Space Engineering",
+        "Programs follow Institute master’s requirements and option regulations"
+      ],
+      "text": "The Institute offers MS degrees in Aeronautics and Space Engineering; degree progress follows Caltech’s master’s policies and option‑specific rules."
+    }
+  ]
+}

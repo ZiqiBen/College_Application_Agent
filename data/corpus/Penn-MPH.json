@@ -1,0 +1,36 @@
+{
+  "id": "penn-mph-00",
+  "school": "University of Pennsylvania",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://www.med.upenn.edu/mph/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Penn’s MPH prepares professionals to advance population health through training in epidemiology, biostatistics, health policy, and community practice."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Foundational public health core courses",
+        "Concentrations such as Global Health, Health Policy, or One Health (as offered)",
+        "Applied practice experience (practicum)",
+        "Integrative learning experience (capstone or thesis)"
+      ],
+      "text": "The curriculum integrates core public health competencies with a concentration, applied practice, and a culminating capstone or thesis."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Completion of required credits and practice components",
+        "Bachelor’s degree and application materials per program",
+        "For international applicants: TOEFL/IELTS as applicable"
+      ],
+      "text": "Students must meet credit, practice, and culminating experience requirements; admissions follow Penn Medicine’s MPH policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in public health agencies, healthcare systems, NGOs, and research organizations."
+    }
+  ]
+}

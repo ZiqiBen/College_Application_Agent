@@ -1,0 +1,22 @@
+{
+  "id": "caltech-me-ms-00",
+  "school": "California Institute of Technology (Caltech)",
+  "program": "Master of Science in Mechanical Engineering (MS)",
+  "source_url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/mechanical-engineering-me/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Caltech’s ME MS provides foundational and elective coursework in mechanical engineering, typically completed within the first two years of residency."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Minimum 138 units of courses numbered 100+ (grade C or higher)",
+        "ME graduate core (54 units)",
+        "Math/engineering/research electives (54 units; up to 27 units of ME 300 research)"
+      ],
+      "text": "Students complete required ME core and approved electives to meet unit requirements; research units may count within specified limits."
+    }
+  ]
+}

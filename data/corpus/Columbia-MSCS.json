@@ -1,0 +1,36 @@
+{
+  "id": "columbia-mscs-00",
+  "school": "Columbia University",
+  "program": "Master of Science in Computer Science (MS)",
+  "source_url": "https://www.cs.columbia.edu/education/ms/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Columbia MS in Computer Science provides advanced training with the flexibility to specialize in subfields such as AI, systems, security, vision, and theory."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Breadth requirement across core CS areas",
+        "Specialization tracks (e.g., AI, ML, Systems, Security, Vision, NLP)",
+        "Minimum ~30 graduate credits (per program track)",
+        "Optional thesis with faculty adviser"
+      ],
+      "text": "Students meet breadth requirements and choose electives within a specialization track; some pursue a thesis under faculty supervision."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Relevant undergraduate background in CS or related field recommended",
+        "Completion of credit, breadth, and track requirements",
+        "Program sheet approval by department"
+      ],
+      "text": "Admission favors strong CS preparation; degree completion follows SEAS credit and distribution policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles in software engineering, machine learning, data science, and research across industry and academia."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "duke-mba-00",
+  "school": "Duke University",
+  "program": "Master of Business Administration (MBA) — Daytime MBA (Fuqua)",
+  "source_url": "https://www.fuqua.duke.edu/programs/daytime-mba",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Fuqua’s Daytime MBA develops leaders who are analytical, collaborative, and purpose-driven, combining rigorous academics with a team-based culture."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Foundations of Management core in the first year",
+        "Extensive electives and concentrations (e.g., Strategy, Finance, Marketing)",
+        "Experiential learning via Fuqua Client Consulting Practicum and Global Academic Travel Experience",
+        "Leadership communication and professional development"
+      ],
+      "text": "Students begin with a core covering management fundamentals, then tailor second-year electives and applied experiences to career goals."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Two-year, full-time program",
+        "Completion of core and elective credits per Fuqua policy",
+        "Application with essays, recommendations, and transcripts"
+      ],
+      "text": "Degree completion requires required core courses, electives, and leadership milestones as defined by Fuqua."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles across consulting, technology, finance, healthcare, and entrepreneurship with strong alumni and employer networks."
+    }
+  ]
+}

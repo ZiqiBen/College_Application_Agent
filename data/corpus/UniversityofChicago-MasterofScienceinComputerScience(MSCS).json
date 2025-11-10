@@ -1,0 +1,37 @@
+{
+  "id": "uchicago-mscs-00",
+  "school": "University of Chicago",
+  "program": "Master of Science in Computer Science (MSCS)",
+  "source_url": "https://cs.uchicago.edu/graduate/ms-program/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "UChicago’s MSCS provides advanced preparation in computer science theory, systems, and applications with flexible pathways."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in programming, systems, and theory",
+        "Electives in AI, machine learning, and data science",
+        "Capstone project or research thesis",
+        "45 credits minimum"
+      ],
+      "text": "Students complete a structured core, pursue electives in specialized areas, and finish with a project or thesis."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Strong quantitative background",
+        "Bachelor’s degree required",
+        "GRE optional",
+        "Application materials per department"
+      ],
+      "text": "Admission requires a bachelor’s degree and quantitative skills; GRE is optional."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter careers in software engineering, data science, AI/ML, and further doctoral studies."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "penn-msed-00",
+  "school": "University of Pennsylvania",
+  "program": "Master of Science in Education (M.S.Ed.)",
+  "source_url": "https://www.gse.upenn.edu/masters",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Penn GSE’s M.S.Ed. programs prepare educators and leaders to improve learning through research‑based practice in areas such as education policy, higher education, and learning sciences."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Program pathways including Education Policy, Higher Education, and Learning Sciences",
+        "Foundational coursework in research methods and practice",
+        "Fieldwork or internship opportunities depending on track"
+      ],
+      "text": "Students select a program area and complete research‑informed coursework with applied experiences aligned to their interests."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree and program‑specific prerequisites",
+        "Completion of required course credits and culminating experiences",
+        "For some tracks, practica or internships"
+      ],
+      "text": "Admissions and completion requirements vary by M.S.Ed. program; students fulfill credit and practice components per track."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in schools, higher education administration, policy organizations, nonprofits, and edtech."
+    }
+  ]
+}

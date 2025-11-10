@@ -1,0 +1,23 @@
+{
+  "id": "harvard-mpp-00",
+  "school": "Harvard University",
+  "program": "Master in Public Policy (MPP)",
+  "source_url": "https://www.hks.harvard.edu/educational-programs/masters-programs/master-public-policy",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Harvard Kennedy School MPP prepares students to understand complex public problems and craft concrete solutions through a cross‑disciplinary core and applied learning."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core competencies in Economics and Quantitative Analysis",
+        "Ethics and Applied History",
+        "Financial Management and Negotiation",
+        "Policy Design and Delivery; Politics"
+      ],
+      "text": "Year one centers on cross‑disciplinary fundamentals and core competencies; students build skills in economics, data analysis, leadership, and policy craft."
+    }
+  ]
+}

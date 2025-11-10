@@ -1,0 +1,36 @@
+{
+  "id": "stanford-me-ms-00",
+  "school": "Stanford University",
+  "program": "Master of Science in Mechanical Engineering (MS)",
+  "source_url": "https://bulletin.stanford.edu/programs/ME-MS",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Stanford ME MS builds depth in mechanical engineering with a customizable program that prepares students for advanced practice or doctoral study."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Minimum of 45 units",
+        "At least 15 units of 200‑level ME lecture courses",
+        "Approved plan of study with faculty adviser",
+        "Optional Engineer degree beyond MS"
+      ],
+      "text": "Students complete graduate‑level ME coursework with advising; some pursue the Engineer degree for additional specialization."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "BS in engineering, physics, or comparable science field expected",
+        "Submission of all application materials by the deadline",
+        "Meet departmental unit and distribution policies"
+      ],
+      "text": "Applicants should have appropriate undergraduate preparation and submit a complete application; degree progress follows Bulletin rules."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter roles in product design, energy, robotics, biomechanics, and R&D, or continue to PhD programs."
+    }
+  ]
+}

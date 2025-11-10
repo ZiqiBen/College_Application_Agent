@@ -1,0 +1,36 @@
+{
+  "id": "princeton-mpa-00",
+  "school": "Princeton University",
+  "program": "Master in Public Affairs (MPA)",
+  "source_url": "https://spia.princeton.edu/graduate-programs/mpa",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Princeton School of Public and International Affairs offers the MPA to prepare students for leadership in public service, combining rigorous social science training with a focus on real-world policy impact."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in economics, politics, and quantitative methods",
+        "Policy workshops addressing real client problems",
+        "Electives across Princeton’s departments",
+        "Second-year independent research project"
+      ],
+      "text": "The two-year program features core courses in economics, politics, and quantitative methods, plus policy workshops and electives across the University."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full-time, two-year program",
+        "Previous public policy or related experience recommended",
+        "Strong quantitative preparation"
+      ],
+      "text": "Applicants are expected to demonstrate public service motivation, leadership, and quantitative readiness."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates hold leadership positions in government, international organizations, nonprofits, and academia worldwide."
+    }
+  ]
+}

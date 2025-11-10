@@ -1,0 +1,37 @@
+{
+  "id": "rice-mba-00",
+  "school": "Rice University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://business.rice.edu/graduate-programs/mba",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Rice Business MBA cultivates principled leaders with strong analytical, strategic, and entrepreneurial skills to address complex global challenges."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "First-year core in management, finance, accounting, leadership",
+        "Second-year electives, experiential learning, and global field experiences",
+        "Leadership and professional development",
+        "Action Learning Project capstones"
+      ],
+      "text": "The MBA curriculum combines foundational courses with experiential learning, electives, and leadership labs."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Undergraduate degree",
+        "GMAT/GRE optional",
+        "Transcripts, resume, essays, recommendation",
+        "English proficiency for non-native speakers"
+      ],
+      "text": "Applicants must hold a bachelor's degree and submit transcripts, essays, resume, and a recommendation; GMAT/GRE optional."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue leadership roles in consulting, finance, energy, technology, and entrepreneurship."
+    }
+  ]
+}

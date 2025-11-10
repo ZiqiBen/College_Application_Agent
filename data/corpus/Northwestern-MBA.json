@@ -1,0 +1,36 @@
+{
+  "id": "northwestern-mba-00",
+  "school": "Northwestern University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Kellogg’s MBA develops courageous, collaborative leaders through a team-based, experiential curriculum with deep analytical and strategic foundations."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in accounting, economics, finance, leadership, strategy, operations, and marketing",
+        "Majors and pathways (e.g., Data Analytics, Entrepreneurship, Healthcare, Management Science)",
+        "Experiential learning: Global Initiatives in Management, Lab courses, and field projects",
+        "Career & leadership development integrated across two-year program"
+      ],
+      "text": "Students build business breadth through the core, then customize majors and pathways with extensive electives and experiential opportunities."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full-time two-year program (or 1Y option)",
+        "Completion of core and elective credits per Kellogg policy",
+        "Application with essays, recommendations, and transcripts"
+      ],
+      "text": "Degree completion requires core plus electives; admissions follow Kellogg’s holistic review with required application materials."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates assume leadership roles across consulting, technology, finance, healthcare, and consumer industries with a strong global alumni network."
+    }
+  ]
+}

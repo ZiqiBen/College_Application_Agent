@@ -1,0 +1,25 @@
+{
+  "id": "jhu-ms-businessanalytics-ai-00",
+  "school": "Johns Hopkins University Carey Business School",
+  "program": "Master of Science in Business Analytics and Artificial Intelligence",
+  "source_url": "https://carey.jhu.edu/programs/master-science-programs/ms-business-analytics-artificial-intelligence",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The full‑time STEM‑designated MS in Business Analytics and Artificial Intelligence equips students with advanced quantitative, technical, and analytical skills, grounding them in business analytics and cutting‑edge AI methodologies to tackle complex business challenges."
+    },
+    {
+      "type": "curriculum",
+      "text": "The curriculum emphasizes machine learning, artificial intelligence, and analytics consulting projects to help students gain hands‑on experience solving real business problems."
+    },
+    {
+      "type": "requirements",
+      "text": "As a full‑time, one‑year program located in Washington, D.C., this STEM‑designated degree is intended for recent graduates and early‑career professionals seeking technical and analytic expertise."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates emerge with capabilities to apply AI and analytics for strategic, data‑driven decision‑making in volatile business environments."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "duke-msn-00",
+  "school": "Duke University",
+  "program": "Master of Science in Nursing (MSN)",
+  "source_url": "https://nursing.duke.edu/academic-programs/master-science-nursing",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Duke’s MSN prepares advanced practice nurses and nurse leaders through specialty tracks that integrate evidence-based clinical training with leadership and interprofessional collaboration."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in advanced pathophysiology, pharmacology, and health assessment",
+        "Specialty tracks (e.g., NP specialties, Nursing & Healthcare Leadership)",
+        "Clinical practica and simulation experiences",
+        "Scholarly or synthesis project"
+      ],
+      "text": "Students complete advanced nursing core and specialty coursework with supervised clinical hours and a culminating project."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "BSN or equivalent and active RN license (for most specialty tracks)",
+        "Completion of required credits and clinical hours",
+        "Program and specialty-specific admissions criteria"
+      ],
+      "text": "Applicants must meet nursing licensure and academic prerequisites; graduation requires completion of credits and clinical experiences."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates become advanced practice clinicians and leaders in health systems, community health, and specialized care settings."
+    }
+  ]
+}

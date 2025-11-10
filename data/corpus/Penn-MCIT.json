@@ -1,0 +1,35 @@
+{
+  "id": "penn-mcit-00",
+  "school": "University of Pennsylvania",
+  "program": "Master of Computer and Information Technology (MCIT)",
+  "source_url": "https://www.cis.upenn.edu/graduate/program-offerings/mcit/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Penn Engineering’s MCIT provides a rigorous computer science master’s pathway for students without prior CS degrees, preparing them for software and data careers."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Foundations: programming languages, data structures/algorithms, systems, and mathematics for CS",
+        "Electives in databases, machine learning, networks, and software engineering",
+        "Capstone or advanced project opportunities"
+      ],
+      "text": "Students build CS foundations and pursue advanced electives across core areas with options for project‑based learning."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in any field",
+        "Strong quantitative aptitude; prerequisites as advised",
+        "Completion of required core and elective credits"
+      ],
+      "text": "Admission welcomes non‑CS backgrounds; graduation requires completing core and approved electives per program policy."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates transition into software engineering, data science, product engineering, and related technical roles."
+    }
+  ]
+}

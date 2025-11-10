@@ -1,0 +1,23 @@
+{
+  "id": "caltech-ee-ms-00",
+  "school": "California Institute of Technology (Caltech)",
+  "program": "Master of Science in Electrical Engineering (MS)",
+  "source_url": "https://www.ee.caltech.edu/academics/grad",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Caltech’s EE graduate program offers flexible, research‑aligned master’s study across circuits, signal processing, communications, and related areas."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Total of 135 units (max 30 pass/fail)",
+        "At least 54 units of letter‑graded EE courses (100+ level)",
+        "27 units of mathematics courses (minimum grade C)",
+        "18 units of research directed by advisor"
+      ],
+      "text": "Degree plans include EE lecture coursework, mathematics, and advisor‑directed research units within the 135‑unit requirement."
+    }
+  ]
+}

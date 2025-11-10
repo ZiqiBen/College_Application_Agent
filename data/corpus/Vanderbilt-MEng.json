@@ -1,0 +1,36 @@
+{
+  "id": "Vanderbilt-MEng",
+  "school": "Vanderbilt University",
+  "program": "Master of Engineering (M.Eng.)",
+  "source_url": "https://engineering.vanderbilt.edu/grad/admissions.php",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Vanderbilt M.Eng. programs emphasize advanced technical preparation and professional practice across engineering disciplines."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate courses in engineering specialty",
+        "Professional skills electives",
+        "Capstone project or internship"
+      ],
+      "text": "Students complete advanced engineering coursework tailored to discipline plus practice‑oriented experiences."
+    },
+    {
+      "type": "admissions_requirements",
+      "items": [
+        "Bachelor’s degree in engineering or related STEM",
+        "Minimum B average in undergraduate coursework",
+        "Application with transcripts, statement, letters",
+        "GRE not required"
+      ],
+      "text": "Applicants must have an engineering or STEM background with solid academics; GRE is not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue professional engineering practice, management, or doctoral study."
+    }
+  ]
+}

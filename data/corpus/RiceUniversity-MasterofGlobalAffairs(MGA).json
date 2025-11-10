@@ -1,0 +1,37 @@
+{
+  "id": "rice-mga-00",
+  "school": "Rice University",
+  "program": "Master of Global Affairs (MGA)",
+  "source_url": "https://mga.rice.edu/apply",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Rice’s MGA trains future global leaders in diplomacy, development, and governance, combining policy education with practical training."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in international politics and economics",
+        "Electives in security, development, energy, or environment",
+        "Policy workshops with Rice’s Baker Institute",
+        "Capstone applied project"
+      ],
+      "text": "The MGA blends classroom study with policy workshops, applied capstones, and electives in global issue areas."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Transcripts, resume, statement of purpose",
+        "Three letters of recommendation",
+        "English proficiency if applicable; GRE/GMAT not required"
+      ],
+      "text": "Applicants must provide transcripts, essays, recommendations, and English proficiency scores if non-native; GRE/GMAT not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in diplomacy, government, NGOs, international development, and global corporations."
+    }
+  ]
+}

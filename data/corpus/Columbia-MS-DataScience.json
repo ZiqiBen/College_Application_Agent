@@ -1,0 +1,36 @@
+{
+  "id": "columbia-ms-ds-00",
+  "school": "Columbia University",
+  "program": "Master of Science in Data Science (MS)",
+  "source_url": "https://datascience.columbia.edu/education/programs/master-of-science-in-data-science/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Columbia’s MS in Data Science trains students to build and apply data‑driven methods, combining computer science, statistics, and domain expertise."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in machine learning, probability/statistics, and algorithms",
+        "Electives in specialized domains and tools",
+        "Capstone or applied project options",
+        "Ethics and responsible data practices"
+      ],
+      "text": "Students complete core technical courses, select electives, and undertake applied work with attention to responsible data use."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Minimum program credits per DSI policy",
+        "Undergraduate preparation in CS, math, and statistics recommended",
+        "Capstone or project completion as specified"
+      ],
+      "text": "Admission and completion requirements follow the Data Science Institute’s policies and recommended preparation."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in data science, machine learning engineering, analytics, and research across industries."
+    }
+  ]
+}

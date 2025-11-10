@@ -1,0 +1,36 @@
+{
+  "id": "stanford-cs-ms-00",
+  "school": "Stanford University",
+  "program": "Master of Science in Computer Science (MS)",
+  "source_url": "https://bulletin.stanford.edu/programs/CS-MS",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Stanford’s MS in Computer Science builds depth in a chosen area while ensuring breadth across core CS topics, preparing students for advanced industry or doctoral work."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "45 units minimum (36 graded)",
+        "Core and breadth requirements by track",
+        "Approved electives via program sheet",
+        "GPA minimum of 3.0 in program courses"
+      ],
+      "text": "Students complete at least 45 units with specific core and breadth requirements and maintain program GPA standards."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Strong quantitative background; CS bachelor’s not required",
+        "Online application with transcripts and materials",
+        "Foundation prerequisites as advised by department"
+      ],
+      "text": "Applicants should demonstrate quantitative readiness; admission follows the department’s master’s guidelines."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles in software engineering, AI/ML, systems, and research, or continue to PhD study."
+    }
+  ]
+}

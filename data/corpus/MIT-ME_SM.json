@@ -1,0 +1,36 @@
+{
+  "id": "mit-me-sm-00",
+  "school": "Massachusetts Institute of Technology (MIT)",
+  "program": "Master of Science in Mechanical Engineering (SM)",
+  "source_url": "https://meche.mit.edu/sites/default/files/MechE_Grad_Guide.pdf",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "MIT MechE’s SM program provides advanced study and research training in mechanical engineering, culminating in a thesis that addresses real engineering problems."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate subjects in Mechanical Engineering",
+        "Approved mathematics graduate subject",
+        "Research leading to SM thesis",
+        "Department seminars as applicable"
+      ],
+      "text": "Students take graduate‑level subjects, complete approved math coursework, and conduct research culminating in a written thesis."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Thesis proposal and approved SM thesis",
+        "Program planning with faculty advisor",
+        "Satisfactory progress per department policies"
+      ],
+      "text": "The SM requires a formal thesis under faculty supervision and adherence to departmental academic policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates advance to R&D, product design, and doctoral study in mechanical and allied fields."
+    }
+  ]
+}

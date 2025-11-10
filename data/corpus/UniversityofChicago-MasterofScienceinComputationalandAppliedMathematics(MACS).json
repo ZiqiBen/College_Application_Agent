@@ -1,0 +1,36 @@
+{
+  "id": "uchicago-macs-00",
+  "school": "University of Chicago",
+  "program": "Master of Science in Computational and Applied Mathematics (MACS)",
+  "source_url": "https://cam.uchicago.edu/graduate/ms-degree/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MACS program equips students with computational, applied mathematics, and modeling skills for data-intensive science and engineering."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in numerical analysis and modeling",
+        "Electives across applied mathematics",
+        "Capstone project or thesis",
+        "Research seminars"
+      ],
+      "text": "Students complete a rigorous set of courses in numerical methods, applied math, and modeling with research and capstone options."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in mathematics, statistics, or related field",
+        "Application with GRE optional",
+        "Completion of required coursework and capstone"
+      ],
+      "text": "Applicants are expected to have strong quantitative backgrounds; GRE is optional."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue research, PhD study, or roles in quantitative industries such as finance and technology."
+    }
+  ]
+}

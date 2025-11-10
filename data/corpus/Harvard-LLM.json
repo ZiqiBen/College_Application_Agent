@@ -1,0 +1,22 @@
+{
+  "id": "harvard-llm-00",
+  "school": "Harvard University",
+  "program": "Master of Laws (LL.M.)",
+  "source_url": "https://hls.harvard.edu/graduate-program/ll-m-program/ll-m-degree-overview/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Harvard Law School’s LL.M. is a one‑year degree for students from around the world to design a personalized course of study within parameters set by the HLS faculty."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "One‑year program; typically 23–28 credits completed",
+        "Exposure to U.S. law and a substantial writing experience",
+        "Curricular planning within HLS faculty parameters"
+      ],
+      "text": "Students complete 23–28 credits in one academic year and fulfill exposure to U.S. law and writing expectations while tailoring their studies."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "princeton-mar-00",
+  "school": "Princeton University",
+  "program": "Master of Architecture (M.Arch)",
+  "source_url": "https://soa.princeton.edu/graduate-programs/master-architecture",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The M.Arch at Princeton’s School of Architecture prepares students for advanced architectural practice, emphasizing design innovation, history, theory, and building technology."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Design studios across four semesters",
+        "Courses in history and theory of architecture",
+        "Building technology and structures",
+        "Final design thesis project"
+      ],
+      "text": "The three-year curriculum integrates design studios, history/theory, and technical training, culminating in a thesis project."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Three-year professional degree program",
+        "Bachelor’s degree in any field; prior architecture studies not required",
+        "Portfolio submission mandatory"
+      ],
+      "text": "Admission requires a portfolio and evidence of creative ability; prior architectural study is not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in architectural practice, urban design, research, and academia."
+    }
+  ]
+}

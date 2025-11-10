@@ -1,0 +1,35 @@
+{
+  "id": "dartmouth-ms-eng-00",
+  "school": "Dartmouth College",
+  "program": "Master of Science (MS) in Engineering – Thayer School of Engineering",
+  "source_url": "https://engineering.dartmouth.edu/graduate/ms",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MS in Engineering provides advanced study and research training in engineering, culminating in a thesis under faculty supervision."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate-level engineering coursework",
+        "Approved mathematics/science electives",
+        "Original research thesis"
+      ],
+      "text": "Students combine advanced coursework with independent research culminating in a thesis."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in engineering, physics, or related science",
+        "GRE optional",
+        "TOEFL/IELTS for international students"
+      ],
+      "text": "Applicants must demonstrate strong technical preparation, typically through an undergraduate engineering or related science degree."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates continue into PhD programs or R&D careers in technology and engineering."
+    }
+  ]
+}

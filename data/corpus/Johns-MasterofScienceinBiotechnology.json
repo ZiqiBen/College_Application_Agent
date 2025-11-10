@@ -1,0 +1,25 @@
+{
+  "id": "jhu-msbiotech-00",
+  "school": "Johns Hopkins University Krieger School of Arts & Sciences (Advanced Academic Programs)",
+  "program": "Master of Science in Biotechnology",
+  "source_url": "https://advanced.jhu.edu/academics/graduate/ms-biotechnology/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MS in Biotechnology provides a comprehensive foundation in biochemistry, molecular biology, and product development while offering tracks in enterprise, regulatory affairs, and drug discovery."
+    },
+    {
+      "type": "curriculum",
+      "text": "Students complete a multidisciplinary curriculum covering molecular biology, bioprocessing, regulatory science, and biotechnology enterprise, with options for flexible online and onsite study."
+    },
+    {
+      "type": "requirements",
+      "text": "Applicants must hold a relevant undergraduate degree in biology or related field; the program requires core coursework and electives across biotechnology areas."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates advance into biotechnology industry roles, research labs, and regulatory and policy positions."
+    }
+  ]
+}

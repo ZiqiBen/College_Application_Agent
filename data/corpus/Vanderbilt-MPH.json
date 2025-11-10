@@ -1,0 +1,37 @@
+{
+  "id": "Vanderbilt-MPH",
+  "school": "Vanderbilt University",
+  "program": "Master of Public Health (MPH)",
+  "source_url": "https://medschool.vanderbilt.edu/mph/admissions/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Vanderbilt MPH prepares leaders to improve population health through evidence‑based practice, policy, and research."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in biostatistics, epidemiology, health policy",
+        "Track‑specific electives",
+        "Practicum experience",
+        "Capstone project"
+      ],
+      "text": "Students complete public health core coursework, electives by concentration, and applied practicum and capstone experiences."
+    },
+    {
+      "type": "admissions_requirements",
+      "items": [
+        "Bachelor’s degree (any discipline)",
+        "Application with transcripts and personal statement",
+        "GRE optional",
+        "Professional/academic experience recommended"
+      ],
+      "text": "Applicants must hold a bachelor’s degree; experience in health or related fields is recommended but not required."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in public health practice, research, government, and NGOs."
+    }
+  ]
+}

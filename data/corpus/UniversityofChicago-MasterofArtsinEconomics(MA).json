@@ -1,0 +1,36 @@
+{
+  "id": "uchicago-maecon-00",
+  "school": "University of Chicago",
+  "program": "Master of Arts in Economics (MA)",
+  "source_url": "https://economics.uchicago.edu/graduate/masters-program",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The MA in Economics prepares students with rigorous training in economic theory, econometrics, and quantitative analysis for research and applied careers."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core microeconomics and macroeconomics",
+        "Econometrics sequence",
+        "Mathematical methods",
+        "Electives in applied economics fields"
+      ],
+      "text": "Students complete core courses in theory and econometrics, with electives spanning applied fields of economics."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in economics, math, or related field",
+        "Application with transcripts, recommendations, and materials",
+        "GRE may be required"
+      ],
+      "text": "Applicants should have a quantitative foundation; some may be required to submit GRE scores."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates advance to PhD programs in economics or work in consulting, finance, and policy analysis."
+    }
+  ]
+}

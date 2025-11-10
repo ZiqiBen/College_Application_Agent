@@ -1,0 +1,40 @@
+{
+  "id": "brown-bme-ms-00",
+  "school": "Brown University",
+  "program": "Master of Science in Biomedical Engineering (MS)",
+  "source_url": "https://engineering.brown.edu/graduate/masters/biomedical-engineering",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Brown’s Biomedical Engineering MS provides advanced interdisciplinary training at the interface of engineering, biology, and medicine."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate-level engineering and biomedical coursework",
+        "Electives in tissue engineering, biomaterials, imaging, and biomechanics",
+        "Thesis or design project option",
+        "Seminars and professional development"
+      ],
+      "text": "Students combine core and elective courses with laboratory or design research to advance biomedical innovation."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in engineering, physical sciences, or life sciences",
+        "Demonstrated quantitative and scientific background",
+        "Transcripts",
+        "Three letters of recommendation",
+        "Statement of purpose",
+        "TOEFL/IELTS for international students",
+        "GRE optional"
+      ],
+      "text": "Admission requires a strong foundation in engineering or sciences, academic references, and a demonstrated commitment to biomedical research."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue careers in biotech, medical devices, or continue into PhD programs."
+    }
+  ]
+}

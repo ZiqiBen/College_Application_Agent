@@ -1,0 +1,22 @@
+{
+  "id": "yale-cs-ms-00",
+  "school": "Yale University",
+  "program": "Master of Science in Computer Science (MS)",
+  "source_url": "https://seas.yale.edu/academics/graduate-programs/graduate-program-computer-science",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Yale’s MS in Computer Science provides advanced training in core and specialized areas of computing, preparing students for technical careers or further doctoral study."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate‑level coursework across algorithms, systems, AI, and theory",
+        "Course‑based or research‑informed study plan",
+        "Opportunities to take courses across Yale"
+      ],
+      "text": "Students complete graduate‑level CS courses with flexibility to focus on subfields such as AI, systems, and theory, alongside cross‑disciplinary opportunities."
+    }
+  ]
+}

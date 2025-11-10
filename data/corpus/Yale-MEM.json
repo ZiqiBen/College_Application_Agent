@@ -1,0 +1,23 @@
+{
+  "id": "yale-mem-00",
+  "school": "Yale University",
+  "program": "Master of Environmental Management (MEM)",
+  "source_url": "https://environment.yale.edu/degree-programs/master-environmental-management",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Yale School of the Environment’s MEM trains professionals to lead on environmental and sustainability challenges across sectors."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Interdisciplinary coursework spanning science, policy, and management",
+        "Specialization tracks and electives",
+        "Summer internship or applied project",
+        "Capstone or portfolio requirement"
+      ],
+      "text": "Students craft an interdisciplinary plan of study with specializations and experiential opportunities that culminate in a capstone or portfolio."
+    }
+  ]
+}

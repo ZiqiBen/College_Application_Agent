@@ -1,0 +1,40 @@
+{
+  "id": "brown-maa-00",
+  "school": "Brown University",
+  "program": "Master of Arts in Economics (AM)",
+  "source_url": "https://economics.brown.edu/graduate/masters",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Brown’s MA in Economics trains students in advanced economic theory, econometrics, and applied analysis, preparing them for research or policy careers."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core coursework in microeconomics, macroeconomics, and econometrics",
+        "Electives in applied micro, development, and finance",
+        "Research paper requirement",
+        "Seminars and workshops"
+      ],
+      "text": "Students receive rigorous training in economics fundamentals and conduct applied research under faculty guidance."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree with strong background in economics or math",
+        "Coursework in calculus, linear algebra, and statistics",
+        "Transcripts",
+        "Letters of recommendation",
+        "Statement of purpose",
+        "TOEFL/IELTS for international applicants",
+        "GRE may be required by department"
+      ],
+      "text": "Applicants should have a solid economics and math foundation, research potential, and clear academic motivation."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue positions in consulting, finance, public policy, or continue into PhD studies."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cornell-mba-00",
+  "school": "Cornell University",
+  "program": "Master of Business Administration (MBA)",
+  "source_url": "https://www.johnson.cornell.edu/programs/full-time-mba/two-year-mba/curriculum/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "The Cornell MBA develops principled, insightful leaders prepared for management across industries through a rigorous, customizable program."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "First-year core in general management",
+        "Second-year electives",
+        "Immersion learning",
+        "Global opportunities"
+      ],
+      "text": "The program combines a strong core in management fundamentals with experiential immersions and electives."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree from accredited institution",
+        "Transcripts, resume, essays, one letter of recommendation",
+        "GMAT/GRE required unless waived",
+        "TOEFL/IELTS required for non-native English speakers"
+      ],
+      "text": "Applicants must hold a bachelor’s degree and provide required application materials; GMAT/GRE may be waived."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates assume leadership roles in consulting, finance, technology, and entrepreneurship."
+    }
+  ]
+}

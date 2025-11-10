@@ -1,0 +1,36 @@
+{
+  "id": "stanford-bmi-ms-00",
+  "school": "Stanford University",
+  "program": "Master of Science in Biomedical Informatics (MS)",
+  "source_url": "https://bulletin.stanford.edu/programs/BIOM-MS",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Stanford’s Biomedical Informatics MS emphasizes research‑driven training in computational methods for biomedicine, preparing students to develop novel algorithms and models for biological and clinical data."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core curriculum in biomedical informatics",
+        "Electives tailored to research interests",
+        "Advising by academic and research mentors",
+        "Options for academic (full‑time) or HCP professional track"
+      ],
+      "text": "All students complete core coursework and select electives; academic MS students typically finish in two years with a substantial project or paper."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "GRE not required",
+        "University MS degree policies apply",
+        "Program sheet and advising per BMI handbook"
+      ],
+      "text": "Admission follows program policies without GRE; students adhere to University graduate degree requirements and BMI advising."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates contribute to research and applied informatics in healthcare, biotech, and data‑driven medicine."
+    }
+  ]
+}

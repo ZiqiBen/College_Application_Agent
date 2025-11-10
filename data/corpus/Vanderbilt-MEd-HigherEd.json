@@ -1,0 +1,37 @@
+{
+  "id": "Vanderbilt-MEd-HigherEd",
+  "school": "Vanderbilt University",
+  "program": "M.Ed. in Higher Education Administration",
+  "source_url": "https://peabody.vanderbilt.edu/departments/lpo/academics/higher-education-administration-m-ed/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Peabody’s Higher Education Administration M.Ed. trains professionals to shape policy, leadership, and student affairs in colleges and universities."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in higher education foundations",
+        "Electives in policy, finance, and diversity",
+        "Internships in higher ed organizations"
+      ],
+      "text": "Students complete coursework in educational leadership and policy, plus internships in university and nonprofit settings."
+    },
+    {
+      "type": "admissions_requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Application with transcripts",
+        "2–3 letters of recommendation",
+        "Statement of purpose",
+        "GRE optional"
+      ],
+      "text": "Applicants must hold a bachelor’s degree and submit recommendations and statement; GRE is optional."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates assume roles in student affairs, administration, and policy in higher education."
+    }
+  ]
+}

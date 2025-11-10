@@ -1,0 +1,42 @@
+{
+  "id": "brown-biostat-ms-00",
+  "school": "Brown University",
+  "program": "Master of Science in Biostatistics (ScM)",
+  "source_url": "https://sph.brown.edu/admission-aid/application-requirements",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Brown’s Biostatistics ScM trains students in statistical methods for biomedical and public health applications, with a focus on methodological innovation and applied data analysis."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in probability, inference, and regression",
+        "Electives in statistical computing and survival analysis",
+        "Capstone project or thesis",
+        "Seminar and practicum experiences"
+      ],
+      "text": "Students complete rigorous coursework in theoretical and applied statistics, culminating in applied research or thesis work."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree with strong background in math and probability",
+        "Third semester calculus, linear algebra, probability",
+        "At least one year professional experience for online option",
+        "Transcripts",
+        "Resume/CV",
+        "Personal statement",
+        "Three letters of recommendation",
+        "TOEFL ≥100 iBT or IELTS ≥7.0 for international applicants",
+        "GRE not required"
+      ],
+      "text": "Applicants are expected to have advanced mathematics preparation, recommendations, and clear motivation for biostatistical training."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in health analytics, pharmaceuticals, public health agencies, or pursue doctoral training."
+    }
+  ]
+}

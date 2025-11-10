@@ -1,0 +1,36 @@
+{
+  "id": "duke-mem-00",
+  "school": "Duke University",
+  "program": "Master of Engineering Management (MEM) — Pratt School of Engineering",
+  "source_url": "https://memp.pratt.duke.edu/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Duke’s MEM blends technical depth with business and leadership training to prepare engineers for product, operations, and technology management roles."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core in marketing, finance, management, and intellectual property",
+        "Technical electives across engineering and data/AI topics",
+        "Internship or practicum options",
+        "Professional development seminars"
+      ],
+      "text": "Students complete business-focused core courses plus technical electives; many pursue internships or practicums to apply learning."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s in engineering or related field",
+        "Completion of approved plan of study",
+        "Full-time and distance options available"
+      ],
+      "text": "Admissions expect a technical background; program can be completed full-time on campus or via distance formats."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates take on roles in product management, operations, consulting, data/AI, and engineering leadership."
+    }
+  ]
+}

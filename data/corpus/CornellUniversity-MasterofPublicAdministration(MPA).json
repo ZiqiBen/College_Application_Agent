@@ -1,0 +1,39 @@
+{
+  "id": "cornell-mpa-00",
+  "school": "Cornell University",
+  "program": "Master of Public Administration (MPA)",
+  "source_url": "https://publicpolicy.cornell.edu/masters/mpa/residential/apply/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Cornell’s MPA trains leaders to design and implement evidence-based public policy solutions."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Core courses in public administration",
+        "Electives by concentration",
+        "Professional externship",
+        "Capstone project"
+      ],
+      "text": "Students combine rigorous policy study with applied professional experiences."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree",
+        "Online application with transcripts, resume, SOP, essay",
+        "Two recommendation letters",
+        "GRE not required",
+        "Writing sample and interview",
+        "TOEFL/IELTS required for international students"
+      ],
+      "text": "Applicants must provide transcripts, essays, recommendations, and meet English proficiency requirements."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates enter careers in government, NGOs, and international organizations."
+    }
+  ]
+}

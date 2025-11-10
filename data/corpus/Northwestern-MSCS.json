@@ -1,0 +1,35 @@
+{
+  "id": "northwestern-mscs-00",
+  "school": "Northwestern University",
+  "program": "Master of Science in Computer Science (MSCS)",
+  "source_url": "https://www.mccormick.northwestern.edu/computer-science/academics/graduate/ms-computer-science/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Northwestern’s MSCS provides advanced training in computing foundations and specialized areas to prepare students for technical careers or PhD study."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Graduate coursework across systems, AI/ML, HCI, software engineering, theory, and data management",
+        "Flexible plan of study with adviser guidance",
+        "Project or research opportunities with faculty labs"
+      ],
+      "text": "Students tailor a graduate curriculum spanning core and advanced CS topics, with options for project-based or research experiences."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Bachelor’s degree in CS or related field recommended",
+        "Completion of required graduate credits and distribution per department",
+        "Good academic standing"
+      ],
+      "text": "Admission favors strong computing preparation; completion follows departmental credit and distribution policies."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates work in software engineering, data and AI roles, product engineering, and research, or continue to doctoral programs."
+    }
+  ]
+}

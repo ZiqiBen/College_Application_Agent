@@ -1,0 +1,21 @@
+{
+  "id": "caltech-cs-ms-00",
+  "school": "California Institute of Technology (Caltech)",
+  "program": "Master of Science in Computer Science (MS)",
+  "source_url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computer-science-cs/",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "Caltech’s Computer Science graduate option provides advanced preparation in CS research areas; the MS degree follows Institute master’s policies with coursework and research units."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Minimum 135 units of courses numbered 100+ (including CS 280 research units)",
+        "Course selections balanced with adviser guidance"
+      ],
+      "text": "Students complete at least 135 graduate‑level units, including research units, with course selections planned alongside an adviser."
+    }
+  ]
+}

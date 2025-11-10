@@ -1,0 +1,38 @@
+{
+  "id": "mit-mban-00",
+  "school": "Massachusetts Institute of Technology (MIT)",
+  "program": "Master of Business Analytics (MBAn)",
+  "source_url": "https://mitsloan.mit.edu/master-of-business-analytics/explore-program/mban-curriculum",
+  "last_updated": "2025-08-21",
+  "sections": [
+    {
+      "type": "mission",
+      "text": "MIT Sloan’s MBAn equips students with rigorous analytics, optimization, and machine learning skills to solve high‑impact business problems through a 12‑month, STEM‑designated curriculum."
+    },
+    {
+      "type": "curriculum",
+      "items": [
+        "Machine Learning",
+        "Optimization Methods",
+        "Analytics Edge",
+        "Data Science/Statistics",
+        "Capstone/Analytics Practicum"
+      ],
+      "text": "Students complete a one‑year program combining core coursework in machine learning, optimization, and data science with an industry Analytics Capstone/Practicum."
+    },
+    {
+      "type": "requirements",
+      "items": [
+        "Full‑time 12‑month program; 111–147 total units",
+        "Up to 66 units per term (max 54 from Sloan)",
+        "STEM‑designated degree",
+        "Quantitative preparation expected"
+      ],
+      "text": "The MBAn is an intensive, full‑time program with a prescribed unit load and hands‑on capstone requirements."
+    },
+    {
+      "type": "outcomes",
+      "text": "Graduates pursue roles in data science, analytics, and operations research across technology, consulting, and finance."
+    }
+  ]
+}
