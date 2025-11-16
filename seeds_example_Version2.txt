@@ -1,0 +1,3 @@
+https://cs.stanford.edu/academics/graduate-program
+https://www.eecs.mit.edu/academics/graduate-programs
+# add more program or department URLs, one per line

@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+pydantic
+python-dateutil
+sentence-transformers
+PyMuPDF
+tqdm
