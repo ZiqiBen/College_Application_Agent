@@ -33,7 +33,7 @@ schema:
 {
   "program_name": "string|null",
   "duration": "string|null",
-  "courses": ["string"]|null,
+  "courses": [ { "name": "string", "description": "string|null" } ]|null,
   "tuition": "string|null",
   "application_requirements": "string|null",
   "features": "string|null",
@@ -85,6 +85,12 @@ def validate_and_enrich(extracted: dict, page_text: str) -> dict:
         if v and "text" in v:
             if v["text"] not in page_text:
                 notes += f"snippet_mismatch_{k};"
+    # normalize courses: if LLM returned list of strings, convert to list of dicts
+    courses = extracted.get("courses")
+    if courses and isinstance(courses, list):
+        # if first element is a str, convert whole list
+        if len(courses) > 0 and isinstance(courses[0], str):
+            extracted["courses"] = [{"name": c, "description": None} for c in courses]
     extracted["notes"] = notes if notes else None
     if extracted.get("confidence") is None:
         extracted["confidence"] = 0.5

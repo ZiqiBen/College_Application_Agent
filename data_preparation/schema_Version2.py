@@ -22,10 +22,15 @@ class LLMCall(BaseModel):
     response_raw_path: Optional[str] = None
     cached: bool = False
 
+class Course(BaseModel):
+    name: str
+    description: Optional[str] = None
+
 class ExtractedFields(BaseModel):
     program_name: Optional[str] = None
     duration: Optional[str] = None
-    courses: Optional[List[str]] = None
+    # courses is now a list of Course objects: {"name": "...", "description": "..."}
+    courses: Optional[List[Course]] = None
     tuition: Optional[str] = None
     application_requirements: Optional[str] = None
     features: Optional[str] = None
