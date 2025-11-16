@@ -1,5 +1,4 @@
 from fastapi import FastAPI, HTTPException
-from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
@@ -10,22 +9,26 @@ from bs4 import BeautifulSoup
 # Import both generator systems
 from .generator import generate_all  # Original simple generator (fallback)
 from .multi_agent_generator import generate_all_multi_agent  # New multi-agent system
-# Import both generator systems
-from .generator import generate_all  # Original simple generator (fallback)
-from .multi_agent_generator import generate_all_multi_agent  # New multi-agent system
 from .ingest import ingest_corpus
 from .retriever_bert import build_query, retrieve_topk
-from .retriever_bert import build_query, retrieve_topk
 
-app = FastAPI(title="College App Helper API - Enhanced Multi-Agent System")
-app = FastAPI(title="College App Helper API - Enhanced Multi-Agent System")
+# Import new Writing Agent (LangGraph-based)
+try:
+    from ..writing_agent import create_writing_graph
+    from ..writing_agent.state import DocumentType, create_initial_state
+    from ..writing_agent.graph import generate_document
+    WRITING_AGENT_AVAILABLE = True
+except ImportError as e:
+    print(f"Warning: Writing Agent not available: {e}")
+    WRITING_AGENT_AVAILABLE = False
+
+app = FastAPI(title="College App Helper API - Enhanced Multi-Agent System with LangGraph")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"], 
     allow_headers=["*"],
-
 )
 
 CORPUS_DIR = "data/corpus"
@@ -53,11 +56,25 @@ class GenerateRequest(BaseModel):
     max_iterations: int = 3
     critique_threshold: float = 0.8
     fallback_on_error: bool = True  # Fallback to simple generator if multi-agent fails
-    # Multi-agent system parameters
-    use_multi_agent: bool = True  # Default to using multi-agent system
+
+
+class WritingAgentRequest(BaseModel):
+    """Request model for new Writing Agent (LangGraph-based)"""
+    profile: Profile
+    resume_text: str
+    program_text: Optional[str] = None
+    program_url: Optional[str] = None
+    document_type: str = "personal_statement"  # "personal_statement", "resume_bullets", "recommendation_letter"
+    # LLM configuration
+    llm_provider: str = "openai"  # "openai", "anthropic", "qwen"
+    model_name: Optional[str] = None
+    temperature: float = 0.7
+    # Generation parameters
     max_iterations: int = 3
-    critique_threshold: float = 0.8
-    fallback_on_error: bool = True  # Fallback to simple generator if multi-agent fails
+    quality_threshold: float = 0.85
+    # RAG parameters
+    use_corpus: bool = True
+    retrieval_topk: int = 5
 
 def cache_path(url: str) -> str:
     """Generate cache file path for a given URL using SHA1 hash."""
@@ -320,18 +337,164 @@ def root():
         "endpoints": {
             "/generate": "Main generation endpoint with system selection",
             "/generate/simple": "Force simple generator",
-            "/generate/multi-agent": "Force multi-agent generator", 
+            "/generate/multi-agent": "Force multi-agent generator",
+            "/generate/writing-agent": "NEW: LangGraph-based Writing Agent (v2.0)",
             "/systems/info": "Information about available systems",
             "/health": "Health check"
         },
         "features": [
             "Multi-agent content generation with iterative improvement",
+            "NEW: LangGraph-based Writing Agent with RAG, ReAct, Reflection",
             "Fallback to simple generator for reliability",
             "Detailed quality reports and feedback",
             "Automatic keyword extraction and optimization",
             "Profile validation and warnings"
-        ]
+        ],
+        "writing_agent_available": WRITING_AGENT_AVAILABLE
     }
+
+
+@app.post("/generate/writing-agent")
+def generate_with_writing_agent(req: WritingAgentRequest):
+    """
+    NEW: Generate documents using LangGraph-based Writing Agent.
+    
+    This endpoint uses advanced AI workflows including:
+    - RAG (Retrieval-Augmented Generation)
+    - ReAct (Reasoning + Acting with tools)
+    - Reflection (Self-evaluation)
+    - Reflexion (Memory-enhanced learning)
+    - ReWOO (Plan-Tool-Solve workflow)
+    """
+    
+    if not WRITING_AGENT_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="Writing Agent is not available. Please install required dependencies: langchain, langgraph, langchain-openai"
+        )
+    
+    try:
+        # 1) Get program text
+        program_text = req.program_text or ""
+        fetch_error = None
+        
+        if (not program_text) and req.program_url:
+            try:
+                program_text = polite_fetch(req.program_url)
+            except Exception as e:
+                fetch_error = str(e)
+                program_text = ""
+        
+        if not program_text:
+            error_msg = "No program text provided."
+            if req.program_url:
+                error_msg += f" URL fetch failed: {fetch_error}"
+            error_msg += " Please provide program_text or a valid program_url."
+            raise HTTPException(status_code=400, detail=error_msg)
+        
+        # 2) Prepare program_info dict
+        program_info = {
+            "program_name": "Target Program",  # Extract from program_text if needed
+            "features": program_text[:2000],  # Use first part as features
+            "application_requirements": "",
+            "courses": []
+        }
+        
+        # Try to ingest corpus for RAG
+        corpus = None
+        if req.use_corpus:
+            try:
+                full_corpus = ingest_corpus(CORPUS_DIR)
+                # Simple filtering: use chunks relevant to program_text
+                corpus = {}
+                for chunk_id, chunk_text in list(full_corpus.items())[:50]:  # Limit corpus size
+                    corpus[chunk_id] = chunk_text
+            except Exception as e:
+                print(f"Corpus ingestion failed: {e}")
+                corpus = {"program_text": program_text}
+        
+        # 3) Map document type
+        doc_type_map = {
+            "personal_statement": DocumentType.PERSONAL_STATEMENT,
+            "resume_bullets": DocumentType.RESUME_BULLETS,
+            "recommendation_letter": DocumentType.RECOMMENDATION_LETTER
+        }
+        
+        document_type = doc_type_map.get(req.document_type, DocumentType.PERSONAL_STATEMENT)
+        
+        # 4) Generate using Writing Agent
+        start_time = time.time()
+        
+        result = generate_document(
+            profile=req.profile.dict(),
+            program_info=program_info,
+            document_type=document_type,
+            corpus=corpus,
+            llm_provider=req.llm_provider,
+            model_name=req.model_name,
+            temperature=req.temperature,
+            max_iterations=req.max_iterations,
+            quality_threshold=req.quality_threshold
+        )
+        
+        generation_time = time.time() - start_time
+        
+        # 5) Format response
+        final_document = result.get("final_document", "")
+        quality_report = result.get("quality_report", {})
+        metadata = result.get("metadata", {})
+        
+        # 6) Save output
+        timestamp = int(time.time())
+        doc_type_str = req.document_type
+        
+        output_file = os.path.join(OUT_DIR, f"{doc_type_str}_writing_agent_{timestamp}.md")
+        report_file = os.path.join(OUT_DIR, f"{doc_type_str}_report_{timestamp}.json")
+        
+        try:
+            with open(output_file, "w", encoding="utf-8") as f:
+                f.write(final_document)
+            
+            full_report = {
+                "quality_report": quality_report,
+                "metadata": metadata,
+                "generation_time_seconds": generation_time,
+                "document_type": req.document_type,
+                "llm_provider": req.llm_provider,
+                "model_name": req.model_name,
+                "iterations": result.get("iterations", 0)
+            }
+            
+            with open(report_file, "w", encoding="utf-8") as f:
+                json.dump(full_report, f, indent=2)
+        except Exception as e:
+            print(f"Failed to save output files: {e}")
+        
+        return {
+            "success": True,
+            "document": final_document,
+            "document_type": req.document_type,
+            "quality_report": quality_report,
+            "metadata": metadata,
+            "generation_time_seconds": round(generation_time, 2),
+            "iterations": result.get("iterations", 0),
+            "draft_history_length": len(result.get("draft_history", [])),
+            "output_files": {
+                "document": output_file,
+                "report": report_file
+            }
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        error_detail = {
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }
+        raise HTTPException(status_code=500, detail=error_detail)
+
 
 if __name__ == "__main__":
     # Entry point for running the FastAPI app with uvicorn.

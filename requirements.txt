@@ -7,3 +7,28 @@ scikit-learn>=1.3
 numpy>=1.24
 sentence-transformers>=2.2
 torch>=2.0
+
+# LangChain & LangGraph for Writing Agent
+langchain>=0.1.0
+langgraph>=0.0.40
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+langchain-community>=0.0.20
+
+# LLM Providers
+openai>=1.10.0
+anthropic>=0.18.0
+
+# Vector Store for RAG
+faiss-cpu>=1.7.4
+chromadb>=0.4.22
+
+# Additional utilities
+tiktoken>=0.5.2
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+python-dateutil>=2.8.0
+tqdm>=4.65.0
+
+# Data Preparation utilities
+PyMuPDF>=1.23.0
