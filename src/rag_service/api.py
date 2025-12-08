@@ -12,6 +12,15 @@ from .multi_agent_generator import generate_all_multi_agent  # New multi-agent s
 from .ingest import ingest_corpus
 from .retriever_bert import build_query, retrieve_topk
 
+# Import Matching Service
+from ..matching_service import (
+    ProgramMatcher,
+    MatchingRequest,
+    MatchingResponse,
+    ProgramMatchResponse,
+    DimensionScoreResponse
+)
+from ..matching_service.explainer import MatchExplainer
 # Import new Writing Agent (LangGraph-based)
 try:
     from ..writing_agent import create_writing_graph
@@ -34,6 +43,15 @@ app.add_middleware(
 CORPUS_DIR = "data/corpus"
 OUT_DIR = "out"
 os.makedirs(OUT_DIR, exist_ok=True)
+
+# Initialize Program Matcher
+try:
+    PROGRAM_MATCHER = ProgramMatcher(corpus_dir=CORPUS_DIR)
+    MATCHER_AVAILABLE = True
+    print(f"✅ Program Matcher initialized with {len(PROGRAM_MATCHER.programs)} programs")
+except Exception as e:
+    print(f"⚠️  Warning: Program matcher initialization failed: {e}")
+    MATCHER_AVAILABLE = False
 
 class Profile(BaseModel):
     name: str
@@ -350,7 +368,8 @@ def root():
             "Automatic keyword extraction and optimization",
             "Profile validation and warnings"
         ],
-        "writing_agent_available": WRITING_AGENT_AVAILABLE
+        "writing_agent_available": WRITING_AGENT_AVAILABLE,
+        "matching_service_available": MATCHER_AVAILABLE
     }
 
 
@@ -495,6 +514,270 @@ def generate_with_writing_agent(req: WritingAgentRequest):
         }
         raise HTTPException(status_code=500, detail=error_detail)
 
+# ============================================================
+# MATCHING SERVICE ENDPOINTS 
+# ============================================================
+
+@app.post("/match/programs", response_model=MatchingResponse)
+def match_programs(request: MatchingRequest):
+    """
+    Match student profile with suitable programs
+    
+    Analyzes student background across 5 dimensions:
+    - Academic (GPA, major, coursework)
+    - Skills (technical skills match)
+    - Experience (work/project relevance)
+    - Goals (career alignment)
+    - Requirements (hard requirements compliance)
+    
+    Returns ranked programs with detailed scores and recommendations.
+    """
+    
+    if not MATCHER_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="Program matching service is not available. Please ensure corpus is loaded."
+        )
+    
+    try:
+        start_time = time.time()
+        
+        # Validate profile
+        profile = request.profile
+        if not profile.get("major") or not profile.get("gpa"):
+            raise HTTPException(
+                status_code=400,
+                detail="Profile must include at least 'major' and 'gpa' fields"
+            )
+        
+        # Perform matching
+        result = PROGRAM_MATCHER.match_programs(
+            profile=profile,
+            top_k=request.top_k,
+            min_score=request.min_score,
+            custom_weights=request.custom_weights,
+            filters=request.filters
+        )
+        
+        # Optionally enhance explanations with LLM
+        if request.use_llm_explanation:
+            try:
+                explainer = MatchExplainer(
+                    llm_provider=os.getenv("WRITING_AGENT_LLM_PROVIDER", "openai"),
+                    use_llm=True
+                )
+                
+                for match in result.matches:
+                    enhanced_explanation = explainer.generate_detailed_explanation(
+                        profile=profile,
+                        program={
+                            "name": match.program_name,
+                            "university": match.university,
+                            "focus_areas": [],
+                        },
+                        overall_score=match.overall_score,
+                        dimension_scores=match.dimension_scores,
+                        strengths=match.strengths,
+                        gaps=match.gaps
+                    )
+                    match.explanation = enhanced_explanation
+            except Exception as e:
+                print(f"Warning: LLM explanation enhancement failed: {e}")
+        
+        processing_time = time.time() - start_time
+        
+        # Convert to response format
+        matches_response = [
+            ProgramMatchResponse(
+                program_id=m.program_id,
+                program_name=m.program_name,
+                university=m.university,
+                overall_score=round(m.overall_score, 3),
+                match_level=m.match_level.value,
+                dimension_scores={
+                    dim: DimensionScoreResponse(
+                        dimension=score.dimension,
+                        score=round(score.score, 3),
+                        weight=score.weight,
+                        details=score.details,
+                        contributing_factors=score.contributing_factors
+                    )
+                    for dim, score in m.dimension_scores.items()
+                },
+                strengths=m.strengths,
+                gaps=m.gaps,
+                recommendations=m.recommendations,
+                explanation=m.explanation,
+                metadata=m.metadata
+            )
+            for m in result.matches
+        ]
+        
+        response = MatchingResponse(
+            success=True,
+            message=f"Found {len(result.matches)} matching programs",
+            student_profile_summary=result.student_profile_summary,
+            total_programs_evaluated=result.total_programs_evaluated,
+            matches=matches_response,
+            overall_insights=result.overall_insights,
+            matching_timestamp=result.matching_timestamp,
+            processing_time_seconds=round(processing_time, 2)
+        )
+        
+        return response
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        print(f"Error in program matching: {e}")
+        print(traceback.format_exc())
+        raise HTTPException(
+            status_code=500,
+            detail=f"Program matching failed: {str(e)}"
+        )
+
+
+@app.get("/match/info")
+def matching_info():
+    """
+    Get information about the matching service
+    
+    Returns:
+    - Number of programs available
+    - Matching dimensions and weights
+    - Example usage
+    """
+    
+    if not MATCHER_AVAILABLE:
+        return {
+            "available": False,
+            "message": "Matching service not initialized"
+        }
+    
+    return {
+        "available": True,
+        "programs_loaded": len(PROGRAM_MATCHER.programs),
+        "matching_dimensions": {
+            "academic": {
+                "weight": 0.30,
+                "factors": ["GPA", "Major relevance", "Coursework"]
+            },
+            "skills": {
+                "weight": 0.25,
+                "factors": ["Required skills coverage", "Skill breadth"]
+            },
+            "experience": {
+                "weight": 0.20,
+                "factors": ["Experience quantity", "Relevance", "Impact"]
+            },
+            "goals": {
+                "weight": 0.15,
+                "factors": ["Goal alignment", "Clarity"]
+            },
+            "requirements": {
+                "weight": 0.10,
+                "factors": ["GPA requirement", "Language tests", "Prerequisites"]
+            }
+        },
+        "default_top_k": 5,
+        "default_min_score": 0.5,
+        "supports_custom_weights": True,
+        "supports_llm_explanations": True,
+        "example_request": {
+            "profile": {
+                "name": "Jane Doe",
+                "major": "Data Science",
+                "gpa": 3.7,
+                "skills": ["Python", "Machine Learning", "SQL"],
+                "experiences": [
+                    {
+                        "title": "Data Analyst",
+                        "org": "Tech Corp",
+                        "impact": "Improved model accuracy by 15%",
+                        "skills": ["Python", "TensorFlow"]
+                    }
+                ],
+                "goals": "Apply ML to healthcare analytics"
+            },
+            "top_k": 5,
+            "min_score": 0.6,
+            "use_llm_explanation": True
+        }
+    }
+
+
+@app.post("/match/compare")
+def compare_programs(profile: dict, program_ids: List[str]):
+    """
+    Compare specific programs for a student profile
+    
+    Args:
+    - profile: Student profile dictionary
+    - program_ids: List of program IDs to compare
+    
+    Returns:
+    - Side-by-side comparison of programs
+    """
+    
+    if not MATCHER_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="Matching service not available"
+        )
+    
+    try:
+        comparisons = []
+        
+        for program_id in program_ids:
+            if program_id not in PROGRAM_MATCHER.programs:
+                continue
+            
+            program = PROGRAM_MATCHER.programs[program_id]
+            
+            # Score this specific program
+            dimension_scores = {
+                "academic": PROGRAM_MATCHER.scorer.score_academic(profile, program),
+                "skills": PROGRAM_MATCHER.scorer.score_skills(profile, program),
+                "experience": PROGRAM_MATCHER.scorer.score_experience(profile, program),
+                "goals": PROGRAM_MATCHER.scorer.score_goals(profile, program),
+                "requirements": PROGRAM_MATCHER.scorer.score_requirements(profile, program)
+            }
+            
+            overall_score = PROGRAM_MATCHER.scorer.compute_overall_score(dimension_scores)
+            
+            comparisons.append({
+                "program_id": program_id,
+                "program_name": program["name"],
+                "university": program["university"],
+                "overall_score": round(overall_score, 3),
+                "dimension_scores": {
+                    dim: {
+                        "score": round(score.score, 3),
+                        "factors": score.contributing_factors[:2]
+                    }
+                    for dim, score in dimension_scores.items()
+                }
+            })
+        
+        # Sort by score
+        comparisons.sort(key=lambda x: x["overall_score"], reverse=True)
+        
+        return {
+            "success": True,
+            "comparisons": comparisons,
+            "best_match": comparisons[0] if comparisons else None
+        }
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Comparison failed: {str(e)}"
+        )
+
+# ============================================================
+# END OF MATCHING SERVICE ENDPOINTS
+# ============================================================
 
 if __name__ == "__main__":
     # Entry point for running the FastAPI app with uvicorn.
