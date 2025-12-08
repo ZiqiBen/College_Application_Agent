@@ -1,0 +1,107 @@
+{
+  "id": "bulletins.nyu.edu_8b60942befdc",
+  "source_url": "https://bulletins.nyu.edu/graduate/arts-science/programs/chemistry-ms/",
+  "raw_snapshot_path": "out/cache\\20251207T212816Z_8b60942befdc.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:28:29.189778",
+  "checksum": "8b60942befdccf0b6589bd472bb6b253ced9a071e5b347a6184b97730cf7a074",
+  "language": "English",
+  "title": "Chemistry (MS) | NYU Bulletins",
+  "raw_text": "Department Website\nTaxonomy Codes\nNYSED:\n08339\nHEGIS:\n1905.00\nCIP:\n40.0501\nOn This Page\nProgram Description\nAdmissions\nProgram Description\nThis degree is designed for students who have decided not to pursue a PhD.  The department views the master's degree as a terminal degree that usually takes about 3-4 semesters of coursework and research to achieve.\nAdmissions\nAll applicants to the Graduate School of Arts and Science (GSAS) are required to submit the\ngeneral application requirements\n, which include:\nAcademic Transcripts\nTest Scores\n(if required)\nApplicant Statements\nRésumé or Curriculum Vitae\nLetters of Recommendation\n, and\nA non-refundable\napplication fee\n.\nSee\nChemistry\nfor admission requirements and instructions specific to this program.\nProgram Requirements\nStudents must satisfactorily complete 32 credits (minimum of 24 credits while in residence at New York University) with a GPA of 3.0 or better with no single class grade below B-. Students are required to take a 0-credit course\nCHEM-GA 2673\nProfessional Development\n. During the first semester in residence and the\nCHEM-GA 3010\nGraduate Seminar in the fall semester of their second year. Students must attend a minimum of ten (10) colloquia/seminars prior to graduation. Courses taken outside of the Chemistry Department must be approved by the Director of Graduate Studies.\nStudents may choose one of the two paths detailed below:\nThesis Path\nIn their first semester students must chose an advisor by submitting the\nMaster's Thesis Advisor Selection Form\nto the Graduate Program Administrator.\nIn the Thesis Masters Path, students must prepare a dissertation based on original research using the NYU Dissertation formatting requirements accompanied by an oral examination and defense of this research in the major field (thesis masters). The Master’s Thesis Examination Committee consists of three members of the faculty (one must be the thesis advisor). The Master’s thesis defense consists of an oral presentation by the student, approximately 45-50 minutes in length, which is open to the public. A closed-door question-and-answer section by the Master’s Thesis Examination Committee immediately follows the public presentation.\nAfter successful completion of their defense, students must submit. to the Graduate Program Administrator,  the\nGSAS Thesis Exam Form\nand\nDepartment Thesis Exam Form\nto be processed and for signatures to be collected.\nNon-Thesis Path\nNon-thesis Masters students must complete 30 credits in graduate lecture courses and the mandatory 0 credit\nCHEM-GA 2673\nProfessional Development and the 2 credit course\nCHEM-GA 3010\nGraduate Seminar\n, with a GPA of B (3.0) or better. In the Graduate Seminar course, students must research an important topic of chemistry from the literature (the topic has to be agreed on by the instructor on record for the seminar course), identify 3-5 publications that describe cutting edge research in the chosen topic, prepare and present in a public setting a 45 minute seminar on the chosen topic followed by a question and answer session from the audience. This literature review followed by a public presentation is viewed as the capstone requirement for this plan.\nCourse List\nCourse\nTitle\nCredits\nMajor Requirements\nCHEM-GA 2673\nProfessional Development\n1\n0\nCHEM-GA 3010\nGraduate Seminar\n2\n2\nElectives\nChemistry Electives\n30-32\nTotal Credits\n32\n1\nRequired for both Paths (Thesis and Non-Thesis)\n2\nRequired Non-Thesis path.\nSample Plan of Study\nPlan of Study Grid\n1st Semester/Term\nCredits\nChemistry Elective\n4\nChemistry Elective\n4\nCHEM-GA 2673\nProfessional Development\n0\nCredits\n8\n2nd Semester/Term\nChemistry Elective\n4\nChemistry Elective\n4\nCredits\n8\n3rd Semester/Term\nChemistry Elective\n4\nChemistry Elective\n4\nCHEM-GA 3010\nGraduate Seminar\n2\nCredits\n8\n4th Semester/Term\nChemistry Elective\n4\nChemistry Elective\n4\nCredits\n8\nTotal Credits\n32\nLearning Outcomes\nUpon successful completion of the program, graduates will:\nHave made a significant and original contribution to the field of chemistry.\nHave mastered the theories and concepts in their area of specialization.\nBe able to critically evaluate the scientific literature.\nBe able to think critically.\nPolicies\nOn This Page\nNYU Policies\nGraduate School of Arts and Science Policies\nNYU Policies\nUniversity-wide policies can be found on the\nNew York University Policy pages\n.\nGraduate School of Arts and Science Policies\nAcademic Policies for the Graduate School of Arts and Science can be found on the\nAcademic Policies page\n.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Chemistry MS",
+    "duration": "about 3-4 semesters",
+    "courses": [
+      {
+        "name": "CHEM-GA 2673 Professional Development",
+        "description": "Required for both Paths (Thesis and Non-Thesis)"
+      },
+      {
+        "name": "CHEM-GA 3010 Graduate Seminar",
+        "description": "Required Non-Thesis path. In the Graduate Seminar course, students must research an important topic of chemistry from the literature, identify 3-5 publications that describe cutting edge research in the chosen topic, prepare and present in a public setting a 45 minute seminar on the chosen topic followed by a question and answer session from the audience."
+      },
+      {
+        "name": "Chemistry Electives",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "All applicants to the Graduate School of Arts and Science (GSAS) are required to submit the general application requirements , which include: Academic Transcripts Test Scores (if required) Applicant Statements Résumé or Curriculum Vitae Letters of Recommendation , and A non-refundable application fee . See Chemistry for admission requirements and instructions specific to this program.",
+    "features": "Students must satisfactorily complete 32 credits (minimum of 24 credits while in residence at New York University) with a GPA of 3.0 or better with no single class grade below B-. Students are required to take a 0-credit course CHEM-GA 2673 Professional Development. During the first semester in residence and the CHEM-GA 3010 Graduate Seminar in the fall semester of their second year. Students must attend a minimum of ten (10) colloquia/seminars prior to graduation. Students may choose one of the two paths: Thesis Path or Non-Thesis Path. Thesis Path requires a dissertation and oral defense. Non-Thesis Path requires a literature review and public seminar presentation as a capstone.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 70,
+      "char_end": 197
+    },
+    "duration": {
+      "text": "",
+      "char_start": 197,
+      "char_end": 263
+    },
+    "courses": {
+      "text": "",
+      "char_start": 1202,
+      "char_end": 1342
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 264,
+      "char_end": 570
+    },
+    "features": {
+      "text": "",
+      "char_start": 571,
+      "char_end": 1201
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 101,
+      "char_end": 119
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "bulletins.nyu.edu_8b60942b_0000",
+      "text": "Department Website Taxonomy Codes NYSED: 08339 HEGIS: 1905.00 CIP: 40.0501 On This Page Program Description Admissions Program Description This degree is designed for students who have decided not to pursue a PhD. The department views the master's degree as a terminal degree that usually takes about 3-4 semesters of coursework and research to achieve. Admissions All applicants to the Graduate School of Arts and Science (GSAS) are required to submit the general application requirements , which include: Academic Transcripts Test Scores (if required) Applicant Statements Résumé or Curriculum Vitae Letters of Recommendation , and A non-refundable application fee . See Chemistry for admission requirements and instructions specific to this program. Program Requirements Students must satisfactorily complete 32 credits (minimum of 24 credits while in residence at New York University) with a GPA of 3.0 or better with no single class grade below B-. Students are required to take a 0-credit course CHEM-GA 2673 Professional Development . During the first semester in residence and the CHEM-GA 3010 Graduate Seminar in the fall semester of their second year. Students must attend a minimum of ten (10) colloquia/seminars prior to graduation. Courses taken outside of the Chemistry Department must be approved by the Director of Graduate Studies. Students may choose one of the two paths detailed below: Thesis Path In their first semester students must chose an advisor by submitting the Master's Thesis Advisor Selection Form to the Graduate Program Administrator. In the Thesis Masters Path, students must prepare a dissertation based on original research using the NYU Dissertation formatting requirements accompanied by an oral examination and defense of this research in the major field (thesis masters). The Master’s Thesis Examination Committee consists of three members of the faculty (one must be the thesis advisor). The Master’s thesis defense consists of an oral presentation by the student, approximately 45-50 minutes in length, which is open to the public. A closed-door question-and-answer section by the Master’s Thesis Examination Committee immediately follows the public presentation. After successful completion of their defense, students must submit. to the Graduate Program Administrator, the GSAS Thesis Exam Form and Department Thesis Exam Form to be processed and for signatures to be collected. Non-Thesis Path Non-thesis Masters students must complete 30 credits in graduate lecture courses and the mandatory 0 credit CHEM-GA 2673 Professional Development and the 2 credit course CHEM-GA 3010 Graduate Seminar , with a GPA of B",
+      "char_start": 0,
+      "char_end": 2657,
+      "token_count": 400,
+      "vector_id": "vectors/bulletins.nyu.edu_8b60942b_chunk0000.npy"
+    },
+    {
+      "chunk_id": "bulletins.nyu.edu_8b60942b_0001",
+      "text": "presentation by the student, approximately 45-50 minutes in length, which is open to the public. A closed-door question-and-answer section by the Master’s Thesis Examination Committee immediately follows the public presentation. After successful completion of their defense, students must submit. to the Graduate Program Administrator, the GSAS Thesis Exam Form and Department Thesis Exam Form to be processed and for signatures to be collected. Non-Thesis Path Non-thesis Masters students must complete 30 credits in graduate lecture courses and the mandatory 0 credit CHEM-GA 2673 Professional Development and the 2 credit course CHEM-GA 3010 Graduate Seminar , with a GPA of B (3.0) or better. In the Graduate Seminar course, students must research an important topic of chemistry from the literature (the topic has to be agreed on by the instructor on record for the seminar course), identify 3-5 publications that describe cutting edge research in the chosen topic, prepare and present in a public setting a 45 minute seminar on the chosen topic followed by a question and answer session from the audience. This literature review followed by a public presentation is viewed as the capstone requirement for this plan. Course List Course Title Credits Major Requirements CHEM-GA 2673 Professional Development 1 0 CHEM-GA 3010 Graduate Seminar 2 2 Electives Chemistry Electives 30-32 Total Credits 32 1 Required for both Paths (Thesis and Non-Thesis) 2 Required Non-Thesis path. Sample Plan of Study Plan of Study Grid 1st Semester/Term Credits Chemistry Elective 4 Chemistry Elective 4 CHEM-GA 2673 Professional Development 0 Credits 8 2nd Semester/Term Chemistry Elective 4 Chemistry Elective 4 Credits 8 3rd Semester/Term Chemistry Elective 4 Chemistry Elective 4 CHEM-GA 3010 Graduate Seminar 2 Credits 8 4th Semester/Term Chemistry Elective 4 Chemistry Elective 4 Credits 8 Total Credits 32 Learning Outcomes Upon successful completion of the program, graduates will: Have made a significant and original contribution to the field of chemistry. Have mastered the theories and concepts in their area of specialization. Be able to critically evaluate the scientific literature. Be able to think critically. Policies On This Page NYU Policies Graduate School of Arts and Science Policies NYU Policies University-wide policies can be found on the New York University Policy pages . Graduate School of Arts and Science Policies Academic Policies for the Graduate School of Arts and Science can be found on the Academic Policies page .",
+      "char_start": 1978,
+      "char_end": 4514,
+      "token_count": 389,
+      "vector_id": "vectors/bulletins.nyu.edu_8b60942b_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "13b99a675f1d03a8f261b7fc1e4a5ae8006f8fe287b181b411d5e6910facf8d7",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:28:29.189778",
+      "response_raw_path": "out/llm_cache\\cc510b56478149fb.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

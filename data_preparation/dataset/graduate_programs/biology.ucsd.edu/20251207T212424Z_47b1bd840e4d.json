@@ -1,0 +1,107 @@
+{
+  "id": "biology.ucsd.edu_47b1bd840e4d",
+  "source_url": "https://biology.ucsd.edu/education/contiguous-bsms/tracks/directed/program-requirements/index.html#graduate-residency-minimum-gpa-fees",
+  "raw_snapshot_path": "out/cache\\20251207T212414Z_47b1bd840e4d.html",
+  "content_type": "text/html",
+  "crawl_date": "2025-12-07 21:24:24.253077",
+  "checksum": "47b1bd840e4d1344913508c2eef6521fb79f5d3603215189886b57fa98428610",
+  "language": "English",
+  "title": "Master of Science Requirements",
+  "raw_text": "HOME\nEducation\nContiguous BS/MS Program\nDegree Tracks\nDirected Research\nCurrent MS Students\nDirected Research Track\nMaster of Science Requirements\nFor Current Masters Students\nStudents admitted to the\nDirected Research Track\nmust complete the requirements below in order to qualify for the Master of Science.\nEnrollment and Course Requirements\nStudents who have been approved (by both the School of Biological Sciences and the UC San Diego Office of Graduate Admissions) for the Directed Research Track must complete at least thirty-six units of graduate course work as described below during the graduate year.\nStudents in the Directed Research Track are required to enroll full time each quarter and must take the following courses for a letter grade.\nStudents who deviate from this plan will be subject to dismissal from the program.\nCourse Requirement Plan - effective Fall 2025\nFall\nWinter\nSpring\nBGGN 275 Lab Methodology – 6 units\nBGGN 275 Lab Methodology – 6 units\nBGGN 275 Lab Methodology – 6 units\nBGGN 276 Lab Analysis – 6 units\nBGGN 276 Lab Analysis – 6 units\nBGGN 276 Lab Analysis – 6 units\nBGRD 200 Research Discussion - 1 unit\nBGRD 200 Research Discussion - 1 unit\nBGRD 200 Research Discussion - 1 unit\nCompletion of a Comprehensive Final Examination\nEffective Fall 2025: Students in the Directed Research Track will take a Comprehensive Final Examination in their final quarter of the MS program (Spring).\nThe Comprehensive Examination will assess a student's understanding of the research and collaborative skill-building content taught throughout the academic year. This examination will be administered by BGGN 275 and BGGN 276 course instructors.\nGraduate Residency, Minimum GPA & Fees\nTo meet the minimum requirements for a MS degree at UC San Diego, BS/MS students must complete at least 3 quarters of residency as a MS student. Summer cannot be used as a quarter of residency for MS students.\nBS/MS students must maintain a grade-point average of at least 3.000, both cumulatively and for each quarter of enrollment in the graduate program. If GPA falls below 3.000, the student will be subject to dismissal from the program\nStudents should pay relevant fees during any quarter in which the student is using university resources (taking courses). All enrolled MS students are assessed Graduate Registration fees each quarter. Fee schedules for the academic year are\npublished on TritonLink\n.\nEffective Winter 2026\n: Students enrolled in the\nDirected Research Track\nwill be assessed an $80 lab fee for BGGN 275. This fee is in addition to the Graduate Registration Fees assessed each quarter.\nFinancial Costs & Support\nInformation on the costs of the BS/MS program and sources of financial support.\nLearn more\nQuestions?\nCurrent UCSD students: Please submit your questions via the\nVAC\n. An advisor will respond in 1-3 business days.\nDrop-in Advising times are posted on the\nAdvising Calendar\n.\nResearch Track\nDirected Research\nCurrent UG Students\nCurrent MS Students",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Directed Research Track Master of Science",
+    "duration": "at least 3 quarters of residency as a MS student",
+    "courses": [
+      {
+        "name": "BGGN 275 Lab Methodology",
+        "description": "6 units each quarter in Fall, Winter, and Spring"
+      },
+      {
+        "name": "BGGN 276 Lab Analysis",
+        "description": "6 units each quarter in Fall, Winter, and Spring"
+      },
+      {
+        "name": "BGRD 200 Research Discussion",
+        "description": "1 unit each quarter in Fall, Winter, and Spring"
+      }
+    ],
+    "tuition": "All enrolled MS students are assessed Graduate Registration fees each quarter. Effective Winter 2026: Students enrolled in the Directed Research Track will be assessed an $80 lab fee for BGGN 275. This fee is in addition to the Graduate Registration Fees assessed each quarter.",
+    "application_requirements": null,
+    "features": "Students in the Directed Research Track are required to enroll full time each quarter and must take the specified courses for a letter grade. Completion of a Comprehensive Final Examination in the final quarter is required. Students must maintain a GPA of at least 3.000 each quarter and cumulatively. Deviation from the plan or falling below the GPA requirement may result in dismissal.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 77,
+      "char_end": 120
+    },
+    "duration": {
+      "text": "",
+      "char_start": 1022,
+      "char_end": 1091
+    },
+    "courses": {
+      "text": "",
+      "char_start": 420,
+      "char_end": 627
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 1207,
+      "char_end": 1432
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "features": {
+      "text": "",
+      "char_start": 312,
+      "char_end": 1162
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 120
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "biology.ucsd.edu_47b1bd84_0000",
+      "text": "HOME Education Contiguous BS/MS Program Degree Tracks Directed Research Current MS Students Directed Research Track Master of Science Requirements For Current Masters Students Students admitted to the Directed Research Track must complete the requirements below in order to qualify for the Master of Science. Enrollment and Course Requirements Students who have been approved (by both the School of Biological Sciences and the UC San Diego Office of Graduate Admissions) for the Directed Research Track must complete at least thirty-six units of graduate course work as described below during the graduate year. Students in the Directed Research Track are required to enroll full time each quarter and must take the following courses for a letter grade. Students who deviate from this plan will be subject to dismissal from the program. Course Requirement Plan - effective Fall 2025 Fall Winter Spring BGGN 275 Lab Methodology – 6 units BGGN 275 Lab Methodology – 6 units BGGN 275 Lab Methodology – 6 units BGGN 276 Lab Analysis – 6 units BGGN 276 Lab Analysis – 6 units BGGN 276 Lab Analysis – 6 units BGRD 200 Research Discussion - 1 unit BGRD 200 Research Discussion - 1 unit BGRD 200 Research Discussion - 1 unit Completion of a Comprehensive Final Examination Effective Fall 2025: Students in the Directed Research Track will take a Comprehensive Final Examination in their final quarter of the MS program (Spring). The Comprehensive Examination will assess a student's understanding of the research and collaborative skill-building content taught throughout the academic year. This examination will be administered by BGGN 275 and BGGN 276 course instructors. Graduate Residency, Minimum GPA & Fees To meet the minimum requirements for a MS degree at UC San Diego, BS/MS students must complete at least 3 quarters of residency as a MS student. Summer cannot be used as a quarter of residency for MS students. BS/MS students must maintain a grade-point average of at least 3.000, both cumulatively and for each quarter of enrollment in the graduate program. If GPA falls below 3.000, the student will be subject to dismissal from the program Students should pay relevant fees during any quarter in which the student is using university resources (taking courses). All enrolled MS students are assessed Graduate Registration fees each quarter. Fee schedules for the academic year are published on TritonLink . Effective Winter 2026 : Students enrolled in the Directed Research Track will",
+      "char_start": 0,
+      "char_end": 2491,
+      "token_count": 400,
+      "vector_id": "vectors/biology.ucsd.edu_47b1bd84_chunk0000.npy"
+    },
+    {
+      "chunk_id": "biology.ucsd.edu_47b1bd84_0001",
+      "text": "be used as a quarter of residency for MS students. BS/MS students must maintain a grade-point average of at least 3.000, both cumulatively and for each quarter of enrollment in the graduate program. If GPA falls below 3.000, the student will be subject to dismissal from the program Students should pay relevant fees during any quarter in which the student is using university resources (taking courses). All enrolled MS students are assessed Graduate Registration fees each quarter. Fee schedules for the academic year are published on TritonLink . Effective Winter 2026 : Students enrolled in the Directed Research Track will be assessed an $80 lab fee for BGGN 275. This fee is in addition to the Graduate Registration Fees assessed each quarter. Financial Costs & Support Information on the costs of the BS/MS program and sources of financial support. Learn more Questions? Current UCSD students: Please submit your questions via the VAC . An advisor will respond in 1-3 business days. Drop-in Advising times are posted on the Advising Calendar . Research Track Directed Research Current UG Students Current MS Students",
+      "char_start": 1864,
+      "char_end": 2987,
+      "token_count": 181,
+      "vector_id": "vectors/biology.ucsd.edu_47b1bd84_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "cb2ee81627b3db59acd5db59211aea91ce0f99003a97a29b0e259dd886da2a5b",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:24:24.253077",
+      "response_raw_path": "out/llm_cache\\e00524e6dca7ec1d.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

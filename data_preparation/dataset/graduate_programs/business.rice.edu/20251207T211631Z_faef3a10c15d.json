@@ -1,0 +1,107 @@
+{
+  "id": "business.rice.edu_faef3a10c15d",
+  "source_url": "https://business.rice.edu/graduate-programs/master-accounting/program-prerequisites",
+  "raw_snapshot_path": "out/cache\\20251207T211614Z_faef3a10c15d.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:16:31.031474",
+  "checksum": "faef3a10c15d3bcec907af4ea7985d147e93bba2defe6811cc82245c67acffbf",
+  "language": null,
+  "title": "Prerequisites for Master of Accounting Program at Rice University",
+  "raw_text": "MAcc Program Prerequisites\nNavigate to...\nHave a Question?\nKimberly Gray\nAssistant Director, Specialty Programs\n713-348-4269\nEmail\nSchedule a Meeting\nRequired Courses for Joining the Rice MAcc Program\nThe Rice MAcc welcomes students from all undergraduate majors. Read through the information below, or view our\nprinter-friendly PDF\n, to find out what courses are needed to join our program.\nApply\nAccounting Courses\nBefore applying to the MAcc program, you must have completed the direct equivalent of Rice’s introductory financial accounting undergraduate course,\nBUSI 305: Financial Accounting\n. Students should email the syllabus of their prospective equivalent of BUSI 305 to\nRiceMAcc@rice.edu\nfor evaluation of direct equivalency to BUSI 305 prior to submitting their application.\nIn addition to BUSI 305: Financial Accounting (Introduction to Financial Accounting), there are two other accounting prerequisites:\nBUSI 405: Issues in Financial Reporting I (Intermediate Financial Accounting I)\nBUSI 440: Auditing\nYou have two options to fulfill these two accounting prerequisites. We offer a focused, 3-week pre-term equivalent of these courses on campus during Rice's Summer Session I, which runs mid-May to early June. (Note that additional tuition will be charged for the preterm courses.) Alternatively, you may take the direct equivalent of these courses through another institution, subject to the MAcc Admission Committee's approval. Email the syllabi of your prospective direct equivalents of BUSI 405 and BUSI 440 to\nRiceMAcc@rice.edu\nfor an evaluation of direct equivalency.\nInterested in the Rice MAcc?\nRequest More Information\nClose\nNon-Accounting Courses\nIncoming MAcc students also need 15 credit hours in business-related disciplines, such as statistics, economics, management, marketing, finance, and information systems. If you are planning to seek CPA licensure through the state of Texas, The Texas State Board of Public Accountancy (TSBPA) requires CPA candidates to have completed 24 credits of related business subjects. Nine of these 24 credits will be taught through the MAcc program, leaving 15 credits that you need to have completed before beginning the MAcc.\nPlease refer to the\nTSBPA’s website\nto determine whether you have fulfilled the “related business” coursework requirement. You may contact\nProfessor Ben Lansford\n, the MAcc Program Director, with questions regarding your progress toward meeting the “related business” requirement.\nAdmission Events\nSee All\nDec 17\nRice Master of Accounting (MAcc) Application Overview\n12:00pm to 12:30pm\nVirtual\nJan 7\nMaster of Accounting (MAcc) Online Chat\n12:00pm to 1:00pm\nVirtual\nHave a question?\nWe're here to help you transform your world, your career and your future. Our team will guide you on your journey from the moment you begin considering a Rice MAcc program to the moment you submit your application. Check out\nanswers to FAQs\nfor the Rice MAcc. We believe that you belong here — and we're dedicated to helping you get here.\nRequest More Information\nWhy Rice MAcc\nAlumni Stories\nThe Right Choice\nCarlos Macias, Master of Accounting '25\nAlumni Stories\nPivot to Accounting\nChloe Kinnebrew, Master of Accounting '25\nAlumni Stories\nProfessor and Peer Support\nCandis Damtse, Master of Accounting '25\nKeep Exploring\nMAcc Admissions\nReady for the Next Step?\nRequest More Information\nHave a Question?\nKimberly Gray\nAssistant Director, Specialty Programs\n713-348-4269\nEmail\nSchedule a Meeting",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Accounting (MAcc)",
+    "duration": null,
+    "courses": [
+      {
+        "name": "BUSI 305: Financial Accounting",
+        "description": "Introduction to Financial Accounting"
+      },
+      {
+        "name": "BUSI 405: Issues in Financial Reporting I",
+        "description": "Intermediate Financial Accounting I"
+      },
+      {
+        "name": "BUSI 440: Auditing",
+        "description": null
+      }
+    ],
+    "tuition": "additional tuition will be charged for the preterm courses",
+    "application_requirements": "Before applying to the MAcc program, you must have completed the direct equivalent of Rice’s introductory financial accounting undergraduate course, BUSI 305: Financial Accounting. In addition, there are two other accounting prerequisites: BUSI 405: Issues in Financial Reporting I and BUSI 440: Auditing. Incoming MAcc students also need 15 credit hours in business-related disciplines, such as statistics, economics, management, marketing, finance, and information systems.",
+    "features": "The Rice MAcc welcomes students from all undergraduate majors. Students can fulfill prerequisites at Rice or through approved equivalents at other institutions. The program supports students seeking CPA licensure in Texas.",
+    "contact_email": "RiceMAcc@rice.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 1012,
+      "char_end": 1043
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "courses": {
+      "text": "",
+      "char_start": 312,
+      "char_end": 627
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 627,
+      "char_end": 678
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 312,
+      "char_end": 900
+    },
+    "features": {
+      "text": "",
+      "char_start": 154,
+      "char_end": 1112
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 393,
+      "char_end": 410
+    },
+    "language": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "business.rice.edu_faef3a10_0000",
+      "text": "MAcc Program Prerequisites Navigate to... Have a Question? Kimberly Gray Assistant Director, Specialty Programs 713-348-4269 Email Schedule a Meeting Required Courses for Joining the Rice MAcc Program The Rice MAcc welcomes students from all undergraduate majors. Read through the information below, or view our printer-friendly PDF , to find out what courses are needed to join our program. Apply Accounting Courses Before applying to the MAcc program, you must have completed the direct equivalent of Rice’s introductory financial accounting undergraduate course, BUSI 305: Financial Accounting . Students should email the syllabus of their prospective equivalent of BUSI 305 to RiceMAcc@rice.edu for evaluation of direct equivalency to BUSI 305 prior to submitting their application. In addition to BUSI 305: Financial Accounting (Introduction to Financial Accounting), there are two other accounting prerequisites: BUSI 405: Issues in Financial Reporting I (Intermediate Financial Accounting I) BUSI 440: Auditing You have two options to fulfill these two accounting prerequisites. We offer a focused, 3-week pre-term equivalent of these courses on campus during Rice's Summer Session I, which runs mid-May to early June. (Note that additional tuition will be charged for the preterm courses.) Alternatively, you may take the direct equivalent of these courses through another institution, subject to the MAcc Admission Committee's approval. Email the syllabi of your prospective direct equivalents of BUSI 405 and BUSI 440 to RiceMAcc@rice.edu for an evaluation of direct equivalency. Interested in the Rice MAcc? Request More Information Close Non-Accounting Courses Incoming MAcc students also need 15 credit hours in business-related disciplines, such as statistics, economics, management, marketing, finance, and information systems. If you are planning to seek CPA licensure through the state of Texas, The Texas State Board of Public Accountancy (TSBPA) requires CPA candidates to have completed 24 credits of related business subjects. Nine of these 24 credits will be taught through the MAcc program, leaving 15 credits that you need to have completed before beginning the MAcc. Please refer to the TSBPA’s website to determine whether you have fulfilled the “related business” coursework requirement. You may contact Professor Ben Lansford , the MAcc Program Director, with questions regarding your progress toward meeting the “related business” requirement. Admission Events See All Dec 17 Rice Master of Accounting (MAcc) Application Overview 12:00pm to 12:30pm Virtual Jan 7 Master of Accounting (MAcc) Online Chat 12:00pm to 1:00pm Virtual Have a question? We're here to help you transform your world, your",
+      "char_start": 0,
+      "char_end": 2724,
+      "token_count": 400,
+      "vector_id": "vectors/business.rice.edu_faef3a10_chunk0000.npy"
+    },
+    {
+      "chunk_id": "business.rice.edu_faef3a10_0001",
+      "text": "will be taught through the MAcc program, leaving 15 credits that you need to have completed before beginning the MAcc. Please refer to the TSBPA’s website to determine whether you have fulfilled the “related business” coursework requirement. You may contact Professor Ben Lansford , the MAcc Program Director, with questions regarding your progress toward meeting the “related business” requirement. Admission Events See All Dec 17 Rice Master of Accounting (MAcc) Application Overview 12:00pm to 12:30pm Virtual Jan 7 Master of Accounting (MAcc) Online Chat 12:00pm to 1:00pm Virtual Have a question? We're here to help you transform your world, your career and your future. Our team will guide you on your journey from the moment you begin considering a Rice MAcc program to the moment you submit your application. Check out answers to FAQs for the Rice MAcc. We believe that you belong here — and we're dedicated to helping you get here. Request More Information Why Rice MAcc Alumni Stories The Right Choice Carlos Macias, Master of Accounting '25 Alumni Stories Pivot to Accounting Chloe Kinnebrew, Master of Accounting '25 Alumni Stories Professor and Peer Support Candis Damtse, Master of Accounting '25 Keep Exploring MAcc Admissions Ready for the Next Step? Request More Information Have a Question? Kimberly Gray Assistant Director, Specialty Programs 713-348-4269 Email Schedule a Meeting",
+      "char_start": 2073,
+      "char_end": 3472,
+      "token_count": 219,
+      "vector_id": "vectors/business.rice.edu_faef3a10_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "fb4eb30fb93e8a925cda0fe2c9d728e362e7e156c65af23af785d488c2910966",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:16:31.031474",
+      "response_raw_path": "out/llm_cache\\30949d110c3cf19a.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

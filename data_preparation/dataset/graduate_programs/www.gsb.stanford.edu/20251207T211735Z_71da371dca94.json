@@ -1,0 +1,111 @@
+{
+  "id": "www.gsb.stanford.edu_71da371dca94",
+  "source_url": "https://www.gsb.stanford.edu/programs/mba/academic-experience/curriculum",
+  "raw_snapshot_path": "out/cache\\20251207T211726Z_71da371dca94.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:17:35.726556",
+  "checksum": "71da371dca949837d7307f691a46423076a7d2cd837db9952a16ee85a304ce40",
+  "language": null,
+  "title": "Stanford MBA Curriculum in the MBA Program | Stanford Graduate School of Business",
+  "raw_text": "MBA Program\nMenu\nWhy Stanford MBA\nAcademic Experience\nCurriculum\nFirst Year\nSecond Year\nGlobal Experiences\nFaculty\nJoint & Dual Degrees\nJD/MBA Joint Degree\nMA Education/MBA Joint Degree\nMD/MBA Dual Degree\nMPP/MBA Joint Degree\nMS Computer Science/MBA Joint Degree\nMS Electrical Engineering/MBA Joint Degree\nMS Environment and Resources (E-IPER)/MBA Joint Degree\nAcademic Calendar\nStudent Life & Community\nClubs & Activities\nDiversity\nInternational Students\nLGBTQ+ Students\nMilitary Veterans\nCultural Community Groups\nPartners & Families\nStudents with Disabilities\nWomen\nFaith\nStudent Support\nResidential Life\nStudent Voices\nAlumni Community\nMBA Alumni Voices\nCareer Impact\nTuition & Financial Aid\nCost of Attendance\nTypes of Aid\nKnight-Hennessy Scholars Program\nYellow Ribbon Program\nBOLD Fellows Fund\nApplication Process\nLoan Forgiveness\nContact the Financial Aid Office\nAdmission\nEvaluation Criteria\nDeadlines\nApplication\nEducation\nTest Scores\nGMAT & GRE\nEnglish Language Proficiency\nPersonal Information, Activities & Awards\nProfessional Experience\nLetters of Recommendation\nInformation for Recommenders\nOptional Short Answer Questions\nApplication Fee\nReapplication\nEssays\nInterviews\nDeferred Enrollment\nEntering Class Profile\nAdmission Events\nAmbassadors\nContact\nAsk a Question\nWhy Stanford MBA\nAcademic Experience\nStudent Life & Community\nCareer Impact\nTuition & Aid\nAdmission\nContact\nCurriculum in the MBA Program\nReady to change your trajectory and the world around you? The Stanford MBA Program will help you develop and hone your skills to make a positive difference in the world.\nIn two years, you’ll immerse yourself in a curriculum that is theoretical and practical. Foundational and cutting edge. Rigorous and demanding. We challenge you both inside and outside the classroom, so you’re ready to lead wherever you go.\nTransform in Two Years\nOur MBA Program is the launching pad to a more impactful and meaningful career. Gain a strong foundation in your first year, and then forge your own path.\nFirst Year\nYour first year in the Stanford MBA Program is invaluable. This is where you establish your foundation, begin to develop your managerial skills and style, and broaden your global perspective.\nCoursework mainly consists of Analytical Foundations, Leadership Foundations, and Management Foundations. You’ll gain insights from world-class researchers and senior leaders and a deeper understanding of effective business management.\nStudents must complete a\nglobal experience requirement\n. This is an opportunity to engage with global issues and expand your mindset.\nSecond Year\nYear two is about pursuing your path. Coursework entirely consists of electives. You’ll strengthen your areas of expertise, explore new subjects, and round out your general management education.\nYou can tailor your experience through an abundance of electives, seminars, a\njoint or dual degree\n, and courses at other\nStanford schools\n.\nWorld-Class Centers\nTake advantage of the resources, courses, and activities offered in our world-class Center for Social Innovation and Center for Entrepreneurial Studies\nSocial Innovation\nEntrepreneurship\nSupport to Stay On Track\nAt Stanford, you’re supported. Our specialized network of advisors, fellows, and coaches understand the decisions you face and how to navigate them. We’ll help you craft your study plan and career goals while you hone your professional and interpersonal skills.\nEvery effort is made to ensure that the degree requirement and course information, applicable policies, and other materials provided by Stanford GSB are accurate and current. Stanford University reserves the right to make changes at any time without prior notice\nStay in Touch\nAttend an Event\nApply\nApply\nAttend an Event\nStay in Touch\nMore\nClose",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Stanford MBA Program",
+    "duration": "two years",
+    "courses": [
+      {
+        "name": "Analytical Foundations",
+        "description": "Coursework mainly consists of Analytical Foundations, Leadership Foundations, and Management Foundations. You’ll gain insights from world-class researchers and senior leaders and a deeper understanding of effective business management."
+      },
+      {
+        "name": "Leadership Foundations",
+        "description": "Coursework mainly consists of Analytical Foundations, Leadership Foundations, and Management Foundations. You’ll gain insights from world-class researchers and senior leaders and a deeper understanding of effective business management."
+      },
+      {
+        "name": "Management Foundations",
+        "description": "Coursework mainly consists of Analytical Foundations, Leadership Foundations, and Management Foundations. You’ll gain insights from world-class researchers and senior leaders and a deeper understanding of effective business management."
+      },
+      {
+        "name": "Electives",
+        "description": "Year two is about pursuing your path. Coursework entirely consists of electives. You’ll strengthen your areas of expertise, explore new subjects, and round out your general management education."
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "The Stanford MBA Program will help you develop and hone your skills to make a positive difference in the world. In two years, you’ll immerse yourself in a curriculum that is theoretical and practical. Foundational and cutting edge. Rigorous and demanding. We challenge you both inside and outside the classroom, so you’re ready to lead wherever you go. Students must complete a global experience requirement. You can tailor your experience through an abundance of electives, seminars, a joint or dual degree, and courses at other Stanford schools. Take advantage of the resources, courses, and activities offered in our world-class Center for Social Innovation and Center for Entrepreneurial Studies.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 97,
+      "char_end": 117
+    },
+    "duration": {
+      "text": "",
+      "char_start": 181,
+      "char_end": 253
+    },
+    "courses": {
+      "text": "",
+      "char_start": 420,
+      "char_end": 799
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 97,
+      "char_end": 1052
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "www.gsb.stanford.edu_71da371d_0000",
+      "text": "MBA Program Menu Why Stanford MBA Academic Experience Curriculum First Year Second Year Global Experiences Faculty Joint & Dual Degrees JD/MBA Joint Degree MA Education/MBA Joint Degree MD/MBA Dual Degree MPP/MBA Joint Degree MS Computer Science/MBA Joint Degree MS Electrical Engineering/MBA Joint Degree MS Environment and Resources (E-IPER)/MBA Joint Degree Academic Calendar Student Life & Community Clubs & Activities Diversity International Students LGBTQ+ Students Military Veterans Cultural Community Groups Partners & Families Students with Disabilities Women Faith Student Support Residential Life Student Voices Alumni Community MBA Alumni Voices Career Impact Tuition & Financial Aid Cost of Attendance Types of Aid Knight-Hennessy Scholars Program Yellow Ribbon Program BOLD Fellows Fund Application Process Loan Forgiveness Contact the Financial Aid Office Admission Evaluation Criteria Deadlines Application Education Test Scores GMAT & GRE English Language Proficiency Personal Information, Activities & Awards Professional Experience Letters of Recommendation Information for Recommenders Optional Short Answer Questions Application Fee Reapplication Essays Interviews Deferred Enrollment Entering Class Profile Admission Events Ambassadors Contact Ask a Question Why Stanford MBA Academic Experience Student Life & Community Career Impact Tuition & Aid Admission Contact Curriculum in the MBA Program Ready to change your trajectory and the world around you? The Stanford MBA Program will help you develop and hone your skills to make a positive difference in the world. In two years, you’ll immerse yourself in a curriculum that is theoretical and practical. Foundational and cutting edge. Rigorous and demanding. We challenge you both inside and outside the classroom, so you’re ready to lead wherever you go. Transform in Two Years Our MBA Program is the launching pad to a more impactful and meaningful career. Gain a strong foundation in your first year, and then forge your own path. First Year Your first year in the Stanford MBA Program is invaluable. This is where you establish your foundation, begin to develop your managerial skills and style, and broaden your global perspective. Coursework mainly consists of Analytical Foundations, Leadership Foundations, and Management Foundations. You’ll gain insights from world-class researchers and senior leaders and a deeper understanding of effective business management. Students must complete a global experience requirement . This is an opportunity to engage with global issues and expand your mindset. Second Year Year two is about pursuing your path. Coursework entirely consists of electives. You’ll strengthen your areas of expertise, explore new subjects, and round out your general management education. You can",
+      "char_start": 0,
+      "char_end": 2795,
+      "token_count": 400,
+      "vector_id": "vectors/www.gsb.stanford.edu_71da371d_chunk0000.npy"
+    },
+    {
+      "chunk_id": "www.gsb.stanford.edu_71da371d_0001",
+      "text": "is where you establish your foundation, begin to develop your managerial skills and style, and broaden your global perspective. Coursework mainly consists of Analytical Foundations, Leadership Foundations, and Management Foundations. You’ll gain insights from world-class researchers and senior leaders and a deeper understanding of effective business management. Students must complete a global experience requirement . This is an opportunity to engage with global issues and expand your mindset. Second Year Year two is about pursuing your path. Coursework entirely consists of electives. You’ll strengthen your areas of expertise, explore new subjects, and round out your general management education. You can tailor your experience through an abundance of electives, seminars, a joint or dual degree , and courses at other Stanford schools . World-Class Centers Take advantage of the resources, courses, and activities offered in our world-class Center for Social Innovation and Center for Entrepreneurial Studies Social Innovation Entrepreneurship Support to Stay On Track At Stanford, you’re supported. Our specialized network of advisors, fellows, and coaches understand the decisions you face and how to navigate them. We’ll help you craft your study plan and career goals while you hone your professional and interpersonal skills. Every effort is made to ensure that the degree requirement and course information, applicable policies, and other materials provided by Stanford GSB are accurate and current. Stanford University reserves the right to make changes at any time without prior notice Stay in Touch Attend an Event Apply Apply Attend an Event Stay in Touch More Close",
+      "char_start": 2083,
+      "char_end": 3768,
+      "token_count": 249,
+      "vector_id": "vectors/www.gsb.stanford.edu_71da371d_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "16c81766e748a04e30ba2633702f322090a531c6c50db6d1c6f07ff34424856f",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:17:35.726556",
+      "response_raw_path": "out/llm_cache\\c09d9a6184e029cb.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

@@ -1,0 +1,171 @@
+{
+  "id": "bulletins.nyu.edu_c38abdbac2fc",
+  "source_url": "https://bulletins.nyu.edu/graduate/business/programs/business-analytics-ai-ms/",
+  "raw_snapshot_path": "out/cache\\20251207T212754Z_c38abdbac2fc.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:28:15.155426",
+  "checksum": "c38abdbac2fcb083930b6e6260a45614bab56227eb492a9f29eb598a9e0fb0c4",
+  "language": "English",
+  "title": "Business Analytics and AI (MS) | NYU Bulletins",
+  "raw_text": "Taxonomy Codes\nNYSED:\n35304\nHEGIS:\n0599.00\nCIP:\n30.7102\nOn This Page\nProgram Description\nAdmissions\nProgram Description\nThe NYU Stern Master of Science in Business Analytics and AI, an advanced executive business degree program, teaches students both to understand the role of evidence-based data in decision making and to leverage data and AI tools as strategic assets. The program is designed for experienced professionals interested in gaining competitive advantage through the predictive potential of data.\nThe Master of Science in Business Analytics and AI is designed to accommodate participants’ busy schedules.\nParticipants attend\nsix concentrated, rigorous sessions in New York (5) and one at a rotating global location over a one-year period.\nParticipants have the opportunity to cross-learn and share best practices among their cohort and through their exposure to top faculty and business leaders in the growing field of Business Analytics and AI. With a degree from New York University, graduates will join NYU’s extensive global alumni network.\nAdmissions\nThe admissions process is thorough and selective taking various factors into consideration. Because the program is designed specifically for experienced professionals, a candidate's record of professional achievement is a critical factor in determining admission. To apply to the Master of Science in Business Analytics and AI Program, you must have a Bachelor degree and strong Grade Point Average; demonstrated high aptitude for quantitative analysis and academic success as evidenced by undergraduate and graduate coursework, as applicable.\nAdditional factors on which the Admissions Committee bases its decision include the following:\nRecord of professional success and employment profile\nWritten Essay\nSelection Interview (by invitation only)\nUniversity transcript(s)\nOne professional recommendation\nFluent English (TOEFL for non-native English speakers may be requested)\nA non-refundable application fee of US $103 is required. The Program fee for the Class of 2026 is US $90,400. Included are all courses, tuition, course materials, some meals and official events. Hotel and travel expenses are not included.\nTo apply, applicants must submit an on-line application through our on-line application system, found at\nhttps://nyu-stern-msba.embark.com/auth/login\nAlternatively, to learn more about the program or request information visit\nhttp://www.stern.nyu.edu/programs-admissions/ms-business-analytics/request-more-information\nProgram Requirements\nThe program requires the completion of 35 credits, comprised of the following:\nCourse List\nCourse\nTitle\nCredits\nMajor Requirements\nModule I\nXBA1-GB 8336\nIntro to Analytics and AI\n2\nXBA1-GB 8150\nDigital Mktg Analytics\n2\nXBA1-GB 8106\nFound of Stat Using R\n2\nModule II\nXBA1-GB 8111\nDatabases for Business Analytics\n1\nXBA1-GB 8346\nBig Data\n1\nXBA1-GB 8217\nDealing With Data Using Python\n1\nXBA1-GB 8350\nDecision Models\n2\nModule III\nXBA1-GB 8237\nMachine Learning\n3\nXBA1-GB 8354\nData Driven Dec-Making\n2\nXBA1-GB 8215\nNetwork Analytics\n1\nModule IV\nXBA1-GB 8314\nOperations Analytics\n2\nXBA1-GB 8216\nDecision Under Risk\n2.5\nXBA1-GB 8348\nData Visualization\n1.5\nModule V\nXBA1-GB 8120\nAI and Recommender Systems\n2\nXBA1-GB 8271\nModern Artificial Intelligence\n2\nXBA1-GB 8330\nRevenue Mgmt & Pricing\n2\nModule VI\nXBA1-GB 8600\nCapstone\n6\nTotal Credits\n35\nSample Plan of Study\nPlan of Study Grid\n1st Semester/Term\nCredits\nXBA1-GB 8336\nIntro to Analytics and AI\n1\n2\nXBA1-GB 8150\nDigital Mktg Analytics\n1\n2\nXBA1-GB 8106\nFound of Stat Using R\n1\n2\nXBA1-GB 8111\nDatabases for Business Analytics\n2\n1\nXBA1-GB 8346\nBig Data\n2\n1\nXBA1-GB 8217\nDealing With Data Using Python\n2\n1\nXBA1-GB 8350\nDecision Models\n2\n2\nXBA1-GB 8237\nMachine Learning\n3\n3\nXBA1-GB 8354\nData Driven Dec-Making\n3\n2\nXBA1-GB 8215\nNetwork Analytics\n3\n1\nCredits\n17\n2nd Semester/Term\nXBA1-GB 8314\nOperations Analytics\n4\n2\nXBA1-GB 8216\nDecision Under Risk\n4\n2.5\nXBA1-GB 8348\nData Visualization\n4\n1.5\nCredits\n6\n3rd Semester/Term\nXBA1-GB 8120\nAI and Recommender Systems\n5\n2\nXBA1-GB 8271\nModern Artificial Intelligence\n5\n2\nXBA1-GB 8330\nRevenue Mgmt & Pricing\n5\n2\nCredits\n6\n4th Semester/Term\nXBA1-GB 8600\nCapstone\n6\n6\nCredits\n6\nTotal Credits\n35\n1\nModule I courses taken in May.\n2\nModule II courses taken in June.\n3\nModule III courses taken in August.\n4\nModule IV courses taken in November.\n5\nModule V courses taken in March.\n6\nModule VI courses taken in May of the following year.\nLearning Outcomes\nUpon successful completion of the program, graduates will:\nBe prepared to manage various data sources, types, and sizes and apply mathematical modeling techniques.\nUtilize statistical and regression-based modeling, data mining techniques, simulations, and other mathematical and statistical modeling to inform business decisions.\nEmploy the fundamental concepts of data science and data mining across various industries to solve business problems, all while identifying ethical issues and policy implications related to data and privacy.\nAdd value to firms and organizations through strategic approaches to data analytics across domain areas such as operations, marketing, finance, and revenue management.\nEmerge with a toolkit consisting of methodologies and data visualization techniques that can be applied to real world business analytics management issues.\nPolicies\nOn This Page\nNYU Policies\nStern Policies\nNYU Policies\nUniversity-wide policies can be found on the\nNew York University Policy pages\n.\nStern Policies\nAdditional academic policies can be found on the\nStern Graduate Academic Policies page\n.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Science in Business Analytics and AI",
+    "duration": "one-year period",
+    "courses": [
+      {
+        "name": "Intro to Analytics and AI",
+        "description": null
+      },
+      {
+        "name": "Digital Mktg Analytics",
+        "description": null
+      },
+      {
+        "name": "Found of Stat Using R",
+        "description": null
+      },
+      {
+        "name": "Databases for Business Analytics",
+        "description": null
+      },
+      {
+        "name": "Big Data",
+        "description": null
+      },
+      {
+        "name": "Dealing With Data Using Python",
+        "description": null
+      },
+      {
+        "name": "Decision Models",
+        "description": null
+      },
+      {
+        "name": "Machine Learning",
+        "description": null
+      },
+      {
+        "name": "Data Driven Dec-Making",
+        "description": null
+      },
+      {
+        "name": "Network Analytics",
+        "description": null
+      },
+      {
+        "name": "Operations Analytics",
+        "description": null
+      },
+      {
+        "name": "Decision Under Risk",
+        "description": null
+      },
+      {
+        "name": "Data Visualization",
+        "description": null
+      },
+      {
+        "name": "AI and Recommender Systems",
+        "description": null
+      },
+      {
+        "name": "Modern Artificial Intelligence",
+        "description": null
+      },
+      {
+        "name": "Revenue Mgmt & Pricing",
+        "description": null
+      },
+      {
+        "name": "Capstone",
+        "description": null
+      }
+    ],
+    "tuition": "US $90,400",
+    "application_requirements": "Bachelor degree and strong Grade Point Average; demonstrated high aptitude for quantitative analysis and academic success as evidenced by undergraduate and graduate coursework, as applicable. Additional factors on which the Admissions Committee bases its decision include the following: Record of professional success and employment profile Written Essay Selection Interview (by invitation only) University transcript(s) One professional recommendation Fluent English (TOEFL for non-native English speakers may be requested) A non-refundable application fee of US $103 is required.",
+    "features": "The program is designed for experienced professionals interested in gaining competitive advantage through the predictive potential of data. Participants attend six concentrated, rigorous sessions in New York (5) and one at a rotating global location over a one-year period. Included are all courses, tuition, course materials, some meals and official events. Hotel and travel expenses are not included. Graduates will join NYU’s extensive global alumni network.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 77,
+      "char_end": 148
+    },
+    "duration": {
+      "text": "",
+      "char_start": 324,
+      "char_end": 438
+    },
+    "courses": {
+      "text": "",
+      "char_start": 1092,
+      "char_end": 1462
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 1002,
+      "char_end": 1102
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 849,
+      "char_end": 1001
+    },
+    "features": {
+      "text": "",
+      "char_start": 149,
+      "char_end": 563
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": 978,
+      "char_end": 1037
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "bulletins.nyu.edu_c38abdba_0000",
+      "text": "Taxonomy Codes NYSED: 35304 HEGIS: 0599.00 CIP: 30.7102 On This Page Program Description Admissions Program Description The NYU Stern Master of Science in Business Analytics and AI, an advanced executive business degree program, teaches students both to understand the role of evidence-based data in decision making and to leverage data and AI tools as strategic assets. The program is designed for experienced professionals interested in gaining competitive advantage through the predictive potential of data. The Master of Science in Business Analytics and AI is designed to accommodate participants’ busy schedules. Participants attend six concentrated, rigorous sessions in New York (5) and one at a rotating global location over a one-year period. Participants have the opportunity to cross-learn and share best practices among their cohort and through their exposure to top faculty and business leaders in the growing field of Business Analytics and AI. With a degree from New York University, graduates will join NYU’s extensive global alumni network. Admissions The admissions process is thorough and selective taking various factors into consideration. Because the program is designed specifically for experienced professionals, a candidate's record of professional achievement is a critical factor in determining admission. To apply to the Master of Science in Business Analytics and AI Program, you must have a Bachelor degree and strong Grade Point Average; demonstrated high aptitude for quantitative analysis and academic success as evidenced by undergraduate and graduate coursework, as applicable. Additional factors on which the Admissions Committee bases its decision include the following: Record of professional success and employment profile Written Essay Selection Interview (by invitation only) University transcript(s) One professional recommendation Fluent English (TOEFL for non-native English speakers may be requested) A non-refundable application fee of US $103 is required. The Program fee for the Class of 2026 is US $90,400. Included are all courses, tuition, course materials, some meals and official events. Hotel and travel expenses are not included. To apply, applicants must submit an on-line application through our on-line application system, found at https://nyu-stern-msba.embark.com/auth/login Alternatively, to learn more about the program or request information visit http://www.stern.nyu.edu/programs-admissions/ms-business-analytics/request-more-information Program Requirements The program requires the completion of 35 credits, comprised of the following: Course List Course Title Credits Major Requirements Module I XBA1-GB 8336 Intro to Analytics and AI 2 XBA1-GB 8150 Digital Mktg Analytics 2 XBA1-GB 8106 Found of Stat Using R 2 Module II XBA1-GB 8111 Databases for Business Analytics 1 XBA1-GB 8346",
+      "char_start": 0,
+      "char_end": 2851,
+      "token_count": 400,
+      "vector_id": "vectors/bulletins.nyu.edu_c38abdba_chunk0000.npy"
+    },
+    {
+      "chunk_id": "bulletins.nyu.edu_c38abdba_0001",
+      "text": "courses, tuition, course materials, some meals and official events. Hotel and travel expenses are not included. To apply, applicants must submit an on-line application through our on-line application system, found at https://nyu-stern-msba.embark.com/auth/login Alternatively, to learn more about the program or request information visit http://www.stern.nyu.edu/programs-admissions/ms-business-analytics/request-more-information Program Requirements The program requires the completion of 35 credits, comprised of the following: Course List Course Title Credits Major Requirements Module I XBA1-GB 8336 Intro to Analytics and AI 2 XBA1-GB 8150 Digital Mktg Analytics 2 XBA1-GB 8106 Found of Stat Using R 2 Module II XBA1-GB 8111 Databases for Business Analytics 1 XBA1-GB 8346 Big Data 1 XBA1-GB 8217 Dealing With Data Using Python 1 XBA1-GB 8350 Decision Models 2 Module III XBA1-GB 8237 Machine Learning 3 XBA1-GB 8354 Data Driven Dec-Making 2 XBA1-GB 8215 Network Analytics 1 Module IV XBA1-GB 8314 Operations Analytics 2 XBA1-GB 8216 Decision Under Risk 2.5 XBA1-GB 8348 Data Visualization 1.5 Module V XBA1-GB 8120 AI and Recommender Systems 2 XBA1-GB 8271 Modern Artificial Intelligence 2 XBA1-GB 8330 Revenue Mgmt & Pricing 2 Module VI XBA1-GB 8600 Capstone 6 Total Credits 35 Sample Plan of Study Plan of Study Grid 1st Semester/Term Credits XBA1-GB 8336 Intro to Analytics and AI 1 2 XBA1-GB 8150 Digital Mktg Analytics 1 2 XBA1-GB 8106 Found of Stat Using R 1 2 XBA1-GB 8111 Databases for Business Analytics 2 1 XBA1-GB 8346 Big Data 2 1 XBA1-GB 8217 Dealing With Data Using Python 2 1 XBA1-GB 8350 Decision Models 2 2 XBA1-GB 8237 Machine Learning 3 3 XBA1-GB 8354 Data Driven Dec-Making 3 2 XBA1-GB 8215 Network Analytics 3 1 Credits 17 2nd Semester/Term XBA1-GB 8314 Operations Analytics 4 2 XBA1-GB 8216 Decision Under Risk 4 2.5 XBA1-GB 8348 Data Visualization 4 1.5 Credits 6 3rd Semester/Term XBA1-GB 8120 AI and Recommender Systems 5 2 XBA1-GB 8271 Modern Artificial Intelligence 5 2 XBA1-GB 8330 Revenue Mgmt & Pricing 5 2 Credits 6 4th Semester/Term XBA1-GB 8600 Capstone 6 6 Credits 6 Total Credits 35 1 Module I courses taken in May. 2 Module II courses taken in June. 3 Module III courses taken in August. 4 Module IV courses taken in November. 5 Module V courses taken in March. 6 Module VI courses taken in May of the following year. Learning Outcomes Upon successful completion of the program, graduates will: Be prepared to manage various data sources, types, and sizes and apply mathematical",
+      "char_start": 2074,
+      "char_end": 4594,
+      "token_count": 400,
+      "vector_id": "vectors/bulletins.nyu.edu_c38abdba_chunk0001.npy"
+    },
+    {
+      "chunk_id": "bulletins.nyu.edu_c38abdba_0002",
+      "text": "5 2 XBA1-GB 8271 Modern Artificial Intelligence 5 2 XBA1-GB 8330 Revenue Mgmt & Pricing 5 2 Credits 6 4th Semester/Term XBA1-GB 8600 Capstone 6 6 Credits 6 Total Credits 35 1 Module I courses taken in May. 2 Module II courses taken in June. 3 Module III courses taken in August. 4 Module IV courses taken in November. 5 Module V courses taken in March. 6 Module VI courses taken in May of the following year. Learning Outcomes Upon successful completion of the program, graduates will: Be prepared to manage various data sources, types, and sizes and apply mathematical modeling techniques. Utilize statistical and regression-based modeling, data mining techniques, simulations, and other mathematical and statistical modeling to inform business decisions. Employ the fundamental concepts of data science and data mining across various industries to solve business problems, all while identifying ethical issues and policy implications related to data and privacy. Add value to firms and organizations through strategic approaches to data analytics across domain areas such as operations, marketing, finance, and revenue management. Emerge with a toolkit consisting of methodologies and data visualization techniques that can be applied to real world business analytics management issues. Policies On This Page NYU Policies Stern Policies NYU Policies University-wide policies can be found on the New York University Policy pages . Stern Policies Additional academic policies can be found on the Stern Graduate Academic Policies page .",
+      "char_start": 4025,
+      "char_end": 5560,
+      "token_count": 235,
+      "vector_id": "vectors/bulletins.nyu.edu_c38abdba_chunk0002.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "3a8c6c0b7e8390d87e13ca41d75ca392bdf3064a07b4b1e3c13719f2d4fb67f4",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:28:15.155426",
+      "response_raw_path": "out/llm_cache\\b404f65109214fb9.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

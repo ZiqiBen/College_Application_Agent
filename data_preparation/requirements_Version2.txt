@@ -1,7 +1,7 @@
-beautifulsoup4
 requests
+beautifulsoup4
+lxml
 pydantic
-python-dateutil
 sentence-transformers
 PyMuPDF
 tqdm

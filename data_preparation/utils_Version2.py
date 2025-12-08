@@ -14,7 +14,7 @@ import requests
 import fitz  # PyMuPDF
 from sentence_transformers import SentenceTransformer
 
-USER_AGENT = "UniCorpusBot/0.1 (+your-email@example.com)"
+USER_AGENT = "UniCorpusBot/0.1 (+zk2160@nyu.edu)"
 OUT_CACHE = "out/cache"
 LLM_CACHE_DIR = "out/llm_cache"
 os.makedirs(OUT_CACHE, exist_ok=True)

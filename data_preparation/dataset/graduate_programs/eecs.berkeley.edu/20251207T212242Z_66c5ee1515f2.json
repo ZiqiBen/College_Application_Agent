@@ -1,0 +1,86 @@
+{
+  "id": "eecs.berkeley.edu_66c5ee1515f2",
+  "source_url": "https://eecs.berkeley.edu/academics/graduate/",
+  "raw_snapshot_path": "out/cache\\20251207T212236Z_66c5ee1515f2.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:22:42.187666",
+  "checksum": "66c5ee1515f22582aa4b1b14a8e9540f1bfea93eb9f22fb26c49ca589b55cae3",
+  "language": null,
+  "title": "Graduate Admissions & Programs - EECS at Berkeley",
+  "raw_text": "Grad student Molly Nicholas (Human Computer Interaction/Hybrid Ecologies Lab)\nGraduate Admissions and Degree Programs\nBerkeley EECS graduate programs consistently top national rankings, providing\none of the best educational experiences anywhere. Our graduate students are immersed in an intellectually rigorous, interdisciplinary, globally aware environment, and have the opportunity to study and do research with faculty world-renowned for their innovation and discovery.\nJoin Our Team\nWe welcome your application to our competitive graduate programs. We look forward to the mixture of backgrounds and approaches that each new group of graduate students brings to us.\nM.Eng student outlining a project\nIndustry-Oriented Degree Programs\nBerkeley EECS offers two degrees for planning a career in industry.\nMaster of Engineering (MEng)\nFive Year Master of Science (5th Yr M.S.)\nCompare Professional Degrees\nEECS alumna and head of NSF's Directorate for Engineering, Dawn Tilbury\nResearch-Oriented Degree Programs\nBerkeley EECS offers three degrees for planning a career in industrial R&D and teaching. The Master of Science (M.S.), the Doctor of Philosophy (Ph.D.), and the combined M.S./Ph.D.\nT\nhe 2-year M.S. degree in EECS is intended primarily for\nregistered UC Berkeley Ph.D. students\nwho want to add the degree.\nOther students interested in a research-oriented degree should consider applying directly to the\nM.S./Ph.D. or Ph.D. program\n. If you are planning to immediately join the engineering profession without pursuing a Ph.D., the\nMaster of Engineering (M.Eng.)\nprogram is specifically designed as a professional master’s degree.\nApply to the M.S. or Ph.D. Research Degree Programs\nCompare Research Degrees\nQuick Links\nAdding the EECS/CS M.S. From Another Department\nJoint Master's in EECS and Public Policy (M.S./M.P.P.)\nGraduate Fellowships\nRecommended Coursework\nEECS Ph.D. Student Guide\nView the Grad Admissions FAQ\nEqual Access to Application Assistance Program\nThe student-run Equal Access Assistance (EAAA) program aims to ensure that all applicants to higher degree programs (M.S./Ph.D.) at Berkeley EECS have access to guidance on the higher degree application process. One current (or recent graduate) in EECS will provide feedback on your statement of purpose, personal history statement, CV/resume, and other application materials in advance of higher-degree application deadlines in the fall semester.  This feedback will be Berkeley- and admissions-focused, as opposed to grammar or formatting advice.\nApplication for admission to Berkeley EECS is a process that must be completed separately; participation in EAAA does not guarantee admission nor affect the admissions decision-making process in any way.\nMore information about the EAAA",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Engineering (MEng)",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": "If you are planning to immediately join the engineering profession without pursuing a Ph.D., the Master of Engineering (M.Eng.) program is specifically designed as a professional master’s degree.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 420,
+      "char_end": 448
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 784,
+      "char_end": 927
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "eecs.berkeley.edu_66c5ee15_0000",
+      "text": "Grad student Molly Nicholas (Human Computer Interaction/Hybrid Ecologies Lab) Graduate Admissions and Degree Programs Berkeley EECS graduate programs consistently top national rankings, providing one of the best educational experiences anywhere. Our graduate students are immersed in an intellectually rigorous, interdisciplinary, globally aware environment, and have the opportunity to study and do research with faculty world-renowned for their innovation and discovery. Join Our Team We welcome your application to our competitive graduate programs. We look forward to the mixture of backgrounds and approaches that each new group of graduate students brings to us. M.Eng student outlining a project Industry-Oriented Degree Programs Berkeley EECS offers two degrees for planning a career in industry. Master of Engineering (MEng) Five Year Master of Science (5th Yr M.S.) Compare Professional Degrees EECS alumna and head of NSF's Directorate for Engineering, Dawn Tilbury Research-Oriented Degree Programs Berkeley EECS offers three degrees for planning a career in industrial R&D and teaching. The Master of Science (M.S.), the Doctor of Philosophy (Ph.D.), and the combined M.S./Ph.D. T he 2-year M.S. degree in EECS is intended primarily for registered UC Berkeley Ph.D. students who want to add the degree. Other students interested in a research-oriented degree should consider applying directly to the M.S./Ph.D. or Ph.D. program . If you are planning to immediately join the engineering profession without pursuing a Ph.D., the Master of Engineering (M.Eng.) program is specifically designed as a professional master’s degree. Apply to the M.S. or Ph.D. Research Degree Programs Compare Research Degrees Quick Links Adding the EECS/CS M.S. From Another Department Joint Master's in EECS and Public Policy (M.S./M.P.P.) Graduate Fellowships Recommended Coursework EECS Ph.D. Student Guide View the Grad Admissions FAQ Equal Access to Application Assistance Program The student-run Equal Access Assistance (EAAA) program aims to ensure that all applicants to higher degree programs (M.S./Ph.D.) at Berkeley EECS have access to guidance on the higher degree application process. One current (or recent graduate) in EECS will provide feedback on your statement of purpose, personal history statement, CV/resume, and other application materials in advance of higher-degree application deadlines in the fall semester. This feedback will be Berkeley- and admissions-focused, as opposed to grammar or formatting advice. Application for admission to Berkeley EECS is a process that must be completed separately; participation in EAAA does not guarantee admission nor affect the admissions decision-making process in any way. More information about the EAAA",
+      "char_start": 0,
+      "char_end": 2759,
+      "token_count": 397,
+      "vector_id": "vectors/eecs.berkeley.edu_66c5ee15_chunk0000.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "d095e99cda4dee3c0d2e73b693be923212e0c9d723b3c9893ddabf44754aeb28",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:22:42.187666",
+      "response_raw_path": "out/llm_cache\\45bed38ec96c4e55.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

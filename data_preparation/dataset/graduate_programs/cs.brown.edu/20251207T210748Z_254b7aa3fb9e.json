@@ -1,0 +1,94 @@
+{
+  "id": "cs.brown.edu_254b7aa3fb9e",
+  "source_url": "https://cs.brown.edu/degrees/masters/applications/",
+  "raw_snapshot_path": "out/cache\\20251207T210748Z_254b7aa3fb9e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:07:48.122001",
+  "checksum": "254b7aa3fb9e4154d871bad4ff2e8fea06383c6d7b261045c03c91d9c0ddcf28",
+  "language": null,
+  "title": "Brown CS: Applying To Our Master's Program",
+  "raw_text": "SEARCH\nAbout Brown\nAcademics\nAdmission\nResearch\nCampus Life\nInformation for:\nCurrent Students\nFaculty\nStaff\nFamilies\nAlumni\nFriends & Neighbors\nA to Z Index\nPeople Directory\nSocial@Brown\nFacebook\nTwitter\nLinkedIn\nGoogle+\nComputer Science\nAbout\nAbout the Department\nContact\nDirections\nPartners\nRooms\nSystems & Software\nConduit\nDiversity\nSocially Responsible\nComputing\nPositions / Jobs\nBrown CS News\nEvents\nBrown CS Blog\nPeople\nOur Community\nFaculty\nStaff\nGrad Students\nUgrad Students\nAlums\nResearch\nResearch Links\nAreas\nPublications\nOpportunities For\nVisiting Students\nDegrees\nDegree Programs\nDoctoral\nMaster's in\nComputer Science\nCybersecurity\nUndergraduate\nInterdisciplinary\nMiscellaneous\nCourses\nCourse List\nSections\nTA Program\nDiversity\nDiversity & Inclusion\nWho We Are\nResources\nAction Plan & Initiatives\nStudent Advocates\nData And Demographics\nStudent Groups\nGiving\nHome\n»\nDegrees\n»\nMaster's\n»\nApplying\nApplying To Our Master's Program\nFor Fall 2026, our CS Master's program accepts applications from September 1, 2025, until the application deadline of January 15, 2026.\nPlease note that Spring entry is only available for Brown undergraduates who are doing a fifth-year Master's degree.\nThanks for your interest in our Master's program! If you haven't already, please:\nAcquaint yourself with the program\nto make sure it's a good fit for you. Note that doctoral students can automatically earn a Master's degree on the way to completing a PhD, but Master's students don't automatically transition to the PhD track.\nRead our FAQ\n. It answers many of the questions you probably have.\nApplication Requirements\nWe expect strong results from applicants in all of the following items. While we don't require GRE scores, if you do supply them, we expect strong results here as well.\nRecord of grades or other academic performance (current undergraduates, send us your Fall semester grades)\nLetters of reference (you might suggest to your letter writers that they look at\nthis site\n)\nTOEFL or IELTS (for applicants whose native language is not English and do not meet any of the exemption criteria)\nAgain, please\nread our FAQ\n.\nApplying\nFor Fall 2026, our CS Master's program accepts applications from September 1, 2025, until the application deadline of January 15, 2026. Please note that Spring entry is only available for Brown undergraduates who are doing a fifth-year Master's degree. Once the application system has closed, it won't reopen until the following September for new applications. You'll be notified by the School of Professional Studies if you're admitted.\nPlease go\nhere\nto apply. You can get additional information from\nour FAQ\nand from the School of Professional Studies site. We strongly urge you to provide unofficial (scanned) copies of your transcripts as part of the electronic application. You'll be prompted to mail an official copy of your transcript if you're accepted to the program.\nGraduate applications are handled by a combination of Brown CS and the School of Professional Studies. First, your application is formally processed by the School of Professional Studies. Its content is then read by members of Brown CS, who then forward their recommendations to the School of Professional Studies. Finally, the School of Professional Studies formally admits you to the program. Therefore, you may receive correspondence from either Brown CS or the School of Professional Studies.\nFinancial Aid\nContingent on funds availability, our CS Master’s program offers financial aid in the form of tuition scholarships, which are awarded regardless of an applicant's race, color, national origin, or gender. In particular, we will be awarding a small number of such scholarships to applicants who come from disadvantaged socioeconomic backgrounds, but who have accomplishments showing that they can overcome the negative eﬀects of their backgrounds. More information can be found in the admissions application.\nComputer Science at Brown University\nProvidence, Rhode Island 02912 USA\nPhone: 401-863-7600\nMap & Directions\n/\nContact Us\nSign In",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master's in Computer Science",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Record of grades or other academic performance (current undergraduates, send us your Fall semester grades) Letters of reference (you might suggest to your letter writers that they look at this site ) TOEFL or IELTS (for applicants whose native language is not English and do not meet any of the exemption criteria)",
+    "features": "Contingent on funds availability, our CS Master’s program offers financial aid in the form of tuition scholarships, which are awarded regardless of an applicant's race, color, national origin, or gender. In particular, we will be awarding a small number of such scholarships to applicants who come from disadvantaged socioeconomic backgrounds, but who have accomplishments showing that they can overcome the negative eﬀects of their backgrounds.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 393,
+      "char_end": 420
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 701,
+      "char_end": 1002
+    },
+    "features": {
+      "text": "",
+      "char_start": 1812,
+      "char_end": 2082
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "cs.brown.edu_254b7aa3_0000",
+      "text": "SEARCH About Brown Academics Admission Research Campus Life Information for: Current Students Faculty Staff Families Alumni Friends & Neighbors A to Z Index People Directory Social@Brown Facebook Twitter LinkedIn Google+ Computer Science About About the Department Contact Directions Partners Rooms Systems & Software Conduit Diversity Socially Responsible Computing Positions / Jobs Brown CS News Events Brown CS Blog People Our Community Faculty Staff Grad Students Ugrad Students Alums Research Research Links Areas Publications Opportunities For Visiting Students Degrees Degree Programs Doctoral Master's in Computer Science Cybersecurity Undergraduate Interdisciplinary Miscellaneous Courses Course List Sections TA Program Diversity Diversity & Inclusion Who We Are Resources Action Plan & Initiatives Student Advocates Data And Demographics Student Groups Giving Home » Degrees » Master's » Applying Applying To Our Master's Program For Fall 2026, our CS Master's program accepts applications from September 1, 2025, until the application deadline of January 15, 2026. Please note that Spring entry is only available for Brown undergraduates who are doing a fifth-year Master's degree. Thanks for your interest in our Master's program! If you haven't already, please: Acquaint yourself with the program to make sure it's a good fit for you. Note that doctoral students can automatically earn a Master's degree on the way to completing a PhD, but Master's students don't automatically transition to the PhD track. Read our FAQ . It answers many of the questions you probably have. Application Requirements We expect strong results from applicants in all of the following items. While we don't require GRE scores, if you do supply them, we expect strong results here as well. Record of grades or other academic performance (current undergraduates, send us your Fall semester grades) Letters of reference (you might suggest to your letter writers that they look at this site ) TOEFL or IELTS (for applicants whose native language is not English and do not meet any of the exemption criteria) Again, please read our FAQ . Applying For Fall 2026, our CS Master's program accepts applications from September 1, 2025, until the application deadline of January 15, 2026. Please note that Spring entry is only available for Brown undergraduates who are doing a fifth-year Master's degree. Once the application system has closed, it won't reopen until the following September for new applications. You'll be notified by the School of Professional Studies if you're admitted. Please go here to apply. You can get additional",
+      "char_start": 0,
+      "char_end": 2620,
+      "token_count": 400,
+      "vector_id": "vectors/cs.brown.edu_254b7aa3_chunk0000.npy"
+    },
+    {
+      "chunk_id": "cs.brown.edu_254b7aa3_0001",
+      "text": "(for applicants whose native language is not English and do not meet any of the exemption criteria) Again, please read our FAQ . Applying For Fall 2026, our CS Master's program accepts applications from September 1, 2025, until the application deadline of January 15, 2026. Please note that Spring entry is only available for Brown undergraduates who are doing a fifth-year Master's degree. Once the application system has closed, it won't reopen until the following September for new applications. You'll be notified by the School of Professional Studies if you're admitted. Please go here to apply. You can get additional information from our FAQ and from the School of Professional Studies site. We strongly urge you to provide unofficial (scanned) copies of your transcripts as part of the electronic application. You'll be prompted to mail an official copy of your transcript if you're accepted to the program. Graduate applications are handled by a combination of Brown CS and the School of Professional Studies. First, your application is formally processed by the School of Professional Studies. Its content is then read by members of Brown CS, who then forward their recommendations to the School of Professional Studies. Finally, the School of Professional Studies formally admits you to the program. Therefore, you may receive correspondence from either Brown CS or the School of Professional Studies. Financial Aid Contingent on funds availability, our CS Master’s program offers financial aid in the form of tuition scholarships, which are awarded regardless of an applicant's race, color, national origin, or gender. In particular, we will be awarding a small number of such scholarships to applicants who come from disadvantaged socioeconomic backgrounds, but who have accomplishments showing that they can overcome the negative eﬀects of their backgrounds. More information can be found in the admissions application. Computer Science at Brown University Providence, Rhode Island 02912 USA Phone: 401-863-7600 Map & Directions / Contact Us Sign In",
+      "char_start": 1997,
+      "char_end": 4060,
+      "token_count": 319,
+      "vector_id": "vectors/cs.brown.edu_254b7aa3_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "aef5a5d72a25cb7b1c4e9621640df564879354ac1f523b9f93b7b56bbd7eddf4",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:07:48.122001",
+      "response_raw_path": "out/llm_cache\\22433eec1024379e.txt",
+      "cached": true
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

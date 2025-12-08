@@ -1,0 +1,119 @@
+{
+  "id": "hls.harvard.edu_8abb133a2cb2",
+  "source_url": "https://hls.harvard.edu/graduate-program/ll-m-program/ll-m-degree-overview/",
+  "raw_snapshot_path": "out/cache\\20251207T211121Z_8abb133a2cb2.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:11:31.805885",
+  "checksum": "8abb133a2cb23d4f5360f5a9234c7235e1146481333c3395554581796e9be8cd",
+  "language": "English",
+  "title": "LL.M. Degree Overview - Harvard Law School | Harvard Law School",
+  "raw_text": "LL.M. Degree Overview\nHarvard Law School Graduate Program\n5005 Wasserstein Hall (WCC)\n1585 Massachusetts Avenue\nCambridge, MA 02138\nContact Us\nThe philosophy of the LL.M. program is to offer our students a broad platform to design their own course of study within parameters set by the Harvard Law School faculty. Those parameters include some exposure to U.S. law, some writing experience, and, in the case of students who hold a J.D. degree from a school in the U.S. or Puerto Rico, a recommended exposure to legal theory.  See\nDegree Requirements\n. Within this framework, LL.M. students have enormous latitude in planning their year. Interested faculty, the Graduate Program staff, and special student advisors work hard throughout the year to help students identify and refine their study objectives, then develop an appropriate sequence of courses and other work.\nMost of a student’s program will be drawn from the regular\nHarvard Law School curriculum\n— some 500 courses and seminars each year, available to both J.D. and graduate students. Students also have the opportunity to pursue a limited number of credits at other faculties within Harvard and other area schools and a variety of writing projects. About half of the LL.M. students each year write an extensive research paper of approximately 50 pages on a topic the student develops in consultation with his or her faculty supervisor. Other students write shorter papers of some 25 pages in length, whether independently or in conjunction with a course or seminar.\nThe flexibility of the program enables students to take a varied curriculum, with courses ranging from environmental law to corporations to public international law and beyond, or to select courses primarily in a single area, such as constitutional law, business organization and finance, legal theory, or human rights.\nFinally, our students participate in a variety of extracurricular and co-curricular offerings on a not-for-credit basis. Graduate students participate in the full range of student organizations at the Law School. The Graduate Program and the Law School offer a multitude of other opportunities as well. For example, the Graduate Program features a series of information sessions highlighting various aspects of law teaching — an interactive forum for students from the various Law School degree programs — known as the\nLaw Teaching Colloquium\n.\nModal Gallery\nClose modal gallery\nof\nPrevious\nNext\nGallery Block Modal Gallery\nClose modal gallery\nof\nPrevious\nNext",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "LL.M. program",
+    "duration": "one year",
+    "courses": [
+      {
+        "name": "Harvard Law School curriculum",
+        "description": "Most of a student’s program will be drawn from the regular Harvard Law School curriculum — some 500 courses and seminars each year, available to both J.D. and graduate students."
+      },
+      {
+        "name": "Environmental law",
+        "description": null
+      },
+      {
+        "name": "Corporations",
+        "description": null
+      },
+      {
+        "name": "Public international law",
+        "description": null
+      },
+      {
+        "name": "Constitutional law",
+        "description": null
+      },
+      {
+        "name": "Business organization and finance",
+        "description": null
+      },
+      {
+        "name": "Legal theory",
+        "description": null
+      },
+      {
+        "name": "Human rights",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "Those parameters include some exposure to U.S. law, some writing experience, and, in the case of students who hold a J.D. degree from a school in the U.S. or Puerto Rico, a recommended exposure to legal theory.",
+    "features": "The philosophy of the LL.M. program is to offer our students a broad platform to design their own course of study within parameters set by the Harvard Law School faculty. ... Within this framework, LL.M. students have enormous latitude in planning their year. ... Most of a student’s program will be drawn from the regular Harvard Law School curriculum — some 500 courses and seminars each year, available to both J.D. and graduate students. Students also have the opportunity to pursue a limited number of credits at other faculties within Harvard and other area schools and a variety of writing projects. ... The flexibility of the program enables students to take a varied curriculum, with courses ranging from environmental law to corporations to public international law and beyond, or to select courses primarily in a single area, such as constitutional law, business organization and finance, legal theory, or human rights. ... Finally, our students participate in a variety of extracurricular and co-curricular offerings on a not-for-credit basis. Graduate students participate in the full range of student organizations at the Law School. The Graduate Program and the Law School offer a multitude of other opportunities as well.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 61,
+      "char_end": 74
+    },
+    "duration": {
+      "text": "",
+      "char_start": 420,
+      "char_end": 439
+    },
+    "courses": {
+      "text": "",
+      "char_start": 441,
+      "char_end": 1042
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 181,
+      "char_end": 345
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 1272
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 15,
+      "char_end": 33
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "hls.harvard.edu_8abb133a_0000",
+      "text": "LL.M. Degree Overview Harvard Law School Graduate Program 5005 Wasserstein Hall (WCC) 1585 Massachusetts Avenue Cambridge, MA 02138 Contact Us The philosophy of the LL.M. program is to offer our students a broad platform to design their own course of study within parameters set by the Harvard Law School faculty. Those parameters include some exposure to U.S. law, some writing experience, and, in the case of students who hold a J.D. degree from a school in the U.S. or Puerto Rico, a recommended exposure to legal theory. See Degree Requirements . Within this framework, LL.M. students have enormous latitude in planning their year. Interested faculty, the Graduate Program staff, and special student advisors work hard throughout the year to help students identify and refine their study objectives, then develop an appropriate sequence of courses and other work. Most of a student’s program will be drawn from the regular Harvard Law School curriculum — some 500 courses and seminars each year, available to both J.D. and graduate students. Students also have the opportunity to pursue a limited number of credits at other faculties within Harvard and other area schools and a variety of writing projects. About half of the LL.M. students each year write an extensive research paper of approximately 50 pages on a topic the student develops in consultation with his or her faculty supervisor. Other students write shorter papers of some 25 pages in length, whether independently or in conjunction with a course or seminar. The flexibility of the program enables students to take a varied curriculum, with courses ranging from environmental law to corporations to public international law and beyond, or to select courses primarily in a single area, such as constitutional law, business organization and finance, legal theory, or human rights. Finally, our students participate in a variety of extracurricular and co-curricular offerings on a not-for-credit basis. Graduate students participate in the full range of student organizations at the Law School. The Graduate Program and the Law School offer a multitude of other opportunities as well. For example, the Graduate Program features a series of information sessions highlighting various aspects of law teaching — an interactive forum for students from the various Law School degree programs — known as the Law Teaching Colloquium . Modal Gallery Close modal gallery of Previous Next Gallery Block Modal Gallery Close modal gallery of Previous Next",
+      "char_start": 0,
+      "char_end": 2508,
+      "token_count": 395,
+      "vector_id": "vectors/hls.harvard.edu_8abb133a_chunk0000.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "533c55274cc6bed5b17cc69032f60ca897172270fd6d2f9293805e3a0904e38f",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:11:31.805885",
+      "response_raw_path": "out/llm_cache\\6a496fa7e7116a2f.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

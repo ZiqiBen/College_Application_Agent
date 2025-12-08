@@ -1,0 +1,86 @@
+{
+  "id": "grad.ucla.edu_5c954d2292a9",
+  "source_url": "https://grad.ucla.edu/programs/physical-sciences/chemistry-and-biochemistry-department/biochemistry-molecular-and-structural-biology/",
+  "raw_snapshot_path": "out/cache\\20251207T212310Z_5c954d2292a9.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:23:15.196579",
+  "checksum": "5c954d2292a90a9d42e739bb0200ac944c6c5b8f775ad8302c249cbbeb3e37ce",
+  "language": null,
+  "title": "Biochemistry, Molecular and Structural Biology | UCLA Graduate Programs",
+  "raw_text": "Graduate Program: Biochemistry, Molecular and Structural Biology\nDEGREES\nUCLA's Graduate Program in Biochemistry, Molecular and Structural Biology offers the following degree(s):\nD\nDoctor of Philosophy                                              (Ph.D.)\nM\nMasters available on Doctoral track\nAdmission\nRequirements\nProgram\nStatistics\nVisit the Program’s website\nBiochemistry, Molecular and Structural Biology provides in-depth details on its own site\nWith questions not answered here or on the program’s site (above), please contact the program directly.\nADDRESS\nBiochemistry, Molecular and Structural Biology Graduate Program at UCLA\n4009 Young Hall\nBox 951569\nLos Angeles, CA 90095-1569\nFACULTY\nVisit the\nChemistry and Biochemistry Department’s faculty roster\nCOURSE DESCRIPTIONS\nVisit the registrar's site for the\nChemistry and Biochemistry Department’s course descriptions\nPHONE\n(310) 825-3150\nFax: (310) 267-0204\nEMAIL\nchemgrad@chem.ucla.edu\nMAJOR CODE: BIOCHEMISTRY, MOLECULAR AND STRUCTURAL BIOLOGY\n009O",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Biochemistry, Molecular and Structural Biology",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": "chemgrad@chem.ucla.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 54
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 456,
+      "char_end": 486
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "grad.ucla.edu_5c954d22_0000",
+      "text": "Graduate Program: Biochemistry, Molecular and Structural Biology DEGREES UCLA's Graduate Program in Biochemistry, Molecular and Structural Biology offers the following degree(s): D Doctor of Philosophy (Ph.D.) M Masters available on Doctoral track Admission Requirements Program Statistics Visit the Program’s website Biochemistry, Molecular and Structural Biology provides in-depth details on its own site With questions not answered here or on the program’s site (above), please contact the program directly. ADDRESS Biochemistry, Molecular and Structural Biology Graduate Program at UCLA 4009 Young Hall Box 951569 Los Angeles, CA 90095-1569 FACULTY Visit the Chemistry and Biochemistry Department’s faculty roster COURSE DESCRIPTIONS Visit the registrar's site for the Chemistry and Biochemistry Department’s course descriptions PHONE (310) 825-3150 Fax: (310) 267-0204 EMAIL chemgrad@chem.ucla.edu MAJOR CODE: BIOCHEMISTRY, MOLECULAR AND STRUCTURAL BIOLOGY 009O",
+      "char_start": 0,
+      "char_end": 966,
+      "token_count": 126,
+      "vector_id": "vectors/grad.ucla.edu_5c954d22_chunk0000.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "9ff3f7a8c56434116c03e399e76f64cb7fa652f5506e23784bf985b8cb55e45a",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:23:15.196579",
+      "response_raw_path": "out/llm_cache\\10947ab0b50ed155.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

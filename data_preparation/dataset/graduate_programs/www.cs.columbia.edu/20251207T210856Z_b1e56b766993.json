@@ -1,0 +1,143 @@
+{
+  "id": "www.cs.columbia.edu_b1e56b766993",
+  "source_url": "https://www.cs.columbia.edu/education/ms/",
+  "raw_snapshot_path": "out/cache\\20251207T210846Z_b1e56b766993.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:08:56.225980",
+  "checksum": "b1e56b7669938b363c538d88e23c3f26a0a784e1842bce8f51353d7633c100a5",
+  "language": null,
+  "title": "M.S. | Department of Computer Science, Columbia University",
+  "raw_text": "MASTER OF SCIENCE PROGRAM\nThe Master of Science (MS) program is intended for people who wish to broaden and deepen their understanding of Computer Science. Columbia University and the New York City environment provide excellent career opportunities in multiple industries.\nThe program provides a unique opportunity to develop leading-edge in-depth knowledge of specific computer science disciplines. The department currently offers faculty-determined pathways covering eight such disciplines. MS students are encouraged to participate in state-of-the-art research with our research groups and labs.\nREQUIREMENTS\nComplete a total of\n30 points\n(Courses must be at the 4000 level or above)\nMaintain at least a\n2.7\noverall GPA. (No more than 1 D is permitted). The full Academic Standing Policy can be found\nhere\n.\nComplete the\nColumbia Engineering Professional Development & Leadership (PDL)\nrequirement (Not applicable to CVN students)\nSatisfy\nbreadth requirements\nTake at least\n6 points\nof technical courses at the 6000 level\nAt most, up to\n3 points\nof your degree can be Non-CS/Non-pathway if they are deemed relevant to your pathway and sufficiently technical in nature. Please submit the course syllabus to your CS Faculty Advisor for review, and then forward the approval confirmation email to\nms-advising@cs.columbia.edu\nPATHWAY OPTIONS\nFor robust understanding and competency in one of the computer science disciplines, students should choose one of the pathways below. View each webpage for details on key and elective courses.\nComputational Biology\nNetwork Systems\nComputer Security\nSoftware Systems\nFoundations of Computer Science\nVision, Graphics, Interaction, and Robotics\nMachine Learning\nMS Personalized (by faculty invite only)\nNatural Language Processing\nMS Thesis (by faculty invite only)\nColumbia Video Network (CVN) students should also choose from one of the above pathways. For faculty advisement, please contact the assigned pathway\nadvisors\n.\nCS MS FACULTY PATHWAY ADVISORS\nCS Faculty Pathway Advisors\nwill be assigned after you select a pathway in Mice. If you do not yet have a Mice account but are a CS MS student, please contact\nms-advising@cs.columbia.edu\n. Contact your Faculty Pathway Advisor to get special permission for any course not specifically approved on your\nCS Pathway websites\n.\nDEGREE PROGRESS CHECKLIST\nStudents should keep an updated copy of their\nDegree Progress Checklist\non hand for any academic progress reviews with their Faculty and/or Admin advisor. This form will also be requested a few weeks before graduation to verify your program requirements are met.\nHOW TO FILL OUT YOUR CHECKLIST:\nList all coursework that should be used to meet your CS MS program requirements.\nFor all topics courses (COMS 4995 & COMS 6998 courses), remember to include the actual course title (for example, use “COMS 4995 Hacking for Defense” NOT “COMS 4995”).\nFor all Projects courses (COMS 6901), include the name of the instructor and how many points the course was worth.\nFor all Thesis courses (COMS 6902), include the name of the instructor and how many points the course was worth.\nFor all Personalized Pathway students, include the name of your advisor on your checklist.\nFor Advanced standing – mark which courses are approved by SEAS Academics.\nFor waived courses, list which course you are using to satisfy the points requirement for the waived course.\nChecklist Review Submission\nTOPICS COURSES\nIf you are interested in applying a specialized Topics in Computer Science courses (COMS 4995 or COMS 6998) to your Pathway electives, please view\nTopics Courses by Pathway Approval\n.\nStudents may take multiple sections of COMS 4995 and/or COMS 6998, as each topic title will vary by content each semester. If you aren’t sure if a course is the same, please email\nms-advising@cs.columbia.edu\nNo approval is required for the course to count as a General Elective.\nA list of current and recent Topics Course Descriptions can be found\nhere\n.\nMS IN COMPUTER ENGINEERING\nIn addition to the Computer Science MS Program, we offer the Computer Engineering MS Program jointly with the Electrical Engineering Department. More information about the program can be found in the Computer Engineering section of the SEAS bulletin and on the\nComputer Engineering website\n.\nDUAL MS IN JOURNALISM AND COMPUTER SCIENCE\nAdmitted students will enroll for a total of four semesters. In addition to taking classes already offered at the Journalism and Engineering schools, students will attend a seminar and workshop designed specifically for the dual degree program. The seminar will teach students about the impact of digital techniques on journalism; the emerging role of citizens in the news process; the influence of social media; and the changing business models that will support news gathering. In the workshop, students will use a hands-on approach to delve deeply into information design, focusing on how to build a site, section, or application from concept to development, ensuring the editorial goals are kept uppermost in mind. For more information, please visit the\nprogram website\n.\nIMPORTANT AND USEFUL LINKS\nMS FACULTY PATHWAY ADVISORS\nMS PROGRAM FAQ\nFIELDWORK/CPT FAQ\nNEW MS STUDENTS WELCOME GUIDE\nCOLUMBIA ENGINEERING RESEARCH OPPORTUNITIES\nCOLUMBIA ENGINEERING PROFESSIONAL DEVELOPMENT & LEADERSHIP (PDL) PROGRAM\nCOMPUTER SCIENCE ACADEMIC HONESTY POLICY\nCOMPUTER SCIENCE ACADEMIC STANDING POLICY\nADMISSIONS INFORMATION\nSEAS Admission FAQ\nSEAS Admissions contact:\nseasgradmit@columbia.edu\nCS Admission FAQ\nCS Admissions contact:\nms-admissions@cs.columbia.edu\nQuestions? Email CS Advising!\nUpdated 08/18/2025",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Science (MS) program",
+    "duration": null,
+    "courses": [
+      {
+        "name": "Computational Biology",
+        "description": null
+      },
+      {
+        "name": "Network Systems",
+        "description": null
+      },
+      {
+        "name": "Computer Security",
+        "description": null
+      },
+      {
+        "name": "Software Systems",
+        "description": null
+      },
+      {
+        "name": "Foundations of Computer Science",
+        "description": null
+      },
+      {
+        "name": "Vision, Graphics, Interaction, and Robotics",
+        "description": null
+      },
+      {
+        "name": "Machine Learning",
+        "description": null
+      },
+      {
+        "name": "MS Personalized (by faculty invite only)",
+        "description": null
+      },
+      {
+        "name": "Natural Language Processing",
+        "description": null
+      },
+      {
+        "name": "MS Thesis (by faculty invite only)",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "The program provides a unique opportunity to develop leading-edge in-depth knowledge of specific computer science disciplines. The department currently offers faculty-determined pathways covering eight such disciplines. MS students are encouraged to participate in state-of-the-art research with our research groups and labs.",
+    "contact_email": "ms-advising@cs.columbia.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 108
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": 670,
+      "char_end": 1002
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 162,
+      "char_end": 430
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 1162,
+      "char_end": 1200
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "www.cs.columbia.edu_b1e56b76_0000",
+      "text": "MASTER OF SCIENCE PROGRAM The Master of Science (MS) program is intended for people who wish to broaden and deepen their understanding of Computer Science. Columbia University and the New York City environment provide excellent career opportunities in multiple industries. The program provides a unique opportunity to develop leading-edge in-depth knowledge of specific computer science disciplines. The department currently offers faculty-determined pathways covering eight such disciplines. MS students are encouraged to participate in state-of-the-art research with our research groups and labs. REQUIREMENTS Complete a total of 30 points (Courses must be at the 4000 level or above) Maintain at least a 2.7 overall GPA. (No more than 1 D is permitted). The full Academic Standing Policy can be found here . Complete the Columbia Engineering Professional Development & Leadership (PDL) requirement (Not applicable to CVN students) Satisfy breadth requirements Take at least 6 points of technical courses at the 6000 level At most, up to 3 points of your degree can be Non-CS/Non-pathway if they are deemed relevant to your pathway and sufficiently technical in nature. Please submit the course syllabus to your CS Faculty Advisor for review, and then forward the approval confirmation email to ms-advising@cs.columbia.edu PATHWAY OPTIONS For robust understanding and competency in one of the computer science disciplines, students should choose one of the pathways below. View each webpage for details on key and elective courses. Computational Biology Network Systems Computer Security Software Systems Foundations of Computer Science Vision, Graphics, Interaction, and Robotics Machine Learning MS Personalized (by faculty invite only) Natural Language Processing MS Thesis (by faculty invite only) Columbia Video Network (CVN) students should also choose from one of the above pathways. For faculty advisement, please contact the assigned pathway advisors . CS MS FACULTY PATHWAY ADVISORS CS Faculty Pathway Advisors will be assigned after you select a pathway in Mice. If you do not yet have a Mice account but are a CS MS student, please contact ms-advising@cs.columbia.edu . Contact your Faculty Pathway Advisor to get special permission for any course not specifically approved on your CS Pathway websites . DEGREE PROGRESS CHECKLIST Students should keep an updated copy of their Degree Progress Checklist on hand for any academic progress reviews with their Faculty and/or Admin advisor. This form will also be requested a few weeks before graduation to verify your program requirements are met. HOW TO FILL OUT YOUR CHECKLIST: List all coursework",
+      "char_start": 0,
+      "char_end": 2658,
+      "token_count": 400,
+      "vector_id": "vectors/www.cs.columbia.edu_b1e56b76_chunk0000.npy"
+    },
+    {
+      "chunk_id": "www.cs.columbia.edu_b1e56b76_0001",
+      "text": "you select a pathway in Mice. If you do not yet have a Mice account but are a CS MS student, please contact ms-advising@cs.columbia.edu . Contact your Faculty Pathway Advisor to get special permission for any course not specifically approved on your CS Pathway websites . DEGREE PROGRESS CHECKLIST Students should keep an updated copy of their Degree Progress Checklist on hand for any academic progress reviews with their Faculty and/or Admin advisor. This form will also be requested a few weeks before graduation to verify your program requirements are met. HOW TO FILL OUT YOUR CHECKLIST: List all coursework that should be used to meet your CS MS program requirements. For all topics courses (COMS 4995 & COMS 6998 courses), remember to include the actual course title (for example, use “COMS 4995 Hacking for Defense” NOT “COMS 4995”). For all Projects courses (COMS 6901), include the name of the instructor and how many points the course was worth. For all Thesis courses (COMS 6902), include the name of the instructor and how many points the course was worth. For all Personalized Pathway students, include the name of your advisor on your checklist. For Advanced standing – mark which courses are approved by SEAS Academics. For waived courses, list which course you are using to satisfy the points requirement for the waived course. Checklist Review Submission TOPICS COURSES If you are interested in applying a specialized Topics in Computer Science courses (COMS 4995 or COMS 6998) to your Pathway electives, please view Topics Courses by Pathway Approval . Students may take multiple sections of COMS 4995 and/or COMS 6998, as each topic title will vary by content each semester. If you aren’t sure if a course is the same, please email ms-advising@cs.columbia.edu No approval is required for the course to count as a General Elective. A list of current and recent Topics Course Descriptions can be found here . MS IN COMPUTER ENGINEERING In addition to the Computer Science MS Program, we offer the Computer Engineering MS Program jointly with the Electrical Engineering Department. More information about the program can be found in the Computer Engineering section of the SEAS bulletin and on the Computer Engineering website . DUAL MS IN JOURNALISM AND COMPUTER SCIENCE Admitted students will enroll for a total of four semesters. In addition to taking classes already offered at the Journalism and Engineering schools, students will",
+      "char_start": 2046,
+      "char_end": 4498,
+      "token_count": 400,
+      "vector_id": "vectors/www.cs.columbia.edu_b1e56b76_chunk0001.npy"
+    },
+    {
+      "chunk_id": "www.cs.columbia.edu_b1e56b76_0002",
+      "text": "count as a General Elective. A list of current and recent Topics Course Descriptions can be found here . MS IN COMPUTER ENGINEERING In addition to the Computer Science MS Program, we offer the Computer Engineering MS Program jointly with the Electrical Engineering Department. More information about the program can be found in the Computer Engineering section of the SEAS bulletin and on the Computer Engineering website . DUAL MS IN JOURNALISM AND COMPUTER SCIENCE Admitted students will enroll for a total of four semesters. In addition to taking classes already offered at the Journalism and Engineering schools, students will attend a seminar and workshop designed specifically for the dual degree program. The seminar will teach students about the impact of digital techniques on journalism; the emerging role of citizens in the news process; the influence of social media; and the changing business models that will support news gathering. In the workshop, students will use a hands-on approach to delve deeply into information design, focusing on how to build a site, section, or application from concept to development, ensuring the editorial goals are kept uppermost in mind. For more information, please visit the program website . IMPORTANT AND USEFUL LINKS MS FACULTY PATHWAY ADVISORS MS PROGRAM FAQ FIELDWORK/CPT FAQ NEW MS STUDENTS WELCOME GUIDE COLUMBIA ENGINEERING RESEARCH OPPORTUNITIES COLUMBIA ENGINEERING PROFESSIONAL DEVELOPMENT & LEADERSHIP (PDL) PROGRAM COMPUTER SCIENCE ACADEMIC HONESTY POLICY COMPUTER SCIENCE ACADEMIC STANDING POLICY ADMISSIONS INFORMATION SEAS Admission FAQ SEAS Admissions contact: seasgradmit@columbia.edu CS Admission FAQ CS Admissions contact: ms-admissions@cs.columbia.edu Questions? Email CS Advising! Updated 08/18/2025",
+      "char_start": 3868,
+      "char_end": 5639,
+      "token_count": 258,
+      "vector_id": "vectors/www.cs.columbia.edu_b1e56b76_chunk0002.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "2baf509bd274357568ad848f5fb9c7c9fadd57a8cc4411b3999d065d6a96876d",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:08:56.225980",
+      "response_raw_path": "out/llm_cache\\872b31500c1030e0.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

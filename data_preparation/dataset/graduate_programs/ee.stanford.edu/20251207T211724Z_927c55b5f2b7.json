@@ -1,0 +1,94 @@
+{
+  "id": "ee.stanford.edu_927c55b5f2b7",
+  "source_url": "https://ee.stanford.edu/admissions/ms",
+  "raw_snapshot_path": "out/cache\\20251207T211716Z_927c55b5f2b7.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:17:24.395070",
+  "checksum": "927c55b5f2b79baac591a2768a433e8be96c15a9c54ccc57054bb3caf0614078",
+  "language": null,
+  "title": "MS (Master of Science) Admissions Overview | Stanford Electrical Engineering",
+  "raw_text": "MS (Master of Science) Admissions Overview\nThe master's degree program in Electrical Engineering provides advanced preparation for professional practice through a highly customizable, coursework-based curriculum.\nThe information on this page is intended for external applicants who wish to pursue the MS degree on a full-time basis. Please see below for other MS admission processes in the EE department.\nAre you a\ncurrent Stanford undergraduate\nstudent? See\nCoterm Admissions Overview\nAre you a\ncurrent Stanford doctoral student\noutside the EE department? See\nAdding the MS Overview\nApplication Timeline & Deadlines\nSeptember 15, 2025\nOnline application opens\nOctober 08, 2025, 1:00pm PST\nKnight-Hennessy Scholars (KHS) application deadline. KHS is an optional scholarship program. Read description below.\nTuesday, December 02, 2025, 11:59pm PST\nDeadline for Autumn 2026-2027\nLate February 2026\nNotification of admission decision sent via email\nApril 15, 2026\nDeadline for admitted students to respond to offer of admission\nClick on the links below to read about each step of the application process:\n[1] Review Eligibility Guidelines\n[2] Prepare Required Materials\n[3] Submit Your Application\n[4] Submit Official Materials\n[5] Check Application Status\nDid You Know?\nThe MS program in Electrical Engineering leads to a terminal degree. Students who wish to enter the PhD program must apply through the general PhD admission process.\n• Applications are reviewed on an annual basis for autumn quarter start only.\n• Tuesday, December 02, 2025, 11:59pm PST is the application deadline for Autumn 2026-2027.\n• MS students complete 45 units of study based on an individually designed course plan that satisfies the department's depth, breadth, and technical course requirements. There is no thesis requirement.\n• Typical completion time for the MS degree is 1.5-2 years for full-time students.\nLearn more on the Frequently Asked Questions for MS Applicants page.\nKnight-Hennessy Scholars\nThe Knight-Hennessy Scholars program is designed to build a interdisciplinary community of Stanford graduate students dedicated to finding creative solutions to the world's greatest challenges. The program awards up to 100 high-achieving students every year with full funding to pursue a graduate education at Stanford, including the M.S. and Ph.D. in Electrical Engineering. To be considered, you must apply to Knight-Hennessy Scholars application deadline, and separately apply to the Electrical Engineering department.\nThe Knight-Hennessy Scholars program\nAdditional Resources\nMS Financial Assistance\nLearn about funding options for MS students in our department.\nMS FAQ\nFind answers to frequently asked questions.\nJoint Degree Programs\nExplore pathways to pursue the MS in Electrical Engineering concurrently with a professional degree (MBA, JD).\nGraduate Degree Progress\nLearn about the MS degree milestones.\nEE Graduate Handbook\nRead about our degree requirements in detail.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MS (Master of Science) in Electrical Engineering",
+    "duration": "1.5-2 years for full-time students",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Review Eligibility Guidelines; Prepare Required Materials; Submit Your Application; Submit Official Materials; Check Application Status",
+    "features": "The master's degree program in Electrical Engineering provides advanced preparation for professional practice through a highly customizable, coursework-based curriculum. MS students complete 45 units of study based on an individually designed course plan that satisfies the department's depth, breadth, and technical course requirements. There is no thesis requirement. The MS program in Electrical Engineering leads to a terminal degree. Students who wish to enter the PhD program must apply through the general PhD admission process. Applications are reviewed on an annual basis for autumn quarter start only.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 77
+    },
+    "duration": {
+      "text": "",
+      "char_start": 670,
+      "char_end": 741
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 390,
+      "char_end": 563
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 627
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "ee.stanford.edu_927c55b5_0000",
+      "text": "MS (Master of Science) Admissions Overview The master's degree program in Electrical Engineering provides advanced preparation for professional practice through a highly customizable, coursework-based curriculum. The information on this page is intended for external applicants who wish to pursue the MS degree on a full-time basis. Please see below for other MS admission processes in the EE department. Are you a current Stanford undergraduate student? See Coterm Admissions Overview Are you a current Stanford doctoral student outside the EE department? See Adding the MS Overview Application Timeline & Deadlines September 15, 2025 Online application opens October 08, 2025, 1:00pm PST Knight-Hennessy Scholars (KHS) application deadline. KHS is an optional scholarship program. Read description below. Tuesday, December 02, 2025, 11:59pm PST Deadline for Autumn 2026-2027 Late February 2026 Notification of admission decision sent via email April 15, 2026 Deadline for admitted students to respond to offer of admission Click on the links below to read about each step of the application process: [1] Review Eligibility Guidelines [2] Prepare Required Materials [3] Submit Your Application [4] Submit Official Materials [5] Check Application Status Did You Know? The MS program in Electrical Engineering leads to a terminal degree. Students who wish to enter the PhD program must apply through the general PhD admission process. • Applications are reviewed on an annual basis for autumn quarter start only. • Tuesday, December 02, 2025, 11:59pm PST is the application deadline for Autumn 2026-2027. • MS students complete 45 units of study based on an individually designed course plan that satisfies the department's depth, breadth, and technical course requirements. There is no thesis requirement. • Typical completion time for the MS degree is 1.5-2 years for full-time students. Learn more on the Frequently Asked Questions for MS Applicants page. Knight-Hennessy Scholars The Knight-Hennessy Scholars program is designed to build a interdisciplinary community of Stanford graduate students dedicated to finding creative solutions to the world's greatest challenges. The program awards up to 100 high-achieving students every year with full funding to pursue a graduate education at Stanford, including the M.S. and Ph.D. in Electrical Engineering. To be considered, you must apply to Knight-Hennessy Scholars application deadline, and separately apply to the Electrical Engineering department. The Knight-Hennessy Scholars program Additional Resources MS Financial Assistance Learn about funding options for MS students in our department. MS FAQ Find answers to frequently asked questions. Joint Degree Programs Explore pathways to",
+      "char_start": 0,
+      "char_end": 2742,
+      "token_count": 400,
+      "vector_id": "vectors/ee.stanford.edu_927c55b5_chunk0000.npy"
+    },
+    {
+      "chunk_id": "ee.stanford.edu_927c55b5_0001",
+      "text": "designed to build a interdisciplinary community of Stanford graduate students dedicated to finding creative solutions to the world's greatest challenges. The program awards up to 100 high-achieving students every year with full funding to pursue a graduate education at Stanford, including the M.S. and Ph.D. in Electrical Engineering. To be considered, you must apply to Knight-Hennessy Scholars application deadline, and separately apply to the Electrical Engineering department. The Knight-Hennessy Scholars program Additional Resources MS Financial Assistance Learn about funding options for MS students in our department. MS FAQ Find answers to frequently asked questions. Joint Degree Programs Explore pathways to pursue the MS in Electrical Engineering concurrently with a professional degree (MBA, JD). Graduate Degree Progress Learn about the MS degree milestones. EE Graduate Handbook Read about our degree requirements in detail.",
+      "char_start": 2023,
+      "char_end": 2963,
+      "token_count": 132,
+      "vector_id": "vectors/ee.stanford.edu_927c55b5_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "ffd3eaabbf5434a29b82453d1b635e4038a9fef141c140af79544bbddd3bd505",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:17:24.395070",
+      "response_raw_path": "out/llm_cache\\1004eb1dceb9d9c7.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

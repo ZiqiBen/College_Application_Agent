@@ -1,0 +1,102 @@
+{
+  "id": "publichealth.cornell.edu_4eb79bffb5b0",
+  "source_url": "https://publichealth.cornell.edu/academics/master-of-public-health-program/admissions/",
+  "raw_snapshot_path": "out/cache\\20251207T210916Z_4eb79bffb5b0.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:09:27.344419",
+  "checksum": "4eb79bffb5b0bab971126d98879115ed3c22ea0fefda632eead3d0f3855ac061",
+  "language": "English",
+  "title": "Admissions – Public Health",
+  "raw_text": "Admissions\nOptions For Study\nStandard (2 years)\nA full-time professional program for individuals with undergraduate degrees, designed to be completed over a 21-month period, including four academic semesters and one summer. Students will be expected to pay four semesters of tuition, and be on campus for two academic years. The summer is typically spent working with community partners gaining public health experience.\nFall semester start\nAccelerated (12 months)\nA full-time accelerated professional program for individuals with advanced health-related degrees (MD, DVM, DDS, etc.) or substantial professional public health experience (2+ years). This program will be completed in a 12-month period and will begin in the summer term. Students will be expected to pay three semesters of tuition, and be on campus for 12 months, including time working with community partners honing public health competence.\nSummer semester start\nOptions For Cornell Undergraduates and Employees\nCornell Undergraduates\nThe Cornell MPH Program is a great next step for Cornell undergraduates who want to become public health leaders who advance health equity by changing the status quo. Cornell graduates may be eligible for Accelerated Program.\nContact Assistant Director of Student Services, Ben Parker\nto learn more!\nCornell Employees\nCornell employees are exceptional candidates to the MPH Program bringing institutional familiarity and unique perspectives that contribute to a more vibrant and inclusive learning environment in the MPH Program.\nClick here to learn more about education benefits at Cornell!\nIn the video to the right, Cornell MPH alumna and former Cornell Employee Degree Program (EDP) student, Joceyln Mendoza, explains why she chose to pursue her MPH at Cornell while working on campus.\nCornell Undergraduates\nAre you a Cornell undergraduate student interested in learning more about pursuing your MPH at Cornell? Our Program is designed to produce health leaders who will advance health equity by changing the status quo: creating conditions that prevent illness and improve equitable access to health services and treatments.\nContact Assistant Director of Student Services, Ben Parker\nto learn more!\nCornell Employees\nCornell employees are exceptional candidates to the MPH Program bringing institutional familiarity and unique perspectives that contribute to a more vibrant and inclusive learning environment in the MPH Program.\nClick here to learn more about education benefits at Cornell!\nIn the video below, Cornell MPH alumna and former Cornell Employee Degree Program (EDP) student, Joceyln Mendoza, explains why she chose to pursue her MPH at Cornell while working as a licensed veterinary technician in the Cornell College of Veterinary Medicine.\nAdmission Requirements\nProspective students will submit all required documentation through the third-party SOPHAS application. We are interested in students from a broad array of professional, academic, and geographic backgrounds. In addition to submitting the\nSOPHAS application\n,\napplicants must also submit a supplemental\nCornell Graduate School application\n.\nApplications are reviewed through late Spring or early Summer with a Fall enrollment date for our standard two-year Program.\nTo apply, please submit:\nOfficial transcripts\nRésumé\nPersonal statement that includes what you have experienced in your education, work, or life that is piqued your interest in public health\nStatement of intent that describes why you want to pursue your MPH at Cornell, and how our curriculum, faculty, and One Health approach, will help you achieve your professional goals\nThree (3) letters of reference\nCornell Graduate School Quick Application\n(Public Health is listed under the Public Health & Planetary Health area of study)\nThe GRE is not required\n.\nInternational students also need to submit:\nTranscript evaluation from\nWES\nfor foreign transcripts\nSubmission of TOEFL or IELTS scores, taken within two years of the application deadline English language of instruction does not automatically waive this requirement. For more details, see the Cornell Graduate School\nEnglish language proficiency requirements\n.\nMinimum scores required:\nIELTS minimum overall band score of 7.0\nTOEFL minimum sub-scores for each element: Speaking: 22, Reading: 20, Listening: 15, Writing: 20\nApply Now!\nWant to Learn More?\nPlease fill out our\ninterest form\n, email, or call us with any other questions you may have about qualifications, academics, the application process, the Cornell experience, moving to Ithaca, or anything else related to our program—we’re happy to help!\nEmail:\ncornellmph@cornell.edu\nPhone: 607-253-4390\nFAQs\nProspective Students\nOur Team\nApply Now!\nFAQs\nProspective Students\nOur Team\nApply Now!",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Public Health Program",
+    "duration": "Standard (2 years): 21-month period, including four academic semesters and one summer. Accelerated (12 months): 12-month period.",
+    "courses": null,
+    "tuition": "Students will be expected to pay four semesters of tuition (Standard), three semesters of tuition (Accelerated).",
+    "application_requirements": "To apply, please submit: Official transcripts, Résumé, Personal statement that includes what you have experienced in your education, work, or life that is piqued your interest in public health, Statement of intent that describes why you want to pursue your MPH at Cornell, and how our curriculum, faculty, and One Health approach, will help you achieve your professional goals, Three (3) letters of reference, Cornell Graduate School Quick Application. The GRE is not required. International students also need to submit: Transcript evaluation from WES for foreign transcripts, Submission of TOEFL or IELTS scores, taken within two years of the application deadline.",
+    "features": "A full-time professional program for individuals with undergraduate degrees or advanced health-related degrees. The program includes community partner work for public health experience. Designed to produce health leaders who will advance health equity by changing the status quo: creating conditions that prevent illness and improve equitable access to health services and treatments.",
+    "contact_email": "cornellmph@cornell.edu",
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 31
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 468
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 181,
+      "char_end": 468
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 1327,
+      "char_end": 1862
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 1092
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 2102,
+      "char_end": 2129
+    },
+    "language": {
+      "text": "",
+      "char_start": 1772,
+      "char_end": 1862
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "publichealth.cornell.edu_4eb79bff_0000",
+      "text": "Admissions Options For Study Standard (2 years) A full-time professional program for individuals with undergraduate degrees, designed to be completed over a 21-month period, including four academic semesters and one summer. Students will be expected to pay four semesters of tuition, and be on campus for two academic years. The summer is typically spent working with community partners gaining public health experience. Fall semester start Accelerated (12 months) A full-time accelerated professional program for individuals with advanced health-related degrees (MD, DVM, DDS, etc.) or substantial professional public health experience (2+ years). This program will be completed in a 12-month period and will begin in the summer term. Students will be expected to pay three semesters of tuition, and be on campus for 12 months, including time working with community partners honing public health competence. Summer semester start Options For Cornell Undergraduates and Employees Cornell Undergraduates The Cornell MPH Program is a great next step for Cornell undergraduates who want to become public health leaders who advance health equity by changing the status quo. Cornell graduates may be eligible for Accelerated Program. Contact Assistant Director of Student Services, Ben Parker to learn more! Cornell Employees Cornell employees are exceptional candidates to the MPH Program bringing institutional familiarity and unique perspectives that contribute to a more vibrant and inclusive learning environment in the MPH Program. Click here to learn more about education benefits at Cornell! In the video to the right, Cornell MPH alumna and former Cornell Employee Degree Program (EDP) student, Joceyln Mendoza, explains why she chose to pursue her MPH at Cornell while working on campus. Cornell Undergraduates Are you a Cornell undergraduate student interested in learning more about pursuing your MPH at Cornell? Our Program is designed to produce health leaders who will advance health equity by changing the status quo: creating conditions that prevent illness and improve equitable access to health services and treatments. Contact Assistant Director of Student Services, Ben Parker to learn more! Cornell Employees Cornell employees are exceptional candidates to the MPH Program bringing institutional familiarity and unique perspectives that contribute to a more vibrant and inclusive learning environment in the MPH Program. Click here to learn more about education benefits at Cornell! In the video below, Cornell MPH alumna and former Cornell Employee Degree Program (EDP) student, Joceyln Mendoza, explains why she chose to pursue her MPH at Cornell while working as a licensed",
+      "char_start": 0,
+      "char_end": 2693,
+      "token_count": 400,
+      "vector_id": "vectors/publichealth.cornell.edu_4eb79bff_chunk0000.npy"
+    },
+    {
+      "chunk_id": "publichealth.cornell.edu_4eb79bff_0001",
+      "text": "status quo: creating conditions that prevent illness and improve equitable access to health services and treatments. Contact Assistant Director of Student Services, Ben Parker to learn more! Cornell Employees Cornell employees are exceptional candidates to the MPH Program bringing institutional familiarity and unique perspectives that contribute to a more vibrant and inclusive learning environment in the MPH Program. Click here to learn more about education benefits at Cornell! In the video below, Cornell MPH alumna and former Cornell Employee Degree Program (EDP) student, Joceyln Mendoza, explains why she chose to pursue her MPH at Cornell while working as a licensed veterinary technician in the Cornell College of Veterinary Medicine. Admission Requirements Prospective students will submit all required documentation through the third-party SOPHAS application. We are interested in students from a broad array of professional, academic, and geographic backgrounds. In addition to submitting the SOPHAS application , applicants must also submit a supplemental Cornell Graduate School application . Applications are reviewed through late Spring or early Summer with a Fall enrollment date for our standard two-year Program. To apply, please submit: Official transcripts Résumé Personal statement that includes what you have experienced in your education, work, or life that is piqued your interest in public health Statement of intent that describes why you want to pursue your MPH at Cornell, and how our curriculum, faculty, and One Health approach, will help you achieve your professional goals Three (3) letters of reference Cornell Graduate School Quick Application (Public Health is listed under the Public Health & Planetary Health area of study) The GRE is not required . International students also need to submit: Transcript evaluation from WES for foreign transcripts Submission of TOEFL or IELTS scores, taken within two years of the application deadline English language of instruction does not automatically waive this requirement. For more details, see the Cornell Graduate School English language proficiency requirements . Minimum scores required: IELTS minimum overall band score of 7.0 TOEFL minimum sub-scores for each element: Speaking: 22, Reading: 20, Listening: 15, Writing: 20 Apply Now! Want to Learn More? Please fill out our interest form , email, or call us with any other questions you may have about qualifications, academics, the application process, the Cornell experience, moving to Ithaca, or anything else related to our program—we’re happy to help! Email: cornellmph@cornell.edu Phone: 607-253-4390 FAQs Prospective Students Our Team Apply Now! FAQs Prospective Students Our",
+      "char_start": 2017,
+      "char_end": 4738,
+      "token_count": 400,
+      "vector_id": "vectors/publichealth.cornell.edu_4eb79bff_chunk0001.npy"
+    },
+    {
+      "chunk_id": "publichealth.cornell.edu_4eb79bff_0002",
+      "text": "this requirement. For more details, see the Cornell Graduate School English language proficiency requirements . Minimum scores required: IELTS minimum overall band score of 7.0 TOEFL minimum sub-scores for each element: Speaking: 22, Reading: 20, Listening: 15, Writing: 20 Apply Now! Want to Learn More? Please fill out our interest form , email, or call us with any other questions you may have about qualifications, academics, the application process, the Cornell experience, moving to Ithaca, or anything else related to our program—we’re happy to help! Email: cornellmph@cornell.edu Phone: 607-253-4390 FAQs Prospective Students Our Team Apply Now! FAQs Prospective Students Our Team Apply Now!",
+      "char_start": 4055,
+      "char_end": 4754,
+      "token_count": 103,
+      "vector_id": "vectors/publichealth.cornell.edu_4eb79bff_chunk0002.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "bae5ac098fe33a9cbc926e41c8b6a8238917e135ead24aac7c5183fc0577e5ce",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:09:27.344419",
+      "response_raw_path": "out/llm_cache\\312aed5f01a940ae.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

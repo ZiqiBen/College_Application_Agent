@@ -1,0 +1,102 @@
+{
+  "id": "seas.harvard.edu_fb683905b873",
+  "source_url": "https://seas.harvard.edu/masters-data-science",
+  "raw_snapshot_path": "out/cache\\20251207T211104Z_fb683905b873.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:11:15.302764",
+  "checksum": "fb683905b873903b598559247223b0538fc378e3eae0c850ff11a5a19d95032f",
+  "language": null,
+  "title": "Master's in Data Science | Harvard SEAS",
+  "raw_text": "Academics\nMaster's in Data Science\nMaster’s in Data Science Program Overview\nThe Data Science master's program, jointly led by the\nComputer Science\nand\nStatistics\nfaculties, trains students in the rapidly growing field of data science.\nData Science lies at the intersection of statistical methodology, computational science, and a wide range of application domains.  The program offers strong preparation in statistical modeling, machine learning, optimization, management and analysis of massive data sets, and data acquisition.  The program focuses on topics such as reproducible data analysis, collaborative problem solving, visualization and communication, and security and ethical issues that arise in data science.\nTo earn the Master of Science in Data Science, students must complete 12 courses. This requires students to be on campus for at least 3 semesters (one and a half academic years). Some students will choose to extend their studies for a fourth semester to take additional courses or complete a master’s thesis research project.\nYou can learn more about the Data Science program by watching the videos at the links below:\nVirtual Information Session for Fall 2025 Matriculation\nCurrent Master's Student Program Discussion, October 2024\nWhy pursue a master’s degree in Data Science?\nWith companies and organizations better able to capture data in a multitude of ways, data-driven decision making is changing the way businesses operate. Powerful analytics tools can model and predict how consumers will behave or markets will respond. Consequently, an understanding of data science is a 21st century job skill that can be beneficial in many different careers.\nData Science Degree Career Paths\nData Science career paths are flexible. There are different pathways to use data science skills.\nData science professional - data analyst, database developer, or data scientist.\nAnalytics-enabled jobs - functional business analyst or data-driven manager.\nData science professionals like data analysts can become qualified for a data science or data system developer role depending on where they deepen their expertise. By expanding knowledge in Artificial Intelligence, statistics, data management, and big data analytics, a data analyst can transition into a data scientist role. By building on existing technical skills in Python, relational databases, and machine learning, a data analyst can become a data system developer.\nRequirements\nThere are no formal prerequisites\nfor applicants to this master’s program. However, successful applicants do need to have a comfortable working knowledge of calculus, linear algebra and differential equations; familiarity with probability and statistical inference; fluency in at least one programming language such as python or R, and an understanding of basic computer science concepts. As Data Science is an interdisciplinary field, SEAS welcomes applicants with undergraduate training in a wide range of academic disciplines.\nHow to Apply\nLearn more about\nhow to apply to the Data Science degree program\nor\napply now\n.\nWhat should a graduate of the Data Science program be able to do?\nThe design of the program is based on eleven learning outcomes developed through discussions between the computer science and statistics faculty:\nBuild statistical models and understand their power and limitations\nDesign an experiment\nUse machine learning and optimization to make decisions\nAcquire, clean, and manage data\nVisualize data for exploration, analysis, and communication\nCollaborate within teams\nDeliver reproducible data analysis\nManage and analyze massive data sets\nAssemble computational pipelines to support data science from widely available tools\nConduct data science activities aware of and according to policy, privacy, security and ethical considerations\nApply problem-solving strategies to open-ended questions\nFinancing Your Degree\nStudents typically finance their master’s degree program with a combination of loans, savings, family support, grants (from governments, foundations and companies), fellowships and scholarships. We recommend you visit the Harvard Kenneth C. Griffin Graduate School of Arts and Sciences (Harvard Griffin GSAS)\nFunding and Financial Aid\nwebsite prior to your application to learn more about your options.\nTeaching Fellowships\nApproximately 15% of our students are paid Teaching Fellows, usually in the second year. TFing in the first semester is highly unusual. Teaching compensation is paid out at Harvard graduate student rates.\nMaster's in Data Science\nLeadership\nFinale Doshi-Velez\nFaculty Director, Master's in Data Science Program and Co-Chair, FAS Standing Committee on Higher Degrees in Data Science\nPavlos Protopapas\nScientific Program Director and Lecturer\nWeiwei Pan\nAssistant Director of Graduate Studies in Data Science\nDaniel S Weinstock\nDirector of Master's Education\nIn Master's in Data Science\nHow to Apply\nAdmissions FAQs\nDegree Requirements\nThesis Info\nSecondary Field in Data Science\nInfo for Current Students\nCourses\nPeople\nCareers\nAlumni News\nStudent Stories\nMore\nMaster's in Data Science\nnews\nFeatured Stories\nAug 20, 2025\nOptimizing How Cells Self-Organize\nComputational framework could lead to organ design, cellular programming\nAI / Machine Learning\n,\nApplied Computation\n,\nApplied Mathematics\n,\nApplied Physics\n,\nComputational Science & Engineering\n,\nComputer Science\n,\nResearch\nJul 22, 2025\nComputer Scientists Win Outstanding Paper Award at ICML\n2025\nKempner Institute\nOne of six papers, among 3,200 conference papers, recognized for technical depth, novelty, and potential for impact in the field of machine learning\nAI / Machine Learning\n,\nApplied Computation\n,\nComputational Science & Engineering\n,\nComputer Science\nJun 5, 2025\nAI for power, and power for AI\nInaugural symposium unites researchers across SEAS\nAI / Machine Learning\n,\nApplied Computation\n,\nApplied Mathematics\n,\nComputational Science & Engineering\n,\nData Sciences\n,\nComputer Science\n,\nElectrical Engineering\n,\nEnvironmental Science & Engineering\nMore\nMaster's in Data Science\nnews",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master's in Data Science",
+    "duration": "at least 3 semesters (one and a half academic years)",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "There are no formal prerequisites for applicants to this master’s program. However, successful applicants do need to have a comfortable working knowledge of calculus, linear algebra and differential equations; familiarity with probability and statistical inference; fluency in at least one programming language such as python or R, and an understanding of basic computer science concepts. As Data Science is an interdisciplinary field, SEAS welcomes applicants with undergraduate training in a wide range of academic disciplines.",
+    "features": "The Data Science master's program, jointly led by the Computer Science and Statistics faculties, trains students in the rapidly growing field of data science. The program offers strong preparation in statistical modeling, machine learning, optimization, management and analysis of massive data sets, and data acquisition. The program focuses on topics such as reproducible data analysis, collaborative problem solving, visualization and communication, and security and ethical issues that arise in data science. To earn the Master of Science in Data Science, students must complete 12 courses. This requires students to be on campus for at least 3 semesters (one and a half academic years). Some students will choose to extend their studies for a fourth semester to take additional courses or complete a master’s thesis research project.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 10,
+      "char_end": 33
+    },
+    "duration": {
+      "text": "",
+      "char_start": 497,
+      "char_end": 548
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 1682,
+      "char_end": 2062
+    },
+    "features": {
+      "text": "",
+      "char_start": 70,
+      "char_end": 548
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "seas.harvard.edu_fb683905_0000",
+      "text": "Academics Master's in Data Science Master’s in Data Science Program Overview The Data Science master's program, jointly led by the Computer Science and Statistics faculties, trains students in the rapidly growing field of data science. Data Science lies at the intersection of statistical methodology, computational science, and a wide range of application domains. The program offers strong preparation in statistical modeling, machine learning, optimization, management and analysis of massive data sets, and data acquisition. The program focuses on topics such as reproducible data analysis, collaborative problem solving, visualization and communication, and security and ethical issues that arise in data science. To earn the Master of Science in Data Science, students must complete 12 courses. This requires students to be on campus for at least 3 semesters (one and a half academic years). Some students will choose to extend their studies for a fourth semester to take additional courses or complete a master’s thesis research project. You can learn more about the Data Science program by watching the videos at the links below: Virtual Information Session for Fall 2025 Matriculation Current Master's Student Program Discussion, October 2024 Why pursue a master’s degree in Data Science? With companies and organizations better able to capture data in a multitude of ways, data-driven decision making is changing the way businesses operate. Powerful analytics tools can model and predict how consumers will behave or markets will respond. Consequently, an understanding of data science is a 21st century job skill that can be beneficial in many different careers. Data Science Degree Career Paths Data Science career paths are flexible. There are different pathways to use data science skills. Data science professional - data analyst, database developer, or data scientist. Analytics-enabled jobs - functional business analyst or data-driven manager. Data science professionals like data analysts can become qualified for a data science or data system developer role depending on where they deepen their expertise. By expanding knowledge in Artificial Intelligence, statistics, data management, and big data analytics, a data analyst can transition into a data scientist role. By building on existing technical skills in Python, relational databases, and machine learning, a data analyst can become a data system developer. Requirements There are no formal prerequisites for applicants to this master’s program. However, successful applicants do need to have a comfortable working knowledge of calculus, linear algebra and differential equations; familiarity with probability and statistical inference; fluency in",
+      "char_start": 0,
+      "char_end": 2724,
+      "token_count": 400,
+      "vector_id": "vectors/seas.harvard.edu_fb683905_chunk0000.npy"
+    },
+    {
+      "chunk_id": "seas.harvard.edu_fb683905_0001",
+      "text": "qualified for a data science or data system developer role depending on where they deepen their expertise. By expanding knowledge in Artificial Intelligence, statistics, data management, and big data analytics, a data analyst can transition into a data scientist role. By building on existing technical skills in Python, relational databases, and machine learning, a data analyst can become a data system developer. Requirements There are no formal prerequisites for applicants to this master’s program. However, successful applicants do need to have a comfortable working knowledge of calculus, linear algebra and differential equations; familiarity with probability and statistical inference; fluency in at least one programming language such as python or R, and an understanding of basic computer science concepts. As Data Science is an interdisciplinary field, SEAS welcomes applicants with undergraduate training in a wide range of academic disciplines. How to Apply Learn more about how to apply to the Data Science degree program or apply now . What should a graduate of the Data Science program be able to do? The design of the program is based on eleven learning outcomes developed through discussions between the computer science and statistics faculty: Build statistical models and understand their power and limitations Design an experiment Use machine learning and optimization to make decisions Acquire, clean, and manage data Visualize data for exploration, analysis, and communication Collaborate within teams Deliver reproducible data analysis Manage and analyze massive data sets Assemble computational pipelines to support data science from widely available tools Conduct data science activities aware of and according to policy, privacy, security and ethical considerations Apply problem-solving strategies to open-ended questions Financing Your Degree Students typically finance their master’s degree program with a combination of loans, savings, family support, grants (from governments, foundations and companies), fellowships and scholarships. We recommend you visit the Harvard Kenneth C. Griffin Graduate School of Arts and Sciences (Harvard Griffin GSAS) Funding and Financial Aid website prior to your application to learn more about your options. Teaching Fellowships Approximately 15% of our students are paid Teaching Fellows, usually in the second year. TFing in the first semester is highly unusual. Teaching compensation is paid out at Harvard graduate student rates. Master's in Data Science Leadership Finale Doshi-Velez Faculty Director, Master's in Data Science Program and Co-Chair, FAS Standing Committee on Higher Degrees in Data Science Pavlos Protopapas Scientific Program Director and Lecturer Weiwei Pan Assistant Director of Graduate",
+      "char_start": 2019,
+      "char_end": 4798,
+      "token_count": 400,
+      "vector_id": "vectors/seas.harvard.edu_fb683905_chunk0001.npy"
+    },
+    {
+      "chunk_id": "seas.harvard.edu_fb683905_0002",
+      "text": "Harvard Kenneth C. Griffin Graduate School of Arts and Sciences (Harvard Griffin GSAS) Funding and Financial Aid website prior to your application to learn more about your options. Teaching Fellowships Approximately 15% of our students are paid Teaching Fellows, usually in the second year. TFing in the first semester is highly unusual. Teaching compensation is paid out at Harvard graduate student rates. Master's in Data Science Leadership Finale Doshi-Velez Faculty Director, Master's in Data Science Program and Co-Chair, FAS Standing Committee on Higher Degrees in Data Science Pavlos Protopapas Scientific Program Director and Lecturer Weiwei Pan Assistant Director of Graduate Studies in Data Science Daniel S Weinstock Director of Master's Education In Master's in Data Science How to Apply Admissions FAQs Degree Requirements Thesis Info Secondary Field in Data Science Info for Current Students Courses People Careers Alumni News Student Stories More Master's in Data Science news Featured Stories Aug 20, 2025 Optimizing How Cells Self-Organize Computational framework could lead to organ design, cellular programming AI / Machine Learning , Applied Computation , Applied Mathematics , Applied Physics , Computational Science & Engineering , Computer Science , Research Jul 22, 2025 Computer Scientists Win Outstanding Paper Award at ICML 2025 Kempner Institute One of six papers, among 3,200 conference papers, recognized for technical depth, novelty, and potential for impact in the field of machine learning AI / Machine Learning , Applied Computation , Computational Science & Engineering , Computer Science Jun 5, 2025 AI for power, and power for AI Inaugural symposium unites researchers across SEAS AI / Machine Learning , Applied Computation , Applied Mathematics , Computational Science & Engineering , Data Sciences , Computer Science , Electrical Engineering , Environmental Science & Engineering More Master's in Data Science news",
+      "char_start": 4114,
+      "char_end": 6068,
+      "token_count": 291,
+      "vector_id": "vectors/seas.harvard.edu_fb683905_chunk0002.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "656f242d07f1f2414f0c340b2f8b5d0dc8840030cdebcf2cdad2e7be50512500",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:11:15.302764",
+      "response_raw_path": "out/llm_cache\\1097aa98efcbf92c.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

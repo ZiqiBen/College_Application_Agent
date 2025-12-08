@@ -1,0 +1,86 @@
+{
+  "id": "www.cmu.edu_53339825f97b",
+  "source_url": "https://www.cmu.edu/cbd/msas/",
+  "raw_snapshot_path": "out/cache\\20251207T212046Z_53339825f97b.html",
+  "content_type": "text/html",
+  "crawl_date": "2025-12-07 21:20:54.383204",
+  "checksum": "53339825f97b068bb640042fd5864c8ea76320bd9daf538e4e95ff2db52edc8b",
+  "language": null,
+  "title": "M.S. in Automated Science - \n                M.S. in Automated Science: Biological Experimentation -     Ray and Stephanie Lane Computational Biology Department - Carnegie Mellon University",
+  "raw_text": "The\nRay and Stephanie Lane Computational Biology Department’s\nMasters of Science in Automated Science: Biological Experimentation (MSAS)\nprogram trains practitioners in the design, implementation, and application of laboratory automation and artificial intelligence in scientific research. Students train with world-class faculty, including those from the top-ranked\nSchool of Computer Science\n.\nWhat is Automated Science?\nAutomated Science\nis the practice of scientific research without the need for significant human intervention.\nHear more about Automated Science from Professor Emeritus Robert F. Murphy, founding faculty of the M.S. in Automated Science Program,\nhere\n.\nWhat Skills are Taught in the Program?\nThe top 3 skills taught in the program are:\nFamiliarity with various types of experimental methods used and with the operation and characteristics of the currently available equipment that can perform those methods on a large scale and under computer control\nExperience in constructing and using statistical and machine learning methods for constructing predictive models from experimental data.\nExpertise in active machine learning methods for using predictive models to choose future experiments that are expected to enable the accuracy of the models to grow as rapidly as possible.\nWhat can you do in Automated Science?\nScientific Automation is widely used in the pharmaceutical, biotech, and agricultural industries.  MSAS graduates are qualified to select, configure, customize, and operate the hardware and software necessary to automate essential tasks in scientific research and engineering.\nGraduates become leaders in the emerging paradigm of\nAutomated Science\n– the combination of\nrobotic\nscientific instruments\n,\nMachine Learning\n,\nand\nArtificial Intelligence\nfor iteratively building predictive models from experimental data and selecting new experiments to improve them.  Students have opportunities to do research projects with Carnegie Mellon Faculty, to do summer internships with relevant companies, and to do collaborative projects with industrial sponsors.\nNews\nWednesday, October 15, 2025\nCPCB Student Wins Open Biology’s Open Questions Competition\nThursday, October 09, 2025\nThree First-Year Masters Students Inducted into CMU Rales Fellows Cohort\nWednesday, March 12, 2025\nMa, Murphy Named ISCB Fellows\nProgram Inquiry\nLoading...",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Masters of Science in Automated Science: Biological Experimentation (MSAS)",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": "Students train with world-class faculty, including those from the top-ranked School of Computer Science. The top 3 skills taught in the program are: Familiarity with various types of experimental methods used and with the operation and characteristics of the currently available equipment that can perform those methods on a large scale and under computer control; Experience in constructing and using statistical and machine learning methods for constructing predictive models from experimental data; Expertise in active machine learning methods for using predictive models to choose future experiments that are expected to enable the accuracy of the models to grow as rapidly as possible. MSAS graduates are qualified to select, configure, customize, and operate the hardware and software necessary to automate essential tasks in scientific research and engineering. Graduates become leaders in the emerging paradigm of Automated Science – the combination of robotic scientific instruments, Machine Learning, and Artificial Intelligence for iteratively building predictive models from experimental data and selecting new experiments to improve them. Students have opportunities to do research projects with Carnegie Mellon Faculty, to do summer internships with relevant companies, and to do collaborative projects with industrial sponsors.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 61,
+      "char_end": 120
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 121,
+      "char_end": 1342
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "www.cmu.edu_53339825_0000",
+      "text": "The Ray and Stephanie Lane Computational Biology Department’s Masters of Science in Automated Science: Biological Experimentation (MSAS) program trains practitioners in the design, implementation, and application of laboratory automation and artificial intelligence in scientific research. Students train with world-class faculty, including those from the top-ranked School of Computer Science . What is Automated Science? Automated Science is the practice of scientific research without the need for significant human intervention. Hear more about Automated Science from Professor Emeritus Robert F. Murphy, founding faculty of the M.S. in Automated Science Program, here . What Skills are Taught in the Program? The top 3 skills taught in the program are: Familiarity with various types of experimental methods used and with the operation and characteristics of the currently available equipment that can perform those methods on a large scale and under computer control Experience in constructing and using statistical and machine learning methods for constructing predictive models from experimental data. Expertise in active machine learning methods for using predictive models to choose future experiments that are expected to enable the accuracy of the models to grow as rapidly as possible. What can you do in Automated Science? Scientific Automation is widely used in the pharmaceutical, biotech, and agricultural industries. MSAS graduates are qualified to select, configure, customize, and operate the hardware and software necessary to automate essential tasks in scientific research and engineering. Graduates become leaders in the emerging paradigm of Automated Science – the combination of robotic scientific instruments , Machine Learning , and Artificial Intelligence for iteratively building predictive models from experimental data and selecting new experiments to improve them. Students have opportunities to do research projects with Carnegie Mellon Faculty, to do summer internships with relevant companies, and to do collaborative projects with industrial sponsors. News Wednesday, October 15, 2025 CPCB Student Wins Open Biology’s Open Questions Competition Thursday, October 09, 2025 Three First-Year Masters Students Inducted into CMU Rales Fellows Cohort Wednesday, March 12, 2025 Ma, Murphy Named ISCB Fellows Program Inquiry Loading...",
+      "char_start": 0,
+      "char_end": 2364,
+      "token_count": 333,
+      "vector_id": "vectors/www.cmu.edu_53339825_chunk0000.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "135506fc62a48bd520c4cd0c1c9fe3b6b68e637b1c42a75649e6cd33a944d433",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:20:54.383204",
+      "response_raw_path": "out/llm_cache\\fc6597e4f856eba8.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

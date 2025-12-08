@@ -1,0 +1,94 @@
+{
+  "id": "ma.eco.utexas.edu_e77e3d080dfe",
+  "source_url": "https://ma.eco.utexas.edu/",
+  "raw_snapshot_path": "out/cache\\20251207T213055Z_e77e3d080dfe.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:31:03.404464",
+  "checksum": "e77e3d080dfe0b6755acc129a90c6e99e3f667534916336f9b5bd26930a7b1fa",
+  "language": null,
+  "title": "Master of Arts in Economics",
+  "raw_text": "WHAT STARTS HERE CHANGES THE WORLD\nWhy UT Austin?\nThe MA program offered by the\nDepartment of Economics\nis STEM-designated and offers a rigorous curriculum with quantitative training in economics. We have a strong track record of preparing and placing students in highly-ranked PhD programs, as well as in careers that require advanced tools in economic analysis, econometrics, and data science. Students receive one-on-one mentoring and advising to help them achieve their academic and professional goals. That’s why our program is now one of the top ranked terminal Economics master’s degree programs in the U.S., at one of the top ranked universities internationally.  And there is no better no better city than\nAustin\nto live in while pursuing graduate studies.\nRanked #8 among U.S. Master’s in Economics programs by the\nTFE Times\nView Our Curriculum and Degree Requirements\nLearn More About Our Admission Process\nM.A. Program Highlights\nAccelerated Degree\nYou can complete the MA Economics degree in as little as 10 months (July through May), while developing skills in economic analysis and data science. 18m and 24m tracks are also available.\nWhich track is right for you?\nWorld Class Faculty\nYou will have the opportunity to study with the Department’s world-class faculty.  We limit our cohort size to keep classes small and to facilitate interactions outside the classroom.\nMeet our\nDistinguished Faculty\nOPT Extension\nThe program’s STEM designation means that international students may receive a 24-month extension of Optional Practical Training (OPT) for employment within the U.S.\nSee\nPlacement Outcomes\nWho is this program for?\nThe MA Program helps students achieve any of the following goals:\nQualifying for jobs in the private or government sector that require greater expertise in economic, analytical, and statistical tools than provided by an undergraduate degree;\nObtaining the background in economics and mathematics required to gain admission to a high-quality economics PhD program;\nStudying economics as a complementary field to another area of expertise (law, political science, public health, statistics, energy, marketing, sociology, finance, etc.).\nSee Alumni Placements\nImportant Dates\nAPPLICATION OPENS\nSeptember 2025\nAPPLICATION DEADLINE\nFebruary 1, 2026\nfor international applicants\nMarch 1, 2026\nfor domestic applicants\nWe will accept late applications if space remains in the cohort.\nCLASSES START\nJuly 13, 2026\nHave Questions\n?\nCONTACT US\nNews & Events\n2025-2026 MA Economics Class Profile\nOur twelfth cohort of students started their coursework in July 2025. The 2025-2026 class is comprised of 45% domestic students and 55% international students. Around 30% intend to pursue PhDs after graduation, while other students intend to pursue non-academic careers or are undecided.\nRead more\nProgram Information Sessions\nThe MA Economics program will host two virtual prospective student information sessions in the 25-26 academic year: The MA Economics Program Director and MA program staff will provide a program overview. There will also be time for Q&A with current students.\nRead more\nTen-Year Reunion Celebration\nOn Sept. 29-30, 2023, the Department of Economics welcomed MA Econ alumni back to campus to celebrate the program’s 10-year anniversary.\nRead more\nMORE NEWS\nTestimonials\nThe program allowed me to expand on both my theoretical knowledge about economics, statistics, mathematics, and also helped me become adept at applied research tools like Stata, R etc. The program helped me push my boundaries and strive to do my very best in every course. I’m now a well rounded professional and I give all thanks to the supportive faculty.\nAishwarya Agarwal, Class of 2018\nFor someone coming from a non-economics background, the MA program gives you a good exposure to all major areas of economics, which is great to figure out your probable areas of interest for a PhD program. The small cohort size facilitates frequent interactions with the faculty which is a definite plus.\nSwapnil Motghare, Class of 2014\nI was admitted to another top-ranked Economics master’s program as well, but their program just didn’t offer the personal attention, sense of community, exploration opportunities (research seminars, etc.), and warm climate that UT’s M.A. Economics program offers.\nIsaac Hulsey, Class of 2020\nREAD MORE STUDENT TESTIMONIALS\nContact Us\nASK QUESTIONS OR SUBSCRIBE FOR MORE INFORMATION\n|",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MA Economics",
+    "duration": "as little as 10 months (July through May), 18m and 24m tracks are also available",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": "STEM-designated; rigorous curriculum with quantitative training in economics; strong track record of preparing and placing students in highly-ranked PhD programs and careers requiring advanced tools in economic analysis, econometrics, and data science; one-on-one mentoring and advising; small cohort size; world-class faculty; 24-month OPT extension for international students; accelerated degree options.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 49,
+      "char_end": 108
+    },
+    "duration": {
+      "text": "",
+      "char_start": 522,
+      "char_end": 677
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 49,
+      "char_end": 877
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "ma.eco.utexas.edu_e77e3d08_0000",
+      "text": "WHAT STARTS HERE CHANGES THE WORLD Why UT Austin? The MA program offered by the Department of Economics is STEM-designated and offers a rigorous curriculum with quantitative training in economics. We have a strong track record of preparing and placing students in highly-ranked PhD programs, as well as in careers that require advanced tools in economic analysis, econometrics, and data science. Students receive one-on-one mentoring and advising to help them achieve their academic and professional goals. That’s why our program is now one of the top ranked terminal Economics master’s degree programs in the U.S., at one of the top ranked universities internationally. And there is no better no better city than Austin to live in while pursuing graduate studies. Ranked #8 among U.S. Master’s in Economics programs by the TFE Times View Our Curriculum and Degree Requirements Learn More About Our Admission Process M.A. Program Highlights Accelerated Degree You can complete the MA Economics degree in as little as 10 months (July through May), while developing skills in economic analysis and data science. 18m and 24m tracks are also available. Which track is right for you? World Class Faculty You will have the opportunity to study with the Department’s world-class faculty. We limit our cohort size to keep classes small and to facilitate interactions outside the classroom. Meet our Distinguished Faculty OPT Extension The program’s STEM designation means that international students may receive a 24-month extension of Optional Practical Training (OPT) for employment within the U.S. See Placement Outcomes Who is this program for? The MA Program helps students achieve any of the following goals: Qualifying for jobs in the private or government sector that require greater expertise in economic, analytical, and statistical tools than provided by an undergraduate degree; Obtaining the background in economics and mathematics required to gain admission to a high-quality economics PhD program; Studying economics as a complementary field to another area of expertise (law, political science, public health, statistics, energy, marketing, sociology, finance, etc.). See Alumni Placements Important Dates APPLICATION OPENS September 2025 APPLICATION DEADLINE February 1, 2026 for international applicants March 1, 2026 for domestic applicants We will accept late applications if space remains in the cohort. CLASSES START July 13, 2026 Have Questions ? CONTACT US News & Events 2025-2026 MA Economics Class Profile Our twelfth cohort of students started their coursework in July 2025. The 2025-2026 class is comprised of 45%",
+      "char_start": 0,
+      "char_end": 2633,
+      "token_count": 400,
+      "vector_id": "vectors/ma.eco.utexas.edu_e77e3d08_chunk0000.npy"
+    },
+    {
+      "chunk_id": "ma.eco.utexas.edu_e77e3d08_0001",
+      "text": "gain admission to a high-quality economics PhD program; Studying economics as a complementary field to another area of expertise (law, political science, public health, statistics, energy, marketing, sociology, finance, etc.). See Alumni Placements Important Dates APPLICATION OPENS September 2025 APPLICATION DEADLINE February 1, 2026 for international applicants March 1, 2026 for domestic applicants We will accept late applications if space remains in the cohort. CLASSES START July 13, 2026 Have Questions ? CONTACT US News & Events 2025-2026 MA Economics Class Profile Our twelfth cohort of students started their coursework in July 2025. The 2025-2026 class is comprised of 45% domestic students and 55% international students. Around 30% intend to pursue PhDs after graduation, while other students intend to pursue non-academic careers or are undecided. Read more Program Information Sessions The MA Economics program will host two virtual prospective student information sessions in the 25-26 academic year: The MA Economics Program Director and MA program staff will provide a program overview. There will also be time for Q&A with current students. Read more Ten-Year Reunion Celebration On Sept. 29-30, 2023, the Department of Economics welcomed MA Econ alumni back to campus to celebrate the program’s 10-year anniversary. Read more MORE NEWS Testimonials The program allowed me to expand on both my theoretical knowledge about economics, statistics, mathematics, and also helped me become adept at applied research tools like Stata, R etc. The program helped me push my boundaries and strive to do my very best in every course. I’m now a well rounded professional and I give all thanks to the supportive faculty. Aishwarya Agarwal, Class of 2018 For someone coming from a non-economics background, the MA program gives you a good exposure to all major areas of economics, which is great to figure out your probable areas of interest for a PhD program. The small cohort size facilitates frequent interactions with the faculty which is a definite plus. Swapnil Motghare, Class of 2014 I was admitted to another top-ranked Economics master’s program as well, but their program just didn’t offer the personal attention, sense of community, exploration opportunities (research seminars, etc.), and warm climate that UT’s M.A. Economics program offers. Isaac Hulsey, Class of 2020 READ MORE STUDENT TESTIMONIALS Contact Us ASK QUESTIONS OR SUBSCRIBE FOR MORE INFORMATION |",
+      "char_start": 1949,
+      "char_end": 4430,
+      "token_count": 380,
+      "vector_id": "vectors/ma.eco.utexas.edu_e77e3d08_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "a008b3e0f74e900e7e2df5b641af388c25375ad07ed622cb708a85fc83e96ace",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:31:03.404464",
+      "response_raw_path": "out/llm_cache\\19b1f492bf829e51.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

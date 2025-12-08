@@ -1,0 +1,94 @@
+{
+  "id": "publicpolicy.cornell.edu_ba8518867787",
+  "source_url": "https://publicpolicy.cornell.edu/masters/mpa/residential/apply/",
+  "raw_snapshot_path": "out/cache\\20251207T210904Z_ba8518867787.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:09:14.257832",
+  "checksum": "ba85188677875a923a5ee9413126fd35dd0e4e5250f35441c5184fa2f6883ab0",
+  "language": "English",
+  "title": "How to Apply - Cornell Brooks Public Policy",
+  "raw_text": "Masters\nHow to Apply\nEach application is reviewed holistically and in comparison with other applications submitted during the same admissions cycle. To be eligible for review, applicants must submit a complete application package as outlined below.\nApply Now\nApplication Deadline\nJanuary 15\nApplication Requirements\nTranscripts\nApplicants must upload\nunofficial\ntranscripts from all colleges or universities attended. A bachelor’s degree from an accredited institution, or an equivalent international degree (see Cornell’s list of\nInternational Degree Equivalencies\n), is required. There is no minimum GPA cut-off, however, undergraduate coursework and grades are considered in the admissions review.\nPlease note: Admitted applicants who accept their offer must submit official electronic transcripts to the Graduate School Admissions Office. See the\nGraduate School’s transcript guidelines\nfor more details.\nRecommendations\nTwo letters of recommendation are required. Academic or professional recommendations are accepted. Letters of recommendation need to be submitted via the applicant’s online application.\nResume\nAll applicants are required to submit a resume with their application.\nStatement of Purpose (500 words maximum)\nThe statement of purpose is one of your primary opportunities to help the admissions committee understand your academic objectives and determine if you are a good match for the program.\nDetail why you are applying to the program and include personal and/or professional experiences that have led to your interest in the MPA program.\nDescribe your future goals and how you would use an MPA graduate education to make a positive impact in this area.\nInclude examples of volunteer work, positions of responsibility, and any other life experiences that have contributed to your interest in public administration.\nInterview\nAfter submitting your application, you will be invited to record an online video interview. For your convenience, our interview questions have been pre-recorded so that you can complete your responses at any time. The video interview is part of a holistic assessment that will be considered alongside your completed application. Detailed information about the video interview will be provided via email after you submit your application.\nTOEFL or IELTS Scores\nVisit the\nGraduate School Admissions site\nfor more information regarding the English language proficiency requirement, including standing exemptions.\nApplication Fee Waivers\nAre not granted on a financial-need basis.\nAre automatically granted to former and current U.S. military personnel.\nThe following groups may request an application fee waiver by emailing\nbrooksgradadmissions@cornell.edu\n.\nAmeriCorps volunteers and alumni\nCharles B. Rangel International Affairs Fellows and finalists\nReturned Peace Corps Volunteers (RPCVs)\nTeach for America corps member or alumni\nThomas R. Pickering International Affairs Fellows and finalists\nQuestions?\nFor questions regarding your MPA application, please contact us at\nbrooksgradadmissions@cornell.edu\n.\nTo receive additional information and future communications from the MPA Program, please fill out our\nInquiry Form\nFor Executive MPA (EMPA) admissions, visit the\nEMPA website\nNot sure which program is right for you? Explore the key differences between our residential and executive degrees on our website.\nCompare programs here",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MPA program",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Transcripts: Applicants must upload unofficial transcripts from all colleges or universities attended. A bachelor’s degree from an accredited institution, or an equivalent international degree, is required. There is no minimum GPA cut-off. Recommendations: Two letters of recommendation are required. Resume: All applicants are required to submit a resume. Statement of Purpose: 500 words maximum. Interview: After submitting your application, you will be invited to record an online video interview. TOEFL or IELTS Scores: Required for English language proficiency. Application Fee Waivers: Not granted on a financial-need basis, but available for certain groups.",
+    "features": "Each application is reviewed holistically and in comparison with other applications submitted during the same admissions cycle. The video interview is part of a holistic assessment. Application fee waivers are automatically granted to former and current U.S. military personnel and may be requested by certain groups.",
+    "contact_email": "brooksgradadmissions@cornell.edu",
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 670,
+      "char_end": 680
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 109,
+      "char_end": 1342
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 1342
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 1343,
+      "char_end": 1374
+    },
+    "language": {
+      "text": "",
+      "char_start": 1202,
+      "char_end": 1322
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "publicpolicy.cornell.edu_ba851886_0000",
+      "text": "Masters How to Apply Each application is reviewed holistically and in comparison with other applications submitted during the same admissions cycle. To be eligible for review, applicants must submit a complete application package as outlined below. Apply Now Application Deadline January 15 Application Requirements Transcripts Applicants must upload unofficial transcripts from all colleges or universities attended. A bachelor’s degree from an accredited institution, or an equivalent international degree (see Cornell’s list of International Degree Equivalencies ), is required. There is no minimum GPA cut-off, however, undergraduate coursework and grades are considered in the admissions review. Please note: Admitted applicants who accept their offer must submit official electronic transcripts to the Graduate School Admissions Office. See the Graduate School’s transcript guidelines for more details. Recommendations Two letters of recommendation are required. Academic or professional recommendations are accepted. Letters of recommendation need to be submitted via the applicant’s online application. Resume All applicants are required to submit a resume with their application. Statement of Purpose (500 words maximum) The statement of purpose is one of your primary opportunities to help the admissions committee understand your academic objectives and determine if you are a good match for the program. Detail why you are applying to the program and include personal and/or professional experiences that have led to your interest in the MPA program. Describe your future goals and how you would use an MPA graduate education to make a positive impact in this area. Include examples of volunteer work, positions of responsibility, and any other life experiences that have contributed to your interest in public administration. Interview After submitting your application, you will be invited to record an online video interview. For your convenience, our interview questions have been pre-recorded so that you can complete your responses at any time. The video interview is part of a holistic assessment that will be considered alongside your completed application. Detailed information about the video interview will be provided via email after you submit your application. TOEFL or IELTS Scores Visit the Graduate School Admissions site for more information regarding the English language proficiency requirement, including standing exemptions. Application Fee Waivers Are not granted on a financial-need basis. Are automatically granted to former and current U.S. military personnel. The following groups may request an application fee waiver by emailing brooksgradadmissions@cornell.edu . AmeriCorps volunteers and alumni Charles B. Rangel International Affairs Fellows and finalists Returned Peace Corps",
+      "char_start": 0,
+      "char_end": 2820,
+      "token_count": 400,
+      "vector_id": "vectors/publicpolicy.cornell.edu_ba851886_chunk0000.npy"
+    },
+    {
+      "chunk_id": "publicpolicy.cornell.edu_ba851886_0001",
+      "text": "is part of a holistic assessment that will be considered alongside your completed application. Detailed information about the video interview will be provided via email after you submit your application. TOEFL or IELTS Scores Visit the Graduate School Admissions site for more information regarding the English language proficiency requirement, including standing exemptions. Application Fee Waivers Are not granted on a financial-need basis. Are automatically granted to former and current U.S. military personnel. The following groups may request an application fee waiver by emailing brooksgradadmissions@cornell.edu . AmeriCorps volunteers and alumni Charles B. Rangel International Affairs Fellows and finalists Returned Peace Corps Volunteers (RPCVs) Teach for America corps member or alumni Thomas R. Pickering International Affairs Fellows and finalists Questions? For questions regarding your MPA application, please contact us at brooksgradadmissions@cornell.edu . To receive additional information and future communications from the MPA Program, please fill out our Inquiry Form For Executive MPA (EMPA) admissions, visit the EMPA website Not sure which program is right for you? Explore the key differences between our residential and executive degrees on our website. Compare programs here",
+      "char_start": 2083,
+      "char_end": 3385,
+      "token_count": 180,
+      "vector_id": "vectors/publicpolicy.cornell.edu_ba851886_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "2660df48bd77fd78560ba5d7850796edbd62b3eabeb4dff903d8da7670fbfdf9",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:09:14.257832",
+      "response_raw_path": "out/llm_cache\\950c0caf28cd0909.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

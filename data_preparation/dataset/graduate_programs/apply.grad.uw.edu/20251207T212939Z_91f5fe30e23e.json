@@ -1,0 +1,86 @@
+{
+  "id": "apply.grad.uw.edu_91f5fe30e23e",
+  "source_url": "https://apply.grad.uw.edu/portal/prog_detail_find_a_program?progid=0-C-ANTH-55-21",
+  "raw_snapshot_path": "out/cache\\20251207T212933Z_91f5fe30e23e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:29:39.697088",
+  "checksum": "91f5fe30e23ef40f93de6a563f34d562664b77674bb3f9ac37241ef395d8f4d1",
+  "language": "English",
+  "title": "Program Detail - Find a Program",
+  "raw_text": "This website uses resources that are being blocked by your network. Contact your network administrator for more information.\nSkip to main content\nFind a Program\nProgram Detail\nAnthropology (MA) Archaeological Heritage\nApply Now >>\nBasic Information\nDegree Information\nDegree Offered:\nMASTER OF ARTS (ANTHROPOLOGY: ARCHAEOLOGICAL HERITAGE)\nCIP Code:\n45.0301\nCampus: Seattle\nAdmission Requirements and Contact Information\nContact Information\nDepartment of Anthropology, Graduate Program Office\nProgram Website\n+1 206-685-1562\nagp-advisor@uw.edu\nRequirements and Prerequisites\nA\npplicants must have at least a BA/BS degree or equivalent. Please visit\nour website\nbefore completing an application to the program.\nGRE Requirements\nGRE Requirement:\nNot Considered\n. GRE scores are not required and, if submitted, will not be considered during the admissions decision process.\nAdditional Instructions\nI\nf you have questions about the application deadline, please contact the graduate program advisor (\nagp-advisor@uw.edu\n)\nfor clarification before application.\nNon-Native English Speaker Information\nGraduate School requirement:\nEnglish language proficiency (ELP) is required for graduate study at the University of Washington. Therefore, every applicant whose native language is not English must demonstrate English language proficiency as outlined in\nGraduate School Policy 3.2\n.\nInternational Student Information\nApplicants who will need a visa should reference the\nInternational Applicant Information page\n. If admitted to the program, international students requesting an F-1 or J-1 visa will be required to provide\nfinancial ability documentation\nto the UW Graduate School.\nProgram Deadlines\nAutumn 2026 - Domestic:\nOpen Date:\n09/15/2025\nDeadline Date:\n01/15/2026\nAutumn 2026 - International:\nOpen Date:\n09/15/2025\nDeadline Date:\n01/15/2026\nApplication Materials\nPersonal Statement\n3 Recommendation(s)\nResume\nStatement of Purpose\nMenu",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MASTER OF ARTS (ANTHROPOLOGY: ARCHAEOLOGICAL HERITAGE)",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Applicants must have at least a BA/BS degree or equivalent. Please visit our website before completing an application to the program. GRE scores are not required and, if submitted, will not be considered during the admissions decision process. Every applicant whose native language is not English must demonstrate English language proficiency as outlined in Graduate School Policy 3.2. Application Materials: Personal Statement, 3 Recommendation(s), Resume, Statement of Purpose.",
+    "features": null,
+    "contact_email": "agp-advisor@uw.edu",
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 110,
+      "char_end": 167
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 282,
+      "char_end": 828
+    },
+    "features": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 222,
+      "char_end": 241
+    },
+    "language": {
+      "text": "",
+      "char_start": 570,
+      "char_end": 648
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "apply.grad.uw.edu_91f5fe30_0000",
+      "text": "This website uses resources that are being blocked by your network. Contact your network administrator for more information. Skip to main content Find a Program Program Detail Anthropology (MA) Archaeological Heritage Apply Now >> Basic Information Degree Information Degree Offered: MASTER OF ARTS (ANTHROPOLOGY: ARCHAEOLOGICAL HERITAGE) CIP Code: 45.0301 Campus: Seattle Admission Requirements and Contact Information Contact Information Department of Anthropology, Graduate Program Office Program Website +1 206-685-1562 agp-advisor@uw.edu Requirements and Prerequisites A pplicants must have at least a BA/BS degree or equivalent. Please visit our website before completing an application to the program. GRE Requirements GRE Requirement: Not Considered . GRE scores are not required and, if submitted, will not be considered during the admissions decision process. Additional Instructions I f you have questions about the application deadline, please contact the graduate program advisor ( agp-advisor@uw.edu ) for clarification before application. Non-Native English Speaker Information Graduate School requirement: English language proficiency (ELP) is required for graduate study at the University of Washington. Therefore, every applicant whose native language is not English must demonstrate English language proficiency as outlined in Graduate School Policy 3.2 . International Student Information Applicants who will need a visa should reference the International Applicant Information page . If admitted to the program, international students requesting an F-1 or J-1 visa will be required to provide financial ability documentation to the UW Graduate School. Program Deadlines Autumn 2026 - Domestic: Open Date: 09/15/2025 Deadline Date: 01/15/2026 Autumn 2026 - International: Open Date: 09/15/2025 Deadline Date: 01/15/2026 Application Materials Personal Statement 3 Recommendation(s) Resume Statement of Purpose Menu",
+      "char_start": 0,
+      "char_end": 1933,
+      "token_count": 261,
+      "vector_id": "vectors/apply.grad.uw.edu_91f5fe30_chunk0000.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "9ba4c911b98070c230d1d629a5dfe7dc8ffe6ecabc318b362a2d6056dcd732c4",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:29:39.697088",
+      "response_raw_path": "out/llm_cache\\1f8bb9fd41ea44db.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

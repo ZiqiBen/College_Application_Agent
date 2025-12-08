@@ -1,0 +1,111 @@
+{
+  "id": "mse.s3d.cmu.edu_527a6e43d5a1",
+  "source_url": "https://mse.s3d.cmu.edu/applicants/mse-as/index.html",
+  "raw_snapshot_path": "out/cache\\20251207T212120Z_527a6e43d5a1.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:21:37.019171",
+  "checksum": "527a6e43d5a13484beb8e7291c75e5fe775ed3f3e74a14a8bbfe78e75330fc64",
+  "language": "English",
+  "title": "MSE for Professionals - \n                Master of Software Engineering Programs -     Software and Societal Systems Department - Carnegie Mellon University",
+  "raw_text": "Software and Societal Systems Department\n›\nMaster of Software Engineering Programs\n›\nFor Applicants\n›              MSE for Professionals\nMSE for Professionals\nDo you find yourself working on a project that is overcome by slow progress and technical debt, where you feel there must be a better way to manage code and improve the quality of your software? Or, maybe you have reached a plateau in your career, and you are eager to reach the next level? The Master of Software Engineering (MSE) program for professionals builds on a foundation of skills and industry experience, and teaches you state-of-the-art practices used by top software engineering companies.\nThe MSE program is designed for experienced software developers with at least two years of full-time professional experience. The program includes coursework on requirements, architecture, analysis and project management, while providing students with greater flexibility in directing their education. The program is an on-campus, 16-month long program when pursued full-time. Part-time options are available for U.S. Citizens or Permanent Residents of the United States.\nWhat are the prerequisites for admissions?\nWhat classes will I take?\nWhat is a \"Studio Project\" and why is it important?\nBecome the Best of the Best\n\"The MSE taught me a lot about perseverance and work ethics, my own limits in terms of what I could do and what I might accomplish. By the time that I graduated, I knew that I could hang with the best of the best.\"\nEduardo Frias (MSE '94)\nPartner, Whitespectre\nProgram Advantages\nTechnology That Leads the World\nCarnegie Mellon is world-renowned for pioneering and advancing numerous technology fields such as\nartificial intelligence\n,\nautonomous motion\n,\nbig data\n,\ncybersecurity\n,\nrobotics\n, and\nsoftware engineering\n. The MSE program gives you the opportunity to collaborate and work alongside the visionary faculty, ground breaking research, and vibrant campus community that has made Carnegie Mellon a global leader in technology.\nOpen Doors\nYour MSE degree from Carnegie Mellon is going to unlock countless career opportunities from day one. With CMU’s global reputation, stellar coursework, and a hardcore real-world development project under your belt, you are going to return to the job market with a strategic advantage over many of your peers. Each year, nearly\n100% of graduate find employment within three months of graduation\n. In the long term, the principled engineering approach we teach will remain consistently relevant — even as tech fads come and go — allowing you to deliver five, ten, or twenty years from now!\nAfter five years, over 50% of our graduates are promoted to senior software engineering positions.\nVisit the\nCareer Outlook\nto see how an MSE degree will open doors for you.\nIndividualized Attention\nOur standards are high and our process is competitive. We intentionally limit the size of each MSE for Professionals cohort in order to maintain a low student-faculty ratio. As a member of a small cohort, you can expect greater access to the best mentors and peers.\nThis boils down to personalized attention in your coursework and the studio project, and more opportunities to engage with our visionary faculty, alumni, and your talented peers, forming lasting connections that will benefit your career.\nTight-Knit Community\nStudents in the MSE program form strong bonds that last a lifetime. As a graduate, and through our annual alumni events around San Francisco, Boston and Seattle, you will continue to grow and learn from the best as your career takes off. Our alumni testimonials, alumni mentors, and our alumni advisory board all speak to the strength of this community. As a student in our program, you gain access to these relationships and, upon graduation, are inducted into this community as a member of life. Graduates are vital members of our community: representing a broad spectrum of our extensive program and becoming industry collaborators, educational partners, and current and former faculty.\nMSE Campus Programs Information Session\nMSE Campus Programs Application Workshop",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MSE for Professionals",
+    "duration": "16-month long program when pursued full-time. Part-time options are available for U.S. Citizens or Permanent Residents of the United States.",
+    "courses": [
+      {
+        "name": "Requirements",
+        "description": "The program includes coursework on requirements, architecture, analysis and project management, while providing students with greater flexibility in directing their education."
+      },
+      {
+        "name": "Architecture",
+        "description": "The program includes coursework on requirements, architecture, analysis and project management, while providing students with greater flexibility in directing their education."
+      },
+      {
+        "name": "Analysis",
+        "description": "The program includes coursework on requirements, architecture, analysis and project management, while providing students with greater flexibility in directing their education."
+      },
+      {
+        "name": "Project Management",
+        "description": "The program includes coursework on requirements, architecture, analysis and project management, while providing students with greater flexibility in directing their education."
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "The MSE program is designed for experienced software developers with at least two years of full-time professional experience.",
+    "features": "The MSE program for professionals builds on a foundation of skills and industry experience, and teaches you state-of-the-art practices used by top software engineering companies. The program gives you the opportunity to collaborate and work alongside the visionary faculty, ground breaking research, and vibrant campus community that has made Carnegie Mellon a global leader in technology. Nearly 100% of graduates find employment within three months of graduation. After five years, over 50% of our graduates are promoted to senior software engineering positions. The program maintains a low student-faculty ratio and offers personalized attention and a tight-knit alumni community.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 74,
+      "char_end": 94
+    },
+    "duration": {
+      "text": "",
+      "char_start": 420,
+      "char_end": 563
+    },
+    "courses": {
+      "text": "",
+      "char_start": 384,
+      "char_end": 478
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 350,
+      "char_end": 419
+    },
+    "features": {
+      "text": "",
+      "char_start": 95,
+      "char_end": 1802
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 671,
+      "char_end": 841
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "mse.s3d.cmu.edu_527a6e43_0000",
+      "text": "Software and Societal Systems Department › Master of Software Engineering Programs › For Applicants › MSE for Professionals MSE for Professionals Do you find yourself working on a project that is overcome by slow progress and technical debt, where you feel there must be a better way to manage code and improve the quality of your software? Or, maybe you have reached a plateau in your career, and you are eager to reach the next level? The Master of Software Engineering (MSE) program for professionals builds on a foundation of skills and industry experience, and teaches you state-of-the-art practices used by top software engineering companies. The MSE program is designed for experienced software developers with at least two years of full-time professional experience. The program includes coursework on requirements, architecture, analysis and project management, while providing students with greater flexibility in directing their education. The program is an on-campus, 16-month long program when pursued full-time. Part-time options are available for U.S. Citizens or Permanent Residents of the United States. What are the prerequisites for admissions? What classes will I take? What is a \"Studio Project\" and why is it important? Become the Best of the Best \"The MSE taught me a lot about perseverance and work ethics, my own limits in terms of what I could do and what I might accomplish. By the time that I graduated, I knew that I could hang with the best of the best.\" Eduardo Frias (MSE '94) Partner, Whitespectre Program Advantages Technology That Leads the World Carnegie Mellon is world-renowned for pioneering and advancing numerous technology fields such as artificial intelligence , autonomous motion , big data , cybersecurity , robotics , and software engineering . The MSE program gives you the opportunity to collaborate and work alongside the visionary faculty, ground breaking research, and vibrant campus community that has made Carnegie Mellon a global leader in technology. Open Doors Your MSE degree from Carnegie Mellon is going to unlock countless career opportunities from day one. With CMU’s global reputation, stellar coursework, and a hardcore real-world development project under your belt, you are going to return to the job market with a strategic advantage over many of your peers. Each year, nearly 100% of graduate find employment within three months of graduation . In the long term, the principled engineering approach we teach will remain consistently relevant — even as tech fads come",
+      "char_start": 0,
+      "char_end": 2533,
+      "token_count": 400,
+      "vector_id": "vectors/mse.s3d.cmu.edu_527a6e43_chunk0000.npy"
+    },
+    {
+      "chunk_id": "mse.s3d.cmu.edu_527a6e43_0001",
+      "text": "research, and vibrant campus community that has made Carnegie Mellon a global leader in technology. Open Doors Your MSE degree from Carnegie Mellon is going to unlock countless career opportunities from day one. With CMU’s global reputation, stellar coursework, and a hardcore real-world development project under your belt, you are going to return to the job market with a strategic advantage over many of your peers. Each year, nearly 100% of graduate find employment within three months of graduation . In the long term, the principled engineering approach we teach will remain consistently relevant — even as tech fads come and go — allowing you to deliver five, ten, or twenty years from now! After five years, over 50% of our graduates are promoted to senior software engineering positions. Visit the Career Outlook to see how an MSE degree will open doors for you. Individualized Attention Our standards are high and our process is competitive. We intentionally limit the size of each MSE for Professionals cohort in order to maintain a low student-faculty ratio. As a member of a small cohort, you can expect greater access to the best mentors and peers. This boils down to personalized attention in your coursework and the studio project, and more opportunities to engage with our visionary faculty, alumni, and your talented peers, forming lasting connections that will benefit your career. Tight-Knit Community Students in the MSE program form strong bonds that last a lifetime. As a graduate, and through our annual alumni events around San Francisco, Boston and Seattle, you will continue to grow and learn from the best as your career takes off. Our alumni testimonials, alumni mentors, and our alumni advisory board all speak to the strength of this community. As a student in our program, you gain access to these relationships and, upon graduation, are inducted into this community as a member of life. Graduates are vital members of our community: representing a broad spectrum of our extensive program and becoming industry collaborators, educational partners, and current and former faculty. MSE Campus Programs Information Session MSE Campus Programs Application Workshop",
+      "char_start": 1906,
+      "char_end": 4098,
+      "token_count": 350,
+      "vector_id": "vectors/mse.s3d.cmu.edu_527a6e43_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "4c568ab9b9fb2f907a7b56a14e1de417abc8f34f51e5002a385db54398b9e866",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:21:37.019171",
+      "response_raw_path": "out/llm_cache\\900ab4d7cbd97acb.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

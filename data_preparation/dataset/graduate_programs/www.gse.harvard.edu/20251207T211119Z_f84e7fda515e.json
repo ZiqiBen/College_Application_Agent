@@ -1,0 +1,77 @@
+{
+  "id": "www.gse.harvard.edu_f84e7fda515e",
+  "source_url": "https://www.gse.harvard.edu/degrees/masters",
+  "raw_snapshot_path": "out/cache\\20251207T211116Z_f84e7fda515e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:11:19.556497",
+  "checksum": "f84e7fda515eddcbb02fe49f5419f8bcfe4398af35f8f6089b48b4f39535bc70",
+  "language": null,
+  "title": "Master’s Programs in Education | Harvard Graduate School of Education",
+  "raw_text": "",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": null,
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    }
+  },
+  "chunks": [],
+  "llm_calls": [
+    {
+      "prompt_hash": "26a8b7578adc5b5eb5a450c914ea4ec199a270995c086a867aabdb8545e96b68",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:11:19.556497",
+      "response_raw_path": "out/llm_cache\\a71ee1c266b4ce90.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

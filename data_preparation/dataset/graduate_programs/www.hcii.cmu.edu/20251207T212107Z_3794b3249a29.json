@@ -1,0 +1,107 @@
+{
+  "id": "www.hcii.cmu.edu_3794b3249a29",
+  "source_url": "https://www.hcii.cmu.edu/academics/mhci",
+  "raw_snapshot_path": "out/cache\\20251207T212056Z_3794b3249a29.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:21:07.392674",
+  "checksum": "3794b3249a292960324a9bd6e6b84f4153ebe8d847a9369a54453f878ffadd96",
+  "language": null,
+  "title": "Master of Human-Computer Interaction | Human-Computer Interaction Institute",
+  "raw_text": "Master of Human-Computer Interaction\nThe longest-running and most impactful\nMaster of Human-Computer Interaction in the world.\nThe Master of Human-Computer Interaction (MHCI) program at Carnegie Mellon University is the first program in the world dedicated to preparing professionals for careers related to human-computer interaction, user experience design and user-centered research.\nThe MHCI program integrates service and design thinking into a rigorous HCI curriculum that prepares our students to design and guide the future of human and technology interactions.\nAbout the MHCI Program\nThe MHCI program is a three-semester program completed over the course of a full calendar year (August-August).\nIt is a professional degree that prepares students for industry and a career related to user experience, human-computer interaction and beyond.\nOur program is interdisciplinary to its core. Each year, cohorts are made up of richly diverse student groups with varying degrees of industry experience and backgrounds in design, social science, business and computer science among many others.\nMHCI is led by faculty who are driving and defining the world of HCI. They bring together expertise in computer science, cognitive psychology, behavioral science, design and many are experts coming directly from industry. Our diverse range of faculty powers the interdisciplinary culture in the HCII.\nThe flagship course of the MHCI program is the seven-month Capstone course, a research and design team project with an external industry client.\nMHCI is currently designated a STEM program.\nThe MHCI Experience\nDuring the first semester, students learn core HCI methodologies and techniques in the required classes, while customizing their academic experience from the immense selection of electives across all of the schools at Carnegie Mellon University.\nWhile completing the second and third semesters, students continue their diverse electives and complete a substantial industry capstone project with an external client. Our alumni praise the capstone course as being one of the most instrumental courses in their academic career.\nSince our first graduating class in 1997, we have graduated more than 1,200 MHCI students who are now defining the ways humans interact with technology. They are user researchers, experience designers, product managers, entrepreneurs and business owners, and software developers. More importantly, they are strategizing and defining the future of technology in companies around the world. Take a look at where our grads go after graduation on the\nPost-Graduation Outcomes Dashboard\n.\nApply Now\nThe application for the next MHCI program is now open\n(2026-27 cohort)\nApply online\nby January 15, 2026\n3:00 p.m. EST\nVisit\nMHCI Admissions\nfor details\nMHCI\nOverview\nAdmissions\nCapstone Project\nCurriculum\nElectives\nSample Study Plans\nHandbooks\nFAQs\nTuition & Aid\nMHCI Alumni\nContact Us\nNicole Willis\nMHCI Director of Student Affairs\nHuman-Computer Interaction Institute\nCarnegie Mellon University\n300 S. Craig Street,\nSuite 209\nPittsburgh, PA 15213\nnicolewi@cs.cmu.edu\nPhone: 412-268-7971\nFax: 412-268-9433",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Human-Computer Interaction",
+    "duration": "three-semester program completed over the course of a full calendar year (August-August)",
+    "courses": [
+      {
+        "name": "Capstone course",
+        "description": "The flagship course of the MHCI program is the seven-month Capstone course, a research and design team project with an external industry client."
+      },
+      {
+        "name": "core HCI methodologies and techniques",
+        "description": "During the first semester, students learn core HCI methodologies and techniques in the required classes, while customizing their academic experience from the immense selection of electives across all of the schools at Carnegie Mellon University."
+      },
+      {
+        "name": "electives",
+        "description": "While completing the second and third semesters, students continue their diverse electives and complete a substantial industry capstone project with an external client."
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "Apply online by January 15, 2026 3:00 p.m. EST Visit MHCI Admissions for details",
+    "features": "The MHCI program is the first program in the world dedicated to preparing professionals for careers related to human-computer interaction, user experience design and user-centered research. The MHCI program integrates service and design thinking into a rigorous HCI curriculum. It is interdisciplinary, with diverse student backgrounds and faculty expertise. The program includes a seven-month Capstone course with an external industry client and is designated a STEM program.",
+    "contact_email": "nicolewi@cs.cmu.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 65
+    },
+    "duration": {
+      "text": "",
+      "char_start": 314,
+      "char_end": 410
+    },
+    "courses": {
+      "text": "",
+      "char_start": 726,
+      "char_end": 1202
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 1632,
+      "char_end": 1702
+    },
+    "features": {
+      "text": "",
+      "char_start": 66,
+      "char_end": 825
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 2022,
+      "char_end": 2040
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "www.hcii.cmu.edu_3794b324_0000",
+      "text": "Master of Human-Computer Interaction The longest-running and most impactful Master of Human-Computer Interaction in the world. The Master of Human-Computer Interaction (MHCI) program at Carnegie Mellon University is the first program in the world dedicated to preparing professionals for careers related to human-computer interaction, user experience design and user-centered research. The MHCI program integrates service and design thinking into a rigorous HCI curriculum that prepares our students to design and guide the future of human and technology interactions. About the MHCI Program The MHCI program is a three-semester program completed over the course of a full calendar year (August-August). It is a professional degree that prepares students for industry and a career related to user experience, human-computer interaction and beyond. Our program is interdisciplinary to its core. Each year, cohorts are made up of richly diverse student groups with varying degrees of industry experience and backgrounds in design, social science, business and computer science among many others. MHCI is led by faculty who are driving and defining the world of HCI. They bring together expertise in computer science, cognitive psychology, behavioral science, design and many are experts coming directly from industry. Our diverse range of faculty powers the interdisciplinary culture in the HCII. The flagship course of the MHCI program is the seven-month Capstone course, a research and design team project with an external industry client. MHCI is currently designated a STEM program. The MHCI Experience During the first semester, students learn core HCI methodologies and techniques in the required classes, while customizing their academic experience from the immense selection of electives across all of the schools at Carnegie Mellon University. While completing the second and third semesters, students continue their diverse electives and complete a substantial industry capstone project with an external client. Our alumni praise the capstone course as being one of the most instrumental courses in their academic career. Since our first graduating class in 1997, we have graduated more than 1,200 MHCI students who are now defining the ways humans interact with technology. They are user researchers, experience designers, product managers, entrepreneurs and business owners, and software developers. More importantly, they are strategizing and defining the future of technology in companies around the world. Take a look at where our grads go after graduation on the Post-Graduation Outcomes Dashboard . Apply Now The application for the next MHCI program is now open (2026-27 cohort) Apply online",
+      "char_start": 0,
+      "char_end": 2707,
+      "token_count": 400,
+      "vector_id": "vectors/www.hcii.cmu.edu_3794b324_chunk0000.npy"
+    },
+    {
+      "chunk_id": "www.hcii.cmu.edu_3794b324_0001",
+      "text": "as being one of the most instrumental courses in their academic career. Since our first graduating class in 1997, we have graduated more than 1,200 MHCI students who are now defining the ways humans interact with technology. They are user researchers, experience designers, product managers, entrepreneurs and business owners, and software developers. More importantly, they are strategizing and defining the future of technology in companies around the world. Take a look at where our grads go after graduation on the Post-Graduation Outcomes Dashboard . Apply Now The application for the next MHCI program is now open (2026-27 cohort) Apply online by January 15, 2026 3:00 p.m. EST Visit MHCI Admissions for details MHCI Overview Admissions Capstone Project Curriculum Electives Sample Study Plans Handbooks FAQs Tuition & Aid MHCI Alumni Contact Us Nicole Willis MHCI Director of Student Affairs Human-Computer Interaction Institute Carnegie Mellon University 300 S. Craig Street, Suite 209 Pittsburgh, PA 15213 nicolewi@cs.cmu.edu Phone: 412-268-7971 Fax: 412-268-9433",
+      "char_start": 2058,
+      "char_end": 3130,
+      "token_count": 158,
+      "vector_id": "vectors/www.hcii.cmu.edu_3794b324_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "cc22d4b5d03d6b8fc75a1b70c2b6ae45d3bb70680f9e6388601f4e7894571c3b",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:21:07.392674",
+      "response_raw_path": "out/llm_cache\\85a995a338db38b6.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

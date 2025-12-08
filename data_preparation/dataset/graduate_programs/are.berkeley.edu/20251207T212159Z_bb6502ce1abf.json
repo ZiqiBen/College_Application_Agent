@@ -1,0 +1,103 @@
+{
+  "id": "are.berkeley.edu_bb6502ce1abf",
+  "source_url": "https://are.berkeley.edu/graduate-program",
+  "raw_snapshot_path": "out/cache\\20251207T212154Z_bb6502ce1abf.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:21:59.682072",
+  "checksum": "bb6502ce1abf10e6ea99dedbf4709413b4c4313901e3c7d00b1846cf255044be",
+  "language": null,
+  "title": "Graduate Program | Agricultural & Resource Economics",
+  "raw_text": "Skip to main content\nGraduate Program\nWhy study at UC Berkeley's Department of Agricultural and Resource Economics?\nOur graduate program in agricultural and resource economics produces outstanding researchers in development economics, environmental and energy economics, international trade, and agricultural and resource policy.\nStudents enrolling in our doctoral program complete a rigorous course of study, including microeconomic theory (offered by the Department of Economics), econometrics, and field courses offered by ARE, the Department of Economics, and the Haas School of Business. A number of our graduate students also take doctoral-level courses in the Department of Statistics.\nRead a\nletter to prospective graduate students\nfrom the chair of our department.\nWhy ARE?\nVideo of Why ARE?\nCheck out this video for advice from current and former students.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "graduate program in agricultural and resource economics",
+    "duration": null,
+    "courses": [
+      {
+        "name": "microeconomic theory",
+        "description": "offered by the Department of Economics"
+      },
+      {
+        "name": "econometrics",
+        "description": null
+      },
+      {
+        "name": "field courses",
+        "description": "offered by ARE, the Department of Economics, and the Haas School of Business"
+      },
+      {
+        "name": "doctoral-level courses in the Department of Statistics",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "produces outstanding researchers in development economics, environmental and energy economics, international trade, and agricultural and resource policy. Students enrolling in our doctoral program complete a rigorous course of study.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 74,
+      "char_end": 123
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": 207,
+      "char_end": 420
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 124,
+      "char_end": 306
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "are.berkeley.edu_bb6502ce_0000",
+      "text": "Skip to main content Graduate Program Why study at UC Berkeley's Department of Agricultural and Resource Economics? Our graduate program in agricultural and resource economics produces outstanding researchers in development economics, environmental and energy economics, international trade, and agricultural and resource policy. Students enrolling in our doctoral program complete a rigorous course of study, including microeconomic theory (offered by the Department of Economics), econometrics, and field courses offered by ARE, the Department of Economics, and the Haas School of Business. A number of our graduate students also take doctoral-level courses in the Department of Statistics. Read a letter to prospective graduate students from the chair of our department. Why ARE? Video of Why ARE? Check out this video for advice from current and former students.",
+      "char_start": 0,
+      "char_end": 866,
+      "token_count": 125,
+      "vector_id": "vectors/are.berkeley.edu_bb6502ce_chunk0000.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "bbd8c93590abc9dfb49ec8ca7658919e5496bb17e5cfe920bd9aebbb1f11f62d",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:21:59.682072",
+      "response_raw_path": "out/llm_cache\\bf685593b12b4f15.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

@@ -1,0 +1,77 @@
+{
+  "id": "www.ee.caltech.edu_bee8711d1038",
+  "source_url": "https://www.ee.caltech.edu/academics/grad",
+  "raw_snapshot_path": "out/cache\\20251207T210752Z_bee8711d1038.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:07:55.520375",
+  "checksum": "bee8711d10386f9190c508fbcb0da4a61345da6de66b98d5bba0f9a6082ec7ed",
+  "language": null,
+  "title": "Graduate Programs\n  \n\n     - \n    \n    Electrical Engineering",
+  "raw_text": "",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": null,
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    }
+  },
+  "chunks": [],
+  "llm_calls": [
+    {
+      "prompt_hash": "7c2f4d42f213a641474197acb6977f3d9e1b9ff9a9fe31e09b9e1d6fc9d11c39",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:07:55.520375",
+      "response_raw_path": "out/llm_cache\\2ef43f445a05ba19.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

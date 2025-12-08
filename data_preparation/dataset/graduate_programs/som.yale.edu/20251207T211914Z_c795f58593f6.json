@@ -1,0 +1,127 @@
+{
+  "id": "som.yale.edu_c795f58593f6",
+  "source_url": "https://som.yale.edu/programs/mba/curriculum",
+  "raw_snapshot_path": "out/cache\\20251207T211855Z_c795f58593f6.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:19:14.561596",
+  "checksum": "c795f58593f62587acfe5ca913aeb35b346304c31e465efd2d02f46d30d9bcc5",
+  "language": null,
+  "title": "Our Integrated Curriculum | Yale School of Management",
+  "raw_text": "MBA\nCurriculum\nOur Curriculum\nThe tool kit for leaders who want to make a difference.\nTo lead an organization that thrives and has positive impact—a social venture working to bring healthcare to underserved populations; a tech company navigating the quandaries of massive growth—you’ll need to master business skills\nand\npeople skills, and you’ll need to understand the societal trends that can further or disrupt your mission.\nOur curriculum is built to foster broad-minded leaders who act with skill and vision to solve the biggest challenges. It builds essential business skills and competencies while also inculcating wide-ranging curiosity and attunement to the impact of decisions on a range of stakeholders.\nBroad perspectives, not silos\nWe look at organizations from the outside in and from the inside out. The integrated core teaches you how to cultivate organizational excellence, whatever your mission, by understanding the stakeholders who will determine your organization’s success.\nVideo: The capstone of the core sequence, called the Executive, gives you a picture of the whole organization through complex, interdisciplinary cases.\nMore teachers, more insights\nSolving the problems in the textbooks is only the first step.  We want to take on real-world problems, and real-world problems require flexible thinking. The use of team teaching in many core courses models how you can draw ideas from disparate fields to generate deeper insights and novel solutions.\nVideo: Psychology & operations? How one course combines two different ways of thinking to help you solve problems.\nAlways consider the bigger picture\nEvery organization sits in a social and environmental context, and your success will depend on your understanding of how you fit in that bigger picture. Core courses like State and Society and elective courses like Strategic Management of Nonprofit Organizations teach you to better understand the social context and how it will impact your organization’s success.\nVideo: In a lesson drawn from State and Society, Prof. Mushfiq Mobarak walks through what is driving the gender wage gap and how to change it.\nOut far and in deep\nEvery leadership journey is unique. You can embark on your own path by choosing electives from all across Yale University. Want to sharpen your quant skills? Try Data Analysis and Causal Inference. Thinking about how to have a positive impact in your career? Check out Ethical Choices in Public Leadership. Or do you want to marvel at the immensity of the universe? Get an Introduction to Cosmology.\nSecurity Analysis and Valuation; Interpersonal and Group Dynamics; Maple: From Tree to Table.\nRead about the electives our students chose and why.\nVideo: Prof. Judith Chevalier’s course Strategic Management of Nonprofit Organizations teaches students to use economic tools to help make mission-driven organizations effective and financially sustainable.\nCurriculum overview\nYear 1: Core\nYour first step toward being a leader who has impact on business and society.\nThe series of first-year core courses is carefully planned to build your understanding of the whole organization.\nYear 2: Electives\nDig deep and explore all Yale has to offer.\nYou will tailor your second year by taking courses from SOM and adding as many courses as you choose from other parts of Yale University.\nProgram highlights\nGlobal Study\nTravel for a weeklong course at another business school, study with students from around the world in a virtual global course, or travel for a nonprofit consulting engagement—and enhance your global acumen.\nLeadership & Teams\nThroughout your MBA career, you’ll form and manage teams, learn what works and what doesn’t—and then apply those lessons the next time around.\nRaw Cases\nLearn the way you work. Our online “raw” cases simulate real-world decision making by asking you to sift through documents, video, news articles, and other data.\nYou\nStudents often say they learn as much from their classmates as they do from the content of their classes. Indeed, the diverse background and fields of expertise of our students enrich every discussion. You’ll benefit from and contribute to the SOM community.\nThe Yale SOM MBA program has been\ndesignated STEM-eligible\n. Students will have the opportunity to qualify for the 24-month STEM Optional Practical Training extension.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MBA",
+    "duration": null,
+    "courses": [
+      {
+        "name": "State and Society",
+        "description": "Core courses like State and Society and elective courses like Strategic Management of Nonprofit Organizations teach you to better understand the social context and how it will impact your organization’s success."
+      },
+      {
+        "name": "Strategic Management of Nonprofit Organizations",
+        "description": "Prof. Judith Chevalier’s course Strategic Management of Nonprofit Organizations teaches students to use economic tools to help make mission-driven organizations effective and financially sustainable."
+      },
+      {
+        "name": "Data Analysis and Causal Inference",
+        "description": "Want to sharpen your quant skills? Try Data Analysis and Causal Inference."
+      },
+      {
+        "name": "Ethical Choices in Public Leadership",
+        "description": "Thinking about how to have a positive impact in your career? Check out Ethical Choices in Public Leadership."
+      },
+      {
+        "name": "Introduction to Cosmology",
+        "description": "Or do you want to marvel at the immensity of the universe? Get an Introduction to Cosmology."
+      },
+      {
+        "name": "Security Analysis and Valuation",
+        "description": null
+      },
+      {
+        "name": "Interpersonal and Group Dynamics",
+        "description": null
+      },
+      {
+        "name": "Maple: From Tree to Table",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "Global Study Travel for a weeklong course at another business school, study with students from around the world in a virtual global course, or travel for a nonprofit consulting engagement—and enhance your global acumen. Leadership & Teams Throughout your MBA career, you’ll form and manage teams, learn what works and what doesn’t—and then apply those lessons the next time around. Raw Cases Learn the way you work. Our online “raw” cases simulate real-world decision making by asking you to sift through documents, video, news articles, and other data. The Yale SOM MBA program has been designated STEM-eligible. Students will have the opportunity to qualify for the 24-month STEM Optional Practical Training extension.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 13
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": 1012,
+      "char_end": 1432
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 1433,
+      "char_end": 1972
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "som.yale.edu_c795f585_0000",
+      "text": "MBA Curriculum Our Curriculum The tool kit for leaders who want to make a difference. To lead an organization that thrives and has positive impact—a social venture working to bring healthcare to underserved populations; a tech company navigating the quandaries of massive growth—you’ll need to master business skills and people skills, and you’ll need to understand the societal trends that can further or disrupt your mission. Our curriculum is built to foster broad-minded leaders who act with skill and vision to solve the biggest challenges. It builds essential business skills and competencies while also inculcating wide-ranging curiosity and attunement to the impact of decisions on a range of stakeholders. Broad perspectives, not silos We look at organizations from the outside in and from the inside out. The integrated core teaches you how to cultivate organizational excellence, whatever your mission, by understanding the stakeholders who will determine your organization’s success. Video: The capstone of the core sequence, called the Executive, gives you a picture of the whole organization through complex, interdisciplinary cases. More teachers, more insights Solving the problems in the textbooks is only the first step. We want to take on real-world problems, and real-world problems require flexible thinking. The use of team teaching in many core courses models how you can draw ideas from disparate fields to generate deeper insights and novel solutions. Video: Psychology & operations? How one course combines two different ways of thinking to help you solve problems. Always consider the bigger picture Every organization sits in a social and environmental context, and your success will depend on your understanding of how you fit in that bigger picture. Core courses like State and Society and elective courses like Strategic Management of Nonprofit Organizations teach you to better understand the social context and how it will impact your organization’s success. Video: In a lesson drawn from State and Society, Prof. Mushfiq Mobarak walks through what is driving the gender wage gap and how to change it. Out far and in deep Every leadership journey is unique. You can embark on your own path by choosing electives from all across Yale University. Want to sharpen your quant skills? Try Data Analysis and Causal Inference. Thinking about how to have a positive impact in your career? Check out Ethical Choices in Public Leadership. Or do you want to marvel at the immensity of the universe? Get an Introduction to",
+      "char_start": 0,
+      "char_end": 2543,
+      "token_count": 400,
+      "vector_id": "vectors/som.yale.edu_c795f585_chunk0000.npy"
+    },
+    {
+      "chunk_id": "som.yale.edu_c795f585_0001",
+      "text": "your organization’s success. Video: In a lesson drawn from State and Society, Prof. Mushfiq Mobarak walks through what is driving the gender wage gap and how to change it. Out far and in deep Every leadership journey is unique. You can embark on your own path by choosing electives from all across Yale University. Want to sharpen your quant skills? Try Data Analysis and Causal Inference. Thinking about how to have a positive impact in your career? Check out Ethical Choices in Public Leadership. Or do you want to marvel at the immensity of the universe? Get an Introduction to Cosmology. Security Analysis and Valuation; Interpersonal and Group Dynamics; Maple: From Tree to Table. Read about the electives our students chose and why. Video: Prof. Judith Chevalier’s course Strategic Management of Nonprofit Organizations teaches students to use economic tools to help make mission-driven organizations effective and financially sustainable. Curriculum overview Year 1: Core Your first step toward being a leader who has impact on business and society. The series of first-year core courses is carefully planned to build your understanding of the whole organization. Year 2: Electives Dig deep and explore all Yale has to offer. You will tailor your second year by taking courses from SOM and adding as many courses as you choose from other parts of Yale University. Program highlights Global Study Travel for a weeklong course at another business school, study with students from around the world in a virtual global course, or travel for a nonprofit consulting engagement—and enhance your global acumen. Leadership & Teams Throughout your MBA career, you’ll form and manage teams, learn what works and what doesn’t—and then apply those lessons the next time around. Raw Cases Learn the way you work. Our online “raw” cases simulate real-world decision making by asking you to sift through documents, video, news articles, and other data. You Students often say they learn as much from their classmates as they do from the content of their classes. Indeed, the diverse background and fields of expertise of our students enrich every discussion. You’ll benefit from and contribute to the SOM community. The Yale SOM MBA program has been designated STEM-eligible . Students will have the opportunity to qualify for the 24-month STEM Optional Practical Training extension.",
+      "char_start": 1963,
+      "char_end": 4337,
+      "token_count": 379,
+      "vector_id": "vectors/som.yale.edu_c795f585_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "d8ae12a01e23179c802bff9eb9942b90267b6b83bf46d7fcb5e50b6b57084982",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:19:14.561596",
+      "response_raw_path": "out/llm_cache\\9deb0ddca4134073.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

@@ -1,0 +1,94 @@
+{
+  "id": "abe.psu.edu_0918256fbf5f",
+  "source_url": "https://abe.psu.edu/graduate/admissions/requirements",
+  "raw_snapshot_path": "out/cache\\20251207T213203Z_0918256fbf5f.html",
+  "content_type": "text/html;charset=utf-8",
+  "crawl_date": "2025-12-07 21:32:17.739939",
+  "checksum": "0918256fbf5f643b9cbdfb281991d70b5c96e770d46531e794b42e9004627c6d",
+  "language": "English",
+  "title": "Admission Requirements — Graduate Programs — Department of Agricultural and Biological Engineering",
+  "raw_text": "Admission Requirements\nAdmission to graduate programs in the Department of Agricultural and Biological Engineering is based on a careful evaluation of an applicant’s potential to complete the degree programs successfully.\nPenn State's Department of Agricultural and Biological Engineering offers a master of science and doctor of philosophy degree in two degree programs: Agricultural and Biological Engineering and Biorenewable Systems.\nRequirements for entrance are different for each degree program and reflect the unique content and focus of each. The requirements, as listed here, are in addition to the general Graduate School requirements for admission.\nTOEFL\nInternational students must submit TOEFL (Test of English as a Foreign Language) or IELTS (International English Language Testing System) scores. The minimum acceptable score for the TOEFL is 550 for the paper-based test, 213 for the computer-based test, or a total score of 80 with a 19 on the speaking section for the internet-based test. The minimum composite score for the IELTS is 6.5. The TOEFL exam must be taken within three years of the application date.\nEntrance to Master of Science Programs\nBiorenewable Systems (BRS)—\nCompletion of an undergraduate degree in a science, applied science, or technical field of study is required for direct admission to the BRS graduate program. Some examples of suitable undergraduate majors include Agricultural Systems Management, Biology, Biochemistry, Biorenewable Systems, Environmental Resource Management, Materials Science, and Wood Science.\nAgricultural and Biological Engineering (ABENG)—\nCompletion of an undergraduate degree in an engineering program is required for direct admission into our ABENG graduate program. Students need at least a 2.50 (4.00 base) junior-senior grade point average to be considered for admission.\nA student with an undergraduate degree in a non-engineering field can be admitted to the ABENG master's degree program on a provisional basis, which continues until completion of the engineering undergraduate requirements in mathematics, physics, and engineering sciences (thermodynamics, statics, dynamics, strength of materials, fluid-mechanics, and electrical circuitry) and six credits of 400-level Agricultural and Biological Engineering courses. Upon completing these preparatory courses with a minimum grade point average of 2.75, the student will be granted full admission to the graduate program.\nEntrance to Doctor of Philosophy Programs\nBiorenewable Systems (BRS)—\nCompletion of a master of science degree with research thesis in an appropriate field of scientific or technical study is expected for applicants to the BRS doctoral degree program. Some examples of suitable masters degree programs include Agricultural Systems Management, Biology, Biochemistry, Biorenewable Systems, Environmental Resource Management, Materials Science, and Wood Science.\nAgricultural and Biological Engineering (ABENG)—\nThe departmental requirement for acceptance to graduate study toward a doctoral degree in ABENG is a master's degree with research thesis in an engineering or science discipline with a bachelor of science degree from an engineering program. Outstanding students interested in direct admission from a B.S. engineering program to the ABENG doctoral program should contact the graduate program coordinator. Direct admission will be based on a critical evaluation of the student’s potential to conduct publishable research, academic record, results of standardized tests, statement of purpose, and reference letters. Students who apply directly to the ABENG doctoral degree program but are not qualified will be considered for admission into the ABENG master's degree program or the BRS graduate program.\nA student with an undergraduate degree in a non-engineering field can be admitted to the ABENG doctoral degree program on a provisional basis, which continues until completion of the engineering undergraduate requirements in mathematics, physics, and engineering sciences (thermodynamics, statics, dynamics, strength of materials, fluid mechanics, and electrical circuitry) and six credits of 400-level Agricultural and Biological Engineering courses.\nAdmission into the ABENG and BRS graduate programs is based on a thorough review of all applicant qualifications. The number of students admitted depends on available departmental resources and may vary by semester.\nTo apply for admission into the Department of Agricultural and Biological Engineering and Biorenewable Systems graduate programs, go to \"\nHow to Apply\n.\"",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Science and Doctor of Philosophy in Agricultural and Biological Engineering and Biorenewable Systems",
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "TOEFL or IELTS scores are required for international students. Minimum TOEFL: 550 (paper), 213 (computer), or 80 (internet) with 19 on speaking. Minimum IELTS: 6.5. For Biorenewable Systems (BRS) MS: undergraduate degree in a science, applied science, or technical field. For Agricultural and Biological Engineering (ABENG) MS: undergraduate degree in engineering and at least a 2.50 (4.00 base) junior-senior GPA. Non-engineering undergraduates may be admitted provisionally after completing required courses. For BRS PhD: MS degree with research thesis in a relevant field. For ABENG PhD: MS with research thesis in engineering or science and BS in engineering; direct admission from BS possible for outstanding students. Non-engineering undergraduates may be admitted provisionally after completing required courses.",
+    "features": "Admission is based on a careful evaluation of an applicant’s potential to complete the degree programs successfully. Requirements differ for each program and reflect unique content and focus. Admission is also based on available departmental resources and may vary by semester.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 120,
+      "char_end": 259
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 272,
+      "char_end": 1862
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 1862
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 272,
+      "char_end": 370
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "abe.psu.edu_0918256f_0000",
+      "text": "Admission Requirements Admission to graduate programs in the Department of Agricultural and Biological Engineering is based on a careful evaluation of an applicant’s potential to complete the degree programs successfully. Penn State's Department of Agricultural and Biological Engineering offers a master of science and doctor of philosophy degree in two degree programs: Agricultural and Biological Engineering and Biorenewable Systems. Requirements for entrance are different for each degree program and reflect the unique content and focus of each. The requirements, as listed here, are in addition to the general Graduate School requirements for admission. TOEFL International students must submit TOEFL (Test of English as a Foreign Language) or IELTS (International English Language Testing System) scores. The minimum acceptable score for the TOEFL is 550 for the paper-based test, 213 for the computer-based test, or a total score of 80 with a 19 on the speaking section for the internet-based test. The minimum composite score for the IELTS is 6.5. The TOEFL exam must be taken within three years of the application date. Entrance to Master of Science Programs Biorenewable Systems (BRS)— Completion of an undergraduate degree in a science, applied science, or technical field of study is required for direct admission to the BRS graduate program. Some examples of suitable undergraduate majors include Agricultural Systems Management, Biology, Biochemistry, Biorenewable Systems, Environmental Resource Management, Materials Science, and Wood Science. Agricultural and Biological Engineering (ABENG)— Completion of an undergraduate degree in an engineering program is required for direct admission into our ABENG graduate program. Students need at least a 2.50 (4.00 base) junior-senior grade point average to be considered for admission. A student with an undergraduate degree in a non-engineering field can be admitted to the ABENG master's degree program on a provisional basis, which continues until completion of the engineering undergraduate requirements in mathematics, physics, and engineering sciences (thermodynamics, statics, dynamics, strength of materials, fluid-mechanics, and electrical circuitry) and six credits of 400-level Agricultural and Biological Engineering courses. Upon completing these preparatory courses with a minimum grade point average of 2.75, the student will be granted full admission to the graduate program. Entrance to Doctor of Philosophy Programs Biorenewable Systems (BRS)— Completion of a master of science degree with research thesis in an appropriate field of scientific or technical study is expected for applicants to the BRS doctoral degree program. Some examples of suitable masters degree programs include Agricultural Systems Management, Biology,",
+      "char_start": 0,
+      "char_end": 2806,
+      "token_count": 400,
+      "vector_id": "vectors/abe.psu.edu_0918256f_chunk0000.npy"
+    },
+    {
+      "chunk_id": "abe.psu.edu_0918256f_0001",
+      "text": "in mathematics, physics, and engineering sciences (thermodynamics, statics, dynamics, strength of materials, fluid-mechanics, and electrical circuitry) and six credits of 400-level Agricultural and Biological Engineering courses. Upon completing these preparatory courses with a minimum grade point average of 2.75, the student will be granted full admission to the graduate program. Entrance to Doctor of Philosophy Programs Biorenewable Systems (BRS)— Completion of a master of science degree with research thesis in an appropriate field of scientific or technical study is expected for applicants to the BRS doctoral degree program. Some examples of suitable masters degree programs include Agricultural Systems Management, Biology, Biochemistry, Biorenewable Systems, Environmental Resource Management, Materials Science, and Wood Science. Agricultural and Biological Engineering (ABENG)— The departmental requirement for acceptance to graduate study toward a doctoral degree in ABENG is a master's degree with research thesis in an engineering or science discipline with a bachelor of science degree from an engineering program. Outstanding students interested in direct admission from a B.S. engineering program to the ABENG doctoral program should contact the graduate program coordinator. Direct admission will be based on a critical evaluation of the student’s potential to conduct publishable research, academic record, results of standardized tests, statement of purpose, and reference letters. Students who apply directly to the ABENG doctoral degree program but are not qualified will be considered for admission into the ABENG master's degree program or the BRS graduate program. A student with an undergraduate degree in a non-engineering field can be admitted to the ABENG doctoral degree program on a provisional basis, which continues until completion of the engineering undergraduate requirements in mathematics, physics, and engineering sciences (thermodynamics, statics, dynamics, strength of materials, fluid mechanics, and electrical circuitry) and six credits of 400-level Agricultural and Biological Engineering courses. Admission into the ABENG and BRS graduate programs is based on a thorough review of all applicant qualifications. The number of students admitted depends on available departmental resources and may vary by semester. To apply for admission into the Department of Agricultural and Biological Engineering and Biorenewable Systems graduate programs, go to \" How to Apply .\"",
+      "char_start": 2071,
+      "char_end": 4586,
+      "token_count": 350,
+      "vector_id": "vectors/abe.psu.edu_0918256f_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "c90b8cab7d850f6dedc33e411e060042085b907be4c34a8bf236474947c65135",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:32:17.739939",
+      "response_raw_path": "out/llm_cache\\667d74a2eb49da80.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

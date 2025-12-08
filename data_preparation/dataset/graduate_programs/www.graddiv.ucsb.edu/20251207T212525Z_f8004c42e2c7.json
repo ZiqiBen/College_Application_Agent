@@ -1,0 +1,94 @@
+{
+  "id": "www.graddiv.ucsb.edu_f8004c42e2c7",
+  "source_url": "https://www.graddiv.ucsb.edu/application-and-admission-checklist",
+  "raw_snapshot_path": "out/cache\\20251207T212518Z_f8004c42e2c7.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:25:25.785405",
+  "checksum": "f8004c42e2c7d648dd4a32696274bad178d5efad38de5f3fe850f37a89be66e8",
+  "language": null,
+  "title": "Application and Admission Checklist | Graduate Division",
+  "raw_text": "Let us help.\nUse this checklist as a guide throughout the application process.\nHome\nAdmissions\nApplication and Admission Checklist\nApplication and Admission Checklist\nWe recommend completing the following tasks before, during, and after you submitting your\nonline application\nto your chosen graduate program at UC Santa Barbara. Make sure to also check on your chosen program's requirements.\nCheck on your department requirements.\nCan't find what you are looking for?\nRead through the information below, review our\nfrequently asked questions\n, or\ncontact the Admissions team\n.\nBefore you apply\nImage\nLearn about all of our\n50+ graduate degree programs.\nYou can also attend one of our\nGraduate Admissions Webinars\n.\nImage\nContact faculty in your\ndepartment/program of interest\nto discuss research opportunities for graduate students and/or reach out to the Staff Graduate Program Advisor with any questions that you have about the program or application process.\nImage\nPlan ahead to make sure all of your application materials are ready by your program's application deadline.\nWe recommend contacting your recommenders and scheduling any required exams (GRE, TOEFL, etc.) at least six weeks in advance to ensure all required application materials are received on time.\nSubmitting your application\nImage\nOnline Application & Application Fee\nComplete and submit\nthe online application\nby your department/program's application deadline. If you are submitting a\nfee waiver request\n, be sure to do so\nat least two weeks prior\nto your application deadline. The fee waiver request and any supporting documentation should be submitted within your online application.\nImage\nTranscripts from all Post-Secondary Institutions\nReport your education information and upload a copy of each set of transcripts in your online application.\nImage\nStatement of Purpose, Personal History Statement, and Resume/CV\nUpload both of the\nrequired essays and your resume/CV\nto your online application.\nImage\nLetters of Recommendation\nThree letters are required. Your recommenders should upload their letters to the online application using the link they received via email.\nImage\nOfficial Graduate Record Examination (GRE) Scores\nIf your program requires the GRE, self-report your scores in the online application and have your official scores sent to the\nUCSB Graduate Institution using institution code 4835\n(official scores are required to complete your application if your program requires them). Check your\ndepartment/program requirements\nto find out if the GRE is required.\nImage\nTOEFL or IELTS or Duolingo English Test (DET) Scores (if applicable)\nIn the Exam Scores section of the online application, select the test that you completed, and self-report your scores. Be sure to also have your official scores sent directly from the testing agency (official scores are required to complete your application). Refer to the test administrator's website for instructions:\nTOEFL\n(use UCSB Graduate Institution\ncode 4835\n; no department code is required)\nIELTS\n(request that\nUniversity of California, Santa Barbara - Graduate Admissions\nreceive your scores)\nDuolingo English Test (DET)\n(request that\nUniversity of California, Santa Barbara - Graduate Admissions\nreceive your scores)\nImage\nSupplemental Materials Required by Department\nCheck for any supplemental materials required by\nyour department/program\n.\nAfter you apply\nImage\nBe patient.\nIt often takes several months for departments to review applications and release admissions decisions. Check the status of your application\nonline\nor follow up with your\ndepartment\nif you have specific questions.\nImage\nRespond to Offers\nThe national deadline for applicants to respond to offers of financial support is\nApril 15\n. The final deadline to submit a Statement of Intent to Register (SIR) at UCSB is\nJune 15\n.\nImage\nResearch Housing and Financial Aid Options\nIndividuals who are U.S. citizens (or dual citizens) should submit the\nFAFSA\nby March 2\nAll applicants should apply for\nUCSB Housing\nby the housing deadline (typically mid-May)",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": null,
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Complete and submit the online application by your department/program's application deadline. ... Report your education information and upload a copy of each set of transcripts in your online application. ... Upload both of the required essays and your resume/CV to your online application. ... Three letters are required. ... If your program requires the GRE, self-report your scores in the online application and have your official scores sent to the UCSB Graduate Institution using institution code 4835 ... In the Exam Scores section of the online application, select the test that you completed, and self-report your scores. Be sure to also have your official scores sent directly from the testing agency ... Check for any supplemental materials required by your department/program.",
+    "features": "Learn about all of our 50+ graduate degree programs. ... Attend one of our Graduate Admissions Webinars. ... Contact faculty in your department/program of interest to discuss research opportunities for graduate students and/or reach out to the Staff Graduate Program Advisor with any questions that you have about the program or application process. ... Apply for UCSB Housing by the housing deadline (typically mid-May). ... The national deadline for applicants to respond to offers of financial support is April 15. The final deadline to submit a Statement of Intent to Register (SIR) at UCSB is June 15.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 1012,
+      "char_end": 2222
+    },
+    "features": {
+      "text": "",
+      "char_start": 246,
+      "char_end": 1802
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "www.graddiv.ucsb.edu_f8004c42_0000",
+      "text": "Let us help. Use this checklist as a guide throughout the application process. Home Admissions Application and Admission Checklist Application and Admission Checklist We recommend completing the following tasks before, during, and after you submitting your online application to your chosen graduate program at UC Santa Barbara. Make sure to also check on your chosen program's requirements. Check on your department requirements. Can't find what you are looking for? Read through the information below, review our frequently asked questions , or contact the Admissions team . Before you apply Image Learn about all of our 50+ graduate degree programs. You can also attend one of our Graduate Admissions Webinars . Image Contact faculty in your department/program of interest to discuss research opportunities for graduate students and/or reach out to the Staff Graduate Program Advisor with any questions that you have about the program or application process. Image Plan ahead to make sure all of your application materials are ready by your program's application deadline. We recommend contacting your recommenders and scheduling any required exams (GRE, TOEFL, etc.) at least six weeks in advance to ensure all required application materials are received on time. Submitting your application Image Online Application & Application Fee Complete and submit the online application by your department/program's application deadline. If you are submitting a fee waiver request , be sure to do so at least two weeks prior to your application deadline. The fee waiver request and any supporting documentation should be submitted within your online application. Image Transcripts from all Post-Secondary Institutions Report your education information and upload a copy of each set of transcripts in your online application. Image Statement of Purpose, Personal History Statement, and Resume/CV Upload both of the required essays and your resume/CV to your online application. Image Letters of Recommendation Three letters are required. Your recommenders should upload their letters to the online application using the link they received via email. Image Official Graduate Record Examination (GRE) Scores If your program requires the GRE, self-report your scores in the online application and have your official scores sent to the UCSB Graduate Institution using institution code 4835 (official scores are required to complete your application if your program requires them). Check your department/program requirements to find out if the GRE is required. Image TOEFL or IELTS or Duolingo English Test (DET) Scores (if applicable) In the Exam Scores section of the",
+      "char_start": 0,
+      "char_end": 2658,
+      "token_count": 400,
+      "vector_id": "vectors/www.graddiv.ucsb.edu_f8004c42_chunk0000.npy"
+    },
+    {
+      "chunk_id": "www.graddiv.ucsb.edu_f8004c42_0001",
+      "text": "Three letters are required. Your recommenders should upload their letters to the online application using the link they received via email. Image Official Graduate Record Examination (GRE) Scores If your program requires the GRE, self-report your scores in the online application and have your official scores sent to the UCSB Graduate Institution using institution code 4835 (official scores are required to complete your application if your program requires them). Check your department/program requirements to find out if the GRE is required. Image TOEFL or IELTS or Duolingo English Test (DET) Scores (if applicable) In the Exam Scores section of the online application, select the test that you completed, and self-report your scores. Be sure to also have your official scores sent directly from the testing agency (official scores are required to complete your application). Refer to the test administrator's website for instructions: TOEFL (use UCSB Graduate Institution code 4835 ; no department code is required) IELTS (request that University of California, Santa Barbara - Graduate Admissions receive your scores) Duolingo English Test (DET) (request that University of California, Santa Barbara - Graduate Admissions receive your scores) Image Supplemental Materials Required by Department Check for any supplemental materials required by your department/program . After you apply Image Be patient. It often takes several months for departments to review applications and release admissions decisions. Check the status of your application online or follow up with your department if you have specific questions. Image Respond to Offers The national deadline for applicants to respond to offers of financial support is April 15 . The final deadline to submit a Statement of Intent to Register (SIR) at UCSB is June 15 . Image Research Housing and Financial Aid Options Individuals who are U.S. citizens (or dual citizens) should submit the FAFSA by March 2 All applicants should apply for UCSB Housing by the housing deadline (typically mid-May)",
+      "char_start": 2004,
+      "char_end": 4060,
+      "token_count": 313,
+      "vector_id": "vectors/www.graddiv.ucsb.edu_f8004c42_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "7eade9105410ff53ee57d9ead7d13b0f002119cb217f11932d239bc9e505e29c",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:25:25.785405",
+      "response_raw_path": "out/llm_cache\\3a7b8b765b856d7b.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

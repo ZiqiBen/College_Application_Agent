@@ -1,0 +1,115 @@
+{
+  "id": "catalog.caltech.edu_97f76abe9e46",
+  "source_url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computer-science-cs/",
+  "raw_snapshot_path": "out/cache\\20251207T210750Z_97f76abe9e46.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:07:51.237064",
+  "checksum": "97f76abe9e46af5b79cf762acd50d6cd8fe256fbfd4cc53b94bf5c030dfbf7e9",
+  "language": "English",
+  "title": "Computer Science (CS) | Caltech Academic Catalog",
+  "raw_text": "Related Pages\nAims and Scope of the Graduate Program\nGraduate study in computer science within the Computing & Mathematical Sciences department is oriented principally toward Ph.D. research. The Ph.D. program requires a minimum of three academic years of residence; required coursework is generally completed within the first two years. Students must maintain high academic standards during their graduate residence. A student’s Ph.D. research must exhibit originality in the formulation, analysis, and solution of a problem that is significant to the field of study. The option representative and executive officers are available to discuss concerns regarding academic progress.\nCS Master’s Degree\nThe CS Option only admits students who plan to pursue the Ph.D. degree. The M.S. degree may be awarded in exceptional cases at the discretion of the CS Option Representative. To be eligible, students must complete the following requirements:\nAll Institute M.S. requirements;\nThe classwork requirements for the CS Ph.D. program;\nRecommendation to award the M.S. from the CS preliminary examination committee.\nCS Degree of Doctor of Philosophy\nCourse requirements\nStudents must complete a minimum of 135 units of courses numbered 100 or greater, including research units (CS 280). Students should consult with their adviser to ensure balance in the selected courses.\nThe coursework must include:\nCMS 290 is required for all first year CS graduate students during each term (fall/winter/spring).\nAdvanced courses in computer science. Completion of a minimum of 54 units of CS courses numbered 100 or greater in addition to units earned for reading, research, and independent projects. Up to 24 of the 54 units may be taken from non-CS courses from CMS or ACM, including CMS/ACM/IDS 107, CMS/ACM/EE 122 and CMS 117, or other courses with approval from the option representative.\nCompletion of a minimum of 27 additional units of coursework (not including research units) labeled 100 and above, in any academic discipline.\nPreliminary examination\nToward the end of the first year, all incoming students must take a preliminary examination administered by the faculty. Its purpose is to ensure a solid and broad knowledge in computer science, and in the event of a deficiency, to direct the students to necessary courses and reading.\nCandidacy\nTo be recommended for candidacy, a student must have completed the required coursework, have passed the preliminary examination, have entered upon a course of research approved by their thesis adviser, and have passed a candidacy oral examination. The candidacy oral examination is administered by a committee that consists of four faculty that is approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The examination ascertains the student’s breadth and depth of preparation for research in the chosen area. The candidacy examination should be taken within the first three years of graduate study.\nAdvising and Thesis Supervision\nIn order to facilitate close supervision and a highly research-oriented environment, each student is admitted directly to an adviser and research group. A course of study is determined in consultation with the adviser. Occasionally students will be admitted into more than one group. Changes in affiliation may occur with the common consent of the student, the new adviser, and the option representative.\nStudents meet regularly with their adviser throughout their time at Caltech, and are encouraged to do the same with other members of the faculty.\nAcademic progress will be reviewed regularly, including at least once annually by the option representative.\nAn ability to explain concepts and to verbally present one’s work is vital to a successful career in research and/or teaching. To this end, students may be required by their advisor and the option representative to occasionally serve as a teaching assistant.\nThesis and Final Examination\nA final oral examination will be scheduled and given after the Ph.D. thesis has been submitted for review to the student’s adviser and thesis committee; the latter consists of at least four faculty approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The thesis examination is a defense of the thesis research and a test of the candidate’s knowledge in their specialized fields.\nSubject Minor in Computer Science\nA subject minor is not required for the Ph.D. degree in computer science. PhD students majoring in other fields may take a subject minor in computer science consisting of 45 CS units numbered 100 or greater. The minor must be supervised by a computer science faculty adviser and approved by the computer science option representative, a year in advance of graduation. The courses must be sufficiently removed from the student’s major program of study and must include CS 138 (CS 139 may be substituted) unless the student has previously taken an equivalent course. The courses in the plan must be taken for grades and the student is required to achieve an A- average in them.\nPublished Date:\n  \n  \n    Aug. 27, 2025",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Computer Science Ph.D.",
+    "duration": "a minimum of three academic years of residence",
+    "courses": [
+      {
+        "name": "CMS 290",
+        "description": "CMS 290 is required for all first year CS graduate students during each term (fall/winter/spring)."
+      },
+      {
+        "name": "Advanced courses in computer science",
+        "description": "Completion of a minimum of 54 units of CS courses numbered 100 or greater in addition to units earned for reading, research, and independent projects. Up to 24 of the 54 units may be taken from non-CS courses from CMS or ACM, including CMS/ACM/IDS 107, CMS/ACM/EE 122 and CMS 117, or other courses with approval from the option representative."
+      },
+      {
+        "name": "Additional coursework",
+        "description": "Completion of a minimum of 27 additional units of coursework (not including research units) labeled 100 and above, in any academic discipline."
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "The CS Option only admits students who plan to pursue the Ph.D. degree. The M.S. degree may be awarded in exceptional cases at the discretion of the CS Option Representative. To be eligible, students must complete the following requirements: All Institute M.S. requirements; The classwork requirements for the CS Ph.D. program; Recommendation to award the M.S. from the CS preliminary examination committee.",
+    "features": "Graduate study in computer science within the Computing & Mathematical Sciences department is oriented principally toward Ph.D. research. The Ph.D. program requires a minimum of three academic years of residence; required coursework is generally completed within the first two years. Students must maintain high academic standards during their graduate residence. A student’s Ph.D. research must exhibit originality in the formulation, analysis, and solution of a problem that is significant to the field of study. Each student is admitted directly to an adviser and research group. Students meet regularly with their adviser throughout their time at Caltech, and are encouraged to do the same with other members of the faculty. Academic progress will be reviewed regularly, including at least once annually by the option representative. Students may be required by their advisor and the option representative to occasionally serve as a teaching assistant.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 56,
+      "char_end": 151
+    },
+    "duration": {
+      "text": "",
+      "char_start": 152,
+      "char_end": 215
+    },
+    "courses": {
+      "text": "",
+      "char_start": 563,
+      "char_end": 1002
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 246,
+      "char_end": 561
+    },
+    "features": {
+      "text": "",
+      "char_start": 56,
+      "char_end": 1842
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 2322,
+      "char_end": 2349
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0000",
+      "text": "Related Pages Aims and Scope of the Graduate Program Graduate study in computer science within the Computing & Mathematical Sciences department is oriented principally toward Ph.D. research. The Ph.D. program requires a minimum of three academic years of residence; required coursework is generally completed within the first two years. Students must maintain high academic standards during their graduate residence. A student’s Ph.D. research must exhibit originality in the formulation, analysis, and solution of a problem that is significant to the field of study. The option representative and executive officers are available to discuss concerns regarding academic progress. CS Master’s Degree The CS Option only admits students who plan to pursue the Ph.D. degree. The M.S. degree may be awarded in exceptional cases at the discretion of the CS Option Representative. To be eligible, students must complete the following requirements: All Institute M.S. requirements; The classwork requirements for the CS Ph.D. program; Recommendation to award the M.S. from the CS preliminary examination committee. CS Degree of Doctor of Philosophy Course requirements Students must complete a minimum of 135 units of courses numbered 100 or greater, including research units (CS 280). Students should consult with their adviser to ensure balance in the selected courses. The coursework must include: CMS 290 is required for all first year CS graduate students during each term (fall/winter/spring). Advanced courses in computer science. Completion of a minimum of 54 units of CS courses numbered 100 or greater in addition to units earned for reading, research, and independent projects. Up to 24 of the 54 units may be taken from non-CS courses from CMS or ACM, including CMS/ACM/IDS 107, CMS/ACM/EE 122 and CMS 117, or other courses with approval from the option representative. Completion of a minimum of 27 additional units of coursework (not including research units) labeled 100 and above, in any academic discipline. Preliminary examination Toward the end of the first year, all incoming students must take a preliminary examination administered by the faculty. Its purpose is to ensure a solid and broad knowledge in computer science, and in the event of a deficiency, to direct the students to necessary courses and reading. Candidacy To be recommended for candidacy, a student must have completed the required coursework, have passed the preliminary examination, have entered upon a course of research approved by their thesis adviser, and have passed a candidacy oral examination. The candidacy oral examination is",
+      "char_start": 0,
+      "char_end": 2618,
+      "token_count": 400,
+      "vector_id": "vectors/catalog.caltech.edu_97f76abe_chunk0000.npy"
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0001",
+      "text": "100 and above, in any academic discipline. Preliminary examination Toward the end of the first year, all incoming students must take a preliminary examination administered by the faculty. Its purpose is to ensure a solid and broad knowledge in computer science, and in the event of a deficiency, to direct the students to necessary courses and reading. Candidacy To be recommended for candidacy, a student must have completed the required coursework, have passed the preliminary examination, have entered upon a course of research approved by their thesis adviser, and have passed a candidacy oral examination. The candidacy oral examination is administered by a committee that consists of four faculty that is approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The examination ascertains the student’s breadth and depth of preparation for research in the chosen area. The candidacy examination should be taken within the first three years of graduate study. Advising and Thesis Supervision In order to facilitate close supervision and a highly research-oriented environment, each student is admitted directly to an adviser and research group. A course of study is determined in consultation with the adviser. Occasionally students will be admitted into more than one group. Changes in affiliation may occur with the common consent of the student, the new adviser, and the option representative. Students meet regularly with their adviser throughout their time at Caltech, and are encouraged to do the same with other members of the faculty. Academic progress will be reviewed regularly, including at least once annually by the option representative. An ability to explain concepts and to verbally present one’s work is vital to a successful career in research and/or teaching. To this end, students may be required by their advisor and the option representative to occasionally serve as a teaching assistant. Thesis and Final Examination A final oral examination will be scheduled and given after the Ph.D. thesis has been submitted for review to the student’s adviser and thesis committee; the latter consists of at least four faculty approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The thesis examination is a defense of the thesis research and a test of the candidate’s knowledge in their specialized fields. Subject Minor in Computer Science A subject minor is not required for",
+      "char_start": 1974,
+      "char_end": 4535,
+      "token_count": 400,
+      "vector_id": "vectors/catalog.caltech.edu_97f76abe_chunk0001.npy"
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0002",
+      "text": "option representative to occasionally serve as a teaching assistant. Thesis and Final Examination A final oral examination will be scheduled and given after the Ph.D. thesis has been submitted for review to the student’s adviser and thesis committee; the latter consists of at least four faculty approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The thesis examination is a defense of the thesis research and a test of the candidate’s knowledge in their specialized fields. Subject Minor in Computer Science A subject minor is not required for the Ph.D. degree in computer science. PhD students majoring in other fields may take a subject minor in computer science consisting of 45 CS units numbered 100 or greater. The minor must be supervised by a computer science faculty adviser and approved by the computer science option representative, a year in advance of graduation. The courses must be sufficiently removed from the student’s major program of study and must include CS 138 (CS 139 may be substituted) unless the student has previously taken an equivalent course. The courses in the plan must be taken for grades and the student is required to achieve an A- average in them. Published Date: Aug. 27, 2025",
+      "char_start": 3903,
+      "char_end": 5205,
+      "token_count": 213,
+      "vector_id": "vectors/catalog.caltech.edu_97f76abe_chunk0002.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "fb754a9f9dab7f9bc4a2ecd88a359acb47e4af1554e053b5c54939ab85a2fd0f",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:07:51.237064",
+      "response_raw_path": "out/llm_cache\\8c89e26972b7e285.txt",
+      "cached": true
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

@@ -1,0 +1,123 @@
+{
+  "id": "www.cmu.edu_5357330184c0",
+  "source_url": "https://www.cmu.edu/tepper/programs/mba/curriculum",
+  "raw_snapshot_path": "out/cache\\20251207T212012Z_5357330184c0.html",
+  "content_type": "text/html;charset=utf-8",
+  "crawl_date": "2025-12-07 21:20:21.339768",
+  "checksum": "5357330184c0d2d8943a6e82096d2f1e32d1ca557798d1aef793bac70638042a",
+  "language": null,
+  "title": "Curriculum | MBA | Tepper School of Business",
+  "raw_text": "Curriculum | MBA\nA STEM-Designated MBA That Blends Analytics, Leadership, and Real-World Learning\nThe Tepper School of Business at Carnegie Mellon University prepares you to lead in a fast-moving, data-driven world. Employers seek leaders who can pair analytical precision with sound judgment, and this is why the Tepper School MBA emphasizes both. You will build deep skills in analytics and decision-making through a curriculum that integrates data with every core discipline. You will grow as a leader through personalized coaching in the\nAccelerate Leadership Center\nand team-based coursework that mirrors professional collaboration. You will apply your learning in real time through consulting projects,\nglobal experiences\n, and\ninternships\nthat connect classroom insights to real business challenges. The result is an MBA designed to meet the demands of today’s marketplace and prepare you for long-term career success.\nBaseCamp: Your Tepper Starting Point\nBaseCamp\nis the Tepper School’s orientation program. It prepares you for the academic rigor and collaborative culture of the MBA. Before the first mini begins, you refresh your analytic and communication skills. You work through team exercises and align on expectations with faculty and coaches. The experience builds confidence and a shared foundation so you are ready to contribute from day one.\nThe curriculum that follows covers marketing, finance, operations, accounting, economics, organizational behavior, and strategy. Each course is designed to show you how data and models are used to solve real business problems. The Tepper School’s four-mini format gives you more decision points during the year. It allows you to explore electives earlier, respond to new interests, and customize your degree as your career goals evolve. See the\nSchedule of Classes\nfor detailed course listings.\nExplore BaseCamp\nCurriculum Maps\nBelow you’ll find the MBA Curriculum Maps, which outline course requirements and program progression. They are designed to help you visualize your path through the Tepper School MBA.\nThese diagrams are for illustrative purposes and depicts a typical curriculum for the MBA program. The timing of classes may change in a given academic year.\nFull-Time MBA Curriculum Map [.pdf]\nOnline Hybrid Curriculum Map [.pdf]\nFull-Time Accelerated MBA Curriculum Map [.pdf]\nOnline Hybrid Accelerated Curriculum Map [.pdf]\nFind Full Course Descriptions\nConcentrations and Tracks\nAfter the core, you shape your Tepper School MBA around your career goals. Choose from a wide range of\nconcentrations\nin areas such as finance, marketing, strategy, and entrepreneurship. Or pursue cross-disciplinary\ntracks\nthat connect coursework across fields, including Business Analytics, Energy and Sustainability, and Technology Leadership.\nConcentrations\nFocus your studies in areas such as finance, marketing, strategy, and entrepreneurship.\nTracks\nExplore cross-disciplinary pathways like Business Analytics, Energy and Sustainability, and Technology Leadership.\nLeadership and Experiential Learning\nLeadership development begins on day one through the Accelerate Leadership Center. You receive personalized coaching to strengthen communication, influence, and decision-making. You practice those skills in the classroom and beyond.\nExperiential opportunities include consulting projects, case competitions, global learning, and\ninternships\n. These settings allow you to refine your leadership in team-based environments. They also prepare you for both immediate impact and long-term\ncareers\n.\nCapstones and Applied Learning\nCapstones\nbridge the classroom and the workplace. Working with company sponsors, you tackle real business challenges and deliver recommendations. You refine your problem-solving and leadership skills in the process.\nGlobal Capstones\nextend this experience abroad. They combine international immersion with hands-on consulting for multinational firms. Together with electives and [internships], capstones give you the chance to demonstrate your readiness to employers before graduation.\nLearn How the Tepper School MBA Can Advance Your Career\nLoading...\nQuick Resources\nSchedule of Classes\nTuition and Scholarships\nGraduate Student Support",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "MBA",
+    "duration": null,
+    "courses": [
+      {
+        "name": "Marketing",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      },
+      {
+        "name": "Finance",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      },
+      {
+        "name": "Operations",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      },
+      {
+        "name": "Accounting",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      },
+      {
+        "name": "Economics",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      },
+      {
+        "name": "Organizational Behavior",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      },
+      {
+        "name": "Strategy",
+        "description": "Each course is designed to show you how data and models are used to solve real business problems."
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "A STEM-Designated MBA that blends analytics, leadership, and real-world learning. The curriculum integrates data with every core discipline, offers personalized coaching, team-based coursework, consulting projects, global experiences, and internships. Students can choose from a wide range of concentrations and cross-disciplinary tracks such as Business Analytics, Energy and Sustainability, and Technology Leadership. Leadership development begins on day one through the Accelerate Leadership Center.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 70,
+      "char_end": 252
+    },
+    "duration": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "courses": {
+      "text": "",
+      "char_start": 678,
+      "char_end": 849
+    },
+    "tuition": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "features": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 561
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    },
+    "language": {
+      "text": "",
+      "char_start": -1,
+      "char_end": -1
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "www.cmu.edu_53573301_0000",
+      "text": "Curriculum | MBA A STEM-Designated MBA That Blends Analytics, Leadership, and Real-World Learning The Tepper School of Business at Carnegie Mellon University prepares you to lead in a fast-moving, data-driven world. Employers seek leaders who can pair analytical precision with sound judgment, and this is why the Tepper School MBA emphasizes both. You will build deep skills in analytics and decision-making through a curriculum that integrates data with every core discipline. You will grow as a leader through personalized coaching in the Accelerate Leadership Center and team-based coursework that mirrors professional collaboration. You will apply your learning in real time through consulting projects, global experiences , and internships that connect classroom insights to real business challenges. The result is an MBA designed to meet the demands of today’s marketplace and prepare you for long-term career success. BaseCamp: Your Tepper Starting Point BaseCamp is the Tepper School’s orientation program. It prepares you for the academic rigor and collaborative culture of the MBA. Before the first mini begins, you refresh your analytic and communication skills. You work through team exercises and align on expectations with faculty and coaches. The experience builds confidence and a shared foundation so you are ready to contribute from day one. The curriculum that follows covers marketing, finance, operations, accounting, economics, organizational behavior, and strategy. Each course is designed to show you how data and models are used to solve real business problems. The Tepper School’s four-mini format gives you more decision points during the year. It allows you to explore electives earlier, respond to new interests, and customize your degree as your career goals evolve. See the Schedule of Classes for detailed course listings. Explore BaseCamp Curriculum Maps Below you’ll find the MBA Curriculum Maps, which outline course requirements and program progression. They are designed to help you visualize your path through the Tepper School MBA. These diagrams are for illustrative purposes and depicts a typical curriculum for the MBA program. The timing of classes may change in a given academic year. Full-Time MBA Curriculum Map [.pdf] Online Hybrid Curriculum Map [.pdf] Full-Time Accelerated MBA Curriculum Map [.pdf] Online Hybrid Accelerated Curriculum Map [.pdf] Find Full Course Descriptions Concentrations and Tracks After the core, you shape your Tepper School MBA around your career goals. Choose from a wide range of concentrations in areas such as finance, marketing, strategy, and entrepreneurship. Or pursue cross-disciplinary tracks that connect coursework",
+      "char_start": 0,
+      "char_end": 2700,
+      "token_count": 400,
+      "vector_id": "vectors/www.cmu.edu_53573301_chunk0000.npy"
+    },
+    {
+      "chunk_id": "www.cmu.edu_53573301_0001",
+      "text": "you visualize your path through the Tepper School MBA. These diagrams are for illustrative purposes and depicts a typical curriculum for the MBA program. The timing of classes may change in a given academic year. Full-Time MBA Curriculum Map [.pdf] Online Hybrid Curriculum Map [.pdf] Full-Time Accelerated MBA Curriculum Map [.pdf] Online Hybrid Accelerated Curriculum Map [.pdf] Find Full Course Descriptions Concentrations and Tracks After the core, you shape your Tepper School MBA around your career goals. Choose from a wide range of concentrations in areas such as finance, marketing, strategy, and entrepreneurship. Or pursue cross-disciplinary tracks that connect coursework across fields, including Business Analytics, Energy and Sustainability, and Technology Leadership. Concentrations Focus your studies in areas such as finance, marketing, strategy, and entrepreneurship. Tracks Explore cross-disciplinary pathways like Business Analytics, Energy and Sustainability, and Technology Leadership. Leadership and Experiential Learning Leadership development begins on day one through the Accelerate Leadership Center. You receive personalized coaching to strengthen communication, influence, and decision-making. You practice those skills in the classroom and beyond. Experiential opportunities include consulting projects, case competitions, global learning, and internships . These settings allow you to refine your leadership in team-based environments. They also prepare you for both immediate impact and long-term careers . Capstones and Applied Learning Capstones bridge the classroom and the workplace. Working with company sponsors, you tackle real business challenges and deliver recommendations. You refine your problem-solving and leadership skills in the process. Global Capstones extend this experience abroad. They combine international immersion with hands-on consulting for multinational firms. Together with electives and [internships], capstones give you the chance to demonstrate your readiness to employers before graduation. Learn How the Tepper School MBA Can Advance Your Career Loading... Quick Resources Schedule of Classes Tuition and Scholarships Graduate Student Support",
+      "char_start": 2017,
+      "char_end": 4225,
+      "token_count": 295,
+      "vector_id": "vectors/www.cmu.edu_53573301_chunk0001.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "aadc395f1cea7ad8ae43340baccaadbcee38024529c319a1b5a3eea11802c4f3",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:20:21.339768",
+      "response_raw_path": "out/llm_cache\\f7cf29a3b87700ed.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}

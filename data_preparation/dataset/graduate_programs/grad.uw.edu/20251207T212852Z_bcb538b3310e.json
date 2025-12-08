@@ -1,0 +1,102 @@
+{
+  "id": "grad.uw.edu_bcb538b3310e",
+  "source_url": "https://grad.uw.edu/prospective-students/how-to-apply/requirements/",
+  "raw_snapshot_path": "out/cache\\20251207T212842Z_bcb538b3310e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-07 21:28:52.212641",
+  "checksum": "bcb538b3310ec381635e0c9b21ecd022ca88f1dff3c0279d9bf0ab4082b673c7",
+  "language": "English",
+  "title": "Requirements – UW Graduate School",
+  "raw_text": "Minimum Admissions Requirements\nProspective graduate students must meet the following minimum requirements:\nAccessible Accordion\nDegree\nHold the minimum equivalent of a four-year baccalaureate degree from a regionally accredited college or university in the U.S. or its equivalent from an accredited foreign institution or a Bologna bachelor’s degree with a minimum of 180 European Credit Transfer System (ECTS) credits.\nAlso acceptable: hold a Master’s degree, a doctoral degree (Ph.D., D.Phil.), or a professional degree (M.D., J.D., D.V.M., etc.) from a regionally accredited college or university in the U.S. or its equivalent from an accredited foreign institution.\nAfter\naccepting an offer: all students confirming enrollment must provide an official (sealed) transcript and degree statement (with date of award & title of degree awarded) for verification to\nGraduate Enrollment Management Services (GEMS)\n. For more information, see\nOfficial Transcripts Requirements\n. Students who submit an official transcript to their admitting department are still required to submit an additional transcript to GEMS upon enrollment.\nRead more about requirements on our\nAdmissions Help and FAQs\npage.\nGPA\nHave at least a\n3.0 cumulative grade-point-average\non a 4 point scale (or equivalent measures of performance if a graduate of an institution with no grading system; or equivalent grade-point-average from an accredited foreign institution) for those credits earned at the regionally accredited institution awarding the bachelor’s degree OR at least a 3.0 grade-point-average (on a 4 point scale) for\nthe last 90 graded quarter credits or 60 graded semester credits.\nAlso acceptable: have earned at least a cumulative 3.0 grade-point-average (on a 4 point scale) from an accredited institution for a Master’s, graduate doctoral degree, or professional doctoral degree.\nGraduate programs may consider an applicant with a GPA below a 3.0. Graduate programs must submit an admission petition to the Dean of the Graduate School and receive approval before an offer is made. For the complete policy, refer to\nPolicy 3.1: Graduate Admissions\n.\nSome graduate programs will have additional admission requirements and may require a higher grade-point-average. These requirements can be found in the graduate program listing:\nselect a graduate program\n.\nEnglish Proficiency\nDemonstration of English proficiency is required of all non-native English speakers.\nApplicants who do not meet the minimum required score will not be considered for admission. We do not offer conditional admission.\nAdmitted students may be required to take additional English classes during their graduate studies, see\nPolicy 3.2.\nSome graduate programs may require a higher score beyond the minimum required score. Additionally, some programs may not accept MyBest Scores. Please check with graduate programs to confirm their requirements:\nselect a graduate program\n.\nTOEFL iBT\nTOEFL MyBest\nDuolingo\nIELTS\nMinimum Required Score (ELP Not Satisfied)\n80\n80\n110\n6.5\nRecommended Score (ELP Satisfied)\n92 or higher\n92 or higher\n125 or higher\n7.0 or higher\nFor additional ways to demonstrate English proficiency, see\nPolicy 3.2\n.\nFor more information, please visit our comprehensive page for\nInternational Applicants\n.\nCitizenship and Visa Status\nThe Graduate School accepts applications from U.S. citizens, permanent residents (green card holders), immigrants and international applicants. Undocumented individuals are eligible for admission to any graduate program at the University of Washington. Graduate School admission requirements and application procedures are the same for all applicants regardless of citizenship and visa status.\nOnce an international student planning to study on an F-1 or J-1 student visa has been admitted and has accepted their offer, they must provide documentation to show proof of adequate financial support.\nRefer to our\nFinancial Ability Requirement information\nInternational students must have a visa status that allows academic study at the UW. This status includes temporary U.S. visas such as F-1 student visas, J-1 exchange visitors, H-1 temporary worker, dependent visas or any other non-immigrant classifications. Students who will study on an F-1 or J-1 visa will be required to complete additional steps after confirming their intention to enroll before the Graduate School can process their visa paperwork.\nRegarding F-2 dependent visa holders, a June 2015 US immigration rule permits dependents (F-2) of international students to engage in study at SEVP-certified schools in the U.S., as long as they are enrolled in part-time study. Although the F-2s can only study part-time, that part-time study can result in the attainment of a degree. However, the F-2\nwould not be eligible for any employment, including on-campus, CPT, or OPT.\nAt the University of Washington Graduate School, if an F-2 wants to enroll in a full course of academic study (10 credit minimum), they must apply for and\nobtain approval\nto change their nonimmigrant classification to F-1 or J-1. For further information on this rule, refer to\nthe Department of Homeland Security website.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": null,
+    "duration": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Prospective graduate students must meet the following minimum requirements: ... Hold the minimum equivalent of a four-year baccalaureate degree from a regionally accredited college or university in the U.S. or its equivalent from an accredited foreign institution ... Have at least a 3.0 cumulative grade-point-average on a 4 point scale ... Demonstration of English proficiency is required of all non-native English speakers. Applicants who do not meet the minimum required score will not be considered for admission. ... The Graduate School accepts applications from U.S. citizens, permanent residents (green card holders), immigrants and international applicants. Undocumented individuals are eligible for admission to any graduate program at the University of Washington.",
+    "features": "Admitted students may be required to take additional English classes during their graduate studies ... Undocumented individuals are eligible for admission to any graduate program at the University of Washington. Graduate School admission requirements and application procedures are the same for all applicants regardless of citizenship and visa status.",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {
+    "program_name": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "duration": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "courses": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "tuition": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "application_requirements": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 1292
+    },
+    "features": {
+      "text": "",
+      "char_start": 1012,
+      "char_end": 1292
+    },
+    "contact_email": {
+      "text": "",
+      "char_start": 0,
+      "char_end": 0
+    },
+    "language": {
+      "text": "",
+      "char_start": 627,
+      "char_end": 698
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "grad.uw.edu_bcb538b3_0000",
+      "text": "Minimum Admissions Requirements Prospective graduate students must meet the following minimum requirements: Accessible Accordion Degree Hold the minimum equivalent of a four-year baccalaureate degree from a regionally accredited college or university in the U.S. or its equivalent from an accredited foreign institution or a Bologna bachelor’s degree with a minimum of 180 European Credit Transfer System (ECTS) credits. Also acceptable: hold a Master’s degree, a doctoral degree (Ph.D., D.Phil.), or a professional degree (M.D., J.D., D.V.M., etc.) from a regionally accredited college or university in the U.S. or its equivalent from an accredited foreign institution. After accepting an offer: all students confirming enrollment must provide an official (sealed) transcript and degree statement (with date of award & title of degree awarded) for verification to Graduate Enrollment Management Services (GEMS) . For more information, see Official Transcripts Requirements . Students who submit an official transcript to their admitting department are still required to submit an additional transcript to GEMS upon enrollment. Read more about requirements on our Admissions Help and FAQs page. GPA Have at least a 3.0 cumulative grade-point-average on a 4 point scale (or equivalent measures of performance if a graduate of an institution with no grading system; or equivalent grade-point-average from an accredited foreign institution) for those credits earned at the regionally accredited institution awarding the bachelor’s degree OR at least a 3.0 grade-point-average (on a 4 point scale) for the last 90 graded quarter credits or 60 graded semester credits. Also acceptable: have earned at least a cumulative 3.0 grade-point-average (on a 4 point scale) from an accredited institution for a Master’s, graduate doctoral degree, or professional doctoral degree. Graduate programs may consider an applicant with a GPA below a 3.0. Graduate programs must submit an admission petition to the Dean of the Graduate School and receive approval before an offer is made. For the complete policy, refer to Policy 3.1: Graduate Admissions . Some graduate programs will have additional admission requirements and may require a higher grade-point-average. These requirements can be found in the graduate program listing: select a graduate program . English Proficiency Demonstration of English proficiency is required of all non-native English speakers. Applicants who do not meet the minimum required score will not be considered for admission. We do not offer conditional admission. Admitted students may be required to take additional English classes during their graduate studies, see Policy 3.2. Some graduate programs",
+      "char_start": 0,
+      "char_end": 2715,
+      "token_count": 400,
+      "vector_id": "vectors/grad.uw.edu_bcb538b3_chunk0000.npy"
+    },
+    {
+      "chunk_id": "grad.uw.edu_bcb538b3_0001",
+      "text": "approval before an offer is made. For the complete policy, refer to Policy 3.1: Graduate Admissions . Some graduate programs will have additional admission requirements and may require a higher grade-point-average. These requirements can be found in the graduate program listing: select a graduate program . English Proficiency Demonstration of English proficiency is required of all non-native English speakers. Applicants who do not meet the minimum required score will not be considered for admission. We do not offer conditional admission. Admitted students may be required to take additional English classes during their graduate studies, see Policy 3.2. Some graduate programs may require a higher score beyond the minimum required score. Additionally, some programs may not accept MyBest Scores. Please check with graduate programs to confirm their requirements: select a graduate program . TOEFL iBT TOEFL MyBest Duolingo IELTS Minimum Required Score (ELP Not Satisfied) 80 80 110 6.5 Recommended Score (ELP Satisfied) 92 or higher 92 or higher 125 or higher 7.0 or higher For additional ways to demonstrate English proficiency, see Policy 3.2 . For more information, please visit our comprehensive page for International Applicants . Citizenship and Visa Status The Graduate School accepts applications from U.S. citizens, permanent residents (green card holders), immigrants and international applicants. Undocumented individuals are eligible for admission to any graduate program at the University of Washington. Graduate School admission requirements and application procedures are the same for all applicants regardless of citizenship and visa status. Once an international student planning to study on an F-1 or J-1 student visa has been admitted and has accepted their offer, they must provide documentation to show proof of adequate financial support. Refer to our Financial Ability Requirement information International students must have a visa status that allows academic study at the UW. This status includes temporary U.S. visas such as F-1 student visas, J-1 exchange visitors, H-1 temporary worker, dependent visas or any other non-immigrant classifications. Students who will study on an F-1 or J-1 visa will be required to complete additional steps after confirming their intention to enroll before the Graduate School can process their visa paperwork. Regarding F-2 dependent visa holders, a June 2015 US immigration rule permits dependents (F-2) of international students to engage in study at SEVP-certified schools in the U.S., as long as they are enrolled in part-time study. Although the F-2s can only study part-time, that part-time study can result",
+      "char_start": 2033,
+      "char_end": 4714,
+      "token_count": 400,
+      "vector_id": "vectors/grad.uw.edu_bcb538b3_chunk0001.npy"
+    },
+    {
+      "chunk_id": "grad.uw.edu_bcb538b3_0002",
+      "text": "U.S. visas such as F-1 student visas, J-1 exchange visitors, H-1 temporary worker, dependent visas or any other non-immigrant classifications. Students who will study on an F-1 or J-1 visa will be required to complete additional steps after confirming their intention to enroll before the Graduate School can process their visa paperwork. Regarding F-2 dependent visa holders, a June 2015 US immigration rule permits dependents (F-2) of international students to engage in study at SEVP-certified schools in the U.S., as long as they are enrolled in part-time study. Although the F-2s can only study part-time, that part-time study can result in the attainment of a degree. However, the F-2 would not be eligible for any employment, including on-campus, CPT, or OPT. At the University of Washington Graduate School, if an F-2 wants to enroll in a full course of academic study (10 credit minimum), they must apply for and obtain approval to change their nonimmigrant classification to F-1 or J-1. For further information on this rule, refer to the Department of Homeland Security website.",
+      "char_start": 4072,
+      "char_end": 5160,
+      "token_count": 174,
+      "vector_id": "vectors/grad.uw.edu_bcb538b3_chunk0002.npy"
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "11b9ec39ea353472f0aabda128372f818b5138c2c10a2fbd996ec3ef29438395",
+      "model": "gpt-4.1",
+      "date": "2025-12-07 21:28:52.212641",
+      "response_raw_path": "out/llm_cache\\ed246289dfd926fd.txt",
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding.",
+  "notes": null
+}
