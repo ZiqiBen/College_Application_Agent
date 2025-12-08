@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain_core.language_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
-from ..config import WritingAgentConfig
+from .config import WritingAgentConfig
 
 
 def get_llm(
