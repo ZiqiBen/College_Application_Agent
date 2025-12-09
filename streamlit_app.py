@@ -1,19 +1,19 @@
 """
-College Application Helper - Full-Featured Streamlit Frontend (v3.0)
+College Application Helper - Full-Featured Streamlit Frontend (v3.1)
 
 This comprehensive Streamlit app provides a complete user interface for the 
-College Application Helper system with three main workflows:
+College Application Helper system with the following workflows:
 
-1. **Program Matching**: Match student profile with suitable graduate programs
-2. **Document Generation**: Generate application documents using AI Writing Agent
-3. **End-to-End Flow**: Full pipeline from matching to document generation
+1. **Smart Matching + Generation**: Complete flow from profile → matching → select program → generate documents
+2. **Quick Generation (Manual Input)**: Direct document generation with manual program input
+3. **Dashboard**: View history and generated content
 
 Key Features:
 - Integration with Matching Service for intelligent program recommendations
+- Seamless flow from matching to document generation with auto-filled program info
 - LangGraph-based Writing Agent for high-quality document generation
 - Support for multiple LLM providers (OpenAI, Anthropic, Qwen)
-- Iterative refinement with quality scoring
-- RAG-enhanced generation with corpus retrieval
+- Manual input option for users who know their target program
 """
 
 import streamlit as st
@@ -27,7 +27,7 @@ from typing import Dict, List, Optional
 # =============================================================================
 
 st.set_page_config(
-    page_title="College Application Helper - Full Suite",
+    page_title="College Application Helper",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -50,7 +50,7 @@ DOCUMENT_TYPES = {
 LLM_PROVIDERS = {
     "openai": "OpenAI (GPT-4)",
     "anthropic": "Anthropic (Claude)",
-    "qwen": "Qwen (通义千问)"
+    "qwen": "Qwen (Tongyi Qianwen)"
 }
 
 # =============================================================================
@@ -59,16 +59,19 @@ LLM_PROVIDERS = {
 
 def init_session_state():
     """Initialize session state variables"""
-    if "profile" not in st.session_state:
-        st.session_state.profile = None
-    if "matched_programs" not in st.session_state:
-        st.session_state.matched_programs = []
-    if "selected_program" not in st.session_state:
-        st.session_state.selected_program = None
-    if "generated_documents" not in st.session_state:
-        st.session_state.generated_documents = {}
-    if "current_step" not in st.session_state:
-        st.session_state.current_step = 1
+    defaults = {
+        "profile": None,
+        "resume_text": "",
+        "matched_programs": [],
+        "selected_program": None,
+        "selected_program_details": None,
+        "generated_documents": {},
+        "generation_mode": None,  # "matched" or "manual"
+        "flow_step": "profile",  # "profile", "matching", "select", "generate"
+    }
+    for key, value in defaults.items():
+        if key not in st.session_state:
+            st.session_state[key] = value
 
 init_session_state()
 
@@ -111,93 +114,102 @@ def build_profile_dict(name, major, goals, email, gpa, courses, skills, experien
         "experiences": experiences
     }
 
+def get_program_details(program_id: str) -> Optional[Dict]:
+    """Fetch complete program details from API"""
+    try:
+        resp = requests.get(f"{API_BASE_URL}/match/program/{program_id}/details", timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            if data.get("success"):
+                return data.get("program")
+        return None
+    except Exception as e:
+        print(f"Error fetching program details: {e}")
+        return None
+
 # =============================================================================
 # UI COMPONENTS - PROFILE INPUT
 # =============================================================================
 
-def render_profile_form() -> Dict:
+def render_profile_form(key_prefix: str = "") -> Dict:
     """Render the profile input form and return profile data"""
-    st.subheader("👤 Your Profile")
-    
     col1, col2 = st.columns(2)
     
     with col1:
-        name = st.text_input("Name", value="Alice Zhang", key="profile_name")
-        major = st.text_input("Major/Field", value="Data Science", key="profile_major")
+        name = st.text_input("Name", value="Alice Zhang", key=f"{key_prefix}name")
+        major = st.text_input("Major/Field", value="Data Science", key=f"{key_prefix}major")
         goals = st.text_area(
             "Career Goals",
             value="Apply ML to real-world analytics and product data science. Lead data-driven initiatives in tech companies.",
             height=100,
             help="Be specific about your career aspirations",
-            key="profile_goals"
+            key=f"{key_prefix}goals"
         )
         
-        with st.expander("📧 Contact Information"):
-            email = st.text_input("Email", value="alice@example.com", key="profile_email")
-            gpa = st.text_input("GPA (0-4.0)", value="3.78", key="profile_gpa")
+        with st.expander("📧 Contact & Academic Info"):
+            email = st.text_input("Email", value="alice@example.com", key=f"{key_prefix}email")
+            gpa = st.text_input("GPA (0-4.0)", value="3.78", key=f"{key_prefix}gpa")
     
     with col2:
         courses = st.text_area(
-            "Relevant Courses",
+            "Relevant Courses (comma-separated)",
             value="Machine Learning, Deep Learning, Statistical Inference, Data Management, Algorithms",
-            help="Comma-separated list",
-            key="profile_courses"
+            key=f"{key_prefix}courses"
         )
         skills = st.text_area(
-            "Technical Skills",
+            "Technical Skills (comma-separated)",
             value="Python, SQL, PyTorch, TensorFlow, R, Tableau, AWS, Git",
-            help="Comma-separated list",
-            key="profile_skills"
+            key=f"{key_prefix}skills"
         )
     
     # Work experiences
-    st.subheader("💼 Work Experience")
-    num_experiences = st.number_input("Number of Experiences", min_value=0, max_value=5, value=2, key="num_exp")
+    st.markdown("##### 💼 Work Experience")
+    num_experiences = st.number_input("Number of Experiences", min_value=0, max_value=5, value=2, key=f"{key_prefix}num_exp")
     
     experiences = []
-    exp_cols = st.columns(min(int(num_experiences), 2)) if num_experiences > 0 else []
-    
-    for i in range(int(num_experiences)):
-        col_idx = i % 2
-        with exp_cols[col_idx] if exp_cols else st.container():
-            with st.expander(f"Experience #{i+1}", expanded=(i < 2)):
-                exp_title = st.text_input(
-                    f"Title", 
-                    value="Data Science Intern" if i == 0 else "Research Assistant",
-                    key=f"exp_title_{i}"
-                )
-                exp_org = st.text_input(
-                    f"Organization",
-                    value="Tech Company" if i == 0 else "University Lab",
-                    key=f"exp_org_{i}"
-                )
-                exp_impact = st.text_area(
-                    f"Impact/Achievement",
-                    value="Built ML model improving prediction accuracy by 15%" if i == 0 else "Analyzed large datasets and created visualizations for research publication",
-                    height=60,
-                    key=f"exp_impact_{i}"
-                )
-                exp_skills = st.text_input(
-                    f"Skills Used",
-                    value="Python, Scikit-learn, Pandas",
-                    key=f"exp_skills_{i}"
-                )
-                
-                if exp_title and exp_org:
-                    experiences.append({
-                        "title": exp_title,
-                        "org": exp_org,
-                        "impact": exp_impact,
-                        "skills": [s.strip() for s in exp_skills.split(",") if s.strip()]
-                    })
+    if num_experiences > 0:
+        exp_cols = st.columns(min(int(num_experiences), 2))
+        for i in range(int(num_experiences)):
+            col_idx = i % 2
+            with exp_cols[col_idx]:
+                with st.expander(f"Experience #{i+1}", expanded=(i < 2)):
+                    exp_title = st.text_input(
+                        "Title", 
+                        value="Data Science Intern" if i == 0 else "Research Assistant",
+                        key=f"{key_prefix}exp_title_{i}"
+                    )
+                    exp_org = st.text_input(
+                        "Organization",
+                        value="Tech Company" if i == 0 else "University Lab",
+                        key=f"{key_prefix}exp_org_{i}"
+                    )
+                    exp_impact = st.text_area(
+                        "Impact/Achievement",
+                        value="Built ML model improving prediction accuracy by 15%" if i == 0 else "Analyzed large datasets and created visualizations for research publication",
+                        height=60,
+                        key=f"{key_prefix}exp_impact_{i}"
+                    )
+                    exp_skills = st.text_input(
+                        "Skills Used",
+                        value="Python, Scikit-learn, Pandas",
+                        key=f"{key_prefix}exp_skills_{i}"
+                    )
+                    
+                    if exp_title and exp_org:
+                        experiences.append({
+                            "title": exp_title,
+                            "org": exp_org,
+                            "impact": exp_impact,
+                            "skills": [s.strip() for s in exp_skills.split(",") if s.strip()]
+                        })
     
     return build_profile_dict(name, major, goals, email, gpa, courses, skills, experiences)
 
-def render_resume_input() -> str:
+def render_resume_input(key_prefix: str = "") -> str:
     """Render resume text input"""
     return st.text_area(
         "📄 Current Resume (plain text)",
-        height=250,
+        height=200,
         value="""University of Michigan — B.S. in Data Science (GPA 3.78)
 
 EXPERIENCE
@@ -210,73 +222,86 @@ EXPERIENCE
   - Created interactive dashboards for research visualization
 
 PROJECTS
-• Sentiment Analysis System: Built transformer model achieving F1=0.86 on Twitter data
+• Sentiment Analysis System: Built transformer model achieving F1=0.86
 • Customer Churn Analysis: Used SQL and Tableau to identify key churn factors
 
 SKILLS: Python, R, SQL, PyTorch, TensorFlow, AWS, Git, Tableau""",
-        help="Your current resume content - this helps inform the generation",
-        key="resume_text"
+        help="Your current resume content",
+        key=f"{key_prefix}resume"
     )
 
 # =============================================================================
-# PAGE 1: PROGRAM MATCHING
+# PAGE 1: Smart Matching + Generation (MAIN WORKFLOW)
 # =============================================================================
 
-def render_matching_page():
-    """Render the Program Matching page"""
-    st.header("🎯 Step 1: Find Your Best-Fit Programs")
-    st.markdown("*Let our AI analyze your profile and recommend the most suitable graduate programs*")
+def render_smart_matching_page():
+    """Render the Smart Matching + Generation page"""
+    st.header("🎯 Smart Matching + Document Generation")
+    st.markdown("*Complete workflow: Input Profile → Smart Match Programs → Select Program → Generate Application Documents*")
     
-    # Check API status
-    api_info = get_api_info()
-    matcher_available = api_info.get("matching_service_available", False)
+    # Progress indicator
+    steps = {
+        "profile": "1️⃣ Input Info",
+        "matching": "2️⃣ Match Results", 
+        "select": "3️⃣ Select Program",
+        "generate": "4️⃣ Generate Docs"
+    }
     
-    if not matcher_available:
-        st.warning("⚠️ Matching service is not available. Please ensure the API server is running and corpus is loaded.")
+    current_step = st.session_state.flow_step
+    step_cols = st.columns(4)
+    step_order = ["profile", "matching", "select", "generate"]
+    current_idx = step_order.index(current_step)
+    
+    for i, (step_key, step_name) in enumerate(steps.items()):
+        with step_cols[i]:
+            if i < current_idx:
+                st.success(step_name + " ✓")
+            elif i == current_idx:
+                st.info(step_name + " ◀")
+            else:
+                st.caption(step_name)
+    
+    st.markdown("---")
+    
+    # Render current step
+    if current_step == "profile":
+        render_profile_step()
+    elif current_step == "matching":
+        render_matching_step()
+    elif current_step == "select":
+        render_select_step()
+    elif current_step == "generate":
+        render_generate_step()
+
+def render_profile_step():
+    """Step 1: Profile input"""
+    st.subheader("👤 Enter Your Application Information")
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        profile = render_profile_form()
+        profile = render_profile_form(key_prefix="smart_")
+        st.markdown("---")
+        resume_text = render_resume_input(key_prefix="smart_")
     
     with col2:
-        st.subheader("⚙️ Matching Settings")
-        
-        top_k = st.slider(
-            "Number of Programs to Return",
-            min_value=1,
-            max_value=20,
-            value=5,
-            help="How many top matching programs to show"
-        )
-        
-        min_score = st.slider(
-            "Minimum Match Score",
-            min_value=0.0,
-            max_value=1.0,
-            value=0.5,
-            step=0.05,
-            help="Only show programs with score above this threshold"
-        )
-        
-        use_llm_explanation = st.checkbox(
-            "Use LLM for Detailed Explanations",
-            value=False,
-            help="Generate AI-powered explanations for each match (slower but more insightful)"
-        )
+        st.markdown("##### ⚙️ Matching Settings")
+        top_k = st.slider("Number of Programs to Return", 1, 15, 5, key="smart_topk")
+        min_score = st.slider("Minimum Match Score", 0.0, 1.0, 0.4, 0.05, key="smart_min_score")
         
         st.markdown("---")
-        st.subheader("📊 Dimension Weights")
-        st.caption("Adjust how much each factor matters in matching")
+        st.markdown("##### 📊 Dimension Weights")
+        st.caption("Adjust the importance of each factor")
         
-        academic_weight = st.slider("Academic", 0.0, 1.0, 0.30, 0.05)
-        skills_weight = st.slider("Skills", 0.0, 1.0, 0.25, 0.05)
-        experience_weight = st.slider("Experience", 0.0, 1.0, 0.20, 0.05)
-        goals_weight = st.slider("Goals", 0.0, 1.0, 0.15, 0.05)
-        requirements_weight = st.slider("Requirements", 0.0, 1.0, 0.10, 0.05)
+        academic_weight = st.slider("Academic Background", 0.0, 1.0, 0.30, 0.05, key="w_academic")
+        skills_weight = st.slider("Skills Match", 0.0, 1.0, 0.25, 0.05, key="w_skills")
+        experience_weight = st.slider("Work Experience", 0.0, 1.0, 0.20, 0.05, key="w_experience")
+        goals_weight = st.slider("Goals Alignment", 0.0, 1.0, 0.15, 0.05, key="w_goals")
+        requirements_weight = st.slider("Application Requirements", 0.0, 1.0, 0.10, 0.05, key="w_requirements")
         
         # Normalize weights
         total = academic_weight + skills_weight + experience_weight + goals_weight + requirements_weight
+        custom_weights = None
         if total > 0:
             custom_weights = {
                 "academic": academic_weight / total,
@@ -285,190 +310,401 @@ def render_matching_page():
                 "goals": goals_weight / total,
                 "requirements": requirements_weight / total
             }
-        else:
-            custom_weights = None
     
-    # Match button
-    if st.button("🔍 Find Matching Programs", use_container_width=True, type="primary"):
+    # Action button
+    if st.button("🔍 Start Matching Programs", type="primary", use_container_width=True):
         if not profile.get("major") or not profile.get("gpa"):
-            st.error("Please provide at least your Major and GPA")
+            st.error("Please fill in at least Major and GPA")
             return
         
-        with st.spinner("Analyzing your profile and finding matches..."):
+        # Save to session state
+        st.session_state.profile = profile
+        st.session_state.resume_text = resume_text
+        
+        # Perform matching
+        with st.spinner("Analyzing your background and matching the best programs..."):
             try:
                 payload = {
                     "profile": profile,
                     "top_k": top_k,
                     "min_score": min_score,
-                    "use_llm_explanation": use_llm_explanation,
+                    "use_llm_explanation": False,
                     "custom_weights": custom_weights
                 }
                 
-                resp = requests.post(
-                    f"{API_BASE_URL}/match/programs",
-                    json=payload,
-                    timeout=60
-                )
+                resp = requests.post(f"{API_BASE_URL}/match/programs", json=payload, timeout=60)
                 
                 if resp.status_code == 200:
                     data = resp.json()
-                    
                     if data.get("success"):
-                        st.success(f"✅ {data.get('message', 'Matching complete!')}")
-                        
-                        # Store results in session state
                         st.session_state.matched_programs = data.get("matches", [])
-                        st.session_state.profile = profile
-                        
-                        # Display results
-                        render_matching_results(data)
+                        st.session_state.flow_step = "matching"
+                        st.rerun()
                     else:
                         st.error("Matching failed: " + data.get("message", "Unknown error"))
                 else:
-                    st.error(f"API Error {resp.status_code}: {resp.text}")
+                    st.error(f"API error {resp.status_code}: {resp.text}")
                     
-            except requests.exceptions.Timeout:
-                st.error("Request timed out. Try disabling LLM explanations.")
             except requests.exceptions.ConnectionError:
-                st.error("Cannot connect to API. Make sure the server is running.")
+                st.error("Cannot connect to API server. Please ensure backend service is running.")
             except Exception as e:
                 st.error(f"Error: {e}")
 
-def render_matching_results(data: Dict):
-    """Render matching results"""
-    matches = data.get("matches", [])
+def render_matching_step():
+    """Step 2: Show matching results"""
+    st.subheader("🏆 Matching Results")
+    
+    matches = st.session_state.matched_programs
     
     if not matches:
-        st.warning("No programs found matching your criteria. Try lowering the minimum score.")
+        st.warning("No programs found matching criteria. Please try lowering the minimum score threshold.")
+        if st.button("← Back to Modify"):
+            st.session_state.flow_step = "profile"
+            st.rerun()
         return
     
-    # Summary metrics
+    # Summary
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("Programs Evaluated", data.get("total_programs_evaluated", 0))
+        st.metric("Matched Programs", len(matches))
     with col2:
-        st.metric("Programs Matched", len(matches))
-    with col3:
-        avg_score = sum(m.get("overall_score", 0) for m in matches) / len(matches) if matches else 0
+        avg_score = sum(m.get("overall_score", 0) for m in matches) / len(matches)
         st.metric("Average Match Score", f"{avg_score:.2f}")
-    
-    # Overall insights
-    if data.get("overall_insights"):
-        with st.expander("💡 Overall Insights", expanded=True):
-            for insight in data["overall_insights"]:
-                st.info(insight)
+    with col3:
+        top_score = max(m.get("overall_score", 0) for m in matches)
+        st.metric("Highest Match Score", f"{top_score:.2f}")
     
     st.markdown("---")
-    st.subheader("🏆 Top Matching Programs")
+    st.markdown("**Click 'Select This Program' in a program card to proceed to document generation**")
     
+    # Display matches
     for i, match in enumerate(matches):
+        match_level = match.get("match_level", "moderate")
+        level_icons = {"excellent": "🟢", "good": "🟡", "moderate": "🟠", "weak": "🔴"}
+        
         with st.expander(
-            f"#{i+1} {match.get('university', 'Unknown')} - {match.get('program_name', 'Unknown Program')} "
+            f"{level_icons.get(match_level, '⚪')} #{i+1} {match.get('university', '')} - {match.get('program_name', '')} "
             f"(Score: {match.get('overall_score', 0):.2f})",
             expanded=(i < 3)
         ):
-            col1, col2 = st.columns([2, 1])
+            col1, col2 = st.columns([3, 1])
             
             with col1:
-                # Match level badge
-                match_level = match.get("match_level", "moderate")
-                level_colors = {"excellent": "🟢", "good": "🟡", "moderate": "🟠", "poor": "🔴"}
-                st.markdown(f"**Match Level:** {level_colors.get(match_level, '⚪')} {match_level.title()}")
-                
                 # Dimension scores
                 st.markdown("**Dimension Scores:**")
                 dim_scores = match.get("dimension_scores", {})
-                for dim, score_info in dim_scores.items():
-                    score_val = score_info.get("score", 0) if isinstance(score_info, dict) else score_info
-                    progress_val = min(score_val, 1.0)
-                    st.progress(progress_val, text=f"{dim.title()}: {score_val:.2f}")
+                score_cols = st.columns(5)
+                dim_names = {"academic": "Academic", "skills": "Skills", "experience": "Experience", "goals": "Goals", "requirements": "Requirements"}
                 
-                # Strengths and gaps
+                for j, (dim, score_info) in enumerate(dim_scores.items()):
+                    score_val = score_info.get("score", 0) if isinstance(score_info, dict) else score_info
+                    with score_cols[j % 5]:
+                        st.metric(dim_names.get(dim, dim), f"{score_val:.2f}")
+                
+                # Strengths
                 if match.get("strengths"):
                     st.markdown("**✅ Your Strengths:**")
                     for s in match["strengths"][:3]:
-                        st.write(f"• {s}")
+                        st.caption(f"• {s}")
                 
+                # Gaps
                 if match.get("gaps"):
                     st.markdown("**⚠️ Areas to Improve:**")
-                    for g in match["gaps"][:3]:
-                        st.write(f"• {g}")
+                    for g in match["gaps"][:2]:
+                        st.caption(f"• {g}")
             
             with col2:
-                # Recommendations
-                if match.get("recommendations"):
-                    st.markdown("**📋 Recommendations:**")
-                    for r in match["recommendations"][:3]:
-                        st.caption(f"• {r}")
+                # Program details preview
+                details = match.get("program_details", {})
+                if details:
+                    if details.get("focus_areas"):
+                        st.markdown("**Research Areas:**")
+                        st.caption(", ".join(details["focus_areas"][:3]))
+                    if details.get("core_courses"):
+                        st.markdown("**Core Courses:**")
+                        st.caption(", ".join(details["core_courses"][:3]))
                 
-                # Explanation
-                if match.get("explanation"):
-                    st.markdown("**💬 AI Analysis:**")
-                    st.caption(match["explanation"][:500] + "..." if len(match.get("explanation", "")) > 500 else match.get("explanation", ""))
+                # Select button
+                st.markdown("---")
+                if st.button("✅ Select This Program", key=f"select_match_{i}", use_container_width=True):
+                    st.session_state.selected_program = match
+                    st.session_state.selected_program_details = match.get("program_details")
+                    st.session_state.generation_mode = "matched"
+                    st.session_state.flow_step = "select"
+                    st.rerun()
+    
+    # Navigation
+    st.markdown("---")
+    if st.button("← Back to Modify Profile"):
+        st.session_state.flow_step = "profile"
+        st.rerun()
+
+def render_select_step():
+    """Step 3: Confirm selected program"""
+    st.subheader("📋 Confirm Selected Program")
+    
+    program = st.session_state.selected_program
+    details = st.session_state.selected_program_details
+    
+    if not program:
+        st.warning("No program selected")
+        st.session_state.flow_step = "matching"
+        st.rerun()
+        return
+    
+    # Display selected program
+    st.success(f"🎯 Selected: **{program.get('university', '')} - {program.get('program_name', '')}**")
+    st.metric("Match Score", f"{program.get('overall_score', 0):.2f}")
+    
+    # Show program details
+    if details:
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("##### Program Information")
+            if details.get("description_text"):
+                st.text_area(
+                    "Program Description",
+                    value=details["description_text"][:1500] + "..." if len(details.get("description_text", "")) > 1500 else details.get("description_text", ""),
+                    height=200,
+                    disabled=True
+                )
             
-            # Select button
-            if st.button(f"Select this program", key=f"select_{i}"):
-                st.session_state.selected_program = match
-                st.success(f"Selected: {match.get('program_name')}")
-                st.info("Go to 'Step 2: Generate Documents' to create your application materials!")
+            if details.get("focus_areas"):
+                st.markdown(f"**Research Areas:** {', '.join(details['focus_areas'])}")
+            
+            if details.get("core_courses"):
+                st.markdown(f"**Core Courses:** {', '.join(details['core_courses'][:5])}")
+        
+        with col2:
+            st.markdown("##### Application Requirements")
+            if details.get("min_gpa"):
+                st.markdown(f"**Minimum GPA:** {details['min_gpa']}")
+            if details.get("required_skills"):
+                st.markdown(f"**Required Skills:** {', '.join(details['required_skills'][:5])}")
+            if details.get("source_url"):
+                st.markdown(f"**Program Link:** [View Official Site]({details['source_url']})")
+    
+    st.markdown("---")
+    
+    # Navigation
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        if st.button("← Back to Select Other Program"):
+            st.session_state.flow_step = "matching"
+            st.rerun()
+    with col2:
+        pass
+    with col3:
+        if st.button("Continue to Generate Documents →", type="primary"):
+            st.session_state.flow_step = "generate"
+            st.rerun()
 
-# =============================================================================
-# PAGE 2: DOCUMENT GENERATION (Writing Agent)
-# =============================================================================
-
-def render_generation_page():
-    """Render the Document Generation page"""
-    st.header("✍️ Step 2: Generate Application Documents")
-    st.markdown("*Use our AI Writing Agent to create high-quality application materials*")
+def render_generate_step():
+    """Step 4: Generate documents"""
+    st.subheader("✨ Generate Application Documents")
     
-    # Check API status
-    api_info = get_api_info()
-    writing_agent_available = api_info.get("writing_agent_available", False)
+    program = st.session_state.selected_program
+    details = st.session_state.selected_program_details
+    profile = st.session_state.profile
+    resume_text = st.session_state.resume_text
     
-    if not writing_agent_available:
-        st.warning("⚠️ LangGraph Writing Agent is not available. Falling back to basic generator.")
+    if not program or not profile:
+        st.warning("Information incomplete, please return to previous steps")
+        return
     
-    # Show selected program if any
-    if st.session_state.selected_program:
-        program = st.session_state.selected_program
-        st.info(f"🎯 **Target Program:** {program.get('university', '')} - {program.get('program_name', '')}")
+    # Show context
+    st.info(f"🎯 **Target Program:** {program.get('university', '')} - {program.get('program_name', '')}")
+    st.info(f"👤 **Applicant:** {profile.get('name', '')} | {profile.get('major', '')} | GPA: {profile.get('gpa', 'N/A')}")
+    
+    st.markdown("---")
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        # Profile section
-        profile = render_profile_form()
+        st.markdown("##### 📑 Select Document to Generate")
+        doc_type = st.radio(
+            "Document Type",
+            options=list(DOCUMENT_TYPES.keys()),
+            format_func=lambda x: DOCUMENT_TYPES[x],
+            horizontal=True,
+            key="gen_doc_type"
+        )
+    
+    with col2:
+        st.markdown("##### ⚙️ Generation Settings")
         
-        st.markdown("---")
-        
-        # Resume section
-        resume_text = render_resume_input()
-        
-        st.markdown("---")
-        
-        # Program section
-        st.subheader("🎯 Target Program Information")
-        
-        program_url = st.text_input(
-            "Program URL (optional)",
-            placeholder="https://example.edu/programs/data-science-ms",
-            help="We'll automatically extract program information"
+        llm_provider = st.selectbox(
+            "LLM Provider",
+            options=list(LLM_PROVIDERS.keys()),
+            format_func=lambda x: LLM_PROVIDERS[x],
+            key="gen_llm"
         )
         
-        # Pre-fill program text if selected from matching
-        default_program_text = ""
-        if st.session_state.selected_program:
-            prog = st.session_state.selected_program
-            default_program_text = f"""{prog.get('program_name', 'Graduate Program')}
-at {prog.get('university', 'University')}
+        temperature = st.slider("Creativity (Temperature)", 0.0, 1.0, 0.7, 0.1, key="gen_temp")
+        max_iterations = st.slider("Max Iterations", 1, 5, 3, key="gen_iter")
+        quality_threshold = st.slider("Quality Threshold", 0.5, 1.0, 0.85, 0.05, key="gen_quality")
+    
+    st.markdown("---")
+    
+    # Generate button
+    if st.button("✨ Start Generation", type="primary", use_container_width=True):
+        # Build program text from details
+        program_text = ""
+        if details:
+            program_text = f"""
+{details.get('program_name', program.get('program_name', 'Graduate Program'))}
+at {details.get('university', program.get('university', 'University'))}
 
-This program focuses on training students in advanced methodologies and practical applications.
+{details.get('description_text', '')}
+
+Focus Areas: {', '.join(details.get('focus_areas', []))}
+Core Courses: {', '.join(details.get('core_courses', []))}
+Required Skills: {', '.join(details.get('required_skills', []))}
 """
+        else:
+            program_text = f"{program.get('program_name', '')} at {program.get('university', '')}"
         
-        program_text = st.text_area(
-            "Program Description",
-            height=200,
-            value=default_program_text or """Master of Science in Data Science
+        with st.spinner(f"Generating {DOCUMENT_TYPES[doc_type]} using {LLM_PROVIDERS[llm_provider]}..."):
+            try:
+                payload = {
+                    "profile": profile,
+                    "resume_text": resume_text,
+                    "program_text": program_text,
+                    "document_type": doc_type,
+                    "llm_provider": llm_provider,
+                    "temperature": temperature,
+                    "max_iterations": max_iterations,
+                    "quality_threshold": quality_threshold,
+                    "use_corpus": True
+                }
+                
+                resp = requests.post(
+                    f"{API_BASE_URL}/generate/writing-agent",
+                    json=payload,
+                    timeout=180
+                )
+                
+                if resp.status_code == 200:
+                    data = resp.json()
+                    render_generation_result(data, doc_type)
+                else:
+                    error_text = resp.text
+                    try:
+                        error_json = resp.json()
+                        if "detail" in error_json:
+                            error_text = str(error_json["detail"])
+                    except:
+                        pass
+                    st.error(f"Generation failed: {error_text}")
+                    
+            except requests.exceptions.Timeout:
+                st.error("Request timeout, please try reducing iterations.")
+            except requests.exceptions.ConnectionError:
+                st.error("Cannot connect to API server.")
+            except Exception as e:
+                st.error(f"Error: {e}")
+    
+    # Navigation
+    st.markdown("---")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        if st.button("← Back to Confirm Program"):
+            st.session_state.flow_step = "select"
+            st.rerun()
+    with col2:
+        if st.button("🔄 Start Over"):
+            st.session_state.flow_step = "profile"
+            st.session_state.matched_programs = []
+            st.session_state.selected_program = None
+            st.session_state.selected_program_details = None
+            st.rerun()
+
+def render_generation_result(data: Dict, doc_type: str):
+    """Render the generation result"""
+    if not data.get("success"):
+        st.error("Generation failed")
+        return
+    
+    st.success("✅ Document generated successfully!")
+    
+    # Quality metrics
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.metric("Generation Time", f"{data.get('generation_time_seconds', 0):.1f}s")
+    with col2:
+        st.metric("Iterations", data.get("iterations", 0))
+    with col3:
+        quality = data.get("quality_report", {}).get("final_score", 0)
+        st.metric("Quality Score", f"{quality:.2f}")
+    with col4:
+        approved = data.get("quality_report", {}).get("approved", False)
+        st.metric("Status", "✅ Approved" if approved else "⚠️ Needs Revision")
+    
+    # Document content
+    document = data.get("document", "")
+    
+    st.markdown("---")
+    st.markdown(f"##### {DOCUMENT_TYPES[doc_type]}")
+    st.code(document, language="markdown")
+    
+    # Download
+    st.download_button(
+        f"📥 Download {DOCUMENT_TYPES[doc_type]}",
+        document.encode("utf-8"),
+        file_name=f"{doc_type}.md",
+        mime="text/markdown",
+        use_container_width=True
+    )
+    
+    # Save to session
+    st.session_state.generated_documents[doc_type] = document
+
+# =============================================================================
+# PAGE 2: Quick Generation (Manual Input)
+# =============================================================================
+
+def render_manual_generation_page():
+    """Render the Manual Generation page for users who know their target program"""
+    st.header("✍️ Quick Generation (Manual Input)")
+    st.markdown("*Already know your target program? Enter program info directly to generate application documents*")
+    
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        st.markdown("##### 👤 Applicant Information")
+        profile = render_profile_form(key_prefix="manual_")
+        
+        st.markdown("---")
+        resume_text = render_resume_input(key_prefix="manual_")
+        
+        st.markdown("---")
+        st.markdown("##### 🎯 Target Program Information")
+        
+        input_method = st.radio(
+            "Input Method",
+            options=["url", "text"],
+            format_func=lambda x: "📎 Fetch via URL" if x == "url" else "📝 Direct Text Input",
+            horizontal=True,
+            key="manual_input_method"
+        )
+        
+        program_url = ""
+        program_text = ""
+        
+        if input_method == "url":
+            program_url = st.text_input(
+                "Program URL",
+                placeholder="https://example.edu/programs/data-science-ms",
+                help="We will automatically extract program information",
+                key="manual_url"
+            )
+        else:
+            program_text = st.text_area(
+                "Program Description",
+                height=200,
+                placeholder="Paste program description, curriculum, application requirements, etc...",
+                value="""Master of Science in Data Science
 
 Program Mission: Train the next generation of data scientists to solve complex real-world problems using statistical methods, machine learning, and ethical data practices.
 
@@ -478,131 +714,67 @@ Core Curriculum:
 - Data Management and Big Data Systems
 - Data Visualization and Communication
 - Ethics in Data Science
-- Capstone Project
 
 The program emphasizes hands-on experience with real datasets, collaboration with industry partners, and development of both technical and communication skills.""",
-            help="Paste the program description here if no URL provided"
-        )
+                key="manual_text"
+            )
     
     with col2:
-        st.subheader("⚙️ Generation Settings")
-        
-        # Document type selection
-        st.markdown("**📑 Document Type**")
-        doc_type = st.selectbox(
+        st.markdown("##### 📑 Document Type")
+        doc_type = st.radio(
             "Select document to generate",
             options=list(DOCUMENT_TYPES.keys()),
             format_func=lambda x: DOCUMENT_TYPES[x],
-            key="doc_type_select"
+            key="manual_doc_type"
         )
         
         st.markdown("---")
+        st.markdown("##### ⚙️ Generation Settings")
         
-        # Generation system selection
-        st.markdown("**🤖 Generation System**")
         generation_system = st.radio(
-            "Choose generation method",
+            "Generation System",
             options=["writing_agent", "multi_agent", "simple"],
             format_func=lambda x: {
-                "writing_agent": "🚀 LangGraph Writing Agent (Best Quality)",
-                "multi_agent": "⚡ Multi-Agent System (Balanced)",
-                "simple": "💨 Simple Generator (Fastest)"
+                "writing_agent": "🚀 Writing Agent (Highest Quality)",
+                "multi_agent": "⚡ Multi-Agent (Balanced)",
+                "simple": "💨 Simple Mode (Fastest)"
             }[x],
-            help="Writing Agent uses advanced AI with RAG and reflection. Multi-Agent uses iterative refinement. Simple is template-based."
+            key="manual_system"
         )
         
-        # LLM settings for Writing Agent
         if generation_system == "writing_agent":
-            st.markdown("---")
-            st.markdown("**🔧 LLM Configuration**")
-            
             llm_provider = st.selectbox(
                 "LLM Provider",
                 options=list(LLM_PROVIDERS.keys()),
-                format_func=lambda x: LLM_PROVIDERS[x]
+                format_func=lambda x: LLM_PROVIDERS[x],
+                key="manual_llm"
             )
-            
-            model_name = st.text_input(
-                "Model Name (optional)",
-                placeholder="gpt-4, claude-3-opus, qwen-plus",
-                help="Leave empty to use default model"
-            )
-            
-            temperature = st.slider(
-                "Temperature",
-                min_value=0.0,
-                max_value=1.0,
-                value=0.7,
-                step=0.1,
-                help="Higher = more creative, Lower = more focused"
-            )
-            
-            max_iterations = st.slider(
-                "Max Refinement Iterations",
-                min_value=1,
-                max_value=5,
-                value=3,
-                help="More iterations = higher quality but slower"
-            )
-            
-            quality_threshold = st.slider(
-                "Quality Threshold",
-                min_value=0.5,
-                max_value=1.0,
-                value=0.85,
-                step=0.05,
-                help="Content must reach this score to be approved"
-            )
-            
-            use_corpus = st.checkbox(
-                "Use RAG Corpus",
-                value=True,
-                help="Retrieve relevant examples from corpus to enhance generation"
-            )
+            temperature = st.slider("Creativity", 0.0, 1.0, 0.7, 0.1, key="manual_temp")
+            max_iterations = st.slider("Max Iterations", 1, 5, 3, key="manual_iter")
+            quality_threshold = st.slider("Quality Threshold", 0.5, 1.0, 0.85, 0.05, key="manual_quality")
         
         elif generation_system == "multi_agent":
-            st.markdown("---")
-            st.markdown("**🔧 Multi-Agent Settings**")
-            
-            max_iterations = st.slider(
-                "Max Iterations",
-                min_value=1,
-                max_value=5,
-                value=3
-            )
-            
-            quality_threshold = st.slider(
-                "Critique Threshold",
-                min_value=0.5,
-                max_value=1.0,
-                value=0.8,
-                step=0.05
-            )
-            
-            fallback_enabled = st.checkbox("Enable Fallback", value=True)
+            max_iterations = st.slider("Max Iterations", 1, 5, 3, key="manual_ma_iter")
+            quality_threshold = st.slider("Quality Threshold", 0.5, 1.0, 0.8, 0.05, key="manual_ma_quality")
         
-        else:  # simple
-            st.info("Simple generator uses templates without LLM calls.")
-        
-        st.markdown("---")
-        topk = st.slider("Evidence Chunks (RAG)", 1, 10, 5)
+        topk = st.slider("Number of Evidence Chunks", 1, 10, 5, key="manual_topk")
     
     # Generate button
-    if st.button("✨ Generate Document", use_container_width=True, type="primary"):
+    if st.button("✨ Generate Document", type="primary", use_container_width=True):
         if not profile.get("name"):
-            st.error("Please provide your name")
+            st.error("Please fill in name")
             return
         
-        if not program_text.strip() and not program_url.strip():
-            st.error("Please provide program information (URL or description)")
+        if input_method == "url" and not program_url.strip():
+            st.error("Please enter program URL")
+            return
+        elif input_method == "text" and not program_text.strip():
+            st.error("Please enter program description")
             return
         
-        with st.spinner(f"Generating {DOCUMENT_TYPES[doc_type]} using {generation_system}..."):
+        with st.spinner(f"Generating {DOCUMENT_TYPES[doc_type]}..."):
             try:
-                start_time = time.time()
-                
                 if generation_system == "writing_agent":
-                    # Use Writing Agent endpoint
                     payload = {
                         "profile": profile,
                         "resume_text": resume_text,
@@ -610,28 +782,23 @@ The program emphasizes hands-on experience with real datasets, collaboration wit
                         "program_url": program_url.strip() if program_url.strip() else None,
                         "document_type": doc_type,
                         "llm_provider": llm_provider,
-                        "model_name": model_name if model_name else None,
                         "temperature": temperature,
                         "max_iterations": max_iterations,
                         "quality_threshold": quality_threshold,
-                        "use_corpus": use_corpus,
+                        "use_corpus": True,
                         "retrieval_topk": topk
                     }
                     
-                    resp = requests.post(
-                        f"{API_BASE_URL}/generate/writing-agent",
-                        json=payload,
-                        timeout=180
-                    )
+                    resp = requests.post(f"{API_BASE_URL}/generate/writing-agent", json=payload, timeout=180)
                     
                     if resp.status_code == 200:
                         data = resp.json()
-                        render_writing_agent_result(data, doc_type, time.time() - start_time)
+                        render_generation_result(data, doc_type)
                     else:
-                        st.error(f"API Error {resp.status_code}: {resp.text}")
+                        st.error(f"Generation failed: {resp.text}")
                 
                 else:
-                    # Use original /generate endpoint
+                    # Use standard /generate endpoint
                     payload = {
                         "profile": profile,
                         "resume_text": resume_text,
@@ -641,303 +808,142 @@ The program emphasizes hands-on experience with real datasets, collaboration wit
                         "use_multi_agent": (generation_system == "multi_agent"),
                         "max_iterations": max_iterations if generation_system == "multi_agent" else 3,
                         "critique_threshold": quality_threshold if generation_system == "multi_agent" else 0.8,
-                        "fallback_on_error": fallback_enabled if generation_system == "multi_agent" else True
+                        "fallback_on_error": True
                     }
                     
-                    resp = requests.post(
-                        f"{API_BASE_URL}/generate",
-                        json=payload,
-                        timeout=120
-                    )
+                    resp = requests.post(f"{API_BASE_URL}/generate", json=payload, timeout=120)
                     
                     if resp.status_code == 200:
                         data = resp.json()
-                        render_generation_result(data, time.time() - start_time)
+                        render_standard_result(data)
                     else:
-                        st.error(f"API Error {resp.status_code}: {resp.text}")
+                        st.error(f"Generation failed: {resp.text}")
                         
             except requests.exceptions.Timeout:
-                st.error("Request timed out. Try using a simpler generation method.")
+                st.error("Request timeout, please try using a simpler generation mode.")
             except requests.exceptions.ConnectionError:
-                st.error("Cannot connect to API. Make sure the server is running on http://localhost:8000")
+                st.error("Cannot connect to API server.")
             except Exception as e:
                 st.error(f"Error: {e}")
 
-def render_writing_agent_result(data: Dict, doc_type: str, gen_time: float):
-    """Render Writing Agent generation result"""
-    if not data.get("success"):
-        st.error("Generation failed")
-        return
-    
-    st.success(f"✅ Generated successfully in {gen_time:.1f}s!")
-    
-    # Quality metrics
-    quality_report = data.get("quality_report", {})
-    
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        st.metric("Generation Time", f"{data.get('generation_time_seconds', gen_time):.1f}s")
-    with col2:
-        st.metric("Iterations", data.get("iterations", 0))
-    with col3:
-        quality_score = quality_report.get("overall_score", 0)
-        st.metric("Quality Score", f"{quality_score:.2f}")
-    with col4:
-        st.metric("Draft History", data.get("draft_history_length", 0))
-    
-    # Quality details
-    if quality_report:
-        with st.expander("📊 Quality Analysis", expanded=True):
-            cols = st.columns(3)
-            scores = quality_report.get("dimension_scores", {})
-            for i, (dim, score) in enumerate(scores.items()):
-                with cols[i % 3]:
-                    st.progress(min(score, 1.0), text=f"{dim}: {score:.2f}")
-            
-            if quality_report.get("feedback"):
-                st.markdown("**Feedback:**")
-                st.caption(quality_report["feedback"])
-            
-            if quality_report.get("suggestions"):
-                st.markdown("**Suggestions for improvement:**")
-                for s in quality_report["suggestions"]:
-                    st.caption(f"• {s}")
-    
-    # Document content
-    st.markdown("---")
-    st.subheader(f"{DOCUMENT_TYPES[doc_type]}")
-    
-    document = data.get("document", "")
-    st.code(document, language="markdown")
-    
-    # Download button
-    st.download_button(
-        f"📥 Download {DOCUMENT_TYPES[doc_type]}",
-        document.encode("utf-8"),
-        file_name=f"{doc_type}.md",
-        mime="text/markdown",
-        use_container_width=True
-    )
-    
-    # Store in session state
-    st.session_state.generated_documents[doc_type] = document
-
-def render_generation_result(data: Dict, gen_time: float):
-    """Render standard generation result (multi-agent or simple)"""
+def render_standard_result(data: Dict):
+    """Render standard generation result (from /generate endpoint)"""
     if "error" in data:
-        st.error(f"Generation Error: {data['error']}")
+        st.error(f"Generation error: {data['error']}")
         return
     
     system_used = data.get("system_used", "unknown")
-    st.success(f"✅ Generated successfully using {system_used} system in {gen_time:.1f}s!")
-    
-    # Metrics
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("System Used", system_used.replace("_", " ").title())
-    with col2:
-        keywords_count = data.get("report", {}).get("generation_metadata", {}).get("keywords_extracted", 0)
-        st.metric("Keywords Extracted", keywords_count)
-    with col3:
-        if system_used == "multi_agent":
-            total_iterations = data.get("report", {}).get("overall_quality", {}).get("total_iterations", 0)
-            st.metric("Total Iterations", total_iterations)
+    st.success(f"✅ Successfully generated using {system_used} system!")
     
     # Content tabs
     texts = data.get("texts", {})
-    tab1, tab2, tab3, tab4 = st.tabs(["📝 Personal Statement", "📋 Resume Bullets", "📨 Recommendation", "📊 Report"])
+    tabs = st.tabs(["📝 Personal Statement", "📋 Resume Bullets", "📨 Recommendation"])
     
-    with tab1:
-        st.code(texts.get("personal_statement", ""), language="markdown")
-        st.download_button(
-            "📥 Download",
-            texts.get("personal_statement", "").encode("utf-8"),
-            file_name="personal_statement.md",
-            mime="text/markdown"
-        )
+    with tabs[0]:
+        content = texts.get("personal_statement", "")
+        st.code(content, language="markdown")
+        st.download_button("📥 Download", content.encode("utf-8"), "personal_statement.md", "text/markdown")
     
-    with tab2:
-        st.code(texts.get("resume_bullets", ""), language="markdown")
-        st.download_button(
-            "📥 Download",
-            texts.get("resume_bullets", "").encode("utf-8"),
-            file_name="resume_bullets.md",
-            mime="text/markdown"
-        )
+    with tabs[1]:
+        content = texts.get("resume_bullets", "")
+        st.code(content, language="markdown")
+        st.download_button("📥 Download", content.encode("utf-8"), "resume_bullets.md", "text/markdown")
     
-    with tab3:
-        st.code(texts.get("reco_template", ""), language="markdown")
-        st.download_button(
-            "📥 Download",
-            texts.get("reco_template", "").encode("utf-8"),
-            file_name="recommendation.md",
-            mime="text/markdown"
-        )
-    
-    with tab4:
-        st.json(data.get("report", {}))
-    
-    # Store all documents
-    st.session_state.generated_documents = texts
+    with tabs[2]:
+        content = texts.get("reco_template", "")
+        st.code(content, language="markdown")
+        st.download_button("📥 Download", content.encode("utf-8"), "recommendation.md", "text/markdown")
 
 # =============================================================================
-# PAGE 3: END-TO-END FLOW
+# PAGE 3: DASHBOARD
 # =============================================================================
 
-def render_e2e_page():
-    """Render the End-to-End workflow page"""
-    st.header("🚀 End-to-End Application Helper")
-    st.markdown("*Complete workflow: Profile → Program Matching → Document Generation*")
+def render_dashboard():
+    """Render the Dashboard page"""
+    st.header("📊 Dashboard")
+    st.markdown("*View current session status and generated content*")
     
-    # Progress indicator
-    steps = ["1️⃣ Enter Profile", "2️⃣ Match Programs", "3️⃣ Select Program", "4️⃣ Generate Documents"]
-    current = st.session_state.current_step
+    col1, col2 = st.columns(2)
     
-    cols = st.columns(4)
-    for i, step in enumerate(steps):
-        with cols[i]:
-            if i + 1 < current:
-                st.success(step + " ✓")
-            elif i + 1 == current:
-                st.info(step + " ◀")
-            else:
-                st.caption(step)
+    with col1:
+        st.markdown("##### 👤 Current Profile")
+        if st.session_state.profile:
+            profile = st.session_state.profile
+            st.markdown(f"**Name:** {profile.get('name', 'N/A')}")
+            st.markdown(f"**Major:** {profile.get('major', 'N/A')}")
+            st.markdown(f"**GPA:** {profile.get('gpa', 'N/A')}")
+            st.markdown(f"**Skills:** {', '.join(profile.get('skills', [])[:5])}")
+            
+            with st.expander("View Full Profile"):
+                st.json(profile)
+        else:
+            st.caption("Profile not entered yet")
+    
+    with col2:
+        st.markdown("##### 🎯 Selected Program")
+        if st.session_state.selected_program:
+            prog = st.session_state.selected_program
+            st.markdown(f"**University:** {prog.get('university', 'N/A')}")
+            st.markdown(f"**Program:** {prog.get('program_name', 'N/A')}")
+            st.metric("Match Score", f"{prog.get('overall_score', 0):.2f}")
+        else:
+            st.caption("Program not selected yet")
     
     st.markdown("---")
     
-    # Step 1: Profile
-    if current == 1:
-        st.subheader("Step 1: Enter Your Profile")
-        profile = render_profile_form()
-        resume = render_resume_input()
-        
-        if st.button("Next: Find Programs →", type="primary"):
-            if profile.get("major") and profile.get("gpa"):
-                st.session_state.profile = profile
-                st.session_state.resume_text = resume
-                st.session_state.current_step = 2
-                st.rerun()
-            else:
-                st.error("Please provide at least Major and GPA")
-    
-    # Step 2: Match
-    elif current == 2:
-        st.subheader("Step 2: Finding Your Best-Fit Programs")
-        
-        profile = st.session_state.profile
-        st.info(f"Profile: {profile.get('name', 'Unknown')} | {profile.get('major', 'Unknown')} | GPA: {profile.get('gpa', 'N/A')}")
-        
-        if st.button("🔍 Find Matching Programs", type="primary"):
-            with st.spinner("Analyzing your profile..."):
-                try:
-                    payload = {
-                        "profile": profile,
-                        "top_k": 5,
-                        "min_score": 0.5,
-                        "use_llm_explanation": False
-                    }
-                    
-                    resp = requests.post(f"{API_BASE_URL}/match/programs", json=payload, timeout=60)
-                    
-                    if resp.status_code == 200:
-                        data = resp.json()
-                        st.session_state.matched_programs = data.get("matches", [])
-                        st.session_state.current_step = 3
-                        st.rerun()
-                    else:
-                        st.error(f"Matching failed: {resp.text}")
-                except Exception as e:
-                    st.error(f"Error: {e}")
-        
-        if st.button("← Back to Profile"):
-            st.session_state.current_step = 1
-            st.rerun()
-    
-    # Step 3: Select Program
-    elif current == 3:
-        st.subheader("Step 3: Select Your Target Program")
-        
-        matches = st.session_state.matched_programs
-        
-        if not matches:
-            st.warning("No programs matched. Going back...")
-            st.session_state.current_step = 2
-            st.rerun()
-        
-        for i, match in enumerate(matches):
-            col1, col2 = st.columns([4, 1])
+    # Matched programs
+    st.markdown("##### 🏆 Matched Programs")
+    if st.session_state.matched_programs:
+        for i, match in enumerate(st.session_state.matched_programs[:5]):
+            col1, col2, col3 = st.columns([3, 1, 1])
             with col1:
-                st.markdown(f"**{i+1}. {match.get('university', '')} - {match.get('program_name', '')}**")
-                st.caption(f"Match Score: {match.get('overall_score', 0):.2f} | Level: {match.get('match_level', 'N/A')}")
+                st.caption(f"{i+1}. {match.get('university', '')} - {match.get('program_name', '')}")
             with col2:
-                if st.button("Select", key=f"e2e_select_{i}"):
+                st.caption(f"Score: {match.get('overall_score', 0):.2f}")
+            with col3:
+                if st.button("Select", key=f"dash_select_{i}"):
                     st.session_state.selected_program = match
-                    st.session_state.current_step = 4
+                    st.session_state.selected_program_details = match.get("program_details")
+                    st.session_state.generation_mode = "matched"
+                    st.session_state.flow_step = "select"
                     st.rerun()
-        
-        if st.button("← Back to Matching"):
-            st.session_state.current_step = 2
-            st.rerun()
+    else:
+        st.caption("No matching performed yet")
     
-    # Step 4: Generate
-    elif current == 4:
-        st.subheader("Step 4: Generate Application Documents")
-        
-        program = st.session_state.selected_program
-        profile = st.session_state.profile
-        resume = st.session_state.get("resume_text", "")
-        
-        st.success(f"🎯 Target: {program.get('university', '')} - {program.get('program_name', '')}")
-        
-        doc_type = st.selectbox(
-            "Document to Generate",
-            options=list(DOCUMENT_TYPES.keys()),
-            format_func=lambda x: DOCUMENT_TYPES[x]
-        )
-        
-        if st.button("✨ Generate Document", type="primary"):
-            with st.spinner("Generating..."):
-                try:
-                    payload = {
-                        "profile": profile,
-                        "resume_text": resume,
-                        "program_text": f"{program.get('program_name', '')} at {program.get('university', '')}",
-                        "document_type": doc_type,
-                        "llm_provider": "openai",
-                        "max_iterations": 2,
-                        "quality_threshold": 0.8
-                    }
-                    
-                    resp = requests.post(f"{API_BASE_URL}/generate/writing-agent", json=payload, timeout=120)
-                    
-                    if resp.status_code == 200:
-                        data = resp.json()
-                        st.markdown("---")
-                        st.subheader(f"Generated {DOCUMENT_TYPES[doc_type]}")
-                        st.code(data.get("document", ""), language="markdown")
-                        
-                        st.download_button(
-                            "📥 Download",
-                            data.get("document", "").encode("utf-8"),
-                            file_name=f"{doc_type}.md",
-                            mime="text/markdown"
-                        )
-                    else:
-                        st.error(f"Generation failed: {resp.text}")
-                except Exception as e:
-                    st.error(f"Error: {e}")
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("← Back to Program Selection"):
-                st.session_state.current_step = 3
-                st.rerun()
-        with col2:
-            if st.button("🔄 Start Over"):
-                st.session_state.current_step = 1
-                st.session_state.matched_programs = []
-                st.session_state.selected_program = None
-                st.rerun()
+    st.markdown("---")
+    
+    # Generated documents
+    st.markdown("##### 📝 Generated Documents")
+    docs = st.session_state.generated_documents
+    
+    if docs:
+        for doc_type, content in docs.items():
+            with st.expander(f"{DOCUMENT_TYPES.get(doc_type, doc_type)}"):
+                st.code(content[:500] + "..." if len(content) > 500 else content, language="markdown")
+                st.download_button(
+                    "📥 Download",
+                    content.encode("utf-8"),
+                    f"{doc_type}.md",
+                    "text/markdown",
+                    key=f"dash_download_{doc_type}"
+                )
+    else:
+        st.caption("No documents generated yet")
+    
+    # Clear session
+    st.markdown("---")
+    if st.button("🗑️ Clear All Data", type="secondary"):
+        for key in ["profile", "resume_text", "matched_programs", "selected_program", 
+                    "selected_program_details", "generated_documents", "flow_step"]:
+            if key in st.session_state:
+                if key == "flow_step":
+                    st.session_state[key] = "profile"
+                elif key in ["matched_programs", "generated_documents"]:
+                    st.session_state[key] = {} if key == "generated_documents" else []
+                else:
+                    st.session_state[key] = None
+        st.success("All data cleared")
+        st.rerun()
 
 # =============================================================================
 # MAIN APP
@@ -946,97 +952,58 @@ def render_e2e_page():
 def main():
     # Sidebar
     with st.sidebar:
-        st.image("https://img.icons8.com/color/96/000000/graduation-cap.png", width=80)
-        st.title("Navigation")
+        st.title("🎓 College App Helper")
+        st.caption("v3.1 - Smart Matching + AI Writing")
+        
+        st.markdown("---")
         
         page = st.radio(
-            "Choose a workflow:",
-            options=["🎯 Program Matching", "✍️ Document Generation", "🚀 End-to-End Flow", "📊 Dashboard"],
+            "Select Function",
+            options=["smart", "manual", "dashboard"],
+            format_func=lambda x: {
+                "smart": "🎯 Smart Matching + Generation",
+                "manual": "✍️ Quick Generation (Manual)",
+                "dashboard": "📊 Dashboard"
+            }[x],
             label_visibility="collapsed"
         )
         
         st.markdown("---")
         
         # API Status
-        st.subheader("🔌 API Status")
+        st.markdown("##### 🔌 Service Status")
         health = check_api_health()
         
         if health["status"] == "healthy":
             st.success("API Connected ✓")
             
             api_info = get_api_info()
-            if api_info.get("writing_agent_available"):
-                st.caption("✓ Writing Agent")
-            else:
-                st.caption("✗ Writing Agent")
-            
-            if api_info.get("matching_service_available"):
-                st.caption("✓ Matching Service")
-            else:
-                st.caption("✗ Matching Service")
+            col1, col2 = st.columns(2)
+            with col1:
+                if api_info.get("writing_agent_available"):
+                    st.caption("✓ Writing Agent")
+                else:
+                    st.caption("✗ Writing Agent")
+            with col2:
+                if api_info.get("matching_service_available"):
+                    st.caption("✓ Matching")
+                else:
+                    st.caption("✗ Matching")
         else:
-            st.error("API Disconnected")
+            st.error("API Not Connected")
             st.caption(health.get("message", ""))
-            st.caption("Run: `python -m src.rag_service.api`")
+            st.code("python -m src.rag_service.api", language="bash")
         
         st.markdown("---")
-        st.caption("College Application Helper v3.0")
-        st.caption("Enhanced with AI Matching & Writing Agents")
+        st.caption("© 2024 DS301 Project")
     
     # Main content
-    if "Program Matching" in page:
-        render_matching_page()
-    elif "Document Generation" in page:
-        render_generation_page()
-    elif "End-to-End" in page:
-        render_e2e_page()
-    elif "Dashboard" in page:
+    if page == "smart":
+        render_smart_matching_page()
+    elif page == "manual":
+        render_manual_generation_page()
+    elif page == "dashboard":
         render_dashboard()
-
-def render_dashboard():
-    """Render a dashboard showing session state and generated content"""
-    st.header("📊 Dashboard")
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.subheader("👤 Current Profile")
-        if st.session_state.profile:
-            st.json(st.session_state.profile)
-        else:
-            st.caption("No profile entered yet")
-    
-    with col2:
-        st.subheader("🎯 Selected Program")
-        if st.session_state.selected_program:
-            prog = st.session_state.selected_program
-            st.markdown(f"**{prog.get('university', '')}**")
-            st.markdown(f"{prog.get('program_name', '')}")
-            st.metric("Match Score", f"{prog.get('overall_score', 0):.2f}")
-        else:
-            st.caption("No program selected yet")
-    
-    st.markdown("---")
-    
-    st.subheader("📝 Generated Documents")
-    docs = st.session_state.generated_documents
-    
-    if docs:
-        tabs = st.tabs(list(docs.keys()))
-        for i, (doc_type, content) in enumerate(docs.items()):
-            with tabs[i]:
-                st.code(content[:1000] + "..." if len(content) > 1000 else content, language="markdown")
-    else:
-        st.caption("No documents generated yet")
-    
-    st.markdown("---")
-    
-    st.subheader("🏆 Matched Programs")
-    if st.session_state.matched_programs:
-        for i, match in enumerate(st.session_state.matched_programs[:5]):
-            st.caption(f"{i+1}. {match.get('university', '')} - {match.get('program_name', '')} (Score: {match.get('overall_score', 0):.2f})")
-    else:
-        st.caption("No programs matched yet")
 
 if __name__ == "__main__":
     main()

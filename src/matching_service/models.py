@@ -117,6 +117,9 @@ class ProgramMatchResponse(BaseModel):
     explanation: str
     
     metadata: Dict[str, Any] = {}
+    
+    # NEW: Complete program details for Writing Agent
+    program_details: Optional[Dict[str, Any]] = None
 
 
 class MatchingResponse(BaseModel):

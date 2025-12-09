@@ -586,9 +586,29 @@ def match_programs(request: MatchingRequest):
         
         processing_time = time.time() - start_time
         
-        # Convert to response format
-        matches_response = [
-            ProgramMatchResponse(
+        # Convert to response format with complete program details
+        matches_response = []
+        for m in result.matches:
+            # Get full program details for Writing Agent
+            program_details = None
+            if m.program_id in PROGRAM_MATCHER.programs:
+                prog = PROGRAM_MATCHER.programs[m.program_id]
+                program_details = {
+                    "program_id": m.program_id,
+                    "program_name": prog.get("name", m.program_name),
+                    "university": prog.get("university", m.university),
+                    "field": prog.get("field", ""),
+                    "description_text": prog.get("description_text", ""),
+                    "features": prog.get("career_outcomes", ""),
+                    "core_courses": prog.get("core_courses", []),
+                    "focus_areas": prog.get("focus_areas", []),
+                    "required_skills": prog.get("required_skills", []),
+                    "min_gpa": prog.get("min_gpa", 3.0),
+                    "duration": prog.get("duration", ""),
+                    "source_url": prog.get("source_url", "")
+                }
+            
+            match_response = ProgramMatchResponse(
                 program_id=m.program_id,
                 program_name=m.program_name,
                 university=m.university,
@@ -608,10 +628,10 @@ def match_programs(request: MatchingRequest):
                 gaps=m.gaps,
                 recommendations=m.recommendations,
                 explanation=m.explanation,
-                metadata=m.metadata
+                metadata=m.metadata,
+                program_details=program_details
             )
-            for m in result.matches
-        ]
+            matches_response.append(match_response)
         
         response = MatchingResponse(
             success=True,
@@ -774,6 +794,123 @@ def compare_programs(profile: dict, program_ids: List[str]):
             status_code=500,
             detail=f"Comparison failed: {str(e)}"
         )
+
+# ============================================================
+# NEW: GET PROGRAM DETAILS ENDPOINT
+# ============================================================
+
+@app.get("/match/program/{program_id}/details")
+def get_program_details(program_id: str):
+    """
+    Get complete program details for a specific program.
+    
+    This endpoint returns all information needed for the Writing Agent,
+    including full description, courses, focus areas, etc.
+    
+    Args:
+        program_id: The unique identifier of the program
+    
+    Returns:
+        Complete program information dictionary
+    """
+    
+    if not MATCHER_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="Matching service not available"
+        )
+    
+    if program_id not in PROGRAM_MATCHER.programs:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Program '{program_id}' not found in corpus"
+        )
+    
+    try:
+        program = PROGRAM_MATCHER.programs[program_id]
+        
+        # Build comprehensive program info for Writing Agent
+        program_details = {
+            "program_id": program_id,
+            "program_name": program.get("name", "Unknown Program"),
+            "university": program.get("university", "Unknown University"),
+            "field": program.get("field", ""),
+            "degree_type": program.get("degree_type", "Master"),
+            
+            # Full description for Writing Agent
+            "description_text": program.get("description_text", ""),
+            "features": program.get("career_outcomes", ""),
+            
+            # Academic details
+            "core_courses": program.get("core_courses", []),
+            "prerequisite_courses": program.get("prerequisite_courses", []),
+            "focus_areas": program.get("focus_areas", []),
+            
+            # Requirements
+            "min_gpa": program.get("min_gpa", 3.0),
+            "required_skills": program.get("required_skills", []),
+            "language_requirements": program.get("language_requirements", {}),
+            
+            # Program info
+            "duration": program.get("duration", ""),
+            "tuition": program.get("tuition"),
+            "source_url": program.get("source_url", ""),
+            
+            # Career outcomes
+            "career_outcomes": program.get("career_outcomes", "")
+        }
+        
+        return {
+            "success": True,
+            "program": program_details
+        }
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to get program details: {str(e)}"
+        )
+
+
+@app.get("/match/programs/list")
+def list_all_programs():
+    """
+    List all available programs in the corpus.
+    
+    Returns:
+        List of programs with basic info (id, name, university)
+    """
+    
+    if not MATCHER_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="Matching service not available"
+        )
+    
+    try:
+        programs_list = []
+        
+        for program_id, program in PROGRAM_MATCHER.programs.items():
+            programs_list.append({
+                "program_id": program_id,
+                "program_name": program.get("name", "Unknown"),
+                "university": program.get("university", "Unknown"),
+                "field": program.get("field", ""),
+                "focus_areas": program.get("focus_areas", [])[:3]
+            })
+        
+        return {
+            "success": True,
+            "total_programs": len(programs_list),
+            "programs": programs_list
+        }
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to list programs: {str(e)}"
+        )
+
 
 # ============================================================
 # END OF MATCHING SERVICE ENDPOINTS
