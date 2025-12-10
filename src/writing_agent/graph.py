@@ -44,7 +44,7 @@ def should_continue(state: WritingState) -> str:
 
 def finalize_output(state: WritingState) -> Dict[str, Any]:
     """
-    Finalize the output and update memory.
+    Finalize the output and update memory with enhanced pattern recording.
     
     Args:
         state: Current workflow state
@@ -66,6 +66,11 @@ def finalize_output(state: WritingState) -> Dict[str, Any]:
     print(f"[Finalize] Final score: {overall_score:.3f}, threshold: {quality_threshold}, approved: {approved}")
     print(f"[Finalize] Total iterations: {len(iteration_logs)}")
     
+    # Get dimension scores and analysis
+    dimension_scores = state.get("dimension_scores", {})
+    keyword_analysis = state.get("keyword_analysis", {})
+    weakest_dimensions = state.get("weakest_dimensions", [])
+    
     # Create quality report with full iteration history
     quality_report = {
         "final_score": overall_score,
@@ -73,35 +78,77 @@ def finalize_output(state: WritingState) -> Dict[str, Any]:
         "total_iterations": len(iteration_logs),
         "iteration_history": iteration_logs,
         "match_score": state.get("match_score"),
-        "keyword_coverage": len([
-            s for s in state.get("reflection_scores", [])
-            if s.get("dimension") == "keyword_coverage"
-        ]),
+        "dimension_scores": dimension_scores,
+        "keyword_analysis": keyword_analysis,
+        "keyword_coverage": keyword_analysis.get("overall_integration_quality", 0),
         "approved": approved,
         "met_threshold": approved,
-        "final_reflection_feedback": state.get("reflection_feedback", "")
+        "final_reflection_feedback": state.get("reflection_feedback", ""),
+        "weakest_dimensions": weakest_dimensions
     }
     
-    # Update memory if improvement was significant
+    # Update memory with enhanced pattern recording
     if len(iteration_logs) > 1:
         initial_score = iteration_logs[0]["overall_score"]
         final_score = iteration_logs[-1]["overall_score"]
         
         quality_report["score_improvement"] = final_score - initial_score
         
+        # Calculate dimension-level improvements
+        initial_dim_scores = iteration_logs[0].get("dimension_scores", {})
+        final_dim_scores = iteration_logs[-1].get("dimension_scores", {})
+        dimension_improvements = {}
+        
+        for dim in final_dim_scores:
+            if dim in initial_dim_scores:
+                dimension_improvements[dim] = final_dim_scores[dim] - initial_dim_scores[dim]
+        
+        quality_report["dimension_improvements"] = dimension_improvements
+        
         if final_score > initial_score:
             memory = get_memory()
+            
+            # Extract revision focus from iteration logs
+            revision_focus = []
+            strategies_used = []
+            for log in iteration_logs:
+                strategies_used.extend(log.get("actions_taken", []))
+                if "revision_focus" in log:
+                    revision_focus.extend(log["revision_focus"].get("weakest_dimensions", []))
+            
+            # Record success with enhanced information
             memory.record_success(
                 document_type=state["document_type"].value,
                 initial_score=initial_score,
                 final_score=final_score,
                 iterations=len(iteration_logs),
-                strategies_used=[log.get("actions_taken", []) for log in iteration_logs]
+                strategies_used=strategies_used,
+                dimension_improvements=dimension_improvements,
+                revision_focus=list(set(revision_focus))
             )
+            
+            # Record iteration-level results for detailed learning
+            for i in range(1, len(iteration_logs)):
+                prev_log = iteration_logs[i-1]
+                curr_log = iteration_logs[i]
+                
+                prev_dim = prev_log.get("dimension_scores", {})
+                curr_dim = curr_log.get("dimension_scores", {})
+                dim_changes = {d: curr_dim.get(d, 0) - prev_dim.get(d, 0) for d in curr_dim}
+                
+                memory.record_iteration_result(
+                    document_type=state["document_type"].value,
+                    iteration=i,
+                    score_before=prev_log["overall_score"],
+                    score_after=curr_log["overall_score"],
+                    strategies_applied=curr_log.get("actions_taken", []),
+                    dimension_changes=dim_changes
+                )
             
             # Save memory to disk
             try:
                 memory.save_to_disk()
+                print(f"[Finalize] Memory saved. Stats: {memory.get_stats()}")
             except Exception as e:
                 print(f"Warning: Failed to save memory: {e}")
     

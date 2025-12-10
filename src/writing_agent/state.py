@@ -27,15 +27,25 @@ class IterationLog(TypedDict):
     timestamp: str
     draft_length: int
     reflection_scores: List[ReflectionScore]
+    dimension_scores: Dict[str, float]  # Raw dimension scores for tracking
     overall_score: float
     suggestions: List[str]
+    weakest_dimensions: List[str]  # Dimensions needing most improvement
+    weights_used: Dict[str, float]  # Adaptive weights used
+    keyword_analysis: Dict[str, Any]  # Keyword integration analysis
     actions_taken: List[str]
+    decision_log: Dict[str, Any]  # Decision reasoning
 
 
 class WritingState(TypedDict):
     """
     Main state for the Writing Agent workflow.
     This state flows through all nodes in the LangGraph.
+    
+    Enhanced with:
+    - Dimension-level score tracking
+    - Keyword integration analysis
+    - Adaptive weighting information
     """
     
     # ===== Input Information =====
@@ -73,6 +83,9 @@ class WritingState(TypedDict):
     overall_quality_score: float  # Overall quality (0-1)
     reflection_feedback: str  # Detailed feedback from reflection
     improvement_suggestions: List[str]  # Specific suggestions for improvement
+    dimension_scores: Dict[str, float]  # Individual dimension scores
+    weakest_dimensions: List[str]  # Dimensions needing most improvement
+    keyword_analysis: Dict[str, Any]  # Keyword integration analysis
     
     # ===== Reflexion Memory =====
     current_iteration: int  # Current iteration number
@@ -155,6 +168,9 @@ def create_initial_state(
         overall_quality_score=0.0,
         reflection_feedback="",
         improvement_suggestions=[],
+        dimension_scores={},
+        weakest_dimensions=[],
+        keyword_analysis={},
         
         # Reflexion Memory
         current_iteration=0,

@@ -1,8 +1,123 @@
 """
 Prompt templates for Reflection (self-evaluation) node
+
+Includes adaptive weighting system that adjusts focus based on current quality score:
+- High score (>=0.85): Focus on refinement and polish
+- Low score (<0.85): Focus on fundamental improvements
 """
 
 from typing import Dict, Any, List
+
+
+def get_adaptive_weights(current_score: float) -> Dict[str, float]:
+    """
+    Get adaptive weights for reflection dimensions based on current quality score.
+    
+    For high-quality drafts (>=0.85), we emphasize fine-tuning aspects like
+    personalization and program alignment. For lower-quality drafts, we focus
+    more on structural elements like coherence and keyword coverage.
+    
+    Args:
+        current_score: Current overall quality score (0.0 to 1.0)
+    
+    Returns:
+        Dictionary mapping dimension names to their weights (sum to 1.0)
+    """
+    if current_score >= 0.85:
+        # High score: focus on refinement and polish
+        return {
+            "keyword_coverage": 0.15,
+            "personalization": 0.30,  # Emphasize unique details
+            "coherence": 0.15,
+            "program_alignment": 0.25,  # Emphasize specific program fit
+            "persuasiveness": 0.15
+        }
+    elif current_score >= 0.70:
+        # Medium score: balanced approach
+        return {
+            "keyword_coverage": 0.20,
+            "personalization": 0.25,
+            "coherence": 0.20,
+            "program_alignment": 0.20,
+            "persuasiveness": 0.15
+        }
+    else:
+        # Low score: focus on fundamentals
+        return {
+            "keyword_coverage": 0.25,  # Ensure basic coverage
+            "personalization": 0.20,
+            "coherence": 0.25,  # Fix structure first
+            "program_alignment": 0.15,
+            "persuasiveness": 0.15
+        }
+
+
+def analyze_keyword_integration(document: str, keywords: List[str]) -> Dict[str, Any]:
+    """
+    Analyze how keywords are integrated into the document.
+    
+    Checks for:
+    - Presence of keywords
+    - Natural vs forced integration (basic heuristic)
+    - Position distribution in document
+    
+    Args:
+        document: The document text
+        keywords: List of required keywords
+    
+    Returns:
+        Analysis dictionary with found, missing, and integration quality info
+    """
+    doc_lower = document.lower()
+    doc_words = doc_lower.split()
+    doc_length = len(doc_words)
+    
+    results = {
+        "found": [],
+        "missing": [],
+        "integration_scores": {},
+        "overall_integration_quality": 0.0
+    }
+    
+    for kw in keywords:
+        kw_lower = kw.lower()
+        if kw_lower in doc_lower:
+            results["found"].append(kw)
+            
+            # Basic heuristic: check if keyword appears in meaningful context
+            # Look for keyword position relative to document length
+            positions = []
+            start = 0
+            while True:
+                pos = doc_lower.find(kw_lower, start)
+                if pos == -1:
+                    break
+                # Convert character position to word position (approximate)
+                word_pos = len(doc_lower[:pos].split())
+                positions.append(word_pos / max(doc_length, 1))
+                start = pos + 1
+            
+            # Check distribution (good if spread across document)
+            if len(positions) >= 2:
+                distribution_score = min(max(positions) - min(positions), 1.0)
+            elif len(positions) == 1:
+                # Single occurrence - prefer middle of document
+                distribution_score = 1.0 - abs(positions[0] - 0.5) * 2
+            else:
+                distribution_score = 0.0
+            
+            results["integration_scores"][kw] = round(distribution_score, 2)
+        else:
+            results["missing"].append(kw)
+            results["integration_scores"][kw] = 0.0
+    
+    # Calculate overall integration quality
+    if keywords:
+        coverage = len(results["found"]) / len(keywords)
+        avg_integration = sum(results["integration_scores"].values()) / len(keywords)
+        results["overall_integration_quality"] = round((coverage + avg_integration) / 2, 3)
+    
+    return results
 
 
 def get_reflection_prompt(
@@ -146,9 +261,17 @@ Conduct your evaluation now:"""
     return prompt
 
 
-def parse_reflection_response(response: str) -> Dict[str, Any]:
+def parse_reflection_response(response: str, previous_score: float = 0.0) -> Dict[str, Any]:
     """
     Parse the JSON response from reflection prompt
+    
+    Uses adaptive weights based on the previous score to calculate overall score.
+    This ensures that high-quality drafts are evaluated with focus on refinement,
+    while lower-quality drafts are evaluated with focus on fundamentals.
+    
+    Args:
+        response: LLM response containing JSON evaluation
+        previous_score: Previous iteration's score (for adaptive weighting)
     
     NOTE: The 'approve' field from the LLM is NOT used for iteration decisions.
     The actual decision is made in reflect_node.py based on quality_threshold.
@@ -180,7 +303,8 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
                 "feedback": "Unable to parse reflection response",
                 "specific_issues": ["Parsing error occurred"],
                 "improvement_suggestions": ["Review document manually", "Try regenerating content"],
-                "approve": False
+                "approve": False,
+                "weights_used": get_adaptive_weights(previous_score)
             }
     
     try:
@@ -196,14 +320,9 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
                 "persuasiveness": 0.5
             }
         
-        # Calculate overall score if not provided or if it seems wrong
-        weights = {
-            "keyword_coverage": 0.20,
-            "personalization": 0.25,
-            "coherence": 0.20,
-            "program_alignment": 0.20,
-            "persuasiveness": 0.15
-        }
+        # Use adaptive weights based on previous score
+        weights = get_adaptive_weights(previous_score)
+        result["weights_used"] = weights
         
         calculated_overall = sum(
             result["scores"].get(dim, 0.5) * weight
@@ -219,6 +338,11 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
             result["overall_score"] = round(calculated_overall, 3)
         else:
             result["overall_score"] = round(result["overall_score"], 3)
+        
+        # Identify weakest dimensions for targeted improvement
+        sorted_scores = sorted(result["scores"].items(), key=lambda x: x[1])
+        result["weakest_dimensions"] = [dim for dim, score in sorted_scores[:2]]
+        result["strongest_dimensions"] = [dim for dim, score in sorted_scores[-2:]]
         
         # Ensure improvement_suggestions is a non-empty list
         if "improvement_suggestions" not in result or not result["improvement_suggestions"]:
@@ -255,5 +379,8 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
             "feedback": "JSON parsing failed - content may need revision",
             "specific_issues": ["Could not parse evaluation response"],
             "improvement_suggestions": ["Manual review needed", "Try regenerating"],
-            "approve": False
+            "approve": False,
+            "weights_used": get_adaptive_weights(previous_score),
+            "weakest_dimensions": [],
+            "strongest_dimensions": []
         }

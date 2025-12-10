@@ -1,5 +1,7 @@
 """
 Prompt templates for Recommendation Letter generation
+
+Includes adaptive revision strategies based on quality score.
 """
 
 from typing import Dict, Any, List
@@ -110,21 +112,98 @@ def get_rl_revision_prompt(
     improvement_suggestions: List[str],
     profile: Dict[str, Any],
     program_info: Dict[str, Any],
-    iteration: int
+    iteration: int,
+    current_score: float = 0.0,
+    dimension_scores: Dict[str, float] = None,
+    weakest_dimensions: List[str] = None
 ) -> str:
     """
-    Generate prompt for Recommendation Letter revision
+    Generate prompt for Recommendation Letter revision with adaptive strategy.
+    
+    Args:
+        current_draft: Current letter draft
+        reflection_feedback: Feedback from reflection
+        improvement_suggestions: Specific suggestions
+        profile: Applicant profile
+        program_info: Target program information
+        iteration: Current iteration number
+        current_score: Current quality score (0.0 to 1.0)
+        dimension_scores: Dictionary of dimension scores
+        weakest_dimensions: List of weakest dimensions
     """
     
     suggestions_text = "\n".join([f"- {s}" for s in improvement_suggestions])
     
-    prompt = f"""You are revising a recommendation letter draft based on expert feedback. This is revision iteration {iteration}.
+    # Determine revision strategy based on score
+    if current_score >= 0.85:
+        revision_mode = "REFINEMENT"
+        strategy_guidance = """
+**REFINEMENT MODE (Strong Letter)**
+This letter is already compelling. Apply subtle enhancements:
+
+1. **Strengthen Superlatives**: Upgrade recommendation language
+   - "highly recommend" -> "offer my strongest possible recommendation"
+   - "excellent student" -> "among the top 5% of students I've supervised"
+   
+2. **Vivid Details**: Add one memorable sensory detail or direct quote
+   
+3. **Program Specificity**: Ensure specific program features are mentioned by name
+
+4. **Closing Power**: Strengthen the final endorsement statement
+
+**CRITICAL: Maintain letter structure and core examples. Polish, don't rebuild.**
+"""
+    elif current_score >= 0.70:
+        revision_mode = "STRENGTHEN"
+        strategy_guidance = """
+**STRENGTHEN MODE (Good Letter)**
+Improve specific weak areas:
+
+1. **Example Enhancement**: Add more quantifiable outcomes to existing examples
+2. **Program Connection**: Explicitly connect candidate strengths to program
+3. **Credential Clarity**: Ensure recommender's authority is clearly established
+4. **Multi-dimensional**: Ensure technical AND soft skills are addressed
+"""
+    else:
+        revision_mode = "COMPREHENSIVE"
+        strategy_guidance = """
+**COMPREHENSIVE REVISION MODE (Needs Improvement)**
+Substantially revise the letter:
+
+1. **Structure Fix**: 
+   - Opening: Relationship + strong initial endorsement
+   - Body 1: Technical example with metrics
+   - Body 2: Soft skills + character example
+   - Program Fit: Specific program alignment
+   - Closing: Emphatic, unequivocal recommendation
+
+2. **Evidence Upgrade**: Replace generic praise with specific examples
+3. **Quantification**: Add numbers, comparisons, rankings where possible
+4. **Credibility**: Clearly establish recommender's position and knowledge
+5. **Enthusiasm**: Use stronger recommendation language throughout
+"""
+    
+    # Add dimension scores context if available
+    dimension_context = ""
+    if dimension_scores:
+        dimension_context = "\n**DIMENSION SCORES:**\n"
+        for dim, score in dimension_scores.items():
+            status = "✓" if score >= 0.85 else ("→" if score >= 0.70 else "✗")
+            dimension_context += f"- {dim.replace('_', ' ').title()}: {score:.2f} [{status}]\n"
+    
+    prompt = f"""You are revising a recommendation letter based on expert feedback.
+Iteration {iteration}. Current score: {current_score:.2f}/1.0
+
+**REVISION MODE: {revision_mode}**
+
+{strategy_guidance}
 
 **CURRENT DRAFT:**
 {current_draft}
 
 **FEEDBACK:**
 {reflection_feedback}
+{dimension_context}
 
 **SPECIFIC IMPROVEMENTS NEEDED:**
 {suggestions_text}
@@ -134,34 +213,16 @@ def get_rl_revision_prompt(
 - Background: {profile.get('major', '')}
 - Target Program: {program_info.get('program_name', '')}
 
-**YOUR REVISION TASK:**
-Improve the recommendation letter by addressing ALL feedback points. Specifically:
-
-1. **If specific examples are lacking**: Add concrete project descriptions with measurable outcomes
-2. **If recommendation strength is weak**: Use more emphatic language ("strongest recommendation," "exceptional," "outstanding")
-3. **If technical depth is insufficient**: Add more detail about specific technical skills and achievements
-4. **If program connection is weak**: Explicitly reference specific program features that match candidate's strengths
-5. **If it sounds generic**: Add personal observations and specific anecdotes that show genuine knowledge of the candidate
-
-**ENHANCEMENT STRATEGIES:**
-- Replace general statements with specific examples
-- Add quantifiable achievements (e.g., "improved performance by 25%")
-- Include comparative statements (e.g., "among the top 5% of students I've supervised")
-- Reference specific interactions or observations
-- Strengthen superlatives and recommendation language
-- Ensure credibility by showing detailed knowledge
-
 **FORMAT:**
-- Maintain formal letter structure with appropriate greeting and sign-off
-- Use paragraph breaks for readability
+- Maintain formal letter structure
+- Professional but warm tone
 - Include contact information offer in closing
-- Professional but warm tone throughout
+- Keep length appropriate (400-650 words)
 
 **CRITICAL:**
 - Don't just add adjectives - add substantive content
 - Every claim should be backed by evidence
 - Maintain consistency in voice and perspective
-- Keep appropriate length (400-650 words)
 
 **OUTPUT:**
 Provide ONLY the revised recommendation letter, with no meta-commentary.

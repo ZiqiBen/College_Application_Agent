@@ -1,5 +1,10 @@
 """
 Prompt templates for Personal Statement generation
+
+Includes adaptive revision strategies:
+- High score (>=0.85): Fine-tuning mode with micro-level improvements
+- Medium score (0.70-0.85): Targeted improvements on weak dimensions
+- Low score (<0.70): Comprehensive revision mode
 """
 
 from typing import Dict, Any, List
@@ -101,46 +106,168 @@ def get_ps_revision_prompt(
     improvement_suggestions: List[str],
     profile: Dict[str, Any],
     program_info: Dict[str, Any],
-    iteration: int
+    iteration: int,
+    current_score: float = 0.0,
+    dimension_scores: Dict[str, float] = None,
+    weakest_dimensions: List[str] = None,
+    previous_draft: str = None
 ) -> str:
     """
-    Generate prompt for Personal Statement revision
+    Generate prompt for Personal Statement revision with adaptive strategy.
+    
+    The revision strategy adapts based on current_score:
+    - High score (>=0.85): Fine-tuning mode - polish language, strengthen specific phrases
+    - Medium score (0.70-0.85): Targeted mode - focus on weakest dimensions
+    - Low score (<0.70): Comprehensive mode - structural and content overhaul
+    
+    Args:
+        current_draft: Current version of the PS
+        reflection_feedback: Feedback from reflection node
+        improvement_suggestions: List of specific suggestions
+        profile: Applicant profile
+        program_info: Target program information
+        iteration: Current iteration number
+        current_score: Current quality score (0.0 to 1.0)
+        dimension_scores: Dictionary of scores for each dimension
+        weakest_dimensions: List of dimensions needing most improvement
+        previous_draft: Previous version for comparison (optional)
     """
     
     suggestions_text = "\n".join([f"- {s}" for s in improvement_suggestions])
     
-    prompt = f"""You are revising a Personal Statement draft based on expert feedback. This is revision iteration {iteration}.
+    # Determine revision strategy based on score
+    if current_score >= 0.85:
+        revision_mode = "FINE-TUNING"
+        strategy_guidance = """
+**FINE-TUNING MODE (High Quality Draft)**
+This draft is already excellent. Make ONLY micro-level improvements:
+
+1. **Word Choice Enhancement**: Replace good words with stronger synonyms
+   - "helped" -> "facilitated", "spearheaded", "championed"
+   - "worked on" -> "engineered", "orchestrated", "pioneered"
+   
+2. **Precision Boost**: Make numbers and metrics more specific
+   - "many users" -> "12,000+ monthly active users"
+   - "improved performance" -> "reduced latency by 47%"
+   
+3. **Emotional Resonance**: Add subtle sensory or emotional details
+   - Include one vivid moment that shows genuine passion
+   
+4. **Flow Polish**: Ensure paragraph transitions are seamless
+
+**CRITICAL: Do NOT restructure or significantly change content.**
+**Preserve the narrative arc and core message entirely.**
+"""
+    elif current_score >= 0.70:
+        revision_mode = "TARGETED"
+        # Build targeted guidance based on weakest dimensions
+        weak_dims_guidance = ""
+        if weakest_dimensions:
+            for dim in weakest_dimensions:
+                if dim == "keyword_coverage":
+                    weak_dims_guidance += """
+- **Keyword Integration**: Naturally weave in missing keywords into existing sentences
+  (Do not add forced keyword lists; integrate organically)
+"""
+                elif dim == "personalization":
+                    weak_dims_guidance += """
+- **Personalization**: Add 1-2 more specific details with quantifiable metrics
+  (Example: Instead of "led a project", say "led a 4-person team delivering 3 features in 6 weeks")
+"""
+                elif dim == "coherence":
+                    weak_dims_guidance += """
+- **Coherence**: Strengthen transitions between paragraphs with connecting phrases
+  (Use phrases like "Building on this experience...", "This foundation prepared me...")
+"""
+                elif dim == "program_alignment":
+                    weak_dims_guidance += """
+- **Program Alignment**: Add 1-2 specific references to program courses, faculty, or features
+  (Research actual program details and mention them by name)
+"""
+                elif dim == "persuasiveness":
+                    weak_dims_guidance += """
+- **Persuasiveness**: Strengthen impact statements with "so what" context
+  (Show WHY achievements matter, not just WHAT was done)
+"""
+        
+        strategy_guidance = f"""
+**TARGETED IMPROVEMENT MODE (Good Draft)**
+This draft is solid but needs improvement in specific areas.
+
+**FOCUS YOUR REVISION ON THESE WEAK DIMENSIONS:**
+{weak_dims_guidance if weak_dims_guidance else "- Address all feedback points systematically"}
+
+**PRESERVE**: Keep strong elements intact - don't over-edit what works.
+"""
+    else:
+        revision_mode = "COMPREHENSIVE"
+        strategy_guidance = """
+**COMPREHENSIVE REVISION MODE (Needs Significant Improvement)**
+This draft requires substantial improvements:
+
+1. **Structure Overhaul**: Ensure clear paragraph organization
+   - Para 1: Compelling hook + motivation
+   - Para 2-3: Specific experiences with metrics
+   - Para 4: Program fit with specific references
+   - Para 5: Future vision + conclusion
+
+2. **Content Enhancement**:
+   - Replace ALL generic statements with specific examples
+   - Add quantifiable metrics to EVERY achievement
+   - Include specific program references (courses, faculty, research)
+
+3. **Keyword Integration**: Ensure all required keywords appear naturally
+
+4. **Voice & Authenticity**: Remove clichés, add genuine personal perspective
+
+**Be bold in making changes - the draft needs significant improvement.**
+"""
+    
+    # Add dimension scores context if available
+    dimension_context = ""
+    if dimension_scores:
+        dimension_context = "\n**CURRENT DIMENSION SCORES:**\n"
+        for dim, score in dimension_scores.items():
+            status = "✓ Strong" if score >= 0.85 else ("→ Improve" if score >= 0.70 else "✗ Weak")
+            dimension_context += f"- {dim.replace('_', ' ').title()}: {score:.2f} [{status}]\n"
+    
+    # Add draft comparison if available
+    comparison_context = ""
+    if previous_draft and iteration > 1:
+        comparison_context = f"""
+**PREVIOUS VERSION (for reference):**
+{previous_draft[:500]}...
+
+**IMPORTANT**: Ensure the revision improves upon the previous version. Do not regress on improvements already made.
+"""
+    
+    prompt = f"""You are revising a Personal Statement draft based on expert feedback. 
+This is revision iteration {iteration}. Current quality score: {current_score:.2f}/1.0
+
+**REVISION MODE: {revision_mode}**
+
+{strategy_guidance}
 
 **CURRENT DRAFT:**
 {current_draft}
 
 **FEEDBACK FROM EXPERT REVIEW:**
 {reflection_feedback}
+{dimension_context}
 
 **SPECIFIC IMPROVEMENTS NEEDED:**
 {suggestions_text}
+{comparison_context}
 
 **APPLICANT CONTEXT (for reference):**
 - Background: {profile.get('major', '')}
 - Goals: {profile.get('goals', '')}
 - Target Program: {program_info.get('program_name', '')}
 
-**YOUR REVISION TASK:**
-Improve the Personal Statement by addressing ALL the feedback points above. Specifically:
-
-1. **If keyword coverage is low**: Naturally integrate missing keywords into existing content
-2. **If personalization is weak**: Add more specific details, numbers, and concrete examples
-3. **If coherence needs work**: Improve transitions and logical flow between paragraphs
-4. **If program alignment is weak**: Add explicit references to specific program features, courses, or faculty
-5. **If persuasiveness is lacking**: Strengthen the narrative arc and make achievements more compelling
-
 **CRITICAL GUIDELINES:**
 - Maintain the core narrative and voice from the original
-- Don't just add keywords - integrate them meaningfully
-- Use specific examples and quantifiable outcomes
-- Ensure every change serves the overall narrative
 - Keep the length appropriate (500-800 words)
-- Preserve what's already working well
+- Every change should serve the overall narrative
 
 **OUTPUT:**
 Provide ONLY the revised Personal Statement text, with no meta-commentary or explanations.

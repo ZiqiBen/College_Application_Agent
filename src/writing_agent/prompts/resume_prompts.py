@@ -1,5 +1,7 @@
 """
 Prompt templates for Resume Bullets generation
+
+Includes adaptive revision strategies based on quality score.
 """
 
 from typing import Dict, Any, List
@@ -85,21 +87,92 @@ def get_resume_revision_prompt(
     improvement_suggestions: List[str],
     profile: Dict[str, Any],
     required_keywords: List[str],
-    iteration: int
+    iteration: int,
+    current_score: float = 0.0,
+    dimension_scores: Dict[str, float] = None,
+    weakest_dimensions: List[str] = None
 ) -> str:
     """
-    Generate prompt for Resume Bullets revision
+    Generate prompt for Resume Bullets revision with adaptive strategy.
+    
+    Args:
+        current_draft: Current bullet points
+        reflection_feedback: Feedback from reflection
+        improvement_suggestions: Specific suggestions
+        profile: Applicant profile
+        required_keywords: Keywords to include
+        iteration: Current iteration number
+        current_score: Current quality score (0.0 to 1.0)
+        dimension_scores: Dictionary of dimension scores
+        weakest_dimensions: List of weakest dimensions
     """
     
     suggestions_text = "\n".join([f"- {s}" for s in improvement_suggestions])
     
-    prompt = f"""You are revising resume bullet points based on expert feedback. This is revision iteration {iteration}.
+    # Determine revision strategy based on score
+    if current_score >= 0.85:
+        revision_mode = "POLISH"
+        strategy_guidance = """
+**POLISH MODE (High Quality Bullets)**
+These bullets are already strong. Make precision enhancements only:
+
+1. **Verb Power-Up**: Upgrade action verbs to most impactful alternatives
+   - "Managed" -> "Orchestrated", "Spearheaded"
+   - "Created" -> "Architected", "Pioneered"
+   
+2. **Metric Precision**: Make numbers more impressive while accurate
+   - Round to impactful figures (e.g., "47%" -> "nearly 50%")
+   - Add context to numbers (e.g., "5x industry average")
+   
+3. **Technical Depth**: Add one more specific tool or technology name
+
+**DO NOT restructure or significantly change proven bullet formats.**
+"""
+    elif current_score >= 0.70:
+        revision_mode = "ENHANCE"
+        strategy_guidance = """
+**ENHANCE MODE (Good Bullets)**
+Focus on strengthening weak areas while preserving strengths:
+
+1. **Missing Metrics**: Add quantifiable metrics to any bullet lacking numbers
+2. **Impact Clarity**: Ensure each bullet shows clear outcome/result
+3. **Keyword Gaps**: Integrate any missing target keywords
+4. **Tool Specificity**: Name specific technologies, tools, frameworks
+"""
+    else:
+        revision_mode = "REBUILD"
+        strategy_guidance = """
+**REBUILD MODE (Significant Improvement Needed)**
+Substantially revise these bullets:
+
+1. **Structure Fix**: Ensure format: [Action Verb] + [What] + [How/Tools] + [Result]
+2. **Quantify Everything**: Add numbers to EVERY bullet (%, $, counts, time)
+3. **Impact Focus**: Convert responsibilities into achievements
+4. **Parallel Structure**: Make all bullets follow consistent grammar
+5. **Technical Upgrade**: Add specific tools, technologies, methodologies
+"""
+    
+    # Add dimension scores context if available
+    dimension_context = ""
+    if dimension_scores:
+        dimension_context = "\n**DIMENSION SCORES:**\n"
+        for dim, score in dimension_scores.items():
+            status = "✓" if score >= 0.85 else ("→" if score >= 0.70 else "✗")
+            dimension_context += f"- {dim.replace('_', ' ').title()}: {score:.2f} [{status}]\n"
+    
+    prompt = f"""You are revising resume bullet points based on expert feedback.
+Iteration {iteration}. Current score: {current_score:.2f}/1.0
+
+**REVISION MODE: {revision_mode}**
+
+{strategy_guidance}
 
 **CURRENT BULLETS:**
 {current_draft}
 
 **FEEDBACK:**
 {reflection_feedback}
+{dimension_context}
 
 **SPECIFIC IMPROVEMENTS NEEDED:**
 {suggestions_text}
@@ -111,27 +184,11 @@ def get_resume_revision_prompt(
 - Skills: {', '.join(profile.get('skills', [])[:6])}
 - Major: {profile.get('major', '')}
 
-**YOUR REVISION TASK:**
-Improve the resume bullets by addressing ALL feedback points. Specifically:
-
-1. **If quantification is lacking**: Add specific numbers, percentages, scale to every bullet
-2. **If action verbs are weak**: Replace weak verbs (worked, helped, did) with strong ones (Led, Developed, Optimized)
-3. **If keywords missing**: Naturally integrate missing keywords into appropriate bullets
-4. **If impact unclear**: Emphasize measurable outcomes and business/research impact
-5. **If too generic**: Add technical specificity (tools, technologies, methodologies)
-
-**ENHANCEMENT STRATEGIES:**
-- Convert responsibilities into achievements
-- Add comparative metrics (e.g., "reducing time by 60%" instead of just "faster")
-- Specify scale (e.g., "managing dataset of 5M rows")
-- Name tools explicitly (e.g., "using Python, Pandas, and Scikit-learn")
-- Show progression if revising multiple bullets
-
-**FORMAT:**
-- Maintain bullet format with "• " or "- "
-- Keep 1-2 lines per bullet
+**FORMAT REQUIREMENTS:**
+- Bullet format with "• " or "- "
+- 1-2 lines per bullet
 - No periods at the end
-- Ensure parallel grammatical structure
+- Parallel grammatical structure
 
 **OUTPUT:**
 Provide ONLY the revised bullet points, with no explanations or commentary.
