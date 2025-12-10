@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """
-Main pipeline (PoC) using OpenAI GPT:
-  python pipeline_Version2.py seeds_example_Version2.txt
-
-Process per seed URL:
-  - crawl & snapshot
-  - normalize (html/pdf -> text)
-  - prefilter
-  - chunk
-  - aggregate chunks into a context and call GPT once
-  - parse JSON response, normalize, validate, and save final JSON
+Main pipeline (v2 + v3 integrated)
+----------------------------------
+Features:
+- Crawl main page
+- Discover curriculum/course subpages
+- Discover course-detail pages (bounded: <= 8 courses × 2 URLs)
+- Merge all text
+- Feed into GPT (gpt-4o) for structured extraction
+- Save final CorpusDoc JSON
 """
 
 import os
@@ -21,17 +20,28 @@ from datetime import datetime
 from urllib.parse import urlparse
 
 from schema_Version2 import CorpusDoc, ExtractedFields, Snippet, Chunk, LLMCall
-import utils_Version2 as utils  # 给 utils_Version2 起别名为 utils，方便后面统一调用
-from gpt_adapter import call_gpt_chat, DEFAULT_MODEL as GPT_MODEL_NAME
+import utils_Version2 as utils
+from gpt_adapter import call_gpt_chat
 
-# ==========================
-# Prompts / 提示词
-# ==========================
+
+# --------------------------------------------
+# Prompt Template
+# --------------------------------------------
 
 SYSTEM_PROMPT = (
-    "你是严格的结构化信息抽取器。只返回合法 JSON，字段遵循给定 schema。"
-    "对每个字段必须尽量返回支持该字段的原文片段（snippet）及其 char_start/char_end。"
-    "若字段不存在返回 null。不要输出任何多余文字。"
+    "你是严格的结构化信息抽取器（information extraction system）。"
+    "你的任务是从给定的英文网页内容（包括主页面、课程页面、课程详情页面）中，"
+    "抽取研究生项目的结构化信息，并以 JSON 格式输出。"
+    "要求：\n"
+    "1. 严格按照给定的 schema 输出合法 JSON（不能多字段、不能少字段）。\n"
+    "2. 尽量从文本中抽取真实字段，不得编造网页中不存在的信息。\n"
+    "3. courses 字段：\n"
+    "   - 课程名必须来自页面真实文本。\n"
+    "   - 若未找到描述，description 用 null。\n"
+    "4. snippets 若可能请提供。\n"
+    "5. 未找到信息即为 null。\n"
+    "6. 禁止使用外部知识。\n"
+    "7. 输出中禁止任何解释性文字，只能返回 JSON。\n"
 )
 
 USER_SCHEMA_DESC = """
@@ -45,23 +55,20 @@ schema:
   "features": "string|null",
   "contact_email": "string|null",
   "language": "string|null",
-  "source_url": "string",
-  "snippets": {
-      "program_name": { "snippet": "string", "char_start": int, "char_end": int },
-      ...
-  }
+  "school": "string|null",
+  "source_url": "string"
 }
 """
 
 
 def prompt_for_text(page_text: str, source_url: str) -> list:
-    """
-    Build chat messages for GPT 调用 GPT 的 messages 列表
-    """
     user = (
         f"{USER_SCHEMA_DESC}\n\n"
         f"source_url: {source_url}\n\n"
-        f"<<<文档开始>>>\n{page_text}\n<<<文档结束>>>"
+        "下面是该项目的主页面、课程页面、课程详情页等合并文本，请按 schema 抽取结构化信息。\n\n"
+        "<<<文档开始>>>\n"
+        f"{page_text}\n"
+        "<<<文档结束>>>"
     )
     return [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -70,18 +77,10 @@ def prompt_for_text(page_text: str, source_url: str) -> list:
 
 
 def prompt_hash(system: str, user: str) -> str:
-    """
-    Hash of (system + user prompt), for caching purposes.
-    用于 LLM 缓存的 prompt 哈希
-    """
     return hashlib.sha256((system + "\n" + user).encode("utf-8")).hexdigest()
 
 
 def try_parse_json(text: str):
-    """
-    Try to parse the model output as JSON.
-    尝试从模型输出中解析 JSON（如果有多余文字，尽量截取 {...} 部分）
-    """
     try:
         return json.loads(text)
     except Exception:
@@ -94,246 +93,266 @@ def try_parse_json(text: str):
         return None
 
 
-# ==========================
-# JSON 规范化 / 校验
-# ==========================
-
-def normalize_parsed_fields(parsed: dict) -> dict:
+def validate_and_enrich(extracted: dict, combined_text: str) -> dict:
     """
-    Normalize LLM JSON so that:
-      - string fields (program_name, features, language, etc.) are plain strings or None
-      - any dict-valued field like
-          {"snippet": "...", "char_start": ..., "char_end": ...}
-        or  {"value": "...", "snippet": "...", ...}
-        is moved to parsed["snippets"][field_name]
+    对 LLM 抽取结果做一些基础校验与轻微规范化。
 
-    将 LLM 返回的 dict 做一层规范化：
-      - 避免 program_name / features / language 等字段是 dict
-      - 如果字段是 {"snippet": ...} 或 {"value": ...}，
-        则移动到 snippets[field_name]，字段本身变成一个简单字符串（或 None）
-    """
-    if not isinstance(parsed, dict):
-        return {}
-
-    # 这些字段在 ExtractedFields 里是纯字符串
-    text_fields = [
-        "program_name",
-        "duration",
-        "tuition",
-        "application_requirements",
-        "features",
-        "contact_email",
-        "language",
-    ]
-
-    snippets = parsed.get("snippets") or {}
-
-    for field in text_fields:
-        if field not in parsed:
-            continue
-        val = parsed[field]
-
-        # 如果本来就是字符串或 None，直接跳过
-        if isinstance(val, (str, type(None))):
-            continue
-
-        # 如果是 dict，我们尝试从中抽取 snippet / value
-        if isinstance(val, dict):
-            # snippet 文本的候选
-            snippet_text = (
-                val.get("snippet")
-                or val.get("value")
-                or ""
-            )
-            char_start = val.get("char_start")
-            char_end = val.get("char_end")
-
-            # 规范化成 Snippet 需要的结构：text, char_start, char_end
-            snippets[field] = {
-                "text": snippet_text,
-                "char_start": -1 if char_start is None else char_start,
-                "char_end": -1 if char_end is None else char_end,
-            }
-
-            # 字段本身设为一个“干净”的文本（或者你也可以设为 snippet_text）
-            parsed[field] = snippet_text or None
-
-        else:
-            # 其他类型（list, int, etc.）不符合预期，先强制转成字符串
-            parsed[field] = str(val)
-
-    parsed["snippets"] = snippets
-    return parsed
-
-
-def validate_and_enrich(extracted: dict, page_text: str) -> dict:
-    """
-    对 LLM 抽取结果做一些简单校验和后处理：
-      - email 格式校验
-      - duration 简单标准化
-      - snippet 文本是否真的出现在原文中
-      - courses 字段从 list[str] 转为 list[{"name": ..., "description": ...}]
-      - 填补 confidence / notes
+    combined_text:
+        我们传给 LLM 的整体文本（主 + 子页面 + 详情），用于
+        - snippet 校验
+        - 从文本反推出更合理的 school 名称
     """
     notes = extracted.get("notes") or ""
 
-    # email validation / 邮箱格式校验
+    # --- email validation -----------------------------------------------------
     email = extracted.get("contact_email")
     if email:
-        if not isinstance(email, str) or not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+        if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
             extracted["contact_email"] = None
             notes += "contact_email_invalid;"
 
-    # duration normalization / 学制正则抽取
-    duration = extracted.get("duration")
-    if isinstance(duration, str):
-        m = re.search(r"(\d+\s*(year|years|month|months))", duration, re.I)
+    # --- duration normalization ----------------------------------------------
+    if extracted.get("duration"):
+        m = re.search(r"(\d+\s*(year|years|month|months))", extracted["duration"], re.I)
         if m:
             extracted.setdefault("duration_normalized", m.group(1))
 
-    # snippet sanity / 片段是否真的在原文中
+    # --- snippet sanity check -------------------------------------------------
     snippets = extracted.get("snippets") or {}
     for k, v in snippets.items():
-        if isinstance(v, dict) and "text" in v:
-            snippet_text = v["text"]
-            if isinstance(snippet_text, str) and snippet_text:
-                if snippet_text not in page_text:
-                    notes += f"snippet_mismatch_{k};"
+        if v and isinstance(v, dict) and "text" in v:
+            if v["text"] not in combined_text:
+                notes += f"snippet_mismatch_{k};"
 
-    # normalize courses: 如果 LLM 返回 list[str]，转成 list[dict]
+    # --- normalize courses ----------------------------------------------------
     courses = extracted.get("courses")
     if courses and isinstance(courses, list):
+        # ["A", "B", ...] -> [{"name": "A", "description": null}, ...]
         if len(courses) > 0 and isinstance(courses[0], str):
-            extracted["courses"] = [
-                {"name": c, "description": None} for c in courses
-            ]
+            extracted["courses"] = [{"name": c, "description": None} for c in courses]
 
-    # 缺省 confidence
+    # --- infer / correct school from page text -------------------------------
+    school = extracted.get("school")
+    school_lower = (school or "").lower()
+
+    GENERIC_SCHOOL_STRINGS = [
+        "graduate school",
+        "school",
+        "division",
+        "department",
+        "faculty",
+    ]
+
+    def looks_generic(s: str) -> bool:
+        s = s.strip().lower()
+        if not s:
+            return True
+        return any(g in s for g in GENERIC_SCHOOL_STRINGS)
+
+    def guess_institution_from_text(text: str) -> str | None:
+        """
+        从文本中找形如 "XXX University/College/Institute/School" 的实体。
+        """
+        pattern = re.compile(
+            r"([A-Z][A-Za-z&,\- ]{1,80}\s("
+            r"University|College|Institute|School"
+            r"))"
+        )
+        matches = list(pattern.finditer(text))
+        if not matches:
+            return None
+
+        def score(m):
+            val = m.group(0)
+            if "University" in val:
+                base = 3
+            elif "College" in val or "Institute" in val:
+                base = 2
+            else:
+                base = 1
+            length_penalty = len(val) / 100.0
+            return base - length_penalty
+
+        best = max(matches, key=score)
+        return best.group(1).strip()
+
+    needs_override = (school is None) or looks_generic(school_lower)
+    if needs_override:
+        inferred_school = guess_institution_from_text(combined_text)
+        if inferred_school:
+            prev = school
+            extracted["school"] = inferred_school
+            if prev:
+                notes += f"school_overridden_from_{prev}_to_{inferred_school};"
+            else:
+                notes += f"school_inferred_as_{inferred_school};"
+
+    extracted["notes"] = notes if notes else None
+
     if extracted.get("confidence") is None:
         extracted["confidence"] = 0.5
 
-    extracted["notes"] = notes if notes else None
     return extracted
 
 
-# ==========================
-# Helpers / 其他辅助函数
-# ==========================
-
 def domain_slug(url: str) -> str:
-    """
-    Turn a URL into a filesystem-friendly domain slug.
-    """
-    netloc = urlparse(url).netloc
-    return netloc.replace(":", "_")
+    return urlparse(url).netloc.replace(":", "_")
 
 
-def save_final_doc(doc: CorpusDoc, domain: str, checksum: str):
-    """
-    Serialize a CorpusDoc into a JSON file.
-
-    将最终结构化结果 CorpusDoc 序列化为 JSON 文件，保存路径格式如下：
-        dataset/graduate_programs/{domain}/
-            {UTC时间}_{前12位checksum}.json
-
-    This keeps the dataset clean and consistent:
-    - Raw snapshots (HTML/PDF) remain under out/cache/
-    - LLM raw outputs stay in out/llm_cache/
-    - Final structured corpus goes to dataset/graduate_programs/
-    """
-    BASE_CORPUS_DIR = "dataset/graduate_programs"
-
-    # 1) 目录：dataset/graduate_programs/{domain}
-    dirpath = os.path.join(BASE_CORPUS_DIR, domain)
+def save_final_doc(doc: CorpusDoc, domain: str, checksum: str) -> str:
+    base_dir = os.path.join("dataset", "graduate_programs")
+    dirpath = os.path.join(base_dir, domain)
     os.makedirs(dirpath, exist_ok=True)
 
-    # 2) 文件名：{UTC时间}_{前12位checksum}.json
     filename = f"{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}_{checksum[:12]}.json"
     path = os.path.join(dirpath, filename)
 
-    # 3) 用 Pydantic v2 -> Python dict
-    data = doc.model_dump(mode="python")
-
-    # 4) 用标准库 json 序列化，default=str 解决 datetime 无法序列化问题
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,  # 保留中文，不转义
-            indent=2,            # pretty print
-            default=str,         # <- 关键：datetime 等特殊类型转成字符串
-        )
+        json.dump(doc.model_dump(mode="json"), f, ensure_ascii=False, indent=2)
 
     return path
 
 
-# ==========================
-# 核心处理逻辑：每个 seed URL
-# ==========================
+# --------------------------------------------
+# Core Logic
+# --------------------------------------------
 
 def process_seed(url: str):
     try:
-        print("Crawling:", url)
+        print("Crawling main page:", url)
         snapshot_path, content, content_type = utils.crawl_url(url)
         domain = domain_slug(url)
         checksum = utils.sha256_bytes(content)
 
         title = ""
-        text = ""
+        main_text = ""
+
+        # Step 1: main page text extraction
         if "pdf" in content_type or url.lower().endswith(".pdf"):
-            text = utils.extract_text_from_pdf_path(snapshot_path)
+            main_text = utils.extract_text_from_pdf_path(snapshot_path)
         else:
-            title, text = utils.extract_text_from_html_bytes(content)
+            title, main_text = utils.extract_text_from_html_bytes(content)
 
-        # Prefilter / 预筛选（现在只是打印 warning，不真正跳过）
-        if not utils.simple_prefilter(text):
-            print("Prefilter: unlikely target page, but still proceeding with GPT for PoC.")
-
-        # Chunking / 文本切块
-        chunks_raw = utils.chunk_text_by_words(text or "", max_words=400, overlap=100)
-
-        # Aggregate relevant text for single LLM call (cap length).
-        combined = ""
-        for c in chunks_raw:
-            combined += c["text"] + "\n\n"
-            if len(combined) > 30000:
-                break
-        combined = combined[:30000]
-
-        # Build LLM messages
-        messages = prompt_for_text(combined, url)
-        phash = prompt_hash(SYSTEM_PROMPT, messages[1]["content"])
-
-        # Cache check / LLM 调用缓存
-        cached = False
-        cached_resp = utils.load_llm_cache(phash, checksum)
-        resp_text = None
-
-        if cached_resp:
-            resp_text = cached_resp
-            cached = True
-            print("Using cached LLM response.")
-        else:
+        # Step 2: discover course/curriculum subpages
+        subpage_texts: list[str] = []
+        if "html" in content_type:
             try:
-                resp_text = call_gpt_chat(
-                    messages,
-                    model=GPT_MODEL_NAME,
-                    temperature=0.0,
-                    max_tokens=2000,
+                candidate_subpages = utils.find_candidate_course_subpages(
+                    html_bytes=content,
+                    base_url=url,
+                    max_links=5,   # 控制在 5 个以内，防止太慢
                 )
             except Exception as e:
-                print("LLM call failed:", e)
-                resp_text = None
+                print("  Error while finding candidate subpages:", e)
+                candidate_subpages = []
 
-        llm_response_path = None
-        parsed = None
+            if candidate_subpages:
+                print("  Found candidate course/curriculum subpages:")
+                for su in candidate_subpages:
+                    print("   -", su)
 
-        if resp_text:
-            llm_response_path = utils.save_llm_cache(phash, checksum, resp_text)
-            parsed = try_parse_json(resp_text)
+            for su in candidate_subpages:
+                try:
+                    sub_snap, sub_content, sub_ct = utils.crawl_url(su)
+                    if "pdf" in sub_ct or su.lower().endswith(".pdf"):
+                        sub_text = utils.extract_text_from_pdf_path(sub_snap)
+                    else:
+                        _, sub_text = utils.extract_text_from_html_bytes(sub_content)
+                    if sub_text and sub_text.strip():
+                        subpage_texts.append(sub_text)
+                except Exception as e:
+                    print("  Error fetching subpage:", su, e)
 
-        # 如果完全解析失败，用一个兜底空结构
-        if not isinstance(parsed, dict):
+        # Step 3: merge main + subpages
+        combined_text_for_llm = main_text or ""
+        for txt in subpage_texts:
+            combined_text_for_llm += "\n\n" + txt
+
+        # v3: discover course detail pages (bounded)
+        parsed_base = urlparse(url)
+        base_domain = parsed_base.netloc
+
+        detail_descs = utils.discover_course_detail_pages(
+            combined_text_for_llm,
+            base_domain,
+            max_courses=8,
+            max_candidates_per_course=2,
+        )
+
+        for cname, desc in detail_descs.items():
+            combined_text_for_llm += (
+                f"\n\n==== COURSE DETAIL START ({cname}) ====\n"
+                f"{desc}\n"
+                f"==== COURSE DETAIL END ({cname}) ====\n"
+            )
+
+        if not combined_text_for_llm.strip():
+            print("  Empty extracted text; skipping LLM.")
+            doc = CorpusDoc(
+                id=f"{domain}_{checksum[:12]}",
+                source_url=url,
+                raw_snapshot_path=snapshot_path,
+                content_type=content_type,
+                crawl_date=datetime.utcnow(),
+                checksum=checksum,
+                language=None,
+                title=title,
+                raw_text=main_text,
+                extracted_fields=ExtractedFields(),
+                snippets={},
+                chunks=[],
+                llm_calls=[],
+                provenance_notes="Empty text; no LLM call.",
+                notes=None,
+            )
+            path = save_final_doc(doc, domain, checksum)
+            print("Saved minimal doc:", path)
+            return
+
+        # Step 4: prefilter
+        if not utils.simple_prefilter(combined_text_for_llm):
+            print("Prefilter: unlikely target page, but still using GPT for PoC.")
+
+        # Step 5: chunking
+        chunks_raw = utils.chunk_text_by_words(
+            combined_text_for_llm,
+            max_words=400,
+            overlap=100,
+        )
+
+        # Step 6: build prompt text (cap length)
+        combined_for_prompt = ""
+        for c in chunks_raw:
+            combined_for_prompt += c["text"] + "\n\n"
+            if len(combined_for_prompt) > 30000:
+                break
+
+        combined_for_prompt = combined_for_prompt[:30000]
+
+        messages = prompt_for_text(combined_for_prompt, url)
+        phash = prompt_hash(SYSTEM_PROMPT, messages[1]["content"])
+
+        # Step 7: LLM cache + call
+        cached = False
+        cached_resp = utils.load_llm_cache(phash, checksum)
+
+        if cached_resp:
+            print("Using cached LLM response.")
+            resp_text = cached_resp
+            cached = True
+        else:
+            resp_text = call_gpt_chat(
+                messages,
+                model="gpt-4o",
+                temperature=0.0,
+                max_tokens=2000,
+            )
+            if resp_text:
+                utils.save_llm_cache(phash, checksum, resp_text)
+
+        parsed = try_parse_json(resp_text) if resp_text else None
+
+        if parsed is None:
             parsed = {
                 "program_name": None,
                 "duration": None,
@@ -343,72 +362,49 @@ def process_seed(url: str):
                 "features": None,
                 "contact_email": None,
                 "language": None,
+                "school": None,
                 "source_url": url,
                 "snippets": {},
                 "confidence": 0.0,
                 "notes": "llm_failed_or_no_json",
             }
 
-        # 先做字段规范化，再做校验 / 富化
-        parsed = normalize_parsed_fields(parsed)
-        parsed = validate_and_enrich(parsed, text or "")
+        parsed = validate_and_enrich(parsed, combined_text_for_llm)
 
-        # Embeddings for chunks (optional)
-        chunks = []
-        texts_for_embed = [c["text"] for c in chunks_raw]
-        embeddings = None
-        if texts_for_embed:
-            try:
-                embeddings = utils.get_embedding_for_texts(texts_for_embed)
-            except Exception:
-                embeddings = None
-
+        # Step 8: chunks only (embeddings disabled for speed)
+        chunks: list[Chunk] = []
         for i, c in enumerate(chunks_raw):
-            vector_id = None
-            if embeddings is not None:
-                import numpy as np
-                os.makedirs("vectors", exist_ok=True)
-                vec_fname = f"vectors/{domain}_{checksum[:8]}_chunk{i:04d}.npy"
-                np.save(vec_fname, embeddings[i])
-                vector_id = vec_fname
-
-            ch = Chunk(
-                chunk_id=f"{domain}_{checksum[:8]}_{i:04d}",
-                text=c["text"],
-                char_start=c["char_start"],
-                char_end=c["char_end"],
-                token_count=c["token_count"],
-                vector_id=vector_id,
-            )
-            chunks.append(ch)
-
-        # 构造 snippets 对象（注意做一次防守性处理）
-        raw_snippets = parsed.get("snippets") or {}
-        snippet_objs = {}
-        for k, v in raw_snippets.items():
-            if not isinstance(v, dict):
-                continue
-            text_val = v.get("text", "") if isinstance(v.get("text"), str) else ""
-            cs = v.get("char_start", -1)
-            ce = v.get("char_end", -1)
-            try:
-                cs_int = int(cs) if cs is not None else -1
-            except Exception:
-                cs_int = -1
-            try:
-                ce_int = int(ce) if ce is not None else -1
-            except Exception:
-                ce_int = -1
-            snippet_objs[k] = Snippet(
-                text=text_val,
-                char_start=cs_int,
-                char_end=ce_int,
+            chunks.append(
+                Chunk(
+                    chunk_id=f"{domain}_{checksum[:8]}_{i:04d}",
+                    text=c["text"],
+                    char_start=c["char_start"],
+                    char_end=c["char_end"],
+                    token_count=c["token_count"],
+                    vector_id=None,  # 不生成 embedding
+                )
             )
 
-        # 构造 ExtractedFields（使用 model_fields 替代 __fields__ 以兼容 Pydantic v2）
+        # only keep keys that belong to ExtractedFields (pydantic v2: model_fields)
         extracted_fields = ExtractedFields(
             **{k: v for k, v in parsed.items() if k in ExtractedFields.model_fields}
         )
+
+        snippet_objs = {
+            k: Snippet(**v)
+            for k, v in (parsed.get("snippets") or {}).items()
+            if isinstance(v, dict)
+        }
+
+        llm_calls = [
+            LLMCall(
+                prompt_hash=phash,
+                model="gpt-4o",
+                date=datetime.utcnow(),
+                response_raw_path=None,
+                cached=cached,
+            )
+        ]
 
         doc = CorpusDoc(
             id=f"{domain}_{checksum[:12]}",
@@ -419,22 +415,12 @@ def process_seed(url: str):
             checksum=checksum,
             language=parsed.get("language"),
             title=title,
-            raw_text=text,
+            raw_text=main_text,
             extracted_fields=extracted_fields,
             snippets=snippet_objs,
             chunks=chunks,
-            llm_calls=[
-                LLMCall(
-                    prompt_hash=phash,
-                    model=GPT_MODEL_NAME,
-                    date=datetime.utcnow(),
-                    response_raw_path=llm_response_path,
-                    cached=cached,
-                )
-            ],
-            provenance_notes=(
-                "Pipeline v2: crawl + GPT extraction + optional sentence-transformers embedding."
-            ),
+            llm_calls=llm_calls,
+            provenance_notes="Pipeline v3: main + subpages + bounded course-detail discovery.",
             notes=None,
         )
 
@@ -445,19 +431,21 @@ def process_seed(url: str):
         print("Error processing seed:", url, e)
 
 
-# ==========================
-# main
-# ==========================
+# --------------------------------------------
+# CLI Entry
+# --------------------------------------------
 
 def main(seeds_file: str):
     with open(seeds_file, "r", encoding="utf-8") as f:
         seeds = [l.strip() for l in f if l.strip() and not l.startswith("#")]
-    for s in seeds:
-        process_seed(s)
+
+    for url in seeds:
+        process_seed(url)
 
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python pipeline_Version2.py seeds_example_Version2.txt")
         sys.exit(1)
+
     main(sys.argv[1])

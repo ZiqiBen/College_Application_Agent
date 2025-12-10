@@ -1,0 +1,46 @@
+{
+  "id": "www.purdue.edu_e92ad676d69e",
+  "source_url": "https://www.purdue.edu/academics/ogsps/admissions/gradrequirements/westlafayette/biological-sciences/",
+  "raw_snapshot_path": "out/cache\\20251210T011433Z_e92ad676d69e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T01:14:36.167076",
+  "checksum": "e92ad676d69e6fe93a7fbf562c39b5fb00aeab2708449752b435237b51555682",
+  "language": null,
+  "title": "Biological Sciences",
+  "raw_text": "Biological Sciences",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Biological Sciences",
+    "duration": null,
+    "school": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.purdue.edu_e92ad676_0000",
+      "text": "Biological Sciences",
+      "char_start": 0,
+      "char_end": 19,
+      "token_count": 2,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "a7c791e865eba7024d7b82d1de3bdbd1138f8076ba016742e4a5f12ae9df4cdf",
+      "model": "gpt-4o",
+      "date": "2025-12-10T01:14:36.167076",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

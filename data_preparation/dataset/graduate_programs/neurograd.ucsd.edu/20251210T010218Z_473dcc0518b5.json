@@ -1,0 +1,115 @@
+{
+  "id": "neurograd.ucsd.edu_473dcc0518b5",
+  "source_url": "https://neurograd.ucsd.edu/apply/application-info.html",
+  "raw_snapshot_path": "out/cache\\20251210T010204Z_473dcc0518b5.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T01:02:18.313969",
+  "checksum": "473dcc0518b5d54f9adfc4b2b2206bfaa0adfe19daa41d9a5133cc27fb8cf481",
+  "language": "English",
+  "title": "How to Apply",
+  "raw_text": "HOME\nApply\nHow to Apply\nNeuroscience Ph.D Application Guide\nThe Neurosciences graduate program recruits students from diverse backgrounds in the life sciences. Though, we gladly welcome applicants from diverse fields of study. Although there are no strict course requirements for admission, a suggested undergraduate preparation includes at least one year each of general biology, calculus and physics, two years of chemistry (general, physical, or organic), as well as advanced course work in other areas of science, such as biophysics, biochemistry, cell biology, genetics, molecular biology, neurobiology, microbiology, and immunology.\nApplication Deadline: November 24, 2025 at 11:59 PM (Local Time Zone).\nApplication Opens: September 3, 2025\nAll application materials must be received by the deadline. Incomplete applications will not be considered.\nBefore beginning your application, please review our FAQs as well as the information on the\nUC San Diego Graduate Admissions Website\nHow to Apply\n1)\nUC San Diego Graduate Application\nCreate an account at gradapply.ucsd.edu\nComplete all requested information of the online application\nSelect: Neuroscience (NE75) as the program of study\nMake sure to complete our department questions\nPrevious UCSD Graduate Students need to contact our office for submission -\nneurograd@health.ucsd.edu\nApplication Fee: ($135 U.S. citizens and permanent residents; $155 international)\n2) Statement of Purpose (750 word limit)\nFrom your Statement of Purpose, we hope to get a sense of what drives and motivates your passion for neuroscience research. To that end, writing about how your interest in the field developed can be insightful. In addition, please feel free to take this opportunity to discuss both the ups and downs of your path into scientific research or any perceived shortcomings in your application.\nHow did your life trajectory lead to applying to graduate school at UC San Diego? What drives your interest and passion for neuroscience?\n3) Research Statement (750 word limit)\nIf you have research experience, describe how this has shaped your scientific thinking. What are the neuroscience research questions you have worked on in the past? What outstanding questions in neuroscience would like to address with your future research? Focus on the science and approach. Assume an ideal scenario in which money, resources, etc. are not a concern.\nIn your research statement, try to refrain from listing all the techniques you have learned. Instead, tell us about what questions you have focused on, how you addressed them experimentally or analytically, and how your findings fit into the broader knowledge base of the field. Discuss experiences when your experiments answered a question (i.e., “worked”), as well as how you experienced times when experiments failed or offered ambiguous results. Describe the type of neuroscience research you would like to pursue during your PhD. As appropriate for you, contextualize these goals in terms of your past research, course work, life experience, and/or the environment at UC San Diego.\n4) Letters of Recommendation (3)\nYou are required to submit three letters of recommendation. Letters are encouraged to be from individuals who have supervised work in a research or academic setting.\nYou can submit your application without the letters of recommendation submitted\nIt is the responsibility of the applicant to ensure the recommenders can submit their letters by the deadline\n5) Exam Scores\nThe\nGRE\nis not required.\nInternational Applicants:\nSubmit Evidence of English Language Proficiency. Review the Eligible Exams here:\nhttps://grad.ucsd.edu/admissions/requirements/international-students/english-proficiency.html\nExceptions:\nYou may be exempt if your received a 3.0 or higher from:\nA regionally accredited U.S. college or university where English is the sole language of instruction,\nor\nA foreign college or university which provides instruction solely in English. You may verify whether your institution meets this requirement by looking up your institution in the\nIAU World Higher Education Database (WHED)\n. If English is not the sole language of instruction listed, if no language is listed at all, or if the institution does not appear on the WHED website, you are required to submit English proficiency exam scores. No other documentation (e.g. letters, language certificates, school websites) may be used in place of WHED as a means to obtain an exemption from the English proficiency requirement.\n6) Resume/Curriculum Vitae\nSubmit your most recent CV. You may also want to include any awards, summer research, presentations, prizes, etc.\nContact\nAddress inquiries to:\nNeurosciences Graduate Program\nUniversity of California, San Diego\n9500 Gilman Drive 0634\nLa Jolla CA 92093-0634\nPhone: 858-534-3377 OR 858-534-7875\nFax: 858-534-8242\nE-mail:\nneurograd@health.ucsd.edu\nApply\nEvents and Interview Weekend\nHow to Apply\nApplication Support\nAdmission FAQs\nTuition, Stipend, & Benefits",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Neurosciences Ph.D",
+    "duration": "Less than 6 years",
+    "school": "University of California, San Diego",
+    "courses": [
+      {
+        "name": "Neurosciences Bootcamp",
+        "description": null
+      },
+      {
+        "name": "Basic Neuroscience Series",
+        "description": null
+      },
+      {
+        "name": "Neuroanatomy",
+        "description": null
+      },
+      {
+        "name": "Research Rounds",
+        "description": null
+      },
+      {
+        "name": "Journal Club",
+        "description": null
+      },
+      {
+        "name": "Scientific Ethics",
+        "description": null
+      },
+      {
+        "name": "Minor Proposition",
+        "description": null
+      },
+      {
+        "name": "Teaching Apprenticeship",
+        "description": null
+      },
+      {
+        "name": "Neuroscience Special Topics",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "Application Deadline: November 24, 2025. Application Fee: $135 for U.S. citizens and permanent residents; $155 for international applicants. Statement of Purpose, Research Statement, 3 Letters of Recommendation, Evidence of English Language Proficiency for international applicants, Resume/Curriculum Vitae.",
+    "features": "The program recruits students from diverse backgrounds in the life sciences and other fields. No strict course requirements for admission. Offers a Computational Neuroscience Specialization and MD/Ph.D. in Neuroscience.",
+    "contact_email": "neurograd@health.ucsd.edu",
+    "language": "English",
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "neurograd.ucsd.edu_473dcc05_0000",
+      "text": "HOME Apply How to Apply Neuroscience Ph.D Application Guide The Neurosciences graduate program recruits students from diverse backgrounds in the life sciences. Though, we gladly welcome applicants from diverse fields of study. Although there are no strict course requirements for admission, a suggested undergraduate preparation includes at least one year each of general biology, calculus and physics, two years of chemistry (general, physical, or organic), as well as advanced course work in other areas of science, such as biophysics, biochemistry, cell biology, genetics, molecular biology, neurobiology, microbiology, and immunology. Application Deadline: November 24, 2025 at 11:59 PM (Local Time Zone). Application Opens: September 3, 2025 All application materials must be received by the deadline. Incomplete applications will not be considered. Before beginning your application, please review our FAQs as well as the information on the UC San Diego Graduate Admissions Website How to Apply 1) UC San Diego Graduate Application Create an account at gradapply.ucsd.edu Complete all requested information of the online application Select: Neuroscience (NE75) as the program of study Make sure to complete our department questions Previous UCSD Graduate Students need to contact our office for submission - neurograd@health.ucsd.edu Application Fee: ($135 U.S. citizens and permanent residents; $155 international) 2) Statement of Purpose (750 word limit) From your Statement of Purpose, we hope to get a sense of what drives and motivates your passion for neuroscience research. To that end, writing about how your interest in the field developed can be insightful. In addition, please feel free to take this opportunity to discuss both the ups and downs of your path into scientific research or any perceived shortcomings in your application. How did your life trajectory lead to applying to graduate school at UC San Diego? What drives your interest and passion for neuroscience? 3) Research Statement (750 word limit) If you have research experience, describe how this has shaped your scientific thinking. What are the neuroscience research questions you have worked on in the past? What outstanding questions in neuroscience would like to address with your future research? Focus on the science and approach. Assume an ideal scenario in which money, resources, etc. are not a concern. In your research statement, try to refrain from listing all the techniques you have learned. Instead, tell us about what questions you have focused on, how you addressed them experimentally or analytically, and how your findings fit into the broader",
+      "char_start": 0,
+      "char_end": 2646,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "neurograd.ucsd.edu_473dcc05_0001",
+      "text": "word limit) If you have research experience, describe how this has shaped your scientific thinking. What are the neuroscience research questions you have worked on in the past? What outstanding questions in neuroscience would like to address with your future research? Focus on the science and approach. Assume an ideal scenario in which money, resources, etc. are not a concern. In your research statement, try to refrain from listing all the techniques you have learned. Instead, tell us about what questions you have focused on, how you addressed them experimentally or analytically, and how your findings fit into the broader knowledge base of the field. Discuss experiences when your experiments answered a question (i.e., “worked”), as well as how you experienced times when experiments failed or offered ambiguous results. Describe the type of neuroscience research you would like to pursue during your PhD. As appropriate for you, contextualize these goals in terms of your past research, course work, life experience, and/or the environment at UC San Diego. 4) Letters of Recommendation (3) You are required to submit three letters of recommendation. Letters are encouraged to be from individuals who have supervised work in a research or academic setting. You can submit your application without the letters of recommendation submitted It is the responsibility of the applicant to ensure the recommenders can submit their letters by the deadline 5) Exam Scores The GRE is not required. International Applicants: Submit Evidence of English Language Proficiency. Review the Eligible Exams here: https://grad.ucsd.edu/admissions/requirements/international-students/english-proficiency.html Exceptions: You may be exempt if your received a 3.0 or higher from: A regionally accredited U.S. college or university where English is the sole language of instruction, or A foreign college or university which provides instruction solely in English. You may verify whether your institution meets this requirement by looking up your institution in the IAU World Higher Education Database (WHED) . If English is not the sole language of instruction listed, if no language is listed at all, or if the institution does not appear on the WHED website, you are required to submit English proficiency exam scores. No other documentation (e.g. letters, language certificates, school websites) may be used in place of WHED as a means to obtain an exemption from the English proficiency requirement. 6) Resume/Curriculum Vitae Submit your most recent CV. You may also want to include any awards, summer research, presentations, prizes, etc. Contact Address",
+      "char_start": 2017,
+      "char_end": 4662,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "neurograd.ucsd.edu_473dcc05_0002",
+      "text": "up your institution in the IAU World Higher Education Database (WHED) . If English is not the sole language of instruction listed, if no language is listed at all, or if the institution does not appear on the WHED website, you are required to submit English proficiency exam scores. No other documentation (e.g. letters, language certificates, school websites) may be used in place of WHED as a means to obtain an exemption from the English proficiency requirement. 6) Resume/Curriculum Vitae Submit your most recent CV. You may also want to include any awards, summer research, presentations, prizes, etc. Contact Address inquiries to: Neurosciences Graduate Program University of California, San Diego 9500 Gilman Drive 0634 La Jolla CA 92093-0634 Phone: 858-534-3377 OR 858-534-7875 Fax: 858-534-8242 E-mail: neurograd@health.ucsd.edu Apply Events and Interview Weekend How to Apply Application Support Admission FAQs Tuition, Stipend, & Benefits HOME Student Handbook Course Planning NGP Course Planning Questions? Book an Advising Appointment Core Neuroscience Foundations Course # Course Title Required Units NEUG 210 Neurosciences Bootcamp 4 NEUG 200 A/B/C Basic Neuroscience Series 12 Total NEUG 257 Neuroanatomy 4 NEUG 276 Research Rounds (6 Quarters) 6 NEUG 221 Journal Club 2 Varied Statistics (BGGN 216, BGGN 240, BGGN 249A, PSYC 201A/B/C, COGS 209) 4 Graduate Research Competencies Course # Course Title/Requirement Units PATH 244 Scientific Ethics 4 NEUG 280 Minor Proposition 4 Varied Elective – Graduate Level STEM Course 8 Varied Elective - Literature (NEUG 221) 2 NEUG 500* Teaching Apprenticeship 4-6 Advanced Topics/Electives NEUG 221: Neuroscience Special Topics Offered Quarterly Reminders Neuro Grad Program Weekly Seminar Series Tuesdays, 4:00 pm - 5:00 pm CNCB, Marilyn G. Farquhar Seminar Room OR via Zoom Journal Club Mondays, 5:30 pm Rotations and Research Rotation and Research Course [First Year Students] NEUG 296: When enrolling for a 296 section with your advisor, please make sure to use the “NEUG” section. If there is not a “NEUG 296” section with your Faculty Advisor please email neurograd@ucsd.edu and one will be created for your rotation. If you are unsure who to rotate with, please consult the Program Administrator. You may explore rotations that are outside of the NGP Faculty group. NEUG 299: When enrolling for a 299 section with your advisor, please make sure to use the “NEUG” section. If there is not a “NEUG 299” section with your Faculty Advisor please email neurograd@ucsd.edu and one will be created for your advisor. NEUG",
+      "char_start": 4040,
+      "char_end": 6616,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "neurograd.ucsd.edu_473dcc05_0003",
+      "text": "advisor, please make sure to use the “NEUG” section. If there is not a “NEUG 296” section with your Faculty Advisor please email neurograd@ucsd.edu and one will be created for your rotation. If you are unsure who to rotate with, please consult the Program Administrator. You may explore rotations that are outside of the NGP Faculty group. NEUG 299: When enrolling for a 299 section with your advisor, please make sure to use the “NEUG” section. If there is not a “NEUG 299” section with your Faculty Advisor please email neurograd@ucsd.edu and one will be created for your advisor. NEUG 299 with your PI for 12 units if you're done with NGP courses. The “G” needs to be there. NEU 299 is not for NGP. As always, make sure to enroll in 12 units of graduate level courses (200 level or above) to be considered full time and eligible for financial support Student Handbook Course Planning 2024-2025 NEUG Courses NGP Course History NGP Course Catalog Program Requirements Other Resources NGP Handbook HOME Student Handbook Program Requirements Graduate Student Handbook Neurosciences Ph.D Overview Each student in the Neurosciences Graduate Program is expected to make normal progress toward the Ph.D., as evidenced by meeting the Program’s degree requirements at a reasonable pace and with a high level of performance. Under most circumstances, students should be able to earn the Ph.D. in less than 6 years. Degree Requirements Core Coursework Pre-Thesis Committee Annual Evaluation Doctoral Committee Advancement to Candidacy Dissertation Defense Student Handbook Course Planning Program Requirements Exams and Evaluations Curricular Requirements Degree Plan and Timeline Computational Neuroscience Specialization MD. Ph.D. in Neuroscience Other Resources NGP Handbook HOME Events and Outreach Conferences & Courses Conferences & Courses Conferences Neuroscience Society for Neuroscience (SfN) Gordon Research Conferences Cold Spring Harbor Laboratory Meetings & Conferences Federation of European Neuroscience Societies (FENS) Annual Biomedical Research Conference for Minority Students (ABRCMS) Society for Advancement of Chicanos/Hispanics and Native Americans in Science (SACNAS) Enhancing Neuroscience Diversity through Undergraduate Research Education Experiences (ENDURE) Computational Neuroscience Computation and Systems Neuroscience (COSYNE) Neural Information Processing Systems (NeurIPS) Funding for Conference Travel UCSD Travel Grants Graduate Student Association (GSA) Travel Grants Society for Neuroscience Travel Grants SfN Trainee Professional Development Award (TPDA) Bio-Techne Plexon HelloBio Jackson ImmunoResearch Novus Biologicals Courses & Workshops Neuroscience Neural Systems and Behavior (MBL, Woods Hole, MA) Neurobiology (MBL, Woods Hole, MA) Imaging Structure & Function in the",
+      "char_start": 6029,
+      "char_end": 8837,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "neurograd.ucsd.edu_473dcc05_0004",
+      "text": "Federation of European Neuroscience Societies (FENS) Annual Biomedical Research Conference for Minority Students (ABRCMS) Society for Advancement of Chicanos/Hispanics and Native Americans in Science (SACNAS) Enhancing Neuroscience Diversity through Undergraduate Research Education Experiences (ENDURE) Computational Neuroscience Computation and Systems Neuroscience (COSYNE) Neural Information Processing Systems (NeurIPS) Funding for Conference Travel UCSD Travel Grants Graduate Student Association (GSA) Travel Grants Society for Neuroscience Travel Grants SfN Trainee Professional Development Award (TPDA) Bio-Techne Plexon HelloBio Jackson ImmunoResearch Novus Biologicals Courses & Workshops Neuroscience Neural Systems and Behavior (MBL, Woods Hole, MA) Neurobiology (MBL, Woods Hole, MA) Imaging Structure & Function in the Nervous System (CSHL, NY) Quantitative Imaging (CSHL, NY) Cold Spring Harbor Laboratory Courses (CSHL, NY) Junior Scientist Workshop on Mechanistic Cognitive Neuroscience (Janelia, Ashburn, VA) Computational Neuroscience Methods in Computational Neuroscience (MBL, Woods Hole, MA) Brains, Minds, and Machines (MBL, Woods Hole, MA) Cajal Course in Computational Neuroscience (Lisbon, Portugal) Computational and Cognitive Neuroscience Summer School (Suzhou, China) OIST Computational Neuroscience Course (Okinawa, Japan) Computational Neuroscience: Vision (CSHL, NY) Summer Workshop on the Dynamic Brain (Friday Harbor, WA) Summer School in Computational Sensory-Motor Neuroscience (Ontario, Canada) Junior Scientist Workshop on Mechanistic Cognitive Neuroscience (Janelia, Ashburn, VA) Events and Outreach Conferences & Courses Outreach Seminar Series Events & Activities Mailing List and Newsletter Committees",
+      "char_start": 8004,
+      "char_end": 9748,
+      "token_count": 213,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "23435790973e38060a11645cd439ef1688ff74fdb19328403b851036fab35496",
+      "model": "gpt-4o",
+      "date": "2025-12-10T01:02:18.313969",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

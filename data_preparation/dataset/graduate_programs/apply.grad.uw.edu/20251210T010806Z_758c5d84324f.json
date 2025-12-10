@@ -1,0 +1,46 @@
+{
+  "id": "apply.grad.uw.edu_758c5d84324f",
+  "source_url": "https://apply.grad.uw.edu/portal/prog_detail_find_a_program?progid=0-C-COM-00-27",
+  "raw_snapshot_path": "out/cache\\20251210T010757Z_758c5d84324f.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T01:08:06.729032",
+  "checksum": "758c5d84324f2e6c843103a729003ca4bb98444e586c98334d12ce511f142f04",
+  "language": null,
+  "title": "Program Detail - Find a Program",
+  "raw_text": "This website uses resources that are being blocked by your network. Contact your network administrator for more information.\nSkip to main content\nFind a Program\nProgram Detail\nCommunication Leadership Program (Master of Communication)\nApply Now >>\nBasic Information\nDegree Information\nDegree Offered:\nMASTER OF COMMUNICATION\nCIP Code:\n09.0101\nCampus: Seattle\nAdmission Requirements and Contact Information\nOur annual admissions process consists of multiple rounds. Please see detailed deadline and notification information for each round on our\nwebsite\n. We encourage all applicants to watch or attend an\nAdmissions Event\nbefore beginning your application\nContact Information\nHeather N. Werckle, Assistant Director of Academic Services\nProgram Website\n+1 206-543-6745\ncommlead@uw.edu\nRequirements and Prerequisites\nApplicants must meet all\nUW Graduate School minimum admissions requirements\nto be eligible for consideration.\nGRE Requirements\nGRE Requirement:\nNot Considered\n. GRE scores are not required and, if submitted, will not be considered during the admissions decision process.\nAdditional Instructions\nOur application is fully online. Please do not mail materials to the department as they will not be considered.\nRecommendation Instructions\nWe require a minimum of two recommendations, though you may submit more. We encourage a diversity of recommenders – those who can reflect on your academic, professional, and/or volunteer experience. These might be professors, employers, internship supervisors, advisors, or mentors.\nUse the “Recommendations” link on the left hand side bar to designate your recommenders.\nNon-Native English Speaker Information\nGraduate School requirement:\nEnglish language proficiency (ELP) is required for graduate study at the University of Washington. Therefore, every applicant whose native language is not English must demonstrate English language proficiency as outlined in\nGraduate School Policy 3.2\n.\nInternational Student Information\nApplicants who will need a visa should reference the\nInternational Applicant Information page\n. If admitted to the program, international students requesting an F1 or J1 visa will be required to provide\nfinancial ability documentation\nto the UW Graduate School.\nNo departmental funding available.\nProgram Deadlines\nAutumn 2026 - Domestic:\nOpen Date:\n11/01/2025\nDeadline Date:\n01/30/2026\nAutumn 2026 - International:\nOpen Date:\n11/01/2025\nDeadline Date:\n01/30/2026\nApplication Materials\nPersonal Statement\nPortfolio\n2 Recommendation(s)\nResume\nMenu",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Communication Leadership Program (Master of Communication)",
+    "duration": null,
+    "school": "University of Washington",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Applicants must meet all UW Graduate School minimum admissions requirements. GRE scores are not required. A minimum of two recommendations is required. English language proficiency is required for non-native speakers.",
+    "features": null,
+    "contact_email": "commlead@uw.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "apply.grad.uw.edu_758c5d84_0000",
+      "text": "This website uses resources that are being blocked by your network. Contact your network administrator for more information. Skip to main content Find a Program Program Detail Communication Leadership Program (Master of Communication) Apply Now >> Basic Information Degree Information Degree Offered: MASTER OF COMMUNICATION CIP Code: 09.0101 Campus: Seattle Admission Requirements and Contact Information Our annual admissions process consists of multiple rounds. Please see detailed deadline and notification information for each round on our website . We encourage all applicants to watch or attend an Admissions Event before beginning your application Contact Information Heather N. Werckle, Assistant Director of Academic Services Program Website +1 206-543-6745 commlead@uw.edu Requirements and Prerequisites Applicants must meet all UW Graduate School minimum admissions requirements to be eligible for consideration. GRE Requirements GRE Requirement: Not Considered . GRE scores are not required and, if submitted, will not be considered during the admissions decision process. Additional Instructions Our application is fully online. Please do not mail materials to the department as they will not be considered. Recommendation Instructions We require a minimum of two recommendations, though you may submit more. We encourage a diversity of recommenders – those who can reflect on your academic, professional, and/or volunteer experience. These might be professors, employers, internship supervisors, advisors, or mentors. Use the “Recommendations” link on the left hand side bar to designate your recommenders. Non-Native English Speaker Information Graduate School requirement: English language proficiency (ELP) is required for graduate study at the University of Washington. Therefore, every applicant whose native language is not English must demonstrate English language proficiency as outlined in Graduate School Policy 3.2 . International Student Information Applicants who will need a visa should reference the International Applicant Information page . If admitted to the program, international students requesting an F1 or J1 visa will be required to provide financial ability documentation to the UW Graduate School. No departmental funding available. Program Deadlines Autumn 2026 - Domestic: Open Date: 11/01/2025 Deadline Date: 01/30/2026 Autumn 2026 - International: Open Date: 11/01/2025 Deadline Date: 01/30/2026 Application Materials Personal Statement Portfolio 2 Recommendation(s) Resume Menu",
+      "char_start": 0,
+      "char_end": 2523,
+      "token_count": 347,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "63b1d2c3875b4ec7b0b0449eff7ccf9821dc18000fa7b3c657adba07b2174ec7",
+      "model": "gpt-4o",
+      "date": "2025-12-10T01:08:06.729032",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

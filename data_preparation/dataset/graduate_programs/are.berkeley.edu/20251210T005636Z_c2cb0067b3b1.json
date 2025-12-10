@@ -1,0 +1,95 @@
+{
+  "id": "are.berkeley.edu_c2cb0067b3b1",
+  "source_url": "https://are.berkeley.edu/graduate-program",
+  "raw_snapshot_path": "out/cache\\20251210T005629Z_c2cb0067b3b1.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:56:36.174628",
+  "checksum": "c2cb0067b3b15de8f493d27daa53b737dccd7f797c2715d40f33f2cfb6ebabd9",
+  "language": null,
+  "title": "Graduate Program | Agricultural & Resource Economics",
+  "raw_text": "Skip to main content\nGraduate Program\nWhy study at UC Berkeley's Department of Agricultural and Resource Economics?\nOur graduate program in agricultural and resource economics produces outstanding researchers in development economics, environmental and energy economics, international trade, and agricultural and resource policy.\nStudents enrolling in our doctoral program complete a rigorous course of study, including microeconomic theory (offered by the Department of Economics), econometrics, and field courses offered by ARE, the Department of Economics, and the Haas School of Business. A number of our graduate students also take doctoral-level courses in the Department of Statistics.\nRead a\nletter to prospective graduate students\nfrom the chair of our department.\nWhy ARE?\nVideo of Why ARE?\nCheck out this video for advice from current and former students.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Graduate Program in Agricultural and Resource Economics",
+    "duration": null,
+    "school": "ARE, the Department of Economics, and the Haas School",
+    "courses": [
+      {
+        "name": "Microeconomic Theory",
+        "description": null
+      },
+      {
+        "name": "Econometrics",
+        "description": null
+      },
+      {
+        "name": "Econ 140",
+        "description": "topics like in Econ 141 and in EEP118"
+      },
+      {
+        "name": "Econ 141",
+        "description": "topics like in EEP 118, more math-intensive"
+      },
+      {
+        "name": "Econ 142",
+        "description": "public policy focused, also listed as POL SCI C131A/PUB POL C142"
+      },
+      {
+        "name": "Econ 143",
+        "description": "after EEP 118 with more advanced methods, requires EEP 118 or equivalent"
+      },
+      {
+        "name": "Econ 148",
+        "description": "Data Sciences for Economists"
+      },
+      {
+        "name": "Econ 171",
+        "description": "Dev Econ applied class, requires EEP118 or equivalent"
+      },
+      {
+        "name": "Econ 174",
+        "description": "global poverty and impact evaluation, EEP req or equivalent"
+      },
+      {
+        "name": "PubPol 240B",
+        "description": "masters level class (only MPP first, non-MPP waitlisted, see catalog)"
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "The program produces outstanding researchers in development economics, environmental and energy economics, international trade, and agricultural and resource policy.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "are.berkeley.edu_c2cb0067_0000",
+      "text": "Skip to main content Graduate Program Why study at UC Berkeley's Department of Agricultural and Resource Economics? Our graduate program in agricultural and resource economics produces outstanding researchers in development economics, environmental and energy economics, international trade, and agricultural and resource policy. Students enrolling in our doctoral program complete a rigorous course of study, including microeconomic theory (offered by the Department of Economics), econometrics, and field courses offered by ARE, the Department of Economics, and the Haas School of Business. A number of our graduate students also take doctoral-level courses in the Department of Statistics. Read a letter to prospective graduate students from the chair of our department. Why ARE? Video of Why ARE? Check out this video for advice from current and former students. EEP classes offer the opportunity to explore aspects of economics and political institutions that affect the development and management of natural resources and the environment. The focus includes both renewable resources such as food, forests, and water, and resources in fixed supply such as land and minerals. The classes adopt a problem-solving approach to these issues. The core requirement for the major is micro-economic theory and the economics of resources and the environment. These core courses are supplemented by other courses that apply the methods of social science to resource problems. The major is structured to ensure that students obtain a sufficient background in the natural and physical sciences. It also supplies training in basic mathematics, statistics, econometrics, and economics to be able to approach resource-related issues in an effective and practical manner. Consult the Course Catalog for an overview of the EEP major, degree requirements, and a plan of study. Consult the complete list of ENVECON (on page 1) and cross-listed ENVECON C classes (on pages 2 and 3) of the course catalog. If you think you might want to pursue graduate school, particularly in economics, consider taking Math 1A/B and 53 rather than 16A/B. As you progress in your degree and remain interested in graduate studies, you should then take Math 54 and 104. More advice for courses to take before pursuing a PhD in Economics. More Econometrics after EEP 118? Check out the following suggestions ​Econ 140 (topics like in Econ 141 and in EEP118) Econ 141 (topics like in EEP 118, more math-intensive) Econ 142 (public policy focused, also listed as POL SCI C131A/PUB POL C142) Econ 143 (after EEP 118",
+      "char_start": 0,
+      "char_end": 2576,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "are.berkeley.edu_c2cb0067_0001",
+      "text": "you think you might want to pursue graduate school, particularly in economics, consider taking Math 1A/B and 53 rather than 16A/B. As you progress in your degree and remain interested in graduate studies, you should then take Math 54 and 104. More advice for courses to take before pursuing a PhD in Economics. More Econometrics after EEP 118? Check out the following suggestions ​Econ 140 (topics like in Econ 141 and in EEP118) Econ 141 (topics like in EEP 118, more math-intensive) Econ 142 (public policy focused, also listed as POL SCI C131A/PUB POL C142) Econ 143 (after EEP 118 with more advanced methods, requires EEP 118 or equivalent) Econ 148 (Data Sciences for Economists) Econ 171 (Dev Econ applied class, requires EEP118 or equivalent) Econ 174 (global poverty and impact evaluation, EEP req or equivalent) PubPol 240B masters level class (only MPP first, non-MPP waitlisted, see catalog) Learn more about ECON courses in the Undergraduate Catalog Advice on courses for a PhD in Economics",
+      "char_start": 1992,
+      "char_end": 2994,
+      "token_count": 165,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "1dedbc5899d11462c52331668dfe87088055a17dfbea3ba7a099006cc04ab4c6",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:56:36.174628",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

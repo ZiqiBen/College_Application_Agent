@@ -1,0 +1,91 @@
+{
+  "id": "mga.rice.edu_742591fdf160",
+  "source_url": "https://mga.rice.edu/apply",
+  "raw_snapshot_path": "out/cache\\20251210T004830Z_742591fdf160.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:48:42.593785",
+  "checksum": "742591fdf160c776071f15ab79242711f22e393543f8be235222769fa8647026",
+  "language": "English",
+  "title": "Admissions | Master of Global Affairs | Rice University",
+  "raw_text": "HOW TO APPLY\nMGA\nAdmissions\nReady to Apply?\nCandidates are able to apply using our online system. All application documents, including statements of purpose, resumes, and letters of recommendation, can be submitted online. All applications and application documents become the confidential property of the Master of Global Affairs program and cannot be returned.\nApply Now\nThe\nEarly Decision deadline for fall 2026 applications is December 15, 2025 and the Regular Decision deadline for applications is February 15, 2026.\nApplicants are solely responsible for insuring all application materials are received by the deadline and will be notified when their application is complete.\nRecommended Background\nB.S. or B.A. degree from an accredited four-year college or university\nExcellent critical thinking skills, communication skills, and leadership skills\nApplication Requirements\n$85 Application Fee\nStatement of purpose\nProfessional resume\nThree letters of recommendation\nOfficial transcripts from all colleges and universities attended\nGRE/GMAT scores are not required.\nApproved TOEFL or IELTS scores for applicants whose native language is not English and who did not receive a degree from a country in which English is the official language of communication.\nYour Questions, Answered\nApplying to the Master in Global Affairs program at Rice University? Explore our\nfrequently asked questions\nto find answers to common questions about admissions requirements, deadlines, and more. If you don’t see what you’re looking for, our admissions team is here to help. For more information, please contact Ms. Abbey Godley (\nagodley@rice.edu\n).",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Global Affairs",
+    "duration": "two-year",
+    "school": "Rice University",
+    "courses": [
+      {
+        "name": "GLOBAL SYSTEMS I",
+        "description": null
+      },
+      {
+        "name": "INSTITUTIONS & DEVELOPMENT",
+        "description": null
+      },
+      {
+        "name": "DECISION MAKING UNDER UNCERTAINTY",
+        "description": null
+      },
+      {
+        "name": "ISSUES IN CONTEMPORARY US FOREIGN POLICY",
+        "description": null
+      },
+      {
+        "name": "QUANTITATIVE APPLICATIONS IN GLOBAL AFFAIRS",
+        "description": null
+      },
+      {
+        "name": "MACROECONOMICS IN A GLOBAL ECONOMY",
+        "description": null
+      },
+      {
+        "name": "INTERNATIONAL SECURITY",
+        "description": null
+      },
+      {
+        "name": "MASTER OF GLOBAL AFFAIRS INTERNSHIP",
+        "description": null
+      },
+      {
+        "name": "MASTER OF GLOBAL AFFAIRS CAPSTONE",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "$85 Application Fee, Statement of purpose, Professional resume, Three letters of recommendation, Official transcripts from all colleges and universities attended, Approved TOEFL or IELTS scores for applicants whose native language is not English and who did not receive a degree from a country in which English is the official language of communication.",
+    "features": "Non-thesis professional master's degree, Areas of Specialization, Graduate Field Internship Requirement, Capstone Requirement",
+    "contact_email": "agodley@rice.edu",
+    "language": "English",
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "mga.rice.edu_742591fd_0000",
+      "text": "HOW TO APPLY MGA Admissions Ready to Apply? Candidates are able to apply using our online system. All application documents, including statements of purpose, resumes, and letters of recommendation, can be submitted online. All applications and application documents become the confidential property of the Master of Global Affairs program and cannot be returned. Apply Now The Early Decision deadline for fall 2026 applications is December 15, 2025 and the Regular Decision deadline for applications is February 15, 2026. Applicants are solely responsible for insuring all application materials are received by the deadline and will be notified when their application is complete. Recommended Background B.S. or B.A. degree from an accredited four-year college or university Excellent critical thinking skills, communication skills, and leadership skills Application Requirements $85 Application Fee Statement of purpose Professional resume Three letters of recommendation Official transcripts from all colleges and universities attended GRE/GMAT scores are not required. Approved TOEFL or IELTS scores for applicants whose native language is not English and who did not receive a degree from a country in which English is the official language of communication. Your Questions, Answered Applying to the Master in Global Affairs program at Rice University? Explore our frequently asked questions to find answers to common questions about admissions requirements, deadlines, and more. If you don’t see what you’re looking for, our admissions team is here to help. For more information, please contact Ms. Abbey Godley ( agodley@rice.edu ). Degree Requirements Areas of Study | Internship and Capstone Course The Master of Global Affairs is a two-year, 36 hour, non-thesis professional master's degree. Students pursuing the MGA degree must complete: Core Requirements 1 COURSE NUMBER COURSE TITLE CREDIT HOURS GLBL 501 GLOBAL SYSTEMS I 3 GLBL 502 INSTITUTIONS & DEVELOPMENT 3 GLBL 507 DECISION MAKING UNDER UNCERTAINTY 3 GLBL 515 ISSUES IN CONTEMPORARY US FOREIGN POLICY 3 GLBL 523 QUANTITATIVE APPLICATIONS IN GLOBAL AFFAIRS 3 GLBL 524 MACROECONOMICS IN A GLOBAL ECONOMY 3 GLBL 525 INTERNATIONAL SECURITY 3 Area of Specialization 2 SELECT 1 FROM THE FOLLOWING AREAS OF SPECIALIZATION (SEE AREAS OF SPECIALIZATION BELOW): CREDIT HOURS INTERNATIONAL POLITICAL DEVELOPMENT 9 INTERNATIONAL POLITICAL ECONOMY 9 INTERNATIONAL SECURITY 9 Graduate Field Internship Requirement COURSE NUMBER COURSE TITLE CREDIT HOURS GLBL 519 MASTER OF GLOBAL AFFAIRS INTERNSHIP 3 6 Capstone Requirement COURSE NUMBER COURSE TITLE CREDIT HOURS GLBL 520 MASTER OF GLOBAL AFFAIRS CAPSTONE 4 3 Click here to learn more about",
+      "char_start": 0,
+      "char_end": 2696,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mga.rice.edu_742591fd_0001",
+      "text": "ISSUES IN CONTEMPORARY US FOREIGN POLICY 3 GLBL 523 QUANTITATIVE APPLICATIONS IN GLOBAL AFFAIRS 3 GLBL 524 MACROECONOMICS IN A GLOBAL ECONOMY 3 GLBL 525 INTERNATIONAL SECURITY 3 Area of Specialization 2 SELECT 1 FROM THE FOLLOWING AREAS OF SPECIALIZATION (SEE AREAS OF SPECIALIZATION BELOW): CREDIT HOURS INTERNATIONAL POLITICAL DEVELOPMENT 9 INTERNATIONAL POLITICAL ECONOMY 9 INTERNATIONAL SECURITY 9 Graduate Field Internship Requirement COURSE NUMBER COURSE TITLE CREDIT HOURS GLBL 519 MASTER OF GLOBAL AFFAIRS INTERNSHIP 3 6 Capstone Requirement COURSE NUMBER COURSE TITLE CREDIT HOURS GLBL 520 MASTER OF GLOBAL AFFAIRS CAPSTONE 4 3 Click here to learn more about the Areas of Study. Click here to learn more about the internship and capstone course. Footnotes and Additional Information 1 Core Requirements must be completed during the first year of study. 2 The Area of Specialization requirement must be completed during the second year of study. 3 Students are required to complete a minimum eight-week extensive field experience in which they intern at one of a variety of internationally-based or internationally-focused governmental and nongovernmental organizations, international commissions, embassies, agencies, or corporations. The internship will provide students valuable real-world application of their degree with the goal of facilitating their employment in these organizations. 4 In the second year, students must select a topic of concentration and pursue in-depth research which delves into the real-world, policy aspects of the topic. Official degree requirements can be found at the Rice University General Announcements website. The General Announcements (GA) is the official Rice curriculum. In the event that there is a discrepancy between the GA and any other websites or publications, the GA shall prevail as the authoritative source.",
+      "char_start": 2029,
+      "char_end": 3894,
+      "token_count": 275,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "d2f99a24eca4f0e1e9745da347121207e4aa56774b91bb1a2a777dc7fad280d2",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:48:42.593785",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

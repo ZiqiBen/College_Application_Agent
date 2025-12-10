@@ -1,0 +1,91 @@
+{
+  "id": "www.feinberg.northwestern.edu_8a3dcdc4f737",
+  "source_url": "https://www.feinberg.northwestern.edu/sites/mph/",
+  "raw_snapshot_path": "out/cache\\20251210T004552Z_8a3dcdc4f737.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:46:04.025625",
+  "checksum": "8a3dcdc4f7372df99ebed866fc825e3dd821e651127c95d6ca743faa73eeb714",
+  "language": null,
+  "title": "Master of Public Health: Master of Public Health: Feinberg School of Medicine",
+  "raw_text": "Premiere, multidisciplinary education.\nAsk an Admissions Officer - Open Office Hours\nProspective students: See our FAQ page to get answers.\nThe Master of Public Health (MPH) at Northwestern University Feinberg School of Medicine in Chicago trains students for a variety of professional roles in public health, clinical care and health research.\nLEARN ABOUT US\nACCESS STUDENT RESOURCES\nDegree Options\nWe offer a number of degree options in which students may capitalize on close interaction with faculty leaders to advance their career goals:\nMPH\nPhD/MPH\nMD/MPH\nDoctor of Physical Therapy (DPT)/MPH\nAccelerated Program in Public Health (APHP - MPH 4+1)\nNon-Degree Special Students (NDSS)\nReady to learn more about the MPH?\nJoin our mailing list to receive helpful information about the program.\n*\nindicates required\nEmail Address\n*\nFirst Name\nLast Name\nMeet Our Team\nFaculty\nSee their profiles\nCommunity Partners\nVisit their websites\nAlumni\nStay connected\nI gained a broad skillset in everything from epidemiology to healthcare management. Ultimately, this lead me to consider the broader implications of my academic work during my PhD. Getting my MPH also encouraged me to seek employment outside of academics where I felt I could have a different type of impact.\n— Nelly Papalambros, MPH, Associate/Consultant at McKinsey & Co., Inc.\nCommunication principles for community work and a fuller understanding of the public health system have both helped me be more successful in my work implementing programs for the child welfare population.\n— Charlie Kraus, MPH, Program Administrator at Northwestern and Illinois Department of Children & Family Services\nWhile in training, I loved being able to take what I learned about disease pathophysiology in medical school and directly apply it to local community education planning and global healthcare delivery in my MPH courses.\n— Lisa Akintilo, MD/MPH, current dermatology resident\nThe knowledge, perspectives and skills gained during my time at Northwestern have truly enriched my medical school experience, and I genuinely feel like I have an advantage over my peers based on my previous educational endeavors.\n— Jessyca Turner, MPH, second-year medical student\nNews\nGlobal Health Day Celebrates Research and International Collaboration\nStudy Explores Diet’s Significant Role in Global Obesity\nStudy Uncovers Key Biological Markers in Severe Malaria\nGlobal Health Education Day Celebrates Mentorship and Collaboration\nMore News\nSeminar Series\nDec\n11\nPublic Health Seminar Series — Developing a Community Responsive ...\n12:00 PM - 1:00 PM\nAdd to Calendar\nEvent\n×\nCEPH Accredited\nOur program is accredited by the Council on Education for Public Health (CEPH), an independent agency dedicated to assuring excellence in public health education. Visit the CEPH site to learn more about the accreditation process.\nLearn more about the CEPH\nOur CEPH Accreditation\nBack to top",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Public Health (MPH)",
+    "duration": null,
+    "school": "Northwestern University Feinberg School",
+    "courses": [
+      {
+        "name": "Community Health Research & Evaluation",
+        "description": "The Community Health Research (CHRE) concentration is for students who are interested in learning to conduct and apply public health research to positively impact the health of communities. The concentration will equip students to understand issues affecting health equity in communities and the role of community stakeholders in working equitably alongside researchers to develop approaches that improve community health."
+      },
+      {
+        "name": "Data Science",
+        "description": "The Data Science (DS) concentration is designed to equip students with advanced quantitative methods to address public health issues and healthcare policy. Advanced coursework in epidemiology, biostatistics, data management, and research methodology integrate with a broad foundation in public health knowledge, providing an ideal preparation for careers in research, policy analysis or further academic pursuits."
+      },
+      {
+        "name": "Epidemiology",
+        "description": "The Epidemiology (EPI) concentration is designed for students looking to understand the distribution and determinants of conditions important to population health. Students will learn to design, implement and analyze studies to better understand a range of health challenges facing various populations."
+      },
+      {
+        "name": "Generalist",
+        "description": "The Generalist (GEN) concentration equips students with a broad public health skill set and allows maximum flexibility to take coursework across the curriculum and tailor your education toward specific career goals in the practice of public health. It is ideal for recent college graduates, career changers and health professionals who are interested in careers in public health practice and advocacy for population health."
+      },
+      {
+        "name": "Global Health",
+        "description": "The Global Health (GLO) concentration focuses on an interdisciplinary breadth of coursework led by faculty who are engaged in global health research and practice in settings around the world. Coursework, field, and culminating experiences provide opportunities for critical analysis, dialogue, skill-building, and real-world application."
+      },
+      {
+        "name": "Implementation Science in Public Health and Medicine",
+        "description": "The Implementation Science in Public Health and Medicine Concentration is designed to provide targeted training in implementation science. Specifically, scholars will acquire advanced knowledge and skills needed to bridge the gap between the development of scientific discoveries and the implementation of those discoveries in public health and medicine. The concentration combines cutting-edge didactics, applied learning, and one-on-one mentorship to provide scholars with the requisite skills to conduct implementation research and practice."
+      },
+      {
+        "name": "Maternal Child Health",
+        "description": "The Maternal Child Health (MCH) concentration prepares students to address public health issues related to pregnancy, childbirth, infancy and early childhood. It prepares students to be leaders in advocacy and service."
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "Our program is accredited by the Council on Education for Public Health (CEPH), an independent agency dedicated to assuring excellence in public health education.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.feinberg.northwestern.edu_8a3dcdc4_0000",
+      "text": "Premiere, multidisciplinary education. Ask an Admissions Officer - Open Office Hours Prospective students: See our FAQ page to get answers. The Master of Public Health (MPH) at Northwestern University Feinberg School of Medicine in Chicago trains students for a variety of professional roles in public health, clinical care and health research. LEARN ABOUT US ACCESS STUDENT RESOURCES Degree Options We offer a number of degree options in which students may capitalize on close interaction with faculty leaders to advance their career goals: MPH PhD/MPH MD/MPH Doctor of Physical Therapy (DPT)/MPH Accelerated Program in Public Health (APHP - MPH 4+1) Non-Degree Special Students (NDSS) Ready to learn more about the MPH? Join our mailing list to receive helpful information about the program. * indicates required Email Address * First Name Last Name Meet Our Team Faculty See their profiles Community Partners Visit their websites Alumni Stay connected I gained a broad skillset in everything from epidemiology to healthcare management. Ultimately, this lead me to consider the broader implications of my academic work during my PhD. Getting my MPH also encouraged me to seek employment outside of academics where I felt I could have a different type of impact. — Nelly Papalambros, MPH, Associate/Consultant at McKinsey & Co., Inc. Communication principles for community work and a fuller understanding of the public health system have both helped me be more successful in my work implementing programs for the child welfare population. — Charlie Kraus, MPH, Program Administrator at Northwestern and Illinois Department of Children & Family Services While in training, I loved being able to take what I learned about disease pathophysiology in medical school and directly apply it to local community education planning and global healthcare delivery in my MPH courses. — Lisa Akintilo, MD/MPH, current dermatology resident The knowledge, perspectives and skills gained during my time at Northwestern have truly enriched my medical school experience, and I genuinely feel like I have an advantage over my peers based on my previous educational endeavors. — Jessyca Turner, MPH, second-year medical student News Global Health Day Celebrates Research and International Collaboration Study Explores Diet’s Significant Role in Global Obesity Study Uncovers Key Biological Markers in Severe Malaria Global Health Education Day Celebrates Mentorship and Collaboration More News Seminar Series Dec 11 Public Health Seminar Series — Developing a Community Responsive ... 12:00 PM - 1:00 PM Add to Calendar Event × CEPH Accredited",
+      "char_start": 0,
+      "char_end": 2624,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.feinberg.northwestern.edu_8a3dcdc4_0001",
+      "text": "skills gained during my time at Northwestern have truly enriched my medical school experience, and I genuinely feel like I have an advantage over my peers based on my previous educational endeavors. — Jessyca Turner, MPH, second-year medical student News Global Health Day Celebrates Research and International Collaboration Study Explores Diet’s Significant Role in Global Obesity Study Uncovers Key Biological Markers in Severe Malaria Global Health Education Day Celebrates Mentorship and Collaboration More News Seminar Series Dec 11 Public Health Seminar Series — Developing a Community Responsive ... 12:00 PM - 1:00 PM Add to Calendar Event × CEPH Accredited Our program is accredited by the Council on Education for Public Health (CEPH), an independent agency dedicated to assuring excellence in public health education. Visit the CEPH site to learn more about the accreditation process. Learn more about the CEPH Our CEPH Accreditation Back to top Curriculum Browse our course descriptions below, and be sure to review the full degree requirements on The Graduate School website . In addition to course work, students will complete experiential public health learning activities. Get more information about the Applied Practice Experience and Culminating Experience . Concentrations Students in the MPH program may choose a concentration in Community Health Research & Evaluation, Data Science, Epidemiology, Generalist, Global Health, Implementation Science in Public Health and Medicine, or Maternal Child Health. The Epidemiology concentration requires a summer start and enrollment in some daytime classes. The other concentrations are open to both full-time, summer-start students as well as part-time, evening students who may begin classes in summer or fall. Community Health Research & Evaluation The Community Health Research (CHRE) concentration is for students who are interested in learning to conduct and apply public health research to positively impact the health of communities. The concentration will equip students to understand issues affecting health equity in communities and the role of community stakeholders in working equitably alongside researchers to develop approaches that improve community health. Data Science The Data Science (DS) concentration is designed to equip students with advanced quantitative methods to address public health issues and healthcare policy. Advanced coursework in epidemiology, biostatistics, data management, and research methodology integrate with a broad foundation in public health knowledge, providing an ideal preparation for careers in research, policy analysis or further academic pursuits. Epidemiology The Epidemiology (EPI) concentration is designed for students looking to understand the distribution and determinants of",
+      "char_start": 1959,
+      "char_end": 4756,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.feinberg.northwestern.edu_8a3dcdc4_0002",
+      "text": "to understand issues affecting health equity in communities and the role of community stakeholders in working equitably alongside researchers to develop approaches that improve community health. Data Science The Data Science (DS) concentration is designed to equip students with advanced quantitative methods to address public health issues and healthcare policy. Advanced coursework in epidemiology, biostatistics, data management, and research methodology integrate with a broad foundation in public health knowledge, providing an ideal preparation for careers in research, policy analysis or further academic pursuits. Epidemiology The Epidemiology (EPI) concentration is designed for students looking to understand the distribution and determinants of conditions important to population health. Students will learn to design, implement and analyze studies to better understand a range of health challenges facing various populations. Generalist The Generalist (GEN) concentration equips students with a broad public health skill set and allows maximum flexibility to take coursework across the curriculum and tailor your education toward specific career goals in the practice of public health. It is ideal for recent college graduates, career changers and health professionals who are interested in careers in public health practice and advocacy for population health. Global Health The Global Health (GLO) concentration focuses on an interdisciplinary breadth of coursework led by faculty who are engaged in global health research and practice in settings around the world. Coursework, field, and culminating experiences provide opportunities for critical analysis, dialogue, skill-building, and real-world application. Implementation Science in Public Health and Medicine The Implementation Science in Public Health and Medicine Concentration is designed to provide targeted training in implementation science. Specifically, scholars will acquire advanced knowledge and skills needed to bridge the gap between the development of scientific discoveries and the implementation of those discoveries in public health and medicine. The concentration combines cutting-edge didactics, applied learning, and one-on-one mentorship to provide scholars with the requisite skills to conduct implementation research and practice. Courses are taught by internationally renowned experts in implementation science methods; human-centered design; theories, models, and frameworks; and multi-level implementation strategies. Maternal Child Health The Maternal Child Health (MCH) concentration prepares students to address public health issues related to pregnancy, childbirth, infancy and early childhood. It prepares students to be leaders in advocacy and service. See All Courses & Concentrations Back to top",
+      "char_start": 4001,
+      "char_end": 6799,
+      "token_count": 376,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "060b795c186fe31891d0e9c21e5e4b28544e995cdc17e5329d4a7fdfeff63a1c",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:46:04.025625",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

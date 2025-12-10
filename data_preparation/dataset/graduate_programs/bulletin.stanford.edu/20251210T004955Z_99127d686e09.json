@@ -1,0 +1,54 @@
+{
+  "id": "bulletin.stanford.edu_99127d686e09",
+  "source_url": "https://bulletin.stanford.edu/programs/ME-MS",
+  "raw_snapshot_path": "out/cache\\20251210T004947Z_99127d686e09.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:49:55.542205",
+  "checksum": "99127d686e0900a6ce6208dcc3e30a0bc57f22d1899d3a46cf7ed839ead0f5a8",
+  "language": null,
+  "title": "ME-MS Program | Stanford University Bulletin",
+  "raw_text": "ME-MS - Mechanical Engineering (MS)\nDownload as PDF\nMechanical Engineering\nMechanical Engineering\nMS - Master of Science\nGeneral\nProgram Policies\nLearning Outcomes\nProgram Overview\nThe Master’s Program in Mechanical Engineering is a non-thesis degree that allows students broad flexibility in selecting a program of lecture and project-based courses to meet their educational objectives. The program is designed principally for students who wish to enter industry as practicing professionals. With our emphasis on human-centered design, as well as the multidisciplinary nature of the curriculum and the University-wide initiative on sustainability, Stanford Mechanical Engineering is producing graduates with advanced skills to meet the coming needs of the industry.\nStudents are encouraged to refer to the most recent\nMechanical Engineering Graduate Student Handbook\nprovided by the Student Services Office.\nAdmissions Information\nApplications to the MS program and all supporting documents must be submitted and received online by the published deadline. Please see\nMaster’s Admissions\non the Mechanical Engineering website for information on how to apply.\nCoterm Admissions Information\nApplications to the Coterm program and all supporting documents must be submitted and received online by the published deadline. Please see\nCoterm Admissions\non the Mechanical Engineering website for information on how to apply.\nMinimum Units in the Program\n45\nMinimum University Units\n45",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Mechanical Engineering (MS)",
+    "duration": null,
+    "school": "Stanford University",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Applications to the MS program and all supporting documents must be submitted and received online by the published deadline.",
+    "features": "The Master’s Program in Mechanical Engineering is a non-thesis degree that allows students broad flexibility in selecting a program of lecture and project-based courses to meet their educational objectives. The program is designed principally for students who wish to enter industry as practicing professionals. With our emphasis on human-centered design, as well as the multidisciplinary nature of the curriculum and the University-wide initiative on sustainability, Stanford Mechanical Engineering is producing graduates with advanced skills to meet the coming needs of the industry.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "bulletin.stanford.edu_99127d68_0000",
+      "text": "ME-MS - Mechanical Engineering (MS) Download as PDF Mechanical Engineering Mechanical Engineering MS - Master of Science General Program Policies Learning Outcomes Program Overview The Master’s Program in Mechanical Engineering is a non-thesis degree that allows students broad flexibility in selecting a program of lecture and project-based courses to meet their educational objectives. The program is designed principally for students who wish to enter industry as practicing professionals. With our emphasis on human-centered design, as well as the multidisciplinary nature of the curriculum and the University-wide initiative on sustainability, Stanford Mechanical Engineering is producing graduates with advanced skills to meet the coming needs of the industry. Students are encouraged to refer to the most recent Mechanical Engineering Graduate Student Handbook provided by the Student Services Office. Admissions Information Applications to the MS program and all supporting documents must be submitted and received online by the published deadline. Please see Master’s Admissions on the Mechanical Engineering website for information on how to apply. Coterm Admissions Information Applications to the Coterm program and all supporting documents must be submitted and received online by the published deadline. Please see Coterm Admissions on the Mechanical Engineering website for information on how to apply. Minimum Units in the Program 45 Minimum University Units 45 Filters Results (0) Export all results as CSV Sort By - Code Name Subject Code Department Description Career Loading results... ==== COURSE DETAIL START (Download as PDF Mechanical Engineering) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Download as PDF Mechanical Engineering) ==== ==== COURSE DETAIL START (General Program Policies Learning Outcomes) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (General Program Policies Learning Outcomes) ==== ==== COURSE DETAIL START (Program Overview) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Program Overview) ==== ==== COURSE DETAIL START (Mechanical Engineering Graduate Student Handbook) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Mechanical Engineering Graduate Student Handbook) ==== ==== COURSE DETAIL START (Admissions Information) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Admissions",
+      "char_start": 0,
+      "char_end": 2804,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "bulletin.stanford.edu_99127d68_0001",
+      "text": "Learning Outcomes) ==== ==== COURSE DETAIL START (Program Overview) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Program Overview) ==== ==== COURSE DETAIL START (Mechanical Engineering Graduate Student Handbook) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Mechanical Engineering Graduate Student Handbook) ==== ==== COURSE DETAIL START (Admissions Information) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Admissions Information) ==== ==== COURSE DETAIL START (Coterm Admissions Information) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Coterm Admissions Information) ==== ==== COURSE DETAIL START (Coterm Admissions) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Coterm Admissions) ==== ==== COURSE DETAIL START (Minimum Units in the Program 45) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Minimum Units in the Program 45) ====",
+      "char_start": 2096,
+      "char_end": 3507,
+      "token_count": 205,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "1c7df873573b3beb5e4ddf11448cb5559f253fa0d0b4369c705564f20d8889f7",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:49:55.542205",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

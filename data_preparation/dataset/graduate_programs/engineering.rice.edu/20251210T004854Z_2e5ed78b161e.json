@@ -1,0 +1,99 @@
+{
+  "id": "engineering.rice.edu_2e5ed78b161e",
+  "source_url": "https://engineering.rice.edu/academics/graduate-programs/graduate-degree-programs",
+  "raw_snapshot_path": "out/cache\\20251210T004844Z_2e5ed78b161e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:48:54.174027",
+  "checksum": "2e5ed78b161eee4e841ba09a888ad16a8eb00e4edefa3ee8c429daac23e5f426",
+  "language": null,
+  "title": "Graduate Degree Programs | School of Engineering | Rice University",
+  "raw_text": "Body\nGraduate\nDegree Programs\nPhD Programs\nThe George R. Brown School of Engineering and Computing has 13 programs of study toward thesis-based PhD or master's degrees in each of its nine departments, all of which are ranked in the top 30 in the nation.\nApplied Physics*\nBioengineering\nBioengineering PhD/MD (w/ Baylor College of Medicine)\nCivil Engineering\nChemical and Biomolecular Engineering\nComputer Science\nComputational and Applied Mathematics\nElectrical and Computer Engineering\nEnvironmental Engineering\nMaterials Science and NanoEngineering\nMechanical Engineering\nSystems, Synthetic and Physical Biology*\nStatistics\n* Interdisciplinary Program\nOn-Campus Professional Master's Programs\nOur\nEngineering Professional Master' Programs\nempower the next generation of leaders with strong technical and data science skills, creative problem solving and the ability to integrate across disciplines to address humankind’s most pressing problems. It’s a non-thesis degree designed for students who wish to expand their engineering knowledge.\nBioengineering\nCivil and Environmental Engineering\nChemical Engineering\nComputer Science\nComputational and Applied Mathematics\nComputational Science and Engineering*\nData Science\nElectrical and Computer Engineering\nEngineering Management and Leadership\nEnergy Transition and Sustainability\nIndustrial Engineering*\nMaterials Science and NanoEngineering\nMechanical Engineering\nStatistics\n* Interdisciplinary Program\nOnline Master's Programs\nIn a collaboration with our Engineering Professional Master's Programs and Rice Online Learning, we are pleased to currently offer these three master’s degree programs that are available to complete\n100% online\n:\nComputer Science\nData Science\nEngineering Management and Leadership\nCoordinated Degree Programs\nThe School of Engineering and Computing also offers diverse joint degree programs that provide an interdisciplinary curriculum that takes advantage of our small size and collaborative nature.\nMedical Scientist Training Program\nMaster of Computational Science and Engineering Program\nApplied Physics Graduate Program\nGraduate Admissions\nAll Rice Engineering and Computing graduate student admission is administered by the\nacademic departments\n. Application deadlines and requirements vary. For more information, visit the website of the department, to which you're interested in applying. Or learn more by visiting this graduate\nadmissions overview\n.\nBody\nGulf Coast Undergraduate Research Symposium\nCGURS provides undergraduate students the opportunity to present original research discoveries to scholars from around the world. Join us November 9-10, 2024 for a day of science, mentorship and networking. Applications are now open.\nLEARN MORE\nHelpful\nLinks",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Graduate Degree Programs",
+    "duration": null,
+    "school": "Baylor College",
+    "courses": [
+      {
+        "name": "Applied Physics",
+        "description": null
+      },
+      {
+        "name": "Bioengineering",
+        "description": null
+      },
+      {
+        "name": "Bioengineering PhD/MD (w/ Baylor College of Medicine)",
+        "description": null
+      },
+      {
+        "name": "Civil Engineering",
+        "description": null
+      },
+      {
+        "name": "Chemical and Biomolecular Engineering",
+        "description": null
+      },
+      {
+        "name": "Computer Science",
+        "description": null
+      },
+      {
+        "name": "Computational and Applied Mathematics",
+        "description": null
+      },
+      {
+        "name": "Electrical and Computer Engineering",
+        "description": null
+      },
+      {
+        "name": "Environmental Engineering",
+        "description": null
+      },
+      {
+        "name": "Materials Science and NanoEngineering",
+        "description": null
+      },
+      {
+        "name": "Mechanical Engineering",
+        "description": null
+      },
+      {
+        "name": "Systems, Synthetic and Physical Biology",
+        "description": null
+      },
+      {
+        "name": "Statistics",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "All Rice Engineering and Computing graduate student admission is administered by the academic departments. Application deadlines and requirements vary.",
+    "features": "The George R. Brown School of Engineering and Computing has 13 programs of study toward thesis-based PhD or master's degrees in each of its nine departments, all of which are ranked in the top 30 in the nation.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "engineering.rice.edu_2e5ed78b_0000",
+      "text": "Body Graduate Degree Programs PhD Programs The George R. Brown School of Engineering and Computing has 13 programs of study toward thesis-based PhD or master's degrees in each of its nine departments, all of which are ranked in the top 30 in the nation. Applied Physics* Bioengineering Bioengineering PhD/MD (w/ Baylor College of Medicine) Civil Engineering Chemical and Biomolecular Engineering Computer Science Computational and Applied Mathematics Electrical and Computer Engineering Environmental Engineering Materials Science and NanoEngineering Mechanical Engineering Systems, Synthetic and Physical Biology* Statistics * Interdisciplinary Program On-Campus Professional Master's Programs Our Engineering Professional Master' Programs empower the next generation of leaders with strong technical and data science skills, creative problem solving and the ability to integrate across disciplines to address humankind’s most pressing problems. It’s a non-thesis degree designed for students who wish to expand their engineering knowledge. Bioengineering Civil and Environmental Engineering Chemical Engineering Computer Science Computational and Applied Mathematics Computational Science and Engineering* Data Science Electrical and Computer Engineering Engineering Management and Leadership Energy Transition and Sustainability Industrial Engineering* Materials Science and NanoEngineering Mechanical Engineering Statistics * Interdisciplinary Program Online Master's Programs In a collaboration with our Engineering Professional Master's Programs and Rice Online Learning, we are pleased to currently offer these three master’s degree programs that are available to complete 100% online : Computer Science Data Science Engineering Management and Leadership Coordinated Degree Programs The School of Engineering and Computing also offers diverse joint degree programs that provide an interdisciplinary curriculum that takes advantage of our small size and collaborative nature. Medical Scientist Training Program Master of Computational Science and Engineering Program Applied Physics Graduate Program Graduate Admissions All Rice Engineering and Computing graduate student admission is administered by the academic departments . Application deadlines and requirements vary. For more information, visit the website of the department, to which you're interested in applying. Or learn more by visiting this graduate admissions overview . Body Gulf Coast Undergraduate Research Symposium CGURS provides undergraduate students the opportunity to present original research discoveries to scholars from around the world. Join us November 9-10, 2024 for a day of science, mentorship and networking. Applications are now open. LEARN MORE Helpful Links",
+      "char_start": 0,
+      "char_end": 2747,
+      "token_count": 361,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "edaa3797c1fb83de60803a73fe2a0e6012dc8074db9b2c8f6905312acb645a73",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:48:54.173026",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

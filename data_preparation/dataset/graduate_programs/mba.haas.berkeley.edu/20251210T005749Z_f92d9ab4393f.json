@@ -1,0 +1,115 @@
+{
+  "id": "mba.haas.berkeley.edu_f92d9ab4393f",
+  "source_url": "https://mba.haas.berkeley.edu/admissions",
+  "raw_snapshot_path": "out/cache\\20251210T005734Z_f92d9ab4393f.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:57:49.406482",
+  "checksum": "f92d9ab4393fd50d891bb24e381c9f64f5259512428b202f90ee4113aac600b0",
+  "language": null,
+  "title": "Admissions | Full-time MBA | UC Berkeley Haas",
+  "raw_text": "Admissions\nEach fall, we enroll 300 bright, diverse, collaborative, and creative students. We admit candidates with solid professional experience and leadership potential who come from a wide variety of industries and backgrounds.\nTake the next step\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed varius ante. Phasellus sit amet rhoncus mi. In vehicula dapibus lorem fermentum accumsan. Nulla et fermentum enim. Cras sit amet eros leo. Nam nec vehicula odio. Donec molestie congue pulvinar.\nStart Your Application\nAttend an Event\n2025-2026 Application Deadlines\nRound 1\nDeadline: September 11, 2025\nDecision: December 11\n, 2025\nRound 2\nDeadline: January 8\n, 2026\nDecision: March 26\n, 2026\nRound 3\nDeadline: March 31\n, 2026\nDecision: May 7\n, 2026\nWhat We Look For\nProfessional Experience\nOur students have an average of five years of full-time professional work experience, and a diverse array of it, ensuring lively and informed discussion in the classroom.\nFull-time Class Profile\nAcademic Aptitude\nWe look at your past academic performance for an indication that you will thrive in and make valuable contributions to our rigorous learning environment.\nApplication Requirements\nPersonal Qualities\nBecause our Defining Leadership Principles are integral to how we learn and how we lead, we look for these in your experience and attributes.\nDefining Leadership Principles\nLearn More About The Application Process\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed varius ante. Phasellus sit amet rhoncus mi. In vehicula dapibus lorem fermentum accumsan. Nulla et fermentum enim. Cras sit amet eros leo. Nam nec vehicula odio. Donec molestie congue pulvinar.\nApplication Process\nBerkeley Haas Admissions\n5.7\nAverage Years of Work Experience\n730\nAverage GMAT Score\n3.65\nAverage GPA\nRequest Information",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Haas Full-time MBA",
+    "duration": null,
+    "school": "Berkeley Haas",
+    "courses": [
+      {
+        "name": "Leading People",
+        "description": "Learn to motivate and influence"
+      },
+      {
+        "name": "Data and Decisions",
+        "description": "Become a critical consumer of statistical analysis"
+      },
+      {
+        "name": "Economics for Business Decision Making",
+        "description": "Learn to think systematically about achieving competitive advantage"
+      },
+      {
+        "name": "Financial Accounting",
+        "description": "Gain a clear understanding of financial statements"
+      },
+      {
+        "name": "Introduction to Finance",
+        "description": "Value assets and evaluate risk"
+      },
+      {
+        "name": "Marketing",
+        "description": "Look strategically at marketing decisions"
+      },
+      {
+        "name": "Business Communication in Diverse Work Environments",
+        "description": "Learn to lead diverse teams and global organizations"
+      },
+      {
+        "name": "Macroeconomics in the Global Economy",
+        "description": "Develop and apply models of the world's economies to explain trends and fluctuations"
+      },
+      {
+        "name": "Operations",
+        "description": "Strategic, operational, and tactical issues facing manufacturing and service companies"
+      },
+      {
+        "name": "Ethics and Responsibility in Business",
+        "description": "Anticipate, critically analyze, and appropriately respond to the challenges that face managers"
+      },
+      {
+        "name": "Strategic Leadership",
+        "description": "Core topics in strategy, such as selection of goals, the choice of products and services to offer and competitive positioning"
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "The Haas Full-time MBA is designed to give students the tools to become leaders and earn their MBAs. Learn from world-renowned faculty as well as a truly global cohort of students in the heart of Silicon Valley.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "mba.haas.berkeley.edu_f92d9ab4_0000",
+      "text": "Admissions Each fall, we enroll 300 bright, diverse, collaborative, and creative students. We admit candidates with solid professional experience and leadership potential who come from a wide variety of industries and backgrounds. Take the next step Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed varius ante. Phasellus sit amet rhoncus mi. In vehicula dapibus lorem fermentum accumsan. Nulla et fermentum enim. Cras sit amet eros leo. Nam nec vehicula odio. Donec molestie congue pulvinar. Start Your Application Attend an Event 2025-2026 Application Deadlines Round 1 Deadline: September 11, 2025 Decision: December 11 , 2025 Round 2 Deadline: January 8 , 2026 Decision: March 26 , 2026 Round 3 Deadline: March 31 , 2026 Decision: May 7 , 2026 What We Look For Professional Experience Our students have an average of five years of full-time professional work experience, and a diverse array of it, ensuring lively and informed discussion in the classroom. Full-time Class Profile Academic Aptitude We look at your past academic performance for an indication that you will thrive in and make valuable contributions to our rigorous learning environment. Application Requirements Personal Qualities Because our Defining Leadership Principles are integral to how we learn and how we lead, we look for these in your experience and attributes. Defining Leadership Principles Learn More About The Application Process Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed varius ante. Phasellus sit amet rhoncus mi. In vehicula dapibus lorem fermentum accumsan. Nulla et fermentum enim. Cras sit amet eros leo. Nam nec vehicula odio. Donec molestie congue pulvinar. Application Process Berkeley Haas Admissions 5.7 Average Years of Work Experience 730 Average GMAT Score 3.65 Average GPA Request Information Curriculum A Rigorous and Interdisciplinary MBA Curriculum Everything we do here has one goal: to help you develop as a leader who is capable of turning innovation into impact. Our rigorous curriculum takes an interdisciplinary approach to business fundamentals, so you can move seamlessly from “what is” to “what could be.” It steeps you in different ways of thinking and in multiple perspectives and reinforces your growing knowledge with experiential learning opportunities. The required courses in the core curriculum build on one another to foster mastery of the analytical tools and essential knowledge to lead successfully. Beyond the core, you’ll have the freedom to tailor the majority of your MBA studies to achieve your goals and passions. Learn more about the",
+      "char_start": 0,
+      "char_end": 2610,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mba.haas.berkeley.edu_f92d9ab4_0001",
+      "text": "who is capable of turning innovation into impact. Our rigorous curriculum takes an interdisciplinary approach to business fundamentals, so you can move seamlessly from “what is” to “what could be.” It steeps you in different ways of thinking and in multiple perspectives and reinforces your growing knowledge with experiential learning opportunities. The required courses in the core curriculum build on one another to foster mastery of the analytical tools and essential knowledge to lead successfully. Beyond the core, you’ll have the freedom to tailor the majority of your MBA studies to achieve your goals and passions. Learn more about the Experiential Learning Requirement First Year Fall A Weeks 1-7 Leading People Learn to motivate and influence Data and Decisions Become a critical consumer of statistical analysis Economics for Business Decision Making Learn to think systematically about achieving competitive advantage Financial Accounting Gain a clear understanding of financial statements Fall B Weeks 9-15 Introduction to Finance Value assets and evaluate risk Marketing Look strategically at marketing decisions Business Communication in Diverse Work Environments Learn to lead diverse teams and global organizations Spring A Weeks 1-7 Macroeconomics in the Global Economy Develop and apply models of the world's economies to explain trends and fluctuations Operations Strategic, operational, and tactical issues facing manufacturing and service companies Electives Focus on an area of emphasis, sharpen specific skills, and gain specialized knowledge Spring B Weeks 9-15 Ethics and Responsibility in Business Anticipate, critically analyze, and appropriately respond to the challenges that face managers Strategic Leadership Core topics in strategy, such as selection of goals, the choice of products and services to offer and competitive positioning Electives Focus on an area of emphasis, sharpen specific skills, and gain specialized knowledge An MBA is the springboard for a leap from advisor to investor After helping high-net-worth clients build their wealth, diversify their portfolios, and manage their money-related emotions, Xavier Jefferson, MBA 24, enrolled in the Berkeley Haas full-time MBA program to leap from financial advisor to investor. Read the Full Story Visit Haas Take the Next Step The Haas Full-time MBA is our flagship offering, designed to give students the tools to become leaders and earn their MBAs. Learn from world-renowned faculty as well as our truly global cohort of students. All this in the heart of Silicon Valley. Apply Request Info Visit Haas Co-Curricular Activities Becoming Well-Rounded Business Leaders Let big ideas come to life with",
+      "char_start": 1966,
+      "char_end": 4662,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mba.haas.berkeley.edu_f92d9ab4_0002",
+      "text": "build their wealth, diversify their portfolios, and manage their money-related emotions, Xavier Jefferson, MBA 24, enrolled in the Berkeley Haas full-time MBA program to leap from financial advisor to investor. Read the Full Story Visit Haas Take the Next Step The Haas Full-time MBA is our flagship offering, designed to give students the tools to become leaders and earn their MBAs. Learn from world-renowned faculty as well as our truly global cohort of students. All this in the heart of Silicon Valley. Apply Request Info Visit Haas Co-Curricular Activities Becoming Well-Rounded Business Leaders Let big ideas come to life with the support of your classmates, professors, and the Bay Area community. Dive head-first into activities and experiences that allow you to pursue your passions and build networks of classmates, alumni, and professionals who share that same interest. This network will strengthen the net worth of your MBA and allow you to stretch your leadership skills beyond the classroom. Something for Everyone From innovation design to improv, Haas has more than 40 professional and social clubs to keep you and your classmates engaged outside the classroom. Whether you build connections over common bonds or step out of your comfort zone to try something new, you will always feel like a part of the community. Explore Clubs & Special Interest Groups Co-chairing the Haas Healthcare Conference was a defining endeavor. It was awesome to take a blank slate and create something meaningful. It also helped me form very strong and lasting bonds with the team that put it together. Dan Cho, MBA/MPH 18 Senior Director of Operations, Tempo Trips & Treks Students plan international trips to explore the world of business. Layer one of these trips on top of the International Business Development course for a globally focused MBA experience. Discover More Trips & Treks Conferences & Competitions These dynamic, completely student-lead events not only captivate and push the boundaries, but they also take a deep dive into the fundamental challenges that businesses and society are grappling with. Leading conferences and competitions draw in a massive crowd of top-notch experts and rising stars in the entrepreneurial world that show students how to innovate and break the status quo. Explore Conferences & Competitions Upcoming Events View All Events Take the Next Step The Haas Full-time MBA is our flagship offering, designed to give students the tools to become leaders and earn their MBAs.",
+      "char_start": 4029,
+      "char_end": 6543,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mba.haas.berkeley.edu_f92d9ab4_0003",
+      "text": "Trips & Treks Conferences & Competitions These dynamic, completely student-lead events not only captivate and push the boundaries, but they also take a deep dive into the fundamental challenges that businesses and society are grappling with. Leading conferences and competitions draw in a massive crowd of top-notch experts and rising stars in the entrepreneurial world that show students how to innovate and break the status quo. Explore Conferences & Competitions Upcoming Events View All Events Take the Next Step The Haas Full-time MBA is our flagship offering, designed to give students the tools to become leaders and earn their MBAs. Learn from world-renowned faculty as well as our truly global cohort of students. All this in the heart of Silicon Valley. Apply Request Info Visit Haas",
+      "char_start": 5903,
+      "char_end": 6696,
+      "token_count": 126,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "d3c48ff35ff75773b2656dcd1fb619c6ebed70b099a29a3714c4a68f4d8e5299",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:57:49.406482",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

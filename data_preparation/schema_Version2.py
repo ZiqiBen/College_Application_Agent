@@ -30,6 +30,7 @@ class ExtractedFields(BaseModel):
     program_name: Optional[str] = None
     duration: Optional[str] = None
     # courses is now a list of Course objects: {"name": "...", "description": "..."}
+    school: Optional[str] = None
     courses: Optional[List[Course]] = None
     tuition: Optional[str] = None
     application_requirements: Optional[str] = None

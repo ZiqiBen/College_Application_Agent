@@ -1,0 +1,139 @@
+{
+  "id": "www.cmu.edu_53339825f97b",
+  "source_url": "https://www.cmu.edu/cbd/msas/",
+  "raw_snapshot_path": "out/cache\\20251210T005522Z_53339825f97b.html",
+  "content_type": "text/html",
+  "crawl_date": "2025-12-10T00:55:32.840245",
+  "checksum": "53339825f97b068bb640042fd5864c8ea76320bd9daf538e4e95ff2db52edc8b",
+  "language": null,
+  "title": "M.S. in Automated Science - \n                M.S. in Automated Science: Biological Experimentation -     Ray and Stephanie Lane Computational Biology Department - Carnegie Mellon University",
+  "raw_text": "The\nRay and Stephanie Lane Computational Biology Department’s\nMasters of Science in Automated Science: Biological Experimentation (MSAS)\nprogram trains practitioners in the design, implementation, and application of laboratory automation and artificial intelligence in scientific research. Students train with world-class faculty, including those from the top-ranked\nSchool of Computer Science\n.\nWhat is Automated Science?\nAutomated Science\nis the practice of scientific research without the need for significant human intervention.\nHear more about Automated Science from Professor Emeritus Robert F. Murphy, founding faculty of the M.S. in Automated Science Program,\nhere\n.\nWhat Skills are Taught in the Program?\nThe top 3 skills taught in the program are:\nFamiliarity with various types of experimental methods used and with the operation and characteristics of the currently available equipment that can perform those methods on a large scale and under computer control\nExperience in constructing and using statistical and machine learning methods for constructing predictive models from experimental data.\nExpertise in active machine learning methods for using predictive models to choose future experiments that are expected to enable the accuracy of the models to grow as rapidly as possible.\nWhat can you do in Automated Science?\nScientific Automation is widely used in the pharmaceutical, biotech, and agricultural industries.  MSAS graduates are qualified to select, configure, customize, and operate the hardware and software necessary to automate essential tasks in scientific research and engineering.\nGraduates become leaders in the emerging paradigm of\nAutomated Science\n– the combination of\nrobotic\nscientific instruments\n,\nMachine Learning\n,\nand\nArtificial Intelligence\nfor iteratively building predictive models from experimental data and selecting new experiments to improve them.  Students have opportunities to do research projects with Carnegie Mellon Faculty, to do summer internships with relevant companies, and to do collaborative projects with industrial sponsors.\nNews\nWednesday, October 15, 2025\nCPCB Student Wins Open Biology’s Open Questions Competition\nThursday, October 09, 2025\nThree First-Year Masters Students Inducted into CMU Rales Fellows Cohort\nWednesday, March 12, 2025\nMa, Murphy Named ISCB Fellows\nProgram Inquiry\nLoading...",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Masters of Science in Automated Science: Biological Experimentation",
+    "duration": null,
+    "school": "Carnegie Mellon University",
+    "courses": [
+      {
+        "name": "Background Modeling & Analysis",
+        "description": null
+      },
+      {
+        "name": "Automated Science Career Development",
+        "description": null
+      },
+      {
+        "name": "Applied Cell and Molecular Biology",
+        "description": null
+      },
+      {
+        "name": "Programming for Scientists",
+        "description": null
+      },
+      {
+        "name": "Essential Mathematics and Statistics for Scientists",
+        "description": null
+      },
+      {
+        "name": "Machine Learning for Scientists",
+        "description": null
+      },
+      {
+        "name": "Computational Genomics",
+        "description": null
+      },
+      {
+        "name": "Fundamentals of Bioinformatics",
+        "description": null
+      },
+      {
+        "name": "Laboratory Methods for Automated Biology I/II",
+        "description": null
+      },
+      {
+        "name": "Automation of Scientific Research",
+        "description": null
+      },
+      {
+        "name": "MSAS Capstone and/or M.S. Research",
+        "description": null
+      },
+      {
+        "name": "Professional Issues in Automated Science Seminar",
+        "description": null
+      },
+      {
+        "name": "Automated Science Internship (optional)",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": null,
+    "features": "The program trains practitioners in laboratory automation and AI in scientific research. Students can do research projects with faculty, summer internships, and collaborative projects with industrial sponsors.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.cmu.edu_53339825_0000",
+      "text": "The Ray and Stephanie Lane Computational Biology Department’s Masters of Science in Automated Science: Biological Experimentation (MSAS) program trains practitioners in the design, implementation, and application of laboratory automation and artificial intelligence in scientific research. Students train with world-class faculty, including those from the top-ranked School of Computer Science . What is Automated Science? Automated Science is the practice of scientific research without the need for significant human intervention. Hear more about Automated Science from Professor Emeritus Robert F. Murphy, founding faculty of the M.S. in Automated Science Program, here . What Skills are Taught in the Program? The top 3 skills taught in the program are: Familiarity with various types of experimental methods used and with the operation and characteristics of the currently available equipment that can perform those methods on a large scale and under computer control Experience in constructing and using statistical and machine learning methods for constructing predictive models from experimental data. Expertise in active machine learning methods for using predictive models to choose future experiments that are expected to enable the accuracy of the models to grow as rapidly as possible. What can you do in Automated Science? Scientific Automation is widely used in the pharmaceutical, biotech, and agricultural industries. MSAS graduates are qualified to select, configure, customize, and operate the hardware and software necessary to automate essential tasks in scientific research and engineering. Graduates become leaders in the emerging paradigm of Automated Science – the combination of robotic scientific instruments , Machine Learning , and Artificial Intelligence for iteratively building predictive models from experimental data and selecting new experiments to improve them. Students have opportunities to do research projects with Carnegie Mellon Faculty, to do summer internships with relevant companies, and to do collaborative projects with industrial sponsors. News Wednesday, October 15, 2025 CPCB Student Wins Open Biology’s Open Questions Competition Thursday, October 09, 2025 Three First-Year Masters Students Inducted into CMU Rales Fellows Cohort Wednesday, March 12, 2025 Ma, Murphy Named ISCB Fellows Program Inquiry Loading... Ray and Stephanie Lane Computational Biology Department › M.S. in Automated Science: Biological Experimentation › Curriculum Handbook and Courses Please consult the MSAS Handbook [pdf] for details about the curriculum. The MSAS program will offer concentrations in different scientific fields. The initial concentration will be in Biological Experimentation . Additional concentrations will be offered in future years. The required courses for the Biological Experimentation concentration is as",
+      "char_start": 0,
+      "char_end": 2859,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.cmu.edu_53339825_0001",
+      "text": "Student Wins Open Biology’s Open Questions Competition Thursday, October 09, 2025 Three First-Year Masters Students Inducted into CMU Rales Fellows Cohort Wednesday, March 12, 2025 Ma, Murphy Named ISCB Fellows Program Inquiry Loading... Ray and Stephanie Lane Computational Biology Department › M.S. in Automated Science: Biological Experimentation › Curriculum Handbook and Courses Please consult the MSAS Handbook [pdf] for details about the curriculum. The MSAS program will offer concentrations in different scientific fields. The initial concentration will be in Biological Experimentation . Additional concentrations will be offered in future years. The required courses for the Biological Experimentation concentration is as follows: Background Modeling & Analysis Automated Science Career Development Applied Cell and Molecular Biology Programming for Scientists Essential Mathematics and Statistics for Scientists Machine Learning for Scientists Computational Genomics Fundamentals of Bioinformatics Laboratory Methods for Automated Biology I/ll Automation of Scientific Research MSAS Capstone and/or M.S. Research Professional Issues in Automated Science Seminar Automated Science Internship (optional) Professional and Research Options During the second year, students will take either two semesters of MSAS Capstone or two semesters of MS research, depending on their career goals. Students who want to enter the workforce as soon as possible should take two semesters of MSAS Capstone; this is called the ‘ professional option ’. Those who wish to pursue a Ph.D. after completing their M.S. should take two semesters of MS Research; this is called the ‘ research option ’. Students who elect to the Research option must find a research mentor and then enroll in two semesters of M.S. Research. Typically, students contact faculty directly to learn about available research opportunities. The program’s academic advisor will consult with each student prior to the start of the second year to determine his or her best option. Note that all MSAS students are required to take 02-661 (MSAS Capstone 1), to demonstrate mastery of the techniques of Automated Science. Graduation Requirements At least 174 units of coursework, which includes the specific courses listed above and a minimum of two Computational Biology department graduate-level electives. An average grade of B or above (GPA = 3.0) in those 174 or more units counted toward degree certification. No grade lower than a C (GPA = 2.0) can be counted toward degree certification. Full-time course registration (at least 36 units) for each semester in the program Courses counted for undergraduate degree certification cannot count for the M.S. degree",
+      "char_start": 2127,
+      "char_end": 4848,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.cmu.edu_53339825_0002",
+      "text": "to take 02-661 (MSAS Capstone 1), to demonstrate mastery of the techniques of Automated Science. Graduation Requirements At least 174 units of coursework, which includes the specific courses listed above and a minimum of two Computational Biology department graduate-level electives. An average grade of B or above (GPA = 3.0) in those 174 or more units counted toward degree certification. No grade lower than a C (GPA = 2.0) can be counted toward degree certification. Full-time course registration (at least 36 units) for each semester in the program Courses counted for undergraduate degree certification cannot count for the M.S. degree Internships Students often secure internships in industry or academia during the summer between the first and second years, and less often during the academic year. With the approval of the MSAS academic advisor, students may enroll in 02-802, Automated Science Internship, to receive three units of credit for completing an internship. Approval will only be given if the internship is directly relevant to Automated Science. Ray and Stephanie Lane Computational Biology Department › M.S. in Automated Science: Biological Experimentation › Curriculum › MSAS Research Thesis Requirements and Timeline MSAS Research Thesis Requirements and Timeline Students who wish to complete a Master's Thesis should find a research lab. The following requirements must be fulfilled before the 5pm on the final exam day of their final semester. Complete a minimum of 2 semesters of M.S. Research in a research lab. Form a committee with the research advisor and two or more other faculty members with relevant knowledge to assess the work. Defend the thesis in a public presentation with the advisor and full committee present. Submit their final thesis document to the program directors and their thesis advisor. The following steps are recommended for a successful thesis. Step 1: Planning Students meet with their planned thesis advisor well in advance of their graduation. In this meeting they should review all the requirements for completing the thesis. Establish a set of research goals for the thesis. Discuss potential committee members. Following the meeting, the student should e-mail the program academic advisor and CC the advisor stating that s/he is planning to complete an honors thesis and a draft title. Step 2: Committee Make-up & Members The student and advisor should identify at least two other faculty committee members and invite them to serve on the committee. The thesis advisor will serve as the",
+      "char_start": 4207,
+      "char_end": 6756,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.cmu.edu_53339825_0003",
+      "text": "with their planned thesis advisor well in advance of their graduation. In this meeting they should review all the requirements for completing the thesis. Establish a set of research goals for the thesis. Discuss potential committee members. Following the meeting, the student should e-mail the program academic advisor and CC the advisor stating that s/he is planning to complete an honors thesis and a draft title. Step 2: Committee Make-up & Members The student and advisor should identify at least two other faculty committee members and invite them to serve on the committee. The thesis advisor will serve as the chair of the thesis committee. At least two members of the thesis committee must be full-time faculty at Carnegie Mellon University or tenure track faculty from relevant departments in another university. Step 3: Research & Progress Report It is expected that the student will be conducting research and data analysis during the entire academic year leading up to thesis defense and graduation. The student should be meeting regularly with their advisor and other lab personnel and/or collaborators. The thesis committee and academic advisor should be consulted by the student and/or advisor when challenges arise. It is recommended that you submit at least one progress report for the committee during your research time. This progress report should include a summary of results and progress on each specific aim and any changes to experimental design or research plan. Step 4: Plan & Write Thesis A template is available here . The thesis should have the following sections: Title page & Dedication/Acknowledgements. Abstract (1 page). Introduction chapter (4 or more pages). Separate from introduction sections in other chapters, this is a place for the student to put the entire thesis in context. 1 or more additional chapter (20 or more pages each). Chapter format should be consistent and may match the format of any journal article in the field of study. Bibliography (pages are enumerated but do not count toward page total). This may be a standalone bibliography for the whole thesis or each chapter may have its own bibliography. Step 5: Plan & Schedule the Thesis Defense The thesis defense recommended to be completed by the last day of exams during the student’s final semester. Planning and scheduling should begin well in advance. All members of the thesis committee must be present for the defense. The defense will last between 1-2 hours.",
+      "char_start": 6140,
+      "char_end": 8613,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.cmu.edu_53339825_0004",
+      "text": "format should be consistent and may match the format of any journal article in the field of study. Bibliography (pages are enumerated but do not count toward page total). This may be a standalone bibliography for the whole thesis or each chapter may have its own bibliography. Step 5: Plan & Schedule the Thesis Defense The thesis defense recommended to be completed by the last day of exams during the student’s final semester. Planning and scheduling should begin well in advance. All members of the thesis committee must be present for the defense. The defense will last between 1-2 hours. Once a date and time are selected the student should work with either the program coordinator or the thesis advisor to reserve a suitable room that can seat at least 10 people (or more if the student expects more). Step 6: Publicize the Defense Date Student contacts the Program Coordinator and Academic Advisor with: Defense title. Research Advisor and committee members’ names (external committee member's school and dept. must be listed). Date and time of defense. Location (Reserved room). A research-related photograph should also be provided. The program coordinator will design a flyer and post it throughout the Gates-Hillman Complex and will also send an email to the department to publicize the event. The student may also invite others to attend the event. Step 7: Finish Thesis & Prepare Defense As early as possible prior to the defense, the student should submit a completed thesis document to the thesis committee and the academic advisor. It is strongly recommended that the student practice the thesis defense presentation with the lab members and/or their advisor. Step 8: Thesis Defense After a public defense and public questions, the student will remain for private questions with the committee and then the committee will confer privately without the student. The research advisor should notify the program academic advisor of the outcome of the defense as early as possible. Step 9: Revisions Following the defense, any requested revisions need to be submitted to the thesis committee and the academic advisor. Ray and Stephanie Lane Computational Biology Department › M.S. in Automated Science: Biological Experimentation › Curriculum › MSAS Forms MSAS Forms Declaration of Carry-Over Credit form [.pdf] Handbook Contract [.pdf] Acceptance Form [.pdf] MSAS Research for Credit Form (Google Form) Forms for Enrollment Services (the HUB) Pass/Fail Approval Course Audit Approval Late Add Request (current semester",
+      "char_start": 8021,
+      "char_end": 10549,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.cmu.edu_53339825_0005",
+      "text": "privately without the student. The research advisor should notify the program academic advisor of the outcome of the defense as early as possible. Step 9: Revisions Following the defense, any requested revisions need to be submitted to the thesis committee and the academic advisor. Ray and Stephanie Lane Computational Biology Department › M.S. in Automated Science: Biological Experimentation › Curriculum › MSAS Forms MSAS Forms Declaration of Carry-Over Credit form [.pdf] Handbook Contract [.pdf] Acceptance Form [.pdf] MSAS Research for Credit Form (Google Form) Forms for Enrollment Services (the HUB) Pass/Fail Approval Course Audit Approval Late Add Request (current semester only) Leave of Absence Return from Leave of Absence Withdrawal Forms for Office of International Education (OIE) Forms for Disability Resources",
+      "char_start": 9865,
+      "char_end": 10693,
+      "token_count": 121,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "6220a4fda1ad74a2db8d6a59ba742d2478941a05defe1aad1e644729c9f59b3a",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:55:32.840245",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

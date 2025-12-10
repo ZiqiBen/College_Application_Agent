@@ -1,0 +1,46 @@
+{
+  "id": "www.cs.utexas.edu_4b3434684d3c",
+  "source_url": "https://www.cs.utexas.edu/graduate/apply",
+  "raw_snapshot_path": "out/cache\\20251210T010819Z_4b3434684d3c.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T01:08:40.638417",
+  "checksum": "4b3434684d3c419e8c734c0c6097cbea84d497b96680f4763c9babfb461edf7c",
+  "language": null,
+  "title": "Apply to Graduate Computer Science Programs | UT Austin Computer Science",
+  "raw_text": "Apply\nWe’re here to help you take the next step toward becoming a Longhorn. Below you'll find key dates, eligibility requirements, and step-by-step guidance to complete your computer science graduate application through UT Austin's Graduate School. Apply early to ensure your materials are submitted by the deadline.\nAdmissions\nImportant Dates\nApplication Opens\nOctober 15\nApplication Deadline\nDecember 15\nLetters of Recommendation Deadline\nDecember 20\nPhD Admissions Decision Released\nFebruary 28\nMaster’s Admissions Decisions Released\nApril 1\nEligibility Requirements\nTo qualify for admission consideration, you’ll need to meet the\nminimum requirements\nfor the UT Graduate School and the program requirements below.\nRelevant Education\nApplicants for all UT Austin graduate programs are required to have earned a bachelor’s degree from a regionally accredited institution in the United States or a comparable degree from a foreign academic institution.\nAdmissions & Enrollment Statistics\nGPA\nTo be eligible for admission, you’ll need a GPA of 3.0 or higher (on a 4.0 scale) in upper-division courses and any graduate work you’ve completed.  Given the competitive nature of our program, successful applicants typically have an above-average GPA in their CS coursework.\nHow to Apply\n1\nStart Your Application\nAccess the\nonline application\n(EID required).\n2\nPay the Application Fee\n3\nUpload Applicable Items to Your MyStatus Portal\n4\nReview Your MyStatus Portal for Application Completion\nRequired Application Materials\nApplicants must submit the Office of Graduate Admissions (OGA) Required Application Materials. Please see the Graduate School website for a full list of required materials.\nOptional Materials\nOpting out of submitting optional materials does not adversely impact your application.\nLetters of Recommendation\nRequest and manage recommendation letters through your MyStatus portal. Recommenders can be supervisors or academic references. Do not exceed three recommendations.\nGRE General Score\n(optional for Fall 2025)\nIf you believe that it would strengthen your application, you may take the GRE and submit your official scores.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Computer Science Graduate Program",
+    "duration": null,
+    "school": "UT Austin",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": "Applicants must submit the Office of Graduate Admissions (OGA) Required Application Materials. A bachelor’s degree from a regionally accredited institution in the United States or a comparable degree from a foreign academic institution is required. A GPA of 3.0 or higher (on a 4.0 scale) in upper-division courses and any graduate work completed is needed. Letters of recommendation are required, and the GRE General Score is optional for Fall 2025.",
+    "features": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.cs.utexas.edu_4b343468_0000",
+      "text": "Apply We’re here to help you take the next step toward becoming a Longhorn. Below you'll find key dates, eligibility requirements, and step-by-step guidance to complete your computer science graduate application through UT Austin's Graduate School. Apply early to ensure your materials are submitted by the deadline. Admissions Important Dates Application Opens October 15 Application Deadline December 15 Letters of Recommendation Deadline December 20 PhD Admissions Decision Released February 28 Master’s Admissions Decisions Released April 1 Eligibility Requirements To qualify for admission consideration, you’ll need to meet the minimum requirements for the UT Graduate School and the program requirements below. Relevant Education Applicants for all UT Austin graduate programs are required to have earned a bachelor’s degree from a regionally accredited institution in the United States or a comparable degree from a foreign academic institution. Admissions & Enrollment Statistics GPA To be eligible for admission, you’ll need a GPA of 3.0 or higher (on a 4.0 scale) in upper-division courses and any graduate work you’ve completed. Given the competitive nature of our program, successful applicants typically have an above-average GPA in their CS coursework. How to Apply 1 Start Your Application Access the online application (EID required). 2 Pay the Application Fee 3 Upload Applicable Items to Your MyStatus Portal 4 Review Your MyStatus Portal for Application Completion Required Application Materials Applicants must submit the Office of Graduate Admissions (OGA) Required Application Materials. Please see the Graduate School website for a full list of required materials. Optional Materials Opting out of submitting optional materials does not adversely impact your application. Letters of Recommendation Request and manage recommendation letters through your MyStatus portal. Recommenders can be supervisors or academic references. Do not exceed three recommendations. GRE General Score (optional for Fall 2025) If you believe that it would strengthen your application, you may take the GRE and submit your official scores.",
+      "char_start": 0,
+      "char_end": 2141,
+      "token_count": 310,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "0654bf239ed227723dc602087ee73373b60b5bdc1117a28de92e53ee52ef824c",
+      "model": "gpt-4o",
+      "date": "2025-12-10T01:08:40.638417",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

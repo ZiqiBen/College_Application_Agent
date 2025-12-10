@@ -1,0 +1,46 @@
+{
+  "id": "grad.ucla.edu_02a962dd1096",
+  "source_url": "https://grad.ucla.edu/programs/physical-sciences/chemistry-and-biochemistry-department/biochemistry-molecular-and-structural-biology/",
+  "raw_snapshot_path": "out/cache\\20251210T005932Z_02a962dd1096.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:59:56.144045",
+  "checksum": "02a962dd109620b64a84f2fb3a92a9c75495191367662a0a7202d1e9e74ae183",
+  "language": null,
+  "title": "Biochemistry, Molecular and Structural Biology | UCLA Graduate Programs",
+  "raw_text": "Graduate Program: Biochemistry, Molecular and Structural Biology\nDEGREES\nUCLA's Graduate Program in Biochemistry, Molecular and Structural Biology offers the following degree(s):\nD\nDoctor of Philosophy                                              (Ph.D.)\nM\nMasters available on Doctoral track\nAdmission\nRequirements\nProgram\nStatistics\nVisit the Program’s website\nBiochemistry, Molecular and Structural Biology provides in-depth details on its own site\nWith questions not answered here or on the program’s site (above), please contact the program directly.\nADDRESS\nBiochemistry, Molecular and Structural Biology Graduate Program at UCLA\n4009 Young Hall\nBox 951569\nLos Angeles, CA 90095-1569\nFACULTY\nVisit the\nChemistry and Biochemistry Department’s faculty roster\nCOURSE DESCRIPTIONS\nVisit the registrar's site for the\nChemistry and Biochemistry Department’s course descriptions\nPHONE\n(310) 825-3150\nFax: (310) 267-0204\nEMAIL\nchemgrad@chem.ucla.edu\nMAJOR CODE: BIOCHEMISTRY, MOLECULAR AND STRUCTURAL BIOLOGY\n009O",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Biochemistry, Molecular and Structural Biology",
+    "duration": null,
+    "school": "UCLA",
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": "chemgrad@chem.ucla.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "grad.ucla.edu_02a962dd_0000",
+      "text": "Graduate Program: Biochemistry, Molecular and Structural Biology DEGREES UCLA's Graduate Program in Biochemistry, Molecular and Structural Biology offers the following degree(s): D Doctor of Philosophy (Ph.D.) M Masters available on Doctoral track Admission Requirements Program Statistics Visit the Program’s website Biochemistry, Molecular and Structural Biology provides in-depth details on its own site With questions not answered here or on the program’s site (above), please contact the program directly. ADDRESS Biochemistry, Molecular and Structural Biology Graduate Program at UCLA 4009 Young Hall Box 951569 Los Angeles, CA 90095-1569 FACULTY Visit the Chemistry and Biochemistry Department’s faculty roster COURSE DESCRIPTIONS Visit the registrar's site for the Chemistry and Biochemistry Department’s course descriptions PHONE (310) 825-3150 Fax: (310) 267-0204 EMAIL chemgrad@chem.ucla.edu MAJOR CODE: BIOCHEMISTRY, MOLECULAR AND STRUCTURAL BIOLOGY 009O",
+      "char_start": 0,
+      "char_end": 966,
+      "token_count": 126,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "8fb163ddd89f1d042943adbe1d727f270ea6bd2e7f4b6c7c05fa63d262cd49c7",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:59:56.144045",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

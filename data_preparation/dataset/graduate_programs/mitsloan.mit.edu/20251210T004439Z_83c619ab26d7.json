@@ -1,0 +1,103 @@
+{
+  "id": "mitsloan.mit.edu_83c619ab26d7",
+  "source_url": "https://mitsloan.mit.edu/master-of-business-analytics/explore-program/mban-curriculum",
+  "raw_snapshot_path": "out/cache\\20251210T004424Z_83c619ab26d7.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:44:39.968885",
+  "checksum": "83c619ab26d7458d0d9ebd5a52640ee09ecbe056b782d91287b44bd49e05f476",
+  "language": null,
+  "title": "MBAn Curriculum | Master of Business Analytics | MIT Sloan",
+  "raw_text": "Master of Business Analytics\nMBAn Curriculum\nThe courses listed below provide a window into the MBAn academic experience. Names, numbers, instructors, and descriptions are subject to change. For the most up-to-date information, please see the\nMIT subject catalog\n.\nExplore Approved ORC Electives\nApply Now\nCourses and Units\nBy the end of the 12-month program, you will have completed anywhere from 111 to 147 units of classwork. MBAn students take up to 66 units per term, with a maximum of 54 units from MIT Sloan courses.\nFall Term\n15.003 Analytics Tool (3)\nGet familiar with different analytics topics, programming languages, and software tools. (Python, R, Julia/JuMP, Github, etc.)\n15.C57 Optimization Methods (12)\nIntroduces the principal algorithms for linear, network, discrete, robust, nonlinear, and dynamic optimization. Emphasizes methodology and the underlying mathematical structures.\n15.095 Machine Learning (12)\nDevelops algorithms for central problems in machine learning from a modern optimization perspective.\n15.072 Advanced Analytics Edge (6)\nExamines how data analytics transforms businesses and industries, using examples and case studies in e-commerce, healthcare, social media, high technology, sports, the internet, and beyond.\n15.776 Intensive Hands-on Deep Learning (6)\nFast-paced introduction to deep learning, the engine behind modern artificial intelligence, with an emphasis on developing a practical understanding of how to build models to solve complex problems involving unstructured data. Rapid introduction to deep neural networks and their training. Emphasis on language models, focused on masked and generative modeling and vision models (using diffusions and transformers).\n15.572 Analytics Lab (9)\nStudent teams design and deliver a project using analytics, machine learning, large data sets, or other digital innovations to create or transform a business or other organization. Culminates with presenting results to an audience that includes IT experts, entrepreneurs, and executives.\n15.681 From Analytics to Action (6)\nDevelops an appreciation for organizational dynamics and competence in navigating social networks, working in a team, demystifying rewards and incentives, leveraging the crowd, understanding change initiatives, and making sound decisions.\n+ One Optional Unrestricted Elective\n(0-12 units)\nCollapse\nIndependent Activities Period (IAP)\nIAP holds great significance for MBAn students as it is a bustling and crucial period. Apart from the required courses, MBAn students are also required to engage in the Analytics Capstone Kick-Off, Company Pitches, and prepare for their Capstone interviews & matching.\n15.003 Analytics Tools Workshop (3)\nGet familiar with different analytics topics, programming languages, and software tools. (Python, R, Julia/JuMP, Github, etc.)\n15.089 Analytics Capstone (3)\nPractical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope.\n15.287 Communication and Persuasion through Data (3)\nFocuses on the strategic and tactical use of data to move others to take (the correct) action. Sharpens communication skills via practice and real-world examples.\n15.630 Ethics & Data Privacy​ (3)\nSurveys selected ethical dilemmas and legal issues that arise in business analytics and AI. Explains how to maintain current knowledge about key laws and regulations for evolving technologies.\nCollapse\nSpring Term\n15.089 Analytics Capstone  (12)\nPractical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope.\n+ Analytics Electives\nStudents can enroll in up to 48 maximum elective units; 27 minimum units must be taken from the approved Analytics Electives course list (course list will be shared in November before bidding).\nCollapse\nSummer Term\n15.089 Analytics Capstone (9)\nPractical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope.\nCollapse\nUnique Analytics Capstone Project\nThe MBAn program includes an Analytics Capstone Project, where students collaborate with industry professionals to tackle real-world data science challenges. This project, with a tuition offset of over $22K, pairs two students with sponsor organizations in the U.S. and abroad. From February to May, students work on campus, guided by faculty advisors, and then intern full-time with their hosts during the summer. After completing the internship and submitting a final report and presentation in August, students graduate with their degree.\nMIT Analytics Capstone\nWant to give students real-world experience solving data challenges?\nBecome an Analytics Capstone host organization\n.\nOpportunity to Conduct Research with Faculty\nExplore a diverse array of applications and methodologies in operations research and analytics by applying for a research assistantship with affiliated faculty and senior staff from MIT Sloan and MIT Operations Research Center.\nFACULTY IMPACT\nSample Research Topics\nModel flu epidemics and optimize flu vaccine distribution internationally, utilizing mixed integer optimization techniques applied to sparse regression (\nD. Bertsimas\n)\nAnalyze airline pricing for legendary carriers versus low-cost carriers to identify any oligopolistic pricing power (\nA. Barnett\n)\nForecasted used car replacement costs using various models (LSTM, decision tree, SVM, SARIMAX) to better understand trends impacting replacement valuation methodology (\nG. Perakis)\nExpanded unstructured food safety database of 4M test results in China, developed NLP classification algorithm (Gensim, Fasttext) to increase database coverage by 17% (\nR. Levi\n)\nDesign and implement scalable algorithms to impute high-dimensional matrices on 500k insurance data with $1.2B revenue (\nV. Farias\n)\nPredicting crop prices and optimizing network flow for rural farmers of India (\nK. Zheng\n)\nCollapse",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Master of Business Analytics",
+    "duration": "12-month",
+    "school": "MIT Sloan",
+    "courses": [
+      {
+        "name": "15.003 Analytics Tool",
+        "description": "Get familiar with different analytics topics, programming languages, and software tools. (Python, R, Julia/JuMP, Github, etc.)"
+      },
+      {
+        "name": "15.C57 Optimization Methods",
+        "description": "Introduces the principal algorithms for linear, network, discrete, robust, nonlinear, and dynamic optimization. Emphasizes methodology and the underlying mathematical structures."
+      },
+      {
+        "name": "15.095 Machine Learning",
+        "description": "Develops algorithms for central problems in machine learning from a modern optimization perspective."
+      },
+      {
+        "name": "15.072 Advanced Analytics Edge",
+        "description": "Examines how data analytics transforms businesses and industries, using examples and case studies in e-commerce, healthcare, social media, high technology, sports, the internet, and beyond."
+      },
+      {
+        "name": "15.776 Intensive Hands-on Deep Learning",
+        "description": "Fast-paced introduction to deep learning, the engine behind modern artificial intelligence, with an emphasis on developing a practical understanding of how to build models to solve complex problems involving unstructured data."
+      },
+      {
+        "name": "15.572 Analytics Lab",
+        "description": "Student teams design and deliver a project using analytics, machine learning, large data sets, or other digital innovations to create or transform a business or other organization."
+      },
+      {
+        "name": "15.681 From Analytics to Action",
+        "description": "Develops an appreciation for organizational dynamics and competence in navigating social networks, working in a team, demystifying rewards and incentives, leveraging the crowd, understanding change initiatives, and making sound decisions."
+      },
+      {
+        "name": "15.089 Analytics Capstone",
+        "description": "Practical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope."
+      },
+      {
+        "name": "15.287 Communication and Persuasion through Data",
+        "description": "Focuses on the strategic and tactical use of data to move others to take (the correct) action. Sharpens communication skills via practice and real-world examples."
+      },
+      {
+        "name": "15.630 Ethics & Data Privacy",
+        "description": "Surveys selected ethical dilemmas and legal issues that arise in business analytics and AI. Explains how to maintain current knowledge about key laws and regulations for evolving technologies."
+      }
+    ],
+    "tuition": "Tuition offset of over $22K for the Analytics Capstone Project",
+    "application_requirements": null,
+    "features": "Includes an Analytics Capstone Project where students collaborate with industry professionals to tackle real-world data science challenges.",
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "mitsloan.mit.edu_83c619ab_0000",
+      "text": "Master of Business Analytics MBAn Curriculum The courses listed below provide a window into the MBAn academic experience. Names, numbers, instructors, and descriptions are subject to change. For the most up-to-date information, please see the MIT subject catalog . Explore Approved ORC Electives Apply Now Courses and Units By the end of the 12-month program, you will have completed anywhere from 111 to 147 units of classwork. MBAn students take up to 66 units per term, with a maximum of 54 units from MIT Sloan courses. Fall Term 15.003 Analytics Tool (3) Get familiar with different analytics topics, programming languages, and software tools. (Python, R, Julia/JuMP, Github, etc.) 15.C57 Optimization Methods (12) Introduces the principal algorithms for linear, network, discrete, robust, nonlinear, and dynamic optimization. Emphasizes methodology and the underlying mathematical structures. 15.095 Machine Learning (12) Develops algorithms for central problems in machine learning from a modern optimization perspective. 15.072 Advanced Analytics Edge (6) Examines how data analytics transforms businesses and industries, using examples and case studies in e-commerce, healthcare, social media, high technology, sports, the internet, and beyond. 15.776 Intensive Hands-on Deep Learning (6) Fast-paced introduction to deep learning, the engine behind modern artificial intelligence, with an emphasis on developing a practical understanding of how to build models to solve complex problems involving unstructured data. Rapid introduction to deep neural networks and their training. Emphasis on language models, focused on masked and generative modeling and vision models (using diffusions and transformers). 15.572 Analytics Lab (9) Student teams design and deliver a project using analytics, machine learning, large data sets, or other digital innovations to create or transform a business or other organization. Culminates with presenting results to an audience that includes IT experts, entrepreneurs, and executives. 15.681 From Analytics to Action (6) Develops an appreciation for organizational dynamics and competence in navigating social networks, working in a team, demystifying rewards and incentives, leveraging the crowd, understanding change initiatives, and making sound decisions. + One Optional Unrestricted Elective (0-12 units) Collapse Independent Activities Period (IAP) IAP holds great significance for MBAn students as it is a bustling and crucial period. Apart from the required courses, MBAn students are also required to engage in the Analytics Capstone Kick-Off, Company Pitches, and prepare for their Capstone interviews & matching. 15.003 Analytics Tools Workshop (3) Get familiar with different analytics topics, programming languages, and software tools. (Python, R, Julia/JuMP, Github, etc.) 15.089 Analytics",
+      "char_start": 0,
+      "char_end": 2845,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mitsloan.mit.edu_83c619ab_0001",
+      "text": "competence in navigating social networks, working in a team, demystifying rewards and incentives, leveraging the crowd, understanding change initiatives, and making sound decisions. + One Optional Unrestricted Elective (0-12 units) Collapse Independent Activities Period (IAP) IAP holds great significance for MBAn students as it is a bustling and crucial period. Apart from the required courses, MBAn students are also required to engage in the Analytics Capstone Kick-Off, Company Pitches, and prepare for their Capstone interviews & matching. 15.003 Analytics Tools Workshop (3) Get familiar with different analytics topics, programming languages, and software tools. (Python, R, Julia/JuMP, Github, etc.) 15.089 Analytics Capstone (3) Practical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope. 15.287 Communication and Persuasion through Data (3) Focuses on the strategic and tactical use of data to move others to take (the correct) action. Sharpens communication skills via practice and real-world examples. 15.630 Ethics & Data Privacy​ (3) Surveys selected ethical dilemmas and legal issues that arise in business analytics and AI. Explains how to maintain current knowledge about key laws and regulations for evolving technologies. Collapse Spring Term 15.089 Analytics Capstone (12) Practical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope. + Analytics Electives Students can enroll in up to 48 maximum elective units; 27 minimum units must be taken from the approved Analytics Electives course list (course list will be shared in November before bidding). Collapse Summer Term 15.089 Analytics Capstone (9) Practical application of business analytics problems within a real company. Teams of 1-2 students, matched with company projects, visit companies to define the project and scope. Collapse Unique Analytics Capstone Project The MBAn program includes an Analytics Capstone Project, where students collaborate with industry professionals to tackle real-world data science challenges. This project, with a tuition offset of over $22K, pairs two students with sponsor organizations in the U.S. and abroad. From February to May, students work on campus, guided by faculty advisors, and then intern full-time with their hosts during the summer. After completing the internship and submitting a final report and presentation in August, students graduate with their degree. MIT Analytics Capstone Want to give students real-world experience solving data challenges? Become an Analytics Capstone host organization . Opportunity",
+      "char_start": 2120,
+      "char_end": 4895,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mitsloan.mit.edu_83c619ab_0002",
+      "text": "The MBAn program includes an Analytics Capstone Project, where students collaborate with industry professionals to tackle real-world data science challenges. This project, with a tuition offset of over $22K, pairs two students with sponsor organizations in the U.S. and abroad. From February to May, students work on campus, guided by faculty advisors, and then intern full-time with their hosts during the summer. After completing the internship and submitting a final report and presentation in August, students graduate with their degree. MIT Analytics Capstone Want to give students real-world experience solving data challenges? Become an Analytics Capstone host organization . Opportunity to Conduct Research with Faculty Explore a diverse array of applications and methodologies in operations research and analytics by applying for a research assistantship with affiliated faculty and senior staff from MIT Sloan and MIT Operations Research Center. FACULTY IMPACT Sample Research Topics Model flu epidemics and optimize flu vaccine distribution internationally, utilizing mixed integer optimization techniques applied to sparse regression ( D. Bertsimas ) Analyze airline pricing for legendary carriers versus low-cost carriers to identify any oligopolistic pricing power ( A. Barnett ) Forecasted used car replacement costs using various models (LSTM, decision tree, SVM, SARIMAX) to better understand trends impacting replacement valuation methodology ( G. Perakis) Expanded unstructured food safety database of 4M test results in China, developed NLP classification algorithm (Gensim, Fasttext) to increase database coverage by 17% ( R. Levi ) Design and implement scalable algorithms to impute high-dimensional matrices on 500k insurance data with $1.2B revenue ( V. Farias ) Predicting crop prices and optimizing network flow for rural farmers of India ( K. Zheng ) Collapse",
+      "char_start": 4201,
+      "char_end": 6087,
+      "token_count": 272,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "2a392c951e06a6bbf53ef7a61d1d1b9331b795031afb50f9c74076f6857a0518",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:44:39.968885",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

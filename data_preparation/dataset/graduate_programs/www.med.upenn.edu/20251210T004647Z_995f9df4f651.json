@@ -1,0 +1,46 @@
+{
+  "id": "www.med.upenn.edu_995f9df4f651",
+  "source_url": "https://www.med.upenn.edu/mph/",
+  "raw_snapshot_path": "out/cache\\20251210T004644Z_995f9df4f651.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:46:47.185534",
+  "checksum": "995f9df4f65169220da0e241b30323482eb1a3744af6202b6fbd1eaba2a56fdf",
+  "language": null,
+  "title": "Page Not Found | Perelman School of Medicine | Perelman School of Medicine at the University of Pennsylvania",
+  "raw_text": "Page Not Found\nPage Not Found\nThe page you are looking for could not be found. We apologize for the inconvenience. Please browse the site using the navigation menu or utilize the search tool.",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": null,
+    "duration": null,
+    "school": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.med.upenn.edu_995f9df4_0000",
+      "text": "Page Not Found Page Not Found The page you are looking for could not be found. We apologize for the inconvenience. Please browse the site using the navigation menu or utilize the search tool. ==== COURSE DETAIL START (Page Not Found Page Not Found) ==== Page Not Found Page Not Found The page you are looking for could not be found. We apologize for the inconvenience. Please browse the site using the navigation menu or utilize the search tool. ==== COURSE DETAIL END (Page Not Found Page Not Found) ====",
+      "char_start": 0,
+      "char_end": 505,
+      "token_count": 90,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "c3a7db6fd139d18b32327ae30dae1898d29030a46100386f9323df1c62b38876",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:46:47.185534",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

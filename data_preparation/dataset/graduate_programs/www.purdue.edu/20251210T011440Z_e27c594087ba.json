@@ -1,0 +1,46 @@
+{
+  "id": "www.purdue.edu_e27c594087ba",
+  "source_url": "https://www.purdue.edu/academics/ogsps/admissions/gradrequirements/westlafayette/computer-and-information-technology/",
+  "raw_snapshot_path": "out/cache\\20251210T011437Z_e27c594087ba.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T01:14:40.083652",
+  "checksum": "e27c594087ba18d77b8ffd615bdda9df6281f8079f22277081573885684f0352",
+  "language": null,
+  "title": "Computer and Information Technology",
+  "raw_text": "Computer and Information Technology",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Computer and Information Technology",
+    "duration": null,
+    "school": null,
+    "courses": null,
+    "tuition": null,
+    "application_requirements": null,
+    "features": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.purdue.edu_e27c5940_0000",
+      "text": "Computer and Information Technology",
+      "char_start": 0,
+      "char_end": 35,
+      "token_count": 4,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "78380138031a6574cf411c31ac414460436655d337f9d99b938ee6a289228aee",
+      "model": "gpt-4o",
+      "date": "2025-12-10T01:14:40.083652",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

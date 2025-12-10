@@ -1,0 +1,71 @@
+{
+  "id": "graduateprograms.brown.edu_72e0c105c081",
+  "source_url": "https://graduateprograms.brown.edu/graduate-program/economics-phd",
+  "raw_snapshot_path": "out/cache\\20251210T003517Z_72e0c105c081.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T00:35:26.334226",
+  "checksum": "72e0c105c081d350691f000d1205e82facb2ca94f3494ad072a28bf409baeb3b",
+  "language": null,
+  "title": "Economics | Graduate Programs | Brown University",
+  "raw_text": "Graduate Programs\nEconomics\nPh.D.\nschool\nGraduate School\ndepartment\nEconomics\nInquire\nApply\nAll Graduate Programs\nEconomics\nThrough course work, participation in seminars and supervised research, the Ph.D. program in Economics trains students to conduct theoretical and empirical research at the highest level.\nThrough course work, participation in seminars and supervised research, the Ph.D. program in Economics trains students to conduct theoretical and empirical research at the highest level.\nThe work in the program is demanding and the standards of performance are high. The department's reputation for providing superb training has enabled its graduates to compile an excellent placement record, including major research universities, prestigious liberal arts colleges, government and international agencies, and private industrial, consulting and research firms.\nThe department faculty includes the editors of the Journal of Economic Growth, the Journal of Development Economics, the American Economic Journal: Economic Policy, the Journal of Urban Economics and the Journal of Human Resources, among others; several fellows of the Econometric Society; several Sloan fellows; a Distinguished Fellow of the American Economic Association; and numerous associates and fellows of the National Bureau of Economic Research and the Center for Economic Policy Research.\nThe atmosphere in the department is highly collegial, and interaction among faculty members and graduate students is easy and extensive. The department hosts six weekly seminars (Economic Theory, Macroeconomics, Applied Microeconomics, and Econometrics, Development, Institutions, and Political Economy and Economics Growth), as well as parallel lunches and breakfasts for graduate student work in progress.\nAdditional Resources\nThe department maintains close links with the\nPopulation Studies and Training Center\n, which provides support for students doing research in population economics and economic development, the\nWatson School of International and Public Affairs\n, which hosts an interdisciplinary Graduate Program in Development, the center for\nSpatial Structures in the Social Sciences\n, and the\nInstitute at Brown for Environment and Society\n.\nApplication Requirements\nGRE Subject:\nNot required\nGRE General:\nRequired\nApplication Deadline\nJanuary 1, 2026\nEight basic courses with a passing grade in these courses; seven advanced courses with grade of B or better; field exam; third–year poster presentation and research paper; seminar presentations; dissertation.\nAlumni Careers\nLearn More\nDepartment Chair\nKareen Rozen\nkareen_rozen@brown.edu\nDirector of Graduate Studies\nToru Kitagawa\nToru_Kitagawa@brown.edu\nVice Director of Graduate Studies\nKellie Forrester\nkellie_forrester@brown.edu\nDepartment of Economics\nMailing Address\nBrown University\nBox B\nAngelica_Spertini@brown.edu\n401-863-3836\nVisit the Department of Economics\nProgram Faculty\nProgram Handbook\nGraduate School Handbook",
+  "schema_version": "v1.0",
+  "extracted_fields": {
+    "program_name": "Economics Ph.D.",
+    "duration": null,
+    "school": "Brown University",
+    "courses": [
+      {
+        "name": "Economic Theory",
+        "description": null
+      },
+      {
+        "name": "Macroeconomics",
+        "description": null
+      },
+      {
+        "name": "Applied Microeconomics",
+        "description": null
+      },
+      {
+        "name": "Econometrics",
+        "description": null
+      },
+      {
+        "name": "Development, Institutions, and Political Economy",
+        "description": null
+      },
+      {
+        "name": "Economics Growth",
+        "description": null
+      }
+    ],
+    "tuition": null,
+    "application_requirements": "GRE General: Required, GRE Subject: Not required, Application Deadline January 1, 2026",
+    "features": "The Ph.D. program in Economics trains students to conduct theoretical and empirical research at the highest level. The department hosts six weekly seminars and maintains close links with various research centers.",
+    "contact_email": "Angelica_Spertini@brown.edu",
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "graduateprograms.brown.edu_72e0c105_0000",
+      "text": "Graduate Programs Economics Ph.D. school Graduate School department Economics Inquire Apply All Graduate Programs Economics Through course work, participation in seminars and supervised research, the Ph.D. program in Economics trains students to conduct theoretical and empirical research at the highest level. Through course work, participation in seminars and supervised research, the Ph.D. program in Economics trains students to conduct theoretical and empirical research at the highest level. The work in the program is demanding and the standards of performance are high. The department's reputation for providing superb training has enabled its graduates to compile an excellent placement record, including major research universities, prestigious liberal arts colleges, government and international agencies, and private industrial, consulting and research firms. The department faculty includes the editors of the Journal of Economic Growth, the Journal of Development Economics, the American Economic Journal: Economic Policy, the Journal of Urban Economics and the Journal of Human Resources, among others; several fellows of the Econometric Society; several Sloan fellows; a Distinguished Fellow of the American Economic Association; and numerous associates and fellows of the National Bureau of Economic Research and the Center for Economic Policy Research. The atmosphere in the department is highly collegial, and interaction among faculty members and graduate students is easy and extensive. The department hosts six weekly seminars (Economic Theory, Macroeconomics, Applied Microeconomics, and Econometrics, Development, Institutions, and Political Economy and Economics Growth), as well as parallel lunches and breakfasts for graduate student work in progress. Additional Resources The department maintains close links with the Population Studies and Training Center , which provides support for students doing research in population economics and economic development, the Watson School of International and Public Affairs , which hosts an interdisciplinary Graduate Program in Development, the center for Spatial Structures in the Social Sciences , and the Institute at Brown for Environment and Society . Application Requirements GRE Subject: Not required GRE General: Required Application Deadline January 1, 2026 Eight basic courses with a passing grade in these courses; seven advanced courses with grade of B or better; field exam; third–year poster presentation and research paper; seminar presentations; dissertation. Alumni Careers Learn More Department Chair Kareen Rozen kareen_rozen@brown.edu Director of Graduate Studies Toru Kitagawa Toru_Kitagawa@brown.edu Vice Director of Graduate Studies Kellie Forrester kellie_forrester@brown.edu Department of Economics Mailing Address Brown University Box B Angelica_Spertini@brown.edu 401-863-3836 Visit the Department of Economics Program Faculty Program Handbook Graduate School Handbook",
+      "char_start": 0,
+      "char_end": 2964,
+      "token_count": 399,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "3e0c6d167ab734249d2f5bc630b82e870224927b1561e0678abfa20bb0bdc8ee",
+      "model": "gpt-4o",
+      "date": "2025-12-10T00:35:26.334226",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}
