@@ -1,0 +1,69 @@
+{
+  "id": "apply.grad.uw.edu_ab612e478fea",
+  "source_url": "https://apply.grad.uw.edu/portal/prog_detail_find_a_program?progid=0-O-BIOEN-50-26",
+  "raw_snapshot_path": "out/cache\\20251210T050549Z_ab612e478fea.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:05:57.944120",
+  "checksum": "ab612e478fea9b03f0955f930ac4005e0fb161113c5637c1b398c32fcdd77e8a",
+  "title": "Program Detail - Find a Program",
+  "raw_text": "This website uses resources that are being blocked by your network. Contact your network administrator for more information.\nSkip to main content\nFind a Program\nProgram Detail\nBioengineering (MS in Bioengineering)\nApply Now >>\nBasic Information\nDegree Information\nDegree Offered:\nMASTER OF SCIENCE IN BIOENGINEERING\nCIP Code:\n14.0501\nCampus: Seattle\nAdmission Requirements and Contact Information\nAll materials must be received by the deadline; no exceptions can be made to this policy.\nContact Information\nAcademic Services Office\nProgram Website\nbioeng@uw.edu\nRequirements and Prerequisites\nPlease follow the application instructions on the following\nwebsite\n.\nGRE Requirements\nGRE Requirement:\nOptional/Not Required\n. Submitting GRE scores is not required. However, if official scores are submitted, they may be considered during the review process.\nMore Information: We don't require students to submit a GRE score, but if they would like to submit it along with their other materials we allow it.\nAdditional Instructions\nAt this time, funding is not available for domestic or international students in the MS program. MS students are not financially supported by the Department of Bioengineering.\nNon-Native English Speaker Information\nGraduate School requirement:\nEnglish language proficiency (ELP) is required for graduate study at the University of Washington. Therefore, every applicant whose native language is not English must demonstrate English language proficiency as outlined in\nGraduate School Policy 3.2\n.\nInternational Student Information\nApplicants who will need a visa should reference the\nInternational Applicant Information page\n. If admitted to the program, international students requesting an F-1 or J-1 visa will be required to provide\nfinancial ability documentation\nto the UW Graduate School.\nAt this time, funding is not available for domestic or international students in the MS program. MS students are not financially supported by the Department of Bioengineering.\nINTERNATIONAL applications will *not* be accepted after 11:59pm (pacific) December 1. All materials must be received by the deadline; no exceptions can be made to this policy.\nProgram Deadlines\nAutumn 2026 - Domestic:\nOpen Date:\n02/01/2026\nDeadline Date:\nAutumn 2026 - International:\nOpen Date:\n02/01/2026\nDeadline Date:\nApplication Materials\n3 Recommendation(s)\nResume\nMenu",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Bioengineering (MS in Bioengineering)",
+    "school": "University of Washington",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": "Optional/Not Required",
+      "english_tests": "English language proficiency (ELP) is required for graduate study at the University of Washington.",
+      "research_experience": null,
+      "work_experience": null,
+      "documents": "3 Recommendation(s), Resume",
+      "summary": "All materials must be received by the deadline; no exceptions can be made to this policy. GRE scores are optional. English language proficiency is required for non-native speakers."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "apply.grad.uw.edu_ab612e47_0000",
+      "text": "This website uses resources that are being blocked by your network. Contact your network administrator for more information. Skip to main content Find a Program Program Detail Bioengineering (MS in Bioengineering) Apply Now >> Basic Information Degree Information Degree Offered: MASTER OF SCIENCE IN BIOENGINEERING CIP Code: 14.0501 Campus: Seattle Admission Requirements and Contact Information All materials must be received by the deadline; no exceptions can be made to this policy. Contact Information Academic Services Office Program Website bioeng@uw.edu Requirements and Prerequisites Please follow the application instructions on the following website . GRE Requirements GRE Requirement: Optional/Not Required . Submitting GRE scores is not required. However, if official scores are submitted, they may be considered during the review process. More Information: We don't require students to submit a GRE score, but if they would like to submit it along with their other materials we allow it. Additional Instructions At this time, funding is not available for domestic or international students in the MS program. MS students are not financially supported by the Department of Bioengineering. Non-Native English Speaker Information Graduate School requirement: English language proficiency (ELP) is required for graduate study at the University of Washington. Therefore, every applicant whose native language is not English must demonstrate English language proficiency as outlined in Graduate School Policy 3.2 . International Student Information Applicants who will need a visa should reference the International Applicant Information page . If admitted to the program, international students requesting an F-1 or J-1 visa will be required to provide financial ability documentation to the UW Graduate School. At this time, funding is not available for domestic or international students in the MS program. MS students are not financially supported by the Department of Bioengineering. INTERNATIONAL applications will *not* be accepted after 11:59pm (pacific) December 1. All materials must be received by the deadline; no exceptions can be made to this policy. Program Deadlines Autumn 2026 - Domestic: Open Date: 02/01/2026 Deadline Date: Autumn 2026 - International: Open Date: 02/01/2026 Deadline Date: Application Materials 3 Recommendation(s) Resume Menu",
+      "char_start": 0,
+      "char_end": 2371,
+      "token_count": 341,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "db997ba8727362985d52fc4185373a2a438bfdeab7f5a216bc7f5027edcb626d",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:05:57.944120",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

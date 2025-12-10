@@ -1,0 +1,69 @@
+{
+  "id": "grad.ucsd.edu_9f86490b785f",
+  "source_url": "https://grad.ucsd.edu/admissions/requirements/index.html",
+  "raw_snapshot_path": "out/cache\\20251210T045828Z_9f86490b785f.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:58:39.086242",
+  "checksum": "9f86490b785f32fb6b16c7dc46395f2e6e939dc4e221c875b733161882c81706",
+  "title": "Requirements",
+  "raw_text": "HOME\nAdmissions\nRequirements\nAdmissions Requirements\nWhat You Need to Apply\nAs a prospective UC San Diego graduate student, you will need to upload academic records/transcripts and a statement of purpose. Prospective students will also need to provide contact information of recommenders. Some programs may require GRE examination scores. Prospective students should check program-specific requirements\nhere\n.\nOfficial transcripts & Course-by-Course Evaluations are not required until you are offered admission by UC San Diego.\nSuccessful applicants\nmust hold a bachelor's degree or the equivalent from an accredited institution in the United States or from a recognized university-level academic institution abroad\nand\nat least a B average (3.0 GPA) or its equivalent by the time they enroll.\nSome exceptional applicants with lower GPAs may be recommended for admission.\nContact your department of interest for more information. Application requirements may vary by\ndepartment\n.\nExamination Requirements\nGraduate applicants may be required to submit GRE scores for some departments. Some programs require additional tests or other alternatives.\nExamination Requirements\nRecords & Transcripts\nFor application review purposes, we require copies of transcripts for all institutions attended after high school graduation.\nRecords & Transcripts\nInternational Students\nAre you an international student? Find information specifically regarding international admissions, such as English language proficiency and exam requirements here.\nInternational Student Requirements\nNon Discrimination Statement\n: In accordance with applicable Federal and State law and University policy, the University of California does not discriminate, or grant preferences, on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. More information about\nProposition 209 can be found here\n. More information about the\nUniversity of California Anti-Discrimination Policy can be found here.\nAdmissions\nProspective Students\nDegree Programs\nRequirements\nApplication Fee and Fee Waiver\nExamination Requirements\nRecords & Transcripts\nStatement of Purpose\nInternational Students\nAdmissions Policies\nAdmitted Students\nAdmission FAQ\nCompliance/Health and Safety Information",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": null,
+    "school": "University of California, San Diego",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": "Successful applicants must hold a bachelor's degree or the equivalent from an accredited institution in the United States or from a recognized university-level academic institution abroad and at least a B average (3.0 GPA) or its equivalent by the time they enroll.",
+      "prerequisites": null,
+      "gre": "Some programs may require GRE examination scores.",
+      "english_tests": "International students should find information specifically regarding international admissions, such as English language proficiency and exam requirements.",
+      "research_experience": null,
+      "work_experience": null,
+      "documents": "You will need to upload academic records/transcripts and a statement of purpose. Prospective students will also need to provide contact information of recommenders.",
+      "summary": "Application requirements may vary by department. Some programs may require GRE examination scores. International students should check for English language proficiency requirements."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "grad.ucsd.edu_9f86490b_0000",
+      "text": "HOME Admissions Requirements Admissions Requirements What You Need to Apply As a prospective UC San Diego graduate student, you will need to upload academic records/transcripts and a statement of purpose. Prospective students will also need to provide contact information of recommenders. Some programs may require GRE examination scores. Prospective students should check program-specific requirements here . Official transcripts & Course-by-Course Evaluations are not required until you are offered admission by UC San Diego. Successful applicants must hold a bachelor's degree or the equivalent from an accredited institution in the United States or from a recognized university-level academic institution abroad and at least a B average (3.0 GPA) or its equivalent by the time they enroll. Some exceptional applicants with lower GPAs may be recommended for admission. Contact your department of interest for more information. Application requirements may vary by department . Examination Requirements Graduate applicants may be required to submit GRE scores for some departments. Some programs require additional tests or other alternatives. Examination Requirements Records & Transcripts For application review purposes, we require copies of transcripts for all institutions attended after high school graduation. Records & Transcripts International Students Are you an international student? Find information specifically regarding international admissions, such as English language proficiency and exam requirements here. International Student Requirements Non Discrimination Statement : In accordance with applicable Federal and State law and University policy, the University of California does not discriminate, or grant preferences, on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. More information about Proposition 209 can be found here . More information about the University of California Anti-Discrimination Policy can be found here. Admissions Prospective Students Degree Programs Requirements Application Fee and Fee Waiver Examination Requirements Records & Transcripts Statement of Purpose International Students Admissions Policies Admitted Students Admission FAQ Compliance/Health and Safety Information",
+      "char_start": 0,
+      "char_end": 2284,
+      "token_count": 307,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "0b388c5a97e8bfad21cd541dc6f9b98ef889a380143e537a3d2b0cdcb6387400",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:58:39.086242",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

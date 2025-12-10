@@ -1,0 +1,182 @@
+{
+  "id": "statistics.rice.edu_68c2880df1fd",
+  "source_url": "https://statistics.rice.edu/academics/graduate",
+  "raw_snapshot_path": "out/cache\\20251210T044446Z_68c2880df1fd.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:45:00.891792",
+  "checksum": "68c2880df1fdce4668c03ca4d56168ef42e391841cde9f01d9a11bd599e5daa0",
+  "title": "Graduate Programs | Department of Statistics | Rice University",
+  "raw_text": "Graduate\nPrograms\nA graduate degree in Statistics from Rice University can take you many places — from the most prestigious medical research institutions to the high stakes world of financial and energy companies; to government research labs or technology firms. Statisticians are in high demand in today’s data-driven world, and our students are placed in a wide variety of industrial, government, and academic positions upon graduation.\nBody\nInterested graduate study in statistics at Rice? We'd love to hear from you.\nFill out this form and we'll send you information about our graduate programs, research, life in Houston and more.\nREQUEST INFORMATION\nPhD\nProgram\nWorking closely with our renowned faculty, Rice graduate students have the opportunity for rigorous training in theoretical statistics as well as applied research in a wide spectrum of topics in applied, theoretical and computational statistics from engineering, natural sciences, business, medicine, and social sciences.\nLearn more about our\nPhD Program\n.\nProfessional Master's\nProgram\nThe Master of Statistics (MStat) is a non-thesis degree program that prepares students for careers as professional statisticians. It’s oriented towards students with degrees in the mathematical, physical, and engineering sciences wishing to develop strong analytical skills in preparation for their careers.\nLearn more about our\nMaster of Statistics program\n.\nBody\nINFO\nSESSIONS\nWant to learn more about our professional master's degree program? Register for one of the upcoming virtual info sessions:\nLearn More",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Master of Statistics (MStat)",
+    "school": "Rice University",
+    "department": "Department of Statistics",
+    "duration": "Three semesters of full-time course work",
+    "courses": [
+      {
+        "name": "Probability (STAT 518)",
+        "description": null
+      },
+      {
+        "name": "Statistical Inference (STAT 519)",
+        "description": null
+      },
+      {
+        "name": "Statistical Computing and Graphics (STAT 605)",
+        "description": null
+      },
+      {
+        "name": "Introduction to Regression and Statistical Computing (STAT 615)",
+        "description": null
+      },
+      {
+        "name": "Advanced Statistical Methods (STAT 616)",
+        "description": null
+      },
+      {
+        "name": "Applied Time Series and Forecasting (STAT 621)",
+        "description": null
+      },
+      {
+        "name": "Quantitative Financial Risk Management (STAT 649)",
+        "description": null
+      },
+      {
+        "name": "Quantitative Financial Analytics (STAT 682)",
+        "description": null
+      },
+      {
+        "name": "Market Models (STAT 686)",
+        "description": null
+      },
+      {
+        "name": "Quantitative Finance (STAT 699)",
+        "description": null
+      },
+      {
+        "name": "Generalized Linear Models & Categorical Analysis (STAT 545)",
+        "description": null
+      },
+      {
+        "name": "Biostatistics (STAT 553)",
+        "description": null
+      },
+      {
+        "name": "Probability in Bioinformatics and Genetics (STAT 623)",
+        "description": null
+      },
+      {
+        "name": "Probability and Statistics for Systems Biology (STAT 673)",
+        "description": null
+      },
+      {
+        "name": "Bayesian Data Analysis (STAT 622)",
+        "description": null
+      },
+      {
+        "name": "Multivariate Analysis (STAT 541)",
+        "description": null
+      },
+      {
+        "name": "Simulation (STAT 542)",
+        "description": null
+      },
+      {
+        "name": "Statistical Machine Learning (STAT 613)",
+        "description": null
+      },
+      {
+        "name": "Quantitative Environmental Decision Making (STAT 685)",
+        "description": null
+      },
+      {
+        "name": "Environmental Risk Assessment & Human Health (STAT 684)",
+        "description": null
+      },
+      {
+        "name": "Bayesian analysis (STAT 525)",
+        "description": null
+      },
+      {
+        "name": "Causal analysis (STAT 530)",
+        "description": null
+      },
+      {
+        "name": "Statistical inference I (STAT 532)",
+        "description": null
+      },
+      {
+        "name": "Probability (STAT 581)",
+        "description": null
+      }
+    ],
+    "application_requirements": {
+      "academic_background": "Degrees in the mathematical, physical, and engineering sciences",
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": "The program is oriented towards students with degrees in the mathematical, physical, and engineering sciences wishing to develop strong analytical skills in preparation for their careers."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": "Customized and individualized curriculum based on interests and career objectives.",
+      "faculty": "Renowned faculty providing rigorous training in theoretical and applied statistics.",
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": "Prepare students for careers as professional statisticians.",
+      "career_paths": "Industrial, government, and academic positions.",
+      "research_orientation": null,
+      "professional_orientation": "The program is designed for professional development in statistics.",
+      "summary": "Graduates are placed in a wide variety of industrial, government, and academic positions upon graduation."
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "statistics.rice.edu_68c2880d_0000",
+      "text": "Graduate Programs A graduate degree in Statistics from Rice University can take you many places — from the most prestigious medical research institutions to the high stakes world of financial and energy companies; to government research labs or technology firms. Statisticians are in high demand in today’s data-driven world, and our students are placed in a wide variety of industrial, government, and academic positions upon graduation. Body Interested graduate study in statistics at Rice? We'd love to hear from you. Fill out this form and we'll send you information about our graduate programs, research, life in Houston and more. REQUEST INFORMATION PhD Program Working closely with our renowned faculty, Rice graduate students have the opportunity for rigorous training in theoretical statistics as well as applied research in a wide spectrum of topics in applied, theoretical and computational statistics from engineering, natural sciences, business, medicine, and social sciences. Learn more about our PhD Program . Professional Master's Program The Master of Statistics (MStat) is a non-thesis degree program that prepares students for careers as professional statisticians. It’s oriented towards students with degrees in the mathematical, physical, and engineering sciences wishing to develop strong analytical skills in preparation for their careers. Learn more about our Master of Statistics program . Body INFO SESSIONS Want to learn more about our professional master's degree program? Register for one of the upcoming virtual info sessions: Learn More PROFESSIONAL MASTER'S PROGRAM Curriculum & Courses The Professional Master's Program in Statistics (MStat) offers you a customized and individualized curriculum based on the interests and your career objectives. You get to choose either a broad-based or specialized program of study. All our courses provide a balanced training in statistical methods, computational statistics, and statistical theory, and are intended to prepare you to adapt statistical methodologies to practical problems in a professional setting. Course of Study The MStat is a non-thesis master's degree and does not require an internship. Students are required to take 30 hours of approved coursework, with additional recommended career-enhancing enrichment courses. Depending on your selected specialization, the mix of courses — required, track-specific, and elective — will be jointly determined by you and your graduate advisor, who you will meet with during your first year to select an individualized plan. The program normally takes three semesters of full-time course work. Students are restricted to no more than four courses in their first semester (with three",
+      "char_start": 0,
+      "char_end": 2711,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "statistics.rice.edu_68c2880d_0001",
+      "text": "in a professional setting. Course of Study The MStat is a non-thesis master's degree and does not require an internship. Students are required to take 30 hours of approved coursework, with additional recommended career-enhancing enrichment courses. Depending on your selected specialization, the mix of courses — required, track-specific, and elective — will be jointly determined by you and your graduate advisor, who you will meet with during your first year to select an individualized plan. The program normally takes three semesters of full-time course work. Students are restricted to no more than four courses in their first semester (with three being preferable). It is also possible to complete the program on a part-time basis. Core Curriculum These required courses are normally completed by the end of the first two semesters: Probability (STAT 518) Statistical Inference (STAT 519) Statistical Computing and Graphics (STAT 605) Introduction to Regression and Statistical Computing (STAT 615) Advanced Statistical Methods (STAT 616) Courses Specific to Area of Specialization These courses are recommended for a specialization track that is to be developed between the student and the advisor/ director of MStat program. Courses include recommended core and elective courses. The current recommended core courses are listed below; recommended electives and courses for certain tracks such as Applied Statistics for Industry and Preparation for Ph.D. Studies are developed separately. Learn more about our areas of specialization. Financial Statistics and the Statistics of Risk Applied Time Series and Forecasting (STAT 621) Quantitative Financial Risk Management (STAT 649) Quantitative Financial Analytics (STAT 682) Market Models (STAT 686) Quantitative Finance (STAT 699) Bioinformatics, Statistical Genetics, and Biostatistics Generalized Linear Models & Categorical Analysis (STAT 545) Biostatistics (STAT 553) Probability in Bioinformatics and Genetics (STAT 623) Probability and Statistics for Systems Biology (STAT 673) Statistical Computing and Data Mining Bayesian Data Analysis (STAT 622) Multivariate Analysis (STAT 541) Simulation (STAT 542) Statistical Machine Learning (STAT 613) Environmental Statistics Quantitative Environmental Decision Making (STAT 685) Environmental Risk Assessment & Human Health (STAT 684) Applied Statistics for Industry Quantitative Environmental Decision Making (STAT 685) Multivariate analysis (STAT 541) GLM and categorical analysis (STAT 545) Bayesian analysis (STAT 525) Advanced Statistical Methods (STAT 616) CoFES blockchain/crypto (STAT 687) Preparation for PhD Studies in Statistics, Mathematical Economics, and Finance Multivariate analysis (STAT 541) GLM and categorical analysis (STAT 545) Bayesian analysis (STAT 525) Causal analysis (STAT 530) Statistical inference I (STAT 532) Probability (STAT 581) Masters",
+      "char_start": 2059,
+      "char_end": 4938,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "statistics.rice.edu_68c2880d_0002",
+      "text": "(STAT 622) Multivariate Analysis (STAT 541) Simulation (STAT 542) Statistical Machine Learning (STAT 613) Environmental Statistics Quantitative Environmental Decision Making (STAT 685) Environmental Risk Assessment & Human Health (STAT 684) Applied Statistics for Industry Quantitative Environmental Decision Making (STAT 685) Multivariate analysis (STAT 541) GLM and categorical analysis (STAT 545) Bayesian analysis (STAT 525) Advanced Statistical Methods (STAT 616) CoFES blockchain/crypto (STAT 687) Preparation for PhD Studies in Statistics, Mathematical Economics, and Finance Multivariate analysis (STAT 541) GLM and categorical analysis (STAT 545) Bayesian analysis (STAT 525) Causal analysis (STAT 530) Statistical inference I (STAT 532) Probability (STAT 581) Masters in Computational Science and Engineering The Master in Computational Science and Engineering is a non-thesis degree program offered jointly by the departments of Computational and Applied Mathematics, Computer Science, Electrical and Computer Engineering and Statistics in the School of Engineering. The program is designed to provide training and expertise in modern and computational techniques with real-world applications in a wide range of industries. Electives Electives are targeted in the subfield of interest. Students may be asked to take specific courses outside the department, depending on the incoming background of the student, career objectives and funding sources. The links above to curriculum planning for each specialization include suggested electives for each specialization. Questions regarding MSTAT Program: Dr. Michael Demone Jackson, Director of Professional Master's Program Email: mdj3@rice.edu Appointments upon request",
+      "char_start": 4161,
+      "char_end": 5888,
+      "token_count": 229,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "c5bc95152216707a3618e6e82aae5adeaea0009be42756fcb0ff07778b226bbb",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:45:00.891792",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

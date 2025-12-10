@@ -1,0 +1,69 @@
+{
+  "id": "connect.grad.ucsd.edu_e7b6bdc3ff25",
+  "source_url": "https://connect.grad.ucsd.edu/apply/",
+  "raw_snapshot_path": "out/cache\\20251210T045839Z_e7b6bdc3ff25.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:58:44.819007",
+  "checksum": "e7b6bdc3ff252d99bc53ae5979a109d0cb2c3009c703c79cbfd165fcfe949413",
+  "title": "UC San Diego Graduate Application Management",
+  "raw_text": "UC San Diego Graduate Application Management\nThank you for your interest in UC San Diego. In accordance with applicable Federal and State law and University policy, the University of California does not discriminate, or grant preferences, on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. All programs and initiatives coordinated by the University of California Division of Graduate Education and Postdoctoral Affairs are designed and implemented in full compliance with Proposition 209 and the University of California Anti-Discrimination Policy.\nApplications for Fall 2026 will begin opening on September 3, 2025, no earlier than 12 pm PST.\nApplication opening dates and deadlines vary by department. Please visit the website for your\ndepartment\nof interest to verify their application's opening and closing dates.\nIf your program of interest is not listed on the application, please contact the\ndepartment\nto confirm availability.\nIf you experience technical issues with the application, please contact\ngradadmissions@ucsd.edu\nwith a description of the problem.\nReturning users:\nLog in\nto continue an application.\nFirst-time users:\nCreate an account\nto start a new application.",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": null,
+    "school": "University of California, San Diego",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": "Applications for Fall 2026 will begin opening on September 3, 2025, no earlier than 12 pm PST. Application opening dates and deadlines vary by department."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": "All programs and initiatives coordinated by the University of California Division of Graduate Education and Postdoctoral Affairs are designed and implemented in full compliance with Proposition 209 and the University of California Anti-Discrimination Policy."
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "connect.grad.ucsd.edu_e7b6bdc3_0000",
+      "text": "UC San Diego Graduate Application Management Thank you for your interest in UC San Diego. In accordance with applicable Federal and State law and University policy, the University of California does not discriminate, or grant preferences, on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. All programs and initiatives coordinated by the University of California Division of Graduate Education and Postdoctoral Affairs are designed and implemented in full compliance with Proposition 209 and the University of California Anti-Discrimination Policy. Applications for Fall 2026 will begin opening on September 3, 2025, no earlier than 12 pm PST. Application opening dates and deadlines vary by department. Please visit the website for your department of interest to verify their application's opening and closing dates. If your program of interest is not listed on the application, please contact the department to confirm availability. If you experience technical issues with the application, please contact gradadmissions@ucsd.edu with a description of the problem. Returning users: Log in to continue an application. First-time users: Create an account to start a new application.",
+      "char_start": 0,
+      "char_end": 1238,
+      "token_count": 180,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "9bfdf3f49eccf99a54e6c73cda69dce6e1d37bd4e0b08a00816f4f160fc0df1f",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:58:44.819007",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

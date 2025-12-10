@@ -1,0 +1,109 @@
+{
+  "id": "grad.ucla.edu_276811b8f79c",
+  "source_url": "https://grad.ucla.edu/admissions/international-applicants/",
+  "raw_snapshot_path": "out/cache\\20251210T045555Z_276811b8f79c.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:56:20.126849",
+  "checksum": "276811b8f79ce31e933ab4f2979ae744f5096fe9fbcfc99a2114066bb542892d",
+  "title": "International Applicants to Graduate School | UCLA Graduate Programs",
+  "raw_text": "Students arriving from around the world can look forward to an extraordinary graduate experience at UCLA. Here are a few of the requirements to consider while applying here.\nSubmitting your international transcripts\nWhen applying to a UCLA graduate program, international applicants should upload unofficial transcripts from all academic institutions she or he attended into the Application for Graduate Admission.\nIf admitted to UCLA, applicants must submit official, final academic records. These are defined as\noriginal documents issued by the institution—\nnot photocopies—which bear the actual signature of the Registrar and the seal of the issuing institution. Instructions and deadlines for submission are included with official offers of admission. New graduate students should submit official records in the original language with a complete, authorized English translation.\nIf you have attended more than one institution, separate official records should be submitted by each institution.\nIf your academic record cannot be replaced, obtain a properly certified copy. Keep the original for yourself! Never send a document to UCLA that cannot be replaced; submitted records become the property of the University, and we cannot return them to you.\nResources for International Applicants\nStudents from around the world apply to UCLA’s graduate programs.  You will find more specific information about our requirements for applicants from a variety of educational systems in\nRequired Academic Records\n.\nHere are more helpful links:\nEnglish Language Requirements\nVisa Procedures\nTest of Oral Proficiency\nSpecial Services for International Students\nIneligible degrees\nTo save you time and trouble, we must inform you that the following degree holders are not eligible to apply for graduate admission:\nPersons holding three-year ordinary pass degrees, professional diplomas in accounting, business, librarianship, social work, physical education, health education and so on, or four-year degrees, diplomas or higher certificates from technical, vocational or postsecondary specialized schools.\nPersons holding membership in professional associations such as Institutes of Chartered Accountants or Institutes of Chartered Secretaries and Administrators are not qualified for graduate standing unless they\nalso\nhold recognized university-level degrees or titles.",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": null,
+    "school": "University of California, Los Angeles",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": "International applicants should upload unofficial transcripts from all academic institutions attended. Persons holding three-year ordinary pass degrees, professional diplomas in accounting, business, librarianship, social work, physical education, health education, or four-year degrees, diplomas or higher certificates from technical, vocational or postsecondary specialized schools are not eligible.",
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": "All applicants, including U.S. citizens and Permanent Residents, who studied in non-Anglophone countries must certify their English language proficiency.",
+      "research_experience": null,
+      "work_experience": null,
+      "documents": "Applicants should upload unofficial transcripts. If admitted, official, final academic records must be submitted. These include original documents issued by the institution with the actual signature of the Registrar and the seal of the issuing institution.",
+      "summary": "International applicants must submit unofficial transcripts during application and official records if admitted. English proficiency certification is required for those from non-Anglophone countries. Certain degrees and diplomas are not eligible for graduate admission."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": "The Dashew Center for International Students & Scholars provides specialized services to international students, including visa and immigration counseling, financial and tax matters, academic adjustment, and cultural understanding.",
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "grad.ucla.edu_276811b8_0000",
+      "text": "Students arriving from around the world can look forward to an extraordinary graduate experience at UCLA. Here are a few of the requirements to consider while applying here. Submitting your international transcripts When applying to a UCLA graduate program, international applicants should upload unofficial transcripts from all academic institutions she or he attended into the Application for Graduate Admission. If admitted to UCLA, applicants must submit official, final academic records. These are defined as original documents issued by the institution— not photocopies—which bear the actual signature of the Registrar and the seal of the issuing institution. Instructions and deadlines for submission are included with official offers of admission. New graduate students should submit official records in the original language with a complete, authorized English translation. If you have attended more than one institution, separate official records should be submitted by each institution. If your academic record cannot be replaced, obtain a properly certified copy. Keep the original for yourself! Never send a document to UCLA that cannot be replaced; submitted records become the property of the University, and we cannot return them to you. Resources for International Applicants Students from around the world apply to UCLA’s graduate programs. You will find more specific information about our requirements for applicants from a variety of educational systems in Required Academic Records . Here are more helpful links: English Language Requirements Visa Procedures Test of Oral Proficiency Special Services for International Students Ineligible degrees To save you time and trouble, we must inform you that the following degree holders are not eligible to apply for graduate admission: Persons holding three-year ordinary pass degrees, professional diplomas in accounting, business, librarianship, social work, physical education, health education and so on, or four-year degrees, diplomas or higher certificates from technical, vocational or postsecondary specialized schools. Persons holding membership in professional associations such as Institutes of Chartered Accountants or Institutes of Chartered Secretaries and Administrators are not qualified for graduate standing unless they also hold recognized university-level degrees or titles. ==== COURSE DETAIL START (Required Academic Records .) ==== Official Records The application enables applicants to upload an unofficial copy of their academic records, and applications are reviewed based on those records. Applicants who are notified of their official admission are required to submit to the major department official records from each academic institution attended. Official records are defined as original documents issued by the institution which",
+      "char_start": 0,
+      "char_end": 2826,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "grad.ucla.edu_276811b8_0001",
+      "text": "holding membership in professional associations such as Institutes of Chartered Accountants or Institutes of Chartered Secretaries and Administrators are not qualified for graduate standing unless they also hold recognized university-level degrees or titles. ==== COURSE DETAIL START (Required Academic Records .) ==== Official Records The application enables applicants to upload an unofficial copy of their academic records, and applications are reviewed based on those records. Applicants who are notified of their official admission are required to submit to the major department official records from each academic institution attended. Official records are defined as original documents issued by the institution which bear the actual signature of the Registrar — not a photocopy — and the seal of the issuing institution. Do not, however, under any circumstances, send the original of an academic record which cannot be replaced; obtain a properly certified copy instead. Official electronic transcripts should be directed to the email address of the major department. If you have attended more than one institution, separate official records should be submitted by each institution. All applicants, including U.S. citizens and Permanent Residents, who studied in non-Anglophone countries must certify their English language proficiency . International Requirements All academic records must show the dates of enrollment; the subjects or courses taken, together with the units of credit or time allotted to each subject and, if rank is determined, rank in the total class or group. The records must also include a complete description of the institution’s grading scale or other standard of evaluation. Maximum and minimum marks and the steps between them must be indicated. Unless academic records and diplomas are routinely issued in English by the institution, the records in their original language must be submitted with an authorized, complete, and exact English translation. Applicants who are notified of their official admission : Evidence of conferral of all degrees, diplomas, or professional titles must be submitted to the major department. This evidence may be in the form of officially certified copies of the actual diploma, or entries on official records or official statements from granting institutions. In all cases, the statement must include the exact, original title of the degree and the date of its formal conferral (month and year). Certificates of completion of required courses, or of degree examinations, cannot be accepted as evidence that the degree was granted. Degree diplomas showing month and year of award should be issued",
+      "char_start": 2102,
+      "char_end": 4767,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "grad.ucla.edu_276811b8_0002",
+      "text": "admission : Evidence of conferral of all degrees, diplomas, or professional titles must be submitted to the major department. This evidence may be in the form of officially certified copies of the actual diploma, or entries on official records or official statements from granting institutions. In all cases, the statement must include the exact, original title of the degree and the date of its formal conferral (month and year). Certificates of completion of required courses, or of degree examinations, cannot be accepted as evidence that the degree was granted. Degree diplomas showing month and year of award should be issued prior to the beginning of the term applied for. Students applying from countries where “Excellent, Very Good, Good, Pass” marks are given on examinations must present an academic record with at least a “Very Good” general rating. International students who hold three-year ordinary pass degrees, or who hold professional diplomas in accounting, business, librarianship, social work, physical education, health education and so on, or four-year degrees, diplomas or higher certificates from technical, vocational or postsecondary specialized schools are not eligible for graduate admission. Applicants holding membership in professional associations such as Institutes of Chartered Accountants or Institutes of Chartered Secretaries and Administrators are not qualified for graduate standing unless they also hold recognized university-level degrees or titles. Requirements by Country or Educational System Applicants who have studied in the following countries or educational systems should take note of the requirements listed for each country or educational system. Bangladesh, India, Union of Myanmar, Nepal, Pakistan Applicants should present a master’s degree awarded in first or high second class. In the fields of architecture and engineering, however, students who achieve first class placement for the bachelor’s degree may also be considered for graduate admission. Certified copies of the following original documents should be submitted: Examination records (all parts/semesters) of all university-level work attempted, showing individual subjects and marks/grades and maximum marks/grading scale. Degree diplomas showing final class placement/grade and month and year of award. These should be issued prior to the beginning of the term applied for. Photocopies of original documents must be properly certified by the registrar or attested by a judge or magistrate. The designation of the attesting authority must be indicated with the seal of the office. Certification by a Gazetted Officer is not acceptable. China Applicants should hold a bachelor’s degree with a minimum overall scholastic achievement of",
+      "char_start": 4137,
+      "char_end": 6888,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "grad.ucla.edu_276811b8_0003",
+      "text": "be submitted: Examination records (all parts/semesters) of all university-level work attempted, showing individual subjects and marks/grades and maximum marks/grading scale. Degree diplomas showing final class placement/grade and month and year of award. These should be issued prior to the beginning of the term applied for. Photocopies of original documents must be properly certified by the registrar or attested by a judge or magistrate. The designation of the attesting authority must be indicated with the seal of the office. Certification by a Gazetted Officer is not acceptable. China Applicants should hold a bachelor’s degree with a minimum overall scholastic achievement of 80 on a 100 point scale. Records should include the official transcripts, university graduation certificate and the Ministry of Education degree certificate/diploma. All records should be submitted in the original language with official English translation. France and Schools in the French Tradition Applicants who studied under the Bologna Process should present the bachelor’s (three year) degree or the master’s (3 + 2) degree. Otherwise, applicants should present the Maitrise, Ingenieur , or other professional title representing completion of a four year university-level program beyond the Baccalaureate . Records should include original copies of examination records and statements of conferral of degrees in French issued by the institution and accompanied by a certified English translation. Universities in Francophone countries in Africa may issue records in another official language; these are equally acceptable. Specially prepared English versions of French originals are not acceptable. As applicable, examination records should show individual subjects, notes, coefficients, mentions, yearly averages and rank. Germany Applicants who studied under the Bologna Process should present the bachelor’s (three year) degree or the master’s (3 + 2) degree. Otherwise, applicants from Germany should hold the Diplom (university), Staatsexamen , or Magister Artium . Records should include official copies of all examination records ( Vorprüfung, Hauptprüfung, Staatsexamen , etc.), seminar certificates ( Scheine ), Study Book ( Studienbuch ), and degree certificates. Records must be in the original German language and accompanied by certified, complete, exact English translations of submitted papers. Holders of the Vordiplom, Zwischenprüfung, Bachelor/Bakkalaureus , or a diploma from a fachhochschule are not considered for graduate admission. Latin America Applicants should present the Licenciado or Licenciatura, Ingeniero , or other professional title representing completion of a four to six year university-level program beyond the completion of university-preparatory secondary education, and should submit official copies of the original Spanish",
+      "char_start": 6204,
+      "char_end": 9059,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "grad.ucla.edu_276811b8_0004",
+      "text": "examination records ( Vorprüfung, Hauptprüfung, Staatsexamen , etc.), seminar certificates ( Scheine ), Study Book ( Studienbuch ), and degree certificates. Records must be in the original German language and accompanied by certified, complete, exact English translations of submitted papers. Holders of the Vordiplom, Zwischenprüfung, Bachelor/Bakkalaureus , or a diploma from a fachhochschule are not considered for graduate admission. Latin America Applicants should present the Licenciado or Licenciatura, Ingeniero , or other professional title representing completion of a four to six year university-level program beyond the completion of university-preparatory secondary education, and should submit official copies of the original Spanish language records and degree certificates, and complete, exact English translations. Applicants are expected to have completed all degree requirements, including the thesis or professional examination, prior to the beginning of the term at UCLA for which they have applied. Taiwan Applicants should hold a bachelor’s degree (at least four years in most fields). Official academic records should show numerical grades. If the institution has converted from numerical to letter grades, a conversion chart should also be submitted. United Kingdom and Schools in the British Tradition Students from schools in the British tradition (other than Bangladesh, India, Union of Myanmar, Nepal and Pakistan ) must have completed an Honours degree in first or upper second class. When grades and/or course descriptions are not available, applicants must request two reports of academic progress from tutors or professors. Three-year ordinary or pass degrees are not acceptable. ==== COURSE DETAIL END (Required Academic Records .) ==== ==== COURSE DETAIL START (Special Services for International Students) ==== The Dashew Center for International Students & Scholars provides specialized services to international students attending UCLA. The Dashew Center also supports international and intercultural programs. The services include issuance of visa documents (I-20 or DS-2019 forms), personal counseling on visa and immigration issues, along with appropriate forms and documents; financial and tax matters; academic adjustment; insurance; release of funds from other countries and questions of personal adjustment, along with help in understanding the culture and systems of UCLA. The Dashew Center also offers services which assist students to adjust to the community, including housing assistance, community services, friendship families and English conversation groups. Prior to the beginning of each quarter, special assistance is available to international students entering UCLA from other U.S. or foreign schools; this includes a mandatory orientation. Given UCLA’s variety of opportunities, size and complexity,",
+      "char_start": 8312,
+      "char_end": 11169,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "grad.ucla.edu_276811b8_0005",
+      "text": "on visa and immigration issues, along with appropriate forms and documents; financial and tax matters; academic adjustment; insurance; release of funds from other countries and questions of personal adjustment, along with help in understanding the culture and systems of UCLA. The Dashew Center also offers services which assist students to adjust to the community, including housing assistance, community services, friendship families and English conversation groups. Prior to the beginning of each quarter, special assistance is available to international students entering UCLA from other U.S. or foreign schools; this includes a mandatory orientation. Given UCLA’s variety of opportunities, size and complexity, new students find the Dashew Center’s individual assistance, seminars, workshops and other programs contribute to academic success and complement orientation activities in academic departments. To begin an introduction to the campus, new students should visit the Dashew Center for International Students & Scholars, 106 Bradley International Hall, 417 Charles E. Young Dr. West, Los Angeles, CA 90095-1379, Monday-Friday from 8:30AM to 5PM, or call (310) 825-1681. ==== COURSE DETAIL END (Special Services for International Students) ====",
+      "char_start": 10454,
+      "char_end": 11709,
+      "token_count": 176,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "1f455a14e8f02d184efda8168c3c43f3b6d786493db5de86528bc8d3810e5680",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:56:20.126849",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

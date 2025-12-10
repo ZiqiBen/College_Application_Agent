@@ -1,0 +1,77 @@
+{
+  "id": "www.psu.edu_485cad2b2d96",
+  "source_url": "https://www.psu.edu/academics/colleges",
+  "raw_snapshot_path": "out/cache\\20251210T050808Z_485cad2b2d96.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:08:18.369759",
+  "checksum": "485cad2b2d961ffe7ddaace0e660732d34e982f95074e324606465855659d674",
+  "title": "Academic Colleges | Penn State",
+  "raw_text": "Colleges\nThe University is made up of fifteen academic colleges and several additional schools that range from the arts to the sciences with many subjects in between.\nAgricultural Sciences\nAgricultural Sciences\nDevelop impactful solutions while discovering why the College of Agricultural Sciences is a world leader in agricultural research and learning.\nArts and Architecture\nArts and Architecture\nImmerse yourself in a vibrant arts and design community including academic programs in music, theatre, visual arts, graphic design, art history, architecture, and landscape architecture.\nSmeal College of Business\nSmeal College of Business\nBecome part of a vibrant intellectual community offering highly ranked undergraduate, graduate, doctoral, and executive business education opportunities.\nDonald P. Bellisario College of Communications\nDonald P. Bellisario College of Communications\nJoin the world of news, advertising, or public relations, where programs mix practical experience and academic rigor.\nEarth and Mineral Sciences\nEarth and Mineral Sciences\nImpact the planet’s future through programs in natural sciences, social science, and engineering offered by the College of Earth and Mineral Sciences.\nEducation\nEducation\nLearn to teach from more than twenty teacher preparation programs, including a Professional Development School that has won four major national awards.\nEngineering\nEngineering\nBecome a world-class engineer who learns to use fundamentals and broad-based thinking to discover innovative solutions for worldwide issues.\nJ. Jeffrey and Ann Marie Fox Graduate School\nJ. Jeffrey and Ann Marie Fox Graduate School\nJoin one of the nation’s largest graduate communities, offering a variety of programs with a focus on professional growth and student support.\nHealth and Human Development\nHealth and Human Development\nThrough the College of Health and Human Development, you’ll gain a solid foundation for positively impacting the way people live—now and far into the future.\nInformation Sciences and Technology\nInformation Sciences and Technology\nSolve real-world problems at the intersection of information, technology, and society through collaborative and interdisciplinary learning opportunities.\nSchool of International Affairs\nSchool of International Affairs\nPrepare for your career as a global leader in a complex world with a professional and interdisciplinary Master of International Affairs degree.\nPenn State Dickinson Law\nPenn State Dickinson Law\nPenn State Dickinson Law, Pennsylvania’s oldest public law school, offers a reimagined legal education at two central Pennsylvania locations.\nThe Liberal Arts\nThe Liberal Arts\nLearn to recognize problems, create solutions, and combine your liberal arts education and enriching out-of-class experiences to make an impact.\nMedicine\nMedicine\nFrom patient health care services to research, learn the art and science of medicine with the College of Medicine’s world-class faculty and programs.\nNese College of Nursing\nNese College of Nursing\nJoin the next generation of nurses and nurse scientists while enhancing the health of all people through quality care and education.\nEberly College of Science\nEberly College of Science\nBecome a scientifically trained leader and innovator prepared to enrich lives, improve society, and address global challenges.\nSchreyer Honors College\nSchreyer Honors College\nWith access to distinguished faculty, smaller honors class sizes, and individualized support, your honors experience at Penn State will position you for success.\nDivision of Undergraduate Studies\nDivision of Undergraduate Studies\nExplore multiple areas of study and develop your interests before entering a college through the Division of Undergraduate Studies.",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": null,
+    "school": "Pennsylvania State University",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": null
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.psu.edu_485cad2b_0000",
+      "text": "Colleges The University is made up of fifteen academic colleges and several additional schools that range from the arts to the sciences with many subjects in between. Agricultural Sciences Agricultural Sciences Develop impactful solutions while discovering why the College of Agricultural Sciences is a world leader in agricultural research and learning. Arts and Architecture Arts and Architecture Immerse yourself in a vibrant arts and design community including academic programs in music, theatre, visual arts, graphic design, art history, architecture, and landscape architecture. Smeal College of Business Smeal College of Business Become part of a vibrant intellectual community offering highly ranked undergraduate, graduate, doctoral, and executive business education opportunities. Donald P. Bellisario College of Communications Donald P. Bellisario College of Communications Join the world of news, advertising, or public relations, where programs mix practical experience and academic rigor. Earth and Mineral Sciences Earth and Mineral Sciences Impact the planet’s future through programs in natural sciences, social science, and engineering offered by the College of Earth and Mineral Sciences. Education Education Learn to teach from more than twenty teacher preparation programs, including a Professional Development School that has won four major national awards. Engineering Engineering Become a world-class engineer who learns to use fundamentals and broad-based thinking to discover innovative solutions for worldwide issues. J. Jeffrey and Ann Marie Fox Graduate School J. Jeffrey and Ann Marie Fox Graduate School Join one of the nation’s largest graduate communities, offering a variety of programs with a focus on professional growth and student support. Health and Human Development Health and Human Development Through the College of Health and Human Development, you’ll gain a solid foundation for positively impacting the way people live—now and far into the future. Information Sciences and Technology Information Sciences and Technology Solve real-world problems at the intersection of information, technology, and society through collaborative and interdisciplinary learning opportunities. School of International Affairs School of International Affairs Prepare for your career as a global leader in a complex world with a professional and interdisciplinary Master of International Affairs degree. Penn State Dickinson Law Penn State Dickinson Law Penn State Dickinson Law, Pennsylvania’s oldest public law school, offers a reimagined legal education at two central Pennsylvania locations. The Liberal Arts The Liberal Arts Learn to recognize problems, create solutions, and combine your liberal arts education and enriching out-of-class experiences to make an impact. Medicine Medicine From patient health care services to research,",
+      "char_start": 0,
+      "char_end": 2864,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "www.psu.edu_485cad2b_0001",
+      "text": "and society through collaborative and interdisciplinary learning opportunities. School of International Affairs School of International Affairs Prepare for your career as a global leader in a complex world with a professional and interdisciplinary Master of International Affairs degree. Penn State Dickinson Law Penn State Dickinson Law Penn State Dickinson Law, Pennsylvania’s oldest public law school, offers a reimagined legal education at two central Pennsylvania locations. The Liberal Arts The Liberal Arts Learn to recognize problems, create solutions, and combine your liberal arts education and enriching out-of-class experiences to make an impact. Medicine Medicine From patient health care services to research, learn the art and science of medicine with the College of Medicine’s world-class faculty and programs. Nese College of Nursing Nese College of Nursing Join the next generation of nurses and nurse scientists while enhancing the health of all people through quality care and education. Eberly College of Science Eberly College of Science Become a scientifically trained leader and innovator prepared to enrich lives, improve society, and address global challenges. Schreyer Honors College Schreyer Honors College With access to distinguished faculty, smaller honors class sizes, and individualized support, your honors experience at Penn State will position you for success. Division of Undergraduate Studies Division of Undergraduate Studies Explore multiple areas of study and develop your interests before entering a college through the Division of Undergraduate Studies.",
+      "char_start": 2141,
+      "char_end": 3737,
+      "token_count": 226,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "851d76df1a810c59dd7db1e0250d99a6972c4d47775f8ece955d845137b9ef78",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:08:18.369759",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

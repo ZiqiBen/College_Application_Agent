@@ -1,0 +1,69 @@
+{
+  "id": "grad.ucla.edu_2cd64453403e",
+  "source_url": "https://grad.ucla.edu/programs/social-sciences/african-american-studies/",
+  "raw_snapshot_path": "out/cache\\20251210T045620Z_2cd64453403e.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:56:47.608470",
+  "checksum": "2cd64453403e4b00ec18d053f3a82b0ac0805e5d43649d84deff824fd32ca071",
+  "title": "African American Studies | UCLA Graduate Programs",
+  "raw_text": "Graduate Program: African American Studies\nDEGREES\nUCLA's Graduate Program in African American Studies offers the following degree(s):\nM\nMaster of Arts                                                    (M.A.)\nAdmission\nRequirements\nProgram\nStatistics\nVisit the Program’s website\nAfrican American Studies provides in-depth details on its own site\nWith questions not answered here or on the program’s site (above), please contact the program directly.\nADDRESS\nAfrican American Studies Graduate Program at UCLA\n2134 Rolfe Hall\nBox 951545\nLos Angeles, CA 90095-1545\nFACULTY\nVisit the\nAfrican American Studies’s faculty roster\nCOURSE DESCRIPTIONS\nVisit the registrar's site for the\nAfrican American Studies’s course descriptions\nPHONE\n(310) 825-9821\nEMAIL\nstaff@afam.ucla.edu\nMAJOR CODE: AFRICAN AMERICAN STUDIES\n008V",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "African American Studies",
+    "school": "UCLA",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": null
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "grad.ucla.edu_2cd64453_0000",
+      "text": "Graduate Program: African American Studies DEGREES UCLA's Graduate Program in African American Studies offers the following degree(s): M Master of Arts (M.A.) Admission Requirements Program Statistics Visit the Program’s website African American Studies provides in-depth details on its own site With questions not answered here or on the program’s site (above), please contact the program directly. ADDRESS African American Studies Graduate Program at UCLA 2134 Rolfe Hall Box 951545 Los Angeles, CA 90095-1545 FACULTY Visit the African American Studies’s faculty roster COURSE DESCRIPTIONS Visit the registrar's site for the African American Studies’s course descriptions PHONE (310) 825-9821 EMAIL staff@afam.ucla.edu MAJOR CODE: AFRICAN AMERICAN STUDIES 008V",
+      "char_start": 0,
+      "char_end": 762,
+      "token_count": 105,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "8b846c48ed8b40d1f56533bf3f46c11bafe590bc807f5c6e746c59e02d8eff9a",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:56:47.608470",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

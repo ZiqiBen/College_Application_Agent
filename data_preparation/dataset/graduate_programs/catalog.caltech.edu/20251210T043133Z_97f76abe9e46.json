@@ -1,0 +1,146 @@
+{
+  "id": "catalog.caltech.edu_97f76abe9e46",
+  "source_url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computer-science-cs/",
+  "raw_snapshot_path": "out/cache\\20251210T043109Z_97f76abe9e46.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:31:33.030477",
+  "checksum": "97f76abe9e46af5b79cf762acd50d6cd8fe256fbfd4cc53b94bf5c030dfbf7e9",
+  "title": "Computer Science (CS) | Caltech Academic Catalog",
+  "raw_text": "Related Pages\nAims and Scope of the Graduate Program\nGraduate study in computer science within the Computing & Mathematical Sciences department is oriented principally toward Ph.D. research. The Ph.D. program requires a minimum of three academic years of residence; required coursework is generally completed within the first two years. Students must maintain high academic standards during their graduate residence. A student’s Ph.D. research must exhibit originality in the formulation, analysis, and solution of a problem that is significant to the field of study. The option representative and executive officers are available to discuss concerns regarding academic progress.\nCS Master’s Degree\nThe CS Option only admits students who plan to pursue the Ph.D. degree. The M.S. degree may be awarded in exceptional cases at the discretion of the CS Option Representative. To be eligible, students must complete the following requirements:\nAll Institute M.S. requirements;\nThe classwork requirements for the CS Ph.D. program;\nRecommendation to award the M.S. from the CS preliminary examination committee.\nCS Degree of Doctor of Philosophy\nCourse requirements\nStudents must complete a minimum of 135 units of courses numbered 100 or greater, including research units (CS 280). Students should consult with their adviser to ensure balance in the selected courses.\nThe coursework must include:\nCMS 290 is required for all first year CS graduate students during each term (fall/winter/spring).\nAdvanced courses in computer science. Completion of a minimum of 54 units of CS courses numbered 100 or greater in addition to units earned for reading, research, and independent projects. Up to 24 of the 54 units may be taken from non-CS courses from CMS or ACM, including CMS/ACM/IDS 107, CMS/ACM/EE 122 and CMS 117, or other courses with approval from the option representative.\nCompletion of a minimum of 27 additional units of coursework (not including research units) labeled 100 and above, in any academic discipline.\nPreliminary examination\nToward the end of the first year, all incoming students must take a preliminary examination administered by the faculty. Its purpose is to ensure a solid and broad knowledge in computer science, and in the event of a deficiency, to direct the students to necessary courses and reading.\nCandidacy\nTo be recommended for candidacy, a student must have completed the required coursework, have passed the preliminary examination, have entered upon a course of research approved by their thesis adviser, and have passed a candidacy oral examination. The candidacy oral examination is administered by a committee that consists of four faculty that is approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The examination ascertains the student’s breadth and depth of preparation for research in the chosen area. The candidacy examination should be taken within the first three years of graduate study.\nAdvising and Thesis Supervision\nIn order to facilitate close supervision and a highly research-oriented environment, each student is admitted directly to an adviser and research group. A course of study is determined in consultation with the adviser. Occasionally students will be admitted into more than one group. Changes in affiliation may occur with the common consent of the student, the new adviser, and the option representative.\nStudents meet regularly with their adviser throughout their time at Caltech, and are encouraged to do the same with other members of the faculty.\nAcademic progress will be reviewed regularly, including at least once annually by the option representative.\nAn ability to explain concepts and to verbally present one’s work is vital to a successful career in research and/or teaching. To this end, students may be required by their advisor and the option representative to occasionally serve as a teaching assistant.\nThesis and Final Examination\nA final oral examination will be scheduled and given after the Ph.D. thesis has been submitted for review to the student’s adviser and thesis committee; the latter consists of at least four faculty approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The thesis examination is a defense of the thesis research and a test of the candidate’s knowledge in their specialized fields.\nSubject Minor in Computer Science\nA subject minor is not required for the Ph.D. degree in computer science. PhD students majoring in other fields may take a subject minor in computer science consisting of 45 CS units numbered 100 or greater. The minor must be supervised by a computer science faculty adviser and approved by the computer science option representative, a year in advance of graduation. The courses must be sufficiently removed from the student’s major program of study and must include CS 138 (CS 139 may be substituted) unless the student has previously taken an equivalent course. The courses in the plan must be taken for grades and the student is required to achieve an A- average in them.\nPublished Date:\n  \n  \n    Aug. 27, 2025",
+  "language": "English",
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Computer Science (CS) Ph.D.",
+    "school": "California Institute of Technology",
+    "department": "Computing & Mathematical Sciences",
+    "duration": "Minimum of three academic years",
+    "courses": [
+      {
+        "name": "CMS 290",
+        "description": "Required for all first year CS graduate students during each term (fall/winter/spring)."
+      },
+      {
+        "name": "CS 280",
+        "description": "Research units."
+      },
+      {
+        "name": "CMS/ACM/IDS 107",
+        "description": null
+      },
+      {
+        "name": "CMS/ACM/EE 122",
+        "description": null
+      },
+      {
+        "name": "CMS 117",
+        "description": null
+      }
+    ],
+    "application_requirements": {
+      "academic_background": "Not specified",
+      "prerequisites": "Not specified",
+      "gre": "Not specified",
+      "english_tests": "Not specified",
+      "research_experience": "Not specified",
+      "work_experience": "Not specified",
+      "documents": "Not specified",
+      "summary": "The CS Option only admits students who plan to pursue the Ph.D. degree. The M.S. degree may be awarded in exceptional cases at the discretion of the CS Option Representative."
+    },
+    "program_background": {
+      "mission": "Graduate study in computer science is oriented principally toward Ph.D. research.",
+      "environment": "Each student is admitted directly to an adviser and research group. Students meet regularly with their adviser throughout their time at Caltech.",
+      "faculty": "The thesis committee consists of at least four faculty approved by the option representative.",
+      "resources": "Research opportunities, research groups, and faculty advising.",
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": "Students must maintain high academic standards and exhibit originality in their Ph.D. research.",
+      "career_paths": "Research and/or teaching careers.",
+      "research_orientation": "The program is oriented principally toward Ph.D. research.",
+      "professional_orientation": null,
+      "summary": "The program aims to prepare students for successful careers in research and/or teaching, with a strong emphasis on originality and high academic standards."
+    },
+    "tuition": "Not specified",
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0000",
+      "text": "Related Pages Aims and Scope of the Graduate Program Graduate study in computer science within the Computing & Mathematical Sciences department is oriented principally toward Ph.D. research. The Ph.D. program requires a minimum of three academic years of residence; required coursework is generally completed within the first two years. Students must maintain high academic standards during their graduate residence. A student’s Ph.D. research must exhibit originality in the formulation, analysis, and solution of a problem that is significant to the field of study. The option representative and executive officers are available to discuss concerns regarding academic progress. CS Master’s Degree The CS Option only admits students who plan to pursue the Ph.D. degree. The M.S. degree may be awarded in exceptional cases at the discretion of the CS Option Representative. To be eligible, students must complete the following requirements: All Institute M.S. requirements; The classwork requirements for the CS Ph.D. program; Recommendation to award the M.S. from the CS preliminary examination committee. CS Degree of Doctor of Philosophy Course requirements Students must complete a minimum of 135 units of courses numbered 100 or greater, including research units (CS 280). Students should consult with their adviser to ensure balance in the selected courses. The coursework must include: CMS 290 is required for all first year CS graduate students during each term (fall/winter/spring). Advanced courses in computer science. Completion of a minimum of 54 units of CS courses numbered 100 or greater in addition to units earned for reading, research, and independent projects. Up to 24 of the 54 units may be taken from non-CS courses from CMS or ACM, including CMS/ACM/IDS 107, CMS/ACM/EE 122 and CMS 117, or other courses with approval from the option representative. Completion of a minimum of 27 additional units of coursework (not including research units) labeled 100 and above, in any academic discipline. Preliminary examination Toward the end of the first year, all incoming students must take a preliminary examination administered by the faculty. Its purpose is to ensure a solid and broad knowledge in computer science, and in the event of a deficiency, to direct the students to necessary courses and reading. Candidacy To be recommended for candidacy, a student must have completed the required coursework, have passed the preliminary examination, have entered upon a course of research approved by their thesis adviser, and have passed a candidacy oral examination. The candidacy oral examination is",
+      "char_start": 0,
+      "char_end": 2618,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0001",
+      "text": "100 and above, in any academic discipline. Preliminary examination Toward the end of the first year, all incoming students must take a preliminary examination administered by the faculty. Its purpose is to ensure a solid and broad knowledge in computer science, and in the event of a deficiency, to direct the students to necessary courses and reading. Candidacy To be recommended for candidacy, a student must have completed the required coursework, have passed the preliminary examination, have entered upon a course of research approved by their thesis adviser, and have passed a candidacy oral examination. The candidacy oral examination is administered by a committee that consists of four faculty that is approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The examination ascertains the student’s breadth and depth of preparation for research in the chosen area. The candidacy examination should be taken within the first three years of graduate study. Advising and Thesis Supervision In order to facilitate close supervision and a highly research-oriented environment, each student is admitted directly to an adviser and research group. A course of study is determined in consultation with the adviser. Occasionally students will be admitted into more than one group. Changes in affiliation may occur with the common consent of the student, the new adviser, and the option representative. Students meet regularly with their adviser throughout their time at Caltech, and are encouraged to do the same with other members of the faculty. Academic progress will be reviewed regularly, including at least once annually by the option representative. An ability to explain concepts and to verbally present one’s work is vital to a successful career in research and/or teaching. To this end, students may be required by their advisor and the option representative to occasionally serve as a teaching assistant. Thesis and Final Examination A final oral examination will be scheduled and given after the Ph.D. thesis has been submitted for review to the student’s adviser and thesis committee; the latter consists of at least four faculty approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The thesis examination is a defense of the thesis research and a test of the candidate’s knowledge in their specialized fields. Subject Minor in Computer Science A subject minor is not required for",
+      "char_start": 1974,
+      "char_end": 4535,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0002",
+      "text": "option representative to occasionally serve as a teaching assistant. Thesis and Final Examination A final oral examination will be scheduled and given after the Ph.D. thesis has been submitted for review to the student’s adviser and thesis committee; the latter consists of at least four faculty approved by the option representative. The chair of the committee must be a Caltech professorial faculty member distinct from the adviser. The thesis examination is a defense of the thesis research and a test of the candidate’s knowledge in their specialized fields. Subject Minor in Computer Science A subject minor is not required for the Ph.D. degree in computer science. PhD students majoring in other fields may take a subject minor in computer science consisting of 45 CS units numbered 100 or greater. The minor must be supervised by a computer science faculty adviser and approved by the computer science option representative, a year in advance of graduation. The courses must be sufficiently removed from the student’s major program of study and must include CS 138 (CS 139 may be substituted) unless the student has previously taken an equivalent course. The courses in the plan must be taken for grades and the student is required to achieve an A- average in them. Published Date: Aug. 27, 2025 Related Pages Published Date: Sept. 15, 2025 Related Pages Welcome to the new Caltech Catalog website. Here, you’ll find all the information you need laid out in a familiar, searchable, accessible, and printable format. Click through the menu on the left to find information on undergraduate and graduate requirements, courses, and the Institute, its faculty, and areas of research. The search function, located in the top menu, can help you get to specific information within the current catalog. An archive and PDFs of the current and past catalogs are also available. Links to download or print a specific section or the entire catalog can be found on the home page of this year's catalog. While every effort has been made to ensure this catalog is accurate and up to date when published, changes affecting its content may occur during the year. Accordingly, the Institute reserves the right to correct or change its policies, rules, regulations, requirements for graduation, course offerings, and any other contents of this catalog at any time, including, but not limited to, admission, registration, tuition and fees, attendance, curriculum and curriculum delivery, the requirements",
+      "char_start": 3903,
+      "char_end": 6393,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0003",
+      "text": "catalogs are also available. Links to download or print a specific section or the entire catalog can be found on the home page of this year's catalog. While every effort has been made to ensure this catalog is accurate and up to date when published, changes affecting its content may occur during the year. Accordingly, the Institute reserves the right to correct or change its policies, rules, regulations, requirements for graduation, course offerings, and any other contents of this catalog at any time, including, but not limited to, admission, registration, tuition and fees, attendance, curriculum and curriculum delivery, the requirements for graduation or degrees, conduct (including discipline for violations of Caltech’s Code of Conduct and Institute policies), academic standing, and other rules and regulations affecting the student body. This Catalog is the main source for students on Institute policy and procedure and contains crucial information on various facets of Institute operations; however, it does not contain all rules and requirements applicable to students. Students will be held accountable to comply with the obligations contained herein and are not exempted from rules and requirements which they did not know existed. It is the responsibility of the student to keep well-informed with respect to the regulations and requirements in this Catalog, the Code of Conduct, and Institute and Student Affairs policies. Current versions of Institute policies can be accessed at hr.caltech.edu/services/policies . Current versions of the Student Affairs policies can be accessed at https://studentaffairs.caltech.edu/policies. In light of the COVID-19 pandemic and its impact on Caltech, the Institute must maintain the flexibility to adapt programs, policies, and on-campus operations for the 2023–24 academic year to meet the needs of the community. For the most up-to-date information on the Institute's health and safety protocols, visit together.caltech.edu . Please note that the contents of websites that link to online course entries are not part of the official catalog. Cover image by Lance Hayashida Published Date: Sept. 12, 2025 Related Pages Persons affiliated with the Institute may audit courses if they obtain the consent of the instructor in charge of the course, and the dean of undergraduate students or dean of graduate studies, as appropriate, and pay the required fee (contact the Bursar’s Office for audit fee). The fees are nonrefundable. Auditing forms may be obtained in the Registrar’s Office. Regularly enrolled students and members of the faculty are not charged for auditing. Auditing forms are",
+      "char_start": 5748,
+      "char_end": 8395,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0004",
+      "text": "that link to online course entries are not part of the official catalog. Cover image by Lance Hayashida Published Date: Sept. 12, 2025 Related Pages Persons affiliated with the Institute may audit courses if they obtain the consent of the instructor in charge of the course, and the dean of undergraduate students or dean of graduate studies, as appropriate, and pay the required fee (contact the Bursar’s Office for audit fee). The fees are nonrefundable. Auditing forms may be obtained in the Registrar’s Office. Regularly enrolled students and members of the faculty are not charged for auditing. Auditing forms are not required, but the instructor’s consent is necessary in all cases. No grades for auditors are reported to the Registrar’s Office, and no official record is kept of the work done. Published Date: March 21, 2025 Related Pages Differentiation into the various options begins in the second year. Units per term 1st 2nd 3rd Ma 1 abc First-Year Mathematics 9 9 9 Ph 1 abc First-Year Physics 9 9 9 Ch 1 ab General Chemistry 6 9 - Bi 1 (any variant) Principles of Biology 9 or 9 or 9 Ch 3 a Fundamental Techniques of Experimental Chemistry 1 6 or 6 or 6 CS 1 or CS 1 x Introduction to Programming 2 9 - or 9 Introductory courses in the humanities and social sciences. A wide choice of alternatives will be available to students; the registrar will announce the offerings for each term. Two terms are required. 9 and/or 9 and/or 9 Introductory laboratory courses 3 x x x Menu course, 4 First Year Seminar, or additional electives x x x PE Physical education 5 3 3 3 x—Except for the minimum laboratory unit requirement, the number of units chosen here is optional. 1 Students must take Ch 3 a or Ch 3 x in their first or sophomore year. This course is offered in each of the three terms. 2 Students must take CS 1 or CS 1 x in their first or sophomore year. This course is offered in the Fall and Spring. 3 The additional 6 units must be chosen from one of the following (or a more advanced laboratory course): APh/EE 9 (6 units), APh/EE 24 (9 units), Bi 10 (6 units), Ch 4 ab (9 units), Ch 8 (9 units), Ch/ChE 9 (9 units), EE/ME 7 (6 units), Ge 116 (9 units), ME",
+      "char_start": 7777,
+      "char_end": 9953,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0005",
+      "text": "3 a or Ch 3 x in their first or sophomore year. This course is offered in each of the three terms. 2 Students must take CS 1 or CS 1 x in their first or sophomore year. This course is offered in the Fall and Spring. 3 The additional 6 units must be chosen from one of the following (or a more advanced laboratory course): APh/EE 9 (6 units), APh/EE 24 (9 units), Bi 10 (6 units), Ch 4 ab (9 units), Ch 8 (9 units), Ch/ChE 9 (9 units), EE/ME 7 (6 units), Ge 116 (9 units), ME 8 (6 units), ME 50 ab (12 units), Ph 3 (6 units), Ph 5 (9 units), Ph 8 bc (6 units). 4 Students must take a menu course in their first or sophomore year. These courses are offered third quarter only. It is also possible to take one of these courses as an elective. Menu courses currently include Ay 1, EE 1, ESE 1, Ge 1, or IST 4. 5 Three terms (9 units) of PE are required for the B.S. degree. Students need not elect to take the required PE in the first year. It may be taken in any three terms before graduation. Integrated Core Units per term 1st 2nd 3rd Ma 1 a Calculus of One Variable 9 - - IC/Ma 1 abc Integrated Core Mathematics 6 9 3 IC/Ph 1 abc Integrated Core Physics 9 9 9 IC/Ch 1 abc Integrated Core General Chemistry with Lab 6 9 6 IC/Bi 1 abc Integrated Core Biology 2 4 3 IC/Ge 1 abc Integrated Core: Earth, Energy, and Climate 1 2 6 CS 1 or CS 1 x Introduction to Programming 1 9 - - IC/Hum 55 abc Integrated Core Humanities 3 3 3 A second introductory course in the humanities. A wide choice of alternatives will be available to students; the registrar will announce the offerings for each term. - - 9 IC 3 Integrated Core Additional Introductory laboratory - - 3 Additional electives 2 , including physical education 3 , performing and visual arts, and frontiers courses Up to 3 Up to 12 Up to 9 1 IC students must take CS 1 or CS 1 x in their first year. Most students will take this course in the first term, but students placed into Wr 2 will take CS 1 in third term. 2 In",
+      "char_start": 9479,
+      "char_end": 11448,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0006",
+      "text": "in the humanities. A wide choice of alternatives will be available to students; the registrar will announce the offerings for each term. - - 9 IC 3 Integrated Core Additional Introductory laboratory - - 3 Additional electives 2 , including physical education 3 , performing and visual arts, and frontiers courses Up to 3 Up to 12 Up to 9 1 IC students must take CS 1 or CS 1 x in their first year. Most students will take this course in the first term, but students placed into Wr 2 will take CS 1 in third term. 2 In first and second terms, first-year students are limited to 45 academic units. Hence in first term, these additional electives may not be academic courses. In second term, up to 9 units of these additional electives may be academic courses. 3 Three terms (9 units) of PE are required for the B.S. degree. Students need not elect to take the required PE in the first year. It may be taken in any three terms before graduation. Published Date: Sept. 8, 2025 Related Pages In addition to the required core classes described on the previous pages, first-year students are encouraged to participate in first-year seminar classes, frontier classes, research tutorials and other research opportunities. First Year Seminars are a series of seminars in which 10 to 15 first-year students and a faculty member explore in depth an exciting topic in the lab, around a table, or in the field. These courses cover a wide range of topics, including earthquakes, gravitational waves, and the science of music. Instructors may allow sophomores, juniors, or seniors to enroll in these seminars after the conclusion of the pre-registration period for the upcoming term. See section on First-Year Seminars for more information. Caltech also offers a series of “frontier courses” that involve a weekly presentation by a faculty member on a topic of current research. These courses often meet at lunch time and serve pizza; hence, students refer to the courses as “pizza courses.” The frontier courses are an opportunity for students to meet the Caltech faculty and to hear about state-of-the-art research projects for the summer or academic year. There are a total of 10 frontier courses offered for first-year students in biology, chemistry, mathematics, physics, geology and planetary sciences, engineering, computer science, chemical engineering, bioengineering, and electrical engineering. Currently there are three “research tutorials” for",
+      "char_start": 10931,
+      "char_end": 13371,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "catalog.caltech.edu_97f76abe_0007",
+      "text": "of “frontier courses” that involve a weekly presentation by a faculty member on a topic of current research. These courses often meet at lunch time and serve pizza; hence, students refer to the courses as “pizza courses.” The frontier courses are an opportunity for students to meet the Caltech faculty and to hear about state-of-the-art research projects for the summer or academic year. There are a total of 10 frontier courses offered for first-year students in biology, chemistry, mathematics, physics, geology and planetary sciences, engineering, computer science, chemical engineering, bioengineering, and electrical engineering. Currently there are three “research tutorials” for first-year students: one in physics, one in biology, and one in chemistry. These tutorials have many of the same features as the first-year seminars. In physics, the research tutorial includes approximately seven first-year students and extends over three academic terms plus the summer. The purpose is to demonstrate how research opportunities arise, are evaluated, and are tested, and how the ideas that survive develop in larger projects. In biology and chemistry, the tutorials are offered in the winter and spring quarters and involve small group discussions on special areas or problems in biology, biotechnology, and chemistry. More than 80 percent of Caltech students participate in research at some point in their academic career. Students may embark on research activities by registering for research credits with a faculty member, by working in a laboratory for pay during the summer or academic year, by completing a senior thesis, or by participating in Caltech’s Summer Undergraduate Research Fellowship (SURF) program. The SURF program is described Undergraduate Programs and Research . Published Date: Sept. 13, 2025",
+      "char_start": 12685,
+      "char_end": 14504,
+      "token_count": 272,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "de76e517f92cc77ed1fec9e8041331265c6cbe1f3ac7fecfd76e082739f8b82b",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:31:33.030477",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

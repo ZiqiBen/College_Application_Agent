@@ -1,0 +1,69 @@
+{
+  "id": "grad.ucla.edu_0aeff3152482",
+  "source_url": "https://grad.ucla.edu/programs/physical-sciences/chemistry-and-biochemistry-department/biochemistry-molecular-and-structural-biology/",
+  "raw_snapshot_path": "out/cache\\20251210T045648Z_0aeff3152482.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:57:14.860263",
+  "checksum": "0aeff31524824c57038e99c57c71f0bef060edd741a095018b87113d4c86ca76",
+  "title": "Biochemistry, Molecular and Structural Biology | UCLA Graduate Programs",
+  "raw_text": "Graduate Program: Biochemistry, Molecular and Structural Biology\nDEGREES\nUCLA's Graduate Program in Biochemistry, Molecular and Structural Biology offers the following degree(s):\nD\nDoctor of Philosophy                                              (Ph.D.)\nM\nMasters available on Doctoral track\nAdmission\nRequirements\nProgram\nStatistics\nVisit the Program’s website\nBiochemistry, Molecular and Structural Biology provides in-depth details on its own site\nWith questions not answered here or on the program’s site (above), please contact the program directly.\nADDRESS\nBiochemistry, Molecular and Structural Biology Graduate Program at UCLA\n4009 Young Hall\nBox 951569\nLos Angeles, CA 90095-1569\nFACULTY\nVisit the\nChemistry and Biochemistry Department’s faculty roster\nCOURSE DESCRIPTIONS\nVisit the registrar's site for the\nChemistry and Biochemistry Department’s course descriptions\nPHONE\n(310) 825-3150\nFax: (310) 267-0204\nEMAIL\nchemgrad@chem.ucla.edu\nMAJOR CODE: BIOCHEMISTRY, MOLECULAR AND STRUCTURAL BIOLOGY\n009O",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Biochemistry, Molecular and Structural Biology",
+    "school": "UCLA",
+    "department": "Chemistry and Biochemistry Department",
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": null
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "grad.ucla.edu_0aeff315_0000",
+      "text": "Graduate Program: Biochemistry, Molecular and Structural Biology DEGREES UCLA's Graduate Program in Biochemistry, Molecular and Structural Biology offers the following degree(s): D Doctor of Philosophy (Ph.D.) M Masters available on Doctoral track Admission Requirements Program Statistics Visit the Program’s website Biochemistry, Molecular and Structural Biology provides in-depth details on its own site With questions not answered here or on the program’s site (above), please contact the program directly. ADDRESS Biochemistry, Molecular and Structural Biology Graduate Program at UCLA 4009 Young Hall Box 951569 Los Angeles, CA 90095-1569 FACULTY Visit the Chemistry and Biochemistry Department’s faculty roster COURSE DESCRIPTIONS Visit the registrar's site for the Chemistry and Biochemistry Department’s course descriptions PHONE (310) 825-3150 Fax: (310) 267-0204 EMAIL chemgrad@chem.ucla.edu MAJOR CODE: BIOCHEMISTRY, MOLECULAR AND STRUCTURAL BIOLOGY 009O",
+      "char_start": 0,
+      "char_end": 966,
+      "token_count": 126,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "ca9666d3c0bbb5938afe44023f450d8f3fdce95f6f855e45ee7385b4c5121d4e",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:57:14.860263",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

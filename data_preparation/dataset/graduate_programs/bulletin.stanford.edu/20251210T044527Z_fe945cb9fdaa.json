@@ -1,0 +1,85 @@
+{
+  "id": "bulletin.stanford.edu_fe945cb9fdaa",
+  "source_url": "https://bulletin.stanford.edu/programs/BIOM-MS",
+  "raw_snapshot_path": "out/cache\\20251210T044514Z_fe945cb9fdaa.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:45:27.276971",
+  "checksum": "fe945cb9fdaaaa660a341099899a1a9c79cec3f4e0607e60df0c9409b4952413",
+  "title": "BIOM-MS Program | Stanford University Bulletin",
+  "raw_text": "BIOM-MS - Biomedical Informatics (MS)\nDownload as PDF\nBiomedical Informatics\nBiomedical Informatics\nMS - Master of Science\nGeneral\nProgram Policies\nLearning Outcomes\nProgram Overview\nOUT OF DATE - Refer to\nprogram\nfor AY23-24 forward.\nThe Biomedical Data Science Program is interdepartmental and offers instruction and research opportunities leading to MS and PhD degrees in Biomedical Data Science. All students must complete the core curriculum requirements and additional coursework that fulfills degree requirements and pursues their technical interests and goals as specified for each degree program.\nThe program can provide flexibility and complement Stanford’s other applied medical research opportunities. Special arrangements may be made for those with unique needs or those simultaneously enrolled in other degree programs within the university. Similarly, students with prior relevant training may have the curriculum adjusted to eliminate requirements met as part of prior training.\nThe GRE is not required for admission.\nSee\nGraduate Degrees\nfor university requirements for the MS degree.\nAdvising\nUpon entering the program, each student is assigned an academic advisor to help with course selection and monitor progress toward program milestones and degree requirements. Each research-track (academic) MS and PhD student conducts research under the primary mentorship of a faculty supervisor, who guides their scholarly and professional development. Further details about the advisor roles and responsibilities are found in\nDBDS Student Handbook\nand\nBiomedical Data Science\n.\nMaster of Science in Biomedical Data Science (Academic)\nThis degree is designed for individuals who wish to undertake an in-depth study of biomedical data science with research on a full-time basis. Typically, a student spends two years in the program and implements and documents a substantial project by the end of the second year. The first year involves acquiring the fundamental concepts and tools through coursework and research project involvement. Academic MS students are expected to devote 50 percent or more of their time to participating in research projects. Research rotations are not required but can be done with the approval of the academic advisor or training program director. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science. This degree requires a written research paper to be approved by two faculty members.\nMaster of Science in Biomedical Data Science (Professional/Honors Cooperative Program)\nThis degree is designed primarily for the working professional with advanced training in one discipline who wishes to acquire interdisciplinary skills. Although many classes necessary for the degree are available online, some requirements may be fulfilled by implementing an alternative plan to be approved by the program. The professional MS is offered with the Stanford Center for Professional Development (SCPD), which establishes tuition and fee rates. The program uses the honors cooperative program (HCP) model, which assumes that the student works full time and is enrolled in the MS part-time. Students who live locally may attend their courses on campus. Students have up to five years to complete the program. Research projects are optional; the student must make arrangements with program faculty if interested. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science.\nMaster of Science in Biomedical Data Science (Coterminal)\nThe coterminal degree program allows Stanford University undergraduates to study for a master’s degree while completing their bachelor’s degree(s) in the same or a different department. See\nCoterminal Master's Degrees\nfor additional information. See the\nRegistrar’s Office website\nfor university coterminal degree program rules and application forms.\nThe coterminal Master of Science program follows the same program requirements as the Master of Science (Professional), except for the requirement to be employed full-time. The coterminal degree is available only to current Stanford undergraduates. Coterminal students are enrolled full time, and courses are taken on campus. Research projects are optional; the student must make arrangements with program faculty if interested. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science.\nMinimum Units in the Program\n45\nMinimum University Units\n45",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Biomedical Informatics MS",
+    "school": "Stanford University",
+    "department": null,
+    "duration": "Typically two years for academic MS; up to five years for professional MS",
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": "The GRE is not required for admission.",
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": "The GRE is not required for admission. See Graduate Degrees for university requirements for the MS degree."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": "The Biomedical Data Science Program is interdepartmental and offers instruction and research opportunities leading to MS and PhD degrees in Biomedical Data Science. The program can provide flexibility and complement Stanford’s other applied medical research opportunities."
+    },
+    "training_outcomes": {
+      "goals": "Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science.",
+      "career_paths": null,
+      "research_orientation": "Academic MS students are expected to devote 50 percent or more of their time to participating in research projects.",
+      "professional_orientation": "The professional MS is designed primarily for the working professional with advanced training in one discipline who wishes to acquire interdisciplinary skills.",
+      "summary": "Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science."
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "bulletin.stanford.edu_fe945cb9_0000",
+      "text": "BIOM-MS - Biomedical Informatics (MS) Download as PDF Biomedical Informatics Biomedical Informatics MS - Master of Science General Program Policies Learning Outcomes Program Overview OUT OF DATE - Refer to program for AY23-24 forward. The Biomedical Data Science Program is interdepartmental and offers instruction and research opportunities leading to MS and PhD degrees in Biomedical Data Science. All students must complete the core curriculum requirements and additional coursework that fulfills degree requirements and pursues their technical interests and goals as specified for each degree program. The program can provide flexibility and complement Stanford’s other applied medical research opportunities. Special arrangements may be made for those with unique needs or those simultaneously enrolled in other degree programs within the university. Similarly, students with prior relevant training may have the curriculum adjusted to eliminate requirements met as part of prior training. The GRE is not required for admission. See Graduate Degrees for university requirements for the MS degree. Advising Upon entering the program, each student is assigned an academic advisor to help with course selection and monitor progress toward program milestones and degree requirements. Each research-track (academic) MS and PhD student conducts research under the primary mentorship of a faculty supervisor, who guides their scholarly and professional development. Further details about the advisor roles and responsibilities are found in DBDS Student Handbook and Biomedical Data Science . Master of Science in Biomedical Data Science (Academic) This degree is designed for individuals who wish to undertake an in-depth study of biomedical data science with research on a full-time basis. Typically, a student spends two years in the program and implements and documents a substantial project by the end of the second year. The first year involves acquiring the fundamental concepts and tools through coursework and research project involvement. Academic MS students are expected to devote 50 percent or more of their time to participating in research projects. Research rotations are not required but can be done with the approval of the academic advisor or training program director. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science. This degree requires a written research paper to be approved by two faculty members. Master of Science in Biomedical Data Science (Professional/Honors Cooperative Program) This degree is designed primarily for the working professional with advanced training in one discipline who wishes to acquire interdisciplinary skills. Although many classes",
+      "char_start": 0,
+      "char_end": 2752,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "bulletin.stanford.edu_fe945cb9_0001",
+      "text": "to devote 50 percent or more of their time to participating in research projects. Research rotations are not required but can be done with the approval of the academic advisor or training program director. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science. This degree requires a written research paper to be approved by two faculty members. Master of Science in Biomedical Data Science (Professional/Honors Cooperative Program) This degree is designed primarily for the working professional with advanced training in one discipline who wishes to acquire interdisciplinary skills. Although many classes necessary for the degree are available online, some requirements may be fulfilled by implementing an alternative plan to be approved by the program. The professional MS is offered with the Stanford Center for Professional Development (SCPD), which establishes tuition and fee rates. The program uses the honors cooperative program (HCP) model, which assumes that the student works full time and is enrolled in the MS part-time. Students who live locally may attend their courses on campus. Students have up to five years to complete the program. Research projects are optional; the student must make arrangements with program faculty if interested. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science. Master of Science in Biomedical Data Science (Coterminal) The coterminal degree program allows Stanford University undergraduates to study for a master’s degree while completing their bachelor’s degree(s) in the same or a different department. See Coterminal Master's Degrees for additional information. See the Registrar’s Office website for university coterminal degree program rules and application forms. The coterminal Master of Science program follows the same program requirements as the Master of Science (Professional), except for the requirement to be employed full-time. The coterminal degree is available only to current Stanford undergraduates. Coterminal students are enrolled full time, and courses are taken on campus. Research projects are optional; the student must make arrangements with program faculty if interested. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science. Minimum Units in the Program 45 Minimum University Units 45 Filters Results (0) Export all results as CSV Sort By - Code Name Subject Code Department Description Career Loading results... ==== COURSE DETAIL START (Download as PDF Biomedical Informatics) ==== Skip to Main Content 404 – Page Not",
+      "char_start": 2080,
+      "char_end": 4776,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "bulletin.stanford.edu_fe945cb9_0002",
+      "text": "degree is available only to current Stanford undergraduates. Coterminal students are enrolled full time, and courses are taken on campus. Research projects are optional; the student must make arrangements with program faculty if interested. Graduates of this program are prepared to contribute creatively to basic or applied projects in biomedical data science. Minimum Units in the Program 45 Minimum University Units 45 Filters Results (0) Export all results as CSV Sort By - Code Name Subject Code Department Description Career Loading results... ==== COURSE DETAIL START (Download as PDF Biomedical Informatics) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Download as PDF Biomedical Informatics) ==== ==== COURSE DETAIL START (General Program Policies Learning Outcomes) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (General Program Policies Learning Outcomes) ==== ==== COURSE DETAIL START (Graduate Degrees) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Graduate Degrees) ==== ==== COURSE DETAIL START (Advising) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Advising) ==== ==== COURSE DETAIL START (Minimum Units in the Program 45) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Minimum Units in the Program 45) ==== ==== COURSE DETAIL START (Minimum University Units 45 Filters) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Minimum University Units 45 Filters) ==== ==== COURSE DETAIL START (Subject Code Department Description Career) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Subject Code Department Description Career) ==== ==== COURSE DETAIL START (Loading results...) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Loading results...) ====",
+      "char_start": 4120,
+      "char_end": 6545,
+      "token_count": 360,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "819a23615eaae6571ecca4805d9e7e99fd80ff4af84463fb43328cff69c536ce",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:45:27.276971",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

@@ -1,0 +1,218 @@
+{
+  "id": "soa.utexas.edu_6e1d1379cd13",
+  "source_url": "https://soa.utexas.edu/graduate-admissions/architectural-history",
+  "raw_snapshot_path": "out/cache\\20251210T050653Z_6e1d1379cd13.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:07:10.877208",
+  "checksum": "6e1d1379cd138e699f72b325b760c7165def36fd75ac731b2c349e51c8b51a69",
+  "title": "Master of Arts in Architectural History Application Instructions | School of Architecture",
+  "raw_text": "Master of Arts in Architectural History Application Instructions\nMASTER OF ARTS IN ARCHITECTURAL HISTORY APPLICATION INSTRUCTIONS\n[  ] Follow the\napplication instructions\nfor all UTSOA graduate programs.\n[  ] See below for MA application requirements.\nApplication materials are reviewed for evidence of a specialised interest in any relevant area, including but not limited to Architectural History, Building Technology, Community Equity Design, Community and Regional Planning, Digital Technology, Environmental Equity Design, Historic Preservation, Interior Design, Latin American Architecture, Sustainable Design, or Urban Design.\nPREREQUISITES\nPrerequisites include 9 hours of architectural history or a related spatial discipline. This may include courses in art history, history, geography, planning, or related subjects.\nGRADUATE SCHOOL REQUIREMENTS\n[  ] Follow the\nGraduate School instructions\nto submit the\napplication\n, application fee, transcripts and test scores. Once submitted to the Graduate School, transcripts and test scores can take up to one month to process.\n+ The GRE is required for MA.\nSTATEMENT OF PURPOSE\n[  ] Upload your statement through\nMyStatus\n.\n+ A 1,000-1,500 word essay that describes the scholarly topic and area of study you wish to pursue. Please discuss why you want to pursue this topic in the MA program at UTSOA and your professional objectives. You may wish to include a situation or job that helped you define your area of interest.\n+ You may submit your\nonline application\nbefore\nfinishing your statement of purpose. You can later upload your statement through\nMyStatus\n.\nTHREE LETTERS OF RECOMMENDATION\n[  ] Manage and track your letters through\nMyStatus\n.\n[  ] Provide recommenders' emails as part of the\nonline application\n.\n+ Recommenders may include former instructors and professional employers.\n+ Letters should include comments on the applicant’s intellectual, communicative, and leadership abilities as well as their capacity for creativity and relevant personal characteristics.\n+ After you submit your application and pay your application fee, notification emails will be sent to your recommenders. Any delay in submitting your application or application fee will delay the notifications to your recommenders.\nRESUME OR CURRICULUM VITAE\n[  ] Upload through\nMyStatus\n.\nWRITING SAMPLE\n[  ]  Upload through\nMyStatus\n.\n+ This document should demonstrate your analytical writing and reasoning skills.\n+ Submit a full-length scholarly paper (12-20 pages). A shorter paper may be submitted if it is analytically strong and focuses on a single topic.\nAPPLICATION DEADLINE:\nDecember 15\nSUPPLEMENTAL MATERIALS DUE:\nJanuary 3",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Master of Arts in Architectural History",
+    "school": "University of Texas at Austin",
+    "department": "School of Architecture",
+    "duration": null,
+    "courses": [
+      {
+        "name": "ALTERNATIVE HISTORIES AND THEORETICAL DIRECTIONS IN COMPUTATIONAL DESIGN",
+        "description": null
+      },
+      {
+        "name": "AMERICAN ARCHITECTURE",
+        "description": null
+      },
+      {
+        "name": "ARCHITECTURAL INTERROGATIONS",
+        "description": null
+      },
+      {
+        "name": "BIOGENIC MATERIALS",
+        "description": null
+      },
+      {
+        "name": "BODIES & EMBODIMENTS",
+        "description": null
+      },
+      {
+        "name": "BUILDING MATTERS",
+        "description": null
+      },
+      {
+        "name": "CLIMATE MITIGATION AND ADAPTATION",
+        "description": null
+      },
+      {
+        "name": "COMPUTATIONAL DESIGN",
+        "description": null
+      },
+      {
+        "name": "CONTEMPORARY ARCHITECTURE THEORY BY CASE STUDY",
+        "description": null
+      },
+      {
+        "name": "CORNER PROBLEMS: THE HISTORY OF TECTONICS IN ARCHITECTURE",
+        "description": null
+      },
+      {
+        "name": "CRITICAL HISTORY OF ARTIFICIAL INTELLIGENCE",
+        "description": null
+      },
+      {
+        "name": "EVOLVING POLICY | UNUSUAL BUILDINGS",
+        "description": null
+      },
+      {
+        "name": "FOLKTALE FORMS",
+        "description": null
+      },
+      {
+        "name": "GERMAN MODERNISM",
+        "description": null
+      },
+      {
+        "name": "HISTORY OF ITALIAN ARCHITECTURE AND ITS INFLUENCE",
+        "description": null
+      },
+      {
+        "name": "HYBRIDITY IN LANDSCAPE/ARCHITECTURE",
+        "description": null
+      },
+      {
+        "name": "MANAGING THE DESIGN PROJECT",
+        "description": null
+      },
+      {
+        "name": "MATERIAL INFORMATION",
+        "description": null
+      },
+      {
+        "name": "MAY TERM: ARCHITECTURAL PHOTOGRAPHY-GBR",
+        "description": null
+      },
+      {
+        "name": "MAY TERM: CRITICAL WORKS OF MODERN AND EMERGENT ARCHITECTURE - EUROPE",
+        "description": null
+      },
+      {
+        "name": "MAY TERM: RESILIENT DESIGN: CLIMATE ADAPTATION",
+        "description": null
+      },
+      {
+        "name": "PENCIL OF NATURE",
+        "description": null
+      },
+      {
+        "name": "PRESERVATION PLANNING & PRACTICE",
+        "description": null
+      },
+      {
+        "name": "PRODUCTIONS",
+        "description": null
+      },
+      {
+        "name": "RENDERING AND ANIMATION OF THE BUILT ENVIRONMENT",
+        "description": null
+      },
+      {
+        "name": "RESEARCH DESIGN",
+        "description": null
+      },
+      {
+        "name": "ROBOTS FOR DESIGN",
+        "description": null
+      },
+      {
+        "name": "SPATIAL STORIES (AN EXPLORATION OF NARRATIVE, SPACE + TIME)",
+        "description": null
+      },
+      {
+        "name": "SUPER-HOUSING: SUPERBLOCK, HOUSING, & THE COLLECTIVE IMAGINARIES",
+        "description": null
+      },
+      {
+        "name": "SUPERVISED TEACHING IN ARCHITECTURE",
+        "description": null
+      },
+      {
+        "name": "SURVEYS OF THE ANTHROPOCENE",
+        "description": null
+      },
+      {
+        "name": "URBAN HOUSING: TYPOLOGY & INVENTION",
+        "description": null
+      },
+      {
+        "name": "WRITING ABOUT ARCHITECTURE: HIST-THRY-CRIT",
+        "description": null
+      }
+    ],
+    "application_requirements": {
+      "academic_background": "Specialised interest in areas such as Architectural History, Building Technology, Community Equity Design, etc.",
+      "prerequisites": "9 hours of architectural history or a related spatial discipline.",
+      "gre": "The GRE is required for MA.",
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": "Statement of Purpose, Three Letters of Recommendation, Resume or Curriculum Vitae, Writing Sample.",
+      "summary": "Applicants must have a specialised interest in relevant areas, complete 9 hours of architectural history or related courses, submit GRE scores, and provide a statement of purpose, letters of recommendation, a resume, and a writing sample."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "soa.utexas.edu_6e1d1379_0000",
+      "text": "Master of Arts in Architectural History Application Instructions MASTER OF ARTS IN ARCHITECTURAL HISTORY APPLICATION INSTRUCTIONS [ ] Follow the application instructions for all UTSOA graduate programs. [ ] See below for MA application requirements. Application materials are reviewed for evidence of a specialised interest in any relevant area, including but not limited to Architectural History, Building Technology, Community Equity Design, Community and Regional Planning, Digital Technology, Environmental Equity Design, Historic Preservation, Interior Design, Latin American Architecture, Sustainable Design, or Urban Design. PREREQUISITES Prerequisites include 9 hours of architectural history or a related spatial discipline. This may include courses in art history, history, geography, planning, or related subjects. GRADUATE SCHOOL REQUIREMENTS [ ] Follow the Graduate School instructions to submit the application , application fee, transcripts and test scores. Once submitted to the Graduate School, transcripts and test scores can take up to one month to process. + The GRE is required for MA. STATEMENT OF PURPOSE [ ] Upload your statement through MyStatus . + A 1,000-1,500 word essay that describes the scholarly topic and area of study you wish to pursue. Please discuss why you want to pursue this topic in the MA program at UTSOA and your professional objectives. You may wish to include a situation or job that helped you define your area of interest. + You may submit your online application before finishing your statement of purpose. You can later upload your statement through MyStatus . THREE LETTERS OF RECOMMENDATION [ ] Manage and track your letters through MyStatus . [ ] Provide recommenders' emails as part of the online application . + Recommenders may include former instructors and professional employers. + Letters should include comments on the applicant’s intellectual, communicative, and leadership abilities as well as their capacity for creativity and relevant personal characteristics. + After you submit your application and pay your application fee, notification emails will be sent to your recommenders. Any delay in submitting your application or application fee will delay the notifications to your recommenders. RESUME OR CURRICULUM VITAE [ ] Upload through MyStatus . WRITING SAMPLE [ ] Upload through MyStatus . + This document should demonstrate your analytical writing and reasoning skills. + Submit a full-length scholarly paper (12-20 pages). A shorter paper may be submitted if it is analytically strong and focuses on a single topic. APPLICATION DEADLINE: December 15 SUPPLEMENTAL MATERIALS DUE: January 3 Spring 2026",
+      "char_start": 0,
+      "char_end": 2672,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "soa.utexas.edu_6e1d1379_0001",
+      "text": "+ After you submit your application and pay your application fee, notification emails will be sent to your recommenders. Any delay in submitting your application or application fee will delay the notifications to your recommenders. RESUME OR CURRICULUM VITAE [ ] Upload through MyStatus . WRITING SAMPLE [ ] Upload through MyStatus . + This document should demonstrate your analytical writing and reasoning skills. + Submit a full-length scholarly paper (12-20 pages). A shorter paper may be submitted if it is analytically strong and focuses on a single topic. APPLICATION DEADLINE: December 15 SUPPLEMENTAL MATERIALS DUE: January 3 Spring 2026 Courses SPRING 2026 COURSES To view corresponding course numbers and unique numbers for all UTSOA courses being offered, please visit the official UT Course Schedule . Filter by program - Any - Architecture Architectural History Community and Regional Planning Historic Preservation Interior Design Landscape Architecture Sustainable Design Urban Design Filter by instructor - Any - Izabella Nuckels Adam Pyrek Aleksandra Jaeschke Alex Karner Allan W. Shearer Allison Gaskins Andy Bako Benjamin Ibarra-Sevilla Bjørn Sletto Bryan Norwood Carlos H. Blanco Charles L. Davis II Charlton Lewis Christopher Long Clay Odom Danelle Briscoe Daniel Koehler Dason Whitsett David Heymann Dean Almy Dora Epstein Jones Elizabeth Danze Francisco Gomes Hans Tursack Hope Hasbrouck Igor Siddiqui Jake Wegmann John Blood Joyce Rosner Juan Miró Juana Salcedo Junfeng Jiao Katherine Lieberknecht Kevin Alter Kory Bieg Kyriakos Kyriakou Larry Speck Liang Wang Lidia Cano Pecharromán Maggie Hansen Marc Coudert Mari Michael Glassell Mark Macek Mark Wolfe Marla Smith Martin Haettasch Matt Fajkus Michael Averitt Michael Garrison Michael Holleran Michael Moynihan Ming Zhang Mirka Benes Nichole Wiedemann Phoebe Lickwar Rasa Navasaityte Ria Bravo Richard Jennings Robert Stepnoski Simon Atkinson Smilja Milovanovic-Bertram Tara Dudley Vincent Snyder Search by keywords ALTERNATIVE HISTORIES AND THEORETICAL DIRECTIONS IN COMPUTATIONAL DESIGN Hans Tursack AMERICAN ARCHITECTURE Bryan Norwood ARCHITECTURAL INTERROGATIONS Kevin Alter BIOGENIC MATERIALS Aleksandra Jaeschke BODIES & EMBODIMENTS Bryan Norwood BUILDING MATTERS Kevin Alter CLIMATE MITIGATION AND ADAPTATION Lidia Cano Pecharromán COMPUTATIONAL DESIGN Kory Bieg CONTEMPORARY ARCHITECTURE THEORY BY CASE STUDY David Heymann CORNER PROBLEMS: THE HISTORY OF TECTONICS IN ARCHITECTURE Dora Epstein Jones CRITICAL HISTORY OF ARTIFICIAL INTELLIGENCE Michael Moynihan EVOLVING POLICY | UNUSUAL BUILDINGS Francisco Gomes FOLKTALE FORMS Carlos H. Blanco GERMAN MODERNISM Christopher Long HISTORY OF ITALIAN ARCHITECTURE AND ITS INFLUENCE Smilja Milovanovic-Bertram HYBRIDITY IN LANDSCAPE/ARCHITECTURE Mirka Benes MANAGING THE DESIGN PROJECT Richard Jennings MATERIAL INFORMATION Danelle Briscoe MAY",
+      "char_start": 2027,
+      "char_end": 4900,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "soa.utexas.edu_6e1d1379_0002",
+      "text": "Tursack AMERICAN ARCHITECTURE Bryan Norwood ARCHITECTURAL INTERROGATIONS Kevin Alter BIOGENIC MATERIALS Aleksandra Jaeschke BODIES & EMBODIMENTS Bryan Norwood BUILDING MATTERS Kevin Alter CLIMATE MITIGATION AND ADAPTATION Lidia Cano Pecharromán COMPUTATIONAL DESIGN Kory Bieg CONTEMPORARY ARCHITECTURE THEORY BY CASE STUDY David Heymann CORNER PROBLEMS: THE HISTORY OF TECTONICS IN ARCHITECTURE Dora Epstein Jones CRITICAL HISTORY OF ARTIFICIAL INTELLIGENCE Michael Moynihan EVOLVING POLICY | UNUSUAL BUILDINGS Francisco Gomes FOLKTALE FORMS Carlos H. Blanco GERMAN MODERNISM Christopher Long HISTORY OF ITALIAN ARCHITECTURE AND ITS INFLUENCE Smilja Milovanovic-Bertram HYBRIDITY IN LANDSCAPE/ARCHITECTURE Mirka Benes MANAGING THE DESIGN PROJECT Richard Jennings MATERIAL INFORMATION Danelle Briscoe MAY TERM: ARCHITECTURAL PHOTOGRAPHY-GBR David Heymann MAY TERM: CRITICAL WORKS OF MODERN AND EMERGENT ARCHITECTURE - EUROPE Elizabeth Danze , John Blood MAY TERM: RESILIENT DESIGN: CLIMATE ADAPTATION Danelle Briscoe PENCIL OF NATURE Phoebe Lickwar PRESERVATION PLANNING & PRACTICE Michael Holleran PRODUCTIONS Clay Odom RENDERING AND ANIMATION OF THE BUILT ENVIRONMENT Hope Hasbrouck RESEARCH DESIGN Aleksandra Jaeschke ROBOTS FOR DESIGN Robert Stepnoski SPATIAL STORIES (AN EXPLORATION OF NARRATIVE, SPACE + TIME) Nichole Wiedemann SUPER-HOUSING: SUPERBLOCK, HOUSING, & THE COLLECTIVE IMAGINARIES Liang Wang SUPERVISED TEACHING IN ARCHITECTURE Charles L. Davis II SURVEYS OF THE ANTHROPOCENE Kyriakos Kyriakou URBAN HOUSING: TYPOLOGY & INVENTION Martin Haettasch WRITING ABOUT ARCHITECTURE: HIST-THRY-CRIT Christopher Long PAST COURSES Fall 2025 Spring 2025 Fall 2023 Summer 2023 Spring 2023",
+      "char_start": 4097,
+      "char_end": 5789,
+      "token_count": 220,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "6064a34bebf5d703660381bf0440dd67b37750b8ec53a30900197c67bca639cd",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:07:10.877208",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

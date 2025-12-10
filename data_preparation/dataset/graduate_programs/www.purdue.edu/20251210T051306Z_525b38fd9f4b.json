@@ -1,0 +1,69 @@
+{
+  "id": "www.purdue.edu_525b38fd9f4b",
+  "source_url": "https://www.purdue.edu/academics/ogsps/admissions/gradrequirements/westlafayette/computer-and-information-technology/",
+  "raw_snapshot_path": "out/cache\\20251210T051303Z_525b38fd9f4b.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:13:06.773540",
+  "checksum": "525b38fd9f4b1887a55f365b6b6cfeab58836446bce3d1562dadaba92e1bc458",
+  "title": "Computer and Information Technology",
+  "raw_text": "Computer and Information Technology",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Computer and Information Technology",
+    "school": "Purdue University",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": null
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.purdue.edu_525b38fd_0000",
+      "text": "Computer and Information Technology",
+      "char_start": 0,
+      "char_end": 35,
+      "token_count": 4,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "276299b4aeda501548d8333ea969f377304d8dffe34c623f443dcdcbd108a63b",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:13:06.773540",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

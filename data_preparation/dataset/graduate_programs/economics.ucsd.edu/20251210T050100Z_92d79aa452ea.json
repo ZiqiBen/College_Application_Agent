@@ -1,0 +1,198 @@
+{
+  "id": "economics.ucsd.edu_92d79aa452ea",
+  "source_url": "https://economics.ucsd.edu/graduate-program/prospective-students/index.html",
+  "raw_snapshot_path": "out/cache\\20251210T050039Z_92d79aa452ea.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:01:00.440905",
+  "checksum": "92d79aa452ea36f46c00380db232edf685984d5cdf2c5f18ef9a8f254dad525f",
+  "title": "Prospective Students",
+  "raw_text": "HOME\nGraduate Program\nProspective Students\nApplying to the Ph.D. Program in Economics (EN75)\nThank you for inquiring about admission to the Ph.D. program in Economics.\nThe admissions application for Fall 2026 will open on\nSeptember 3, 2025\n. Please also visit the\nDivision of Graduate Education and Postdoctoral Affairs’s\nwebsite for additional information and resources.\nThe UC San Diego Graduate Program in Economics has long been recognized for the strong preparation its students receive in econometrics and microeconomic theory. During the last few years, our Department has expanded dramatically, with rapidly growing strengths as well in macroeconomics and applied microeconomics. Among the fields we now cover are behavioral economics, development, environmental economics, finance, labor economics, international trade, macroeconomics, political economy, and public finance, in addition to econometrics and microeconomic theory.\nInformation about the graduate program including\nprogram requirements\n,\nfaculty\n, and\njob placement history\nare on this web page.\nPlease review all resources thoroughly, including our\nFAQ\n, and should you have additional questions, please e-mail us at\necon-phdadmissions@ucsd.edu\n.\nTranscript Policy\nPlease\ndo not\nsend hard copies of your transcripts at this time. You may upload your unofficial transcripts to the online application. We will only require official, hard copies of your transcripts if admitted\nand\nyou decide to attend UC San Diego. For international students, please make sure to upload a translated copy of your transcripts.\nContact Info:\nWebsite:\nhttp://economics.ucsd.edu\nEmail:\necon-phdadmissions@ucsd.edu\nMailing address:\nUniversity of California San Diego\nDepartment of Economics\n9500 Gilman Drive, MC 0508\nLa Jolla, CA 92093-0508\nProgram Info\nArea of Study\nSchool of Social Sciences\nDepartment\nEconomics\nMajor\nEconomics\nDegree\nDoctor of Philosophy\nAdmissions Terms\nFall\nAdditional Notes\nCarefully evaluate your qualifications against the criteria below before paying the application fee and submitting your application.\nUndergraduate GPA: 3.5 minimum on 4.0 scale. For international applicants, equivalencies will be determined.\nThe Department recognizes different colleges have different grading standards and will take this into account in reviewing applications. In particular, the Department notes that there are a small number of prominent colleges whose grading standards are substantially harder than most colleges and may consider applicants from those institutions that narrowly miss the 3.5 minimum standard.\nFor additional information and FAQs on admission to our Ph.D. program, please consult our\nadmissions webpage. For information on program requirements, please consult our\nprogram requirements webpage\n.\nApplication Deadlines\nDecember 3, 2025 (Fall 2026)\nFall 2026 Admissions Applications will open on September 3, 2025.\nProgram Info\nBasic Requirement\nAdmissions Tests\nGRE General is required.\nEnglish Proficiency Exams\n(international applicants only)\nA test of English language proficiency is required for international applicants whose native language is not English and who have not studied full-time for one uninterrupted academic year at a university-level institution in which English is the language of instruction and in a country where English is a dominant language.\nThe following test(s) are accepted by this department:\nTOEFL (Test of English as a Foreign Language)\nIELTS (International English Language Testing System)\nPTE (Pearson Test of English)\nDET (Duolingo English Test)\nLetters of Recommendation\nMinimum of 3 recommendations required.\n3 letters of recommendation required. Accepts online letters of recommendation ONLY\nStatement of Purpose\nRequired\nAccepts only the online Statement of Purpose; 2500 word limit\nWriting Sample\nRequired\nWriting sample should be an original piece of research, paper written as part of coursework, or other written material authored by the candidate.\nResume/CV\nRecommended\nIncluding your resume as part of your application is optional but recommended.\nGraduate Program\nAbout\nCurrent Students\nProspective Students\nApply Here\nAdmissions FAQs\nJob Market\nGraduate Advising\nDissertation Defense\nAlumni\nTranslate this page:",
+  "language": "English",
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Ph.D. in Economics",
+    "school": "University of California San Diego",
+    "department": "Department of Economics",
+    "duration": "5 years",
+    "courses": [
+      {
+        "name": "ECON 200A: Microeconomics",
+        "description": null
+      },
+      {
+        "name": "ECON 210A: Macroeconomics",
+        "description": null
+      },
+      {
+        "name": "ECON 220A: Introductory Econometrics",
+        "description": null
+      },
+      {
+        "name": "ECON 280: Computing",
+        "description": null
+      },
+      {
+        "name": "ECON 200B: Microeconomics",
+        "description": null
+      },
+      {
+        "name": "ECON 210B: Macroeconomics",
+        "description": null
+      },
+      {
+        "name": "ECON 220B: Introductory Econometrics",
+        "description": null
+      },
+      {
+        "name": "ECON 200C: Microeconomics",
+        "description": null
+      },
+      {
+        "name": "ECON 210C: Macroeconomics",
+        "description": null
+      },
+      {
+        "name": "ECON 220C: Introductory Econometrics",
+        "description": null
+      },
+      {
+        "name": "ECON 220D: Econometrics Course",
+        "description": null
+      },
+      {
+        "name": "ECON 220E: Econometrics Course",
+        "description": null
+      },
+      {
+        "name": "ECON 220F: Econometrics Course",
+        "description": null
+      },
+      {
+        "name": "ECON 285: Pre-Candidacy Presentation",
+        "description": null
+      },
+      {
+        "name": "ECON 296: Original Research Paper",
+        "description": null
+      },
+      {
+        "name": "ECON 286: Graduate Research Presentation Workshop",
+        "description": null
+      }
+    ],
+    "application_requirements": {
+      "academic_background": "Undergraduate GPA: 3.5 minimum on 4.0 scale.",
+      "prerequisites": "Minimum of one year of college-level calculus. Courses in vector calculus, differential equations, linear algebra and mathematical analysis are encouraged.",
+      "gre": "GRE General is required.",
+      "english_tests": "TOEFL or IELTS is required for international applicants whose native language is not English.",
+      "research_experience": "Writing sample should be an original piece of research.",
+      "work_experience": null,
+      "documents": "Minimum of 3 letters of recommendation, Statement of Purpose, Writing Sample, Resume/CV (recommended).",
+      "summary": "Applicants must have a minimum undergraduate GPA of 3.5, submit GRE scores, and provide proof of English proficiency if applicable. Required documents include letters of recommendation, a statement of purpose, a writing sample, and optionally a resume/CV."
+    },
+    "program_background": {
+      "mission": "The program is recognized for strong preparation in econometrics and microeconomic theory.",
+      "environment": "Full-time status (12 units) is required for financial support. The program includes core and elective courses.",
+      "faculty": null,
+      "resources": "The program offers a math review course and allows for STEM OPT extension.",
+      "summary": "The UC San Diego Graduate Program in Economics is known for its strong preparation in econometrics and microeconomic theory, with expanding strengths in macroeconomics and applied microeconomics."
+    },
+    "training_outcomes": {
+      "goals": "Prepare students with strong skills in econometrics and microeconomic theory.",
+      "career_paths": "The department has an active, successful Job Market program for its Ph.D. graduates.",
+      "research_orientation": "The program includes a strong emphasis on research, requiring an original research paper and a dissertation.",
+      "professional_orientation": null,
+      "summary": "The program aims to produce graduates with strong econometric and microeconomic skills, prepared for successful careers in academia and beyond."
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0000",
+      "text": "HOME Graduate Program Prospective Students Applying to the Ph.D. Program in Economics (EN75) Thank you for inquiring about admission to the Ph.D. program in Economics. The admissions application for Fall 2026 will open on September 3, 2025 . Please also visit the Division of Graduate Education and Postdoctoral Affairs’s website for additional information and resources. The UC San Diego Graduate Program in Economics has long been recognized for the strong preparation its students receive in econometrics and microeconomic theory. During the last few years, our Department has expanded dramatically, with rapidly growing strengths as well in macroeconomics and applied microeconomics. Among the fields we now cover are behavioral economics, development, environmental economics, finance, labor economics, international trade, macroeconomics, political economy, and public finance, in addition to econometrics and microeconomic theory. Information about the graduate program including program requirements , faculty , and job placement history are on this web page. Please review all resources thoroughly, including our FAQ , and should you have additional questions, please e-mail us at econ-phdadmissions@ucsd.edu . Transcript Policy Please do not send hard copies of your transcripts at this time. You may upload your unofficial transcripts to the online application. We will only require official, hard copies of your transcripts if admitted and you decide to attend UC San Diego. For international students, please make sure to upload a translated copy of your transcripts. Contact Info: Website: http://economics.ucsd.edu Email: econ-phdadmissions@ucsd.edu Mailing address: University of California San Diego Department of Economics 9500 Gilman Drive, MC 0508 La Jolla, CA 92093-0508 Program Info Area of Study School of Social Sciences Department Economics Major Economics Degree Doctor of Philosophy Admissions Terms Fall Additional Notes Carefully evaluate your qualifications against the criteria below before paying the application fee and submitting your application. Undergraduate GPA: 3.5 minimum on 4.0 scale. For international applicants, equivalencies will be determined. The Department recognizes different colleges have different grading standards and will take this into account in reviewing applications. In particular, the Department notes that there are a small number of prominent colleges whose grading standards are substantially harder than most colleges and may consider applicants from those institutions that narrowly miss the 3.5 minimum standard. For additional information and FAQs on admission to our Ph.D. program, please consult our admissions webpage. For information on program requirements, please consult our program requirements webpage . Application Deadlines December 3, 2025 (Fall 2026) Fall 2026 Admissions",
+      "char_start": 0,
+      "char_end": 2853,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0001",
+      "text": "For international applicants, equivalencies will be determined. The Department recognizes different colleges have different grading standards and will take this into account in reviewing applications. In particular, the Department notes that there are a small number of prominent colleges whose grading standards are substantially harder than most colleges and may consider applicants from those institutions that narrowly miss the 3.5 minimum standard. For additional information and FAQs on admission to our Ph.D. program, please consult our admissions webpage. For information on program requirements, please consult our program requirements webpage . Application Deadlines December 3, 2025 (Fall 2026) Fall 2026 Admissions Applications will open on September 3, 2025. Program Info Basic Requirement Admissions Tests GRE General is required. English Proficiency Exams (international applicants only) A test of English language proficiency is required for international applicants whose native language is not English and who have not studied full-time for one uninterrupted academic year at a university-level institution in which English is the language of instruction and in a country where English is a dominant language. The following test(s) are accepted by this department: TOEFL (Test of English as a Foreign Language) IELTS (International English Language Testing System) PTE (Pearson Test of English) DET (Duolingo English Test) Letters of Recommendation Minimum of 3 recommendations required. 3 letters of recommendation required. Accepts online letters of recommendation ONLY Statement of Purpose Required Accepts only the online Statement of Purpose; 2500 word limit Writing Sample Required Writing sample should be an original piece of research, paper written as part of coursework, or other written material authored by the candidate. Resume/CV Recommended Including your resume as part of your application is optional but recommended. Graduate Program About Current Students Prospective Students Apply Here Admissions FAQs Job Market Graduate Advising Dissertation Defense Alumni Translate this page: HOME Graduate Program Current Students Current Student Resources University & Department Requirements for Ph.D. Students: Thank you for inquiring about the program requirements for doctoral students in the Department of Economics at UC San Diego. Specific information on the doctoral program course and requirements can be found in the corresponding pages on the left. Please review all resources thoroughly, including the GEPA FAQ , and should you have additional questions, please email us at econ-phdadmissions@ucsd.edu . While matriculating through the program, it is expected that a doctoral student or candidate in good standing will: maintain full time status (12 units) to be",
+      "char_start": 2127,
+      "char_end": 4929,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0002",
+      "text": "Program Current Students Current Student Resources University & Department Requirements for Ph.D. Students: Thank you for inquiring about the program requirements for doctoral students in the Department of Economics at UC San Diego. Specific information on the doctoral program course and requirements can be found in the corresponding pages on the left. Please review all resources thoroughly, including the GEPA FAQ , and should you have additional questions, please email us at econ-phdadmissions@ucsd.edu . While matriculating through the program, it is expected that a doctoral student or candidate in good standing will: maintain full time status (12 units) to be eligible for financial support complete a minimum of 6 quarters in residence pass the qualifying examinations complete a computation course (ECON 280) complete an empirical project (as part of ECON 220F) maintain at least a 3.0 GPA complete the elective requirements successfully complete an oral qualifying examination complete a second year Spring written project complete a third-year original paper complete and successfully defend a dissertation must complete Graduate Research Workshop (Econ 286) at least one time to maximum of four times Notes: There is no foreign language requirement. The typical program matriculation time is 5 years. Program requirements are subject to change. Typical Program A math review course (ECON 205) is offered prior to fall quarter. This is an intensive review of analysis, single and multi-variable calculus, and optimization and is designed to prepare entering students for their first year of study. Entering students with confidence in their mathematical skills are not required to take the course. However, all students are required to pass the final exam in this class. Throughout the duration of the program each student is required to maintain full-time enrollment status, at least 12 units, to be eligible for any form of financial support . Excellent supplements to the schedule of core and elective courses to ensure full-time enrollment status are: ECON 291, ECON 297, ECON 299 and ECON 500A-B-C. All core and elective courses taken to fulfill program requirements must be taken for a letter grade (unless otherwise specified below). Economics course titles and descriptions are online . Note: F-1 students, with an EN75 and EN77 major, are eligible to apply for STEM OPT and extend the employment authorization benefits (approved April 2019). Current F-1 regulations allow for 12 months of OPT and an additional 24 months (total of 36 months) of OPT for those",
+      "char_start": 4260,
+      "char_end": 6841,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0003",
+      "text": "supplements to the schedule of core and elective courses to ensure full-time enrollment status are: ECON 291, ECON 297, ECON 299 and ECON 500A-B-C. All core and elective courses taken to fulfill program requirements must be taken for a letter grade (unless otherwise specified below). Economics course titles and descriptions are online . Note: F-1 students, with an EN75 and EN77 major, are eligible to apply for STEM OPT and extend the employment authorization benefits (approved April 2019). Current F-1 regulations allow for 12 months of OPT and an additional 24 months (total of 36 months) of OPT for those in STEM qualified fields. Visit the UC San Diego International Students & Engagement Office (ISEO) OPT website for details and updates. EN75 and EN77 falls under the category of Econometrics and Quantitative Economics. Typical Progression 1st Year: Core Courses Fall Quarter ECON 200A: Microeconomics ECON 210A: Macroeconomics ECON 220A: Introductory Econometrics ECON 280: Computing Winter Quarter ECON 200B: Microeconomics ECON 210B: Macroeconomics ECON 220B: Introductory Econometrics Spring Quarter ECON 200C: Microeconomics ECON 210C: Macroeconomics ECON 220C: Introductory Econometrics 2nd Year: Core Courses and Electives Fall Quarter ECON 220D: Econometrics Course Elective Courses Winter Quarter ECON 220E: Econometrics Course Elective Courses Spring Quarter ECON 220F: Econometrics Course Elective Courses 3rd Year Fall Quarter ECON 285: Pre-Candidacy Presentation* ECON 296: Original Research Paper**** Elective Courses Winter Quarter Complete electives OPTIONAL- ECON 291: Advanced Field Advising and/or ECON 297: Independent Study** Spring Quarter ECON 285: Pre-Candidacy Presentation* ECON 296: Original Research Paper**** Econ 286: Graduate Research Presentation Workshop*** * ECON 285 is recommended to be taken for S/U grading option. ** Econ 291 & 297 require Instructor approval in advance of registration. See a Graduate Program Coordinator for details. ***ECON 286 must be taken for S/U grading option at least one time and a maximum of four times. **** ECON 296 course units range from 1 to 12; it should be taken for a maximum of 6 units each of the two quarters. Graduate Program About Current Students Courses and Enrollment Qualifying Exams Elective Requirements Committee Formation & CPhil Resources Current Grad Profiles Master's Degree Prospective Students Job Market Graduate Advising Dissertation Defense Alumni HOME Graduate Program Prospective Students Admissions FAQs Admissions FAQs Master's Degree, Ph.D. Degree Do you offer a Master’s Degree? No. The Department does not enroll students who seek a Master’s degree as a terminal degree. Do you offer a",
+      "char_start": 6230,
+      "char_end": 8929,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0004",
+      "text": "a maximum of four times. **** ECON 296 course units range from 1 to 12; it should be taken for a maximum of 6 units each of the two quarters. Graduate Program About Current Students Courses and Enrollment Qualifying Exams Elective Requirements Committee Formation & CPhil Resources Current Grad Profiles Master's Degree Prospective Students Job Market Graduate Advising Dissertation Defense Alumni HOME Graduate Program Prospective Students Admissions FAQs Admissions FAQs Master's Degree, Ph.D. Degree Do you offer a Master’s Degree? No. The Department does not enroll students who seek a Master’s degree as a terminal degree. Do you offer a Ph.D. in Finance? We do not offer a Ph.D. in Finance. We offer a Ph.D. in Economics. If you are interested in an MBA or Ph.D. in Management , you should contact the Rady School of Management . I am currently enrolled in a Master’s program in Economics and would like to know if it would be possible to transfer some credits to shorten the Ph.D. program to about three years? No. It is not possible to transfer credits into our program; however, if you are admitted into the program, you may take the qualifying exam in August or September (date to be determined). If you pass the qualifying exams, you would not need to complete the applicable core course work but you may still be required to take some of the electives (to fulfill field course requirements and required number of electives). Transcripts How should I submit transcripts? Please do not send hard copies of your transcripts at this time. You may upload your unofficial transcripts to the online application. We will only require official, hard copies of your transcripts if admitted and you decide to attend UC San Diego. For international students, please make sure to upload a translated copy of your transcripts. GRE & TOEFL What is your policy on the GRE? The GRE is required for admission and official scores must be submitted, copies are not accepted. I am a foreign student but completed my undergraduate studies at an English speaking university outside of the United States. Do I still need to provide TOEFL scores? The Test of English as a Foreign Language (TOEFL) or International English Language Testing System (IELTS) is required for international applicants whose native language is not English and who have not studied full-time for one uninterrupted year at a university-level institution",
+      "char_start": 8287,
+      "char_end": 10701,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0005",
+      "text": "translated copy of your transcripts. GRE & TOEFL What is your policy on the GRE? The GRE is required for admission and official scores must be submitted, copies are not accepted. I am a foreign student but completed my undergraduate studies at an English speaking university outside of the United States. Do I still need to provide TOEFL scores? The Test of English as a Foreign Language (TOEFL) or International English Language Testing System (IELTS) is required for international applicants whose native language is not English and who have not studied full-time for one uninterrupted year at a university-level institution in a country where English is the official language. TOEFL information and forms are available at the TOEFL website . What is the minimum TOEFL score for admissions? The UCSD General Catalog states, \"The minimum TOEFL score for admission is 550 for the paper based test (PBT) or 80 for the Internet Based Test.\" My current GRE scores are 7 years old. Will they be accepted? GRE scores cannot be more than 5 years old. TOEFL scores cannot be more than 2 years old. If GRE scores exceed the 5 year-old mark or TOEFL scores the 2 year-old mark, they would need to be retaken in order to be accepted. Do you accept the GMAT in place of the GRE? No. The GRE is required and cannot be replaced with the GMAT. Do you require the GRE Economics Subject Test? No. We do not. What is your department code for the GRE and TOEFL? Our department code for the GRE is 1801 and for the TOEFL it is 84. UCSD's institution code for the GRE/TOEFL is 4836. GPA Requirements I am a foreign student and my university does not have a system of GPA. How would the absence of a “GPA” be evaluated? If your university does not have a system of GPA, then we will look at the transcripts and determine if you meet the criteria for review. I am planning to apply to your graduate program in economics, but unfortunately, my GPA is below the 3.5 minimum. Since I do not make the cutoff with my 3.35, should I bother submitting an application? All applications are considered holistically; so while GPA is important, if yours falls below the minimum 3.5 but all other materials are strong, there is a possibility of your application not only being reviewed but",
+      "char_start": 10075,
+      "char_end": 12330,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0006",
+      "text": "“GPA” be evaluated? If your university does not have a system of GPA, then we will look at the transcripts and determine if you meet the criteria for review. I am planning to apply to your graduate program in economics, but unfortunately, my GPA is below the 3.5 minimum. Since I do not make the cutoff with my 3.35, should I bother submitting an application? All applications are considered holistically; so while GPA is important, if yours falls below the minimum 3.5 but all other materials are strong, there is a possibility of your application not only being reviewed but being competitive. Therefore, we advise applicants to consider the overall strength of your application in its entirety when determining whether it is worth it to apply . Regarding final transcripts for spring courses, since your application deadline is in January, how and when do I submit final grades for spring classes? If admitted, you should submit transcripts for as much completed work as possible. Your admission status will be considered “provisional” until those transcripts are submitted along with confirmation of your degree conferral. Should you accept our offer of admission, \"provisional\" status would not preclude your ability to register for the Fall quarter. Math & Economics Course Preparation Regarding math preparation for your program, are there any advanced calculus courses I must take to be able to qualify as a potential Ph.D. candidate? All applicants must have a minimum of one year of college-level calculus. However, one year is likely to be inadequate background for the first year of core classes. Students are therefore encouraged to complete courses in vector calculus, differential equations, linear algebra and mathematical analysis prior to the start of graduate school. Admission Determinations How are applications evaluated? Admissions decisions are based on the overall assessment of applicants’ admissions materials, including: Letters of Recommendation Academic Record (GPA/Transcripts) GRE scores Writing Sample Statement of Purpose Resume/CV English Proficiency Exams (International Applicants) Additionally, an applicant’s background, research interests, and potential are also factors that are considered when evaluating applicants and determining their suitability for admissions. Financial Aid If I were admitted, what are my chances of getting financial aid? First Year Students : Admission and financial aid awards are based on an overall assessment of a candidate’s interest, background and potential, and whether they are domestic or foreign. Furthermore, admission rates and financial aid awards will depend on the",
+      "char_start": 11754,
+      "char_end": 14401,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0007",
+      "text": "applicants’ admissions materials, including: Letters of Recommendation Academic Record (GPA/Transcripts) GRE scores Writing Sample Statement of Purpose Resume/CV English Proficiency Exams (International Applicants) Additionally, an applicant’s background, research interests, and potential are also factors that are considered when evaluating applicants and determining their suitability for admissions. Financial Aid If I were admitted, what are my chances of getting financial aid? First Year Students : Admission and financial aid awards are based on an overall assessment of a candidate’s interest, background and potential, and whether they are domestic or foreign. Furthermore, admission rates and financial aid awards will depend on the applicant pool, which differs from year to year. Approximately 75% of admits are offered a first-year financial aid package (e.g., teaching assistantships, tuition & fee scholarships, fellowships). Second Year through Fifth Year Students : Any full-time student making solid progress in the program is assured of at least partial aid during the second through fifth years. If admitted and not offered first year funding from the department, where would I get information about outside funding? Check out the Graduate Division’s Information on Fellowships and Traineeships. It contains links to comprehensive funding databases, grant writing guides and selected funding opportunities available only to UCSD graduate students. Why is the San Diego Fellowship open to only some applicants, does this mean I won't receive funding from the Department? No. The University of California, San Diego offers the San Diego Fellowship program as a means to increase campus diversity. Applicants for the fellowship must be U.S. citizens, permanent residents, or AB 540-qualified applicants only. This fellowship is a opportunity for qualified applicants to obtain campus funding for their graduate program. This program is an alternative source of funding from the financial aid offered by the Department to admitted students. All admitted students, including foreign students, are considered for Department fellowships and financial aid, no additional application materials are required for Department funding. Letters of Recommendation What kind of letters of recommendation are preferred, particularly if potential recommenders come from a combination of professional and academic sources? Letters of recommendation should come from recommenders who can speak to your academic skills as well as the kind of skills that would make you a dedicated, focused student. It is your choice which letters you think would support your chances for acceptance into graduate school. Supplementary Materials Does the department require an academic writing sample for",
+      "char_start": 13658,
+      "char_end": 16444,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "economics.ucsd.edu_92d79aa4_0008",
+      "text": "foreign students, are considered for Department fellowships and financial aid, no additional application materials are required for Department funding. Letters of Recommendation What kind of letters of recommendation are preferred, particularly if potential recommenders come from a combination of professional and academic sources? Letters of recommendation should come from recommenders who can speak to your academic skills as well as the kind of skills that would make you a dedicated, focused student. It is your choice which letters you think would support your chances for acceptance into graduate school. Supplementary Materials Does the department require an academic writing sample for admission? A writing sample is required and must be authored by the candidate. Please plan to submit an original piece of research or a paper written as part of earlier academic coursework. It should be in PDF format and can be uploaded in the online application form. Job Market Placement Could you give me information on placements in the last couple of years for graduating Ph.D. students in your department? Check out the department’s active, successful Job Market program for its Ph.D. graduates. Graduate Division Admissions Requirements & Policies For the Graduate Division's admissions requirements and policies and application procedures go to the UCSD General Catalog . Graduate Division Admission's FAQ For questions on your application, go to the Graduate Division Admission's FAQ page. Prospective Students Apply Here Admissions FAQs Translate this page:",
+      "char_start": 15749,
+      "char_end": 17312,
+      "token_count": 233,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "153de33c0ebac999583dce7c31bb77673b3061193e75d5b511eec46b1fa5bf50",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:01:00.440905",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

@@ -1,0 +1,77 @@
+{
+  "id": "mse.washington.edu_87a9acd04b89",
+  "source_url": "https://mse.washington.edu/admission/ms/reqs",
+  "raw_snapshot_path": "out/cache\\20251210T050508Z_87a9acd04b89.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:05:27.375231",
+  "checksum": "87a9acd04b89fdee7abcb6ef2794e67120373e42c174fa5f68a3cbc13b7d4bf8",
+  "title": "Master's Program Admission Criteria | UW Materials Science and Engineering",
+  "raw_text": "An eligible applicant to the Master of Science degree has earned a bachelor's degree in engineering, chemistry, or physics from an accredited U.S. college or university or the equivalent in a foreign country.\nAdmission to the department is competitive and all components of a student’s application are considered in evaluating his or her eligibility for admission.\nAcademic history\nEach transcript is individually reviewed for the quality and difficulty of courses taken and universities and colleges attended. The department recognizes that some academic institutions are more competitive and high grades are more difficult to obtain.\nGrade Point Average (GPA)\nApplicants should meet a minimum GPA requirement of 3.0 (on a 4-point scale) for the last 90 graded quarter credits or 60 graded semester credits.\nConverting to the U.S. 4-point grading system\nInternational students need to provide a U.S. grade equivalency (GPA) on their applications. For help converting grades from an international grading system to the U.S. 4-point scale, see \"GPA Calculating Assistance\" on the UW's\nApplication FAQs page\n.\nLetters of recommendation\nThree letters of recommendation are required to complete the online application. Applicants should ask for recommendations from people able to rank the applicant’s performance as a student, researcher or employee.\nNote:\nApplicants who earned their undergraduate degree from the University of Washington in the past two years are required to submit only one recommendation.\nStatement of purpose\nThe personal statement should summarize the applicant’s motivation for applying to graduate school and the department. Statements can include personal histories, professional and academic goals, and research interests. This statement should be approximately one page in length.\nResume\nInclude academic experience, internship and work experience, professional organizations, honors, scholarships, awards and publications.\nEnglish language requirements\nProficiency in English is required for graduate study at the University of Washington. If an exam is required, applicants must meet the recommended test scores of 92 TOEFL, 120 DUO, or 7.0 IELTS for consideration. This exam is waived if previous degree was earned in the US, or at least 3 years of degree completion with all instruction in English.\nSee complete requirements\n.\nOptional: GRE General Test\nYou may submit your scores to the\nGRE General Test\n, but they are not required. Institution Code: 4854.\nInternational students\nThe University of Washington encourages academically qualified applicants from other countries and also non-citizen applicants who are attending, or have degrees from, other universities in the United States. Upon admission, international applicants must be prepared to provide evidence of adequate financial support. Learn about the\nFinancial Ability Requirement\n.\nFor more information about MSE graduate programs\nKaren Wetterhahn\nGraduate Program Manager\n302D Roberts\n206-543-2740\nmsegrad@uw.edu\nOffice mail: Box 352120\nPrimary contact for graduate students' admission, recruiting, student progress, schedule and curriculum advising, graduation, registration, and university services.\nSchedule an appointment",
+  "language": "English",
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Master of Science",
+    "school": "University of Washington",
+    "department": "Department of Materials Science & Engineering",
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": "A bachelor's degree in engineering, chemistry, or physics from an accredited U.S. college or university or the equivalent in a foreign country.",
+      "prerequisites": null,
+      "gre": "Optional: GRE General Test. You may submit your scores, but they are not required.",
+      "english_tests": "Applicants must meet the recommended test scores of 92 TOEFL, 120 DUO, or 7.0 IELTS for consideration. This exam is waived if previous degree was earned in the US, or at least 3 years of degree completion with all instruction in English.",
+      "research_experience": null,
+      "work_experience": null,
+      "documents": "Three letters of recommendation, statement of purpose, resume.",
+      "summary": "Applicants should have a bachelor's degree in engineering, chemistry, or physics. A minimum GPA of 3.0 is required. Three letters of recommendation, a statement of purpose, and a resume are needed. English proficiency is required, with specific test scores recommended. GRE is optional."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": "The undergraduate course structure allows students to integrate classroom knowledge with laboratory and project work in material design, synthesis, processing, and characterization.",
+      "faculty": null,
+      "resources": "UW Course Catalog, UW Scout, MyPlan: Schedule Builder.",
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": "Integration of classroom knowledge with laboratory and project work is critical to each student's future career success in industry and academia.",
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": "English",
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "mse.washington.edu_87a9acd0_0000",
+      "text": "An eligible applicant to the Master of Science degree has earned a bachelor's degree in engineering, chemistry, or physics from an accredited U.S. college or university or the equivalent in a foreign country. Admission to the department is competitive and all components of a student’s application are considered in evaluating his or her eligibility for admission. Academic history Each transcript is individually reviewed for the quality and difficulty of courses taken and universities and colleges attended. The department recognizes that some academic institutions are more competitive and high grades are more difficult to obtain. Grade Point Average (GPA) Applicants should meet a minimum GPA requirement of 3.0 (on a 4-point scale) for the last 90 graded quarter credits or 60 graded semester credits. Converting to the U.S. 4-point grading system International students need to provide a U.S. grade equivalency (GPA) on their applications. For help converting grades from an international grading system to the U.S. 4-point scale, see \"GPA Calculating Assistance\" on the UW's Application FAQs page . Letters of recommendation Three letters of recommendation are required to complete the online application. Applicants should ask for recommendations from people able to rank the applicant’s performance as a student, researcher or employee. Note: Applicants who earned their undergraduate degree from the University of Washington in the past two years are required to submit only one recommendation. Statement of purpose The personal statement should summarize the applicant’s motivation for applying to graduate school and the department. Statements can include personal histories, professional and academic goals, and research interests. This statement should be approximately one page in length. Resume Include academic experience, internship and work experience, professional organizations, honors, scholarships, awards and publications. English language requirements Proficiency in English is required for graduate study at the University of Washington. If an exam is required, applicants must meet the recommended test scores of 92 TOEFL, 120 DUO, or 7.0 IELTS for consideration. This exam is waived if previous degree was earned in the US, or at least 3 years of degree completion with all instruction in English. See complete requirements . Optional: GRE General Test You may submit your scores to the GRE General Test , but they are not required. Institution Code: 4854. International students The University of Washington encourages academically qualified applicants from other countries and also non-citizen applicants who are attending, or have degrees from, other universities in the United States.",
+      "char_start": 0,
+      "char_end": 2718,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "mse.washington.edu_87a9acd0_0001",
+      "text": "required, applicants must meet the recommended test scores of 92 TOEFL, 120 DUO, or 7.0 IELTS for consideration. This exam is waived if previous degree was earned in the US, or at least 3 years of degree completion with all instruction in English. See complete requirements . Optional: GRE General Test You may submit your scores to the GRE General Test , but they are not required. Institution Code: 4854. International students The University of Washington encourages academically qualified applicants from other countries and also non-citizen applicants who are attending, or have degrees from, other universities in the United States. Upon admission, international applicants must be prepared to provide evidence of adequate financial support. Learn about the Financial Ability Requirement . For more information about MSE graduate programs Karen Wetterhahn Graduate Program Manager 302D Roberts 206-543-2740 msegrad@uw.edu Office mail: Box 352120 Primary contact for graduate students' admission, recruiting, student progress, schedule and curriculum advising, graduation, registration, and university services. Schedule an appointment The undergraduate course structure allows students to integrate classroom knowledge with laboratory and project work in material design, synthesis, processing, and characterization. This integration is the core foundation of MSE and is critical to each student's future career success in industry and academia. The undergraduate curriculum includes: 100- and 200-level prerequisite courses including math, science, and engineering fundamentals Required core 300- and 400-level MSE courses taken by all MSE students 400-level elective courses that senior students can select Students looking to plan their schedule for the upcoming year can view the tentative course schedule . Resources UW Course Catalog This website provides descriptions, times, and instructors for all MSE courses for current and upcoming quarters. UW Scout Scout helps you find the perfect study space. Choose by noise level, privacy, proximity to coffee and food, and more. MyPlan: Schedule Builder A new MyPlan feature to see which courses and sections best fit your calendar for upcoming quarters. Find it on the \"Quarter Details\" page after logging in.",
+      "char_start": 2080,
+      "char_end": 4348,
+      "token_count": 329,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "023675aae4f239ada1e4149903fb2005eb1e14eabebc6ced492910a3159413b1",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:05:27.375231",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

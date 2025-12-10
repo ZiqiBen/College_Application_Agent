@@ -1,0 +1,77 @@
+{
+  "id": "bulletin.stanford.edu_ab2b24e9c232",
+  "source_url": "https://bulletin.stanford.edu/programs/CS-MS",
+  "raw_snapshot_path": "out/cache\\20251210T044528Z_ab2b24e9c232.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:45:39.031499",
+  "checksum": "ab2b24e9c232b52fbed3d3d934a097f8024da2f359a484ad3f4d498232473f8e",
+  "title": "CS-MS Program | Stanford University Bulletin",
+  "raw_text": "CS-MS - Computer Science (MS)\nDownload as PDF\nComputer Science\nComputer Science\nMS - Master of Science\nGeneral\nProgram Policies\nLearning Outcomes\nProgram Overview\nThe MS in Computer Science is intended as a terminal professional degree and does not lead to the PhD. Most students planning to obtain a PhD degree should apply directly for admission to the PhD program. Some students, however, may wish to complete the master’s program before deciding whether to pursue a PhD. To give such students a more significant opportunity to become familiar with research, the department has a program leading to a master’s degree with distinction in research. This program is described in more detail below.\nAdmission\nApplications to the MS program and all supporting documents must be submitted and received online by the published deadline. Information on admission requirements is available on the department’s website; see the department’s deadlines page. Exceptions are made for applicants who are already students at Stanford and are applying to the coterminal program.\nMinimum Units in the Program\n45\nMinimum University Units\n45",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Computer Science (MS)",
+    "school": "Stanford University",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": "Applications to the MS program and all supporting documents must be submitted and received online by the published deadline. Exceptions are made for applicants who are already students at Stanford and are applying to the coterminal program."
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": "The MS in Computer Science is intended as a terminal professional degree and does not lead to the PhD. Most students planning to obtain a PhD degree should apply directly for admission to the PhD program. Some students, however, may wish to complete the master’s program before deciding whether to pursue a PhD. To give such students a more significant opportunity to become familiar with research, the department has a program leading to a master’s degree with distinction in research."
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": "The program offers a master’s degree with distinction in research for students who wish to become familiar with research.",
+      "professional_orientation": "The MS in Computer Science is intended as a terminal professional degree.",
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "bulletin.stanford.edu_ab2b24e9_0000",
+      "text": "CS-MS - Computer Science (MS) Download as PDF Computer Science Computer Science MS - Master of Science General Program Policies Learning Outcomes Program Overview The MS in Computer Science is intended as a terminal professional degree and does not lead to the PhD. Most students planning to obtain a PhD degree should apply directly for admission to the PhD program. Some students, however, may wish to complete the master’s program before deciding whether to pursue a PhD. To give such students a more significant opportunity to become familiar with research, the department has a program leading to a master’s degree with distinction in research. This program is described in more detail below. Admission Applications to the MS program and all supporting documents must be submitted and received online by the published deadline. Information on admission requirements is available on the department’s website; see the department’s deadlines page. Exceptions are made for applicants who are already students at Stanford and are applying to the coterminal program. Minimum Units in the Program 45 Minimum University Units 45 Filters Results (0) Export all results as CSV Sort By - Code Name Subject Code Department Description Career Loading results... ==== COURSE DETAIL START (Learning Outcomes Program Overview) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Learning Outcomes Program Overview) ==== ==== COURSE DETAIL START (Admission) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Admission) ==== ==== COURSE DETAIL START (Minimum Units in the Program 45) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Minimum Units in the Program 45) ==== ==== COURSE DETAIL START (Minimum University Units 45 Filters) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Minimum University Units 45 Filters) ==== ==== COURSE DETAIL START (Subject Code Department Description Career) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Subject Code Department Description Career) ==== ==== COURSE DETAIL START (Loading results...) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END",
+      "char_start": 0,
+      "char_end": 2627,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "bulletin.stanford.edu_ab2b24e9_0001",
+      "text": "DETAIL START (Minimum University Units 45 Filters) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Minimum University Units 45 Filters) ==== ==== COURSE DETAIL START (Subject Code Department Description Career) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Subject Code Department Description Career) ==== ==== COURSE DETAIL START (Loading results...) ==== Skip to Main Content 404 – Page Not Found Stanford University © Stanford University. Stanford, California 94305. ==== COURSE DETAIL END (Loading results...) ====",
+      "char_start": 1945,
+      "char_end": 2653,
+      "token_count": 103,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "3430c8c2f5683b510e4518ba2c56187388f3210c4432844fcf5ca5ccb31d3b84",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:45:39.031499",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

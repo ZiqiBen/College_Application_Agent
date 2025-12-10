@@ -1,0 +1,69 @@
+{
+  "id": "www.graddiv.ucsb.edu_c16081ebbf00",
+  "source_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/dynamical-neuroscience",
+  "raw_snapshot_path": "out/cache\\20251210T050213Z_c16081ebbf00.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:02:25.084968",
+  "checksum": "c16081ebbf0075fa54f3b2c91c14c510459beff95e29ebcb22231c8ae70b5d70",
+  "title": "Dynamical Neuroscience | Graduate Division",
+  "raw_text": "Home\nGraduate Programs\nDepartments\nDynamical Neuroscience\nDynamical Neuroscience\nThe Interdepartmental Graduate Program in Dynamical Neuroscience utilizes computational methods to understand brain-mind interactions across all levels of architecture, from single neurons to complex networks, with a focus on the roles of these levels in an organism’s behavior. Because of the intrinsic interdisciplinary nature of modern neuroscience and the field’s urgent need for cross-disciplinary, graduate-level training, this program brings together faculty located in seven departments on campus. Students conduct research in areas such as cognitive psychology, neuroimaging, biology, physics, computer science and engineering.\nMailing Address\nInterdepartmental Graduate Program in Dynamical Neuroscience\nUniversity of California, Santa Barbara\nPsychology East, Building 251, Room 1814\nSanta Barbara, CA 93106-9661\n(USA)\nWebsite\nhttp://www.dyns.ucsb.edu/\nEmail\ngradinfo@dyns.ucsb.edu\nDepartment Phone Number\n(805) 893-3636\nDegrees Offered\nPhD\nDeadlines\nFall Only:\nDecember 1, 2025 (by 11:59 PM PST)\nRequirements\nOnline application\n:\nhttps://www.graddiv.ucsb.edu/eapp\nStatement of Purpose, Personal History Statement, and Resume or CV (submitted in the online application)\nThree Letters of Recommendation (submitted online)\nOfficial transcripts from all post-secondary institutions attended (submitted online)\nRecommended: Unofficial transcripts from all post-secondary institutions attended, uploaded as a single PDF document in the online application.\nEnglish Language Exam Scores (if applicable): TOEFL Internet-Based Test (IBT) total score of 80, or IELTS Overall Band score of 7, or Duolingo English Test total score of 120, or higher\nFinal/Official transcripts will be required for all applicants who are admitted and have indicated their intent to enroll at UC Santa Barbara by submitting a Statement of Intent to Register (SIR). UC Santa Barbara reserves the right to require official transcripts at any time during the admissions process, and rescind any offer of admission made if discrepancies between uploaded and official transcript(s) are found.\nEmphases\nNeuroengineering\nSpecializations\nComplex Neural Networks; Computational Vision; Signal Processing & Machine Learning; Computational Cognitive Neuroscience; Brain-Computer Interface; Computational Neuroscience",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Dynamical Neuroscience",
+    "school": "University of California, Santa Barbara",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": "TOEFL Internet-Based Test (IBT) total score of 80, or IELTS Overall Band score of 7, or Duolingo English Test total score of 120, or higher",
+      "research_experience": null,
+      "work_experience": null,
+      "documents": "Statement of Purpose, Personal History Statement, Resume or CV, Three Letters of Recommendation, Official transcripts from all post-secondary institutions attended",
+      "summary": "Online application required. Submit Statement of Purpose, Personal History Statement, Resume or CV, Three Letters of Recommendation, and Official transcripts. English Language Exam Scores required if applicable."
+    },
+    "program_background": {
+      "mission": "The Interdepartmental Graduate Program in Dynamical Neuroscience utilizes computational methods to understand brain-mind interactions across all levels of architecture, from single neurons to complex networks, with a focus on the roles of these levels in an organism’s behavior.",
+      "environment": "This program brings together faculty located in seven departments on campus.",
+      "faculty": null,
+      "resources": null,
+      "summary": "The program is interdisciplinary, involving research in cognitive psychology, neuroimaging, biology, physics, computer science, and engineering."
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.graddiv.ucsb.edu_c16081eb_0000",
+      "text": "Home Graduate Programs Departments Dynamical Neuroscience Dynamical Neuroscience The Interdepartmental Graduate Program in Dynamical Neuroscience utilizes computational methods to understand brain-mind interactions across all levels of architecture, from single neurons to complex networks, with a focus on the roles of these levels in an organism’s behavior. Because of the intrinsic interdisciplinary nature of modern neuroscience and the field’s urgent need for cross-disciplinary, graduate-level training, this program brings together faculty located in seven departments on campus. Students conduct research in areas such as cognitive psychology, neuroimaging, biology, physics, computer science and engineering. Mailing Address Interdepartmental Graduate Program in Dynamical Neuroscience University of California, Santa Barbara Psychology East, Building 251, Room 1814 Santa Barbara, CA 93106-9661 (USA) Website http://www.dyns.ucsb.edu/ Email gradinfo@dyns.ucsb.edu Department Phone Number (805) 893-3636 Degrees Offered PhD Deadlines Fall Only: December 1, 2025 (by 11:59 PM PST) Requirements Online application : https://www.graddiv.ucsb.edu/eapp Statement of Purpose, Personal History Statement, and Resume or CV (submitted in the online application) Three Letters of Recommendation (submitted online) Official transcripts from all post-secondary institutions attended (submitted online) Recommended: Unofficial transcripts from all post-secondary institutions attended, uploaded as a single PDF document in the online application. English Language Exam Scores (if applicable): TOEFL Internet-Based Test (IBT) total score of 80, or IELTS Overall Band score of 7, or Duolingo English Test total score of 120, or higher Final/Official transcripts will be required for all applicants who are admitted and have indicated their intent to enroll at UC Santa Barbara by submitting a Statement of Intent to Register (SIR). UC Santa Barbara reserves the right to require official transcripts at any time during the admissions process, and rescind any offer of admission made if discrepancies between uploaded and official transcript(s) are found. Emphases Neuroengineering Specializations Complex Neural Networks; Computational Vision; Signal Processing & Machine Learning; Computational Cognitive Neuroscience; Brain-Computer Interface; Computational Neuroscience",
+      "char_start": 0,
+      "char_end": 2366,
+      "token_count": 305,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "fd58142ec788ae4f67903b6789af330c7b4cb83fc41e5eb830c98e5e31b7e65f",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:02:25.084968",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

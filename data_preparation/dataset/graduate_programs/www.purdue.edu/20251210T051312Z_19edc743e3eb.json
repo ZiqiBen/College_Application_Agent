@@ -1,0 +1,69 @@
+{
+  "id": "www.purdue.edu_19edc743e3eb",
+  "source_url": "https://www.purdue.edu/academics/ogsps/admissions/gradrequirements/fort-wayne/computer-science/",
+  "raw_snapshot_path": "out/cache\\20251210T051308Z_19edc743e3eb.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T05:13:12.412049",
+  "checksum": "19edc743e3ebf0a440a5d2950dfcc5a7055af961f1e78dc1935b251cc1db04d1",
+  "title": "Computer Science",
+  "raw_text": "Computer Science\nGraduate Program Requirements Purdue Fort Wayne",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Computer Science Graduate Program",
+    "school": "Purdue University Fort Wayne",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": null
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "www.purdue.edu_19edc743_0000",
+      "text": "Computer Science Graduate Program Requirements Purdue Fort Wayne",
+      "char_start": 0,
+      "char_end": 64,
+      "token_count": 8,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "760832839628eccecf8fac6a6f45515ee5946c2fcaa585979075875de9ee7011",
+      "model": "gpt-4o",
+      "date": "2025-12-10T05:13:12.412049",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

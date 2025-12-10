@@ -1,0 +1,69 @@
+{
+  "id": "grad.ucla.edu_c1470589f3b6",
+  "source_url": "https://grad.ucla.edu/programs/school-of-engineering-and-applied-science/computer-science/",
+  "raw_snapshot_path": "out/cache\\20251210T045806Z_c1470589f3b6.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:58:27.128906",
+  "checksum": "c1470589f3b6f4e19227716523dabc8a0fe60a7a8b34c9872926b003385cbd57",
+  "title": "Computer Science | UCLA Graduate Programs",
+  "raw_text": "Graduate Program: Computer Science\nDEGREES\nUCLA's Graduate Program in Computer Science offers the following degree(s):\nM\nMaster of Science                                                 (M.S.)\nD\nDoctor of Philosophy                                              (Ph.D.)\nAdmission\nRequirements\nProgram\nStatistics\nVisit the Program’s website\nComputer Science provides in-depth details on its own site\nWith questions not answered here or on the program’s site (above), please contact the program directly.\nADDRESS\nComputer Science Graduate Program at UCLA\n404 Westwood Plaza\nEngineering IV, Room 291\nBox 951596\nLos Angeles, CA 90095-1596\nFACULTY\nVisit the\nComputer Science’s faculty roster\nCOURSE DESCRIPTIONS\nVisit the registrar's site for the\nComputer Science’s course descriptions\nPHONE\n(310) 825-0060\nEMAIL\ngradadm@cs.ucla.edu\nMAJOR CODE: COMPUTER SCIENCE\n0201",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Computer Science",
+    "school": "UCLA",
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": null,
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": null
+    },
+    "program_background": {
+      "mission": null,
+      "environment": null,
+      "faculty": null,
+      "resources": null,
+      "summary": null
+    },
+    "training_outcomes": {
+      "goals": null,
+      "career_paths": null,
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": null
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "grad.ucla.edu_c1470589_0000",
+      "text": "Graduate Program: Computer Science DEGREES UCLA's Graduate Program in Computer Science offers the following degree(s): M Master of Science (M.S.) D Doctor of Philosophy (Ph.D.) Admission Requirements Program Statistics Visit the Program’s website Computer Science provides in-depth details on its own site With questions not answered here or on the program’s site (above), please contact the program directly. ADDRESS Computer Science Graduate Program at UCLA 404 Westwood Plaza Engineering IV, Room 291 Box 951596 Los Angeles, CA 90095-1596 FACULTY Visit the Computer Science’s faculty roster COURSE DESCRIPTIONS Visit the registrar's site for the Computer Science’s course descriptions PHONE (310) 825-0060 EMAIL gradadm@cs.ucla.edu MAJOR CODE: COMPUTER SCIENCE 0201",
+      "char_start": 0,
+      "char_end": 768,
+      "token_count": 107,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "5082f166a3024ff6e479d17f534ebae49e81b0f256874a47f130bf1984a2530c",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:58:27.128906",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

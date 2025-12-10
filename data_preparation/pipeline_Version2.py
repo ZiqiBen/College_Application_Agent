@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Main pipeline (v2 + v3 integrated)
-----------------------------------
+Main pipeline (v2 + v3 integrated, aligned with new schema_Version2)
+-------------------------------------------------------------------
 Features:
 - Crawl main page
 - Discover curriculum/course subpages
@@ -29,43 +29,101 @@ from gpt_adapter import call_gpt_chat
 # --------------------------------------------
 
 SYSTEM_PROMPT = (
-    "你是严格的结构化信息抽取器（information extraction system）。"
+    "你是一个严格的结构化信息抽取器（information extraction system）。"
     "你的任务是从给定的英文网页内容（包括主页面、课程页面、课程详情页面）中，"
-    "抽取研究生项目的结构化信息，并以 JSON 格式输出。"
-    "要求：\n"
-    "1. 严格按照给定的 schema 输出合法 JSON（不能多字段、不能少字段）。\n"
-    "2. 尽量从文本中抽取真实字段，不得编造网页中不存在的信息。\n"
+    "抽取研究生项目的结构化信息，并以 JSON 格式输出。\n"
+    "必须满足：\n"
+    "1. 严格按照给定 schema 输出【合法 JSON】（不能多字段、不能少字段；字段名必须完全一致）。\n"
+    "2. 所有内容必须来自提供的网页文本，禁止使用外部知识或自行编造。\n"
     "3. courses 字段：\n"
-    "   - 课程名必须来自页面真实文本。\n"
-    "   - 若未找到描述，description 用 null。\n"
-    "4. snippets 若可能请提供。\n"
-    "5. 未找到信息即为 null。\n"
-    "6. 禁止使用外部知识。\n"
-    "7. 输出中禁止任何解释性文字，只能返回 JSON。\n"
+    "   - 课程名必须是网页中真实出现的课程名称或课程代码。\n"
+    "   - 若未找到对应描述，则 description 设为 null。\n"
+    "4. application_requirements 字段是一个对象，尽量分别提取：\n"
+    "   - academic_background：本科背景 / 专业要求；\n"
+    "   - prerequisites：先修课要求（如微积分、线代、统计等）；\n"
+    "   - gre：GRE 要求（必须 / 建议 / 不要求 等）；\n"
+    "   - english_tests：TOEFL/IELTS 等语言要求；\n"
+    "   - research_experience：研究经历要求；\n"
+    "   - work_experience：实习 / 工作经历要求；\n"
+    "   - documents：需要提交的材料（推荐信、SOP、CV 等）；\n"
+    "   - summary：用一段话总结整体申请要求。\n"
+    "5. program_background 字段是一个对象，提取项目的教育理念与环境：\n"
+    "   - mission：项目使命 / 教学目标；\n"
+    "   - environment：学习环境、教学模式、课堂形式；\n"
+    "   - faculty：师资结构 / 教师特点；\n"
+    "   - resources：项目提供的资源（实验室、中心、合作单位等）；\n"
+    "   - summary：若页面有整段介绍，可整体放入此字段。\n"
+    "6. training_outcomes 字段是一个对象，提取培养目标和毕业去向：\n"
+    "   - goals：希望培养出什么样的学生 / 能力；\n"
+    "   - career_paths：典型职业路径或行业去向；\n"
+    "   - research_orientation：若偏向 academic / PhD，请说明；\n"
+    "   - professional_orientation：若偏向职业发展 / industry，请说明；\n"
+    "   - summary：可用一段文字整体概括培养结果。\n"
+    "7. school 字段：应是大学或学院的名称（例如 “Brown University”, “Harvard Business School”），"
+    "   不要填“Graduate School”“Department of XXX”这类泛泛称呼。\n"
+    "8. department 字段：若网页中有具体院系名称（如 “Department of Economics”），请填入；若没有则设为 null。\n"
+    "9. 若某字段在网页中完全找不到或无法判断，请显式使用 null。\n"
+    "10. 输出中禁止包含任何解释性文字或额外字段，只能返回一个 JSON 对象。"
 )
 
 USER_SCHEMA_DESC = """
 schema:
 {
   "program_name": "string|null",
+  "school": "string|null",         // 大学或学院名称，如 Brown University
+  "department": "string|null",     // 具体的院系/系名，如 Department of Economics
   "duration": "string|null",
-  "courses": [ { "name": "string", "description": "string|null" } ]|null,
+
+  "courses": [
+    { "name": "string", "description": "string|null" }
+  ]|null,
+
+  "application_requirements": {
+    "academic_background": "string|null",
+    "prerequisites": "string|null",
+    "gre": "string|null",
+    "english_tests": "string|null",
+    "research_experience": "string|null",
+    "work_experience": "string|null",
+    "documents": "string|null",
+    "summary": "string|null"
+  }|null,
+
+  "program_background": {
+    "mission": "string|null",
+    "environment": "string|null",
+    "faculty": "string|null",
+    "resources": "string|null",
+    "summary": "string|null"
+  }|null,
+
+  "training_outcomes": {
+    "goals": "string|null",
+    "career_paths": "string|null",
+    "research_orientation": "string|null",
+    "professional_orientation": "string|null",
+    "summary": "string|null"
+  }|null,
+
   "tuition": "string|null",
-  "application_requirements": "string|null",
-  "features": "string|null",
   "contact_email": "string|null",
   "language": "string|null",
-  "school": "string|null",
+
+  "others": "object|null",
   "source_url": "string"
 }
 """
 
 
 def prompt_for_text(page_text: str, source_url: str) -> list:
+    """
+    构造传给 GPT 的 messages。
+    page_text: 经过合并后的主页面 + 子页面 + 课程详情文本。
+    """
     user = (
         f"{USER_SCHEMA_DESC}\n\n"
         f"source_url: {source_url}\n\n"
-        "下面是该项目的主页面、课程页面、课程详情页等合并文本，请按 schema 抽取结构化信息。\n\n"
+        "下面是该项目的主页面、课程页面、课程详情页等合并文本，请严格按照 schema 抽取结构化信息。\n\n"
         "<<<文档开始>>>\n"
         f"{page_text}\n"
         "<<<文档结束>>>"
@@ -77,10 +135,16 @@ def prompt_for_text(page_text: str, source_url: str) -> list:
 
 
 def prompt_hash(system: str, user: str) -> str:
+    """Stable hash of (system_prompt + user_prompt) 用于 LLM 缓存 key。"""
     return hashlib.sha256((system + "\n" + user).encode("utf-8")).hexdigest()
 
 
 def try_parse_json(text: str):
+    """
+    尝试把 GPT 返回的字符串解析为 JSON。
+    - 先直接 json.loads
+    - 若失败，再用正则从中截取 {...} 部分
+    """
     try:
         return json.loads(text)
     except Exception:
@@ -107,13 +171,13 @@ def validate_and_enrich(extracted: dict, combined_text: str) -> dict:
     # --- email validation -----------------------------------------------------
     email = extracted.get("contact_email")
     if email:
-        if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+        if not re.match(r"[^@]+@[^@]+\\.[^@]+", email):
             extracted["contact_email"] = None
             notes += "contact_email_invalid;"
 
     # --- duration normalization ----------------------------------------------
     if extracted.get("duration"):
-        m = re.search(r"(\d+\s*(year|years|month|months))", extracted["duration"], re.I)
+        m = re.search(r"(\\d+\\s*(year|years|month|months))", extracted["duration"], re.I)
         if m:
             extracted.setdefault("duration_normalized", m.group(1))
 
@@ -152,9 +216,10 @@ def validate_and_enrich(extracted: dict, combined_text: str) -> dict:
     def guess_institution_from_text(text: str) -> str | None:
         """
         从文本中找形如 "XXX University/College/Institute/School" 的实体。
+        尽量偏向“真正的学校名”，避免特别长的、像“某某学院的某某系”这种。
         """
         pattern = re.compile(
-            r"([A-Z][A-Za-z&,\- ]{1,80}\s("
+            r"([A-Z][A-Za-z&,\\- ]{1,80}\\s("
             r"University|College|Institute|School"
             r"))"
         )
@@ -170,12 +235,14 @@ def validate_and_enrich(extracted: dict, combined_text: str) -> dict:
                 base = 2
             else:
                 base = 1
+            # 稍微惩罚太长的名称
             length_penalty = len(val) / 100.0
             return base - length_penalty
 
         best = max(matches, key=score)
         return best.group(1).strip()
 
+    # 如果 LLM 没给 school，或者给的是非常泛泛的词，就尝试从文本中推断
     needs_override = (school is None) or looks_generic(school_lower)
     if needs_override:
         inferred_school = guess_institution_from_text(combined_text)
@@ -189,6 +256,7 @@ def validate_and_enrich(extracted: dict, combined_text: str) -> dict:
 
     extracted["notes"] = notes if notes else None
 
+    # 若 LLM 没给 confidence，就设一个默认中等信心（虽然我们不会存进 ExtractedFields）
     if extracted.get("confidence") is None:
         extracted["confidence"] = 0.5
 
@@ -196,10 +264,16 @@ def validate_and_enrich(extracted: dict, combined_text: str) -> dict:
 
 
 def domain_slug(url: str) -> str:
+    """把 URL 的域名部分变成一个安全的 slug，用于文件夹名 / ID 前缀。"""
     return urlparse(url).netloc.replace(":", "_")
 
 
 def save_final_doc(doc: CorpusDoc, domain: str, checksum: str) -> str:
+    """
+    将最终的 CorpusDoc 对象序列化为 JSON 文件：
+      路径: dataset/graduate_programs/{domain}/
+      文件名: {UTC时间}_{checksum前12位}.json
+    """
     base_dir = os.path.join("dataset", "graduate_programs")
     dirpath = os.path.join(base_dir, domain)
     os.makedirs(dirpath, exist_ok=True)
@@ -272,6 +346,8 @@ def process_seed(url: str):
         parsed_base = urlparse(url)
         base_domain = parsed_base.netloc
 
+        # 注意：utils.discover_course_detail_pages 这里假设签名为
+        # discover_course_detail_pages(text, base_domain, max_courses=8, max_candidates_per_course=2)
         detail_descs = utils.discover_course_detail_pages(
             combined_text_for_llm,
             base_domain,
@@ -355,14 +431,19 @@ def process_seed(url: str):
         if parsed is None:
             parsed = {
                 "program_name": None,
+                "school": None,
+                "department": None,
                 "duration": None,
                 "courses": None,
-                "tuition": None,
+
                 "application_requirements": None,
-                "features": None,
+                "program_background": None,
+                "training_outcomes": None,
+
+                "tuition": None,
                 "contact_email": None,
                 "language": None,
-                "school": None,
+                "others": None,
                 "source_url": url,
                 "snippets": {},
                 "confidence": 0.0,

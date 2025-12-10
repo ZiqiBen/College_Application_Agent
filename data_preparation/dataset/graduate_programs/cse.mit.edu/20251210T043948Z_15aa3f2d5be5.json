@@ -1,0 +1,102 @@
+{
+  "id": "cse.mit.edu_15aa3f2d5be5",
+  "source_url": "https://cse.mit.edu/programs/sm/overview/",
+  "raw_snapshot_path": "out/cache\\20251210T043937Z_15aa3f2d5be5.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:39:48.136255",
+  "checksum": "15aa3f2d5be5de4d707797c8bc3428fe6449b1ef0be945c0a0b260b42b28235d",
+  "title": "CSE Master of Science Program - MIT CCSE",
+  "raw_text": "Programs & Admissions\nCSE Master of Science Program\nForms for Current CSE SM Students\nExternal admissions for the CSE Master of Science (CSE SM) Program is currently paused. Additional information, including any future plans to restart external admissions, will be posted here if/when they become available.\nAre You a Current MIT Grad Student Interested in CSE?\nCurrent MIT graduate students enrolled in a research-based master’s and/or doctoral degree program may be eligible to apply for the CSE SM as a secondary degree.\nMore Info for Current MIT Grad Students\nProgram Overview\nThe master’s degree in Computational Science and Engineering (CSE), previously the Computation for Design and Optimization (CDO) SM program, is an interdisciplinary program designed to prepare tomorrow’s engineers and scientists in advanced computational methods and applications. The program provides a strong foundation in computational approaches to the design and operation of complex engineered and scientific systems.\nAs an interdisciplinary academic program, the CSE SM is housed in the Center for Computational Science & Engineering but students have the opportunity to work with faculty from across the Institute.  Through hands-on projects and a master’s thesis, students develop and apply advanced computational methods to a diverse range of applications, from aerospace to nanotechnology, from Internet protocols to telecommunications system design. Career opportunities for CSE SM graduates include companies and research centers where systems modeling, numerical simulation, design and optimization play a critical role.\nProgram Curriculum\n1\nCSE SM Catalog Listing\nThe CSE SM program is designed with a common core that serves all engineering disciplines, and an elective component that focuses on particular applications. Students must complete coursework distributed as described below (F = course offered in Fall semester; S = course offered in Spring semester).\nCore Subjects\n(3 course / 36 units)\nStudents are required to take three of four core subjects designed to provide foundation materials needed for the study of more advanced elective topics. The core subjects are chosen from the following:\n6.7310[J] / 18.335[J]\nIntroduction to Numerical Methods (S)\n2.096[J] / 6.7300[J] / 16.910[J]\nIntroduction to Numerical Simulation (F)\n2.097[J] / 6.7330[J] / 16.920[J]\nNumerical Methods for Partial Differential Equations (F)\n6.C57[J] / 15.C57[J] / IDS.C57 [J]\n(formerly 6.7200[J] / 15.093[J])\nOptimization Methods (F)\nRestricted Electives\n(2 courses / 24 units)\nStudents choose two graduate-level electives from a list of over 50 specialized subjects that have computational themes and related components, and that are aligned with the program’s educational mission. The current list of approved restricted elective (RE) subjects can be found\nin the CSE SM Catalog Listing\n.\nUnrestricted Elective\n(1 course / 12 units)\nStudents may choose any\ngraduate-level\n12-unit subject from the\nMIT Subject Listing and Schedule\n.\nThesis\n(36 units)\nStudents write a master’s thesis under the supervision of a faculty advisor.\n*Courses that can be repeated for credit cannot be used to satisfy multiple CSE SM requirements.\nSubjects taken with the graduate P/D/F grading option cannot be used to satisfy CSE SM curricular requirements.\n↩︎\nOther Program Details\nAcademic Performance Policy\nCSE SM students are expected to maintain a cumulative grade point average (GPA) of at least 4.5 (out of 5) during the course of their studies.\nIf a student’s term GPA is at or below 4.0 for two sequential terms, if a student receives an Unsatisfactory (“U”) grade in CSE.THG, or if a grade of C or lower is given in any subject, a warning from the CCSE co-directors will be issued to the student, and the MIT Graduate Academic Performance Group will be alerted.\nPlease see the\nOffice of the Dean for Graduate Education’s Academic Performance page\nfor more information.\nEnglish Language Proficiency\nAll CSE SM students are required to take the\nGraduate Writing Exam\nrun by the MIT Program in Writing and Humanistic Studies.  Students who do not receive a passing score are required to take\n21W.794 Graduate Technical Writing Workshop\n.  Students may choose to take the workshop with P/D/F grading (rather than an A – F letter grade), however they must receive a P grade.\nProgram Timing\nThe CSE SM program is designed so that students who are either self-supported or on fellowship can complete the program in 12-18 months. Students supported by research assistant or teaching assistant funds should allow two years to complete the program.\nFunding\nThe CSE SM program cannot guarantee financial support for each admitted student, however we make every effort to match admitted students with affiliated faculty who can offer financial support through a sponsored research project.\nThe CSE SM program does not providing funding to students who pursue it as a secondary degree concurrent with a MIT SM or PhD program.",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": "Computational Science and Engineering Master of Science (CSE SM)",
+    "school": "Massachusetts Institute of Technology",
+    "department": "Center for Computational Science & Engineering",
+    "duration": "12-18 months",
+    "courses": [
+      {
+        "name": "6.7310[J] / 18.335[J] Introduction to Numerical Methods",
+        "description": null
+      },
+      {
+        "name": "2.096[J] / 6.7300[J] / 16.910[J] Introduction to Numerical Simulation",
+        "description": null
+      },
+      {
+        "name": "2.097[J] / 6.7330[J] / 16.920[J] Numerical Methods for Partial Differential Equations",
+        "description": null
+      },
+      {
+        "name": "6.C57[J] / 15.C57[J] / IDS.C57 [J] Optimization Methods",
+        "description": null
+      }
+    ],
+    "application_requirements": {
+      "academic_background": null,
+      "prerequisites": null,
+      "gre": null,
+      "english_tests": "All CSE SM students are required to take the Graduate Writing Exam.",
+      "research_experience": null,
+      "work_experience": null,
+      "documents": null,
+      "summary": "External admissions for the CSE Master of Science (CSE SM) Program is currently paused. Current MIT graduate students enrolled in a research-based master’s and/or doctoral degree program may be eligible to apply for the CSE SM as a secondary degree."
+    },
+    "program_background": {
+      "mission": "The program is designed to prepare tomorrow’s engineers and scientists in advanced computational methods and applications.",
+      "environment": "The program provides a strong foundation in computational approaches to the design and operation of complex engineered and scientific systems.",
+      "faculty": "Students have the opportunity to work with faculty from across the Institute.",
+      "resources": "The program is housed in the Center for Computational Science & Engineering.",
+      "summary": "The master’s degree in Computational Science and Engineering (CSE) is an interdisciplinary program designed to prepare tomorrow’s engineers and scientists in advanced computational methods and applications."
+    },
+    "training_outcomes": {
+      "goals": "Students develop and apply advanced computational methods to a diverse range of applications.",
+      "career_paths": "Career opportunities for CSE SM graduates include companies and research centers where systems modeling, numerical simulation, design and optimization play a critical role.",
+      "research_orientation": null,
+      "professional_orientation": null,
+      "summary": "Through hands-on projects and a master’s thesis, students develop and apply advanced computational methods to a diverse range of applications, from aerospace to nanotechnology, from Internet protocols to telecommunications system design."
+    },
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [
+    {
+      "chunk_id": "cse.mit.edu_15aa3f2d_0000",
+      "text": "Programs & Admissions CSE Master of Science Program Forms for Current CSE SM Students External admissions for the CSE Master of Science (CSE SM) Program is currently paused. Additional information, including any future plans to restart external admissions, will be posted here if/when they become available. Are You a Current MIT Grad Student Interested in CSE? Current MIT graduate students enrolled in a research-based master’s and/or doctoral degree program may be eligible to apply for the CSE SM as a secondary degree. More Info for Current MIT Grad Students Program Overview The master’s degree in Computational Science and Engineering (CSE), previously the Computation for Design and Optimization (CDO) SM program, is an interdisciplinary program designed to prepare tomorrow’s engineers and scientists in advanced computational methods and applications. The program provides a strong foundation in computational approaches to the design and operation of complex engineered and scientific systems. As an interdisciplinary academic program, the CSE SM is housed in the Center for Computational Science & Engineering but students have the opportunity to work with faculty from across the Institute. Through hands-on projects and a master’s thesis, students develop and apply advanced computational methods to a diverse range of applications, from aerospace to nanotechnology, from Internet protocols to telecommunications system design. Career opportunities for CSE SM graduates include companies and research centers where systems modeling, numerical simulation, design and optimization play a critical role. Program Curriculum 1 CSE SM Catalog Listing The CSE SM program is designed with a common core that serves all engineering disciplines, and an elective component that focuses on particular applications. Students must complete coursework distributed as described below (F = course offered in Fall semester; S = course offered in Spring semester). Core Subjects (3 course / 36 units) Students are required to take three of four core subjects designed to provide foundation materials needed for the study of more advanced elective topics. The core subjects are chosen from the following: 6.7310[J] / 18.335[J] Introduction to Numerical Methods (S) 2.096[J] / 6.7300[J] / 16.910[J] Introduction to Numerical Simulation (F) 2.097[J] / 6.7330[J] / 16.920[J] Numerical Methods for Partial Differential Equations (F) 6.C57[J] / 15.C57[J] / IDS.C57 [J] (formerly 6.7200[J] / 15.093[J]) Optimization Methods (F) Restricted Electives (2 courses / 24 units) Students choose two graduate-level electives from a list of over 50 specialized subjects that have computational themes and related components, and that are aligned with the",
+      "char_start": 0,
+      "char_end": 2733,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "cse.mit.edu_15aa3f2d_0001",
+      "text": "core subjects designed to provide foundation materials needed for the study of more advanced elective topics. The core subjects are chosen from the following: 6.7310[J] / 18.335[J] Introduction to Numerical Methods (S) 2.096[J] / 6.7300[J] / 16.910[J] Introduction to Numerical Simulation (F) 2.097[J] / 6.7330[J] / 16.920[J] Numerical Methods for Partial Differential Equations (F) 6.C57[J] / 15.C57[J] / IDS.C57 [J] (formerly 6.7200[J] / 15.093[J]) Optimization Methods (F) Restricted Electives (2 courses / 24 units) Students choose two graduate-level electives from a list of over 50 specialized subjects that have computational themes and related components, and that are aligned with the program’s educational mission. The current list of approved restricted elective (RE) subjects can be found in the CSE SM Catalog Listing . Unrestricted Elective (1 course / 12 units) Students may choose any graduate-level 12-unit subject from the MIT Subject Listing and Schedule . Thesis (36 units) Students write a master’s thesis under the supervision of a faculty advisor. *Courses that can be repeated for credit cannot be used to satisfy multiple CSE SM requirements. Subjects taken with the graduate P/D/F grading option cannot be used to satisfy CSE SM curricular requirements. ↩︎ Other Program Details Academic Performance Policy CSE SM students are expected to maintain a cumulative grade point average (GPA) of at least 4.5 (out of 5) during the course of their studies. If a student’s term GPA is at or below 4.0 for two sequential terms, if a student receives an Unsatisfactory (“U”) grade in CSE.THG, or if a grade of C or lower is given in any subject, a warning from the CCSE co-directors will be issued to the student, and the MIT Graduate Academic Performance Group will be alerted. Please see the Office of the Dean for Graduate Education’s Academic Performance page for more information. English Language Proficiency All CSE SM students are required to take the Graduate Writing Exam run by the MIT Program in Writing and Humanistic Studies. Students who do not receive a passing score are required to take 21W.794 Graduate Technical Writing Workshop . Students may choose to take the workshop with P/D/F grading (rather than an A – F letter grade), however they must receive a P grade. Program Timing The CSE SM program is designed so that students who are either self-supported or on fellowship can complete the program in 12-18 months. Students supported by research assistant or teaching",
+      "char_start": 2040,
+      "char_end": 4545,
+      "token_count": 400,
+      "vector_id": null
+    },
+    {
+      "chunk_id": "cse.mit.edu_15aa3f2d_0002",
+      "text": "English Language Proficiency All CSE SM students are required to take the Graduate Writing Exam run by the MIT Program in Writing and Humanistic Studies. Students who do not receive a passing score are required to take 21W.794 Graduate Technical Writing Workshop . Students may choose to take the workshop with P/D/F grading (rather than an A – F letter grade), however they must receive a P grade. Program Timing The CSE SM program is designed so that students who are either self-supported or on fellowship can complete the program in 12-18 months. Students supported by research assistant or teaching assistant funds should allow two years to complete the program. Funding The CSE SM program cannot guarantee financial support for each admitted student, however we make every effort to match admitted students with affiliated faculty who can offer financial support through a sponsored research project. The CSE SM program does not providing funding to students who pursue it as a secondary degree concurrent with a MIT SM or PhD program.",
+      "char_start": 3942,
+      "char_end": 4983,
+      "token_count": 170,
+      "vector_id": null
+    }
+  ],
+  "llm_calls": [
+    {
+      "prompt_hash": "dc9de543453dccadba69e8a33ec172dfd37b3eb8ddd2ad1abb5c49b744c3e7df",
+      "model": "gpt-4o",
+      "date": "2025-12-10T04:39:48.136255",
+      "response_raw_path": null,
+      "cached": false
+    }
+  ],
+  "provenance_notes": "Pipeline v3: main + subpages + bounded course-detail discovery.",
+  "notes": null
+}

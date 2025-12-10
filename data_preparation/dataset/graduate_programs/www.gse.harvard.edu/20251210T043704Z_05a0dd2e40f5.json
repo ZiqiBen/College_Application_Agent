@@ -1,0 +1,31 @@
+{
+  "id": "www.gse.harvard.edu_05a0dd2e40f5",
+  "source_url": "https://www.gse.harvard.edu/degrees/masters",
+  "raw_snapshot_path": "out/cache\\20251210T043704Z_05a0dd2e40f5.html",
+  "content_type": "text/html; charset=utf-8",
+  "crawl_date": "2025-12-10T04:37:04.610690",
+  "checksum": "05a0dd2e40f5622ac9f0e1f48c4cddf92b5c648eb217d714375347822846edbc",
+  "title": "Master’s Programs in Education | Harvard Graduate School of Education",
+  "raw_text": "",
+  "language": null,
+  "schema_version": "v2.0",
+  "extracted_fields": {
+    "program_name": null,
+    "school": null,
+    "department": null,
+    "duration": null,
+    "courses": null,
+    "application_requirements": null,
+    "program_background": null,
+    "training_outcomes": null,
+    "tuition": null,
+    "contact_email": null,
+    "language": null,
+    "others": null
+  },
+  "snippets": {},
+  "chunks": [],
+  "llm_calls": [],
+  "provenance_notes": "Empty text; no LLM call.",
+  "notes": null
+}
