@@ -16,6 +16,10 @@ def reflect_node(state: WritingState) -> Dict[str, Any]:
     
     Uses LLM to critically evaluate the generated document across
     multiple dimensions and provide actionable feedback.
+    
+    IMPORTANT: The decision to continue iterating is based on the quality_threshold
+    set by the user, NOT the LLM's approve field. This ensures the iteration loop
+    respects the user's quality requirements.
     """
     
     current_draft = state.get("current_draft", "")
@@ -70,21 +74,38 @@ def reflect_node(state: WritingState) -> Dict[str, Any]:
     overall_score = parsed_reflection["overall_score"]
     feedback = parsed_reflection["feedback"]
     suggestions = parsed_reflection["improvement_suggestions"]
-    approved = parsed_reflection["approve"]
+    # Note: We intentionally IGNORE the LLM's approve field here
+    # The decision should be based solely on quality_threshold
     
     # Determine if we should continue iterating
     max_iterations = state.get("max_iterations", 3)
     quality_threshold = state.get("quality_threshold", 0.85)
     current_iteration_next = current_iteration + 1
     
-    should_continue = (
-        not approved and
-        current_iteration_next < max_iterations and
-        overall_score < quality_threshold
-    )
+    # FIXED LOGIC: Continue iterating if:
+    # 1. We haven't reached max iterations
+    # 2. The quality score is below the threshold
+    # 3. There are improvement suggestions available
+    has_improvements = len(suggestions) > 0
+    below_threshold = overall_score < quality_threshold
+    within_iteration_limit = current_iteration_next < max_iterations
     
+    should_continue = within_iteration_limit and below_threshold and has_improvements
     should_revise = should_continue
     is_complete = not should_continue
+    
+    # Log decision reasoning for debugging
+    decision_log = {
+        "current_iteration": current_iteration_next,
+        "max_iterations": max_iterations,
+        "overall_score": overall_score,
+        "quality_threshold": quality_threshold,
+        "below_threshold": below_threshold,
+        "within_iteration_limit": within_iteration_limit,
+        "has_improvements": has_improvements,
+        "decision": "revise" if should_revise else "complete"
+    }
+    print(f"[Reflect Node] Decision: {decision_log}")
     
     # Create iteration log entry
     iteration_log = {
@@ -97,7 +118,8 @@ def reflect_node(state: WritingState) -> Dict[str, Any]:
         ],
         "overall_score": overall_score,
         "suggestions": suggestions,
-        "actions_taken": ["Generated draft", "Evaluated quality"]
+        "actions_taken": ["Generated draft", "Evaluated quality"],
+        "decision_log": decision_log
     }
     
     # Update iteration logs
@@ -115,6 +137,12 @@ def reflect_node(state: WritingState) -> Dict[str, Any]:
             learned_patterns["successful_iteration"] = current_iteration_next
         else:
             learned_patterns["stagnation_count"] = learned_patterns.get("stagnation_count", 0) + 1
+            # If we're stagnating (no improvement for 2+ iterations), stop
+            if learned_patterns.get("stagnation_count", 0) >= 2:
+                print(f"[Reflect Node] Stopping due to stagnation (no improvement for 2 iterations)")
+                should_continue = False
+                should_revise = False
+                is_complete = True
     
     return {
         "reflection_scores": reflection_scores,
@@ -131,6 +159,7 @@ def reflect_node(state: WritingState) -> Dict[str, Any]:
             **state.get("generation_metadata", {}),
             "reflection_completed": True,
             "current_score": overall_score,
-            "approved": approved
+            "approved_by_threshold": overall_score >= quality_threshold,
+            "decision_log": decision_log
         }
     }

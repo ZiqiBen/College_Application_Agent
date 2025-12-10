@@ -629,17 +629,47 @@ def render_generation_result(data: Dict, doc_type: str):
     st.success("✅ Document generated successfully!")
     
     # Quality metrics
+    quality_report = data.get("quality_report", {})
+    iterations = data.get("iterations", 0)
+    
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("Generation Time", f"{data.get('generation_time_seconds', 0):.1f}s")
     with col2:
-        st.metric("Iterations", data.get("iterations", 0))
+        st.metric("Iterations", iterations)
     with col3:
-        quality = data.get("quality_report", {}).get("final_score", 0)
-        st.metric("Quality Score", f"{quality:.2f}")
+        quality = quality_report.get("final_score", 0)
+        st.metric("Final Quality Score", f"{quality:.2f}")
     with col4:
-        approved = data.get("quality_report", {}).get("approved", False)
-        st.metric("Status", "✅ Approved" if approved else "⚠️ Needs Revision")
+        approved = quality_report.get("approved", False)
+        st.metric("Status", "✅ Approved" if approved else "⚠️ Below Threshold")
+    
+    # Show iteration history if available
+    iteration_history = quality_report.get("iteration_history", [])
+    if iteration_history and len(iteration_history) > 1:
+        st.markdown("---")
+        st.markdown("##### 📈 Quality Improvement Progress")
+        
+        # Create a simple progress visualization
+        progress_cols = st.columns(len(iteration_history))
+        for idx, log in enumerate(iteration_history):
+            with progress_cols[idx]:
+                iter_score = log.get("overall_score", 0)
+                st.metric(
+                    f"Iteration {idx + 1}",
+                    f"{iter_score:.2f}",
+                    delta=f"+{iter_score - iteration_history[idx-1].get('overall_score', 0):.2f}" if idx > 0 else None
+                )
+        
+        # Show suggestions used for improvement
+        with st.expander("View Improvement Details"):
+            for idx, log in enumerate(iteration_history):
+                st.markdown(f"**Iteration {idx + 1}** (Score: {log.get('overall_score', 0):.2f})")
+                suggestions = log.get("suggestions", [])
+                if suggestions:
+                    for s in suggestions[:3]:
+                        st.caption(f"  → {s}")
+                st.markdown("---")
     
     # Document content
     document = data.get("document", "")

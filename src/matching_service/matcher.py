@@ -75,6 +75,10 @@ class ProgramMatcher:
         """
         Parse program data from JSON into standardized format
         
+        Supports multiple corpus formats:
+        1. New format with "school", "program", "sections"
+        2. Legacy format with "extracted_fields", "raw_text"
+        
         Args:
             data: Raw JSON data
             program_id: Program identifier
@@ -83,103 +87,307 @@ class ProgramMatcher:
             Standardized program dictionary or None
         """
         try:
-            # Extract fields from data (adjust based on your corpus schema)
-            extracted_fields = data.get("extracted_fields", {})
+            # Detect corpus format and extract fields accordingly
             
-            program_name = extracted_fields.get("program_name") or data.get("title", "Unknown Program")
+            # NEW FORMAT: Uses "school", "program", "sections" structure
+            if "school" in data and "program" in data:
+                return self._parse_new_format(data, program_id)
             
-            # Build description text from various fields
-            description_parts = []
-            if data.get("raw_text"):
-                description_parts.append(data["raw_text"][:1000])
-            if extracted_fields.get("features"):
-                description_parts.append(extracted_fields["features"])
-            
-            description_text = " ".join(description_parts)
-            
-            # Extract university from source URL or ID
-            source_url = data.get("source_url", "")
-            university = self._extract_university_name(source_url, program_id)
-            
-            # Parse courses
-            courses_data = extracted_fields.get("courses", [])
-            core_courses = []
-            if isinstance(courses_data, list):
-                for course in courses_data:
-                    if isinstance(course, dict):
-                        core_courses.append(course.get("name", ""))
-                    elif isinstance(course, str):
-                        core_courses.append(course)
-            
-            # Build program data
-            program_data = {
-                "program_id": program_id,
-                "name": program_name,
-                "university": university,
-                "field": "Data Science",  # Infer from corpus or set default
-                "min_gpa": 3.0,  # Default, adjust if available in data
-                "required_skills": self._extract_skills(description_text),
-                "prerequisite_courses": core_courses,
-                "focus_areas": self._extract_focus_areas(description_text),
-                "core_courses": core_courses,
-                "career_outcomes": extracted_fields.get("features", ""),
-                "duration": extracted_fields.get("duration", ""),
-                "tuition": extracted_fields.get("tuition"),
-                "description_text": description_text,
-                "language_requirements": {},
-                "source_url": source_url
-            }
-            
-            return program_data
+            # LEGACY FORMAT: Uses "extracted_fields", "raw_text" structure
+            else:
+                return self._parse_legacy_format(data, program_id)
             
         except Exception as e:
             print(f"Warning: Error parsing program {program_id}: {e}")
             return None
     
+    def _parse_new_format(self, data: Dict[str, Any], program_id: str) -> Optional[Dict[str, Any]]:
+        """
+        Parse new corpus format with school, program, sections structure
+        
+        Example JSON:
+        {
+            "id": "columbia-mscs-00",
+            "school": "Columbia University",
+            "program": "Master of Science in Computer Science (MS)",
+            "source_url": "...",
+            "sections": [
+                {"type": "mission", "text": "..."},
+                {"type": "curriculum", "items": [...], "text": "..."},
+                {"type": "requirements", "items": [...], "text": "..."},
+                {"type": "outcomes", "text": "..."}
+            ]
+        }
+        """
+        program_name = data.get("program", "Unknown Program")
+        university = data.get("school", "Unknown University")
+        source_url = data.get("source_url", "")
+        
+        # Parse sections to build description and extract info
+        sections = data.get("sections", [])
+        description_parts = []
+        core_courses = []
+        requirements_text = ""
+        outcomes_text = ""
+        focus_areas = []
+        
+        for section in sections:
+            section_type = section.get("type", "")
+            section_text = section.get("text", "")
+            section_items = section.get("items", [])
+            
+            if section_type == "mission":
+                description_parts.insert(0, section_text)  # Mission goes first
+                # Extract focus areas from mission
+                focus_areas.extend(self._extract_focus_areas(section_text))
+                
+            elif section_type == "curriculum":
+                description_parts.append(f"Curriculum: {section_text}")
+                # Extract courses from items
+                for item in section_items:
+                    if isinstance(item, str):
+                        core_courses.append(item)
+                        # Also extract focus areas from curriculum items
+                        focus_areas.extend(self._extract_focus_areas(item))
+                        
+            elif section_type == "requirements":
+                requirements_text = section_text
+                description_parts.append(f"Requirements: {section_text}")
+                for item in section_items:
+                    if isinstance(item, str):
+                        description_parts.append(f"- {item}")
+                        
+            elif section_type == "outcomes":
+                outcomes_text = section_text
+                description_parts.append(f"Career Outcomes: {section_text}")
+            
+            else:
+                # Handle any other section types
+                if section_text:
+                    description_parts.append(section_text)
+        
+        # Build full description
+        description_text = "\n\n".join(description_parts)
+        
+        # Extract skills from full description
+        required_skills = self._extract_skills(description_text)
+        
+        # Deduplicate focus areas
+        focus_areas = list(dict.fromkeys(focus_areas))[:8]
+        
+        # Infer field from program name and description
+        field = self._infer_field(program_name, description_text)
+        
+        program_data = {
+            "program_id": program_id,
+            "name": program_name,
+            "university": university,
+            "field": field,
+            "min_gpa": 3.0,  # Default, could be extracted from requirements
+            "required_skills": required_skills,
+            "prerequisite_courses": core_courses[:10],  # Limit to avoid noise
+            "focus_areas": focus_areas,
+            "core_courses": core_courses[:10],
+            "career_outcomes": outcomes_text,
+            "duration": "",  # Extract if present
+            "tuition": None,
+            "description_text": description_text,
+            "language_requirements": {},
+            "source_url": source_url
+        }
+        
+        return program_data
+    
+    def _parse_legacy_format(self, data: Dict[str, Any], program_id: str) -> Optional[Dict[str, Any]]:
+        """Parse legacy corpus format with extracted_fields structure"""
+        extracted_fields = data.get("extracted_fields", {})
+        
+        program_name = extracted_fields.get("program_name") or data.get("title", "Unknown Program")
+        
+        # Build description text from various fields
+        description_parts = []
+        if data.get("raw_text"):
+            description_parts.append(data["raw_text"][:1000])
+        if extracted_fields.get("features"):
+            description_parts.append(extracted_fields["features"])
+        
+        description_text = " ".join(description_parts)
+        
+        # Extract university from source URL or ID
+        source_url = data.get("source_url", "")
+        university = self._extract_university_name(source_url, program_id)
+        
+        # Parse courses
+        courses_data = extracted_fields.get("courses", [])
+        core_courses = []
+        if isinstance(courses_data, list):
+            for course in courses_data:
+                if isinstance(course, dict):
+                    core_courses.append(course.get("name", ""))
+                elif isinstance(course, str):
+                    core_courses.append(course)
+        
+        # Build program data
+        program_data = {
+            "program_id": program_id,
+            "name": program_name,
+            "university": university,
+            "field": self._infer_field(program_name, description_text),
+            "min_gpa": 3.0,
+            "required_skills": self._extract_skills(description_text),
+            "prerequisite_courses": core_courses,
+            "focus_areas": self._extract_focus_areas(description_text),
+            "core_courses": core_courses,
+            "career_outcomes": extracted_fields.get("features", ""),
+            "duration": extracted_fields.get("duration", ""),
+            "tuition": extracted_fields.get("tuition"),
+            "description_text": description_text,
+            "language_requirements": {},
+            "source_url": source_url
+        }
+        
+        return program_data
+    
+    def _infer_field(self, program_name: str, description: str) -> str:
+        """Infer the program field from name and description"""
+        combined_text = f"{program_name} {description}".lower()
+        
+        field_keywords = {
+            "Data Science": ["data science", "data analytics", "analytics", "data engineering"],
+            "Computer Science": ["computer science", "computing", "software", "algorithms", "cs ", "mscs"],
+            "Machine Learning": ["machine learning", "ml", "deep learning", "artificial intelligence", "ai"],
+            "Business Analytics": ["business analytics", "mba", "business administration"],
+            "Statistics": ["statistics", "biostatistics", "statistical"],
+            "Engineering": ["engineering", "electrical", "mechanical", "civil", "aerospace"],
+            "Public Health": ["public health", "mph", "epidemiology", "health"],
+            "Economics": ["economics", "econometrics"],
+            "Public Policy": ["public policy", "mpp", "public administration", "mpa"],
+            "Biomedical": ["biomedical", "biotechnology", "bioinformatics"],
+            "Finance": ["finance", "mfin", "financial"],
+        }
+        
+        for field, keywords in field_keywords.items():
+            if any(kw in combined_text for kw in keywords):
+                return field
+        
+        return "Graduate Studies"  # Default fallback
+    
     def _extract_university_name(self, url: str, program_id: str) -> str:
         """Extract university name from URL or program ID"""
-        if "stanford" in url.lower() or "stanford" in program_id.lower():
-            return "Stanford University"
-        elif "mit" in url.lower() or "mit" in program_id.lower():
-            return "MIT"
-        elif "cmu" in url.lower() or "cmu" in program_id.lower():
-            return "Carnegie Mellon University"
-        elif "berkeley" in url.lower() or "ucb" in program_id.lower():
-            return "UC Berkeley"
-        elif "columbia" in url.lower():
-            return "Columbia University"
-        else:
-            # Try to extract domain
-            if "://" in url:
-                domain = url.split("://")[1].split("/")[0]
-                return domain.replace("www.", "").split(".")[0].title()
-            return "Unknown University"
+        # First check program_id for common patterns (most reliable)
+        program_id_lower = program_id.lower()
+        url_lower = url.lower()
+        combined = f"{program_id_lower} {url_lower}"
+        
+        university_patterns = {
+            "stanford": "Stanford University",
+            "mit": "MIT",
+            "cmu": "Carnegie Mellon University",
+            "berkeley": "UC Berkeley",
+            "ucb": "UC Berkeley",
+            "columbia": "Columbia University",
+            "harvard": "Harvard University",
+            "yale": "Yale University",
+            "princeton": "Princeton University",
+            "cornell": "Cornell University",
+            "upenn": "University of Pennsylvania",
+            "penn": "University of Pennsylvania",
+            "caltech": "California Institute of Technology",
+            "duke": "Duke University",
+            "northwestern": "Northwestern University",
+            "brown": "Brown University",
+            "dartmouth": "Dartmouth College",
+            "johns": "Johns Hopkins University",  # Johns Hopkins often starts with "Johns-"
+            "hopkins": "Johns Hopkins University",
+            "chicago": "University of Chicago",
+            "ucla": "UCLA",
+            "usc": "University of Southern California",
+            "nyu": "New York University",
+            "gatech": "Georgia Institute of Technology",
+            "georgia": "Georgia Institute of Technology",
+            "umich": "University of Michigan",
+            "michigan": "University of Michigan",
+            "rice": "Rice University",
+            "vanderbilt": "Vanderbilt University",
+            "emory": "Emory University",
+            "washu": "Washington University in St. Louis",
+            "wustl": "Washington University in St. Louis",
+        }
+        
+        for pattern, university in university_patterns.items():
+            if pattern in combined:
+                return university
+        
+        # Try to extract domain from URL
+        if "://" in url:
+            domain = url.split("://")[1].split("/")[0]
+            return domain.replace("www.", "").split(".")[0].title()
+        
+        return "Unknown University"
     
     def _extract_skills(self, text: str) -> List[str]:
         """Extract technical skills from program text"""
         common_skills = [
             "Python", "R", "SQL", "Machine Learning", "Deep Learning",
             "Statistics", "Data Visualization", "Big Data", "Algorithms",
-            "TensorFlow", "PyTorch", "NLP", "Computer Vision"
+            "TensorFlow", "PyTorch", "NLP", "Computer Vision",
+            "Java", "C++", "JavaScript", "Hadoop", "Spark", "AWS",
+            "Natural Language Processing", "Neural Networks", "Regression",
+            "Classification", "Clustering", "Optimization", "Linear Algebra",
+            "Calculus", "Probability", "Bayesian", "Time Series",
+            "Data Mining", "Feature Engineering", "Model Deployment",
+            "Docker", "Kubernetes", "Cloud Computing", "ETL",
+            "Tableau", "Power BI", "Excel", "Git"
         ]
         
         text_lower = text.lower()
-        found_skills = [skill for skill in common_skills if skill.lower() in text_lower]
+        found_skills = []
         
-        return found_skills[:10]  # Return top 10
+        for skill in common_skills:
+            if skill.lower() in text_lower:
+                found_skills.append(skill)
+        
+        return found_skills[:15]  # Return top 15
     
     def _extract_focus_areas(self, text: str) -> List[str]:
         """Extract program focus areas from text"""
         focus_keywords = [
             "machine learning", "artificial intelligence", "data analytics",
             "statistics", "computer vision", "natural language processing",
-            "big data", "data engineering", "business analytics"
+            "big data", "data engineering", "business analytics",
+            "deep learning", "neural networks", "reinforcement learning",
+            "robotics", "computer systems", "security", "cryptography",
+            "databases", "distributed systems", "cloud computing",
+            "software engineering", "algorithms", "theory",
+            "biostatistics", "bioinformatics", "computational biology",
+            "financial engineering", "quantitative finance",
+            "healthcare analytics", "public policy", "economics",
+            "operations research", "optimization", "simulation",
+            "human-computer interaction", "visualization",
+            "nlp", "ai", "ml", "cv"
         ]
         
         text_lower = text.lower()
-        found_areas = [area for area in focus_keywords if area in text_lower]
+        found_areas = []
         
-        return found_areas[:5]
+        for area in focus_keywords:
+            if area in text_lower:
+                # Normalize some abbreviations
+                if area == "nlp":
+                    area = "natural language processing"
+                elif area == "ai":
+                    area = "artificial intelligence"
+                elif area == "ml":
+                    area = "machine learning"
+                elif area == "cv":
+                    area = "computer vision"
+                
+                # Capitalize for display
+                area_display = area.title()
+                if area_display not in found_areas:
+                    found_areas.append(area_display)
+        
+        return found_areas[:8]  # Return top 8
     
     def match_programs(
         self,

@@ -149,6 +149,9 @@ Conduct your evaluation now:"""
 def parse_reflection_response(response: str) -> Dict[str, Any]:
     """
     Parse the JSON response from reflection prompt
+    
+    NOTE: The 'approve' field from the LLM is NOT used for iteration decisions.
+    The actual decision is made in reflect_node.py based on quality_threshold.
     """
     import json
     import re
@@ -164,7 +167,7 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
         if json_match:
             json_str = json_match.group(0)
         else:
-            # Fallback: return default low scores
+            # Fallback: return default low scores to trigger revision
             return {
                 "scores": {
                     "keyword_coverage": 0.5,
@@ -176,36 +179,70 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
                 "overall_score": 0.5,
                 "feedback": "Unable to parse reflection response",
                 "specific_issues": ["Parsing error occurred"],
-                "improvement_suggestions": ["Review document manually"],
+                "improvement_suggestions": ["Review document manually", "Try regenerating content"],
                 "approve": False
             }
     
     try:
         result = json.loads(json_str)
         
-        # Calculate overall score if not provided
-        if "overall_score" not in result or result["overall_score"] == 0:
-            weights = {
-                "keyword_coverage": 0.20,
-                "personalization": 0.25,
-                "coherence": 0.20,
-                "program_alignment": 0.20,
-                "persuasiveness": 0.15
+        # Ensure all required fields exist with proper defaults
+        if "scores" not in result:
+            result["scores"] = {
+                "keyword_coverage": 0.5,
+                "personalization": 0.5,
+                "coherence": 0.5,
+                "program_alignment": 0.5,
+                "persuasiveness": 0.5
             }
-            overall = sum(
-                result["scores"].get(dim, 0.5) * weight
-                for dim, weight in weights.items()
-            )
-            result["overall_score"] = round(overall, 3)
         
-        # Ensure approve field exists
+        # Calculate overall score if not provided or if it seems wrong
+        weights = {
+            "keyword_coverage": 0.20,
+            "personalization": 0.25,
+            "coherence": 0.20,
+            "program_alignment": 0.20,
+            "persuasiveness": 0.15
+        }
+        
+        calculated_overall = sum(
+            result["scores"].get(dim, 0.5) * weight
+            for dim, weight in weights.items()
+        )
+        
+        # Use calculated score if provided score is missing, zero, or seems inconsistent
+        if "overall_score" not in result or result["overall_score"] == 0:
+            result["overall_score"] = round(calculated_overall, 3)
+        elif abs(result["overall_score"] - calculated_overall) > 0.2:
+            # If LLM's overall score deviates too much from calculated, use calculated
+            print(f"[parse_reflection] LLM overall_score ({result['overall_score']}) differs from calculated ({calculated_overall:.3f}), using calculated")
+            result["overall_score"] = round(calculated_overall, 3)
+        else:
+            result["overall_score"] = round(result["overall_score"], 3)
+        
+        # Ensure improvement_suggestions is a non-empty list
+        if "improvement_suggestions" not in result or not result["improvement_suggestions"]:
+            result["improvement_suggestions"] = ["General improvement needed"]
+        
+        # Ensure feedback exists
+        if "feedback" not in result:
+            result["feedback"] = "Evaluation completed"
+        
+        # Ensure specific_issues exists
+        if "specific_issues" not in result:
+            result["specific_issues"] = []
+        
+        # NOTE: The approve field is calculated but NOT used for iteration decisions
+        # The actual decision is based on quality_threshold in reflect_node.py
+        # We still calculate it for logging/reporting purposes
         if "approve" not in result:
             result["approve"] = result["overall_score"] >= 0.85
         
         return result
         
-    except json.JSONDecodeError:
-        # Fallback if JSON parsing fails
+    except json.JSONDecodeError as e:
+        print(f"[parse_reflection] JSON decode error: {e}")
+        # Fallback if JSON parsing fails - return low scores to trigger revision
         return {
             "scores": {
                 "keyword_coverage": 0.5,
@@ -215,8 +252,8 @@ def parse_reflection_response(response: str) -> Dict[str, Any]:
                 "persuasiveness": 0.5
             },
             "overall_score": 0.5,
-            "feedback": "JSON parsing failed",
-            "specific_issues": ["Could not parse evaluation"],
-            "improvement_suggestions": ["Manual review needed"],
+            "feedback": "JSON parsing failed - content may need revision",
+            "specific_issues": ["Could not parse evaluation response"],
+            "improvement_suggestions": ["Manual review needed", "Try regenerating"],
             "approve": False
         }
