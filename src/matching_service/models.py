@@ -50,6 +50,7 @@ class ProgramMatch:
     # Student strengths and gaps
     strengths: List[str]
     gaps: List[str]
+    fit_reasons: List[str]  # Personalized "Why This Program Fits You" reasons
     recommendations: List[str]
     
     # Detailed explanation
@@ -112,6 +113,7 @@ class ProgramMatchResponse(BaseModel):
     
     strengths: List[str]
     gaps: List[str]
+    fit_reasons: List[str] = []  # Personalized "Why This Program Fits You" reasons
     recommendations: List[str]
     
     explanation: str

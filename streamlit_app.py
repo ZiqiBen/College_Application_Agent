@@ -401,17 +401,16 @@ def render_matching_step():
                     with score_cols[j % 5]:
                         st.metric(dim_names.get(dim, dim), f"{score_val:.2f}")
                 
-                # Strengths
-                if match.get("strengths"):
+                # Why This Program Fits You (personalized reasons)
+                if match.get("fit_reasons"):
+                    st.markdown("**🎯 Why This Program Fits You:**")
+                    for reason in match["fit_reasons"][:3]:
+                        st.caption(f"• {reason}")
+                elif match.get("strengths"):
+                    # Fallback to old strengths if fit_reasons not available
                     st.markdown("**✅ Your Strengths:**")
                     for s in match["strengths"][:3]:
                         st.caption(f"• {s}")
-                
-                # Gaps
-                if match.get("gaps"):
-                    st.markdown("**⚠️ Areas to Improve:**")
-                    for g in match["gaps"][:2]:
-                        st.caption(f"• {g}")
             
             with col2:
                 # Program details preview

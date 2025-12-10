@@ -626,6 +626,7 @@ def match_programs(request: MatchingRequest):
                 },
                 strengths=m.strengths,
                 gaps=m.gaps,
+                fit_reasons=getattr(m, 'fit_reasons', []),  # Personalized fit reasons
                 recommendations=m.recommendations,
                 explanation=m.explanation,
                 metadata=m.metadata,
