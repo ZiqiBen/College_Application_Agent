@@ -4,15 +4,24 @@ Core program matching engine
 
 import os
 import json
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from datetime import datetime
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from .models import (
     ProgramMatch, MatchingResult, MatchLevel,
     DimensionScore, ProgramData
 )
 from .scorer import DimensionScorer
+
+# Import LLM utilities for generating fit reasons
+try:
+    from ..writing_agent.llm_utils import get_llm, call_llm
+    LLM_AVAILABLE = True
+except ImportError:
+    LLM_AVAILABLE = False
+    print("Warning: LLM utilities not available. Using rule-based fit reasons.")
 
 
 class ProgramMatcher:
@@ -193,7 +202,8 @@ class ProgramMatcher:
             "tuition": None,
             "description_text": description_text,
             "language_requirements": {},
-            "source_url": source_url
+            "source_url": source_url,
+            "sections": sections  # Include raw sections for fit_reasons generation
         }
         
         return program_data
@@ -444,6 +454,9 @@ class ProgramMatcher:
             gaps = self._identify_gaps(profile, program_data, dimension_scores)
             recommendations = self._generate_recommendations(gaps, dimension_scores)
             
+            # Fit reasons will be generated later (only for top matches)
+            fit_reasons = []
+            
             # Generate explanation
             explanation = self._generate_explanation(
                 profile, program_data, overall_score, dimension_scores
@@ -459,12 +472,14 @@ class ProgramMatcher:
                 dimension_scores=dimension_scores,
                 strengths=strengths,
                 gaps=gaps,
+                fit_reasons=fit_reasons,  # Will be populated for top matches
                 recommendations=recommendations,
                 explanation=explanation,
                 metadata={
                     "duration": program_data.get("duration"),
                     "tuition": program_data.get("tuition"),
-                    "source_url": program_data.get("source_url")
+                    "source_url": program_data.get("source_url"),
+                    "program_data": program_data  # Store for later LLM generation
                 }
             )
             
@@ -475,6 +490,48 @@ class ProgramMatcher:
         
         # Take top K
         top_matches = matches[:top_k]
+        
+        # Generate LLM fit reasons ONLY for top 5 matches (for speed)
+        # Use parallel execution for faster response
+        llm_limit = min(5, len(top_matches))
+        
+        def generate_fit_for_match(match_idx: int) -> Tuple[int, List[str]]:
+            """Helper function for parallel LLM calls"""
+            match = top_matches[match_idx]
+            program_data = match.metadata.get("program_data", {})
+            if program_data:
+                reasons = self._generate_fit_reasons(profile, program_data, match.dimension_scores)
+                return (match_idx, reasons)
+            return (match_idx, [])
+        
+        # Execute LLM calls in parallel using ThreadPoolExecutor
+        if llm_limit > 0 and LLM_AVAILABLE:
+            with ThreadPoolExecutor(max_workers=llm_limit) as executor:
+                futures = {executor.submit(generate_fit_for_match, i): i for i in range(llm_limit)}
+                for future in as_completed(futures):
+                    try:
+                        match_idx, reasons = future.result()
+                        top_matches[match_idx].fit_reasons = reasons
+                    except Exception as e:
+                        print(f"Warning: Parallel LLM call failed: {e}")
+                        # Fall back to rule-based for this match
+                        match_idx = futures[future]
+                        program_data = top_matches[match_idx].metadata.get("program_data", {})
+                        if program_data:
+                            top_matches[match_idx].fit_reasons = self._generate_fit_reasons_rule_based(
+                                profile, program_data, top_matches[match_idx].dimension_scores
+                            )
+        
+        # For remaining matches (if any), use rule-based fit reasons
+        for match in top_matches[llm_limit:]:
+            program_data = match.metadata.get("program_data", {})
+            if program_data:
+                match.fit_reasons = self._generate_fit_reasons_rule_based(profile, program_data, match.dimension_scores)
+        
+        # Clean up metadata (remove program_data to reduce response size)
+        for match in top_matches:
+            if "program_data" in match.metadata:
+                del match.metadata["program_data"]
         
         # Generate overall insights
         insights = self._generate_overall_insights(profile, top_matches, matches)
@@ -581,6 +638,199 @@ class ProgramMatcher:
             gaps.append("Limited professional experience")
         
         return gaps[:5]  # Top 5
+    
+    def _generate_fit_reasons(
+        self,
+        profile: Dict[str, Any],
+        program: Dict[str, Any],
+        scores: Dict[str, DimensionScore]
+    ) -> List[str]:
+        """
+        Generate personalized 'Why This Program Fits You' reasons
+        using LLM (GPT) for intelligent, natural explanations.
+        Falls back to rule-based if LLM is unavailable.
+        """
+        # Try LLM-based generation first
+        if LLM_AVAILABLE:
+            try:
+                return self._generate_fit_reasons_llm(profile, program, scores)
+            except Exception as e:
+                print(f"Warning: LLM fit reason generation failed: {e}")
+                # Fall back to rule-based
+        
+        return self._generate_fit_reasons_rule_based(profile, program, scores)
+    
+    def _generate_fit_reasons_llm(
+        self,
+        profile: Dict[str, Any],
+        program: Dict[str, Any],
+        scores: Dict[str, DimensionScore]
+    ) -> List[str]:
+        """
+        Generate fit reasons using LLM (GPT-3.5-turbo for speed).
+        """
+        # Get LLM instance - use gpt-3.5-turbo for faster response
+        llm = get_llm(provider="openai", model_name="gpt-3.5-turbo", temperature=0.7)
+        
+        # Extract program info
+        program_name = program.get("name", "this program")
+        university = program.get("university", "")
+        
+        # Get program sections
+        sections = program.get("sections", [])
+        mission_text = ""
+        curriculum_text = ""
+        outcomes_text = ""
+        
+        for section in sections:
+            section_type = section.get("type", "")
+            section_text = section.get("text", "")
+            if section_type == "mission":
+                mission_text = section_text
+            elif section_type == "curriculum":
+                curriculum_text = section_text
+            elif section_type == "outcomes":
+                outcomes_text = section_text
+        
+        focus_areas = program.get("focus_areas", [])
+        
+        # Format student experiences
+        exp_summary = ""
+        if profile.get("experiences"):
+            exp_list = []
+            for exp in profile.get("experiences", [])[:3]:
+                title = exp.get("title", "")
+                org = exp.get("org", "")
+                impact = exp.get("impact", "")
+                if title:
+                    exp_list.append(f"- {title} at {org}: {impact[:100]}" if impact else f"- {title} at {org}")
+            exp_summary = "\n".join(exp_list)
+        
+        # Build the prompt
+        prompt = f"""You are an expert graduate school advisor. Based on the student's profile and the program information below, generate 3-4 specific, personalized reasons explaining why this program is a great fit for this student.
+
+STUDENT PROFILE:
+- Name: {profile.get('name', 'Student')}
+- Major: {profile.get('major', 'Not specified')}
+- GPA: {profile.get('gpa', 'Not specified')}
+- Skills: {', '.join(profile.get('skills', [])[:8])}
+- Career Goals: {profile.get('goals', 'Not specified')[:200]}
+- Experiences:
+{exp_summary if exp_summary else '  No experience listed'}
+
+PROGRAM INFORMATION:
+- Program: {program_name}
+- University: {university}
+- Mission: {mission_text[:300] if mission_text else 'Not available'}
+- Curriculum Focus: {curriculum_text[:300] if curriculum_text else 'Not available'}
+- Career Outcomes: {outcomes_text[:300] if outcomes_text else 'Not available'}
+- Focus Areas: {', '.join(focus_areas[:5]) if focus_areas else 'Not specified'}
+
+MATCH SCORES:
+- Academic: {scores.get('academic', {}).score if scores.get('academic') else 'N/A'}
+- Skills: {scores.get('skills', {}).score if scores.get('skills') else 'N/A'}
+- Experience: {scores.get('experience', {}).score if scores.get('experience') else 'N/A'}
+- Goals: {scores.get('goals', {}).score if scores.get('goals') else 'N/A'}
+
+Generate 3-4 compelling, specific reasons explaining why this program fits this student. Each reason should:
+1. Connect the student's specific background/skills/goals to specific program features
+2. Be concise (1-2 sentences each)
+3. Sound natural and encouraging
+4. Reference actual program details when possible
+
+Format your response as a numbered list (1. 2. 3. 4.) with each reason on its own line. Do not include any other text."""
+
+        system_message = "You are an expert graduate school advisor who helps students understand why specific programs match their backgrounds and goals. Be specific, encouraging, and reference actual program features."
+        
+        # Call LLM
+        response = call_llm(llm, prompt, system_message)
+        
+        # Parse response into list
+        fit_reasons = []
+        for line in response.strip().split('\n'):
+            line = line.strip()
+            # Remove numbering (1. 2. 3. etc.)
+            if line and line[0].isdigit():
+                # Remove "1. " or "1) " prefix
+                if '. ' in line[:4]:
+                    line = line.split('. ', 1)[1]
+                elif ') ' in line[:4]:
+                    line = line.split(') ', 1)[1]
+            if line and len(line) > 10:  # Filter out empty or too short lines
+                fit_reasons.append(line)
+        
+        return fit_reasons[:4]  # Return top 4 reasons
+    
+    def _generate_fit_reasons_rule_based(
+        self,
+        profile: Dict[str, Any],
+        program: Dict[str, Any],
+        scores: Dict[str, DimensionScore]
+    ) -> List[str]:
+        """
+        Fallback rule-based fit reason generation.
+        """
+        fit_reasons = []
+        
+        student_major = profile.get("major", "").lower()
+        student_skills = [s.lower() for s in profile.get("skills", [])]
+        student_goals = profile.get("goals", "").lower()
+        student_experiences = profile.get("experiences", [])
+        
+        program_name = program.get("name", "this program")
+        university = program.get("university", "")
+        
+        # Get program sections for context
+        sections = program.get("sections", [])
+        mission_text = ""
+        curriculum_text = ""
+        outcomes_text = ""
+        
+        for section in sections:
+            section_type = section.get("type", "")
+            section_text = section.get("text", "")
+            if section_type == "mission":
+                mission_text = section_text
+            elif section_type == "curriculum":
+                curriculum_text = section_text
+            elif section_type == "outcomes":
+                outcomes_text = section_text
+        
+        focus_areas = program.get("focus_areas", [])
+        
+        # 1. Match student major/background with program mission
+        if mission_text:
+            fit_reasons.append(
+                f"Your background in {profile.get('major', 'your field')} aligns with the program's mission: "
+                f"\"{mission_text[:120]}...\""
+            )
+        
+        # 2. Match student skills with curriculum
+        if curriculum_text and student_skills:
+            fit_reasons.append(
+                f"Your skills in {', '.join(student_skills[:3])} directly apply to the curriculum, which "
+                f"emphasizes: \"{curriculum_text[:100]}...\""
+            )
+        
+        # 3. Focus areas
+        if focus_areas:
+            fit_reasons.append(
+                f"This program focuses on {', '.join(focus_areas[:3])} — areas that complement your background."
+            )
+        
+        # 4. Career outcomes
+        if outcomes_text:
+            fit_reasons.append(
+                f"The program's career outcomes align with your goals: \"{outcomes_text[:120]}...\""
+            )
+        
+        # Ensure we have at least one reason
+        if not fit_reasons:
+            fit_reasons.append(
+                f"{program_name} at {university} offers opportunities to develop skills in your areas of interest."
+            )
+        
+        return fit_reasons[:4]
     
     def _generate_recommendations(
         self, 
