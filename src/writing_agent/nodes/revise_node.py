@@ -26,20 +26,35 @@ def revise_node(state: WritingState) -> Dict[str, Any]:
     improvement_suggestions = state.get("improvement_suggestions", [])
     current_iteration = state.get("current_iteration", 0)
     
+    print(f"[Revise Node] Starting revision iteration {current_iteration}")
+    print(f"[Revise Node] Feedback: {reflection_feedback[:200]}...")
+    print(f"[Revise Node] Suggestions: {improvement_suggestions}")
+    
     if not current_draft:
+        print("[Revise Node] No draft available to revise")
         return {
             "error_message": "No draft available to revise",
             "should_continue": False,
             "is_complete": True
         }
     
-    if not improvement_suggestions:
-        # No suggestions means we're done
+    # Even if no specific suggestions, we can still try to improve based on feedback
+    if not improvement_suggestions and not reflection_feedback:
+        print("[Revise Node] No suggestions or feedback, marking complete")
         return {
             "final_document": current_draft,
             "should_continue": False,
             "is_complete": True
         }
+    
+    # If we have feedback but no suggestions, create generic improvement suggestions
+    if not improvement_suggestions and reflection_feedback:
+        improvement_suggestions = [
+            "Improve overall quality based on feedback",
+            "Enhance personalization and specificity",
+            "Strengthen program alignment"
+        ]
+        print(f"[Revise Node] Created generic suggestions: {improvement_suggestions}")
     
     profile = state["profile"]
     program_info = state["program_info"]

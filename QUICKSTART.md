@@ -1,81 +1,81 @@
-# Writing Agent v2.0 - 快速开始指南
+# Writing Agent v2.0 - Quick Start Guide
 
-## 🎉 新系统特性
+## 🎉 New System Features
 
-全新的Writing Agent已经完成实现，相比旧系统有巨大改进：
+The new Writing Agent has been fully implemented with significant improvements over the old system:
 
-### ✨ 核心优势
+### ✨ Core Advantages
 
-1. **智能生成，非模板填充**
-   - 使用GPT-4/Claude等先进LLM深度理解内容
-   - 不再依赖固定模板和简单if-else逻辑
+1. **Intelligent Generation, Not Template Filling**
+   - Uses advanced LLMs like GPT-4/Claude for deep content understanding
+   - No longer relies on fixed templates and simple if-else logic
 
-2. **多维度质量评估**
-   - 5个维度自动评分（关键词、个性化、连贯性、匹配度、说服力）
-   - LLM自我反思和改进建议
+2. **Multi-Dimensional Quality Assessment**
+   - 5-dimension automatic scoring (keywords, personalization, coherence, program alignment, persuasiveness)
+   - LLM self-reflection and improvement suggestions
 
-3. **迭代优化机制**
-   - 自动多轮改进直到达到质量标准
-   - 学习历史经验（Reflexion记忆）
+3. **Iterative Optimization Mechanism**
+   - Automatic multi-round improvements until quality standards are met
+   - Learns from historical experience (Reflexion memory)
 
-4. **先进AI工作流**
-   - RAG: 检索相关程序信息
-   - ReAct: 工具调用和推理
-   - Reflection: 自我评估
-   - ReWOO: 规划-工具-解决
+4. **Advanced AI Workflow**
+   - RAG: Retrieve relevant program information
+   - ReAct: Tool calling and reasoning
+   - Reflection: Self-assessment
+   - ReWOO: Plan-Tool-Solve
 
-## 📦 安装步骤
+## 📦 Installation Steps
 
-### 1. 安装依赖
+### 1. Install Dependencies
 
 ```bash
 cd D:\DataWorkspace\DS301_Project\College_Application_Agent
 pip install -r requirements.txt
 ```
 
-主要新增依赖：
+Main new dependencies:
 - `langchain>=0.1.0`
 - `langgraph>=0.0.40`
 - `langchain-openai>=0.0.5`
 - `openai>=1.10.0`
 - `faiss-cpu>=1.7.4`
 
-### 2. 配置API密钥
+### 2. Configure API Keys
 
-创建`.env`文件（基于`.env.example`）：
+Create a `.env` file (based on `.env.example`):
 
 ```bash
 cp .env.example .env
 ```
 
-编辑`.env`，至少配置一个LLM provider：
+Edit `.env` and configure at least one LLM provider:
 
 ```env
-# 使用OpenAI (推荐)
+# Use OpenAI (Recommended)
 WRITING_AGENT_LLM_PROVIDER=openai
 OPENAI_API_KEY=sk-your-key-here
 OPENAI_MODEL=gpt-4-turbo-preview
 
-# 或使用Qwen
+# Or use Qwen
 WRITING_AGENT_LLM_PROVIDER=qwen
 QWEN_API_KEY=your-qwen-key
 QWEN_API_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
 QWEN_MODEL=qwen-turbo
 ```
 
-### 3. 启动服务
+### 3. Start Service
 
 ```bash
 python -m src.rag_service.api
 ```
 
-服务将在 `http://localhost:8000` 启动
+Service will start at `http://localhost:8000`
 
-## 🚀 使用示例
+## 🚀 Usage Examples
 
-### API调用示例
+### API Call Examples
 
-#### 生成Personal Statement
+#### Generate Personal Statement
 
 ```python
 import requests
@@ -85,27 +85,27 @@ url = "http://localhost:8000/generate/writing-agent"
 
 data = {
     "profile": {
-        "name": "张三",
-        "major": "数据科学",
+        "name": "Alice Zhang",
+        "major": "Data Science",
         "gpa": 3.78,
-        "skills": ["Python", "机器学习", "深度学习", "SQL"],
+        "skills": ["Python", "Machine Learning", "Deep Learning", "SQL"],
         "experiences": [
             {
-                "title": "数据分析实习生",
-                "org": "某科技公司",
-                "impact": "构建机器学习模型，将预测准确率提升15%",
+                "title": "Data Science Intern",
+                "org": "Tech Company",
+                "impact": "Built ML model improving prediction accuracy by 15%",
                 "skills": ["Python", "TensorFlow", "Pandas"]
             },
             {
-                "title": "研究助理",
-                "org": "大学实验室",
-                "impact": "分析大型医疗数据集，发现关键洞察",
-                "skills": ["R", "统计分析"]
+                "title": "Research Assistant",
+                "org": "University Lab",
+                "impact": "Analyzed large healthcare datasets and discovered key insights",
+                "skills": ["R", "Statistical Analysis"]
             }
         ],
-        "goals": "希望将机器学习应用于实际业务场景，成为数据科学领域的专家"
+        "goals": "Apply machine learning to real-world business scenarios and become an expert in data science"
     },
-    "program_text": "哥伦比亚大学数据科学硕士项目...(项目介绍文本)",
+    "program_text": "Columbia University Master's in Data Science program...(program description text)",
     "document_type": "personal_statement",
     "llm_provider": "openai",
     "max_iterations": 3,
@@ -115,19 +115,19 @@ data = {
 response = requests.post(url, json=data)
 result = response.json()
 
-print("生成的Personal Statement:")
+print("Generated Personal Statement:")
 print(result["document"])
-print("\n质量报告:")
-print(json.dumps(result["quality_report"], indent=2, ensure_ascii=False))
+print("\nQuality Report:")
+print(json.dumps(result["quality_report"], indent=2))
 ```
 
-#### 生成Resume Bullets
+#### Generate Resume Bullets
 
 ```python
 data = {
-    "profile": { ... },  # 同上
+    "profile": { ... },  # Same as above
     "program_text": "...",
-    "document_type": "resume_bullets",  # 改为resume_bullets
+    "document_type": "resume_bullets",  # Change to resume_bullets
     "llm_provider": "openai",
     "max_iterations": 3
 }
@@ -135,136 +135,136 @@ data = {
 response = requests.post(url, json=data)
 result = response.json()
 
-print("生成的Resume Bullets:")
+print("Generated Resume Bullets:")
 print(result["document"])
 ```
 
-#### 生成Recommendation Letter
+#### Generate Recommendation Letter
 
 ```python
 data = {
     "profile": { ... },
     "program_text": "...",
-    "document_type": "recommendation_letter",  # 改为recommendation_letter
+    "document_type": "recommendation_letter",  # Change to recommendation_letter
     "llm_provider": "openai"
 }
 
 response = requests.post(url, json=data)
 result = response.json()
 
-print("生成的Recommendation Letter:")
+print("Generated Recommendation Letter:")
 print(result["document"])
 ```
 
-## 📊 系统架构
+## 📊 System Architecture
 
-### 文件结构
+### File Structure
 
 ```
 src/writing_agent/
-├── __init__.py           # 模块入口
-├── config.py             # 配置管理
-├── state.py              # 状态定义
-├── graph.py              # LangGraph主图
-├── memory.py             # Reflexion记忆
-├── llm_utils.py          # LLM工具函数
-├── nodes/                # 工作流节点
-│   ├── plan_node.py      # 规划节点
-│   ├── rag_node.py       # RAG检索节点
-│   ├── react_node.py     # 生成节点
-│   ├── reflect_node.py   # 反思节点
-│   └── revise_node.py    # 修订节点
-├── tools/                # ReAct工具
-│   ├── match_calculator.py    # 匹配度计算
-│   ├── keyword_extractor.py   # 关键词提取
-│   ├── experience_finder.py   # 经历查找
-│   └── requirement_checker.py # 要求检查
-└── prompts/              # Prompt模板
-    ├── ps_prompts.py     # PS提示词
-    ├── resume_prompts.py # 简历提示词
-    ├── rl_prompts.py     # 推荐信提示词
-    └── reflection_prompts.py # 反思提示词
+├── __init__.py           # Module entry point
+├── config.py             # Configuration management
+├── state.py              # State definitions
+├── graph.py              # LangGraph main graph
+├── memory.py             # Reflexion memory
+├── llm_utils.py          # LLM utility functions
+├── nodes/                # Workflow nodes
+│   ├── plan_node.py      # Planning node
+│   ├── rag_node.py       # RAG retrieval node
+│   ├── react_node.py     # Generation node
+│   ├── reflect_node.py   # Reflection node
+│   └── revise_node.py    # Revision node
+├── tools/                # ReAct tools
+│   ├── match_calculator.py    # Match degree calculation
+│   ├── keyword_extractor.py   # Keyword extraction
+│   ├── experience_finder.py   # Experience finder
+│   └── requirement_checker.py # Requirement checker
+└── prompts/              # Prompt templates
+    ├── ps_prompts.py     # Personal Statement prompts
+    ├── resume_prompts.py # Resume prompts
+    ├── rl_prompts.py     # Recommendation letter prompts
+    └── reflection_prompts.py # Reflection prompts
 ```
 
-### 执行流程
+### Execution Flow
 
 ```
 1. Plan Node
-   ↓ 分析任务，制定策略
+   ↓ Analyze task, formulate strategy
    
 2. RAG Node
-   ↓ 检索相关信息
+   ↓ Retrieve relevant information
    
 3. ReAct Node (Generate)
-   ↓ 调用工具，生成初稿
+   ↓ Call tools, generate initial draft
    
 4. Reflect Node
-   ↓ 多维度评估质量
+   ↓ Multi-dimensional quality assessment
    
-5. 判断是否达标
-   ├─ 达标 → Finalize → 结束
-   └─ 未达标 → Revise Node → 回到步骤4
+5. Check if standards are met
+   ├─ Met → Finalize → End
+   └─ Not Met → Revise Node → Back to Step 4
 ```
 
-## 🎯 配置参数说明
+## 🎯 Configuration Parameters
 
-### 主要参数
+### Main Parameters
 
-| 参数 | 说明 | 默认值 | 推荐值 |
-|------|------|--------|--------|
-| `llm_provider` | LLM提供商 | `openai` | `openai` (质量最好) |
-| `model_name` | 模型名称 | `gpt-4-turbo-preview` | `gpt-4-turbo-preview` |
-| `max_iterations` | 最大迭代次数 | `3` | `3-5` |
-| `quality_threshold` | 质量阈值 | `0.85` | `0.80-0.85` |
-| `temperature` | 生成温度 | `0.7` | `0.6-0.8` |
+| Parameter | Description | Default | Recommended |
+|-----------|-------------|---------|-------------|
+| `llm_provider` | LLM Provider | `openai` | `openai` (Best quality) |
+| `model_name` | Model name | `gpt-4-turbo-preview` | `gpt-4-turbo-preview` |
+| `max_iterations` | Max iterations | `3` | `3-5` |
+| `quality_threshold` | Quality threshold | `0.85` | `0.80-0.85` |
+| `temperature` | Generation temperature | `0.7` | `0.6-0.8` |
 
-### 质量评估维度
+### Quality Assessment Dimensions
 
-1. **Keyword Coverage (20%)**: 关键词覆盖度
-2. **Personalization (25%)**: 个性化程度
-3. **Coherence (20%)**: 逻辑连贯性
-4. **Program Alignment (20%)**: 项目匹配度
-5. **Persuasiveness (15%)**: 说服力
+1. **Keyword Coverage (20%)**: Coverage of key terms
+2. **Personalization (25%)**: Degree of personalization
+3. **Coherence (20%)**: Logical coherence
+4. **Program Alignment (20%)**: Program match degree
+5. **Persuasiveness (15%)**: Persuasive power
 
-总分 ≥ 0.85 视为通过
+Total score ≥ 0.85 is considered passing
 
-## 💡 使用建议
+## 💡 Usage Tips
 
-### 1. Profile信息要详细
+### 1. Provide Detailed Profile Information
 
-提供越详细的profile信息，生成质量越高：
+The more detailed the profile information, the higher the generation quality:
 
 ```python
 "experiences": [
     {
-        "title": "具体职位",
-        "org": "组织名称",
-        "impact": "具体成就，最好有数字（如提升15%）",
-        "skills": ["使用的具体技能"]
+        "title": "Specific position",
+        "org": "Organization name",
+        "impact": "Specific achievements, preferably with numbers (e.g., improved by 15%)",
+        "skills": ["Specific skills used"]
     }
 ]
 ```
 
-### 2. 根据重要性调整参数
+### 2. Adjust Parameters by Importance
 
-**重要申请（如PhD、顶尖项目）**：
+**Important Applications (e.g., PhD, Top Programs)**:
 - `max_iterations`: 5
 - `quality_threshold`: 0.90
 - `model_name`: "gpt-4"
 
-**一般申请**：
+**General Applications**:
 - `max_iterations`: 3
 - `quality_threshold`: 0.85
 - `model_name`: "gpt-4-turbo-preview"
 
-**快速草稿**：
+**Quick Draft**:
 - `max_iterations`: 2
 - `quality_threshold`: 0.75
 - `model_name`: "gpt-3.5-turbo"
 
-### 3. 查看质量报告
+### 3. Review Quality Report
 
-每次生成都会返回质量报告：
+Each generation returns a quality report:
 
 ```json
 {
@@ -275,109 +275,109 @@ src/writing_agent/
 }
 ```
 
-如果`final_score`低于期望，可以：
-- 增加`max_iterations`
-- 降低`quality_threshold`
-- 丰富profile信息
-- 使用更强大的模型
+If `final_score` is lower than expected, you can:
+- Increase `max_iterations`
+- Lower `quality_threshold`
+- Enrich profile information
+- Use a more powerful model
 
-## 🔧 故障排除
+## 🔧 Troubleshooting
 
-### 问题1: ImportError: No module named 'langchain'
+### Issue 1: ImportError: No module named 'langchain'
 
-**解决**：
+**Solution**:
 ```bash
 pip install langchain langgraph langchain-openai
 ```
 
-### 问题2: API密钥错误
+### Issue 2: API Key Error
 
-**解决**：
-1. 检查`.env`文件是否存在且正确配置
-2. 验证API key是否有效
-3. 确保环境变量被正确加载
+**Solution**:
+1. Check if `.env` file exists and is configured correctly
+2. Verify that the API key is valid
+3. Ensure environment variables are loaded correctly
 
-### 问题3: 生成质量不高
+### Issue 3: Low Generation Quality
 
-**解决**：
-1. 增加迭代次数：`max_iterations=5`
-2. 使用更强模型：`model_name="gpt-4"`
-3. 提供更详细的profile信息
-4. 检查program_text是否足够详细
+**Solution**:
+1. Increase iterations: `max_iterations=5`
+2. Use a more powerful model: `model_name="gpt-4"`
+3. Provide more detailed profile information
+4. Check if program_text is detailed enough
 
-### 问题4: 生成速度慢
+### Issue 4: Slow Generation Speed
 
-**说明**: 这是正常现象
-- 每次迭代需要调用2-3次LLM API
-- GPT-4响应时间通常2-5秒
-- 3次迭代约需要10-20秒
+**Explanation**: This is normal
+- Each iteration requires 2-3 LLM API calls
+- GPT-4 response time is typically 2-5 seconds
+- 3 iterations take approximately 10-20 seconds
 
-如需加速：
-- 减少迭代次数
-- 使用更快的模型（如gpt-3.5-turbo）
-- 降低质量阈值
+To speed up:
+- Reduce number of iterations
+- Use a faster model (e.g., gpt-3.5-turbo)
+- Lower quality threshold
 
-## 📈 与旧系统对比
+## 📈 Comparison with Old System
 
-| 特性 | 旧系统 | 新系统 Writing Agent v2.0 |
-|------|--------|---------------------------|
-| 生成方式 | 模板填充 | LLM深度生成 |
-| 质量控制 | 关键词检查 | 5维度LLM评估 |
-| 改进机制 | 简单替换 | 智能迭代优化 |
-| 个性化 | 低 | 高 |
-| 说服力 | 中 | 高 |
-| 灵活性 | 差 | 优秀 |
-| 速度 | 快（<1秒） | 中（10-20秒） |
-| 成本 | 免费 | API费用 |
-| 质量 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Feature | Old System | New System Writing Agent v2.0 |
+|---------|------------|-------------------------------|
+| Generation Method | Template filling | LLM deep generation |
+| Quality Control | Keyword checking | 5-dimension LLM assessment |
+| Improvement Mechanism | Simple replacement | Intelligent iterative optimization |
+| Personalization | Low | High |
+| Persuasiveness | Medium | High |
+| Flexibility | Poor | Excellent |
+| Speed | Fast (<1s) | Medium (10-20s) |
+| Cost | Free | API fees |
+| Quality | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 
-## 🎓 高级功能
+## 🎓 Advanced Features
 
-### 1. 使用自己的Corpus
+### 1. Use Your Own Corpus
 
 ```python
-# 准备你的项目文档corpus
+# Prepare your project documentation corpus
 my_corpus = {
-    "chunk_1": "项目课程描述...",
-    "chunk_2": "项目特色介绍...",
+    "chunk_1": "Course description...",
+    "chunk_2": "Program features...",
     # ...
 }
 
-# 在请求中不使用program_text，而是通过corpus传入
-# (需要修改API endpoint以支持corpus上传)
+# In the request, don't use program_text, instead pass through corpus
+# (API endpoint needs to be modified to support corpus upload)
 ```
 
-### 2. 自定义Prompt模板
+### 2. Customize Prompt Templates
 
-修改 `src/writing_agent/prompts/` 中的模板文件来自定义生成风格。
+Modify template files in `src/writing_agent/prompts/` to customize generation style.
 
-### 3. 添加新工具
+### 3. Add New Tools
 
-在 `src/writing_agent/tools/` 中创建新工具：
+Create new tools in `src/writing_agent/tools/`:
 
 ```python
 from langchain.tools import tool
 
 @tool
 def my_custom_tool(input: str) -> dict:
-    """工具描述"""
-    # 实现逻辑
+    """Tool description"""
+    # Implementation logic
     return {"result": "..."}
 ```
 
-## 📞 支持
+## 📞 Support
 
-如有问题，请：
-1. 查看 `src/writing_agent/README.md` 详细文档
-2. 检查日志输出
-3. 在GitHub repo创建issue
+If you have questions, please:
+1. Check `src/writing_agent/README.md` for detailed documentation
+2. Review log output
+3. Create an issue on GitHub repo
 
-## 🚀 下一步
+## 🚀 Next Steps
 
-1. 测试基本功能
-2. 调整配置参数
-3. 与旧系统对比效果
-4. 根据需要自定义prompt
-5. 收集反馈持续改进
+1. Test basic functionality
+2. Adjust configuration parameters
+3. Compare effects with old system
+4. Customize prompts as needed
+5. Collect feedback for continuous improvement
 
-祝使用愉快！
+Enjoy using the system!

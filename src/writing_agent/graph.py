@@ -14,19 +14,31 @@ def should_continue(state: WritingState) -> str:
     """
     Conditional edge function to determine next node.
     
+    Decision logic:
+    1. If is_complete=True -> go to finalize (END)
+    2. If should_revise=True -> go to revise for improvement
+    3. Otherwise -> go to finalize (END)
+    
     Returns:
-        - "revise" if should revise
-        - "end" if generation is complete
+        - "revise" if should revise (quality below threshold, iterations remaining)
+        - "end" if generation is complete (quality met or max iterations reached)
     """
+    # Log for debugging
+    print(f"[should_continue] is_complete={state.get('is_complete')}, "
+          f"should_revise={state.get('should_revise')}, "
+          f"iteration={state.get('current_iteration')}, "
+          f"score={state.get('overall_quality_score')}")
+    
     if state.get("is_complete", False):
+        print("[should_continue] -> end (is_complete=True)")
         return "end"
     
     if state.get("should_revise", False):
+        print("[should_continue] -> revise")
         return "revise"
     
-    if state.get("should_continue", True):
-        return "reflect"
-    
+    # Default to end if state is unclear
+    print("[should_continue] -> end (default)")
     return "end"
 
 
@@ -43,13 +55,21 @@ def finalize_output(state: WritingState) -> Dict[str, Any]:
     current_draft = state.get("current_draft", "")
     overall_score = state.get("overall_quality_score", 0.0)
     iteration_logs = state.get("iteration_logs", [])
+    quality_threshold = state.get("quality_threshold", 0.85)
     
     # Set final document
     final_document = current_draft
     
-    # Create quality report
+    # Determine if approved based on threshold (not LLM's approve field)
+    approved = overall_score >= quality_threshold
+    
+    print(f"[Finalize] Final score: {overall_score:.3f}, threshold: {quality_threshold}, approved: {approved}")
+    print(f"[Finalize] Total iterations: {len(iteration_logs)}")
+    
+    # Create quality report with full iteration history
     quality_report = {
         "final_score": overall_score,
+        "quality_threshold": quality_threshold,
         "total_iterations": len(iteration_logs),
         "iteration_history": iteration_logs,
         "match_score": state.get("match_score"),
@@ -57,13 +77,17 @@ def finalize_output(state: WritingState) -> Dict[str, Any]:
             s for s in state.get("reflection_scores", [])
             if s.get("dimension") == "keyword_coverage"
         ]),
-        "approved": overall_score >= state.get("quality_threshold", 0.85)
+        "approved": approved,
+        "met_threshold": approved,
+        "final_reflection_feedback": state.get("reflection_feedback", "")
     }
     
     # Update memory if improvement was significant
     if len(iteration_logs) > 1:
         initial_score = iteration_logs[0]["overall_score"]
         final_score = iteration_logs[-1]["overall_score"]
+        
+        quality_report["score_improvement"] = final_score - initial_score
         
         if final_score > initial_score:
             memory = get_memory()
@@ -85,6 +109,7 @@ def finalize_output(state: WritingState) -> Dict[str, Any]:
     generation_metadata = state.get("generation_metadata", {})
     generation_metadata["finalized"] = True
     generation_metadata["quality_score"] = overall_score
+    generation_metadata["approved"] = approved
     
     return {
         "final_document": final_document,
