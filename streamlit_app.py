@@ -375,7 +375,9 @@ def render_profile_step():
                     payload["include_curriculum_analysis"] = True
                     payload["include_course_recommendations"] = True
                 
-                resp = requests.post(api_endpoint, json=payload, timeout=60)
+                # Longer timeout for V2 (includes LLM-based fit reasons generation)
+                request_timeout = 120 if dataset_version == "v2" else 60
+                resp = requests.post(api_endpoint, json=payload, timeout=request_timeout)
                 
                 if resp.status_code == 200:
                     data = resp.json()
@@ -390,6 +392,8 @@ def render_profile_step():
                     
             except requests.exceptions.ConnectionError:
                 st.error("Cannot connect to API server. Please ensure backend service is running.")
+            except requests.exceptions.Timeout:
+                st.error("Request timed out. The matching service is taking longer than expected. Please try again or reduce the number of top results.")
             except Exception as e:
                 st.error(f"Error: {e}")
 

@@ -23,13 +23,13 @@ from .models_v2 import (
 )
 from .scorer_v2 import DimensionScorerV2
 
-# Import LLM utilities for generating fit reasons
+# Import V2 explainer for LLM-based fit reasons generation
 try:
-    from ..writing_agent.llm_utils import get_llm, call_llm
-    LLM_AVAILABLE = True
+    from .explainer_v2 import MatchExplainerV2
+    EXPLAINER_AVAILABLE = True
 except ImportError:
-    LLM_AVAILABLE = False
-    print("Warning: LLM utilities not available for V2 matcher.")
+    EXPLAINER_AVAILABLE = False
+    print("Warning: MatchExplainerV2 not available for V2 matcher.")
 
 
 class ProgramMatcherV2:
@@ -41,20 +41,40 @@ class ProgramMatcherV2:
     - Schema v2.0 JSON parsing with null handling
     - Rich curriculum analysis
     - Course-level matching
+    - LLM-based personalized fit reasons generation
     """
     
-    def __init__(self, corpus_dir: str = "data_preparation/dataset/graduate_programs"):
+    def __init__(
+        self, 
+        corpus_dir: str = "data_preparation/dataset/graduate_programs",
+        use_llm_explainer: bool = True,
+        llm_provider: str = "openai"
+    ):
         """
         Initialize V2 matcher
         
         Args:
             corpus_dir: Directory containing V2 program corpus
+            use_llm_explainer: Whether to use LLM for generating fit reasons
+            llm_provider: LLM provider for explainer (openai, anthropic, qwen)
         """
         self.corpus_dir = corpus_dir
         self.programs: Dict[str, ProgramDataV2] = {}
         self._load_programs()
         
         self.scorer = DimensionScorerV2()
+        
+        # Initialize explainer for personalized fit reasons
+        self.explainer = None
+        if use_llm_explainer and EXPLAINER_AVAILABLE:
+            try:
+                self.explainer = MatchExplainerV2(
+                    llm_provider=llm_provider,
+                    use_llm=True
+                )
+                print(f"[V2 Matcher] LLM-based explainer initialized with {llm_provider}")
+            except Exception as e:
+                print(f"Warning: Failed to initialize V2 explainer: {e}")
         
         print(f"[V2 Matcher] Loaded {len(self.programs)} programs from new dataset")
     
@@ -144,9 +164,9 @@ class ProgramMatcherV2:
         # Take top K
         top_matches = matches[:top_k]
         
-        # Generate fit reasons for top matches
-        for match in top_matches:
-            match.fit_reasons = self._generate_fit_reasons(profile, match)
+        # Generate fit reasons for top matches using batch LLM call
+        # This is more efficient than individual calls and avoids timeout
+        self._generate_batch_fit_reasons(profile, top_matches)
         
         # Build profile summary
         profile_summary = {
@@ -328,12 +348,105 @@ class ProgramMatcherV2:
         
         return recommendations[:4]
     
+    def _generate_batch_fit_reasons(
+        self,
+        profile: Dict[str, Any],
+        matches: List[ProgramMatchV2]
+    ) -> None:
+        """
+        Generate fit reasons for multiple matches using batch LLM call
+        
+        This method modifies matches in-place, setting fit_reasons for each.
+        Uses batch LLM call for efficiency (3 programs per call).
+        Falls back to rule-based generation if LLM is not available.
+        
+        Args:
+            profile: Student profile dictionary
+            matches: List of ProgramMatchV2 objects to update
+        """
+        if not matches:
+            return
+        
+        # Use batch generation if explainer is available
+        if self.explainer:
+            try:
+                # Generate fit reasons in batches of 3
+                batch_results = self.explainer.generate_batch_fit_reasons(
+                    profile=profile,
+                    matches=matches,
+                    batch_size=3
+                )
+                
+                # Apply results to matches
+                for match in matches:
+                    program_id = match.program_id
+                    if program_id in batch_results:
+                        match.fit_reasons = batch_results[program_id]
+                    else:
+                        # Fallback for any missing
+                        match.fit_reasons = self._generate_fit_reasons(profile, match)
+                return
+                
+            except Exception as e:
+                print(f"Warning: Batch fit reasons generation failed: {e}")
+                # Fall through to individual generation
+        
+        # Fallback: generate individually using rule-based method
+        for match in matches:
+            match.fit_reasons = self._generate_fit_reasons(profile, match)
+    
     def _generate_fit_reasons(
         self,
         profile: Dict[str, Any],
         match: ProgramMatchV2
     ) -> List[str]:
-        """Generate personalized 'Why This Program Fits You' reasons"""
+        """
+        Generate personalized 'Why This Program Fits You' reasons
+        
+        Uses LLM-based explainer when available for more natural, personalized content.
+        Falls back to rule-based generation if explainer is not available.
+        """
+        program = match.program_data
+        
+        if not program:
+            return ["This program aligns with your academic background and career goals."]
+        
+        # Extract strengths and gaps from dimension scores
+        strengths = []
+        gaps = []
+        for dim_name, score in match.dimension_scores.items():
+            if score.score >= 0.7:
+                if score.matched_items:
+                    strengths.extend(score.matched_items[:2])
+            elif score.score < 0.5:
+                gaps.append(f"Improve {dim_name.replace('_', ' ')}")
+        
+        # Use LLM-based explainer if available
+        if self.explainer:
+            try:
+                return self.explainer.generate_fit_reasons(
+                    profile=profile,
+                    program_data=program,
+                    overall_score=match.overall_score,
+                    dimension_scores=match.dimension_scores,
+                    matched_courses=match.matched_courses,
+                    strengths=strengths,
+                    gaps=gaps
+                )
+            except Exception as e:
+                print(f"Warning: LLM fit reasons generation failed: {e}")
+                # Fall through to rule-based generation
+        
+        # Rule-based fallback (original implementation)
+        return self._generate_rule_based_fit_reasons(profile, match, strengths)
+    
+    def _generate_rule_based_fit_reasons(
+        self,
+        profile: Dict[str, Any],
+        match: ProgramMatchV2,
+        strengths: List[str]
+    ) -> List[str]:
+        """Generate rule-based fit reasons (fallback method)"""
         reasons = []
         program = match.program_data
         
@@ -346,7 +459,7 @@ class ProgramMatcherV2:
             if academic_score.score >= 0.7:
                 major = profile.get("major", "your background")
                 reasons.append(
-                    f"Your {major} background provides strong preparation for this program's curriculum"
+                    f"🎓 Your {major} background provides strong preparation for this program's curriculum"
                 )
         
         # 2. Skills alignment
@@ -354,9 +467,9 @@ class ProgramMatcherV2:
             skills_score = match.dimension_scores[MatchDimensionV2.SKILLS.value]
             matched_skills = skills_score.matched_items[:3]
             if matched_skills:
-                skill_names = [s.replace("Skill: ", "") for s in matched_skills]
+                skill_names = [s.replace("Skill: ", "").replace("Required: ", "") for s in matched_skills]
                 reasons.append(
-                    f"Your skills in {', '.join(skill_names)} directly apply to the program's focus"
+                    f"💡 Your skills in {', '.join(skill_names)} directly apply to the program's focus"
                 )
         
         # 3. Career alignment
@@ -365,20 +478,20 @@ class ProgramMatcherV2:
             student_goals = profile.get("goals", "")
             if student_goals:
                 reasons.append(
-                    f"The program's career outcomes align with your goal to {student_goals[:50]}..."
+                    f"🚀 The program's career outcomes align with your goal to {student_goals[:50]}..."
                 )
         
         # 4. Course relevance
         if match.matched_courses:
             reasons.append(
-                f"Courses like '{match.matched_courses[0]}' directly match your interests"
+                f"📖 Courses like '{match.matched_courses[0]}' directly match your interests"
             )
         
         # 5. Mission fit
         bg = program.program_background
         if bg.mission:
             reasons.append(
-                f"The program's mission to {bg.mission[:60]}... resonates with your objectives"
+                f"✨ The program's mission to {bg.mission[:60]}... resonates with your objectives"
             )
         
         return reasons[:4]

@@ -57,6 +57,9 @@ CORPUS_DIR_V2 = "data_preparation/dataset/graduate_programs"  # New V2 dataset
 OUT_DIR = "out"
 os.makedirs(OUT_DIR, exist_ok=True)
 
+# LLM provider for V2 explainer (can be configured via environment variable)
+V2_LLM_PROVIDER = os.environ.get("V2_LLM_PROVIDER", "openai")
+
 # Initialize Program Matchers for both datasets
 # V1 Matcher (Legacy)
 try:
@@ -67,11 +70,16 @@ except Exception as e:
     print(f"⚠️  Warning: V1 Program matcher initialization failed: {e}")
     MATCHER_AVAILABLE = False
 
-# V2 Matcher (New Dataset)
+# V2 Matcher (New Dataset) - with LLM-based explainer for personalized fit reasons
 try:
-    PROGRAM_MATCHER_V2 = ProgramMatcherV2(corpus_dir=CORPUS_DIR_V2)
+    PROGRAM_MATCHER_V2 = ProgramMatcherV2(
+        corpus_dir=CORPUS_DIR_V2,
+        use_llm_explainer=True,
+        llm_provider=V2_LLM_PROVIDER
+    )
     MATCHER_V2_AVAILABLE = True
     print(f"✅ V2 Program Matcher initialized with {len(PROGRAM_MATCHER_V2.programs)} programs")
+    print(f"✅ V2 Matcher LLM Explainer: {'enabled' if PROGRAM_MATCHER_V2.explainer else 'disabled (fallback to rules)'}")
 except Exception as e:
     print(f"⚠️  Warning: V2 Program matcher initialization failed: {e}")
     MATCHER_V2_AVAILABLE = False

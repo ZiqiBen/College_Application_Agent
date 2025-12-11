@@ -27,6 +27,7 @@ from .models import (
 # V2 imports for new dataset
 from .matcher_v2 import ProgramMatcherV2, convert_match_to_response
 from .scorer_v2 import DimensionScorerV2
+from .explainer_v2 import MatchExplainerV2
 from .models_v2 import (
     ProgramDataV2,
     ProgramMatchV2,
@@ -44,7 +45,7 @@ from .models_v2 import (
     ProgramBackgroundV2
 )
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 
 __all__ = [
     # V1 (Legacy)
@@ -63,6 +64,7 @@ __all__ = [
     # V2 (New dataset)
     "ProgramMatcherV2",
     "DimensionScorerV2",
+    "MatchExplainerV2",
     "convert_match_to_response",
     "ProgramDataV2",
     "ProgramMatchV2",
