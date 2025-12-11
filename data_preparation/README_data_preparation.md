@@ -1,103 +1,494 @@
-```markdown
-# Data Preparation — 高校官网语料库（Courses as name+description）
+# 🔧 Data Preparation Module — Graduate Program Corpus Builder
 
-说明
-- 本说明针对已修改的 PoC pipeline（pipeline_Version2.py / schema_Version2.py）。
-- 目标：把高校项目页面抓取并抽取为结构化 JSON，其中 `courses` 字段为对象数组，每项包含 course `name` 与可选 `description`。
+## Overview
 
-1. 环境准备
-- Python 3.9+
-- 安装依赖：
-  pip install -r requirements_Version2.txt
+The **Data Preparation** module is a comprehensive pipeline for building structured program datasets from university websites. It crawls graduate program pages, extracts structured information using GPT-4, and produces high-quality JSON corpus files used by the matching and writing services.
 
-- 环境变量（至少）：
-  - QWEN_API_URL (例如 https://api.qwen.example/v1/chat/completions)
-  - QWEN_API_KEY
+---
 
-2. 准备 seeds.txt
-- 每行一个 URL（可以是 program 页面、课程页、招生页或招生手册 PDF）。
-- 示例文件： `seeds_example_Version2.txt`
+## 🎯 Key Features
 
-3. 运行命令
-- 运行 PoC：
-  python pipeline_Version2.py seeds_example_Version2.txt
+| Feature | Description |
+|---------|-------------|
+| **Multi-Page Crawling** | Main page + curriculum subpages + course detail pages |
+| **Intelligent Discovery** | Auto-discovers linked curriculum/course pages |
+| **GPT-4 Extraction** | Structured information extraction with strict JSON schema |
+| **Rich Schema** | 6 structured fields: courses, requirements, background, outcomes, etc. |
+| **Caching System** | LLM response caching to avoid redundant API calls |
+| **Dual Format Support** | HTML and PDF document extraction |
+| **Bounded Crawling** | Rate limiting and max-link controls to avoid overload |
 
-4. 输入/输出位置
-- 输入：seeds_example_Version2.txt（或你自备的 seeds.txt）
-- 快照（保存原始 HTML/PDF）： `out/cache/<timestamp>_<sha>.html|pdf`
-- LLM 原始响应缓存： `out/llm_cache/<key>.txt`
-- Embeddings（PoC 本地保存，可选）： `vectors/*.npy`
-- 最终 JSON 输出： `data/corpus/<domain>/<timestamp>_<checksum12>.json`
+---
 
-5. JSON 结构 (重点)
-- 最小必备字段：
-  - id, source_url, raw_snapshot_path, content_type, crawl_date, checksum, title, raw_text
-  - extracted_fields: 包含：
-    - program_name (string|null)
-    - duration (string|null)
-    - courses (array of objects | null)
-      - each course: { name: string, description: string|null }
-    - tuition, application_requirements, features, contact_email, language
-  - snippets: 每个字段对应支持片段 { text, char_start, char_end }
-  - chunks: 切片列表，含 char offsets 与 vector_id（可选）
-  - llm_calls: prompt_hash, model, date, response_raw_path, cached
-  - provenance_notes, notes
+## 📁 Module Structure
 
-6. LLM Prompt 与行为要点
-- Pipeline 在调用 Qwen 时使用 temperature=0，并给出严格 schema（含 courses 对象示例）与 few-shot 示例（已内置在 pipeline_Version2.py），要求返回合法 JSON 且为每字段返回支持片段（snippet+char offsets）。
-- 若 LLM 返回旧格式（courses 为字符串列表），pipeline 会自动将其转换为对象数组（name=原字符串, description=null）。
+```
+data_preparation/
+├── pipeline_Version2.py          # Main pipeline orchestrator
+├── schema_Version2.py            # Pydantic data models
+├── gpt_adapter.py                # OpenAI GPT-4 API adapter
+├── qwen_adapter_Version2.py      # Qwen API adapter (alternative)
+├── utils_Version2.py             # Crawling, extraction, chunking utilities
+├── seeds_example_Version2.txt    # Example seed URLs (174 programs)
+├── requirements_Version2.txt     # Python dependencies
+├── README_data_preparation.md    # This file
+└── dataset/
+    └── graduate_programs/        # Output: 67+ university domains
+        ├── www.cs.cmu.edu/
+        ├── seas.harvard.edu/
+        ├── www.gsb.stanford.edu/
+        └── ...
+```
 
-7. 常见操作/调试
-- 若 Qwen 返回非 JSON，请先查看 `out/llm_cache` 中对应 raw response 文件，检查实际返回文本并调整 system prompt 或 few-shot 示例。
-- 若抓取到的是动态渲染页面（空白正文），使用 Playwright 手动抓取该页面并将 snapshot 路径替入 seeds。
-- 若出现大量重复或页面更新，可通过 `checksum` 对比决定是否重新抽取。
+---
 
-8. 示例 courses 输出片段（示例 JSON 节选）
+## 🏗️ Architecture
+
+### **Pipeline Flow**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        Data Preparation Pipeline                         │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  STEP 1: CRAWL MAIN PAGE                                                │
+│  ├── HTTP request with rate limiting                                    │
+│  ├── Save raw snapshot to out/cache/                                    │
+│  └── Extract HTML/PDF content                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  STEP 2: DISCOVER SUBPAGES (v2)                                         │
+│  ├── find_candidate_course_subpages()                                   │
+│  ├── Keywords: curriculum, courses, degree requirements, etc.           │
+│  └── Max 5 subpage links (same domain only)                             │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  STEP 3: DISCOVER COURSE DETAILS (v3)                                   │
+│  ├── extract_course_names_from_text()                                   │
+│  ├── generate_possible_detail_urls()                                    │
+│  ├── try_fetch_detail_page()                                            │
+│  └── Bounded: max 8 courses × 2 URLs each                               │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  STEP 4: MERGE & PREFILTER                                              │
+│  ├── Combine main + subpages + course details                           │
+│  ├── simple_prefilter() — check for program-related keywords            │
+│  └── chunk_text_by_words() — 400 words, 100 overlap                     │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  STEP 5: GPT-4 EXTRACTION                                               │
+│  ├── Check LLM cache first (prompt_hash + checksum)                     │
+│  ├── call_gpt_chat() with strict JSON schema                            │
+│  ├── try_parse_json() — handle markdown wrappers                        │
+│  └── validate_and_enrich() — post-processing                            │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  STEP 6: SAVE CORPUS DOC                                                │
+│  ├── Build CorpusDoc with extracted_fields                              │
+│  ├── Save to dataset/graduate_programs/{domain}/                        │
+│  └── Filename: {timestamp}_{checksum}.json                              │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Data Schema (V2)
+
+### **CorpusDoc** — Main Document Structure
+
+```python
+class CorpusDoc(BaseModel):
+    id: str                              # {domain}_{checksum[:12]}
+    source_url: str                      # Original URL
+    raw_snapshot_path: str               # Path to cached HTML/PDF
+    content_type: str                    # text/html, application/pdf
+    crawl_date: datetime                 # UTC timestamp
+    checksum: str                        # SHA-256 of raw content
+    
+    title: Optional[str]                 # Page title
+    raw_text: Optional[str]              # Extracted plain text
+    language: Optional[str]              # en, zh, etc.
+    
+    schema_version: str = "v2.0"         # Schema version marker
+    
+    extracted_fields: ExtractedFields    # ★ Structured program data
+    snippets: Dict[str, Snippet]         # Source text evidence
+    chunks: List[Chunk]                  # Text chunks for RAG
+    llm_calls: List[LLMCall]             # LLM call audit log
+```
+
+### **ExtractedFields** — Structured Program Information
+
+```python
+class ExtractedFields(BaseModel):
+    # Basic Info
+    program_name: Optional[str]          # "M.S. in Computer Science"
+    school: Optional[str]                # "Stanford University"
+    department: Optional[str]            # "Department of Computer Science"
+    duration: Optional[str]              # "2 years"
+    tuition: Optional[str]               # "$55,000/year"
+    contact_email: Optional[str]         # Validated email
+    language: Optional[str]              # Instruction language
+    
+    # Courses (V2: name + description objects)
+    courses: Optional[List[Course]]
+    # Course = { name: str, description: Optional[str] }
+    
+    # ★ Structured Application Requirements
+    application_requirements: Optional[ApplicationRequirements]
+    
+    # ★ Program Background & Environment
+    program_background: Optional[ProgramBackground]
+    
+    # ★ Training Outcomes & Career Paths
+    training_outcomes: Optional[TrainingOutcomes]
+    
+    others: Optional[Dict[str, Any]]     # Catch-all for extra fields
+```
+
+### **Sub-Models (V2 Enhanced)**
+
+| Model | Fields |
+|-------|--------|
+| **ApplicationRequirements** | `academic_background`, `prerequisites`, `gre`, `english_tests`, `research_experience`, `work_experience`, `documents`, `summary` |
+| **ProgramBackground** | `mission`, `environment`, `faculty`, `resources`, `summary` |
+| **TrainingOutcomes** | `goals`, `career_paths`, `research_orientation`, `professional_orientation`, `summary` |
+| **Course** | `name`, `description` |
+
+---
+
+## 🔧 Core Components
+
+### **1. pipeline_Version2.py** — Main Orchestrator
+
+**Key Functions:**
+
+| Function | Purpose |
+|----------|---------|
+| `process_seed(url)` | Process a single URL through the full pipeline |
+| `prompt_for_text(text, url)` | Build GPT messages with schema and instructions |
+| `try_parse_json(text)` | Parse JSON from GPT response (handles markdown) |
+| `validate_and_enrich(extracted, text)` | Post-process: email validation, school inference, course normalization |
+| `save_final_doc(doc, domain, checksum)` | Save CorpusDoc to filesystem |
+
+**Prompt Design:**
+
+```python
+SYSTEM_PROMPT = """
+你是一个严格的结构化信息抽取器。
+1. 严格按照给定 schema 输出合法 JSON
+2. 所有内容必须来自提供的网页文本，禁止编造
+3. courses 字段：课程名必须是网页中真实出现的名称
+4. application_requirements：结构化提取 GPA/GRE/语言/材料等
+5. program_background：教育理念、师资、资源
+6. training_outcomes：培养目标、职业路径
+7. school：必须是大学或学院名称，不要泛泛称呼
+8. 找不到的字段显式使用 null
+"""
+```
+
+### **2. utils_Version2.py** — Crawling & Extraction Engine
+
+**Crawling Functions:**
+
+| Function | Purpose |
+|----------|---------|
+| `crawl_url(url)` | HTTP GET with rate limiting (0.3s delay) |
+| `save_snapshot(url, content, ct)` | Save raw HTML/PDF to `out/cache/` |
+| `canonicalize_url(url)` | Remove URL fragments |
+
+**Text Extraction:**
+
+| Function | Purpose |
+|----------|---------|
+| `extract_text_from_html_bytes(html)` | BeautifulSoup parsing, strip noise tags |
+| `extract_text_from_pdf_path(path)` | PyMuPDF (fitz) PDF text extraction |
+| `simple_prefilter(text)` | Heuristic check for program-related content |
+
+**V2: Subpage Discovery:**
+
+```python
+def find_candidate_course_subpages(html_bytes, base_url, max_links=8):
+    """
+    Find links containing: curriculum, course, degree requirements,
+    plan of study, course list, etc.
+    Same-domain only, max 8 links.
+    """
+```
+
+**V3: Course Detail Discovery:**
+
+```python
+def discover_course_detail_pages(text, base_domain, max_courses=8, max_candidates_per_course=2):
+    """
+    1. extract_course_names_from_text() — regex for course-like names
+    2. generate_possible_detail_urls() — /coursecatalog/{slug}, /courses/{slug}
+    3. try_fetch_detail_page() — fetch and validate
+    
+    Bounded: max 8 courses × 2 URLs = 16 requests max
+    """
+```
+
+**Chunking:**
+
+```python
+def chunk_text_by_words(text, max_words=400, overlap=100):
+    """
+    Word-based overlapping chunks with char offsets.
+    Returns: [{ chunk_id, text, word_count, char_start, char_end, token_count }]
+    """
+```
+
+**Caching:**
+
+```python
+def save_llm_cache(prompt_hash, checksum, response_text)  # Save to out/llm_cache/
+def load_llm_cache(prompt_hash, checksum) -> str | None   # Load if exists
+```
+
+### **3. gpt_adapter.py** — OpenAI GPT-4 Adapter
+
+```python
+def call_gpt_chat(messages, model="gpt-4o", temperature=0.0, max_tokens=2000):
+    """
+    OpenAI Chat Completions wrapper.
+    - Force model = "gpt-4o" for stability
+    - temperature=0 for deterministic extraction
+    - Proper error handling and logging
+    """
+```
+
+**Environment Variable:** `OPENAI_API_KEY` (required)
+
+### **4. qwen_adapter_Version2.py** — Alternative LLM
+
+```python
+def call_qwen_chat(messages, model="qwen-7b-chat", temperature=0.0, max_tokens=2000):
+    """Alternative adapter for Qwen API."""
+```
+
+**Environment Variables:** `QWEN_API_URL`, `QWEN_API_KEY`
+
+---
+
+## 🚀 Quick Start
+
+### **1. Environment Setup**
+
+```bash
+cd data_preparation
+pip install -r requirements_Version2.txt
+
+# Set API key
+export OPENAI_API_KEY="sk-..."
+# Or for Windows:
+set OPENAI_API_KEY=sk-...
+```
+
+### **2. Prepare Seeds File**
+
+Create a text file with one URL per line:
+
+```plaintext
+# seeds.txt
+https://www.cs.stanford.edu/academics/masters
+https://seas.harvard.edu/masters-data-science
+https://www.cs.cmu.edu/masters-programs
+```
+
+### **3. Run Pipeline**
+
+```bash
+python pipeline_Version2.py seeds.txt
+```
+
+### **4. Check Output**
+
+```
+dataset/graduate_programs/
+├── www.cs.stanford.edu/
+│   └── 20241201T120000Z_a1b2c3d4e5f6.json
+├── seas.harvard.edu/
+│   └── 20241201T120100Z_b2c3d4e5f6g7.json
+└── www.cs.cmu.edu/
+    └── 20241201T120200Z_c3d4e5f6g7h8.json
+```
+
+---
+
+## 📂 Output Example
+
 ```json
-"extracted_fields": {
-  "program_name": "M.S. in Computer Science",
-  "duration": "2 years",
-  "courses": [
-    { "name": "Algorithms", "description": "Core algorithms covering graph, DP, complexity" },
-    { "name": "Machine Learning", "description": "Intro to ML: supervised, unsupervised, deep learning basics" },
-    { "name": "Operating Systems", "description": null }
+{
+  "id": "www.cs.stanford.edu_a1b2c3d4e5f6",
+  "source_url": "https://www.cs.stanford.edu/academics/masters",
+  "raw_snapshot_path": "out/cache/20241201T120000Z_a1b2c3d4.html",
+  "content_type": "text/html",
+  "crawl_date": "2024-12-01T12:00:00Z",
+  "checksum": "a1b2c3d4e5f6...",
+  "schema_version": "v2.0",
+  
+  "extracted_fields": {
+    "program_name": "Master of Science in Computer Science",
+    "school": "Stanford University",
+    "department": "Department of Computer Science",
+    "duration": "1-2 years",
+    
+    "courses": [
+      { "name": "CS 229 - Machine Learning", "description": "Introduction to machine learning techniques..." },
+      { "name": "CS 231N - Computer Vision", "description": "Deep learning for visual recognition..." },
+      { "name": "CS 224N - NLP", "description": null }
+    ],
+    
+    "application_requirements": {
+      "academic_background": "BS in CS or related field",
+      "prerequisites": "Linear algebra, probability, programming",
+      "gre": "Not required but recommended",
+      "english_tests": "TOEFL 100+ or IELTS 7.0+",
+      "research_experience": "Recommended for research track",
+      "work_experience": null,
+      "documents": "Transcripts, 3 recommendation letters, SOP, CV",
+      "summary": "Strong technical background required..."
+    },
+    
+    "program_background": {
+      "mission": "Train future CS leaders and researchers",
+      "environment": "Small cohorts, close faculty mentorship",
+      "faculty": "World-renowned AI/Systems/Theory faculty",
+      "resources": "Access to Stanford AI Lab, industry partnerships",
+      "summary": null
+    },
+    
+    "training_outcomes": {
+      "goals": "Develop advanced CS skills for research or industry",
+      "career_paths": "Tech companies, startups, PhD programs, research labs",
+      "research_orientation": "Optional thesis track for PhD preparation",
+      "professional_orientation": "Coursework track for industry careers",
+      "summary": null
+    },
+    
+    "tuition": "$57,861/year",
+    "contact_email": "mscs-admissions@cs.stanford.edu",
+    "language": "English"
+  },
+  
+  "chunks": [
+    { "chunk_id": "chunk_0000", "text": "...", "char_start": 0, "char_end": 2000 },
+    { "chunk_id": "chunk_0001", "text": "...", "char_start": 1800, "char_end": 3800 }
   ],
-  "tuition": "$55,000 per year",
-  "application_requirements": "GPA, TOEFL/IELTS, transcripts, recommendations",
-  "features": "Research opportunities; internship required",
-  "contact_email": "cs-grad@example.edu",
-  "language": "English"
+  
+  "llm_calls": [
+    { "prompt_hash": "abc123...", "model": "gpt-4o", "date": "2024-12-01T12:00:00Z", "cached": false }
+  ]
 }
 ```
 
-9. 最佳实践建议（简短）
-- 优先在 seeds 中放项目/课程的具体页面（比学校主页更高命中率）。
-- 先运行小批量（10–20 个 URL）做人工抽样验证，调整 few-shot 和规则。
-- 把敏感信息（API keys、out/cache、vectors）列入 `.gitignore` 并不要上传到远程仓库。
+---
+
+## 📈 Dataset Statistics
+
+| Metric | Value |
+|--------|-------|
+| **University Domains** | 67+ |
+| **Seed URLs** | 174 (in example file) |
+| **Fields per Program** | 15+ structured fields |
+| **Schema Version** | V2.0 |
+
+**Sample Universities:**
+- MIT, Stanford, Harvard, CMU, Berkeley
+- Columbia, Cornell, Princeton, Yale, Duke
+- Caltech, Northwestern, Johns Hopkins, NYU
+- UCLA, UCSD, UT Austin, UW, Purdue
+
+---
+
+## 🔍 Debugging & Troubleshooting
+
+### **Common Issues**
+
+| Issue | Solution |
+|-------|----------|
+| **Empty extracted text** | Page may be JS-rendered; use Playwright to capture |
+| **LLM returns non-JSON** | Check `out/llm_cache/` for raw response; adjust prompt |
+| **Invalid email** | Auto-set to null by `validate_and_enrich()` |
+| **Generic school name** | Pipeline attempts to infer from text patterns |
+| **Too many requests** | Adjust `max_links`, `max_courses` parameters |
+
+### **Cache Directories**
+
 ```
+out/
+├── cache/          # Raw HTML/PDF snapshots
+│   └── 20241201T120000Z_a1b2c3d4.html
+└── llm_cache/      # GPT response cache
+    └── abc123def456.txt
 ```
 
+### **Re-running with Cache**
 
-```python name=schema_Version2.py
-from pydantic import BaseModel
-from typing import Optional, List, Dict, Any
-from datetime import datetime
+The pipeline automatically uses cached LLM responses if the `(prompt_hash, checksum)` matches. To force re-extraction:
 
-class Snippet(BaseModel):
-    text: str
-    char_start: int
-    char_end: int
+```bash
+# Clear LLM cache
+rm -rf out/llm_cache/*
 
-class Chunk(BaseModel):
-    chunk_id: str
-    text: str
-    char_start: int
-    char_end: int
-    token_count: int
-    vector_id: Optional[str] = None
+# Then run pipeline
+python pipeline_Version2.py seeds.txt
+```
 
-class LLMCall(BaseModel):
-    prompt_hash: str
+---
+
+## 🛡️ Best Practices
+
+1. **Start Small**: Test with 10-20 URLs first, manually verify output
+2. **Use Specific URLs**: Program/curriculum pages work better than main pages
+3. **Rate Limiting**: Built-in 0.3s delay; don't disable for production
+4. **Secure Keys**: Add `out/`, `vectors/`, API keys to `.gitignore`
+5. **Monitor Costs**: GPT-4 API calls; use cache to minimize
+
+---
+
+## 🔗 Integration with Main System
+
+The output JSON files are used by:
+
+| Component | Usage |
+|-----------|-------|
+| **Matching Service (V2)** | Loads `extracted_fields` for 6-dimension scoring |
+| **RAG Service** | Uses `chunks` for retrieval-augmented generation |
+| **Writing Agent** | References program details for document generation |
+
+**Data Flow:**
+
+```
+data_preparation/dataset/ → data/corpus/ → API → Frontend
+```
+
+---
+
+## 📚 Dependencies
+
+```
+requests          # HTTP client
+beautifulsoup4    # HTML parsing
+lxml              # Fast HTML parser
+pydantic          # Data validation
+sentence-transformers  # (Optional) Embeddings
+PyMuPDF           # PDF extraction
+tqdm              # Progress bars
+```
     model: str
     date: datetime
     response_raw_path: Optional[str] = None
