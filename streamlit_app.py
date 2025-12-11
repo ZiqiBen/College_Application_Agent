@@ -1,5 +1,5 @@
 """
-College Application Helper - Full-Featured Streamlit Frontend (v3.1)
+College Application Helper - Full-Featured Streamlit Frontend (V4.0)
 
 This comprehensive Streamlit app provides a complete user interface for the 
 College Application Helper system with the following workflows:
@@ -8,7 +8,9 @@ College Application Helper system with the following workflows:
 2. **Quick Generation (Manual Input)**: Direct document generation with manual program input
 3. **Dashboard**: View history and generated content
 
-Key Features:
+Key Features V4.0:
+- DUAL DATASET SUPPORT: Choose between V1 (legacy) and V2 (enhanced) datasets
+- V2 dataset includes rich course information, curriculum analysis, and 6-dimension matching
 - Integration with Matching Service for intelligent program recommendations
 - Seamless flow from matching to document generation with auto-filled program info
 - LangGraph-based Writing Agent for high-quality document generation
@@ -27,7 +29,7 @@ from typing import Dict, List, Optional
 # =============================================================================
 
 st.set_page_config(
-    page_title="College Application Helper",
+    page_title="College Application Helper V4.0",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -53,6 +55,12 @@ LLM_PROVIDERS = {
     "qwen": "Qwen (Tongyi Qianwen)"
 }
 
+# Dataset options
+DATASET_OPTIONS = {
+    "v1": "📚 V1 Legacy Dataset",
+    "v2": "🚀 V2 Enhanced Dataset (Recommended)"
+}
+
 # =============================================================================
 # SESSION STATE INITIALIZATION
 # =============================================================================
@@ -68,6 +76,7 @@ def init_session_state():
         "generated_documents": {},
         "generation_mode": None,  # "matched" or "manual"
         "flow_step": "profile",  # "profile", "matching", "select", "generate"
+        "dataset_version": "v2",  # "v1" or "v2" - default to V2
     }
     for key, value in defaults.items():
         if key not in st.session_state:
@@ -285,22 +294,43 @@ def render_profile_step():
         resume_text = render_resume_input(key_prefix="smart_")
     
     with col2:
+        # Dataset Selection (V4.0 feature)
+        st.markdown("##### 📦 Dataset Selection")
+        dataset_version = st.radio(
+            "Choose Dataset",
+            options=list(DATASET_OPTIONS.keys()),
+            format_func=lambda x: DATASET_OPTIONS[x],
+            index=1,  # Default to V2
+            key="smart_dataset",
+            help="V2 Enhanced Dataset includes richer program information with course descriptions and 6-dimension matching"
+        )
+        st.session_state.dataset_version = dataset_version
+        
+        if dataset_version == "v2":
+            st.info("🚀 V2 includes curriculum analysis and course-level matching")
+        
+        st.markdown("---")
         st.markdown("##### ⚙️ Matching Settings")
-        top_k = st.slider("Number of Programs to Return", 1, 15, 5, key="smart_topk")
+        top_k = st.slider("Number of Programs to Return", 1, 15, 10 if dataset_version == "v2" else 5, key="smart_topk")
         min_score = st.slider("Minimum Match Score", 0.0, 1.0, 0.4, 0.05, key="smart_min_score")
         
         st.markdown("---")
         st.markdown("##### 📊 Dimension Weights")
         st.caption("Adjust the importance of each factor")
         
-        academic_weight = st.slider("Academic Background", 0.0, 1.0, 0.30, 0.05, key="w_academic")
-        skills_weight = st.slider("Skills Match", 0.0, 1.0, 0.25, 0.05, key="w_skills")
-        experience_weight = st.slider("Work Experience", 0.0, 1.0, 0.20, 0.05, key="w_experience")
-        goals_weight = st.slider("Goals Alignment", 0.0, 1.0, 0.15, 0.05, key="w_goals")
+        academic_weight = st.slider("Academic Background", 0.0, 1.0, 0.25, 0.05, key="w_academic")
+        skills_weight = st.slider("Skills Match", 0.0, 1.0, 0.20, 0.05, key="w_skills")
+        experience_weight = st.slider("Work Experience", 0.0, 1.0, 0.15, 0.05, key="w_experience")
+        goals_weight = st.slider("Goals Alignment", 0.0, 1.0, 0.20, 0.05, key="w_goals")
         requirements_weight = st.slider("Application Requirements", 0.0, 1.0, 0.10, 0.05, key="w_requirements")
         
+        # V2-specific: Curriculum weight
+        curriculum_weight = 0.0
+        if dataset_version == "v2":
+            curriculum_weight = st.slider("Curriculum Alignment (V2)", 0.0, 1.0, 0.10, 0.05, key="w_curriculum")
+        
         # Normalize weights
-        total = academic_weight + skills_weight + experience_weight + goals_weight + requirements_weight
+        total = academic_weight + skills_weight + experience_weight + goals_weight + requirements_weight + curriculum_weight
         custom_weights = None
         if total > 0:
             custom_weights = {
@@ -310,6 +340,8 @@ def render_profile_step():
                 "goals": goals_weight / total,
                 "requirements": requirements_weight / total
             }
+            if dataset_version == "v2":
+                custom_weights["curriculum"] = curriculum_weight / total
     
     # Action button
     if st.button("🔍 Start Matching Programs", type="primary", use_container_width=True):
@@ -321,8 +353,14 @@ def render_profile_step():
         st.session_state.profile = profile
         st.session_state.resume_text = resume_text
         
+        # Determine API endpoint based on dataset version
+        if dataset_version == "v2":
+            api_endpoint = f"{API_BASE_URL}/v2/match/programs"
+        else:
+            api_endpoint = f"{API_BASE_URL}/match/programs"
+        
         # Perform matching
-        with st.spinner("Analyzing your background and matching the best programs..."):
+        with st.spinner(f"Analyzing your background using {DATASET_OPTIONS[dataset_version]}..."):
             try:
                 payload = {
                     "profile": profile,
@@ -332,7 +370,12 @@ def render_profile_step():
                     "custom_weights": custom_weights
                 }
                 
-                resp = requests.post(f"{API_BASE_URL}/match/programs", json=payload, timeout=60)
+                # V2 specific options
+                if dataset_version == "v2":
+                    payload["include_curriculum_analysis"] = True
+                    payload["include_course_recommendations"] = True
+                
+                resp = requests.post(api_endpoint, json=payload, timeout=60)
                 
                 if resp.status_code == 200:
                     data = resp.json()
@@ -355,6 +398,7 @@ def render_matching_step():
     st.subheader("🏆 Matching Results")
     
     matches = st.session_state.matched_programs
+    dataset_version = st.session_state.get("dataset_version", "v1")
     
     if not matches:
         st.warning("No programs found matching criteria. Please try lowering the minimum score threshold.")
@@ -363,8 +407,10 @@ def render_matching_step():
             st.rerun()
         return
     
-    # Summary
-    col1, col2, col3 = st.columns(3)
+    # Summary with dataset indicator
+    st.info(f"📦 Results from: {DATASET_OPTIONS.get(dataset_version, 'Unknown Dataset')}")
+    
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("Matched Programs", len(matches))
     with col2:
@@ -373,6 +419,11 @@ def render_matching_step():
     with col3:
         top_score = max(m.get("overall_score", 0) for m in matches)
         st.metric("Highest Match Score", f"{top_score:.2f}")
+    with col4:
+        # V2 specific: count programs with course info
+        if dataset_version == "v2":
+            with_courses = sum(1 for m in matches if m.get("matched_courses"))
+            st.metric("With Course Match", with_courses)
     
     st.markdown("---")
     st.markdown("**Click 'Select This Program' in a program card to proceed to document generation**")
@@ -380,26 +431,44 @@ def render_matching_step():
     # Display matches
     for i, match in enumerate(matches):
         match_level = match.get("match_level", "moderate")
-        level_icons = {"excellent": "🟢", "good": "🟡", "moderate": "🟠", "weak": "🔴"}
+        level_icons = {"excellent": "🟢", "good": "🟡", "moderate": "🟠", "fair": "🟤", "weak": "🔴"}
+        
+        # V2: Show department if available
+        dept_info = f" ({match.get('department', '')})" if match.get('department') else ""
         
         with st.expander(
-            f"{level_icons.get(match_level, '⚪')} #{i+1} {match.get('university', '')} - {match.get('program_name', '')} "
+            f"{level_icons.get(match_level, '⚪')} #{i+1} {match.get('university', '')} - {match.get('program_name', '')}{dept_info} "
             f"(Score: {match.get('overall_score', 0):.2f})",
             expanded=(i < 3)
         ):
             col1, col2 = st.columns([3, 1])
             
             with col1:
-                # Dimension scores
+                # Dimension scores - support V2's 6 dimensions
                 st.markdown("**Dimension Scores:**")
                 dim_scores = match.get("dimension_scores", {})
-                score_cols = st.columns(5)
-                dim_names = {"academic": "Academic", "skills": "Skills", "experience": "Experience", "goals": "Goals", "requirements": "Requirements"}
                 
-                for j, (dim, score_info) in enumerate(dim_scores.items()):
-                    score_val = score_info.get("score", 0) if isinstance(score_info, dict) else score_info
-                    with score_cols[j % 5]:
-                        st.metric(dim_names.get(dim, dim), f"{score_val:.2f}")
+                # V2 has curriculum dimension
+                if dataset_version == "v2":
+                    dim_names = {
+                        "academic": "Academic", "skills": "Skills", "experience": "Experience",
+                        "goals": "Goals", "requirements": "Requirements", "curriculum": "Curriculum"
+                    }
+                    num_cols = 6
+                else:
+                    dim_names = {
+                        "academic": "Academic", "skills": "Skills", "experience": "Experience",
+                        "goals": "Goals", "requirements": "Requirements"
+                    }
+                    num_cols = 5
+                
+                score_cols = st.columns(num_cols)
+                for j, (dim, dim_label) in enumerate(dim_names.items()):
+                    if dim in dim_scores:
+                        score_info = dim_scores[dim]
+                        score_val = score_info.get("score", 0) if isinstance(score_info, dict) else score_info
+                        with score_cols[j]:
+                            st.metric(dim_label, f"{score_val:.2f}")
                 
                 # Why This Program Fits You (personalized reasons)
                 if match.get("fit_reasons"):
@@ -407,10 +476,20 @@ def render_matching_step():
                     for reason in match["fit_reasons"][:3]:
                         st.caption(f"• {reason}")
                 elif match.get("strengths"):
-                    # Fallback to old strengths if fit_reasons not available
                     st.markdown("**✅ Your Strengths:**")
                     for s in match["strengths"][:3]:
                         st.caption(f"• {s}")
+                
+                # V2: Show matched courses
+                if dataset_version == "v2" and match.get("matched_courses"):
+                    st.markdown("**📚 Courses Matching Your Skills:**")
+                    st.caption(", ".join(match["matched_courses"][:4]))
+                
+                # V2: Show recommendations
+                if match.get("recommendations"):
+                    with st.expander("💡 Recommendations"):
+                        for rec in match["recommendations"][:3]:
+                            st.caption(f"• {rec}")
             
             with col2:
                 # Program details preview
@@ -418,8 +497,16 @@ def render_matching_step():
                 if details:
                     if details.get("focus_areas"):
                         st.markdown("**Research Areas:**")
-                        st.caption(", ".join(details["focus_areas"][:3]))
-                    if details.get("core_courses"):
+                        st.caption(", ".join(details["focus_areas"][:3]) if isinstance(details["focus_areas"], list) else str(details["focus_areas"])[:50])
+                    
+                    # V2: Show courses from program_details
+                    if dataset_version == "v2" and details.get("courses"):
+                        courses = details["courses"]
+                        if courses:
+                            st.markdown("**Courses:**")
+                            course_names = [c.get("name", c) if isinstance(c, dict) else c for c in courses[:3]]
+                            st.caption(", ".join(course_names))
+                    elif details.get("core_courses"):
                         st.markdown("**Core Courses:**")
                         st.caption(", ".join(details["core_courses"][:3]))
                 
@@ -444,6 +531,7 @@ def render_select_step():
     
     program = st.session_state.selected_program
     details = st.session_state.selected_program_details
+    dataset_version = st.session_state.get("dataset_version", "v1")
     
     if not program:
         st.warning("No program selected")
@@ -451,9 +539,13 @@ def render_select_step():
         st.rerun()
         return
     
-    # Display selected program
-    st.success(f"🎯 Selected: **{program.get('university', '')} - {program.get('program_name', '')}**")
+    # Display selected program with department info for V2
+    dept_info = f" - {program.get('department', '')}" if program.get('department') else ""
+    st.success(f"🎯 Selected: **{program.get('university', '')} - {program.get('program_name', '')}{dept_info}**")
     st.metric("Match Score", f"{program.get('overall_score', 0):.2f}")
+    
+    # Dataset indicator
+    st.caption(f"📦 From: {DATASET_OPTIONS.get(dataset_version, 'Unknown Dataset')}")
     
     # Show program details
     if details:
@@ -470,9 +562,28 @@ def render_select_step():
                 )
             
             if details.get("focus_areas"):
-                st.markdown(f"**Research Areas:** {', '.join(details['focus_areas'])}")
+                areas = details['focus_areas']
+                if isinstance(areas, list):
+                    st.markdown(f"**Research Areas:** {', '.join(areas)}")
+                else:
+                    st.markdown(f"**Research Areas:** {areas}")
             
-            if details.get("core_courses"):
+            # V2: Enhanced course display with descriptions
+            if dataset_version == "v2" and details.get("courses"):
+                st.markdown("**📚 Courses:**")
+                courses = details["courses"][:8]  # Show up to 8 courses
+                for course in courses:
+                    if isinstance(course, dict):
+                        course_name = course.get("name", "Unknown Course")
+                        course_desc = course.get("description", "")
+                        if course_desc:
+                            with st.expander(f"📖 {course_name}"):
+                                st.caption(course_desc[:300] + "..." if len(course_desc) > 300 else course_desc)
+                        else:
+                            st.caption(f"• {course_name}")
+                    else:
+                        st.caption(f"• {course}")
+            elif details.get("core_courses"):
                 st.markdown(f"**Core Courses:** {', '.join(details['core_courses'][:5])}")
         
         with col2:
@@ -480,7 +591,29 @@ def render_select_step():
             if details.get("min_gpa"):
                 st.markdown(f"**Minimum GPA:** {details['min_gpa']}")
             if details.get("required_skills"):
-                st.markdown(f"**Required Skills:** {', '.join(details['required_skills'][:5])}")
+                skills = details['required_skills']
+                if isinstance(skills, list):
+                    st.markdown(f"**Required Skills:** {', '.join(skills[:5])}")
+                else:
+                    st.markdown(f"**Required Skills:** {skills}")
+            
+            # V2: Additional fields
+            if dataset_version == "v2":
+                if details.get("required_tests"):
+                    st.markdown(f"**Required Tests:** {', '.join(details['required_tests']) if isinstance(details['required_tests'], list) else details['required_tests']}")
+                if details.get("application_deadline"):
+                    st.markdown(f"**Deadline:** {details['application_deadline']}")
+                if details.get("tuition"):
+                    st.markdown(f"**Tuition:** {details['tuition']}")
+                if details.get("career_outcomes"):
+                    st.markdown("**Career Outcomes:**")
+                    outcomes = details['career_outcomes']
+                    if isinstance(outcomes, list):
+                        for outcome in outcomes[:3]:
+                            st.caption(f"• {outcome}")
+                    else:
+                        st.caption(outcomes[:200])
+            
             if details.get("source_url"):
                 st.markdown(f"**Program Link:** [View Official Site]({details['source_url']})")
     
@@ -507,14 +640,17 @@ def render_generate_step():
     details = st.session_state.selected_program_details
     profile = st.session_state.profile
     resume_text = st.session_state.resume_text
+    dataset_version = st.session_state.get("dataset_version", "v1")
     
     if not program or not profile:
         st.warning("Information incomplete, please return to previous steps")
         return
     
-    # Show context
-    st.info(f"🎯 **Target Program:** {program.get('university', '')} - {program.get('program_name', '')}")
+    # Show context with dataset indicator
+    dept_info = f" - {program.get('department', '')}" if program.get('department') else ""
+    st.info(f"🎯 **Target Program:** {program.get('university', '')} - {program.get('program_name', '')}{dept_info}")
     st.info(f"👤 **Applicant:** {profile.get('name', '')} | {profile.get('major', '')} | GPA: {profile.get('gpa', 'N/A')}")
+    st.caption(f"📦 Dataset: {DATASET_OPTIONS.get(dataset_version, 'Unknown')}")
     
     st.markdown("---")
     
@@ -548,21 +684,52 @@ def render_generate_step():
     
     # Generate button
     if st.button("✨ Start Generation", type="primary", use_container_width=True):
-        # Build program text from details
+        # Build program text from details - enhanced for V2
         program_text = ""
         if details:
+            # V2: Include courses with descriptions
+            courses_text = ""
+            if dataset_version == "v2" and details.get("courses"):
+                courses = details["courses"][:10]
+                course_lines = []
+                for course in courses:
+                    if isinstance(course, dict):
+                        cname = course.get("name", "")
+                        cdesc = course.get("description", "")
+                        if cname:
+                            course_lines.append(f"- {cname}: {cdesc[:100]}..." if len(cdesc) > 100 else f"- {cname}: {cdesc}" if cdesc else f"- {cname}")
+                    else:
+                        course_lines.append(f"- {course}")
+                courses_text = "Courses:\n" + "\n".join(course_lines)
+            elif details.get("core_courses"):
+                courses_text = f"Core Courses: {', '.join(details.get('core_courses', []))}"
+            
+            # V2: Include career outcomes
+            career_text = ""
+            if dataset_version == "v2" and details.get("career_outcomes"):
+                outcomes = details["career_outcomes"]
+                if isinstance(outcomes, list):
+                    career_text = f"Career Outcomes: {', '.join(outcomes[:5])}"
+                else:
+                    career_text = f"Career Outcomes: {outcomes[:200]}"
+            
             program_text = f"""
 {details.get('program_name', program.get('program_name', 'Graduate Program'))}
 at {details.get('university', program.get('university', 'University'))}
+{f"Department: {details.get('department', '')}" if details.get('department') else ""}
 
 {details.get('description_text', '')}
 
-Focus Areas: {', '.join(details.get('focus_areas', []))}
-Core Courses: {', '.join(details.get('core_courses', []))}
-Required Skills: {', '.join(details.get('required_skills', []))}
+Focus Areas: {', '.join(details.get('focus_areas', [])) if isinstance(details.get('focus_areas'), list) else details.get('focus_areas', '')}
+{courses_text}
+Required Skills: {', '.join(details.get('required_skills', [])) if isinstance(details.get('required_skills'), list) else details.get('required_skills', '')}
+{career_text}
 """
         else:
             program_text = f"{program.get('program_name', '')} at {program.get('university', '')}"
+        
+        # Select API endpoint based on dataset version
+        api_endpoint = "/v2/generate/writing-agent" if dataset_version == "v2" else "/generate/writing-agent"
         
         with st.spinner(f"Generating {DOCUMENT_TYPES[doc_type]} using {LLM_PROVIDERS[llm_provider]}..."):
             try:
@@ -575,11 +742,12 @@ Required Skills: {', '.join(details.get('required_skills', []))}
                     "temperature": temperature,
                     "max_iterations": max_iterations,
                     "quality_threshold": quality_threshold,
-                    "use_corpus": True
+                    "use_corpus": True,
+                    "program_id": program.get("program_id", ""),  # V2: Include program ID for retrieval
                 }
                 
                 resp = requests.post(
-                    f"{API_BASE_URL}/generate/writing-agent",
+                    f"{API_BASE_URL}{api_endpoint}",
                     json=payload,
                     timeout=180
                 )
@@ -596,6 +764,13 @@ Required Skills: {', '.join(details.get('required_skills', []))}
                     except:
                         pass
                     st.error(f"Generation failed: {error_text}")
+                    
+            except requests.exceptions.Timeout:
+                st.error("Request timeout, please try reducing iterations.")
+            except requests.exceptions.ConnectionError:
+                st.error("Cannot connect to API server.")
+            except Exception as e:
+                st.error(f"Error: {e}")
                     
             except requests.exceptions.Timeout:
                 st.error("Request timeout, please try reducing iterations.")
@@ -982,7 +1157,7 @@ def main():
     # Sidebar
     with st.sidebar:
         st.title("🎓 College App Helper")
-        st.caption("v3.1 - Smart Matching + AI Writing")
+        st.caption("v4.0 - Dual Dataset Support + Enhanced Matching")
         
         st.markdown("---")
         
@@ -996,6 +1171,21 @@ def main():
             }[x],
             label_visibility="collapsed"
         )
+        
+        st.markdown("---")
+        
+        # Dataset Info
+        st.markdown("##### 📦 Active Dataset")
+        dataset_version = st.session_state.get("dataset_version", "v2")
+        if dataset_version == "v2":
+            st.success("V2 Enhanced Dataset")
+            st.caption("• 6-Dimension Matching")
+            st.caption("• Course Curriculum Analysis")
+            st.caption("• Rich Program Descriptions")
+        else:
+            st.info("V1 Legacy Dataset")
+            st.caption("• 5-Dimension Matching")
+            st.caption("• Standard Corpus")
         
         st.markdown("---")
         
@@ -1018,6 +1208,10 @@ def main():
                     st.caption("✓ Matching")
                 else:
                     st.caption("✗ Matching")
+            
+            # V2 specific status
+            if api_info.get("matching_service_v2_available"):
+                st.caption("✓ V2 Matching Ready")
         else:
             st.error("API Not Connected")
             st.caption(health.get("message", ""))

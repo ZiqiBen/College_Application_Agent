@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Optional
+from pydantic import BaseModel, Field
+from typing import List, Optional, Dict, Any
 import uvicorn, os, json, re, time, hashlib
 import requests
 from bs4 import BeautifulSoup
@@ -12,7 +12,7 @@ from .multi_agent_generator import generate_all_multi_agent  # New multi-agent s
 from .ingest import ingest_corpus
 from .retriever_bert import build_query, retrieve_topk
 
-# Import Matching Service
+# Import Matching Service (V1 - Legacy)
 from ..matching_service import (
     ProgramMatcher,
     MatchingRequest,
@@ -21,6 +21,17 @@ from ..matching_service import (
     DimensionScoreResponse
 )
 from ..matching_service.explainer import MatchExplainer
+
+# Import Matching Service V2 (New Dataset)
+from ..matching_service import (
+    ProgramMatcherV2,
+    MatchingRequestV2,
+    MatchingResponseV2,
+    ProgramMatchResponseV2,
+    DimensionScoreResponseV2,
+    convert_match_to_response
+)
+
 # Import new Writing Agent (LangGraph-based)
 try:
     from ..writing_agent import create_writing_graph
@@ -31,7 +42,7 @@ except ImportError as e:
     print(f"Warning: Writing Agent not available: {e}")
     WRITING_AGENT_AVAILABLE = False
 
-app = FastAPI(title="College App Helper API - Enhanced Multi-Agent System with LangGraph")
+app = FastAPI(title="College App Helper API V4.0 - Enhanced with Dual Dataset Support")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], 
@@ -40,18 +51,30 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-CORPUS_DIR = "data/corpus"
+# Dataset directories
+CORPUS_DIR_V1 = "data/corpus"  # Legacy corpus
+CORPUS_DIR_V2 = "data_preparation/dataset/graduate_programs"  # New V2 dataset
 OUT_DIR = "out"
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# Initialize Program Matcher
+# Initialize Program Matchers for both datasets
+# V1 Matcher (Legacy)
 try:
-    PROGRAM_MATCHER = ProgramMatcher(corpus_dir=CORPUS_DIR)
+    PROGRAM_MATCHER = ProgramMatcher(corpus_dir=CORPUS_DIR_V1)
     MATCHER_AVAILABLE = True
-    print(f"✅ Program Matcher initialized with {len(PROGRAM_MATCHER.programs)} programs")
+    print(f"✅ V1 Program Matcher initialized with {len(PROGRAM_MATCHER.programs)} programs")
 except Exception as e:
-    print(f"⚠️  Warning: Program matcher initialization failed: {e}")
+    print(f"⚠️  Warning: V1 Program matcher initialization failed: {e}")
     MATCHER_AVAILABLE = False
+
+# V2 Matcher (New Dataset)
+try:
+    PROGRAM_MATCHER_V2 = ProgramMatcherV2(corpus_dir=CORPUS_DIR_V2)
+    MATCHER_V2_AVAILABLE = True
+    print(f"✅ V2 Program Matcher initialized with {len(PROGRAM_MATCHER_V2.programs)} programs")
+except Exception as e:
+    print(f"⚠️  Warning: V2 Program matcher initialization failed: {e}")
+    MATCHER_V2_AVAILABLE = False
 
 class Profile(BaseModel):
     name: str
@@ -350,33 +373,58 @@ def generate_multi_agent(req: GenerateRequest):
 def root():
     """Root endpoint providing API information, available endpoints, and features."""
     return {
-        "message": "College Application Helper API - Enhanced Multi-Agent System",
-        "version": "2.0",
+        "message": "College Application Helper API V4.0 - Dual Dataset Support",
+        "version": "4.0",
         "endpoints": {
             "/generate": "Main generation endpoint with system selection",
             "/generate/simple": "Force simple generator",
             "/generate/multi-agent": "Force multi-agent generator",
-            "/generate/writing-agent": "NEW: LangGraph-based Writing Agent (v2.0)",
+            "/generate/writing-agent": "LangGraph-based Writing Agent",
             "/systems/info": "Information about available systems",
-            "/health": "Health check"
+            "/health": "Health check",
+            # V1 (Legacy) matching endpoints
+            "/match/programs": "Match programs using V1 (legacy) corpus",
+            "/match/info": "V1 matching service info",
+            "/match/program/{id}/details": "Get V1 program details",
+            "/match/programs/list": "List all V1 programs",
+            # V2 (New dataset) matching endpoints
+            "/v2/match/programs": "NEW: Match programs using V2 enhanced dataset",
+            "/v2/match/info": "V2 matching service info",
+            "/v2/match/program/{id}/details": "Get V2 program details",
+            "/v2/match/programs/list": "List all V2 programs",
         },
         "features": [
+            "Dual dataset support (V1 legacy + V2 enhanced)",
+            "V2 dataset with richer program information and course descriptions",
             "Multi-agent content generation with iterative improvement",
-            "NEW: LangGraph-based Writing Agent with RAG, ReAct, Reflection",
+            "LangGraph-based Writing Agent with RAG, ReAct, Reflection",
+            "6-dimension matching for V2 (academic, skills, experience, goals, requirements, curriculum)",
+            "Course-level curriculum analysis in V2",
             "Fallback to simple generator for reliability",
-            "Detailed quality reports and feedback",
-            "Automatic keyword extraction and optimization",
-            "Profile validation and warnings"
+            "Detailed quality reports and feedback"
         ],
+        "datasets": {
+            "v1_legacy": {
+                "available": MATCHER_AVAILABLE,
+                "programs_count": len(PROGRAM_MATCHER.programs) if MATCHER_AVAILABLE else 0,
+                "description": "Original corpus with sections-based structure"
+            },
+            "v2_enhanced": {
+                "available": MATCHER_V2_AVAILABLE,
+                "programs_count": len(PROGRAM_MATCHER_V2.programs) if MATCHER_V2_AVAILABLE else 0,
+                "description": "New dataset with extracted_fields, courses with descriptions, etc."
+            }
+        },
         "writing_agent_available": WRITING_AGENT_AVAILABLE,
-        "matching_service_available": MATCHER_AVAILABLE
+        "matching_service_available": MATCHER_AVAILABLE,
+        "matching_service_v2_available": MATCHER_V2_AVAILABLE
     }
 
 
 @app.post("/generate/writing-agent")
 def generate_with_writing_agent(req: WritingAgentRequest):
     """
-    NEW: Generate documents using LangGraph-based Writing Agent.
+    Generate documents using LangGraph-based Writing Agent.
     
     This endpoint uses advanced AI workflows including:
     - RAG (Retrieval-Augmented Generation)
@@ -876,7 +924,7 @@ def get_program_details(program_id: str):
 @app.get("/match/programs/list")
 def list_all_programs():
     """
-    List all available programs in the corpus.
+    List all available programs in the V1 (legacy) corpus.
     
     Returns:
         List of programs with basic info (id, name, university)
@@ -885,7 +933,7 @@ def list_all_programs():
     if not MATCHER_AVAILABLE:
         raise HTTPException(
             status_code=503,
-            detail="Matching service not available"
+            detail="V1 Matching service not available"
         )
     
     try:
@@ -902,6 +950,7 @@ def list_all_programs():
         
         return {
             "success": True,
+            "dataset_version": "v1",
             "total_programs": len(programs_list),
             "programs": programs_list
         }
@@ -914,7 +963,396 @@ def list_all_programs():
 
 
 # ============================================================
-# END OF MATCHING SERVICE ENDPOINTS
+# V2 MATCHING SERVICE ENDPOINTS (New Enhanced Dataset)
+# ============================================================
+
+class MatchingRequestV2API(BaseModel):
+    """Matching request model for V2 API"""
+    profile: Dict[str, Any] = Field(..., description="Student profile information")
+    top_k: int = Field(10, ge=1, le=50, description="Return top K matching programs")
+    min_score: float = Field(0.4, ge=0.0, le=1.0, description="Minimum match score threshold")
+    include_curriculum_analysis: bool = Field(True, description="Include curriculum alignment analysis")
+    include_course_recommendations: bool = Field(True, description="Include course recommendations")
+    custom_weights: Optional[Dict[str, float]] = Field(None, description="Custom dimension weights")
+    filters: Optional[Dict[str, Any]] = Field(None, description="Filters (e.g., university, field)")
+    use_llm_explanation: bool = Field(False, description="Use LLM for detailed explanations")
+
+
+@app.post("/v2/match/programs")
+def match_programs_v2(request: MatchingRequestV2API):
+    """
+    Match student profile with programs using V2 (enhanced) dataset.
+    
+    V2 Features:
+    - 6-dimension analysis (including curriculum alignment)
+    - Rich course information with descriptions
+    - Detailed application requirements parsing
+    - Training outcomes and career path analysis
+    
+    Returns ranked programs with detailed scores and recommendations.
+    """
+    
+    if not MATCHER_V2_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="V2 Program matching service is not available. Please ensure V2 corpus is loaded."
+        )
+    
+    try:
+        start_time = time.time()
+        
+        # Validate profile
+        profile = request.profile
+        if not profile.get("major") or not profile.get("gpa"):
+            raise HTTPException(
+                status_code=400,
+                detail="Profile must include at least 'major' and 'gpa' fields"
+            )
+        
+        # Perform matching
+        result = PROGRAM_MATCHER_V2.match_programs(
+            profile=profile,
+            top_k=request.top_k,
+            min_score=request.min_score,
+            custom_weights=request.custom_weights,
+            filters=request.filters,
+            include_curriculum_analysis=request.include_curriculum_analysis
+        )
+        
+        processing_time = time.time() - start_time
+        
+        # Convert to response format
+        matches_response = []
+        for m in result.matches:
+            # Get program details for Writing Agent
+            program_details = PROGRAM_MATCHER_V2.get_program_details_for_writing(m.program_id)
+            
+            match_response = {
+                "program_id": m.program_id,
+                "program_name": m.program_name,
+                "university": m.university,
+                "department": m.program_data.department if m.program_data else None,
+                "overall_score": round(m.overall_score, 3),
+                "match_level": m.match_level.value,
+                "dimension_scores": {
+                    dim: {
+                        "dimension": score.dimension,
+                        "score": round(score.score, 3),
+                        "weight": score.weight,
+                        "details": score.details,
+                        "contributing_factors": score.contributing_factors,
+                        "matched_items": score.matched_items,
+                        "missing_items": score.missing_items
+                    }
+                    for dim, score in m.dimension_scores.items()
+                },
+                "strengths": m.strengths,
+                "gaps": m.gaps,
+                "fit_reasons": m.fit_reasons,
+                "recommendations": m.recommendations,
+                "matched_courses": m.matched_courses,
+                "relevant_courses": m.relevant_courses,
+                "explanation": m.explanation,
+                "metadata": m.metadata,
+                "program_details": program_details
+            }
+            matches_response.append(match_response)
+        
+        return {
+            "success": True,
+            "message": f"Found {len(result.matches)} matching programs from V2 dataset",
+            "dataset_version": "v2",
+            "student_profile_summary": result.student_profile_summary,
+            "total_programs_evaluated": result.total_programs_evaluated,
+            "matches": matches_response,
+            "overall_insights": result.overall_insights,
+            "matching_timestamp": result.matching_timestamp,
+            "processing_time_seconds": round(processing_time, 2)
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        print(f"Error in V2 program matching: {e}")
+        print(traceback.format_exc())
+        raise HTTPException(
+            status_code=500,
+            detail=f"V2 Program matching failed: {str(e)}"
+        )
+
+
+@app.get("/v2/match/info")
+def matching_info_v2():
+    """
+    Get information about the V2 matching service.
+    
+    Returns:
+    - Number of programs available
+    - Matching dimensions and weights
+    - V2-specific features
+    """
+    
+    if not MATCHER_V2_AVAILABLE:
+        return {
+            "available": False,
+            "dataset_version": "v2",
+            "message": "V2 Matching service not initialized"
+        }
+    
+    return {
+        "available": True,
+        "dataset_version": "v2",
+        "programs_loaded": len(PROGRAM_MATCHER_V2.programs),
+        "matching_dimensions": {
+            "academic": {
+                "weight": 0.25,
+                "factors": ["GPA", "Major relevance", "Coursework alignment"]
+            },
+            "skills": {
+                "weight": 0.20,
+                "factors": ["Required skills coverage", "Course-skill alignment", "Skill breadth"]
+            },
+            "experience": {
+                "weight": 0.15,
+                "factors": ["Experience quantity", "Relevance", "Research/Professional orientation"]
+            },
+            "goals": {
+                "weight": 0.20,
+                "factors": ["Career goals alignment", "Mission alignment", "Career path match"]
+            },
+            "requirements": {
+                "weight": 0.10,
+                "factors": ["Prerequisites", "Test scores", "Documents"]
+            },
+            "curriculum": {
+                "weight": 0.10,
+                "factors": ["Course interest alignment", "Relevant courses", "Curriculum diversity"],
+                "note": "V2-specific: Analyzes course descriptions and content"
+            }
+        },
+        "v2_features": [
+            "Rich course information with descriptions",
+            "Nested extracted_fields structure",
+            "Application requirements with detailed fields",
+            "Training outcomes with career paths",
+            "Curriculum alignment scoring",
+            "Course-level matching"
+        ],
+        "default_top_k": 10,
+        "default_min_score": 0.4
+    }
+
+
+@app.get("/v2/match/program/{program_id}/details")
+def get_program_details_v2(program_id: str):
+    """
+    Get complete program details from V2 dataset.
+    
+    Returns all information needed for the Writing Agent,
+    including courses with descriptions, application requirements,
+    training outcomes, and text chunks for RAG.
+    """
+    
+    if not MATCHER_V2_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="V2 Matching service not available"
+        )
+    
+    program = PROGRAM_MATCHER_V2.get_program(program_id)
+    if not program:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Program '{program_id}' not found in V2 corpus"
+        )
+    
+    try:
+        program_details = PROGRAM_MATCHER_V2.get_program_details_for_writing(program_id)
+        
+        return {
+            "success": True,
+            "dataset_version": "v2",
+            "program": program_details
+        }
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to get V2 program details: {str(e)}"
+        )
+
+
+@app.get("/v2/match/programs/list")
+def list_all_programs_v2():
+    """
+    List all available programs in the V2 (enhanced) corpus.
+    
+    Returns:
+        List of programs with basic info including course availability
+    """
+    
+    if not MATCHER_V2_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="V2 Matching service not available"
+        )
+    
+    try:
+        programs_list = PROGRAM_MATCHER_V2.list_programs()
+        
+        return {
+            "success": True,
+            "dataset_version": "v2",
+            "total_programs": len(programs_list),
+            "programs": programs_list
+        }
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to list V2 programs: {str(e)}"
+        )
+
+
+@app.post("/v2/generate/writing-agent")
+def generate_with_writing_agent_v2(req: WritingAgentRequest, program_id: Optional[str] = None):
+    """
+    Generate documents using Writing Agent with V2 dataset program details.
+    
+    If program_id is provided, automatically fetches rich program information
+    from the V2 dataset including course descriptions, requirements, etc.
+    """
+    
+    if not WRITING_AGENT_AVAILABLE:
+        raise HTTPException(
+            status_code=503,
+            detail="Writing Agent is not available"
+        )
+    
+    try:
+        # If program_id provided, get V2 program details
+        program_text = req.program_text or ""
+        program_info = {}
+        
+        if program_id and MATCHER_V2_AVAILABLE:
+            program_details = PROGRAM_MATCHER_V2.get_program_details_for_writing(program_id)
+            if program_details:
+                # Build rich program text from V2 data
+                parts = []
+                parts.append(f"Program: {program_details.get('program_name', 'Graduate Program')}")
+                parts.append(f"University: {program_details.get('university', 'University')}")
+                
+                if program_details.get('program_background', {}).get('mission'):
+                    parts.append(f"Mission: {program_details['program_background']['mission']}")
+                
+                if program_details.get('description_text'):
+                    parts.append(program_details['description_text'][:2000])
+                
+                if program_details.get('courses'):
+                    course_info = []
+                    for c in program_details['courses'][:10]:
+                        if isinstance(c, dict):
+                            course_str = c.get('name', '')
+                            if c.get('description'):
+                                course_str += f": {c['description'][:100]}"
+                            course_info.append(course_str)
+                    parts.append("Courses:\n" + "\n".join(course_info))
+                
+                if program_details.get('training_outcomes', {}).get('career_paths'):
+                    parts.append(f"Career Paths: {program_details['training_outcomes']['career_paths']}")
+                
+                program_text = "\n\n".join(parts)
+                
+                # Set program_info for writing agent
+                program_info = {
+                    "program_name": program_details.get('program_name', ''),
+                    "features": program_text[:2000],
+                    "application_requirements": program_details.get('application_requirements', {}).get('summary', ''),
+                    "courses": [c.get('name', '') if isinstance(c, dict) else c for c in program_details.get('courses', [])]
+                }
+        
+        # Fallback to URL fetch if no program text
+        if not program_text and req.program_url:
+            try:
+                program_text = polite_fetch(req.program_url)
+            except Exception as e:
+                pass
+        
+        if not program_text:
+            raise HTTPException(
+                status_code=400,
+                detail="No program information provided. Provide program_id, program_text, or program_url."
+            )
+        
+        # Use default program_info if not set
+        if not program_info:
+            program_info = {
+                "program_name": "Target Program",
+                "features": program_text[:2000],
+                "application_requirements": "",
+                "courses": []
+            }
+        
+        # Get corpus for RAG
+        corpus = None
+        if req.use_corpus and program_id and MATCHER_V2_AVAILABLE:
+            program = PROGRAM_MATCHER_V2.get_program(program_id)
+            if program and program.chunks:
+                corpus = {c.chunk_id: c.text for c in program.chunks}
+        
+        if not corpus:
+            corpus = {"program_text": program_text}
+        
+        # Map document type
+        doc_type_map = {
+            "personal_statement": DocumentType.PERSONAL_STATEMENT,
+            "resume_bullets": DocumentType.RESUME_BULLETS,
+            "recommendation_letter": DocumentType.RECOMMENDATION_LETTER
+        }
+        document_type = doc_type_map.get(req.document_type, DocumentType.PERSONAL_STATEMENT)
+        
+        # Generate document
+        start_time = time.time()
+        
+        result = generate_document(
+            profile=req.profile.dict(),
+            program_info=program_info,
+            document_type=document_type,
+            corpus=corpus,
+            llm_provider=req.llm_provider,
+            model_name=req.model_name,
+            temperature=req.temperature,
+            max_iterations=req.max_iterations,
+            quality_threshold=req.quality_threshold
+        )
+        
+        generation_time = time.time() - start_time
+        
+        return {
+            "success": True,
+            "document": result.get("final_document", ""),
+            "document_type": req.document_type,
+            "quality_report": result.get("quality_report", {}),
+            "metadata": result.get("metadata", {}),
+            "generation_time_seconds": round(generation_time, 2),
+            "iterations": result.get("iterations", 0),
+            "dataset_version": "v2" if program_id else "custom",
+            "program_id": program_id
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        raise HTTPException(
+            status_code=500,
+            detail={"error": str(e), "traceback": traceback.format_exc()}
+        )
+
+
+# ============================================================
+# END OF V2 MATCHING SERVICE ENDPOINTS
 # ============================================================
 
 if __name__ == "__main__":
