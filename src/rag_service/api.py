@@ -218,7 +218,7 @@ def generate(req: GenerateRequest):
         
         # 2) Ingest corpus and retrieve evidence
         try:
-            corpus = ingest_corpus(CORPUS_DIR)
+            corpus = ingest_corpus(CORPUS_DIR_V1)
             prof_kws = (req.profile.courses or []) + (req.profile.skills or [])
             q = build_query(program_text, prof_kws)
             top = retrieve_topk(corpus, q, k=req.topk)
@@ -479,7 +479,7 @@ def generate_with_writing_agent(req: WritingAgentRequest):
         corpus = None
         if req.use_corpus:
             try:
-                full_corpus = ingest_corpus(CORPUS_DIR)
+                full_corpus = ingest_corpus(CORPUS_DIR_V1)
                 # Simple filtering: use chunks relevant to program_text
                 corpus = {}
                 for chunk_id, chunk_text in list(full_corpus.items())[:50]:  # Limit corpus size
